@@ -1,0 +1,555 @@
+--==============================================================
+-- HeroInfoWindow : 캐릭터 정보 창 
+--==============================================================
+window "HeroInfoWindow"
+{
+	ii 5003
+	pos 0 82
+	size 354 527
+	texpos 1 1
+	
+	captionXY 0 0
+	captionWH 354 527
+	
+	opensound 3007
+	closesound 3010
+	
+}
+
+-- /// 버튼 "Close"
+button "HeroInfo_Close_Button"
+{
+	ii 5002
+	pos 321 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+--==============================================================
+-- HeroInfoWindow : HP 게이지 관련 
+--==============================================================
+-- /// HP 게이지
+doublegauge "Hero_HP_Gauge"
+{
+	ii 5003
+	pos 137 64
+	size 194 7
+	texpos 138 65
+		
+	gauge_speed 30	-- float 값
+	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7
+	gauge_texpos 365 255
+	gauge_width 194
+	gauge_height 7
+
+	-- 뒤 게이지	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7
+	gauge_texpos 365 255
+	gauge_width 194
+	gauge_height 7
+	
+}
+
+-- /// HP 라벨(삭제요망)
+label "Hero_HP_Label"
+{
+	pos 285 127
+}
+
+--==============================================================
+-- HeroInfoWindow : MP 게이지 관련
+--==============================================================
+-- /// MP 게이지
+doublegauge "Hero_MP_Gauge"
+{
+	ii 5003
+	pos 137 85
+	size 194 7
+	texpos 138 86
+		
+	gauge_speed 30	-- float 값
+	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7
+	gauge_texpos 365 264
+	gauge_width 194
+	gauge_height 7
+
+	-- 뒤 게이지	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7
+	gauge_texpos 365 264
+	gauge_width 194
+	gauge_height 7
+	
+}
+
+-- /// MP 라벨(삭제요망)
+label "Hero_MP_Label"
+{
+	pos 285 127
+}
+
+--==============================================================
+-- HeroInfoWindow : SXP 게이지 관련
+--==============================================================
+-- /// 라벨 "SkillLevel"
+label "Hero_SkillLevel"
+{
+	pos 69 139
+}
+
+-- /// SXP 게이지 
+gauge "Hero_SXP_Gauge"
+{
+	ii 5003
+	pos 137 106
+	size 194 7
+	texpos 138 107
+		
+	gauge_speed 30	-- float 값
+	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7
+	gauge_texpos 365 246
+	gauge_width 194
+	gauge_height 7
+	
+}
+
+-- /// SXP 라벨(삭제요망)
+label "Hero_SXP_Label"
+{
+	pos 285 127
+}
+
+--==============================================================
+-- HeroInfoWindow : EXP 게이지 관련
+--==============================================================
+-- /// 이미지 "레벨 이미지 위치" 
+label "Hero_Level_Img_Pos" 
+{ 
+	pos 43 95 
+	size 16 20
+}
+
+-- /// EXP 게이지 
+gauge "Hero_EXP_Gauge"
+{
+	ii 5003
+	pos 137 127
+	size 194 7
+	texpos 138 128
+		
+	gauge_speed 30	-- float 값
+	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7
+	gauge_texpos 365 237
+	gauge_width 194
+	gauge_height 7
+}
+
+-- /// EXP 라벨(삭제요망)
+label "Hero_EXP_Label"
+{
+	pos 285 127
+}
+
+--==============================================================
+-- HeroInfoWindow : 데이터 라벨
+--==============================================================
+-- /// 라벨 "이름"
+label "HeroName"
+{
+	pos 72 171
+	size 97 16
+	text_align center
+}
+
+-- /// 라벨 "성별"
+label "HeroGender"
+{
+	pos 232 197
+	size 97 16
+	text_align center
+}
+
+-- /// 라벨 "종족"
+label "HeroRace"
+{
+	pos 72 197
+	size 97 16
+	text_align center
+}
+
+-- /// 라벨 "직업"
+label "HeroClass"
+{
+	pos 232 171
+	size 97 16
+	text_align center						-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 라벨 "길드"
+label "HeroGuild"
+{
+	pos 72 223
+	size 155 16
+	text_align center						-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 라벨 "직위"
+label "HeroPosition"
+{
+	pos 232 223
+	size 97 16
+	text_align center						-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 라벨 "호칭"
+label "HeroTitle"
+{
+	pos 72 249
+	size 155 16
+	text_align center						-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 세력 타입
+label "HeroInfo_ForceType"
+{
+	pos 72 275
+	size 155 16
+	text_align center
+}
+
+-- /// 호칭 관리
+button "HeroInfo_Title"
+{
+	ii 5003
+	pos 243 243
+	size 72 24
+	texpos 371 650
+		
+	-- 버튼 그림 좌표 	
+	uppos 371 650
+	upoverpos 371 676
+	downpos 371 702
+		
+	downsound 3001
+}
+
+-- /// 사회 버튼
+button "HeroInfo_Social"
+{
+	ii 5003
+	pos 243 269
+	size 72 24
+	texpos 445 650
+		
+	-- 버튼 그림 좌표 	
+	uppos 445 650
+	upoverpos 445 676
+	downpos 445 702
+		
+	downsound 3001
+}
+
+
+--================================--
+-- 스테이터스 --
+--================================--
+
+-- /// 라벨 "힘"
+label "HeroStr"
+{
+	pos 63 341
+	size 30 16
+	text_align center
+	
+	hovertip	510
+}
+
+-- /// 라벨 "체력"
+label "HeroCon"
+{
+	pos 63 359
+	size 30 16
+	text_align center
+	
+	hovertip	512
+}
+
+-- /// 라벨 "민첩"
+label "HeroDex"
+{
+	pos 63 377
+	size 30 16
+	text_align center
+	
+	hovertip	511
+}
+
+-- /// 라벨 "지능"
+label "HeroInt"
+{
+	pos 63 395
+	size 30 16
+	text_align center
+	
+	hovertip	513
+}
+-- /// 라벨 "지혜"
+label "HeroWis"
+{
+	pos 63 413
+	size 30 16
+	text_align center
+	
+	hovertip	514
+}
+
+---- 스테이터스 추가량
+-- /// 라벨 "플러스 힘"
+label "HeroPlusStr"
+{
+	pos 100 341
+	size 30 16
+	text_align center
+}
+-- /// 라벨 "플러스 체력"
+label "HeroPlusCon"
+{
+	pos 100 359
+	size 30 16
+	text_align center
+}
+-- /// 라벨 "플러스 민첩"
+label "HeroPlusDex"
+{
+	pos 100 377
+	size 30 16
+	text_align center
+}
+-- /// 라벨 "플러스 지능"
+label "HeroPlusInt"
+{
+	pos 100 395
+	size 30 16
+	text_align center
+}
+-- /// 라벨 "플러스 지혜"
+label "HeroPlusWis"
+{
+	pos 100 413
+	size 30 16
+	text_align center
+}
+
+
+--=================================--
+-- 회복 이동속도 수치 --
+--=================================--
+-- /// 라벨 "HP 회복량"
+label "HeroHPrec"
+{
+	pos 72 445
+	size 87 16
+	text_align center
+	
+	hovertip	523
+}
+-- /// 라벨 "MP 회복량"
+label "HeroMPrec"
+{
+	pos 72 470
+	size 87 16
+	text_align center
+	
+	hovertip	524
+}
+
+-- /// 이동속도
+label "HeroFast"
+{
+	pos 72 495
+	size 87 16
+	text_align center
+}
+
+--===============================--
+-- 전투수치 버튼 --
+--===============================--
+radiobutton "HeroInfo_Physical_Button"
+{
+	ii 5003
+	pos 169 305
+	size 81 30
+	texpos 371 730
+	
+	uppos 371 762
+	upoverpos 371 762
+	downpos 371 730
+
+	group 0
+	
+	downsound 3001
+}
+
+radiobutton "HeroInfo_Magic_Button"
+{
+	ii 5003
+	pos 252 305
+	size 81 30
+	texpos 453 730
+	
+	uppos 453 762
+	upoverpos 453 762
+	downpos 453 730
+	
+	group 0
+
+	downsound 3001
+}
+
+-- ///소스에서 쓰는 스킨 
+label "HeroInfoImage00" { ii 5003  pos 161 332  size 179 181  texpos   761 1 } -- /// "물리 전투수치" 이미지
+label "HeroInfoImage01" { ii 5003  pos 161 332  size 179 181  texpos 761 183 } -- /// "마법 전투수치" 이미지
+
+--===============================--
+-- 물리 전투수치 --
+--===============================--
+-- /// 라벨 "물리공격"
+label "HeroAtt"
+{
+	pos 235 354
+	size 87 16
+	text_align center
+}
+-- /// 라벨 "물리방어"
+label "HeroDef"
+{
+	pos 235 379
+	size 87 16
+	text_align center
+}
+-- /// 라벨 "물리명중"
+label "HeroHit"
+{
+	pos 235 404
+	size 87 16
+	text_align center
+	
+	hovertip	515
+}
+-- /// 라벨 "회피"
+label "HeroAvoid"
+{
+	pos 235 429
+	size 87 16
+	text_align center
+	
+	hovertip	516
+}
+
+-- /// 라벨 "물리 크리티컬"
+label "HeroAttCri"
+{
+	pos 235 454
+	size 87 16
+	text_align center
+	
+	hovertip	517
+}
+
+-- /// 라벨 "물리 방호"
+label "HeroPhyProtect"
+{
+	pos 235 479
+	size 87 16
+	text_align center
+	
+	hovertip	518
+}
+
+--================================--
+-- 마법 전투수치 --
+--================================--
+-- /// 라벨 "마법공격"
+label "HeroMag"
+{
+	pos 235 343
+	size 87 16
+	text_align center
+}
+
+--/// 라벨 "마법방어"
+label "HeroMagDef"
+{
+	pos 235 368
+	size 87 16
+	text_align center
+}
+
+-- /// 라벨 "마법명중"
+label "HeroMagHit"
+{
+	pos 235 393
+	size 87 16
+	text_align center
+
+	hovertip	519
+}
+
+-- /// 라벨 "저항"
+label "HeroRes"
+{
+	pos 235 418
+	size 87 16
+	text_align center
+	hovertip	520
+}
+
+-- /// 라벨 "마법 크리티컬"
+label "HeroMagCri"
+{
+	pos 235 443
+	size 87 16
+	text_align center
+	
+	hovertip	521
+}
+
+-- /// 라벨 "마법 방호"
+label "HeroMagProtect"
+{
+	pos 235 468
+	size 87 16
+	text_align center
+	
+	hovertip	522
+}
+
+-- /// 라벨 "힐 회복량"
+label "HeroHeal"
+{
+	pos 235 493
+	size 87 16
+	text_align center
+}

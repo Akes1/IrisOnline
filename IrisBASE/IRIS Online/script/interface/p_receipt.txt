@@ -1,0 +1,21 @@
+--===============--
+-- 캐시 아이템 수령함 --
+--===============--
+window_prop "P_Receipt_Window"
+{
+	skinname "Receipt_Window"
+}
+
+
+-- 닫기 버튼
+button_prop "P_Receipt_Close"
+{
+	skinname "Receipt_Close"
+	parent "P_Receipt_Window"
+}
+
+button_prop "P_Receipt_Get"
+{
+	skinname "Receipt_Get"
+	parent "P_Receipt_Window"
+}

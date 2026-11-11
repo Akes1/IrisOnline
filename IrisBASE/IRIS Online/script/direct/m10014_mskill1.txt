@@ -1,0 +1,70 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+--수문장 훔바바
+--모드스킬1
+
+Header
+{
+	type	0
+	
+	effect	0	0.0	90.0	180.0	2.3	"eff_1011_02.nif"
+	effect	1	0.0	90.0	0.0	2.3	"eff_1011_02.nif"
+	effect	2	0.0	0.0	0.0	2.3	"eff_1011_02.nif"
+	effect	3	0.0	0.0	0.0	1.5	"eff_1011_03.nif"
+	
+	sound	21	5512
+	sound	22	6510
+	sound	23	6513
+	sound	24	6507
+
+
+
+
+}
+
+Activity
+{
+	animation	10
+
+	action	500	0	0	0	1	foot	0.0	-80.0	130.0
+	action	900	0	1	0	1	foot	0.0	-80.0	100.0
+	action	1500	0	2	0	1	foot	-30.0	-150.0	160.0
+	action	1500	0	3	0	1	foot	0.0	-430.0	0.0
+
+	soundplay	400	21	0
+	soundplay	900	21	0
+	soundplay	1500	22	0
+	soundplay	1500	23	0
+	soundplay	1500	24	0
+	
+	active	500
+
+}
+
+Apply
+{	
+	damage	0	25
+	damage	500	25
+	damage	1100	50
+}

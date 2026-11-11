@@ -1,0 +1,350 @@
+--===============--
+-- 데스매치 메시지 윈도우 --
+--===============--
+window "PVP_DMMsgWindow"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	holdview true	-- 창이 사라지지 않게 한다. 
+
+	captionXY 0 0
+	captionWH 257 147
+	
+	opensound 3007
+	closesound 3010
+}
+
+label "PVP_DMMsg_Caption"
+{
+	pos 0 7
+	size 257 20
+	text_align center
+}
+
+label "PVP_DMMsg_Text"
+{
+	pos 25 42
+	size 206 70
+	text_align center
+}
+
+-- 데스매치 yes
+button "PVP_DMMsg_Join"
+{
+	ii 5002
+	pos 37 112
+	size 82 24
+	texpos 302 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 302 566
+	upoverpos 302 591
+	downpos 302 616
+
+	downsound 3001
+}
+
+-- 데스매치 no
+button "PVP_DMMsg_Cancel"
+{
+	ii 5002
+	pos 138 112
+	size 82 24
+	texpos 386 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 566
+	upoverpos 386 591
+	downpos 386 616
+
+	downsound 3001
+}
+
+-- 데스매치 입장대기 취소
+button "PVP_DMMsg_CountCancel"
+{
+	ii 5002
+	pos 87 112
+	size 82 24
+	texpos 386 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 566
+	upoverpos 386 591
+	downpos 386 616
+
+	downsound 3001
+}
+
+
+--===============--
+-- 데스매치 점수 윈도우 --
+--===============--
+window "PVP_DMScoreWindow"
+{
+	ii	5011
+	pos	850 250
+	size	251 89
+	texpos	2 490
+	holdview true	-- 창이 사라지지 않게 한다. 
+
+	captionXY 0 0 
+	captionWH 251 89
+}
+
+-- 소스에서 사용하는 스킨
+-- 시간 출력 위치
+label "PVP_DMScore_Time"
+{
+	pos	100 30
+	size	60 14	
+}
+
+-- 소스에서 사용하는 스킨
+-- 목표 포인트
+label "PVP_DMScore_DestPoint"
+{
+	pos	0 0
+	size	52 26	
+}
+
+-- 소스에서 사용하는 스킨
+-- 아군 포인트
+label "PVP_DMScore_PointTeamA"
+{
+	pos	25 16
+	size	52 26
+}
+
+-- 소스에서 사용하는 스킨
+-- 적군 포인트
+label "PVP_DMScore_PointTeamB"
+{
+	pos	173 16
+	size	52 26	
+}
+
+-- 1진영 세력 표시 위치
+label "PVP_DMScoreTeamAMark0" { ii 5011 pos 43 51  size 28 28 texpos 0 0 }
+label "PVP_DMScoreTeamAMark1" { ii 5011 pos 13 51 size 28 28 texpos 0 0 }
+label "PVP_DMScoreTeamAMark2" { ii 5011 pos 73 51 size 28 28 texpos 0 0 }
+
+-- 2진영 세력 표시 위치
+label "PVP_DMScoreTeamBMark0" { ii 5011 pos 180 51 size 28 28 texpos 0 0 }
+label "PVP_DMScoreTeamBMark1" { ii 5011 pos 210 51 size 28 28 texpos 0 0 }
+label "PVP_DMScoreTeamBMark2" { ii 5011 pos 150 51 size 28 28 texpos 0 0 }
+
+-- 소스에서 사용하는 스킨
+-- 세력 마크 불
+label "PVP_DMScore_MarkFire"
+{
+	ii	5011
+	pos	0 0
+	size	28 28
+	texpos	34 446
+}
+
+-- 소스에서 사용하는 스킨
+-- 세력 마크 물
+label "PVP_DMScore_MarkWater"
+{
+	ii	5011
+	pos	0 0
+	size	28 28
+	texpos	94 446
+}
+
+-- 소스에서 사용하는 스킨
+-- 세력 마크 바람
+label "PVP_DMScore_MarkWind"
+{
+	ii	5011
+	pos	0 0
+	size	28 28
+	texpos	64 446
+}
+
+-- 소스에서 사용하는 스킨
+-- 세력 마크 땅
+label "PVP_DMScore_MarkEarth"
+{
+	ii	5011
+	pos	0 0
+	size	28 28
+	texpos	4 446
+}
+
+--석상 게이지 위치
+gauge "PVP_DMScoreStoneGauge"
+{
+	ii	5011
+	pos	30 92
+	size	202 21
+	texpos	307 502
+	      
+	gauge_speed 30		-- float 값
+	show_percent true		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+	
+	gauge_ii 5011
+	gauge_pos 10 4
+	gauge_size 3 13
+	gauge_texpos 513 502
+	gauge_width 182
+	gauge_height 13
+}
+
+-- 소스에서 사용하는 스킨
+--1진영 석상 이미지 표시1
+label "PVP_DMScore_TeamAStone"
+{
+	ii	5011
+	pos	0 92
+	size	25 25
+	texpos	281 501
+}
+
+-- 소스에서 사용하는 스킨
+--2진영 석상 이미지 표시2
+label "PVP_DMScore_TeamBStone"
+{
+	ii	5011
+	pos	0 92
+	size	25 25
+	texpos	255 501
+}
+
+--===============--
+-- 데스매치 중간결과 윈도우 --
+--===============--
+window "PVP_DMMiddleResultWindow"
+{
+	ii	5011	
+	pos	224 174
+	size	368 420
+	texpos	690  2
+}
+
+-- /// 데스매치 결과 리스트
+listbox "PVP_DMMiddleResult_List"
+{
+	pos 16 88
+	size 336 316
+	row_height 17			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 18			-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x, 	w,   	align
+	columnX 0 	48	center	-- 순위
+	columnX 49	96	center	-- 유저명
+	columnX 146	84	center	-- 세력
+	columnX 231	50	center	-- kill
+	columnX 282	54	center	-- death
+}
+
+
+--===============--
+-- 데스매치 결과 윈도우 --
+--===============--
+window "PVP_DMResultWindow"
+{
+	ii	5011	
+	pos	224 174
+	size	686 420
+	texpos	2 2
+	holdview true	-- 창이 사라지지 않게 한다. 
+}
+
+-- /// 버튼 "Close"
+button "PVP_DMResult_Close"
+{
+	ii 5002
+	pos 653 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- /// 데스매치 결과 리스트
+listbox "PVP_DMResult_List"
+{
+	pos 16 88
+	size 374 316
+	row_height 17			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 18			-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x, 	w,   	align
+	columnX 0 	53	center	-- 순위
+	columnX 54	114	center	-- 유저명
+	columnX 169	88	center	-- 세력
+	columnX 258	52	center	-- kill
+	columnX 310	63	center	-- death
+	--columnX 325	46	center	-- point	
+}
+
+-- /// 포인트 리스트
+listbox "PVP_DMPoint_List"
+{
+	pos 498 101
+	size 160 116
+	row_height 29			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 4			-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x, 	w,   	align
+	columnX 0 	80	center	-- 친밀도
+	columnX 81	79	center	-- 전장 포인트
+}
+
+-- /// 돈
+label "PVP_DMResult_Money"
+{
+	pos	411 283
+	size	80 15
+	text_align	center
+}
+
+-- /// 경험치
+label "PVP_DMResult_EXP"
+{
+	pos 497 283
+	size	80 15
+	text_align	center
+}
+
+-- /// 스킬포인트
+label "PVP_DMResult_Sp"
+{
+	pos 583 283
+	size	80 15
+	text_align	center
+}
+
+-- /// WIN 표시 라벨
+label "PVP_DMResult_Win"
+{
+	ii 5011
+	pos	466 350
+	size	145 32
+	texpos	347 426
+}
+
+-- /// LOSE 표시 라벨
+label "PVP_DMResult_Lose"
+{
+	ii 5011
+	pos	466 350
+	size	145 32
+	texpos	347 464
+}

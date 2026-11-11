@@ -1,0 +1,35 @@
+// 케논 트랩 모드
+Header	
+{
+	effect	1	0	0	0	2	"eff_m_1002_01.nif"
+}
+//
+Mode	0
+{
+	applyaura	41028	0	10	1
+	applyaura	41029	0	10	0
+
+	modechange	1	2	4000	0	0
+}
+
+Mode	1
+{
+	applyaura	41028	0	10	1
+	applyaura	41030	0	10	0
+
+	modechange	2	2	4000	0	0
+}
+
+Mode	2
+{
+	applyaura	41028	0	10	1
+	applyaura	41031	0	10	0
+
+	modechange	3	2	4000	0	0
+}
+
+Mode	3
+{
+	applyaura	41031	0	10	0
+	immune	0
+}

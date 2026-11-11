@@ -1,0 +1,65 @@
+--=============--
+-- 거래 윈도우 --
+--=============--
+window_prop "P_Trade_Window"
+{
+	skinname "Trade_Window"
+}
+
+-- 닫기 버튼
+button_prop "P_Trade_Close"
+{
+	skinname "Trade_Close"
+	parent "P_Trade_Window"
+}
+
+-- 거래
+button_prop "P_Trade_Trade"
+{
+	skinname "Trade_Trade"
+	parent "P_Trade_Window"
+}
+
+pushbutton_prop "P_Trade_Ok"
+{
+	skinname "Trade_Ok"
+	parent "P_Trade_Window"
+}
+
+label_prop "P_Trade_Money"
+{
+	skinname "Trade_Money"
+	parent "P_Trade_Window"
+}
+
+label_prop "P_Trade_Name"
+{
+	skinname "Trade_Name"
+	parent "P_Trade_Window"
+}
+
+button_prop "P_Trade_MoneyButton"
+{
+	skinname "Trade_MoneyButton"
+	parent "P_Trade_Window"
+}
+
+-- 상대확인
+pushbutton_prop "P_Trade_ThatOK"
+{
+	skinname "Trade_ThatOK"
+	parent "P_Trade_Window"
+}
+
+-- 상대 금액
+label_prop "P_Trade_ThatMoney"
+{
+	skinname "Trade_ThatMoney"
+	parent "P_Trade_Window"
+}
+
+label_prop "P_Trade_ThatName"
+{
+	skinname "Trade_ThatName"
+	parent "P_Trade_Window"
+}

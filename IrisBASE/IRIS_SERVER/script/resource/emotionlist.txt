@@ -1,0 +1,22 @@
+// index	type	textureName(race*gender)						keyword1~10									
+1	0	tx_h_m_face_001.nif	tx_h_w_face_001.nif	tx_s_m_face_001.nif	tx_s_w_face_001.nif	tx_j_m_face_001.nif	tx_j_w_face_001.nif	0	0	0	0	0	0	0	0	0	0
+2	0	tx_h_m_face_002.nif	tx_h_w_face_002.nif	tx_s_m_face_002.nif	tx_s_w_face_002.nif	tx_j_m_face_002.nif	tx_j_w_face_002.nif	0	0	0	0	0	0	0	0	0	0
+3	0	tx_h_m_face_003.nif	tx_h_w_face_003.nif	tx_s_m_face_003.nif	tx_s_w_face_003.nif	tx_j_m_face_003.nif	tx_j_w_face_003.nif	0	0	0	0	0	0	0	0	0	0
+4	0	tx_h_m_face_004.nif	tx_h_w_face_004.nif	tx_s_m_face_004.nif	tx_s_w_face_004.nif	tx_j_m_face_004.nif	tx_j_w_face_004.nif	0	0	0	0	0	0	0	0	0	0
+5	0	tx_h_m_face_005.nif	tx_h_w_face_005.nif	tx_s_m_face_005.nif	tx_s_w_face_005.nif	tx_j_m_face_005.nif	tx_j_w_face_005.nif	0	0	0	0	0	0	0	0	0	0
+6	0	tx_h_m_face_006.nif	tx_h_w_face_006.nif	tx_s_m_face_006.nif	tx_s_w_face_006.nif	tx_j_m_face_006.nif	tx_j_w_face_006.nif	0	0	0	0	0	0	0	0	0	0
+7	0	tx_h_m_face_007.nif	tx_h_w_face_007.nif	tx_s_m_face_007.nif	tx_s_w_face_007.nif	tx_j_m_face_007.nif	tx_j_w_face_007.nif	0	0	0	0	0	0	0	0	0	0
+8	0	tx_h_m_face_008.nif	tx_h_w_face_008.nif	tx_s_m_face_008.nif	tx_s_w_face_008.nif	tx_j_m_face_008.nif	tx_j_w_face_008.nif	0	0	0	0	0	0	0	0	0	0
+1001	1	tx_h_m_face_0011.nif	tx_h_w_face_0011.nif	tx_s_m_face_0011.nif	tx_s_w_face_0011.nif	tx_j_m_face_0011.nif	tx_j_w_face_0011.nif	0	0	0	0	0	0	0	0	0	0
+1002	1	tx_h_m_face_0021.nif	tx_h_w_face_0021.nif	tx_s_m_face_0021.nif	tx_s_w_face_0021.nif	tx_j_m_face_0021.nif	tx_j_w_face_0021.nif	0	0	0	0	0	0	0	0	0	0
+1003	1	tx_h_m_face_0031.nif	tx_h_w_face_0031.nif	tx_s_m_face_0031.nif	tx_s_w_face_0031.nif	tx_j_m_face_0031.nif	tx_j_w_face_0031.nif	0	0	0	0	0	0	0	0	0	0
+1004	1	tx_h_m_face_0041.nif	tx_h_w_face_0041.nif	tx_s_m_face_0041.nif	tx_s_w_face_0041.nif	tx_j_m_face_0041.nif	tx_j_w_face_0041.nif	0	0	0	0	0	0	0	0	0	0
+1005	1	tx_h_m_face_0051.nif	tx_h_w_face_0051.nif	tx_s_m_face_0051.nif	tx_s_w_face_0051.nif	tx_j_m_face_0051.nif	tx_j_w_face_0051.nif	0	0	0	0	0	0	0	0	0	0
+1006	1	tx_h_m_face_0061.nif	tx_h_w_face_0061.nif	tx_s_m_face_0061.nif	tx_s_w_face_0061.nif	tx_j_m_face_0061.nif	tx_j_w_face_0061.nif	0	0	0	0	0	0	0	0	0	0
+1007	1	tx_h_m_face_0071.nif	tx_h_w_face_0071.nif	tx_s_m_face_0071.nif	tx_s_w_face_0071.nif	tx_j_m_face_0071.nif	tx_j_w_face_0071.nif	0	0	0	0	0	0	0	0	0	0
+1008	1	tx_h_m_face_0081.nif	tx_h_w_face_0081.nif	tx_s_m_face_0081.nif	tx_s_w_face_0081.nif	tx_j_m_face_0081.nif	tx_j_w_face_0081.nif	0	0	0	0	0	0	0	0	0	0
+10000	2	tx_face_h_m_001.nif	tx_face_h_m_001.nif	tx_face_s_m_001.nif	tx_face_s_m_001.nif	tx_face_j_m_001.nif	tx_face_j_m_001.nif	1	2	3	4	5	6	7	8	9	10
+10001	2	tx_face_h_m_002.nif	tx_face_h_m_002.nif	tx_face_s_m_002.nif	tx_face_s_m_002.nif	tx_face_j_m_002.nif	tx_face_j_m_002.nif	11	12	13	14	15	16	17	18	19	20
+10002	2	tx_face_h_m_003.nif	tx_face_h_m_003.nif	tx_face_s_m_003.nif	tx_face_s_m_003.nif	tx_face_j_m_003.nif	tx_face_j_m_003.nif	21	22	23	24	0	0	0	0	0	0
+10003	2	tx_face_h_m_004.nif	tx_face_h_m_004.nif	tx_face_s_m_004.nif	tx_face_s_m_004.nif	tx_face_j_m_004.nif	tx_face_j_m_004.nif	31	32	33	34	35	36	0	0	0	0
+10004	2	tx_face_h_m_005.nif	tx_face_h_m_005.nif	tx_face_s_m_005.nif	tx_face_s_m_005.nif	tx_face_j_m_005.nif	tx_face_j_m_005.nif	41	42	43	0	0	0	0	0	0	0

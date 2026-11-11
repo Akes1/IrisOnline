@@ -1,0 +1,115 @@
+--===============--
+-- 아이템 조합창 --
+--===============--
+window_prop "P_ItemMixWindow"
+{
+	skinname "ItemMixWindow"
+}
+
+button_prop "P_ItemMix_Close"
+{
+	skinname "ItemMix_Close"
+	parent "P_ItemMixWindow"
+}
+
+button_prop "P_ItemMix_Giveup"
+{
+	skinname "ItemMix_Giveup"
+	parent "P_ItemMixWindow"
+}
+
+button_prop "P_ItemMix_Start"
+{
+	skinname "ItemMix_Start"
+	parent "P_ItemMixWindow"
+}
+
+button_prop "P_ItemMix_Cancel"
+{
+	skinname "ItemMix_Cancel"
+	parent "P_ItemMixWindow"
+}
+
+label_prop "P_ItemMix_Cooltime"
+{
+	skinname "ItemMix_Cooltime"
+	parent "P_ItemMixWindow"
+}
+
+numberedit_prop "P_ItemMix_NumberEdit"
+{
+	skinname "ItemMix_NumberEdit"
+	parent "P_ItemMixWindow"
+}
+
+button_prop "P_ItemMix_Max"
+{
+	skinname "ItemMix_Max"
+	parent "P_ItemMixWindow"
+}
+
+label_prop "P_ItemMix_CompleteCount"
+{
+	skinname "ItemMix_CompleteCount"
+	parent "P_ItemMixWindow"
+}
+
+label_prop "P_ItemMix_Grade"
+{
+	skinname "ItemMix_Grade"
+	parent "P_ItemMixWindow"
+}
+
+label_prop "P_ItemMix_SkillNow"
+{
+	skinname "ItemMix_SkillNow"
+	parent "P_ItemMixWindow"
+}
+
+label_prop "P_ItemMix_SkillGoal"
+{
+	skinname "ItemMix_SkillGoal"
+	parent "P_ItemMixWindow"
+}
+
+gauge_prop "P_ItemMix_Gaugebar"
+{
+	skinname "ItemMix_Gaugebar"
+	parent "P_ItemMixWindow"
+}
+
+combobox_prop "P_ItemMix_SkillCombo"
+{
+	skinname "ItemMix_SkillCombo"
+	parent "P_ItemMixWindow"
+}
+
+folderbox_prop "P_ItemMix_SkillFolder"
+{
+	skinname "ItemMix_SkillList"
+	parent "P_ItemMixWindow"
+}
+
+listbox_prop "P_ItemMix_List"
+{
+	skinname "ItemMix_List"
+	parent "P_ItemMixWindow"
+}
+
+label_prop "P_ItemMix_Result1"
+{
+	skinname "ItemMix_Result1"
+	parent "P_ItemMixWindow"
+}
+
+label_prop "P_ItemMix_Result2"
+{
+	skinname "ItemMix_Result2"
+	parent "P_ItemMixWindow"
+}
+
+label_prop "P_ItemMix_Result3"
+{
+	skinname "ItemMix_Result3"
+	parent "P_ItemMixWindow"
+}

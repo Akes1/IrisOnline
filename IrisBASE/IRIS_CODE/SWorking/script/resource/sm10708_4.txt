@@ -1,0 +1,68 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skIIll, 1:IInfluence(효과)
+
+-- effect - IIndex | rotX | rotY | rotZ | scale | fIIlename
+
+-- sound - IIndex | fIIlename
+
+-- anIImatIIon - anIIIIndex
+
+-- actIIve - tIIme
+
+-- actIIon - actTIIme | lIIfeTIIme | objectIId | bLoop | bFollow | lIInkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		lIInkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - tIIme | percent
+
+-- bullet - createTIIme | bulletIId | speed | objectIId | lIInkpos | varX | varY | varZ | crashLIInkPos
+
+-- crash - bulletIId | objectIId | lIInkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--원더러: 허점 찌르기I
+
+Header
+{
+	type	0
+
+	effect	0	0.0	0.0	0.0	0.9	"eff_2007_01.nif"
+	
+	sound	21	6514
+	sound	22	5506
+	sound	23	4505
+
+	trailtex	31	"trail_red_00.tga"
+
+}
+
+Activity
+{
+	animation	501
+
+	trail	100	100	31	rweapon	rhand	100.0	2.0
+	trail	400	100	31	lweapon	lhand	100.0	2.0
+
+
+	action	300	0	0	0	1	foot	0.0	-170.0	80.0
+	action	500	0	0	0	1	foot	10.0	-210.0	80.0
+
+
+
+	soundplay	0	21	0
+	soundplay	300	21	0
+	soundplay	300	23	0
+	soundplay	600	23	0
+
+
+	active	300
+}
+
+Apply
+{
+	damage	0	50
+	damage	200	50
+
+}

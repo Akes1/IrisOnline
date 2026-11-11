@@ -1,0 +1,302 @@
+--===============--
+-- Npc 배경 윈도우 --
+--===============--
+window "NpcBack_Window"
+{
+	ii 5004
+	pos 0 0
+	texpos 924 1
+	size 1 1
+}
+
+--===============--
+-- Npc 대화 윈도우 --
+--===============--
+window "NpcTelling_Window"
+{
+	ii 5022
+	pos 0 461
+	size 762 307
+	texpos 0 0
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 닫기버튼
+button "NpcTelling_Close"
+{
+	ii 5002
+	pos 729 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- 이름 라벨
+label "NpcTelling_Name"
+{
+	pos 78 3
+	size 607 22
+	text_align center
+}
+
+-- 대사 상자
+textbox "NpcTelling_Text"
+{
+	pos 36 52
+	size 700 100
+
+	row_height 20	-- 열 높이 세팅
+	maxitemnum 5	-- 리스트가 담을수 잇는 최대 갯수
+}
+
+-- 기능 버튼
+button "NpcTelling_Store"
+{
+	ii 5004
+	pos 671 262
+	size 82 24
+	texpos 616 584
+	
+	uppos 616 584
+	upoverpos 616 609
+	downpos 616 634
+
+	downsound 3001
+}
+
+button "NpcTelling_WareHouse"
+{
+	ii 5004
+	pos 671 262
+	size 82 24
+	texpos 784 584
+	
+	uppos 784 584
+	upoverpos 784 609
+	downpos 784 634
+
+	downsound 3001
+}
+
+button "NpcTelling_Disjoint"
+{
+	ii 5004
+	pos 671 262
+	size 82 24
+	texpos 535 370
+	
+	uppos 535 370
+	upoverpos 535 396
+	downpos 535 421
+
+	downsound 3001
+}
+
+button "NpcTelling_Guild"
+{
+	ii 5004
+	pos 671 262
+	size 82 24
+	texpos 532 584
+	
+	uppos 532 584
+	upoverpos 532 609
+	downpos 532 634
+
+	downsound 3001
+}
+
+button "NpcTelling_Tarot"
+{
+	ii 5008
+	pos 671 262
+	size 82 24
+	texpos 764 688
+	
+	uppos 764 688
+	upoverpos 764 714
+	downpos 764 740
+
+	downsound 3001
+}
+
+-- 판매대행
+button "NpcTelling_Deal"
+{
+	ii 5004
+	pos 671 262
+	size 82 24
+	texpos 532 661
+	
+	uppos 532 661
+	upoverpos 532 686
+	downpos 532 711
+
+	downsound 3001
+}
+
+-- 테마던젼 입장
+button "NpcTelling_Theme"
+{
+	ii 5004
+	pos 671 262
+	size 82 24
+	texpos 616 661
+	
+	uppos 616 661
+	upoverpos 616 686
+	downpos 616 711
+
+	downsound 3001
+}
+
+-- 스킬 미리찍어보기
+button "NpcTelling_SkillPreview"
+{
+	ii 5004
+	pos 671 262
+	size 82 24
+	texpos 700 584
+	
+	uppos 700 584
+	upoverpos 700 609
+	downpos 700 634
+
+	downsound 3001
+}
+
+-- /// npc 퀘스트 리스트
+listbox "NpcTelling_QuestList"
+{
+	ii 5022
+	pos 30 158
+	size 463 128
+	texpos 0 308
+	
+	row_height 20
+	maxitemnum 40
+	
+	scrollskin "ListScroll"
+
+	-- 리스트박스 내의 text 출력 공간을 지정한다 ( 없으면 기본위치로 부터 시작 )
+	printpos 5 2
+	printsize 456 120
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5022
+	child_size 457 20 
+	child_texpos 3 440
+	
+	--       x,  w,   align
+	columnX  10 400 left   -- 내용
+}
+
+-- /// 소스에서 사용하는 스킨
+-- /// npc 이미지 위치용
+label "NpcTelling_Scene"	{ pos 450 247 } 
+
+--===============--
+-- npc 보상 정보 윈도우--
+--===============--
+window "NpcReward_Window"
+{
+	pos 500 158
+	size 250 135
+}
+
+-- /// 경험치 배경 이미지
+-- 소스에서 쓰는 스킨
+label "NPCReward_Back02"
+{
+	ii 5004
+	pos 13 4
+	size 111 24
+	texpos 379 244
+}
+
+-- /// 스킬경험치 배경 이미지
+-- 소스에서 쓰는 스킨
+label "NPCReward_Back03"
+{
+	ii 5004
+	pos 135 4
+	size 111 24
+	texpos 501 244
+}
+
+-- /// 금액 보상 배경 이미지
+-- 소스에서 쓰는 스킨
+label "NPCReward_Back04"
+{
+	ii 5004
+	pos 13 29
+	size 111 24
+	texpos 379 269
+}
+
+-- /// 스킬 포인트 배경 이미지
+-- 소스에서 쓰는 스킨
+label "NPCReward_Back05"
+{
+	ii 5004
+	pos 135 29
+	size 111 24
+	texpos 501 269
+}
+
+-- /// 기본 보상 배경 이미지
+-- 소스에서 쓰는 스킨
+label "NPCReward_Back00"
+{
+	ii 5004
+	pos 13 58
+	size 233 34
+	texpos 379 298
+}
+
+-- /// 선택 보상 배경 이미지
+-- 소스에서 쓰는 스킨
+label "NPCReward_Back01"
+{
+	ii 5004
+	pos 13 94
+	size 233 34
+	texpos 379 334
+}
+
+-- 보상용 아이콘 - 소스에서 쓰는 스킨
+icon "NpcDefault_Icon0" 	{ pos 83 61	size 28 28 } 
+icon "NpcDefault_Icon1" 	{ pos 116 61	size 28 28 } 
+icon "NpcDefault_Icon2" 	{ pos 149 61	size 28 28 } 
+icon "NpcDefault_Icon3" 	{ pos 182 61	size 28 28 } 
+icon "NpcDefault_Icon4" 	{ pos 215 61	size 28 28 } 
+
+icon "NpcSelect_Icon0"  	{ pos 83 97	size 28 28 }
+icon "NpcSelect_Icon1"  	{ pos 116 97	size 28 28 }
+icon "NpcSelect_Icon2"  	{ pos 149 97	size 28 28 }
+icon "NpcSelect_Icon3"  	{ pos 182 97	size 28 28 }
+icon "NpcSelect_Icon4"  	{ pos 215 97 	size 28 28 }
+
+-- 보상 
+label "NpcReward_EXP"	{ pos 62  10 size 59 18 text_align center }
+label "NpcReward_SXP"	{ pos 184 10 size 59 18 text_align center } 
+label "NpcReward_Money"	{ pos 62 35 size 59 18 text_align center } 
+label "NpcReward_SkillPoint"	{ pos 184 35 size 59 18 text_align center } 
+label "NpcReward_Count"	{ pos 46 104 } 
+
+-- 선택용 이미지 - 소스에서 쓰는 스킨
+label "NpcReward_Select"
+{ 
+	ii 5003
+	pos 13 13
+	size 32 32
+	texpos 519 447
+}

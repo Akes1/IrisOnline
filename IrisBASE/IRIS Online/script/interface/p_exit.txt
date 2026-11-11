@@ -1,0 +1,89 @@
+--===============--
+-- 게임 종료창  --
+--===============--
+window_prop "P_ExitWindow"
+{
+	skinname "ExitWindow"
+}
+
+button_prop "P_Exit_Change"
+{
+	skinname "Exit_Change"
+	parent "P_ExitWindow"
+}
+
+button_prop "P_Exit_Exit"
+{
+	skinname "Exit_Exit"
+	parent "P_ExitWindow"
+}
+
+label_prop "P_Exit_WindowName"
+{
+	skinname "Exit_WindowName"
+	parent "P_ExitWindow"
+}
+
+label_prop "P_Exit_LogoutText"
+{
+	skinname "Exit_LogoutText"
+	parent "P_ExitWindow"
+}
+
+--====================--
+-- 종료 메시지 윈도우 --
+--====================--
+window_prop "P_ExitMsg_Window"
+{
+	skinname "ExitMsg_Window"
+}
+
+label_prop "P_ExitMsg_Caption"
+{
+	skinname "ExitMsg_Caption"
+	parent "P_ExitMsg_Window"
+}
+
+label_prop "P_ExitMsg_Text"
+{
+	skinname "ExitMsg_Text"
+	parent "P_ExitMsg_Window"
+}
+
+button_prop "P_ExitMsg_Cancel"
+{
+	skinname "ExitMsg_Cancel"
+	parent "P_ExitMsg_Window"
+}
+
+--==========================--
+-- 튜토리얼 종료창  --
+--==========================--
+window_prop "P_TutorialExitWindow"
+{
+	skinname "TutorialExitWindow"
+}
+
+button_prop "P_TutorialExit_Tutorial"
+{
+	skinname "TutorialExit_Tutorial"
+	parent "P_TutorialExitWindow"
+}
+
+button_prop "P_TutorialExit_GameOut"
+{
+	skinname "TutorialExit_GameOut"
+	parent "P_TutorialExitWindow"
+}
+
+label_prop "P_TutorialExit_WindowName"
+{
+	skinname "Exit_WindowName"
+	parent "P_TutorialExitWindow"
+}
+
+label_prop "P_TutorialExit_LogoutText"
+{
+	skinname "Exit_LogoutText"
+	parent "P_TutorialExitWindow"
+}

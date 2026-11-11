@@ -1,0 +1,53 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--저글러 로자크
+--일반 데미지 연출
+
+Header
+{
+	type	0
+
+	effect	0	0.0	0.0	0.0	0.6	"Eff_Dam_01.nif"
+
+	sound	21	8251
+	
+	effect	11	0.0	0.0	0.0	1.0	"Eff_Dam_Weapon1.nif"
+	effect	31	0.0	0.0	0.0	1.0	"Eff_Dam_Weapon3.nif"
+	effect	41	0.0	0.0	0.0	1.0	"Eff_Dam_Weapon4.nif"				
+	effect	51	0.0	0.0	0.0	1.0	"Eff_Dam_Weapon5.nif"	
+}
+
+Apply
+{
+	soundplay	0	21	0
+
+	actionEx	0	0	0	0	0	0	body	0.0	0.0	0.0
+	actionEx	1	0	0	11	0	0	body	0.0	0.0	0.0
+	actionEx	2	0	0	11	0	0	body	0.0	0.0	0.0
+	actionEx	3	0	0	31	0	0	body	0.0	0.0	0.0
+	actionEx	4	0	0	41	0	0	body	0.0	0.0	0.0
+	actionEx	5	0	0	51	0	0	body	0.0	0.0	0.0					
+	actionEx	6	0	0	0	0	0	body	0.0	0.0	0.0
+}

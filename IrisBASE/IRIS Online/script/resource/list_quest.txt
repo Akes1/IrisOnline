@@ -1,0 +1,6 @@
+questlist
+{
+	"Quest_Main.txt"
+	"Quest_Extra.txt"
+	"Quest_Scroll.txt"
+}

@@ -1,0 +1,73 @@
+--==============================================================
+-- TargetWindow : 타겟 창 
+--==============================================================
+window_prop "P_TargetWindow"
+{
+	skinname "TargetWindow"
+}
+
+-- /// 라벨 "타겟이름"
+label_prop "P_TargetName"
+{
+	skinname "TargetName"
+	parent "P_TargetWindow"
+}
+
+-- /// 라벨 "NPC 직업 표시 텍스트"
+label_prop "P_TargetNpcJobText"
+{
+	skinname "TargetNpcJobText"
+	parent "P_TargetWindow"
+}
+
+--- /// 라벨 "타겟레벨"
+label_prop "P_TargetLevel"
+{
+	skinname "TargetLevel"
+	parent "P_TargetWindow"
+}
+
+---/// 라벨 "타겟 직업 이미지"
+label_prop "P_TargetJob"
+{
+	skinname "TargetJob"
+	parent "P_TargetWindow"
+}
+
+---/// 라벨 "타겟 NPC 직업 이미지"
+label_prop "P_TargetNpcJob"
+{
+	skinname "TargetNpcJob"
+	parent "P_TargetWindow"
+}
+
+label_prop "P_TargetParty"
+{
+	skinname "TargetParty"
+	parent "P_TargetWindow"
+}
+
+label_prop "P_TargetOtherParty"
+{
+	skinname "TargetOtherParty"
+	parent "P_TargetWindow"
+}
+
+--==============================================================
+-- TargetWindow : 타겟 HP 게이지 
+--==============================================================
+gauge_prop "P_Target_HP_GuageBar"
+{
+	skinname "Target_HP_GuageBar"
+	parent "P_TargetWindow"
+}
+
+--===============--
+-- 타겟 버프 윈도우 --
+--===============--
+window_prop "P_TargetBuff"
+{
+	skinname "TargetBuff"
+	parent "P_TargetWindow"
+}
+

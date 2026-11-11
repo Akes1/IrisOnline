@@ -1,0 +1,37 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	1.0	"eff_em_2021_06.nif"
+	effect	1	0.0	0.0	0.0	0.8	"eff_m_1038_04.nif"
+	sound	21	30126
+	sound	22	30127
+	sound	23	25014
+	sound	24	25021
+	sound	25	35004
+	sound	26	20009
+}
+
+Casting
+{
+	animation	8
+	action	0	0	1	1	1	foot	0.0	0.0	0.0	
+	soundplay	0	26	1
+}
+
+Activity
+{
+	animation	32
+	action	0	0	0	0	1	foot	0.0	0.0	0.0
+	soundplay	0	21	0
+	soundplay	0	23	0
+	soundplay	750	24	0
+	soundplay	800	22	0
+	active	1200
+}
+
+Apply
+{
+	soundplay	0	25	0
+	damage	0	100
+}
+

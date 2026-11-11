@@ -1,0 +1,205 @@
+//ÀÚ¶ó½º
+Header	
+{
+	effect	1	0	0	0	2	"eff_pc_pvp_1.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+
+	sound	3	10214
+
+	death 20203
+}
+Mode	0
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	480	0
+
+	modechange	13	1	600000	0	0
+	modechange	1	3	85	0	0
+}
+
+Mode	1
+{
+	immune	0
+
+	modechange	13	1	600000	0	0
+	modechange	2	3	50	0	0
+	modechange	1	2	30000	0	0
+
+	aggro
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	2
+{
+	modeimage	"mode_image202.tga"	0	180	0
+
+	applybuff	45653	0
+	applybuff	45654	0
+
+	immune	0
+
+	aggro
+
+	modechange	13	1	600000	0	0
+	modechange	3	2	25000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	3
+{
+	applybuff	45654	0
+
+	immune	0
+
+	modechange	13	1	600000	0	0
+	modechange	4	2	5000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	4
+{
+	applybuff	45653	0
+
+	immune	0
+
+	aggro
+
+	modechange	13	1	600000	0	0
+	modechange	5	2	20000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	5
+{
+	applybuff	45654	0
+
+	immune	0
+
+	modechange	13	1	600000	0	0
+	modechange	6	2	10000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	6
+{
+	applybuff	45653	0
+
+	immune	0
+
+	aggro
+
+	modechange	13	1	600000	0	0
+	modechange	7	2	15000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	7
+{
+	applybuff	45654	0
+
+	immune	0
+
+	modechange	13	1	600000	0	0
+	modechange	8	2	15000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	8
+{
+	applybuff	45653	0
+
+	immune	0
+
+	aggro
+
+	modechange	13	1	600000	0	0
+	modechange	9	2	10000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	9
+{
+	applybuff	45654	0
+
+	immune	0
+
+	modechange	13	1	600000	0	0
+	modechange	10	2	20000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	10
+{
+	applybuff	45653	0
+
+	immune	0
+
+	aggro
+
+	modechange	13	1	600000	0	0
+	modechange	11	2	5000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	11
+{
+	applybuff	45654	0
+
+	immune	0
+
+	modechange	13	1	600000	0	0
+	modechange	12	2	25000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	12
+{
+	applybuff	45653	0
+	applybuff	45654	0
+
+	immune	0
+
+	aggro
+
+	modechange	13	1	600000	0	0
+	modechange	3	2	25000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+Mode	13
+{
+	applyaura	45110	0	10	0
+	applybuff	45653	1
+	applybuff	45654	1
+
+	immune	0
+
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}

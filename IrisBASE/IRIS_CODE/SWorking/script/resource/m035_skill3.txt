@@ -1,0 +1,27 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	1.0	"eff_m_10035_2.nif"
+	effect	1	0.0	0.0	0.0	1.0	"eff_1009_01.nif"
+	sound	21	30036
+	sound	22	5502
+	sound	23	5512
+	sound	24	6522
+}
+
+Activity
+{
+	animation	7
+	action	200	0	1	0	1	foot	0.0	0.0	0.0
+	soundplay	400	21	0
+	soundplay	700	23	0
+	soundplay	700	22	0
+	bullet	900	1	2000.0	0	foot	0.0	0.0	0.0	body
+}
+
+Apply
+{
+	soundplay	0	24	0
+	damage	0	100
+}
+

@@ -1,0 +1,286 @@
+--===============--
+-- 버튼메뉴 윈도우 --
+--===============--
+window_prop "P_MenuButtonWindow"
+{
+	skinname "MenuButtonWindow"
+}
+
+-- 수령함 버튼
+button_prop "P_Button_Receipt"
+{
+	skinname "Button_Receipt"
+	parent "P_MenuButtonWindow"
+}
+
+-- 캐릭터 메뉴버튼
+button_prop "P_Button_Hero"
+{
+	skinname "Button_Hero"
+	parent "P_MenuButtonWindow"
+}
+
+-- 커뮤니티 메뉴버튼
+button_prop "P_Button_Commu"
+{
+	skinname "Button_Commu"
+	parent "P_MenuButtonWindow"
+}
+
+-- 옵션 메뉴버튼
+button_prop "P_Button_Option"
+{
+	skinname "Button_Option"
+	parent "P_MenuButtonWindow"
+}
+
+-- 생활 메뉴버튼
+button_prop "P_Button_Life"
+{
+	skinname "Button_Life"
+	parent "P_MenuButtonWindow"
+}
+
+--트위터 메뉴 버튼
+button_prop "P_Button_Twitter"
+{
+	skinname "Button_Twitter"
+	parent "P_MenuButtonWindow"
+}
+
+
+
+--===============--
+-- 몰 메뉴 	 --
+--===============--
+
+--===============--
+-- 캐릭터 메뉴 --
+--===============--
+window_prop "P_MenuHeroWindow"
+{
+	skinname "MenuHeroWindow"
+}
+
+button_prop "P_MenuHero_Close"
+{
+	skinname "MenuHero_Close"
+	parent "P_MenuHeroWindow"
+}
+
+-- 캐릭터 정보
+button_prop "P_MenuHero_Info"
+{
+	skinname "MenuHero_Info"
+	parent "P_MenuHeroWindow"
+}
+
+-- 인벤토리
+button_prop "P_MenuHero_Inventory"
+{
+	skinname "MenuHero_Inventory"
+	parent "P_MenuHeroWindow"
+}
+
+--button_prop "P_MenuHero_Book"
+--{
+--	skinname "MenuHero_Book"
+--	parent "P_MenuHeroWindow"
+--}
+
+-- 스킬
+button_prop "P_MenuHero_Skill"
+{
+	skinname "MenuHero_Skill"
+	parent "P_MenuHeroWindow"
+}
+
+-- 생활
+button_prop "P_MenuHero_CommunitySkill"
+{
+	skinname "MenuHero_CommunitySkill"
+	parent "P_MenuHeroWindow"
+}
+
+-- 테마던전 관리
+button_prop "P_MenuHero_ThemeState"
+{
+	skinname "MenuHero_ThemeState"
+	parent "P_MenuHeroWindow"
+}
+
+-- 퀘스트
+button_prop "P_MenuHero_Quest"
+{
+	skinname "MenuHero_Quest"
+	parent "P_MenuHeroWindow"
+}
+
+-- 수령함
+--button_prop "P_MenuHero_Receipt"
+--{
+--	skinname "MenuHero_Receipt"
+--	parent "P_MenuHeroWindow"
+--}
+
+
+--===============--
+-- 생활 메뉴 --
+--===============--
+window_prop "P_MenuLifeWindow"
+{
+	skinname "MenuLifeWindow"
+}
+
+button_prop "P_MenuLife_Close"
+{
+	skinname "MenuLife_Close"
+	parent "P_MenuLifeWindow"
+}
+
+-- 강화
+button_prop "P_MenuLife_Enhance"
+{
+	skinname "MenuLife_Enhance"
+	parent "P_MenuLifeWindow"
+}
+
+--카드 장착
+button_prop "P_MenuLife_Putcard"
+{
+	skinname "MenuLife_Putcard"
+	parent "P_MenuLifeWindow"
+}
+
+--타로 점집
+button_prop "P_MenuLife_Tarot"
+{
+	skinname "MenuLife_Tarot"
+	parent "P_MenuLifeWindow"
+}
+
+-- 개인 상점
+button_prop "P_MenuLife_UserSell"
+{
+	skinname "MenuLife_UserSell"
+	parent "P_MenuLifeWindow"
+}
+
+-- 아이템 조합
+button_prop "P_MenuLife_ItemMix"
+{
+	skinname "MenuLife_ItemMix"
+	parent "P_MenuLifeWindow"
+}
+
+-- 호칭
+button_prop "P_MenuLife_Title"
+{
+	skinname "MenuLife_Title"
+	parent "P_MenuLifeWindow"
+}
+
+-- 지도
+button_prop "P_MenuLife_BigMap"
+{
+	skinname "MenuLife_BigMap"
+	parent "P_MenuLifeWindow"
+}
+
+-- 카드 컬렉션북
+button_prop "P_MenuLife_CardBook"
+{
+	skinname "MenuLife_CardBook"
+	parent "P_MenuLifeWindow"
+}
+
+--===============--
+-- 커뮤니티 메뉴 --
+--===============--
+window_prop "P_MenuCommunityWindow"
+{
+	skinname "MenuCommunityWindow"
+}
+
+button_prop "P_MenuCommu_Close"
+{
+	skinname "MenuCommu_Close"
+	parent "P_MenuCommunityWindow"
+}
+
+-- 친구 목록
+button_prop "P_MenuCommu_Friend"
+{
+	skinname "MenuCommu_Friend"
+	parent "P_MenuCommunityWindow"
+}
+
+-- 길드
+button_prop "P_MenuCommu_Guild"
+{
+	skinname "MenuCommu_Guild"
+	parent "P_MenuCommunityWindow"
+}
+
+-- 사회
+button_prop "P_MenuCommu_Social"
+{
+	skinname "MenuCommu_Social"
+	parent "P_MenuCommunityWindow"
+}
+
+--===============--
+-- 옵션 메뉴 --
+--===============--
+window_prop "P_MenuOptionWindow"
+{
+	skinname "MenuOptionWindow"
+}
+
+button_prop "P_MenuOption_Close"
+{
+	skinname "MenuOption_Close"
+	parent "P_MenuOptionWindow"
+}
+
+--button_prop "P_MenuOption_Help"
+--{
+--	skinname "MenuOption_Help"
+--	parent "P_MenuOptionWindow"
+--}
+
+-- 게임 설정
+button_prop "P_MenuOption_Setting"
+{
+	skinname "MenuOption_Setting"
+	parent "P_MenuOptionWindow"
+}
+
+-- 동영상 촬영
+button_prop "P_MenuOption_VideoCapture"
+{
+	skinname "MenuOption_VideoCapture"
+	parent "P_MenuOptionWindow"
+}
+
+-- 캐릭터 변경
+button_prop "P_MenuOption_Change"
+{
+	skinname "MenuOption_Change"
+	parent "P_MenuOptionWindow"
+}
+
+-- 단축키 설정
+button_prop "P_MenuOption_ShortCut"
+{
+	skinname "MenuOption_ShortCut"
+	parent "P_MenuOptionWindow"
+}
+
+-- 게임 종료
+button_prop "P_MenuOption_Exit"
+{
+	skinname "MenuOption_Exit"
+	parent "P_MenuOptionWindow"
+}
+

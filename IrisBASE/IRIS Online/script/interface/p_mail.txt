@@ -1,0 +1,190 @@
+--=================--
+-- 우편 시스템	    --
+--=================--
+tabwindow_prop "P_Mail_Window"
+{
+	skinname "Mail_Window"
+}
+
+button_prop "P_Mail_Close"
+{
+	skinname "Mail_Close"
+	parent "P_Mail_Window"
+}
+
+tabbutton_prop "P_Mail_List"
+{
+	skinname "Mail_List"
+	parent "P_Mail_Window"
+}
+
+tabbutton_prop "P_Mail_Read"
+{
+	skinname "Mail_Read"
+	parent "P_Mail_Window"
+}
+
+tabbutton_prop "P_Mail_Send"
+{
+	skinname "Mail_Send"
+	parent "P_Mail_Window"
+}
+
+tabsheet_prop "P_Mail_ListSheet"
+{
+	skinname "Mail_ListSheet"
+	parent "P_Mail_Window"
+}
+
+tabsheet_prop "P_Mail_ReadSheet"
+{
+	skinname "Mail_ReadSheet"
+	parent "P_Mail_Window"
+}
+
+tabsheet_prop "P_Mail_SendSheet"
+{
+	skinname "Mail_SendSheet"
+	parent "P_Mail_Window"
+}
+
+--=================--
+-- 우편 목록시트   --
+--=================--
+button_prop "P_MailList_All"
+{
+	skinname "MailList_All"
+	parent "P_Mail_ListSheet"
+}
+
+button_prop "P_MailList_Delete"
+{
+	skinname "MailList_Delete"
+	parent "P_Mail_ListSheet"
+}
+
+button_prop "P_MailList_Send"
+{
+	skinname "MailList_Send"
+	parent "P_Mail_ListSheet"
+}
+
+listbox_prop "P_MailList_ListBox"
+{
+	skinname "MailList_ListBox"
+	parent "P_Mail_ListSheet"
+}
+
+spinbox_prop "P_MailList_PageSpin"
+{
+	skinname "MailList_PageSpin"
+	parent "P_Mail_ListSheet"
+}
+
+--=================--
+-- 우편 읽기 시트  --
+--=================--
+button_prop "P_MailRead_List"
+{
+	skinname "MailRead_List"
+	parent "P_Mail_ReadSheet"
+}
+
+button_prop "P_MailRead_Delete"
+{
+	skinname "MailRead_Delete"
+	parent "P_Mail_ReadSheet"
+}
+
+button_prop "P_MailRead_Send"
+{
+	skinname "MailRead_Send"
+	parent "P_Mail_ReadSheet"
+}
+
+label_prop "P_MailRead_Name"
+{
+	skinname "MailRead_Name"
+	parent "P_Mail_ReadSheet"
+}
+
+label_prop "P_MailRead_Time"
+{
+	skinname "MailRead_Time"
+	parent "P_Mail_ReadSheet"
+}
+
+label_prop "P_MailRead_Title"
+{
+	skinname "MailRead_Title"
+	parent "P_Mail_ReadSheet"
+}
+
+textbox_prop "P_MailRead_Text"
+{
+	skinname "MailRead_Text"
+	parent "P_Mail_ReadSheet"
+}
+
+label_prop "P_MailRead_Money"
+{
+	skinname "MailRead_Money"
+	parent "P_Mail_ReadSheet"
+}
+
+button_prop "P_MailRead_GetMoney"
+{
+	skinname "MailRead_GetMoney"
+	parent "P_Mail_ReadSheet"
+}
+
+button_prop "P_MailRead_GetItemAll"
+{
+	skinname "MailRead_GetItemAll"
+	parent "P_Mail_ReadSheet"
+}
+
+--=================--
+-- 우편 쓰기 시트  --
+--=================--
+button_prop "P_MailSend_Send"
+{
+	skinname "MailSend_Send"
+	parent "P_Mail_SendSheet"
+}
+
+editbox_prop "P_MailSend_Name"
+{
+	skinname "MailSend_Name"
+	parent "P_Mail_SendSheet"
+}
+
+editbox_prop "P_MailSend_Title"
+{
+	skinname "MailSend_Title"
+	parent "P_Mail_SendSheet"
+}
+
+multieditbox_prop "P_MailSend_Text"
+{
+	skinname "MailSend_Text"
+	parent "P_Mail_SendSheet"
+}
+
+label_prop "P_MailSend_Money"
+{
+	skinname "MailSend_Money"
+	parent "P_Mail_SendSheet"
+}
+
+label_prop "P_MailSend_Charge"
+{
+	skinname "MailSend_Charge"
+	parent "P_Mail_SendSheet"
+}
+
+button_prop "P_MailSend_AddMoney"
+{
+	skinname "MailSend_AddMoney"
+	parent "P_Mail_SendSheet"
+}

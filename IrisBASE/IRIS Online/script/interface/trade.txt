@@ -1,0 +1,172 @@
+--=============--
+-- 거래 윈도우 --
+--=============--
+window "Trade_Window"
+{
+	ii 5005
+	pos 100 226
+	size 415 293
+	texpos 2 726
+	
+	captionXY 0 0
+	captionWH 415 293
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 닫기
+button "Trade_Close"
+{
+	ii 5002
+	pos 382 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- 거래
+button "Trade_Trade"
+{
+	ii 5005
+	pos 167 248
+	size 82 24
+	texpos 511 560
+
+	uppos 511 560
+	upoverpos 511 586
+	downpos 511 612
+	enablepos 511 534
+	
+	useenable true
+	
+	downsound 3001
+}
+
+
+-- 본인 물품확인 버튼
+pushbutton "Trade_Ok"
+{
+	ii 5005
+	pos 297 248
+	size 82 24
+	texpos 427 560
+	
+	uppos 427 560
+	upoverpos 427 586
+	downpos 427 612
+	downoverpos 427 612
+	enablepos 427 560
+	
+	useenable true
+	
+	downsound 3001
+}
+
+-- 금액
+label "Trade_Money"
+{
+	pos 283 211
+	size 93 15
+	text_align right
+}
+
+-- 본인 아이디
+label "Trade_Name"
+{
+	pos 250 65
+	size 110 14
+	text_align center
+}
+
+-- 금액 입력 버튼
+button "Trade_MoneyButton"
+{
+	ii 5005
+	pos 258 204
+	size 26 26
+	texpos 391 505
+	
+	-- 버튼 그림 좌표 	
+	uppos 391 505
+	upoverpos 418 505
+	downpos 445 505
+
+	downsound 3001
+}
+
+-- 아이콘 : 소스에서 쓰는 스킨
+icon "Trade_MyIcon00"	{ pos 225 101	size 28 28 }
+icon "Trade_MyIcon01"	{ pos 258 101	size 28 28 }
+icon "Trade_MyIcon02"	{ pos 291 101	size 28 28 }
+icon "Trade_MyIcon03"	{ pos 324 101	size 28 28 }
+icon "Trade_MyIcon04"	{ pos 357 101	size 28 28 }
+icon "Trade_MyIcon05"	{ pos 225 134	size 28 28 }
+icon "Trade_MyIcon06"	{ pos 258 134	size 28 28 }
+icon "Trade_MyIcon07"	{ pos 291 134	size 28 28 }
+icon "Trade_MyIcon08"	{ pos 324 134	size 28 28 }
+icon "Trade_MyIcon09"	{ pos 357 134	size 28 28 }
+icon "Trade_MyIcon10"	{ pos 225 167	size 28 28 }
+icon "Trade_MyIcon11"	{ pos 258 167	size 28 28 }
+icon "Trade_MyIcon12"	{ pos 291 167	size 28 28 }
+icon "Trade_MyIcon13"	{ pos 324 167	size 28 28 }
+icon "Trade_MyIcon14"	{ pos 357 167	size 28 28 }
+
+
+-- 상대방 물품확인 버튼
+pushbutton "Trade_ThatOK"
+{
+	ii 5005
+	pos 37 248
+	size 82 24
+	texpos 427 560
+	
+	uppos 427 560
+	upoverpos 427 586
+	downpos 427 612
+	downoverpos 427 612
+	enablepos 427 560
+	
+	useenable true
+	
+	downsound 3001
+}
+
+
+-- 상대방 : 금액 라벨
+label "Trade_ThatMoney"
+{
+	pos 87 211
+	size 93 15
+	text_align right
+}
+
+-- 상대방 아이디
+label "Trade_ThatName"
+{
+	pos 54 65
+	size 110 14
+	text_align center
+}
+
+icon "Trade_ThatIcon00"	{ pos 29 101	size 28 28 }
+icon "Trade_ThatIcon01"	{ pos 62 101	size 28 28 }
+icon "Trade_ThatIcon02"	{ pos 95 101	size 28 28 }
+icon "Trade_ThatIcon03"	{ pos 128 101	size 28 28 }
+icon "Trade_ThatIcon04"	{ pos 161 101	size 28 28 }
+icon "Trade_ThatIcon05"	{ pos 29 134	size 28 28 }
+icon "Trade_ThatIcon06"	{ pos 62 134	size 28 28 }
+icon "Trade_ThatIcon07"	{ pos 95 134	size 28 28 }
+icon "Trade_ThatIcon08"	{ pos 128 134	size 28 28 }
+icon "Trade_ThatIcon09"	{ pos 161 134	size 28 28 }
+icon "Trade_ThatIcon10"	{ pos 29 167	size 28 28 }
+icon "Trade_ThatIcon11"	{ pos 62 167	size 28 28 }
+icon "Trade_ThatIcon12"	{ pos 95 167	size 28 28 }
+icon "Trade_ThatIcon13"	{ pos 128 167	size 28 28 }
+icon "Trade_ThatIcon14"	{ pos 161 167	size 28 28 }

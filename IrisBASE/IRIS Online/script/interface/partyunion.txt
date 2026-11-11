@@ -1,0 +1,157 @@
+--===============--
+-- 연합 드래그 윈도우 --
+--===============--
+window "UnionDrag_Window"
+{
+	pos 0 0
+	size 135 44
+
+	opensound 3024
+	closesound 3024
+}
+
+-- 소스에서 직접 쓰는 스킨
+icon "UnionDrag_Icon"
+{
+	ii 5007 
+	pos 0 0
+	size 135 44
+	texpos 538 345
+}
+
+--=================--
+-- 파티 연합 시스템 --
+--=================--
+window "PartyUnion_Window"
+{
+	ii 5007
+	pos 600 300
+	size 423 337
+	texpos 388 2
+	
+	holdview true
+
+	captionXY 0 0 
+	captionWH 423 337
+}
+
+-- 접기 버튼
+button "PartyUnion_Small"
+{
+	ii 5007
+	pos 392 8
+	size 19 19
+	texpos 416 343
+	
+	-- 버튼 그림 좌표 	
+	uppos 416 343
+	upoverpos 438 343
+	downpos 460 343
+
+	downsound 3001
+}
+
+-- 소스에서 사용하는 스킨
+-- 연합장 표시
+label "PartyUnion_Leader"
+{
+	ii 5007
+	pos 0 0
+	size 24 24
+	texpos 388 341
+}
+
+-- 소스에서 사용하는 스킨
+-- 선택 표시
+label "PartyUnion_Select"
+{
+	ii 5007
+	pos 0 0
+	size 135 44
+	texpos 676 344
+}
+
+-- /// 이미지 - 전장에서 수장 표시
+-- 소스에서 직접 쓰는 스킨
+label "PartyUnion_PvpLeader"
+{
+	ii 5007
+	pos 0 0
+	size 24 24
+	texpos 388 366
+}
+
+-- /// 이미지 - 전장에서 수장 표시
+-- 소스에서 직접 쓰는 스킨
+label "PartyUnion_FlagPlayer"
+{
+	ii 5007
+	pos 0 0
+	size 24 24
+	texpos 483 359
+}
+-- 소스에서 사용하는 스킨
+-- HP 게이지 이미지
+-- 사이즈는 소스 내부에 있음
+label "PartyUnion_Gauge"
+{
+	ii 5007
+	pos 10 29
+	size 2 7
+	texpos 519 995
+}
+
+
+-- 소스에서 사용하는 스킨
+-- 정보 아이콘
+icon "PartyUnion_Slot00"	{ ii 5007 pos 7 58    size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot01"	{ ii 5007 pos 7 104    size 135 44 texpos 538 344 }  
+icon "PartyUnion_Slot02"	{ ii 5007 pos 7 150   size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot03"	{ ii 5007 pos 7 196   size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot04"	{ ii 5007 pos 7 242   size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot05"	{ ii 5007 pos 7 288   size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot06"	{ ii 5007 pos 144 58  size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot07"	{ ii 5007 pos 144 104  size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot08"	{ ii 5007 pos 144 150 size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot09"	{ ii 5007 pos 144 196 size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot10"	{ ii 5007 pos 144 242 size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot11"	{ ii 5007 pos 144 288 size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot12"	{ ii 5007 pos 281 58  size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot13"	{ ii 5007 pos 281 104  size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot14"	{ ii 5007 pos 281 150 size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot15"	{ ii 5007 pos 281 196 size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot16"	{ ii 5007 pos 281 242 size 135 44 texpos 538 344 } 
+icon "PartyUnion_Slot17"	{ ii 5007 pos 281 288 size 135 44 texpos 538 344 } 
+
+
+--=================--
+-- 파티 연합 시스템- 접기 윈도우 --
+--=================--
+window "PartyUnionSmall_Window"
+{
+	ii 5007
+	pos 600 300
+	size 146 33
+	texpos 814 2
+	
+	holdview true
+
+	captionXY 0 0 
+	captionWH 146 33
+}
+
+-- 키우기 버튼
+button "PartyUnionSmall_Large"
+{
+	ii 5007
+	pos 112 8
+	size 19 19
+	texpos 416 365	
+	
+	-- 버튼 그림 좌표 	
+	uppos 416 365
+	upoverpos 438 365
+	downpos 460 365
+
+	downsound 3001
+}

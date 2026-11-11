@@ -1,0 +1,56 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Patcher", "Patcher.vcproj", "{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F} = {2438EFE1-CA35-4F64-9EA7-60C6002D466F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HttpDownLoader", "..\HttpDownLoader\HttpDownLoader.vcproj", "{2438EFE1-CA35-4F64-9EA7-60C6002D466F}"
+EndProject
+Global
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectName0 = Perforce\u0020Project
+		SccLocalPath0 = ..
+		SccProvider0 = MSSCCI:Perforce\u0020SCM
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection0 = Patcher\\
+		SccProjectUniqueName1 = Patcher.vcproj
+		SccLocalPath1 = ..
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection1 = Patcher\\
+		SccProjectUniqueName2 = ..\\HttpDownLoader\\HttpDownLoader.vcproj
+		SccLocalPath2 = ..\\HttpDownLoader
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release_DEV|Win32 = Release_DEV|Win32
+		Release|Win32 = Release|Win32
+		ReleaseTEST|Win32 = ReleaseTEST|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}.Debug|Win32.Build.0 = Debug|Win32
+		{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}.Release_DEV|Win32.ActiveCfg = Release_DEV|Win32
+		{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}.Release_DEV|Win32.Build.0 = Release_DEV|Win32
+		{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}.Release|Win32.ActiveCfg = Release|Win32
+		{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}.Release|Win32.Build.0 = Release|Win32
+		{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}.ReleaseTEST|Win32.ActiveCfg = ReleaseTEST|Win32
+		{EBEFA72E-69B9-4EAC-8A29-BDEC1792220C}.ReleaseTEST|Win32.Build.0 = ReleaseTEST|Win32
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F}.Debug|Win32.Build.0 = Debug|Win32
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F}.Release_DEV|Win32.ActiveCfg = Release|Win32
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F}.Release_DEV|Win32.Build.0 = Release|Win32
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F}.Release|Win32.ActiveCfg = Release|Win32
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F}.Release|Win32.Build.0 = Release|Win32
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F}.ReleaseTEST|Win32.ActiveCfg = Release|Win32
+		{2438EFE1-CA35-4F64-9EA7-60C6002D466F}.ReleaseTEST|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

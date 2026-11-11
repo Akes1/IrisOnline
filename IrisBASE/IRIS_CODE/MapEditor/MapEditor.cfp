@@ -1,0 +1,1697 @@
+<Project version="3.0">
+<Name>MapEditor</Name>
+<Type>GUI</Type>
+<TargetName>MapEditor</TargetName>
+<TargetType>EXE</TargetType>
+<Folder name="Application">
+	<File>Lines.cpp</File>
+	<File>Lines.h</File>
+	<Folder name="Terrain">
+		<File>TerrainBuildDialog.cpp</File>
+		<File>TerrainBuildDialog.h</File>
+		<File>TerrainDialog.cpp</File>
+		<File>TerrainDialog.h</File>
+		<File>TerrainEditor.cpp</File>
+		<File>TerrainEditor.h</File>
+		<File>TerrainEditor_Log.cpp</File>
+		<File>TerrainImportDialog.cpp</File>
+		<File>TerrainImportDialog.h</File>
+		<File>TerrainInfoDialog.cpp</File>
+		<File>TerrainInfoDialog.h</File>
+		<File>TerrainInitDialog.cpp</File>
+		<File>TerrainInitDialog.h</File>
+		<File>TerrainOptionDialog.cpp</File>
+		<File>TerrainOptionDialog.h</File>
+		<File>TerrainPaintDialog.cpp</File>
+		<File>TerrainPaintDialog.h</File>
+		<File>TerrainScaleZDialog.cpp</File>
+		<File>TerrainScaleZDialog.h</File>
+	</Folder>
+	<Folder name="Object">
+		<File>ObjectDialog.cpp</File>
+		<File>ObjectDialog.h</File>
+		<File>ObjectEditor.cpp</File>
+		<File>ObjectEditor.h</File>
+		<File>ObjectEditor_Copy.cpp</File>
+		<File>ObjectEditor_Create.cpp</File>
+		<File>ObjectEditor_Delete.cpp</File>
+		<File>ObjectEditor_Log.cpp</File>
+		<File>ObjectEditor_Property.cpp</File>
+		<File>ObjectEditor_Select.cpp</File>
+		<File>ObjectEditor_Transform.cpp</File>
+		<File>ObjectInfoDialog.cpp</File>
+		<File>ObjectInfoDialog.h</File>
+		<File>ObjectPropertyDialog.cpp</File>
+		<File>ObjectPropertyDialog.h</File>
+		<File>ObjectScaleDialog.cpp</File>
+		<File>ObjectScaleDialog.h</File>
+		<File>ObjectTransformDialog.cpp</File>
+		<File>ObjectTransformDialog.h</File>
+	</Folder>
+	<Folder name="UI">
+		<File>UI\Button.cpp</File>
+		<File>UI\Button.h</File>
+		<File>UI\CheckButton.cpp</File>
+		<File>UI\CheckButton.h</File>
+		<File>UI\CheckButtonGroup.cpp</File>
+		<File>UI\CheckButtonGroup.h</File>
+		<File>UI\ColorBox.cpp</File>
+		<File>UI\ColorBox.h</File>
+		<File>UI\ColorBoxGroup.cpp</File>
+		<File>UI\ColorBoxGroup.h</File>
+		<File>UI\Dialog.h</File>
+		<File>UI\FileTreeCtrl.cpp</File>
+		<File>UI\FileTreeCtrl.h</File>
+		<File>UI\ImageButton.cpp</File>
+		<File>UI\ImageButton.h</File>
+		<File>UI\ImageButtonGroup.cpp</File>
+		<File>UI\ImageButtonGroup.h</File>
+		<File>UI\NumericEdit.cpp</File>
+		<File>UI\NumericEdit.h</File>
+		<File>UI\RollupWindow.cpp</File>
+		<File>UI\RollupWindow.h</File>
+		<File>UI\TabButton.cpp</File>
+		<File>UI\TabButton.h</File>
+		<File>UI\TabButtonGroup.cpp</File>
+		<File>UI\TabButtonGroup.h</File>
+	</Folder>
+	<Folder name="Main">
+		<File>ExplorerFileTreeCtrl.cpp</File>
+		<File>ExplorerFileTreeCtrl.h</File>
+		<File>ExplorerWindow.cpp</File>
+		<File>ExplorerWindow.h</File>
+		<File>MainFrame.cpp</File>
+		<File>MainFrame.h</File>
+		<File>MapEditorApp.cpp</File>
+		<File>MapEditorApp.h</File>
+		<File>MapEditorView.cpp</File>
+		<File>MapEditorView.h</File>
+		<File>MapEditorView_Log.cpp</File>
+		<File>stdafx.cpp</File>
+		<File>stdafx.h</File>
+		<File>TabWindow.cpp</File>
+		<File>TabWindow.h</File>
+	</Folder>
+	<Folder name="Doing">
+		<File>Doing\Doing.h</File>
+		<File>Doing\DoingManager.cpp</File>
+		<File>Doing\DoingManager.h</File>
+		<File>Doing\NaviFieldPainting.cpp</File>
+		<File>Doing\NaviFieldPainting.h</File>
+		<File>Doing\NaviMeshBuilding.cpp</File>
+		<File>Doing\NaviMeshBuilding.h</File>
+		<File>Doing\ObjectCopying.cpp</File>
+		<File>Doing\ObjectCopying.h</File>
+		<File>Doing\ObjectCreating.cpp</File>
+		<File>Doing\ObjectCreating.h</File>
+		<File>Doing\ObjectDeleting.cpp</File>
+		<File>Doing\ObjectDeleting.h</File>
+		<File>Doing\ObjectSelecting.cpp</File>
+		<File>Doing\ObjectSelecting.h</File>
+		<File>Doing\ObjectTransforming.cpp</File>
+		<File>Doing\ObjectTransforming.h</File>
+		<File>Doing\TerrainBuilding.cpp</File>
+		<File>Doing\TerrainBuilding.h</File>
+		<File>Doing\TerrainDetailing.cpp</File>
+		<File>Doing\TerrainDetailing.h</File>
+		<File>Doing\TerrainPainting.cpp</File>
+		<File>Doing\TerrainPainting.h</File>
+	</Folder>
+	<Folder name="NaviMesh">
+		<File>NaviMeshBuildDialog.cpp</File>
+		<File>NaviMeshBuildDialog.h</File>
+		<File>NaviMeshDialog.cpp</File>
+		<File>NaviMeshDialog.h</File>
+		<File>NaviMeshEditor.cpp</File>
+		<File>NaviMeshEditor.h</File>
+	</Folder>
+	<Folder name="NaviField">
+		<File>NaviFieldBuildDialog.cpp</File>
+		<File>NaviFieldBuildDialog.h</File>
+		<File>NaviFieldDialog.cpp</File>
+		<File>NaviFieldDialog.h</File>
+		<File>NaviFieldEditor.cpp</File>
+		<File>NaviFieldEditor.h</File>
+		<File>NaviFieldInfoDialog.cpp</File>
+		<File>NaviFieldInfoDialog.h</File>
+		<File>NaviFieldPaintDialog.cpp</File>
+		<File>NaviFieldPaintDialog.h</File>
+	</Folder>
+	<Folder name="Area">
+		<File>AreaDialog.cpp</File>
+		<File>AreaDialog.h</File>
+		<File>AreaEditor.cpp</File>
+		<File>AreaEditor.h</File>
+		<File>AreaEtcDialog.cpp</File>
+		<File>AreaEtcDialog.h</File>
+		<File>AreaFogDialog.cpp</File>
+		<File>AreaFogDialog.h</File>
+		<File>AreaLightDialog.cpp</File>
+		<File>AreaLightDialog.h</File>
+		<File>AreaTransformDialog.cpp</File>
+		<File>AreaTransformDialog.h</File>
+	</Folder>
+	<Folder name="Light">
+		<File>LightDialog.cpp</File>
+		<File>LightDialog.h</File>
+		<File>LightEditor.cpp</File>
+		<File>LightEditor.h</File>
+		<File>LightInfoDialog.cpp</File>
+		<File>LightInfoDialog.h</File>
+		<File>LightPropertyDialog.cpp</File>
+		<File>LightPropertyDialog.h</File>
+		<File>LightTransformDialog.cpp</File>
+		<File>LightTransformDialog.h</File>
+	</Folder>
+	<Folder name="Hero">
+		<File>Hero.cpp</File>
+		<File>Hero.h</File>
+	</Folder>
+	<Folder name="Sound">
+		<File>SoundDialog.cpp</File>
+		<File>SoundDialog.h</File>
+		<File>SoundEditor.cpp</File>
+		<File>SoundEditor.h</File>
+		<File>SoundInfoDialog.cpp</File>
+		<File>SoundInfoDialog.h</File>
+		<File>SoundPropertyDialog.cpp</File>
+		<File>SoundPropertyDialog.h</File>
+		<File>SoundTransformDialog.cpp</File>
+		<File>SoundTransformDialog.h</File>
+	</Folder>
+	<Folder name="Log">
+		<File>LogDialog.cpp</File>
+		<File>LogDialog.h</File>
+		<File>StringTable.cpp</File>
+		<File>StringTable.h</File>
+	</Folder>
+	<Folder name="Setting">
+		<File>SettingControlDialog.cpp</File>
+		<File>SettingControlDialog.h</File>
+		<File>SettingDialog.cpp</File>
+		<File>SettingDialog.h</File>
+		<File>SettingViewDialog.cpp</File>
+		<File>SettingViewDialog.h</File>
+	</Folder>
+	<Folder name="Environment">
+		<File>EnvCameraDialog.cpp</File>
+		<File>EnvCameraDialog.h</File>
+		<File>EnvDialog.cpp</File>
+		<File>EnvDialog.h</File>
+		<File>EnvDirLightDialog.cpp</File>
+		<File>EnvDirLightDialog.h</File>
+		<File>EnvEditor.cpp</File>
+		<File>EnvEditor.h</File>
+		<File>EnvLevelDistanceDialog.cpp</File>
+		<File>EnvLevelDistanceDialog.h</File>
+		<File>EnvSkyDialog.cpp</File>
+		<File>EnvSkyDialog.h</File>
+	</Folder>
+	<Folder name="Resource">
+		<File>res\MapEditor.ico</File>
+		<File>res\MapEditor.manifest</File>
+		<File>MapEditor.rc</File>
+		<File>res\MapEditor.rc2</File>
+		<File>Resource.h</File>
+		<File>res\Toolbar.bmp</File>
+	</Folder>
+</Folder>
+<Folder name="Engine">
+	<Folder name="Scene">
+		<File>Engine\ActorManagerForPartition.cpp</File>
+		<File>Engine\ActorManagerForPartition.h</File>
+		<File>Engine\ActorManagerForPartition.inl</File>
+		<File>Engine\AreaGroup.cpp</File>
+		<File>Engine\AreaGroup.h</File>
+		<File>Engine\AreaSceneNode.cpp</File>
+		<File>Engine\AreaSceneNode.h</File>
+		<File>Engine\DynamicSceneNode.cpp</File>
+		<File>Engine\DynamicSceneNode.h</File>
+		<File>Engine\GatheringSceneNode.cpp</File>
+		<File>Engine\GatheringSceneNode.h</File>
+		<File>Engine\LightSceneNode.cpp</File>
+		<File>Engine\LightSceneNode.h</File>
+		<File>Engine\MaterialData.h</File>
+		<File>Engine\ModelInstance.cpp</File>
+		<File>Engine\ModelInstance.h</File>
+		<File>Engine\MonsterSceneNode.cpp</File>
+		<File>Engine\MonsterSceneNode.h</File>
+		<File>Engine\NifAnimationInfo.cpp</File>
+		<File>Engine\NifAnimationInfo.h</File>
+		<File>Engine\NpcSceneNode.cpp</File>
+		<File>Engine\NpcSceneNode.h</File>
+		<File>PatternSceneNode.cpp</File>
+		<File>PatternSceneNode.h</File>
+		<File>Engine\PlayerSceneNode.cpp</File>
+		<File>Engine\PlayerSceneNode.h</File>
+		<File>Engine\PortalSceneNode.cpp</File>
+		<File>Engine\PortalSceneNode.h</File>
+		<File>Engine\SceneManager.cpp</File>
+		<File>Engine\SceneManager.h</File>
+		<File>Engine\SceneManager_Load.cpp</File>
+		<File>Engine\SceneNode.cpp</File>
+		<File>Engine\SceneNode.h</File>
+		<File>Engine\SceneTree.cpp</File>
+		<File>Engine\SceneTree.h</File>
+		<File>Engine\SoundSceneNode.cpp</File>
+		<File>Engine\SoundSceneNode.h</File>
+		<File>Engine\StaticSceneNode.cpp</File>
+		<File>Engine\StaticSceneNode.h</File>
+		<File>Engine\VisibleArray.h</File>
+		<File>Engine\VisibleArraySorter.cpp</File>
+		<File>Engine\VisibleArraySorter.h</File>
+	</Folder>
+	<Folder name="Resource">
+		<File>Engine\KFMTool.cpp</File>
+		<File>Engine\KFMTool.h</File>
+		<File>Engine\ResourceManager.cpp</File>
+		<File>Engine\ResourceManager.h</File>
+		<File>Engine\TexturePalette.cpp</File>
+		<File>Engine\TexturePalette.h</File>
+	</Folder>
+	<Folder name="Object">
+		<File>Engine\Object.cpp</File>
+		<File>Engine\Object.h</File>
+		<File>Engine\ObjectManager.cpp</File>
+		<File>Engine\ObjectManager.h</File>
+	</Folder>
+	<Folder name="Render">
+		<File>Engine\Renderer.cpp</File>
+		<File>Engine\Renderer.h</File>
+		<File>Engine\RenderSystem.cpp</File>
+		<File>Engine\RenderSystem.h</File>
+		<File>Engine\Shader.cpp</File>
+		<File>Engine\Shader.h</File>
+	</Folder>
+	<Folder name="Camera">
+		<File>Engine\Camera.cpp</File>
+		<File>Engine\Camera.h</File>
+		<File>Engine\CameraManager.cpp</File>
+		<File>Engine\CameraManager.h</File>
+		<File>Engine\FreeCamera.cpp</File>
+		<File>Engine\FreeCamera.h</File>
+		<File>Engine\LookAtCamera.cpp</File>
+		<File>Engine\LookAtCamera.h</File>
+	</Folder>
+	<Folder name="Framework">
+		<File>Engine\Application.cpp</File>
+		<File>Engine\Application.h</File>
+		<File>Engine\AppTimer.cpp</File>
+		<File>Engine\AppTimer.h</File>
+		<File>Engine\AppWindow.cpp</File>
+		<File>Engine\AppWindow.h</File>
+		<File>Engine\EngineFile.cpp</File>
+		<File>Engine\EngineFile.h</File>
+		<File>Engine\FilePackSystem.cpp</File>
+		<File>Engine\FilePackSystem.h</File>
+		<File>Engine\ImageReader.cpp</File>
+		<File>Engine\ImageReader.h</File>
+		<File>Engine\Stream.h</File>
+	</Folder>
+	<Folder name="World">
+		<File>Engine\WorldManager.cpp</File>
+		<File>Engine\WorldManager.h</File>
+	</Folder>
+	<Folder name="Terrain">
+		<File>HeightMap.cpp</File>
+		<File>HeightMap.h</File>
+		<File>Engine\Terrain.cpp</File>
+		<File>Engine\Terrain.h</File>
+		<File>Engine\Terrain_Build.cpp</File>
+		<File>Engine\Terrain_Detail.cpp</File>
+		<File>Engine\Terrain_Load.cpp</File>
+		<File>Engine\Terrain_Paint.cpp</File>
+		<File>Engine\Terrain_Save.cpp</File>
+		<File>Engine\TerrainNode.cpp</File>
+		<File>Engine\TerrainNode.h</File>
+		<File>Engine\TerrainNode_Build.cpp</File>
+		<File>Engine\TerrainNode_Cull.cpp</File>
+		<File>Engine\TerrainNode_Detail.cpp</File>
+		<File>Engine\TerrainNode_Load.cpp</File>
+		<File>Engine\TerrainNode_Paint.cpp</File>
+		<File>Engine\TerrainNode_Save.cpp</File>
+	</Folder>
+	<Folder name="Input">
+		<File>Engine\InputSystem.cpp</File>
+		<File>Engine\InputSystem.h</File>
+		<File>Engine\KeyAgent.cpp</File>
+		<File>Engine\KeyAgent.h</File>
+		<File>Engine\KeyCode.h</File>
+		<File>Engine\MouseAgent.cpp</File>
+		<File>Engine\MouseAgent.h</File>
+	</Folder>
+	<Folder name="Math">
+		<File>Engine\Box.cpp</File>
+		<File>Engine\Box.h</File>
+		<File>Engine\Ray.cpp</File>
+		<File>Engine\Ray.h</File>
+		<File>Engine\Sphere.cpp</File>
+		<File>Engine\Sphere.h</File>
+	</Folder>
+	<Folder name="NaviMesh">
+		<File>Engine\NaviMesh.cpp</File>
+		<File>Engine\NaviMesh.h</File>
+		<File>Engine\NaviMesh_Build.cpp</File>
+		<File>Engine\NaviMesh_Load.cpp</File>
+		<File>Engine\NaviMesh_Save.cpp</File>
+		<File>Engine\NaviMeshNode.cpp</File>
+		<File>Engine\NaviMeshNode.h</File>
+		<File>Engine\NaviMeshNode_Build.cpp</File>
+		<File>Engine\NaviMeshNode_Cull.cpp</File>
+		<File>Engine\NaviMeshNode_Load.cpp</File>
+		<File>Engine\NaviMeshNode_Save.cpp</File>
+	</Folder>
+	<Folder name="NaviField">
+		<File>Engine\NaviField.cpp</File>
+		<File>Engine\NaviField.h</File>
+		<File>Engine\NaviField_Load.cpp</File>
+		<File>Engine\NaviField_Paint.cpp</File>
+		<File>Engine\NaviField_Save.cpp</File>
+		<File>Engine\NaviFieldNode.cpp</File>
+		<File>Engine\NaviFieldNode.h</File>
+		<File>Engine\NaviFieldNode_Cull.cpp</File>
+		<File>Engine\NaviFieldNode_Paint.cpp</File>
+	</Folder>
+	<Folder name="Sound">
+		<File>Engine\SoundSystem.cpp</File>
+		<File>Engine\SoundSystem.h</File>
+	</Folder>
+	<Folder name="UI">
+		<File>Engine\UIImage.cpp</File>
+		<File>Engine\UIImage.h</File>
+	</Folder>
+	<Folder name="Geometry">
+		<File>Engine\ShadowGeometry.cpp</File>
+		<File>Engine\ShadowGeometry.h</File>
+		<File>Engine\TrailGeometry.cpp</File>
+		<File>Engine\TrailGeometry.h</File>
+	</Folder>
+	<Folder name="PathFinder">
+		<File>Engine\PathFinder.cpp</File>
+		<File>Engine\PathFinder.h</File>
+	</Folder>
+</Folder>
+<Folder name="Util">
+	<File>..\Util\Console.cpp</File>
+	<File>..\Util\Console.h</File>
+	<File>..\Util\File.cpp</File>
+	<File>..\Util\File.h</File>
+	<File>..\Util\FileLoader.cpp</File>
+	<File>..\Util\FileLoader.h</File>
+	<File>..\Util\FilePack.cpp</File>
+	<File>..\Util\FilePack.h</File>
+	<File>..\Util\FileSaver.cpp</File>
+	<File>..\Util\FileSaver.h</File>
+	<File>..\Util\FileSystem.cpp</File>
+	<File>..\Util\FileSystem.h</File>
+	<File>..\Util\MemFile.cpp</File>
+	<File>..\Util\MemFile.h</File>
+	<File>..\Util\TargaImage.cpp</File>
+	<File>..\Util\TargaImage.h</File>
+	<File>..\Util\Tokenizer.h</File>
+</Folder>
+<Folder name="STL">
+	<File>..\Util\STL\Algorithm.h</File>
+	<File>..\Util\STL\Array.h</File>
+	<File>..\Util\STL\Array.inl</File>
+	<File>..\Util\STL\BasicString.h</File>
+	<File>..\Util\STL\BasicString.inl</File>
+	<File>..\Util\STL\Functor.h</File>
+	<File>..\Util\STL\Hasher.h</File>
+	<File>..\Util\STL\HashMap.h</File>
+	<File>..\Util\STL\HashMap.inl</File>
+	<File>..\Util\STL\HashSet.h</File>
+	<File>..\Util\STL\HashSet.inl</File>
+	<File>..\Util\STL\List.h</File>
+	<File>..\Util\STL\List.inl</File>
+	<File>..\Util\STL\Map.h</File>
+	<File>..\Util\STL\Map.inl</File>
+	<File>..\Util\STL\PointerHashMap.h</File>
+	<File>..\Util\STL\PointerHashMap.inl</File>
+	<File>..\Util\STL\PointerList.h</File>
+	<File>..\Util\STL\PointerList.inl</File>
+	<File>..\Util\STL\PriorityQueue.h</File>
+	<File>..\Util\STL\Set.h</File>
+	<File>..\Util\STL\Set.inl</File>
+</Folder>
+<FolderState>11111111111111111111111111111111111</FolderState>
+<DefConfig>Debug|Win32</DefConfig>
+<Builder name="Debug|Win32" type="Microsoft Visual Studio" version="1.0">
+	<TargetName>MapEditor</TargetName>
+	<TargetType>LIB</TargetType>
+	<TargetDir>../cworking</TargetDir>
+	<InterimDir>Debug</InterimDir>
+	<IncPaths>
+		<Path>D:\IRIS\Main_Dev\ZipArchive</Path>
+		<Path>D:\IRIS\Main_Dev\Util\STL</Path>
+		<Path>D:\IRIS\Main_Dev\Util</Path>
+		<Path>"$(EGB_PATH)\sdk\Win32\Include"</Path>
+		<Pattern>*\Microsoft SDK\Include</Pattern>
+		<Pattern>*\VC\Include</Pattern>
+		<Pattern>*\VC\atlmfc\Include</Pattern>
+		<Pattern>*\VC\PlatformSDK\Include</Pattern>
+		<Pattern>*\VC7\Include</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Include</Pattern>
+		<Pattern>*\Vc7\atlmfc\include</Pattern>
+		<Pattern>*\v6.0A\Include</Pattern>
+	</IncPaths>
+	<LibPaths>
+		<Path>..\Lib</Path>
+		<Path>"$(EGB_PATH)\SDK\Win32\Lib\VC80\DebugLib"</Path>
+		<Pattern>*\Microsoft SDK\Lib</Pattern>
+		<Pattern>*\VC\Lib</Pattern>
+		<Pattern>*\VC\atlmfc\Lib</Pattern>
+		<Pattern>*\VC\PlatformSDK\Lib</Pattern>
+		<Pattern>*\VC7\Lib</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Lib</Pattern>
+		<Pattern>*\Vc7\atlmfc\lib</Pattern>
+		<Pattern>*\v6.0A\Lib</Pattern>
+	</LibPaths>
+	<ExePaths>
+		<Path>C:\Program Files (x86)\Microsoft Visual Studio 8\VC\bin\x86_amd64\</Path>
+		<Pattern>*\Microsoft SDK\Bin</Pattern>
+		<Pattern>*\VC\Bin</Pattern>
+		<Pattern>*\VC\PlatformSDK\Bin</Pattern>
+		<Pattern>*\VC7\Bin</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Bin</Pattern>
+		<Pattern>*\v6.0A\bin</Pattern>
+		<Pattern>*\Debugging Tools for Windows (x86)</Pattern>
+	</ExePaths>
+	<AutoDetect>
+		<Path>C:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>C:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>D:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>E:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>F:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>G:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>C:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>D:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>E:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>F:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>G:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>C:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>C:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>C:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>D:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>E:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>F:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>G:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{CB531F9D-A8AC-3E26-8B8E-DC50A9B1627B}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.0A|InstallationFolder</Reg>
+		<Reg>\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.0|InstallationFolder</Reg>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{80610804-8B7A-4753-80AA-ECB5510944C7}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F05F0804-8517-4564-81F8-6732D0281B57}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Win32SDK\Directories|Install Dir</Reg>
+		<Reg>\SOFTWARE\Microsoft\MicrosoftSDK\InstalledSDKs\D2FF9F89-8AA2-4373-8A31-C838BF4DBBE1|Install Dir</Reg>
+	</AutoDetect>
+	<CompilerOptions>
+		<Category name="Code Generation">
+			<Option value="/G3" desc="Optimize for 80386 [/G3]"/>
+			<Option value="/G4" desc="Optimize for 80486 [/G4]"/>
+			<Option value="/G5" desc="Optimize for Pentium [/G5]"/>
+			<Option value="/G6" desc="Optimize for PPro, P-II, P-III [/G6]"/>
+			<Option value="/G7" desc="Optimize for Pentium 4 or Athlon [/G7]"/>
+			<Option value="/GA" desc="Optimize for Windows Application [/GA]"/>
+			<Option value="/GR" desc="Enable run-time type information (RTTI) [/GR]"/>
+			<Option value="/EHsc" desc="Enable synchronous exception handling [/EHsc]"/>
+		</Category>
+		<Category name="Debugging">
+			<Option value="/Zi" desc="Generates complete debugging information [/Zi]"/>
+			<Option value="/ZI" desc="Enable Edit and Continue debug info [/ZI]"/>
+		</Category>
+		<Category name="Warnings">
+			<Option value="/Wall" desc="Enable all warnings [/Wall]"/>
+			<Option value="/WX" desc="Treat warnings as errors [/WX]"/>
+			<Option value="/W1" desc="Enable warnings level 1 [/W1]"/>
+			<Option value="/W2" desc="Enable warnings level 2 [/W2]"/>
+			<Option value="/W3" desc="Enable warnings level 3 [/W3]"/>
+			<Option value="/W4" desc="Enable warnings level 4 [/W4]"/>
+		</Category>
+		<Category name="Optimization">
+			<Option value="/O1" desc="Create small code [/O1]"/>
+			<Option value="/O2" desc="Create fast code [/O2]"/>
+			<Option value="/Og" desc="Use global optimizations [/Og]"/>
+			<Option value="/Ox" desc="Use maximum optimization (/Ob2gity /Gs) [/Ox]"/>
+			<Option value="/Od" desc="Disable optimization [/Od]"/>
+			<Option value="/Os" desc="Favors small code [/Os]"/>
+			<Option value="/Ot" desc="Favors fast code [/Ot]"/>
+		</Category>
+		<RawOptionsDebug enabled="1">
+			<Default>/EHsc /W3 /Zi /Od /D &quot;DEBUG&quot;</Default>
+			<User>/EHsc /D &quot;_AFXDLL&quot; /D &quot;WIN32&quot; /D &quot;_DEBUG&quot; /D &quot;STRICT&quot; /D &quot;NIDEBUG&quot; /D &quot;MAP_EDITOR&quot; /Od /RTC1 /MDd /W4 /Zi /WX /Zc:wchar_t-</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default>/EHsc /W3 /O2</Default>
+			<User>/EHsc /D &quot;_AFXDLL&quot; /D &quot;WIN32&quot; /D &quot;_DEBUG&quot; /D &quot;STRICT&quot; /D &quot;NIDEBUG&quot; /D &quot;MAP_EDITOR&quot; /Od /RTC1 /MDd /W4 /Zi /WX /Zc:wchar_t-</User>
+		</RawOptionsRelease>
+	</CompilerOptions>
+	<LinkerOptions>
+		<LibsDebug enabled="1">
+			<Default>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</Default>
+			<User>
+			</User>
+		</LibsDebug>
+		<LibsRelease enabled="0">
+			<Default>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</Default>
+			<User>
+			</User>
+		</LibsRelease>
+		<RawOptionsDebug enabled="1">
+			<Default>/DEBUG</Default>
+			<User>/DEBUG /INCREMENTAL /DEBUG /MACHINE:X86 /ENTRY:&quot;WinMainCRTStartup&quot; NIFloodgate.lib NiSystem.lib NiMain.lib NiAnimation.lib NiCollision.lib NiParticle.lib NiMesh.lib NiDX9Renderer.lib NiMilesAudio.lib NiFont.lib Winmm.lib Version.lib ZipArchive_dm.lib dxguid.lib dinput8.lib mss32.lib</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default></Default>
+			<User>/INCREMENTAL /DEBUG /MACHINE:X86 /ENTRY:&quot;WinMainCRTStartup&quot; NIFloodgate.lib NiSystem.lib NiMain.lib NiAnimation.lib NiCollision.lib NiParticle.lib NiMesh.lib NiDX9Renderer.lib NiMilesAudio.lib NiFont.lib Winmm.lib Version.lib ZipArchive_dm.lib dxguid.lib dinput8.lib mss32.lib</User>
+		</RawOptionsRelease>
+	</LinkerOptions>
+	<Configs>
+		<BuildLog enabled="0">$(CFRoot)\Build.log</BuildLog>
+		<LibExt>lib;a</LibExt>
+		<ObjExt>o;obj</ObjExt>
+		<ResExt>res</ResExt>
+	</Configs>
+	<Commands msghandler="Vc.mhr">
+		<Command name="C Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">c</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="C++ Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">cpp;cxx;c++;cc</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Linker(CUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>cui</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker(GUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /subsystem:windows /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>gui</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for DLL" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /DLL /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles) /DEF:$(DefFile)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>dll</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for Lib" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/LIB /nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>lib</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Resource Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">rc.exe</Program>
+			<Parameter enabled="1">-I$(IncPaths) -Fo&quot;$(PATH)$(NAME).res&quot; &quot;$(FileName)&quot;</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(PATH)$(NAME).res</Target>
+			<TargetType>res</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Debugger" io="0" rdos="0" sys="0">
+			<Program enabled="0">cdb.exe</Program>
+			<Parameter enabled="0">cdebug.dll</Parameter>
+			<FileExt enabled="1">exe;dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81003</MsgID>
+		</Command>
+		<Command name="Run" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(Target)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">exe</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Run DLL" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(HostApp)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Clean Objects" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).obj&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">c;cpp;cxx;c++;cc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Resource" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).res&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Io" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Path)$(Name).obj&quot; -silent</Parameter>
+			<FileExt enabled="0">*.*</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Target" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Target)&quot;</Parameter>
+			<FileExt enabled="1">*.*</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+	</Commands>
+	<Actions>
+		<Action name="Compile" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+			</File>
+			<Project>
+			</Project>
+			<MsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81005</MsgID>
+			<ErrMsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)#81006</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Build" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81007</MsgID>
+			<ErrMsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)#81008</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Make" depend="1">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81009</MsgID>
+			<ErrMsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)#81010</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Run" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</Project>
+			<MsgID>#81011</MsgID>
+			<ErrMsgID>#81012</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Debug" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</Project>
+			<MsgID>#81013</MsgID>
+			<ErrMsgID>#81014</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Clean" depend="0">
+			<File>
+				<Command>"Clean Objects""Clean Resource"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</File>
+			<Project>
+				<Command>"Clean Objects""Clean Resource""Clean Io"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</Project>
+			<MsgID>Complete Clean $(TargetName)#81015</MsgID>
+			<ErrMsgID>Clean $(TargetName) error#81016</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+	</Actions>
+</Builder>
+<Builder name="Release|Win32" type="Microsoft Visual Studio" version="1.0">
+	<TargetName>MapEditor</TargetName>
+	<TargetType>EXE</TargetType>
+	<TargetDir>../cworking</TargetDir>
+	<InterimDir>Release</InterimDir>
+	<IncPaths>
+		<Path>D:\IRIS\Main_Dev\ZipArchive</Path>
+		<Path>D:\IRIS\Main_Dev\Util</Path>
+		<Path>D:\IRIS\Main_Dev\Util\STL</Path>
+		<Path>"$(EGB_PATH)\sdk\Win32\Include"</Path>
+		<Pattern>*\Microsoft SDK\Include</Pattern>
+		<Pattern>*\VC\Include</Pattern>
+		<Pattern>*\VC\atlmfc\Include</Pattern>
+		<Pattern>*\VC\PlatformSDK\Include</Pattern>
+		<Pattern>*\VC7\Include</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Include</Pattern>
+		<Pattern>*\Vc7\atlmfc\include</Pattern>
+		<Pattern>*\v6.0A\Include</Pattern>
+	</IncPaths>
+	<LibPaths>
+		<Path>..\Lib</Path>
+		<Path>"$(EGB_PATH)\SDK\Win32\Lib\VC80\ShippingLib"</Path>
+		<Pattern>*\Microsoft SDK\Lib</Pattern>
+		<Pattern>*\VC\Lib</Pattern>
+		<Pattern>*\VC\atlmfc\Lib</Pattern>
+		<Pattern>*\VC\PlatformSDK\Lib</Pattern>
+		<Pattern>*\VC7\Lib</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Lib</Pattern>
+		<Pattern>*\Vc7\atlmfc\lib</Pattern>
+		<Pattern>*\v6.0A\Lib</Pattern>
+	</LibPaths>
+	<ExePaths>
+		<Pattern>*\Microsoft SDK\Bin</Pattern>
+		<Pattern>*\VC\Bin</Pattern>
+		<Pattern>*\VC\PlatformSDK\Bin</Pattern>
+		<Pattern>*\VC7\Bin</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Bin</Pattern>
+		<Pattern>*\v6.0A\bin</Pattern>
+		<Pattern>*\Debugging Tools for Windows (x86)</Pattern>
+	</ExePaths>
+	<AutoDetect>
+		<Path>C:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>C:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>D:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>E:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>F:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>G:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>C:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>D:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>E:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>F:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>G:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>C:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>C:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>C:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>D:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>E:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>F:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>G:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{CB531F9D-A8AC-3E26-8B8E-DC50A9B1627B}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.0A|InstallationFolder</Reg>
+		<Reg>\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.0|InstallationFolder</Reg>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{80610804-8B7A-4753-80AA-ECB5510944C7}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F05F0804-8517-4564-81F8-6732D0281B57}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Win32SDK\Directories|Install Dir</Reg>
+		<Reg>\SOFTWARE\Microsoft\MicrosoftSDK\InstalledSDKs\D2FF9F89-8AA2-4373-8A31-C838BF4DBBE1|Install Dir</Reg>
+	</AutoDetect>
+	<CompilerOptions>
+		<Category name="Code Generation">
+			<Option value="/G3" desc="Optimize for 80386 [/G3]"/>
+			<Option value="/G4" desc="Optimize for 80486 [/G4]"/>
+			<Option value="/G5" desc="Optimize for Pentium [/G5]"/>
+			<Option value="/G6" desc="Optimize for PPro, P-II, P-III [/G6]"/>
+			<Option value="/G7" desc="Optimize for Pentium 4 or Athlon [/G7]"/>
+			<Option value="/GA" desc="Optimize for Windows Application [/GA]"/>
+			<Option value="/GR" desc="Enable run-time type information (RTTI) [/GR]"/>
+			<Option value="/EHsc" desc="Enable synchronous exception handling [/EHsc]"/>
+		</Category>
+		<Category name="Debugging">
+			<Option value="/Zi" desc="Generates complete debugging information [/Zi]"/>
+			<Option value="/ZI" desc="Enable Edit and Continue debug info [/ZI]"/>
+		</Category>
+		<Category name="Warnings">
+			<Option value="/Wall" desc="Enable all warnings [/Wall]"/>
+			<Option value="/WX" desc="Treat warnings as errors [/WX]"/>
+			<Option value="/W1" desc="Enable warnings level 1 [/W1]"/>
+			<Option value="/W2" desc="Enable warnings level 2 [/W2]"/>
+			<Option value="/W3" desc="Enable warnings level 3 [/W3]"/>
+			<Option value="/W4" desc="Enable warnings level 4 [/W4]"/>
+		</Category>
+		<Category name="Optimization">
+			<Option value="/O1" desc="Create small code [/O1]"/>
+			<Option value="/O2" desc="Create fast code [/O2]"/>
+			<Option value="/Og" desc="Use global optimizations [/Og]"/>
+			<Option value="/Ox" desc="Use maximum optimization (/Ob2gity /Gs) [/Ox]"/>
+			<Option value="/Od" desc="Disable optimization [/Od]"/>
+			<Option value="/Os" desc="Favors small code [/Os]"/>
+			<Option value="/Ot" desc="Favors fast code [/Ot]"/>
+		</Category>
+		<RawOptionsDebug enabled="1">
+			<Default>/EHsc /W3 /Zi /Od /D &quot;DEBUG&quot;</Default>
+			<User>/EHsc /D &quot;_AFXDLL&quot; /D &quot;WIN32&quot; /D &quot;NDEBUG&quot; /D &quot;_WINDOWS&quot; /D &quot;STRICT&quot; /D &quot;NISHIPPING&quot; /D &quot;MAP_EDITOR&quot; /D &quot;_DEVSYS&quot; /O2 /FD /MD /W4 /Zc:wchar_t-</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default>/EHsc /W3 /O2</Default>
+			<User>/EHsc /D &quot;_AFXDLL&quot; /D &quot;WIN32&quot; /D &quot;NDEBUG&quot; /D &quot;_WINDOWS&quot; /D &quot;STRICT&quot; /D &quot;NISHIPPING&quot; /D &quot;MAP_EDITOR&quot; /D &quot;_DEVSYS&quot; /O2 /FD /MD /W4 /Zc:wchar_t-</User>
+		</RawOptionsRelease>
+	</CompilerOptions>
+	<LinkerOptions>
+		<LibsDebug enabled="1">
+			<Default>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</Default>
+			<User>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</User>
+		</LibsDebug>
+		<LibsRelease enabled="0">
+			<Default>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</Default>
+			<User>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</User>
+		</LibsRelease>
+		<RawOptionsDebug enabled="1">
+			<Default>/DEBUG</Default>
+			<User>/DEBUG /INCREMENTAL:NO /DEBUG /MACHINE:X86 Winmm.lib Version.lib ZipArchive_rm.lib dxguid.lib dinput8.lib NiAnimation.lib NIFloodgate.lib NiMain.lib NiSystem.lib NiDX9Renderer.lib NiMesh.lib NiCollision.lib NiMilesAudio.lib NiParticle.lib NiFont.lib mss32.lib</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default></Default>
+			<User>/INCREMENTAL:NO /DEBUG /MACHINE:X86 Winmm.lib Version.lib ZipArchive_rm.lib dxguid.lib dinput8.lib NiAnimation.lib NIFloodgate.lib NiMain.lib NiSystem.lib NiDX9Renderer.lib NiMesh.lib NiCollision.lib NiMilesAudio.lib NiParticle.lib NiFont.lib mss32.lib</User>
+		</RawOptionsRelease>
+	</LinkerOptions>
+	<Configs>
+		<BuildLog enabled="0">$(CFRoot)\Build.log</BuildLog>
+		<LibExt>lib;a</LibExt>
+		<ObjExt>o;obj</ObjExt>
+		<ResExt>res</ResExt>
+	</Configs>
+	<Commands msghandler="Vc.mhr">
+		<Command name="C Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">c</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="C++ Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">cpp;cxx;c++;cc</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Linker(CUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>cui</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker(GUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /subsystem:windows /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>gui</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for DLL" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /DLL /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles) /DEF:$(DefFile)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>dll</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for Lib" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/LIB /nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>lib</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Resource Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">rc.exe</Program>
+			<Parameter enabled="1">-I$(IncPaths) -Fo&quot;$(PATH)$(NAME).res&quot; &quot;$(FileName)&quot;</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(PATH)$(NAME).res</Target>
+			<TargetType>res</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Debugger" io="0" rdos="0" sys="0">
+			<Program enabled="0">cdb.exe</Program>
+			<Parameter enabled="0">cdebug.dll</Parameter>
+			<FileExt enabled="1">exe;dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81003</MsgID>
+		</Command>
+		<Command name="Run" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(Target)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">exe</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Run DLL" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(HostApp)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Clean Objects" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).obj&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">c;cpp;cxx;c++;cc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Resource" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).res&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Io" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Path)$(Name).obj&quot; -silent</Parameter>
+			<FileExt enabled="0">*.*</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Target" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Target)&quot;</Parameter>
+			<FileExt enabled="1">*.*</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+	</Commands>
+	<Actions>
+		<Action name="Compile" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+			</File>
+			<Project>
+			</Project>
+			<MsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81005</MsgID>
+			<ErrMsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)#81006</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Build" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81007</MsgID>
+			<ErrMsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)#81008</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Make" depend="1">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81009</MsgID>
+			<ErrMsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)#81010</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Run" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</Project>
+			<MsgID>#81011</MsgID>
+			<ErrMsgID>#81012</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Debug" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</Project>
+			<MsgID>#81013</MsgID>
+			<ErrMsgID>#81014</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Clean" depend="0">
+			<File>
+				<Command>"Clean Objects""Clean Resource"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</File>
+			<Project>
+				<Command>"Clean Objects""Clean Resource""Clean Io"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</Project>
+			<MsgID>Complete Clean $(TargetName)#81015</MsgID>
+			<ErrMsgID>Clean $(TargetName) error#81016</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+	</Actions>
+</Builder>
+<Builder name="FastDebug|Win32" type="Microsoft Visual Studio" version="1.0">
+	<TargetName>MapEditor</TargetName>
+	<TargetType>EXE</TargetType>
+	<TargetDir>../cworking</TargetDir>
+	<InterimDir>FastDebug</InterimDir>
+	<IncPaths>
+		<Path>D:\IRIS\Main_Dev\ZipArchive</Path>
+		<Path>D:\IRIS\Main_Dev\Util</Path>
+		<Path>D:\IRIS\Main_Dev\Util\STL</Path>
+		<Path>"$(EGB_PATH)\sdk\Win32\Include"</Path>
+		<Pattern>*\Microsoft SDK\Include</Pattern>
+		<Pattern>*\VC\Include</Pattern>
+		<Pattern>*\VC\atlmfc\Include</Pattern>
+		<Pattern>*\VC\PlatformSDK\Include</Pattern>
+		<Pattern>*\VC7\Include</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Include</Pattern>
+		<Pattern>*\Vc7\atlmfc\include</Pattern>
+		<Pattern>*\v6.0A\Include</Pattern>
+	</IncPaths>
+	<LibPaths>
+		<Path>..\Lib</Path>
+		<Path>"$(EGB_PATH)\SDK\Win32\Lib\VC80\ShippingLib"</Path>
+		<Pattern>*\Microsoft SDK\Lib</Pattern>
+		<Pattern>*\VC\Lib</Pattern>
+		<Pattern>*\VC\atlmfc\Lib</Pattern>
+		<Pattern>*\VC\PlatformSDK\Lib</Pattern>
+		<Pattern>*\VC7\Lib</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Lib</Pattern>
+		<Pattern>*\Vc7\atlmfc\lib</Pattern>
+		<Pattern>*\v6.0A\Lib</Pattern>
+	</LibPaths>
+	<ExePaths>
+		<Pattern>*\Microsoft SDK\Bin</Pattern>
+		<Pattern>*\VC\Bin</Pattern>
+		<Pattern>*\VC\PlatformSDK\Bin</Pattern>
+		<Pattern>*\VC7\Bin</Pattern>
+		<Pattern>*\VC7\PlatformSDK\Bin</Pattern>
+		<Pattern>*\v6.0A\bin</Pattern>
+		<Pattern>*\Debugging Tools for Windows (x86)</Pattern>
+	</ExePaths>
+	<AutoDetect>
+		<Path>C:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio 9.0</Path>
+		<Path>C:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>D:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>E:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>F:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>G:\Program Files\Microsoft SDKs\Windows\v6.0A</Path>
+		<Path>C:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>D:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>E:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>F:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>G:\Program Files\Microsoft SDKs\Windows\v6.0</Path>
+		<Path>C:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio 8</Path>
+		<Path>C:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>D:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>E:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>F:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>G:\Program Files\Microsoft Visual Studio .NET 2003</Path>
+		<Path>C:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>D:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>E:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>F:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Path>G:\Program Files\Debugging Tools for Windows (x86)</Path>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{CB531F9D-A8AC-3E26-8B8E-DC50A9B1627B}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.0A|InstallationFolder</Reg>
+		<Reg>\SOFTWARE\Microsoft\Microsoft SDKs\Windows\v6.0|InstallationFolder</Reg>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{80610804-8B7A-4753-80AA-ECB5510944C7}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{F05F0804-8517-4564-81F8-6732D0281B57}|InstallLocation</Reg>
+		<Reg>\SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|ProductDir</Reg>
+		<Reg>\SOFTWARE\Microsoft\Win32SDK\Directories|Install Dir</Reg>
+		<Reg>\SOFTWARE\Microsoft\MicrosoftSDK\InstalledSDKs\D2FF9F89-8AA2-4373-8A31-C838BF4DBBE1|Install Dir</Reg>
+	</AutoDetect>
+	<CompilerOptions>
+		<Category name="Code Generation">
+			<Option value="/G3" desc="Optimize for 80386 [/G3]"/>
+			<Option value="/G4" desc="Optimize for 80486 [/G4]"/>
+			<Option value="/G5" desc="Optimize for Pentium [/G5]"/>
+			<Option value="/G6" desc="Optimize for PPro, P-II, P-III [/G6]"/>
+			<Option value="/G7" desc="Optimize for Pentium 4 or Athlon [/G7]"/>
+			<Option value="/GA" desc="Optimize for Windows Application [/GA]"/>
+			<Option value="/GR" desc="Enable run-time type information (RTTI) [/GR]"/>
+			<Option value="/EHsc" desc="Enable synchronous exception handling [/EHsc]"/>
+		</Category>
+		<Category name="Debugging">
+			<Option value="/Zi" desc="Generates complete debugging information [/Zi]"/>
+			<Option value="/ZI" desc="Enable Edit and Continue debug info [/ZI]"/>
+		</Category>
+		<Category name="Warnings">
+			<Option value="/Wall" desc="Enable all warnings [/Wall]"/>
+			<Option value="/WX" desc="Treat warnings as errors [/WX]"/>
+			<Option value="/W1" desc="Enable warnings level 1 [/W1]"/>
+			<Option value="/W2" desc="Enable warnings level 2 [/W2]"/>
+			<Option value="/W3" desc="Enable warnings level 3 [/W3]"/>
+			<Option value="/W4" desc="Enable warnings level 4 [/W4]"/>
+		</Category>
+		<Category name="Optimization">
+			<Option value="/O1" desc="Create small code [/O1]"/>
+			<Option value="/O2" desc="Create fast code [/O2]"/>
+			<Option value="/Og" desc="Use global optimizations [/Og]"/>
+			<Option value="/Ox" desc="Use maximum optimization (/Ob2gity /Gs) [/Ox]"/>
+			<Option value="/Od" desc="Disable optimization [/Od]"/>
+			<Option value="/Os" desc="Favors small code [/Os]"/>
+			<Option value="/Ot" desc="Favors fast code [/Ot]"/>
+		</Category>
+		<RawOptionsDebug enabled="1">
+			<Default>/EHsc /W3 /Zi /Od /D &quot;DEBUG&quot;</Default>
+			<User>/EHsc /D &quot;_AFXDLL&quot; /D &quot;WIN32&quot; /D &quot;NDEBUG&quot; /D &quot;_WINDOWS&quot; /D &quot;STRICT&quot; /D &quot;NISHIPPING&quot; /D &quot;MAP_EDITOR&quot; /D &quot;_DEVSYS&quot; /D &quot;_FASTDEBUG&quot; /Od /FD /MD /W4 /Zi</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default>/EHsc /W3 /O2</Default>
+			<User>/EHsc /D &quot;_AFXDLL&quot; /D &quot;WIN32&quot; /D &quot;NDEBUG&quot; /D &quot;_WINDOWS&quot; /D &quot;STRICT&quot; /D &quot;NISHIPPING&quot; /D &quot;MAP_EDITOR&quot; /D &quot;_DEVSYS&quot; /D &quot;_FASTDEBUG&quot; /Od /FD /MD /W4 /Zi</User>
+		</RawOptionsRelease>
+	</CompilerOptions>
+	<LinkerOptions>
+		<LibsDebug enabled="1">
+			<Default>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</Default>
+			<User>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</User>
+		</LibsDebug>
+		<LibsRelease enabled="0">
+			<Default>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</Default>
+			<User>
+				<Lib>kernel32.lib</Lib>
+				<Lib>user32.lib</Lib>
+				<Lib>gdi32.lib</Lib>
+				<Lib>winspool.lib</Lib>
+				<Lib>comdlg32.lib</Lib>
+				<Lib>advapi32.lib</Lib>
+				<Lib>shell32.lib</Lib>
+				<Lib>ole32.lib</Lib>
+				<Lib>oleaut32.lib</Lib>
+				<Lib>uuid.lib</Lib>
+				<Lib>odbc32.lib</Lib>
+				<Lib>odbccp32.lib</Lib>
+			</User>
+		</LibsRelease>
+		<RawOptionsDebug enabled="1">
+			<Default>/DEBUG</Default>
+			<User>/DEBUG /INCREMENTAL:NO /DEBUG /MACHINE:X86 Winmm.lib Version.lib ZipArchive_rm.lib dxguid.lib dinput8.lib NiAnimation.lib NIFloodgate.lib NiMain.lib NiSystem.lib NiDX9Renderer.lib NiMesh.lib NiCollision.lib NiMilesAudio.lib NiParticle.lib NiFont.lib mss32.lib</User>
+		</RawOptionsDebug>
+		<RawOptionsRelease enabled="0">
+			<Default></Default>
+			<User>/INCREMENTAL:NO /DEBUG /MACHINE:X86 Winmm.lib Version.lib ZipArchive_rm.lib dxguid.lib dinput8.lib NiAnimation.lib NIFloodgate.lib NiMain.lib NiSystem.lib NiDX9Renderer.lib NiMesh.lib NiCollision.lib NiMilesAudio.lib NiParticle.lib NiFont.lib mss32.lib</User>
+		</RawOptionsRelease>
+	</LinkerOptions>
+	<Configs>
+		<BuildLog enabled="0">$(CFRoot)\Build.log</BuildLog>
+		<LibExt>lib;a</LibExt>
+		<ObjExt>o;obj</ObjExt>
+		<ResExt>res</ResExt>
+	</Configs>
+	<Commands msghandler="Vc.mhr">
+		<Command name="C Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">c</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="C++ Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">cl.exe</Program>
+			<Parameter enabled="1">/nologo -I$(IncPaths) $(CompilerOptions) /c &quot;$(FileName)&quot; /Fo&quot;$(Path)$(Name).obj&quot;</Parameter>
+			<FileExt enabled="1">cpp;cxx;c++;cc</FileExt>
+			<Target>$(PATH)$(NAME).obj</Target>
+			<TargetType>obj</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Linker(CUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>cui</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker(GUI)" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /subsystem:windows /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>gui</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for DLL" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/nologo $(LinkerOptions) /DLL /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles) /DEF:$(DefFile)</Parameter>
+			<FileExt enabled="1">o;obj;a;lib;res</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>dll</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Linker for Lib" io="1" rdos="0" sys="0">
+			<Program enabled="1">link.exe</Program>
+			<Parameter enabled="1">/LIB /nologo $(LinkerOptions) /LIBPATH:$(LibPaths) /OUT:&quot;$(Target)&quot; $(Libs) $(ProjectFiles)</Parameter>
+			<FileExt enabled="1">o;obj</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType>lib</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Linking...#81002</MsgID>
+		</Command>
+		<Command name="Resource Compiler" io="1" rdos="0" sys="0">
+			<Program enabled="1">rc.exe</Program>
+			<Parameter enabled="1">-I$(IncPaths) -Fo&quot;$(PATH)$(NAME).res&quot; &quot;$(FileName)&quot;</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(PATH)$(NAME).res</Target>
+			<TargetType>res</TargetType>
+			<CurrentDir>$$(IDE)</CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>Compiling $(FILENAME)...#81001</MsgID>
+		</Command>
+		<Command name="Debugger" io="0" rdos="0" sys="0">
+			<Program enabled="0">cdb.exe</Program>
+			<Parameter enabled="0">cdebug.dll</Parameter>
+			<FileExt enabled="1">exe;dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81003</MsgID>
+		</Command>
+		<Command name="Run" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(Target)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">exe</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Run DLL" io="0" rdos="0" sys="0">
+			<Program enabled="0">$(HostApp)</Program>
+			<Parameter enabled="0">$(Parameters)</Parameter>
+			<FileExt enabled="1">dll</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID>#81004</MsgID>
+		</Command>
+		<Command name="Clean Objects" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).obj&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">c;cpp;cxx;c++;cc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Resource" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="1">&quot;$(Path)$(Name).res&quot; $(FileName)</Parameter>
+			<FileExt enabled="1">rc</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Io" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Path)$(Name).obj&quot; -silent</Parameter>
+			<FileExt enabled="0">*.*</FileExt>
+			<Target>$(Target)</Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+		<Command name="Clean Target" io="1" rdos="0" sys="0">
+			<Program enabled="0">fdel.exe</Program>
+			<Parameter enabled="0">&quot;$(Target)&quot;</Parameter>
+			<FileExt enabled="1">*.*</FileExt>
+			<Target></Target>
+			<TargetType></TargetType>
+			<CurrentDir></CurrentDir>
+			<EnvVar></EnvVar>
+			<MsgID></MsgID>
+		</Command>
+	</Commands>
+	<Actions>
+		<Action name="Compile" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+			</File>
+			<Project>
+			</Project>
+			<MsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81005</MsgID>
+			<ErrMsgID>Complete Compile $(FileName): $(Error) error(s), $(Warning) warning(s)#81006</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Build" depend="0">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81007</MsgID>
+			<ErrMsgID>Complete Build $(TargetName): $(Error) error(s), $(Warning) warning(s)#81008</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Make" depend="1">
+			<File>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</File>
+			<Project>
+				<Command>"C Compiler""C++ Compiler""Resource Compiler"</Command>
+				<Command>"Linker(CUI)""Linker(GUI)""Linker for DLL""Linker for Lib"</Command>
+			</Project>
+			<MsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)\nGenerated $(Target)#81009</MsgID>
+			<ErrMsgID>Complete Make $(TargetName): $(Error) error(s), $(Warning) warning(s)#81010</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Run" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Run""Run DLL"</Command>
+			</Project>
+			<MsgID>#81011</MsgID>
+			<ErrMsgID>#81012</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Debug" depend="0">
+			<File>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</File>
+			<Project>
+				<Action>"Make"</Action>
+				<Command>"Debugger"</Command>
+			</Project>
+			<MsgID>#81013</MsgID>
+			<ErrMsgID>#81014</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+		<Action name="Clean" depend="0">
+			<File>
+				<Command>"Clean Objects""Clean Resource"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</File>
+			<Project>
+				<Command>"Clean Objects""Clean Resource""Clean Io"</Command>
+				<Command>"Clean Io"</Command>
+				<Command>"Clean Target"</Command>
+			</Project>
+			<MsgID>Complete Clean $(TargetName)#81015</MsgID>
+			<ErrMsgID>Clean $(TargetName) error#81016</ErrMsgID>
+			<PreAction></PreAction>
+			<PostAction con="0"></PostAction>
+		</Action>
+	</Actions>
+</Builder>
+</Project>

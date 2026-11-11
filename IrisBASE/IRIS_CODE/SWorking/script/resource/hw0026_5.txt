@@ -1,0 +1,25 @@
+--°ø°Ý3: ÃÑ
+Header
+{
+	type	0
+
+	effect	0	0.0	0.0	0.0	1.0	"Eff_Act_01.nif"
+
+	sound	21	4010
+}
+
+Activity
+{
+	animation	55
+
+	action	567	0	0	0	0	rweapon	0.0	0.0	0.0
+	
+	soundplay	530	21	0
+	
+	active	567
+}
+
+Apply
+{
+	damage	10	100
+}

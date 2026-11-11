@@ -1,0 +1,36 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(»ø∞˙)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--»…πŸπŸ
+--πŸ¿ß ≈ı√¥
+
+Header
+{
+	type	1
+}
+
+Apply
+{
+	damage	0	100
+}

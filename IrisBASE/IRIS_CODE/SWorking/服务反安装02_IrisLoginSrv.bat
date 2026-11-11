@@ -1,0 +1,1 @@
+IrisLoginSrv.exe /uninstall

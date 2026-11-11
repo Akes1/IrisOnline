@@ -1,0 +1,255 @@
+--=================--
+--트위터 윈도우 --
+--=================--
+window "TwitterWindow"
+{
+	ii 5020
+	texpos 2 2 
+	size 410 539
+	
+	pos 568 150 // 게임화면에서 위치 좌표
+
+	captionXY 0 0
+	captionWH 410 539
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 서버 처리 메세지
+label "Twitter_State_Label"
+{
+	pos 140 140
+	size 140 20
+	text_align center	
+}
+
+
+-- /// 버튼 "계정 등록/변경"
+button "Twitter_Insert_Button"
+{
+	ii 5020
+	texpos 414 2 
+	size 101 24
+
+	pos 17 136
+
+	uppos 414 2
+	upoverpos 414 28
+	downpos 414 53
+
+	downsound 3001
+
+}
+
+-- /// 버튼 "send update"
+button "Twitter_Update_Button"
+{ 
+	ii 5020
+	texpos 519 2
+	size 101 24
+
+	pos 290 136
+
+	uppos 519 2
+	upoverpos 519 28
+	downpos 519 53
+
+	downsound 3001
+	
+	hovertip	26621
+}
+
+
+button "Twitter_Close"
+{
+	ii 5002
+
+	texpos 253 160
+	size 19 19
+
+	pos 377 14
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- /// 트위터 불러온 리스트
+listbox "Twitter_SearchItemList"
+{
+	pos 26 167
+	size 365 349
+	row_height 57				-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 50				-- 리스트가 담을수 잇는 최대 갯수
+	 
+	scrollskin "ListScroll"
+	
+	imgcolX 10	34 					--이미지
+	columnX	47	253 left 	-- 본문내용
+	columnX	81	265 right -- 본문 작성자 및 작성시간
+	columnX	0	86 left 			-- 작성자 아이디
+}
+
+multieditbox	"Twitter_InsertWord"
+{
+	pos 28 62
+	size 353 56
+		
+	editkind 0					-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editpos 0 0
+	editmaxlen	140	
+		
+	--에디트 박스의 드래그 선택 영역 이미지
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908	
+}
+
+--=================--
+--트위터 로그인 윈도우 --
+--=================--
+window "TwitterLoginWindow"
+{
+	ii 5020
+	texpos 415 160
+	size 200 210
+
+	pos 610 184
+
+	captionXY 0 0
+	captionWH 200 189
+
+	opensound 3007
+	closesound 3010
+}
+-- /// 계정 저장 여부 체크 박스(추가)
+checkbox "TwitterLogin_IDSaveCheck"
+{
+	ii 5006
+	pos 16 131
+	texpos 330 370
+	size 12 12
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+
+-- /// 아이디 에디트  
+editbox "TwitterLogin_IDEdit"
+{
+	pos 70 70
+	size 114 13
+	
+	editkind 0	-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 5:특문제외 )
+	editpos 0 0	
+	editmaxlen 20 	-- 에디트가 받아들일수 있는 최대 길이 지정
+	
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 비밀번호 에디트  
+editbox "TwitterLogin_PassEdit"
+{
+	pos 70 96
+	size 114 13
+	
+	editkind 4
+	editpos 0 0	
+	editmaxlen 20
+	
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 트위터 로그인 접속/저장 버튼
+button "Twitter_Connect_Button"
+{
+	ii 5020
+	pos 24 150
+	texpos 415 80
+	size 72 24
+
+	useenable true
+	
+	uppos 415 80
+	upoverpos 415 106
+	downpos 415 132
+
+	enablepos 415 132
+
+	downsound 3001
+}
+
+-- /// 트위터 로그인 취소 버튼
+button "Twitter_LoginCancel_Button"
+{
+	ii 5020
+	pos 104 150
+	texpos 490 80
+	size 72 24
+	
+	uppos 490 80
+	upoverpos 490 106
+	downpos 490 132
+
+	downsound 3001
+}
+
+-- /// 트위터 계정 초기화 버튼
+button "Twitter_AccountRefresh_Button"
+{
+	ii 5020
+	pos 64 179
+	texpos 565 80
+	size 84 24
+
+	uppos 565 80
+	upoverpos 565 106
+	downpos 565 132
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+

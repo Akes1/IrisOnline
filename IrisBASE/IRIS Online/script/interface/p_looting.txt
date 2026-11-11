@@ -1,0 +1,49 @@
+--===============--
+-- 루팅 윈도우 --
+--===============--
+window_prop "P_LootingWindow"
+{
+	skinname "LootingWindow"
+}
+
+button_prop "P_Looting_Close"
+{
+	skinname "Looting_Close"
+	parent "P_LootingWindow"
+}
+
+button_prop "P_Looting_Link"
+{
+	skinname "Looting_Link"
+	parent "P_LootingWindow"
+}
+
+button_prop "P_Looting_All"
+{
+	skinname "Looting_All"
+	parent "P_LootingWindow"
+}
+
+listbox_prop "P_Looting_List"
+{
+	skinname "Looting_List"
+	parent "P_LootingWindow"
+}
+
+window_prop "P_ItemDivideWindow"
+{
+	skinname "ItemDivideWindow"
+	parent "P_LootingWindow"
+}
+
+listbox_prop "P_ItemDivide_List"
+{
+	skinname "ItemDivide_List"
+	parent "P_ItemDivideWindow"
+}
+
+button_prop "P_ItemDivide_Give"
+{
+	skinname "ItemDivide_Give"
+	parent "P_ItemDivideWindow"
+}

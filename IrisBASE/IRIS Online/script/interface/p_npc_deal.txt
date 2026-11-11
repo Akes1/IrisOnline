@@ -1,0 +1,165 @@
+--=================--
+-- Npc 판매대행 윈도우 --
+--=================--
+tabwindow_prop "P_NpcDeal_Window"
+{
+	skinname "NpcDeal_Window"
+}
+
+button_prop "P_NpcDeal_Close"
+{
+	skinname "NpcDeal_Close"
+	parent "P_NpcDeal_Window"
+}
+
+button_prop "P_NpcDeal_Close2"
+{
+	skinname "NpcDeal_Close2"
+	parent "P_NpcDeal_Window"
+}
+
+label_prop "P_NpcDeal_HaveMoney"
+{
+	skinname "NpcDeal_HaveMoney"
+	parent "P_NpcDeal_Window"
+}
+
+tabbutton_prop "P_NpcDeal_Search"
+{
+	skinname "NpcDeal_Search"
+	parent "P_NpcDeal_Window"
+}
+
+tabbutton_prop "P_NpcDeal_Regist"
+{
+	skinname "NpcDeal_Regist"
+	parent "P_NpcDeal_Window"
+}
+
+tabsheet_prop "P_NpcDeal_SearchSheet"
+{
+	skinname "NpcDeal_SearchSheet"
+	parent "P_NpcDeal_Window"
+}
+
+tabsheet_prop "P_NpcDeal_RegistSheet"
+{
+	skinname "NpcDeal_RegistSheet"
+	parent "P_NpcDeal_Window"
+}
+
+
+
+--=================--
+-- Npc 물품등록 시트 --
+--=================--
+numberedit_prop "P_NpcDeal_RegistPrice"
+{
+	skinname "NpcDeal_RegistPrice"
+	parent "P_NpcDeal_RegistSheet"
+}
+
+label_prop "P_NpcDeal_RegistCharge"
+{
+	skinname "NpcDeal_RegistCharge"
+	parent "P_NpcDeal_RegistSheet"
+}
+
+button_prop "P_NpcDeal_RegistButton"
+{
+	skinname "NpcDeal_RegistButton"
+	parent "P_NpcDeal_RegistSheet"
+}
+
+combobox_prop "P_NpcDeal_RegistPeriod"
+{
+	skinname "NpcDeal_RegistPeriod"
+	parent "P_NpcDeal_RegistSheet"
+}
+
+listbox_prop "P_NpcDeal_RegistItemList"
+{
+	skinname "NpcDeal_RegistItemList"
+	parent "P_NpcDeal_RegistSheet"
+}
+
+spinbox_prop "P_NpcDeal_RegistSpin"
+{
+	skinname "NpcDeal_RegistSpin"
+	parent "P_NpcDeal_RegistSheet"
+}
+
+--=================--
+-- Npc 물품검색 시트 --
+--=================--
+editbox_prop "P_NpcDeal_SearchName"
+{
+	skinname "NpcDeal_SearchName"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+numberedit_prop "P_NpcDeal_SearchLowLv"
+{
+	skinname "NpcDeal_SearchLowLv"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+numberedit_prop "P_NpcDeal_SearchHighLv"
+{
+	skinname "NpcDeal_SearchHighLv"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+button_prop "P_NpcDeal_SearchButton"
+{
+	skinname "NpcDeal_SearchButton"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+combobox_prop "P_NpcDeal_SearchGrade"
+{
+	skinname "NpcDeal_SearchGrade"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+combobox_prop "P_NpcDeal_SearchEnhance"
+{
+	skinname "NpcDeal_SearchEnhance"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+folderbox_prop "P_NpcDeal_SearchList"
+{
+	skinname "NpcDeal_SearchList"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+button_prop "P_NpcDeal_SearchItemLevel"
+{
+	skinname "NpcDeal_SearchItemLevel"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+button_prop "P_NpcDeal_SearchPrice"
+{
+	skinname "NpcDeal_SearchPrice"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+listbox_prop "P_NpcDeal_SearchItemList"
+{
+	skinname "NpcDeal_SearchItemList"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+button_prop "P_NpcDeal_Page_Left"
+{
+	skinname "NpcDeal_Page_Left"
+	parent "P_NpcDeal_SearchSheet"
+}
+
+button_prop "P_NpcDeal_Page_Right"
+{
+	skinname "NpcDeal_Page_Right"
+	parent "P_NpcDeal_SearchSheet"
+}

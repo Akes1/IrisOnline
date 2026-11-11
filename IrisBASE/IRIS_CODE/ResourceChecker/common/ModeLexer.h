@@ -1,0 +1,43 @@
+#pragma once
+
+#include "Lexer.h"
+
+/// 토큰 타입
+enum
+{
+	/// 대분류
+	eTOKEN_HEADER = 100,
+	eTOKEN_MODE,
+
+	///
+	eTOKEN_EFFECT,
+	eTOKEN_SOUND,
+	eTOKEN_DEATHDOOR,
+	eTOKEN_DEATHMONSTER,
+	eTOKEN_PORTAL,
+
+	///
+	eTOKEN_APPLYBUFF,
+	eTOKEN_GENMONSTER,
+	eTOKEN_GENTOTEM,
+	eTOKEN_GENGATHERING,
+	eTOKEN_SPEECH,
+	eTOKEN_MODESTATE,
+	eTOKEN_AGGRO,
+	eTOKEN_APPLYRESOURCE,
+	eTOKEN_MODEINITSKILL,
+	eTOKEN_APPLYAURA,
+	eTOKEN_MODEIMAGE,
+
+
+	///
+	eTOKEN_MODECHANGE,
+	eTOKEN_USESKILL,
+	eTOKEN_IMMUNE,
+};
+
+class cModeLexer : public cLexer
+{
+public:
+	cModeLexer( const char* pbuffer, unsigned int size );
+};

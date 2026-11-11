@@ -1,0 +1,45 @@
+--===============--
+-- 호칭 관리 윈도우 --
+--===============--
+window_prop "P_HeroTitleWindow"
+{
+	skinname "HeroTitleWindow"
+}
+
+-- /// 버튼 "Close"
+button_prop "P_HeroTitle_Close"
+{
+	skinname "HeroTitle_Close"
+	parent "P_HeroTitleWindow"
+}
+
+button_prop "P_HeroTitle_Select"
+{
+	skinname "HeroTitle_Select"
+	parent "P_HeroTitleWindow"
+}
+
+button_prop "P_HeroTitle_Cancel"
+{
+	skinname "HeroTitle_Cancel"
+	parent "P_HeroTitleWindow"
+}
+
+listbox_prop "P_HeroTitle_TitleList"
+{
+	skinname "HeroTitle_TitleList"
+	parent "P_HeroTitleWindow"
+}
+
+textbox_prop "P_HeroTitle_TitleDesc"
+{
+	skinname "HeroTitle_TitleDesc"
+	parent "P_HeroTitleWindow"
+}
+
+textbox_prop "P_HeroTitle_EffectDesc"
+{
+	skinname "HeroTitle_EffectDesc"
+	parent "P_HeroTitleWindow"
+}
+

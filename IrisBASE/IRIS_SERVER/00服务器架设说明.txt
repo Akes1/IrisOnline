@@ -1,0 +1,67 @@
+1、服务端在IRIS_SERVER目录，如果不想出现意想不到的目录读取问题，请将基础目录放到D:\IRIS\中；
+
+2、SQL2005中新建或还原以下数据库：
+	IRIS_GAMEDB
+	IRIS_LOGDB
+	IRIS_MEMBERDB
+	WEB_MEMBERDB
+新建数据库使用 D:\IRIS\SQL\中的.sql脚本建库
+数据库默认还原附加在 D:\IRIS\DataBase\
+新建数据库账号：iris    密码：vedsa239HPJam8Y  开放以上数据库的public与db_owner用户映射权限；
+
+3、创建ODBC连接：
+	IRIS_MEMBERDB
+	IRIS_LOGDB
+	IRIS_GAMEDB
+	WEB_MEMBERDB
+用数据库账号：iris    密码：vedsa239HPJam8Y  创建ODBC连接；
+
+4、数据库与ODBC新建成功后，依次运行
+
+安装00_IrisLogion数据导入.bat
+安装01_IrisGameSrv数据导入.bat
+
+成功后会在IRIS_MEMBERDB、IRIS_GAMEDB数据库表里看到加入的数据。
+
+5、安装服务、依次运行“安装01_BootAgent.bat”、“安装02_IrisLoginSrv.bat”、“安装03_IrisGameSrv.bat”、“安装04_IrisLogDemon.bat”；
+
+6、修改所有.cfg文件中的IP为服务器IP ；
+
+7、IRIS_MEMBERDB数据库加入设置
+TB_SERVER表
+IDX	REGISTER_DATE		NAME		DECRIPTION	AGE	STATUS	APPLY
+1	2011-1-1 0:00:00	魔幻旅程	SERVER1		0	0	0
+
+注：APPLY字段为0表示开放。
+
+---------------------------------------------------------------------------------------------------
+TB_CHANNEL表
+IDX	REGISTER_DATE		SERVERNUM	CHANNEL	INETNUM		IPV4		PORT	STATUS
+1	2011-1-1 0:00:00	1		1	127.0.0.1	2130720833	14600	0
+2	2011-1-1 0:00:00	1		201	127.0.0.1	2130720833	14600	0
+注：IPV4为IP转数字，可用iris_ip.exe算出数据。
+
+如127.0.0.1算出是2130720833 要与.cfg设置的IP一致；
+
+8、注册新玩家帐号，在WEB_MEMBERDB数据库中执行存储过程AC_sp_CreateAccount注册玩家帐号。
+member_info表
+10000	2011-1-1 0:00:00	test1	MTExMQ==	0000	5	2011-1-1 0:00:00	0	0	0	1	0	1	test1	test1	test1@163.com	1980-1-1	0
+
+9、依次运行游戏服务
+
+运行01_BootAgent.bat
+运行02_IrisLoginSrv.bat
+运行03_IrisLogDemon.bat
+运行04_IrisGameSrv.bat
+运行05_TutorialServer.bat
+.....
+
+看情况运行新手教程、PVP、副本服务器
+
+运行ServerTool.exe 监视服务器运行情况，默认只允许GM登录，在LoginServer里点选打钩，点击User ON按钮，允许普通级别用户登录。
+
+10、服务端更换路径请先运行反安装，再运行安装服务。
+
+11、修改IRIS_MK_CLIENT中的客户端快捷方式中的IPV4数字，“运行IRISClient.lnk”中的IP为服务器IPV4数字，127.0.0.1算出是2130706433
+
+12、运行客户端快捷方式、登录游戏！！

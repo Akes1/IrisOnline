@@ -1,0 +1,17 @@
+// 응징의토템
+Header	
+{
+	effect	1	0	0	0	2	"eff_m_1002_01.nif"
+
+	antirotation
+}
+//
+Mode	0
+{
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45685	0	10	1
+}

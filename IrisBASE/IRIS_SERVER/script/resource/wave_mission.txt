@@ -1,0 +1,193 @@
+-- mission type
+-- 0 : 랜덤한 몬스터 정해진 수 잡기
+-- 1 : 정해진 시간내로 단계 통과
+-- 2 : 한번도 사망하지 않고 단계 통과
+
+-- 미션 인덱스
+mission 1
+{
+	--mission type
+	type 0
+
+	--time(ms)
+	time 30000
+
+	-- mission reward
+	buff 		6301
+}
+mission 2
+{
+	--mission type
+	type 0
+
+	--time(ms)
+	time 30000
+
+	-- mission reward
+	buff 		6401
+}
+mission 3
+{
+	--mission type
+	type 0
+
+	--time(ms)
+	time 30000
+
+	-- mission reward
+	buff 		6501
+}
+mission 4
+{
+	--mission type
+	type 0
+
+	--time(ms)
+	time 30000
+
+	-- mission reward
+	monbuff 	15441
+}
+mission 5
+{
+	--mission type
+	type 0
+
+	--time(ms)
+	time 30000
+
+	-- mission reward
+	timeminus 	10000
+}
+mission 6
+{
+	--mission type
+	type 0
+
+	--time(ms)
+	time 30000
+
+	-- mission reward
+	timeminus 	5000
+}
+
+
+mission 7
+{
+	--mission type
+	type 1
+
+	--time(ms)
+	time 45000
+
+	-- mission reward
+	buff 	6301
+}
+mission 8
+{
+	--mission type
+	type 1
+
+	--time(ms)
+	time 45000
+
+	-- mission reward
+	buff 	6401
+}
+mission 9
+{
+	--mission type
+	type 1
+
+	--time(ms)
+	time 45000
+
+	-- mission reward
+	buff 	6501
+}
+mission 10
+{
+	--mission type
+	type 1
+
+	--time(ms)
+	time 45000
+
+	-- mission reward
+	monbuff 	15441
+}
+mission 11
+{
+	--mission type
+	type 1
+
+	--time(ms)
+	time 45000
+
+	-- mission reward
+	timeminus 	10000
+}
+mission 12
+{
+	--mission type
+	type 1
+
+	--time(ms)
+	time 30000
+
+	-- mission reward
+	jumpstep 	1
+}
+
+
+
+mission 13
+{
+	--mission type
+	type 2
+
+	-- mission reward
+	buff 	6301
+}
+mission 14
+{
+	--mission type
+	type 2
+
+	-- mission reward
+	buff 	6401
+}
+mission 15
+{
+	--mission type
+	type 2
+
+	-- mission reward
+	buff 	6501
+}
+mission 16
+{
+	--mission type
+	type 2
+
+	-- mission reward
+	monbuff 	15441
+}
+
+mission 17
+{
+	--mission type
+	type 2
+
+	-- mission reward
+	timeminus 	10000
+}
+
+mission 18
+{
+	--mission type
+	type 2
+
+	-- mission reward
+	jumpstep 	1
+}

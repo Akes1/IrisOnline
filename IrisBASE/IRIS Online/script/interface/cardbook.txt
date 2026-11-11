@@ -1,0 +1,227 @@
+--===============--
+-- 컬렉션 북 --
+--===============--
+tabwindow "CardBook_Window"
+{
+	ii 5009
+	pos 107 88
+	size 804 599
+	texpos 1 2
+	
+	captionXY 0 0 
+	captionWH 804 599
+
+	opensound 3007
+	closesound 3010
+}
+
+button "CardBook_Close"
+{
+	ii 5002
+	pos 771 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- 정보 탭버튼
+tabbutton "CardBook_Data"
+{
+	ii 5009
+	pos 0 89
+	size 45 27
+	texpos 1 634
+
+	uppos 1 634
+	upoverpos 1 634
+	downpos 1 603
+	
+	downsize 60 29
+	 
+	downsound 3001
+}
+
+-- 타로 탭버튼
+tabbutton "CardBook_Tarot"
+{
+	ii 5009
+	pos 0 124
+	size 49 27
+	texpos 63 634
+
+	uppos 63 634
+	upoverpos 63 634
+	downpos 63 603
+	
+	downsize 60 29
+	 
+	downsound 3001
+}
+
+-- 몬스터 탭버튼
+tabbutton "CardBook_Monster"
+{
+	ii 5009
+	pos 0 161
+	size 53 27
+	texpos 125 634
+
+	uppos 125 634
+	upoverpos 125 634
+	downpos 125 603
+	
+	downsize 60 29
+	 
+	downsound 3001
+}
+
+-- 스토리 탭버튼
+tabbutton "CardBook_Story"
+{
+	ii 5009
+	pos 0 197
+	size 57 27
+	texpos 187 634
+
+	uppos 187 634
+	upoverpos 187 634
+	downpos 187 603
+	
+	downsize 60 29
+	 
+	downsound 3001
+}
+
+--===============--
+-- 정보 쉬트 --
+--===============--
+tabsheet "DataSheet_Window"
+{
+	pos 64 10
+	size 661 568
+}
+
+--===============--
+-- 타로 쉬트 --
+--===============--
+tabsheet "TarotSheet_Window"
+{
+	pos 57 50
+	size 661 568
+}
+
+-- 소스에서 사용하는 스킨 (큰 카드 위치)
+label "TarotSheet_Card"
+{
+	ii 5009
+	pos 115 35
+	size 120 200
+	texpos 641 612
+}
+
+-- 소스에서 사용하는 스킨
+label "TarotSheet_CardBack"
+{
+	ii 5009
+	pos 30 33
+	size 290 204
+	texpos 556 610
+}
+
+-- 소스에서 사용하는 스킨 (줄 이미지)
+label "TarotSheet_Line"
+{
+	ii 5009
+	pos 26 266
+	size 301 226
+	texpos 252 603
+}
+
+-- 소스에서 사용하는 스킨
+-- 선택용
+label "TarotSheet_Select"
+{
+	ii 5009
+	pos 0 0
+	size 161 36
+	texpos 2 742
+}
+
+-- /// 카드 설명 박스
+textbox "TarotSheet_DescBox"
+{
+	pos 40 308
+	size 278 226
+
+	row_height 18		-- 열 높이 세팅	
+	maxitemnum 40		-- 리스트가 담을수 잇는 최대 갯수 ( 최대 60 이상 지정하지 마세요) 
+	scrollskin "ListScroll"
+}
+
+-- /// 이름
+label "TarotSheet_Name"
+{
+	pos 40 272
+	size 278 18
+}
+
+-- /// 정보
+label "TarotSheet_Value"
+{
+	pos 40 290
+	size 278 18
+}
+
+icon "TarotSheet_Icon00" { ii 5009  pos 378 14	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon01" { ii 5009  pos 378 51	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon02" { ii 5009  pos 378 88	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon03" { ii 5009  pos 378 125	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon04" { ii 5009  pos 378 162	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon05" { ii 5009  pos 378 199	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon06" { ii 5009  pos 378 236	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon07" { ii 5009  pos 378 273	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon08" { ii 5009  pos 378 310	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon09" { ii 5009  pos 378 347	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon10" { ii 5009  pos 378 380	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon11" { ii 5009  pos 543 14	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon12" { ii 5009  pos 543 51	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon13" { ii 5009  pos 543 88	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon14" { ii 5009  pos 543 125	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon15" { ii 5009  pos 543 162	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon16" { ii 5009  pos 543 199	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon17" { ii 5009  pos 543 236	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon18" { ii 5009  pos 543 273	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon19" { ii 5009  pos 543 310	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon20" { ii 5009  pos 543 347	size 28 28 texpos 6 670 }
+icon "TarotSheet_Icon21" { ii 5009  pos 543 380	size 28 28 texpos 6 670 }
+
+-- 스프레드 아이콘
+icon "TarotSheet_Spread00" { ii 5009  pos 378 464	size 28 28 texpos 6 708 }
+icon "TarotSheet_Spread01" { ii 5009  pos 378 500	size 28 28 texpos 6 708 }
+icon "TarotSheet_Spread02" { ii 5009  pos 543 428	size 28 28 texpos 6 708 }
+icon "TarotSheet_Spread03" { ii 5009  pos 543 464	size 28 28 texpos 6 708 }
+icon "TarotSheet_Spread04" { ii 5009  pos 543 500	size 28 28 texpos 6 708 }
+
+--===============--
+-- 몬스터 쉬트 --
+--===============--
+tabsheet "MonsterSheet_Window"
+{
+	pos 57 50
+	size 661 568
+}
+
+--===============--
+-- 시나리오 쉬트 --
+--===============--
+tabsheet "StorySheet_Window"
+{
+	pos 57 50
+	size 661 568
+}

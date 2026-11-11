@@ -1,0 +1,135 @@
+--===============--
+--  호칭 윈도우  --
+--===============--
+window "HeroTitleWindow"
+{
+	ii 5010
+	pos 500 87
+	size 439 306
+	texpos 2 449
+	
+	captionXY 0 0 
+	captionWH 439 306
+
+	opensound 3007
+	closesound 3010
+	
+}
+
+-- /// 버튼 "Close"
+button "HeroTitle_Close"
+{
+	ii 5002
+	pos 406 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- /// 버튼 "호칭선택"  
+button "HeroTitle_Select"
+{
+	ii 5010
+	pos 252 269
+	size 82 24
+	texpos 453 762
+		
+	-- 버튼 그림 좌표 	
+	uppos 453 762
+	upoverpos 453 788
+	downpos 453 814
+	
+	downsound 3001
+}
+
+-- /// 버튼 "취소"  
+button "HeroTitle_Cancel"
+{
+	ii 5010
+	pos 341 269
+	size 82 24
+	texpos 537 762
+		
+	-- 버튼 그림 좌표 	
+	uppos 537 762
+	upoverpos 537 788
+	downpos 537 814
+	
+	downsound 3001
+}
+
+
+-- /// 보유 호칭 리스트 박스
+listbox "HeroTitle_TitleList"
+{
+	pos 27 55
+	size 184 234
+
+	row_height 18			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 100			-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5010			
+	child_size 184 18			
+	child_texpos 2 403
+
+	scrollskin "ListScroll"
+	selectwidth 184
+	
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x,  w,   align
+	
+	columnX 3 	20	 left
+	columnX 30	140	 left
+}
+
+-- /// 호칭 설명박스
+textbox "HeroTitle_TitleDesc"
+{
+	pos 238 54
+	size 169 126
+
+	row_height 18		-- 열 높이 세팅	
+	maxitemnum 40		-- 리스트가 담을수 잇는 최대 갯수 ( 최대 60 이상 지정하지 마세요)
+}
+
+-- /// 호칭 효과 설명박스
+textbox "HeroTitle_EffectDesc"
+{
+	pos 238 186
+	size 169 72
+
+	row_height 18		-- 열 높이 세팅	
+	maxitemnum 40		-- 리스트가 담을수 잇는 최대 갯수 ( 최대 60 이상 지정하지 마세요)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- /// 보유 호칭 개수
+label "HeroTitle_Number"
+{
+	pos 150 30
+	size 45 11
+	text_align center
+}

@@ -1,0 +1,166 @@
+--===============--
+-- 캐릭터 선택창 윈도우 --
+--===============--
+window_prop "P_SelectWindow"
+{
+	skinname "SelectWindow"
+}
+
+-- /// 버튼 "캐릭터 선택판 회전"
+button_prop "P_Select_RightSelect"
+{
+	skinname "Select_RightSelect"
+	parent "P_SelectWindow"
+}
+
+button_prop "P_Select_LeftSelect"
+{
+	skinname "Select_LeftSelect"
+	parent "P_SelectWindow"
+}
+
+-- /// 버튼 "접속"
+button_prop "P_Select_Connect"
+{
+	skinname "Select_Connect"
+	parent "P_SelectWindow"
+}
+
+-- /// 버튼 "생성"
+button_prop "P_Select_Create"
+{
+	skinname "Select_Create"
+	parent "P_SelectWindow"
+}
+
+
+--===============--
+-- 캐릭터 정보 윈도우 --
+--===============--
+window_prop "P_SelectInfoWindow"
+{
+	skinname "SelectInfoWindow"
+}
+
+label_prop "P_SelectInfo_Back"
+{
+	skinname "SelectInfo_Back"
+	parent "P_SelectInfoWindow"
+}
+
+label_prop "P_SelectInfo_Level"
+{
+	skinname "SelectInfo_Level"
+	parent "P_SelectInfoWindow"
+}
+
+label_prop "P_SelectInfo_Name"
+{
+	skinname "SelectInfo_Name"
+	parent "P_SelectInfoWindow"
+}
+
+label_prop "P_SelectInfo_Job"
+{
+	skinname "SelectInfo_Job"
+	parent "P_SelectInfoWindow"
+}
+
+label_prop "P_SelectInfo_Map"
+{
+	skinname "SelectInfo_Map"
+	parent "P_SelectInfoWindow"
+}
+
+
+--===============--
+-- 캐릭터 선택버튼 윈도우 --
+--===============--
+window_prop "P_SelectButtonWindow"
+{
+	skinname "SelectButtonWindow"
+}
+
+-- /// 버튼 "캐릭터 삭제"
+button_prop "P_SelectButton_Delete"
+{
+	skinname "SelectButton_Delete"
+	parent "P_SelectButtonWindow"
+}
+
+-- /// 버튼 "캐릭터 삭제취소"
+button_prop "P_SelectButton_DeleteCancel"
+{
+	skinname "SelectButton_DeleteCancel"
+	parent "P_SelectButtonWindow"
+}
+
+-- /// 버튼 "초기화면"
+button_prop "P_SelectButton_Begin"
+{
+	skinname "SelectButton_Begin"
+	parent "P_SelectButtonWindow"
+}
+
+button_prop "P_SelectButton_Exit"
+{
+	skinname "SelectButton_Exit"
+	parent "P_SelectButtonWindow"
+}
+
+--===============--
+-- 채널선택 윈도우 --
+--===============--
+window_prop "P_ChannelWindow"
+{
+	skinname "ChannelWindow"
+}
+
+-- /// 채널 리스트   
+listbox_prop "P_Channel_ListBox"
+{
+	skinname "Channel_ListBox"
+	parent "P_ChannelWindow"
+}
+
+button_prop "P_Channel_Connect"
+{
+	skinname "Channel_Connect"
+	parent "P_ChannelWindow"
+}
+
+button_prop "P_Channel_Cancel"
+{
+	skinname "Channel_Cancel"
+	parent "P_ChannelWindow"
+}
+
+radiobutton_prop "P_Channel_Page1"
+{
+	skinname "Channel_Page1"
+	parent "P_ChannelWindow"
+}
+
+radiobutton_prop "P_Channel_Page2"
+{
+	skinname "Channel_Page2"
+	parent "P_ChannelWindow"
+}
+
+radiobutton_prop "P_Channel_Page3"
+{
+	skinname "Channel_Page3"
+	parent "P_ChannelWindow"
+}
+
+radiobutton_prop "P_Channel_Page4"
+{
+	skinname "Channel_Page4"
+	parent "P_ChannelWindow"
+}
+
+radiobutton_prop "P_Channel_Page5"
+{
+	skinname "Channel_Page5"
+	parent "P_ChannelWindow"
+}

@@ -1,0 +1,56 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+--군단장 자라스
+--모드스킬4
+
+Header
+{
+	type	0
+	
+	effect	0	0.0	0.0	0.0	1.0	"eff_em2016_08.nif"
+	
+	sound	21	5002
+	sound	22	5011
+	sound	26	5509
+	sound	23	5513
+	sound	24	5514
+	sound	25	5006
+}
+
+Activity
+{
+	animation	33
+	
+	action	0	0	0	0	1	foot	0.0	0.0	0.0
+
+	soundplay	530	21	0
+	soundplay	530	22	0
+	active	730
+
+}
+
+Apply
+{	
+	damage	0	100
+}

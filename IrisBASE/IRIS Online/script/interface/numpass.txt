@@ -1,0 +1,243 @@
+--===============--
+-- 보안번호 윈도우 --
+--===============--
+window "NumPassWindow"
+{
+	ii 5000
+	pos 412 420
+	size 200 250
+	texpos 2 628
+}
+
+-- /// 비밀번호 에디트  
+editbox "NumPass_PassEdit"
+{
+	pos 90 67
+	size 108 13
+	
+	editkind 4	-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 5:특문제외 )
+	editpos 0 0	
+	editmaxlen 4	-- 에디트가 받아들일수 있는 최대 길이 지정
+	text_align left
+	
+}
+-- /// 버튼 "접속"
+button "NumPass_Connect"
+{
+	ii 5000
+	pos 27 182
+	size 72 24
+	texpos 467 361
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 467 361
+	upoverpos 467 388
+	downpos 467 415
+	enablepos 467 415
+
+	downsound 3001
+}
+
+-- /// 버튼 "종료"
+button "NumPass_Cancel"
+{
+	ii 5000
+	pos 102 182
+	size 72 24
+	texpos 542 361
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 542 361
+	upoverpos 542 388
+	downpos 542 415
+	enablepos 542 415
+	downsound 3001
+}
+
+-- /// 버튼 "0"  
+button "NumPass_0_Button"
+{
+	ii 5000
+	pos 31 88
+	size 33 24
+	texpos 349 706
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 349 706
+	upoverpos 349 732
+	downpos 349 758
+	enablepos 349 758
+
+	downsound 3001
+}
+
+button "NumPass_1_Button"
+{
+	ii 5000
+	pos 66 88
+	size 33 24
+	texpos 209 628
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 209 628
+	upoverpos 209 654
+	downpos 209 680
+	enablepos 209 680
+
+	downsound 3001
+}
+
+button "NumPass_2_Button"
+{
+	ii 5000
+	pos 101 88
+	size 33 24
+	texpos 244 628
+	useenable true
+		
+	-- 버튼 그림 좌표 	
+	uppos 244 628
+	upoverpos 244 654
+	downpos 244 680
+	enablepos 244 680
+	
+	downsound 3001
+}
+
+button "NumPass_3_Button"
+{
+	ii 5000
+	pos 136 88
+	size 33 24
+	texpos 279 628
+	useenable true
+		
+	-- 버튼 그림 좌표 	
+	uppos 279 628
+	upoverpos 279 654
+	downpos 279 680
+	enablepos 279 680
+
+	downsound 3001
+}
+
+button "NumPass_4_Button"
+{
+	ii 5000
+	pos 31 114
+	size 33 24
+	texpos 314 628
+	useenable true
+		
+	-- 버튼 그림 좌표 	
+	uppos 314 628
+	upoverpos 314 654
+	downpos 314 680
+	enablepos 314 680
+	
+	downsound 3001
+}
+
+button "NumPass_5_Button"
+{
+	ii 5000
+	pos 66 114
+	size 33 24
+	texpos 349 628
+	useenable true	
+	
+	-- 버튼 그림 좌표 	
+	uppos 349 628
+	upoverpos 349 654
+	downpos 349 680
+	enablepos 349 680
+
+	downsound 3001
+}
+
+button "NumPass_6_Button"
+{
+	ii 5000
+	pos 101 114
+	size 33 24
+	texpos 209 706
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 209 706
+	upoverpos 209 732
+	downpos 209 758
+	enablepos 209 758
+
+	downsound 3001
+}
+
+button "NumPass_7_Button"
+{
+	ii 5000
+	pos 136 114
+	size 33 24
+	texpos 244 706
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 244 706
+	upoverpos 244 732
+	downpos 244 758
+	enablepos 244 758
+
+	downsound 3001
+}
+
+button "NumPass_8_Button"
+{
+	ii 5000
+	pos 31 140
+	size 33 24
+	texpos 279 706
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 279 706
+	upoverpos 279 732
+	downpos 279 758
+	enablepos 279 758
+
+	downsound 3001
+}
+
+button "NumPass_9_Button"
+{
+	ii 5000
+	pos 66 140
+	size 33 24
+	texpos 314 706
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 314 706
+	upoverpos 314 732
+	downpos 314 758
+	enablepos 314 758
+
+	downsound 3001
+}
+
+button "NumPass_Clear_Button"
+{
+	ii 5000
+	pos 101 140
+	size 67 24
+	texpos 209 785
+		
+	-- 버튼 그림 좌표 	
+	uppos 209 785
+	upoverpos 278 785
+	downpos 348 785
+
+	downsound 3001
+}

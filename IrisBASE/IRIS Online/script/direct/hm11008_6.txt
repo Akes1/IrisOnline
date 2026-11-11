@@ -1,0 +1,53 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--매지션: 순간 이동
+
+Header
+{
+	type	0
+
+	effect	0	0.0	0.0	0.0	1.2	"eff_3033_01.nif"
+
+	sound	21	5008
+	sound	22	5522
+
+}
+
+Activity
+{
+	animation	146
+
+	action	0	0	0	0	0	foot	0.0	0.0	0.0
+
+	soundplay	10	21	0
+	soundplay	10	22	0
+
+	active	400
+}
+
+Apply
+{
+
+}

@@ -1,0 +1,479 @@
+--=================--
+-- 우편 시스템	    --
+--=================--
+tabwindow "Mail_Window"
+{
+	ii 4001
+	pos 217 189
+	size 590 390
+	texpos 2 2
+
+	captionXY 0 0 
+	captionWH 583 46
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 닫기 버튼
+button "Mail_Close"
+{
+	ii 5002
+	pos 557 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 탭버튼 "우편목록"
+tabbutton "Mail_List"
+{
+	ii 4001
+	pos 34 44
+	size 70 30
+	texpos 2 530
+	
+	uppos 2 530
+	upoverpos 2 530
+	downpos 2 497
+
+	downsound 3001
+}
+
+-- 탭버튼 "편지읽기"
+tabbutton "Mail_Read"
+{
+	ii 4001
+	pos 34 44
+	size 70 30
+	texpos 2 530
+	
+	uppos 2 530
+	upoverpos 2 530
+	downpos 2 497
+
+	downsound 3001
+}
+
+-- 탭버튼 "편지쓰기"
+tabbutton "Mail_Send"
+{
+	ii 4001
+	pos 109 44
+	size 70 30
+	texpos 73 530
+	
+	uppos 73 530
+	upoverpos 73 530
+	downpos 73 497
+
+	downsound 3001
+}
+
+-- 소스에서 사용
+tabsheet "Mail_ListSheet"
+{
+	ii 4001
+	pos 11 71
+	size 568 321
+	texpos 597 2
+}
+
+-- 소스에서 사용
+tabsheet "Mail_ReadSheet"
+{
+	ii 4001
+	pos 11 71
+	size 568 321
+	texpos 597 323
+}
+
+-- 소스에서 사용
+tabsheet "Mail_SendSheet"
+{
+	ii 4001
+	pos 11 71
+	size 568 321
+	texpos 597 645
+}
+
+--=================--
+-- 우편 목록시트   --
+--=================--
+-- /// 버튼 "전체선택"
+button "MailList_All"
+{
+	ii 4001
+	pos 10 283
+	size 72 24
+	texpos 76 421
+	
+	-- 버튼 그림 좌표 	
+	uppos 76 421
+	upoverpos 76 446
+	downpos 76 471
+	
+	useenable true
+	enablepos 76 471
+
+	downsound 3001
+}
+
+-- /// 버튼 "선택삭제"
+button "MailList_Delete"
+{
+	ii 4001
+	pos 482 283
+	size 72 24
+	texpos 372 421
+	
+	-- 버튼 그림 좌표 	
+	uppos 372 421
+	upoverpos 372 446
+	downpos 372 471
+	
+	useenable true
+	enablepos 372 471
+
+	downsound 3001
+}
+
+-- /// 버튼 "답장"
+button "MailList_Send"
+{
+	ii 4001
+	pos 396 283
+	size 72 24
+	texpos 298 421
+	
+	-- 버튼 그림 좌표 	
+	uppos 298 421
+	upoverpos 298 446
+	downpos 298 471
+	
+	useenable true
+	enablepos 298 471
+
+	downsound 3001
+}
+
+-- 소스에서 사용하는 스킨명
+listbox "MailList_ListBox"
+{
+	pos 12 32
+	size 543 250
+	row_height 24		-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 100	
+			
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 4001		-- 텍스쳐
+	child_size 543 24	-- 사이즈
+	child_texpos 2 394	-- 이미지 위치
+	
+	selectwidth 543		-- 선택 바 width 조절
+
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--       x,  w,   align
+	imgcolX  2 	16			-- 체크박스
+	columnX 63 	210	 left  -- 제목	
+	columnX 272 	121	 center  -- 보낸사람
+	columnX 393	88	 center  -- 받은 날
+	columnX 481	62	 center  -- 받은시간
+
+}
+
+-- 소스에서 사용하는 스킨
+label "MailList_Check"
+{
+	ii 4001
+	pos 0 0
+	size 12 12
+	texpos 213 514
+}
+
+-- 소스에서 사용하는 스킨
+label "MailList_NoCheck"
+{
+	ii 4001
+	pos 0 0
+	size 12 12
+	texpos 213 500
+}
+
+-- 소스에서 사용하는 스킨
+-- 아이템 첨부
+label "MailList_ItemAdd"
+{
+	ii 4001
+	pos 37 0	-- 리스트박스 내 좌표
+	size 10 11
+	texpos 232 515
+}
+
+-- 소스에서 사용하는 스킨
+-- 새 우편
+label "MailList_NewMail"
+{
+	ii 4001
+	pos 20 0	-- 리스트박스 내 좌표
+	size 17 12
+	texpos 229 500
+}
+
+-- 스핀박스 "페이지"
+spinbox "MailList_PageSpin"
+{
+	pos 200 285
+	size 142 18
+	
+	leftbuttonskin "spinbox_left"	
+	rightbuttonskin "spinbox_right"
+	labelskin "spinbox_label"
+
+}
+
+--=================--
+-- 우편 읽기 시트  --
+--=================--
+-- /// 버튼 "목록보기"
+button "MailRead_List"
+{
+	ii 4001
+	pos 10 283
+	size 72 24
+	texpos 224 421
+	
+	-- 버튼 그림 좌표 	
+	uppos 223 421
+	upoverpos 223 446
+	downpos 223 471
+	
+	useenable true
+	enablepos 223 471
+
+	downsound 3001
+}
+
+-- /// 버튼 "삭제"
+button "MailRead_Delete"
+{
+	ii 4001
+	pos 482 283
+	size 72 24
+	texpos 372 421
+	
+	-- 버튼 그림 좌표 	
+	uppos 372 421
+	upoverpos 372 446
+	downpos 372 471
+	
+	useenable true
+	enablepos 372 471
+
+	downsound 3001
+}
+-- /// 버튼 "답장"
+button "MailRead_Send"
+{
+	ii 4001
+	pos 396 283
+	size 72 24
+	texpos 298 421
+	
+	-- 버튼 그림 좌표 	
+	uppos 298 421
+	upoverpos 298 446
+	downpos 298 471
+	
+	useenable true
+	enablepos 298 471
+
+	downsound 3001
+}
+
+-- /// "보낸이" 
+label "MailRead_Name"
+{
+	pos 150 15
+	size 120 20
+}
+-- /// "받은날" 
+label "MailRead_Time"
+{
+	pos 370 15
+	size 120 20
+}
+-- /// "제목" 
+label "MailRead_Title"
+{
+	pos 84 45
+	size 450 20
+}
+
+-- /// "내용"
+textbox "MailRead_Text"
+{
+	pos 84 75
+	size 365 115
+	
+	row_height 16		-- 열 높이 세팅	
+	maxitemnum 7		-- 리스트가 담을수 잇는 최대 갯수 ( 최대 39 이상 지정하지 마세요)
+}
+
+
+-- /// "돈" 
+label "MailRead_Money"
+{
+	pos 120 204
+	size 120 20
+}
+-- /// 버튼 "돈"
+button "MailRead_GetMoney"
+{
+	ii 4001
+	pos 83 195
+	size 26 26
+	texpos 276 500
+	
+	-- 버튼 그림 좌표 	
+	uppos 276 500
+	upoverpos 304 500
+	downpos 332 500
+	
+	useenable true
+	enablepos 276 500
+
+	downsound 3001
+}
+
+-- /// 버튼 "모두받기"
+button "MailRead_GetItemAll"
+{
+	ii 4001
+	pos 367 197
+	size 72 24
+	texpos 149 421
+	
+	-- 버튼 그림 좌표 	
+	uppos 149 421
+	upoverpos 149 446
+	downpos 149 471
+	
+	useenable true
+	enablepos 149 471
+
+	downsound 3001
+}
+
+-- 소스에서 사용하는 스킨
+-- /// 등록상태 아이콘
+icon "MailRead_Slot00"	{ pos 266 195	size 28 28 } 
+icon "MailRead_Slot01"	{ pos 301 195	size 28 28 } 
+icon "MailRead_Slot02"	{ pos 336 195	size 28 28 } 
+
+
+--=================--
+-- 우편 쓰기 시트  --
+--=================--
+-- /// 버튼 "보내기"
+button "MailSend_Send"
+{
+	ii 4001
+	pos 482 283
+	size 72 24
+	texpos 2 421
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 421
+	upoverpos 2 446
+	downpos 2 471
+	
+	useenable true
+	enablepos 2 421
+
+	downsound 3001
+}
+
+-- /// "받는이" 
+editbox "MailSend_Name"
+{
+	pos 84 13
+	size 450 20
+	
+	editkind 5					-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editpos 5 4	
+	editmaxlen 16				-- 에디트가 받아들일수 있는 최대 길이 지정 ( 미지정시 110 바이트 )
+		
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+-- /// "제목" 
+editbox "MailSend_Title"
+{
+	pos 84 40
+	size 450 22
+	
+	editkind 0					-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editpos 5 4	
+	editmaxlen 30				-- 에디트가 받아들일수 있는 최대 길이 지정 ( 미지정시 110 바이트 )
+		
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// "보낼 내용"
+multieditbox "MailSend_Text"
+{
+	pos 84 75
+	size 365 115
+	editmaxlen 150	-- 150자까지 출력
+	editkind 0
+}
+-- /// "돈" 
+label "MailSend_Money"
+{
+	pos 120 204
+	size 120 20
+}
+-- /// "수수료" 
+label "MailSend_Charge"
+{
+	pos 84 240
+	size 120 20
+}
+
+-- /// 버튼 "돈"
+button "MailSend_AddMoney"
+{
+	ii 4001
+	pos 83 195
+	size 26 26
+	texpos 276 500
+	
+	-- 버튼 그림 좌표 	
+	uppos 276 500
+	upoverpos 304 500
+	downpos 332 500
+	
+	useenable true
+	enablepos 276 500
+
+	downsound 3001
+}
+
+-- 소스에서 사용하는 스킨
+-- /// 등록상태 아이콘
+icon "MailSend_Slot00"	{ pos 266 196	size 28 28 } 
+icon "MailSend_Slot01"	{ pos 301 196	size 28 28 } 
+icon "MailSend_Slot02"	{ pos 336 196	size 28 28 } 

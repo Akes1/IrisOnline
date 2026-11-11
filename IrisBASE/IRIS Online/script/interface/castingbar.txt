@@ -1,0 +1,66 @@
+--===============--
+-- 캐스팅 바 윈도우 --
+--===============--
+window "CastingBar"
+{
+	ii 5002
+	pos 393 622
+	size 286 34 --248 27
+
+	texpos 221 988  --259 992
+	
+	holdview true
+
+	captionXY 0 0 
+	captionWH 248 27
+}
+
+-- /// 캐스팅 바 틀 
+gauge "Casting_GuageBar"
+{
+	pos 41 7
+	size 242 21
+	
+	gauge_speed 10			-- float 값
+	show_text false
+		
+	gauge_ii 5002
+	gauge_pos 0 0
+	gauge_size 5 21
+	gauge_texpos 222 962
+	gauge_width 242
+	gauge_height 21
+
+}
+
+-- /// 게이지 끝에 따라오는 효과
+label "Casting_GuageEnd"
+{
+	ii 5002
+	size 2 21
+	texpos 229 962
+}
+
+-- /// 스킬 이름
+label "Casting_SkillName"
+{
+	pos 49 12
+	size 150 11
+	text_align left
+}
+-- /// 스킬 시전시간
+label "Casting_SkillTime"
+{
+	pos 216 13
+	size 60 11
+	text_align right
+}
+
+-- /// 스킬 아이콘
+-- 소스에서 사용하는 스킨
+label "Casting_SkillIcon"
+{
+	
+	pos 3 3
+	size 28 28
+}

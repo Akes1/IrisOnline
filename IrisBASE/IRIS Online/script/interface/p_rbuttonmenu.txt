@@ -1,0 +1,20 @@
+--===========
+-- 팁 윈도우
+--===========
+-- 아이템 팁 윈도우
+window_prop "P_RButtonMenu"
+{
+	skinname "RButtonMenu"
+}
+
+listbox_prop "P_RButtonMenu_ListBox"
+{
+	skinname "RButtonMenu_ListBox"
+	parent "P_RButtonMenu"
+}
+
+label_prop "P_RButtonMenu_Name"
+{
+	skinname "RButtonMenu_Name"
+	parent "P_RButtonMenu"
+}

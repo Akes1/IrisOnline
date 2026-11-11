@@ -1,0 +1,1 @@
+IrisGameSrv.exe /TEST -VERBOSE -PACKET -DEF PvP2Server

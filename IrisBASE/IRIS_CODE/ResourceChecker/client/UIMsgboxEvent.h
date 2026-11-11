@@ -1,0 +1,204 @@
+/* ==========================================================================
+* 파    일 : UIMsgboxEvent.h
+* 목    적 : 
+* 작 성 자 : 김가람
+* 작 성 일 : 2007-04-04
+* 주의사항 :
+*===========================================================================*/
+#pragma once
+
+/// 메시지박스의 스킨타입
+enum eBoxSkin_Type
+{
+	/// 메시지박스 자체만 뜬다.
+	eSKIN_NONE,
+	/// OK 버튼 하나 사용
+	eSKIN_OK,
+	/// YES, NO 버튼 사용 
+	eSKIN_YESNO,
+	/// 취소 버튼 사용
+	eSKIN_CANCEL,
+	/// 게이지 사용 
+	eSKIN_GAUGE,
+	/// 에디트박스 사용
+	eSKIN_EDIT,
+};
+
+/// 메시지박스 타입
+enum eMSGBox_Type
+{
+	eMSGBOX_NONE,
+
+	eMSGBOX_MODAL,
+	eMSGBOX_MODALLESS,
+};
+
+/// 메시지박스 이벤트 및 식별자
+enum eMSGBox_Event
+{
+	eMBEVENT_NONE,
+	
+	eMBEVENT_CONNECT_DEAD,
+	eMBEVENT_CONNECT_LOGINFAILE,
+	eMBEVENT_CONNECT_LOGINSRV,
+	eMBEVENT_CONNECT_GAMESRV,
+
+	/// 로그인 error
+	eMBEVENT_LOGIN_ERROR, // 일반적으로 사용
+	eMBEVENT_DOUBLE_LOGIN,
+	eMBEVENT_PWD_FAIL,
+	eMBEVENT_IS_PIN_FAIL,
+
+	eMBEVENT_TUTORIAL_SELECT,
+
+	eMBEVENT_CHARACTER_DELETE,
+
+	///
+	eMBEVENT_LOAD_FAIL,
+
+	eMBEVENT_TRADE_CONFIRM,	/// 거래 물품 확인 시
+
+	eMBEVENT_FRIEND_ADD,		/// 친구 추가
+	eMBEVENT_FRIEND_ADD_REQ,	/// 친구 추가 신청 ( 상대방으로부터 옴 )
+	eMBEVENT_FRIEND_DELETE,		/// 친구 삭제
+	eMBEVENT_FRIEND_DELETE_REQ,	/// 친구 삭제 신청 ( 상대방으로부터 옴 )
+
+	/// 아이템
+	eMBEVENT_ITEM_SELL,			// 아이템 메세지 윈도우
+	eMBEVENT_ITEM_DUMP,
+	eMBEVENT_ITEM_BUY,
+	eMBEVENT_ITEM_USERSELLBUY,
+	eMBEVENT_ITEM_NPCDEALBUY,
+
+	eMBEVENT_ITEM_PUTCARD_NEW,		/// 새로운 카드 장착
+	eMBEVENT_ITEM_PUTCARD_UPDATE,	/// 기존카드 덮어쓰기
+	eMBEVENT_ITEM_CARDBOOK_TAROTNEW,	/// 새 카드 장착
+	eMBEVENT_ITEM_CARDBOOK_TAROTUPDATE,	/// 기존카드 덮어쓰기
+	eMBEVENT_ITEM_CARDBOOK_SPREADNEW,	/// 새 스프레드 장착
+	eMBEVENT_ITEM_CARDBOOK_SPREADUPDATE,	/// 기존스프레드 덮어쓰기
+	eMBEVENT_ITEM_NOTEXCHANGE_GET,			/// 거래불가 옵션 아이템 획득
+	eMBEVENT_ITEM_ENHANCE,				/// 아이템 강화시 카드삭제 경고
+
+	eMBEVENT_ITEMCOUNT_BUY,		/// 아이템 카운트 윈도우
+	eMBEVENT_ITEMCOUNT_SELL,
+	eMBEVENT_ITEMCOUNT_SPLIT,
+	eMBEVENT_ITEMCOUNT_USERSELLBUY,
+	eMBEVENT_ITEMCOUNT_NPCDEALBUY,
+
+	/// skill 구매
+	eMBEVENT_SKILL_BUY,
+
+	/// 타로
+	eMBEVENT_TAROTSEEKER_START,	/// 점괘보기 시작
+	eMBEVENT_TAROTSELECT_EXIT,	/// 카드선택창 종료시
+	eMBEVENT_TAROTRESULT_EXIT,	/// 점괘보기창 종료시
+	eMBEVENT_TAROTLEADER_EXIT,	/// 개설자가 종료시
+
+	eMBEVENT_NPCTAROT_START,
+	eMBEVENT_NPCTAROT_EXIT,		/// NPC 점집 이용 종료
+
+	/// 파티
+	eMBEVENT_PARTY_ADD_REQ,				/// 파티가입요청 받음 (상대방으로부터 옴 )
+	eMBEVENT_PARTY_CHANGELEADER_REQ,	/// 파티장 위임
+	eMBEVENT_PARTY_THROW,				/// 파티원 추방
+	eMBEVENT_PARTY_OUT,					/// 파티 탈퇴
+
+	/// 퀘스트
+	eMBEVENT_QUEST_ADDBYITEM,	/// 의뢰아이템 여부
+	eMBEVENT_QUEST_DELETE,		/// 퀘스트 포기 여부
+	eMBEVENT_QUEST_REWARDJOB,	/// 전직 확인
+	eMBEVENT_QUEST_REWARDFORCE,	/// 세력 확인
+
+	/// 거래
+	eMBEVENT_TRADE_REQUEST,		/// 거래요청 옴
+	eMBEVENT_TRADE_MONEYIN,		/// 거래금액 입력
+
+	/// 창고 돈 입출금
+	eMBEVENT_WAREHOUSE_MONEYIN,
+	eMBEVENT_WAREHOUSE_MONEYOUT,
+
+	/// 우편 돈 입금
+	eMBEVENT_MAIL_MONEYIN,
+
+	/// 판매노점상
+	eMBEVENT_USERSELL_ITEMMONEYADD,	 /// 판매노점에 아이템, 돈 입력	
+	eMBEVENT_USERSELL_ITEMMONEYMODIFY,
+	eMBEVENT_USERSELL_ITEMMONEYCANCEL,
+
+	/// 맵체인지
+	eMBEVENT_MAPCHANGE,
+	eMBEVENT_USERMAPCHANGE,
+	eMBEVENT_MAPCHANGEWAIT,		// 맵체인지 대기
+
+	/// 부활
+	eMBEVENT_REVIVAL_STAND,		/// 제자리부활
+	eMBEVENT_REVIVAL_SKILL,		/// 스킬부활
+
+	/// PVP
+	eMBEVENT_PVP_DM_JOIN,		/// 초청
+	eMBEVENT_PVP_DM_NOTREADY,	/// 진행 불가 pvp out
+
+	/// 길드테스트용
+	eMBEVENT_GUILD_CREATE,		/// 길드 생성
+	eMBEVENT_GUILD_INPUTNAME,	/// 길드명 입력 
+	eMBEVENT_GUILD_CHECKNAME,	/// 길드명 확인 
+	eMBEVENT_GUILD_ADD,			/// 길드가입 요청 받음
+	eMBEVENT_GUILD_MEMBERDROP,	/// 길드원제명
+	eMBEVENT_GUILD_OUT,			/// 길드 탈퇴
+	eMBEVENT_GUILD_BREAK,		/// 길드 삭제
+	eMBEVENT_GUILD_ADDUSERNAME,	/// 길드 초대할 유저명 입력
+	eMBEVENT_GUILD_GIVEPOSITION,	/// 길드 직위 변경
+
+	/// 오늘의 한마디
+	eMBEVENT_TODAYWORD_EXIT,	/// 오늘의 한마디 종료
+
+	eMBEVENT_ITEMMIX_GIVEUP, 
+	eMBEVENT_ITEMMIX_DELETE,	/// 보조기술 삭제
+
+	eMBEVENT_PLAYER_KICKED,
+
+	/// 스킬 초기화
+	eMBEVENT_SKILLRESET,
+	eMBEVENT_SKILLRESETPROCESS,	/// 스킬 초기화 진행
+
+	/// 판매대행
+	eMBEVENT_NPCDEAL_REGISTCANCEL,	/// 등록 취소
+	eMBEVENT_NPCDEAL_ITEM_GET_FAIL, /// 아이템 구입 실패
+	eMBEVENT_NPCDEAL_ITEM_FIND,		// 검색중
+	eMBEVENT_NPCDEAL_ITEM_REGIST,
+	eMBEVENT_NPCDEAL_ITEM_DELETE,
+	eMBEVENT_NPCDEAL_ITEM_BUY,
+
+	/// 우편함
+	eMBEVENT_MAIL_GETMONEY,			/// 돈 찾기
+	eMBEVENT_MAIL_DELETE,			
+	eMBEVENT_MAIL_SELECT_DELETE,    /// 우편함 선택 삭제
+
+	/// 테마던젼
+	eMBEVENT_THEME_ENTER_INFO_WAIT,	/// 테마 던젼 입장 정보 가져오는 중...
+	eMBEVENT_THEME_ENTER_WAIT,		/// 테마 던젼 입장 대기 중...
+
+	/// 전장 NPC 이용 종료
+	eMBEVENT_PVP_REMOVE_NPC,
+	
+	eMBEVENT_PVP_READY_CANCEL,
+	eMBEVENT_PVP_READY_MAPCHANGE,
+
+	eMBEVENT_PVP_REVIVAL,			// 전장 내 부활
+
+	/// GM_Tool pvp, theme 던젼 이동 대기
+	eMBEVENT_GM_TOOL_GOTO_DUNGEON,
+
+	/// 단축키 설정
+	eMBEVENT_SHORTCUT_OK,
+	eMBEVENT_SHORTCUT_CANCEL,
+
+	/// GM_Tool 스킬 습득 중
+	eMBEVENT_GM_TOOL_GET_SKILL,
+
+	eMBEVENT_TUTORIAL_EXIT,		/// 튜토리얼 종료
+	eMBEVENT_TUTORIAL_REVIVAL,
+
+	/// 비디오 캡쳐
+	eMBEVENT_VIDEO_CAPTURE,
+};

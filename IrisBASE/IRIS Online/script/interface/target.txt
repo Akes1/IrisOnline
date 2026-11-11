@@ -1,0 +1,120 @@
+--==============================================================
+-- TargetWindow : 타겟 창 
+--==============================================================
+window "TargetWindow"
+{
+	pos 435 0
+	size 220 51
+	ii 5002
+	texpos 416 163
+		
+	captionXY 0 0
+	captionWH 177 36
+}
+-- /// 라벨 "타겟이름"
+label "TargetName"
+{
+	pos 66 3
+	size 145 20
+	text_align center
+}
+
+-- /// 라벨 "NPC 직업 표시"(추가)
+label "TargetNpcJobText"
+{
+	pos 61 25
+	size 155 20
+	text_align center
+}
+
+--- /// 라벨 "타겟레벨"
+label "TargetLevel"
+{
+	pos 2 26
+	size 22 11
+	text_align center
+}
+
+-- 본인 파티유저
+label "TargetParty"
+{
+	ii 5002
+	pos 60 0
+	size 24 24
+	texpos 354 182
+}
+
+-- 다른 파티유저
+label "TargetOtherParty"
+{
+	ii 5002
+	pos 60 0
+	size 24 24
+	texpos 380 182
+}
+
+-- "타겟 플레이어, 몬스터 직업 이미지 표시"
+label "TargetJob"
+{
+	pos 24 9
+	size 32 32
+}
+
+-- "타겟 NPC 직업 이미지 표시-NPC-"
+label "TargetNpcJob"
+{
+	pos 24 9
+	size 32 32
+}
+
+
+--==============================================================
+-- TargetWindow : 타겟 HP 게이지 
+--==============================================================
+gauge "Target_HP_GuageBar"
+{
+	ii 5002
+	pos 67 28				
+	size 141 9
+	texpos 483 191
+	
+	gauge_speed 30.0			-- float 값
+	show_percent true			-- 게이지 수치를 % 로 나타냄
+	
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 628 734
+	gauge_width 139		-- 100 % 사이즈
+	gauge_height 7
+}
+
+-- 소스에서 타겟창 게이지바 Hero의 텍스쳐 위치로 사용 
+label "Target_HP_Hero"
+{
+	pos 628 734	
+}
+
+-- 소스에서 타겟창 게이지바 Monster의 텍스쳐 위치로 사용 
+label "Target_HP_Monster"
+{
+	pos 628 725	
+}
+
+--===============--
+-- 타겟 버프 윈도우 --
+--===============--
+-- 타겟버프용 윈도우
+-- TargetBuff 는 소스에서 사용하는 스킨명
+window "TargetBuff"
+{
+	pos 50 50
+	size 172 60
+	holdview true	-- 창이 사라지지 않게 한다. 
+	
+	-- 버프 관련 내용
+	icon_size 16	-- 아이콘사이즈
+	space 1 1	-- 간격 ( 행, 열 )
+	row 2	-- 열수
+	column 10	-- 행수
+}

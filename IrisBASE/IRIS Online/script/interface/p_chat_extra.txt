@@ -1,0 +1,88 @@
+-- /// 분리 채팅창
+window_prop "P_ChatExtraWindow"
+{
+	skinname "ChatExtraWindow"
+}
+
+-- /// 분리 채팅박스 "닫기 버튼"
+button_prop "P_ChatExtra_Close"
+{
+	skinname "ChatExtra_Close"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 분리 채팅박스 사이즈 "+" 버튼
+button_prop "P_ChatExtra_Size_Plus"
+{
+	skinname "ChatExtra_Size_Plus"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 분리 채팅박스 사이즈 "-" 버튼
+button_prop "P_ChatExtra_Size_Minus"
+{
+	skinname "ChatExtra_Size_Minus"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 채팅 옵션 "일반"
+pushbutton_prop "P_ChatExtra_Nomal"
+{
+	skinname "ChatExtra_Nomal"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 채팅 옵션 "파티"
+pushbutton_prop "P_ChatExtra_Party"
+{
+	skinname "ChatExtra_Party"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 채팅 옵션 "길드"
+pushbutton_prop "P_ChatExtra_Guild"
+{
+	skinname "ChatExtra_Guild"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 채팅 옵션 "외치기"
+pushbutton_prop "P_ChatExtra_Shout"
+{
+	skinname "ChatExtra_Shout"
+	parent "P_ChatExtraWindow"
+}
+
+pushbutton_prop "P_ChatExtra_Trade"
+{
+	skinname "ChatExtra_Trade"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 채팅 옵션 "귓속말"
+pushbutton_prop "P_ChatExtra_Whisper"
+{
+	skinname "ChatExtra_Whisper"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 채팅 옵션 "시스템"
+pushbutton_prop "P_ChatExtra_System"
+{
+	skinname "ChatExtra_System"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 채팅 옵션 "메가폰"
+pushbutton_prop "P_ChatExtra_Megaphone"
+{
+	skinname "ChatExtra_Megaphone"
+	parent "P_ChatExtraWindow"
+}
+
+-- /// 분리 채팅박스
+textbox_prop "P_ChatExtraBox"
+{
+	skinname "ChatExtraBox"
+	parent "P_ChatExtraWindow"
+}

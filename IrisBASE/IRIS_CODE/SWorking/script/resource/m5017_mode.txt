@@ -1,0 +1,19 @@
+// 게리의 분신
+Header	
+{
+	effect	1	0	0	0	2	"eff_m_1002_01.nif"
+}
+//
+Mode	0
+{
+	immune	0
+
+	applyaura	45687	0	10	1
+
+	modechange	1	2	30000	0	0
+}
+
+Mode	1
+{
+	immune	0
+}

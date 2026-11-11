@@ -1,0 +1,48 @@
+--===========
+-- 팁 윈도우
+--===========
+-- 아이템 팁 윈도우
+window_prop "P_ItemTip"
+{
+	skinname "Tip"
+}
+
+-- 스킬 팁 윈도우
+window_prop "P_SkillTip"
+{
+	skinname "Tip"
+}
+
+-- 버프 팁 윈도우
+window_prop "P_BuffTip"
+{
+	skinname "Tip"
+}
+
+window_prop "P_SimpleTip"
+{
+	skinname "Tip"
+}
+
+
+window_prop "P_EquipTip"
+{
+	skinname "Tip"
+}
+
+window_prop "P_QuestTip"
+{
+	skinname "Tip"
+}
+
+-- 채팅 아이템 팁 윈도우
+window_prop "P_ChatItemTip"
+{
+	skinname "ChatTip"
+}
+
+button_prop "P_ChatTip_Close"
+{
+	skinname "ChatTip_Close"
+	parent "P_ChatItemTip"
+}

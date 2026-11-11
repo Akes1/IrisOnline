@@ -1,0 +1,156 @@
+--===============--
+-- 데스매치 메시지 윈도우 --
+--===============--
+window_prop "P_PVP_DMMsgWindow"
+{
+	skinname "PVP_DMMsgWindow"
+}
+
+label_prop "P_PVP_DMMsg_Caption"
+{
+	skinname "PVP_DMMsg_Caption"
+	parent "P_PVP_DMMsgWindow"
+}
+
+label_prop "P_PVP_DMMsg_Text"
+{
+	skinname "PVP_DMMsg_Text"
+	parent "P_PVP_DMMsgWindow"
+}
+
+button_prop "P_PVP_DMMsg_Join"
+{
+	skinname "PVP_DMMsg_Join"
+	parent "P_PVP_DMMsgWindow"
+}
+
+button_prop "P_PVP_DMMsg_Cancel"
+{
+	skinname "PVP_DMMsg_Cancel"
+	parent "P_PVP_DMMsgWindow"
+}
+
+button_prop "P_PVP_DMMsg_CountCancel"
+{
+	skinname "PVP_DMMsg_CountCancel"
+	parent "P_PVP_DMMsgWindow"
+}
+
+--===============--
+-- 데스매치 점수 윈도우 --
+--===============--
+window_prop "P_PVP_DMScoreWindow"
+{
+	skinname "PVP_DMScoreWindow"
+}
+label_prop "P_PVP_DMScoreTeamAMark0"
+{
+	skinname "PVP_DMScoreTeamAMark0"
+	parent "P_PVP_DMScoreWindow"
+}
+
+label_prop "P_PVP_DMScoreTeamAMark1"
+{
+	skinname "PVP_DMScoreTeamAMark1"
+	parent "P_PVP_DMScoreWindow"
+}
+
+label_prop "P_PVP_DMScoreTeamAMark2"
+{
+	skinname "PVP_DMScoreTeamAMark2"
+	parent "P_PVP_DMScoreWindow"
+}
+
+label_prop "P_PVP_DMScoreTeamBMark0"
+{
+	skinname "PVP_DMScoreTeamBMark0"
+	parent "P_PVP_DMScoreWindow"
+}
+
+label_prop "P_PVP_DMScoreTeamBMark1"
+{
+	skinname "PVP_DMScoreTeamBMark1"
+	parent "P_PVP_DMScoreWindow"
+}
+
+label_prop "P_PVP_DMScoreTeamBMark2"
+{
+	skinname "PVP_DMScoreTeamBMark2"
+	parent "P_PVP_DMScoreWindow"
+}
+
+gauge_prop "P_PVP_DMScoreStoneGauge"
+{
+	skinname "PVP_DMScoreStoneGauge"
+	parent "P_PVP_DMScoreWindow"
+}
+
+--===============--
+-- 데스매치 중간결과 윈도우 --
+--===============--
+window_prop "P_PVP_DMMiddleResultWindow"
+{
+	skinname "PVP_DMMiddleResultWindow"
+}
+
+listbox_prop "P_PVP_DMMiddleResult_List"
+{
+	skinname "PVP_DMMiddleResult_List"
+	parent "P_PVP_DMMiddleResultWindow"
+}
+
+--===============--
+-- 데스매치 결과 윈도우 --
+--===============--
+window_prop "P_PVP_DMResultWindow"
+{
+	skinname "PVP_DMResultWindow"
+}
+
+button_prop "P_PVP_DMResult_Close"
+{
+	skinname "PVP_DMResult_Close"
+	parent "P_PVP_DMResultWindow"
+}
+
+listbox_prop "P_PVP_DMResult_List"
+{
+	skinname "PVP_DMResult_List"
+	parent "P_PVP_DMResultWindow"
+}
+
+listbox_prop "P_PVP_DMPoint_List"
+{
+	skinname "PVP_DMPoint_List"
+	parent "P_PVP_DMResultWindow"
+}
+
+label_prop "P_PVP_DMResult_Money"
+{
+	skinname "PVP_DMResult_Money"
+	parent "P_PVP_DMResultWindow"
+}
+
+label_prop "P_PVP_DMResult_EXP"
+{
+	skinname "PVP_DMResult_EXP"
+	parent "P_PVP_DMResultWindow"
+}
+
+label_prop "P_PVP_DMResult_Sp"
+{
+	skinname "PVP_DMResult_Sp"
+	parent "P_PVP_DMResultWindow"
+}
+
+label_prop "P_PVP_DMResult_Win"
+{
+	skinname "PVP_DMResult_Win"
+	parent "P_PVP_DMResultWindow"
+}
+
+label_prop "P_PVP_DMResult_Lose"
+{
+	skinname "PVP_DMResult_Lose"
+	parent "P_PVP_DMResultWindow"
+}

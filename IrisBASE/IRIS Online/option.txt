@@ -1,0 +1,7 @@
+windowed 1
+resolution 1024 768 32
+ramp 0.500000
+envvolume 0.500000
+effvolume 0.500000
+video 20
+language 81

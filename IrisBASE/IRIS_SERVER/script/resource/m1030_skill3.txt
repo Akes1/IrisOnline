@@ -1,0 +1,18 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	1.0	"eff_m_1030_03.nif"
+	sound	21	5508
+	sound	22	8302
+	sound	23	30032
+}
+
+Activity
+{
+	animation	7
+	action	0	0	0	0	1	foot	0.0	0.0	0.0
+	soundplay	0	23	0
+	soundplay	800	21	0
+	active	1000
+}
+

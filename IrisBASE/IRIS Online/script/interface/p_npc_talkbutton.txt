@@ -1,0 +1,13 @@
+--===============--
+-- NPC대화 이미지 --
+--===============--
+window_prop "P_TalkButtonWindow"
+{
+	skinname "TalkButtonWindow"
+}
+-- /// 대화시도 버튼
+button_prop "P_TalkButton_Button"
+{
+	skinname "TalkButton_Button"
+	parent "P_TalkButtonWindow"
+}

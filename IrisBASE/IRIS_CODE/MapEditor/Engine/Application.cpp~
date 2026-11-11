@@ -1,0 +1,176 @@
+#include "stdafx.h"
+#include "Application.h"
+
+//#include "DXVersion.h"
+#include "AppWindow.h"
+#include "AppTimer.h"
+
+#include "FilePackSystem.h"
+#include "RenderSystem.h"
+#include "SoundSystem.h"
+#include "InputSystem.h"
+
+#include "ResourceManager.h"
+#include "CameraManager.h"
+#include "SceneManager.h"
+#include "ObjectManager.h"
+#include "WorldManager.h"
+
+cApplication* cApplication::mSingleton = 0;
+cString cApplication::mLangaugeFolder = "korea";
+
+
+cApplication::cApplication()
+: mFileSystem( 0 )
+, mRenderSystem( 0 )
+#ifdef MAP_EDITOR
+, mSoundSystem( 0 )
+#endif
+, mInputSystem( 0 )
+, mResourceManager( 0 )
+, mCameraManager( 0 )
+, mSceneManager( 0 )
+, mObjectManager( 0 )
+, mWorldManager( 0 )
+{
+	assert( mSingleton == 0 && "bad singleton!" );
+	mSingleton = this;
+
+	/// 전역 타이머 생성
+	mTimer = new cAppTimer;
+	mTimer->Reset();
+	mAccumTime = 0;
+	mDeltaTime = 0;
+
+	mActive = true;
+}
+
+cApplication::~cApplication()
+{
+	delete mWorldManager;
+	delete mObjectManager;
+	delete mSceneManager;
+	delete mCameraManager;
+	delete mResourceManager;
+	delete mInputSystem;
+	delete mRenderSystem;
+	delete mFileSystem;
+#ifdef MAP_EDITOR
+	delete mSoundSystem;
+#endif
+	delete mWindow;
+	delete mTimer;
+
+	mSingleton = 0;
+}
+
+void cApplication::Clear()
+{
+	if( mWorldManager )
+		mWorldManager->Clear();
+
+	if( mSceneManager )
+		mSceneManager->Clear();
+
+	if( mResourceManager )
+		mResourceManager->Clear();
+}
+
+bool cApplication::Init( HWND wnd )
+{
+	/// 전역 윈도우를 생성
+	mWindow = new cAppWindow( wnd );
+
+	/// 파일 시스템을 생성
+	mFileSystem = new cFilePackSystem;
+	if( !mFileSystem || !mFileSystem->Init() )
+	{
+		return false;
+	}
+
+	/// 렌더링 시스템을 생성
+	mRenderSystem = new cRenderSystem( mWindow );
+	if( mRenderSystem->Init() == false )
+	{
+		AfxMessageBox( "Failed to init render system" );
+		return false;
+	}
+
+#ifdef MAP_EDITOR
+	/// 사운드 시스템을 생성
+	mSoundSystem = new cSoundSystem;
+	if( mSoundSystem->Init( wnd ) == false )
+	{
+		AfxMessageBox( "Failed to init sound system" );
+		return false;
+	}
+#endif
+
+	/// 입력 시스템을 생성
+	mInputSystem = new cInputSystem;
+
+	/// 자원 관리자를 생성
+	mResourceManager = new cResourceManager;
+	if( mResourceManager->Init() == false )
+		return false;
+	//mpResourceManager->SetBaseDir( baseDir );
+
+	/// 카메라 관리자를 생성
+	mCameraManager = new cCameraManager;
+
+	/// 장면 관리자를 생성
+	mSceneManager = new cSceneManager;
+
+	/// 월드 관리자를 생성
+	mWorldManager = new cWorldManager;
+
+	/// 오브젝트 관리자를 생성 및 초기화
+	mObjectManager = new cObjectManager;
+	if( mObjectManager->Init() == false )
+	{
+		AfxMessageBox( "Failed to init object manager" );
+		return false;
+	}
+
+	/// 타이머 시작
+	mTimer->Start();
+	return true;
+}
+
+void cApplication::Exit()
+{
+	if( mObjectManager )
+		mObjectManager->Exit();
+
+	/// 타이머 중지
+	mTimer->Stop();
+}
+
+void cApplication::Process( bool playing )
+{
+	NiSleep(1);
+
+	/// 경과 시간 및 누적 시간을 계산
+	mDeltaTime = mTimer->GetDeltaTime();
+	mAccumTime += mDeltaTime;
+
+	/// 오브젝트 관리자를 처리
+	mObjectManager->Process( mDeltaTime );
+
+	/// 입력 관리자를 처리
+	mInputSystem->Process();
+
+	/// 카메라 관리자를 처리
+	mCameraManager->Process( mDeltaTime );
+
+	/// 장면 관리자를 처리
+	mSceneManager->Process( mDeltaTime, mAccumTime, playing );
+
+	/// 월드 관리자를 처리
+	mWorldManager->Process( mDeltaTime, mAccumTime, playing );
+}
+
+void cApplication::Render()
+{
+	mRenderSystem->Render();
+}

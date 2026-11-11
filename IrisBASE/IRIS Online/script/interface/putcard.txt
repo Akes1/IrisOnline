@@ -1,0 +1,91 @@
+--===============--
+-- 카드 장착 윈도우 --
+--===============--
+window "PutCardWindow"
+{
+	ii 5003
+	pos 238 233
+	size 200 243
+	texpos 559 1
+
+	opensound 3007
+	closesound 3010
+	
+	captionXY 0 0
+	captionWH 200 243
+}
+
+-- 닫기 버튼 "x"
+button "PutCard_Close"
+{
+	ii 5002
+	pos 167 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 장착 가능 슬롯 카운트
+label "PutCard_SlotCount"
+{
+	pos 90 142
+	size 58 18
+	text_align right
+}
+
+-- 카드장착할 아이템 슬롯 - 소스에서 사용
+icon "PutCard_ItemSlot"	{ pos 86 68	size 28 28 }
+
+---아이콘 - 장착 카드 슬롯 - 소스에서 사용
+icon "PutCard_Slot0"	{ pos 21 186	size 28 28 }
+icon "PutCard_Slot1"	{ pos 54 186	size 28 28 }
+icon "PutCard_Slot2"	{ pos 87 186	size 28 28 }
+icon "PutCard_Slot3"	{ pos 120 186	size 28 28 }
+icon "PutCard_Slot4"	{ pos 153 186	size 28 28 }
+
+-- 슬롯 시작 좌표 ( 툴팁이랑 같이 사용 )
+label "PutCard_SlotPos0"	{ pos 19 171	size 32 45 }
+label "PutCard_SlotPos1"	{ pos 52 171	size 32 45 }
+label "PutCard_SlotPos2"	{ pos 85 171	size 32 45 }
+label "PutCard_SlotPos3"	{ pos 118 171	size 32 45 }
+label "PutCard_SlotPos4"	{ pos 151 171	size 32 45 }
+
+-- 카드슬롯타입 이미지 - 소스에서 사용
+-- 슬롯에 들어갈 실제 슬롯용이미지
+label "PutCard_SlotType0"	-- A
+{ 
+	ii 5003  
+	pos 0 0
+	size 32 45
+	texpos 371 603  
+}
+
+label "PutCard_SlotType1"	-- B
+{ 
+	ii 5003 
+	pos 0 0
+	size 32 45
+	texpos 405 603
+}
+
+label "PutCard_SlotType2"	-- AB
+{ 
+	ii 5003
+	pos 0 0
+	size 32 45
+	texpos 439 603
+}
+
+label "PutCard_SlotType3"	-- O
+{ 
+	ii 5003
+	pos 0 0
+	size 32 45
+	texpos 473 603
+}

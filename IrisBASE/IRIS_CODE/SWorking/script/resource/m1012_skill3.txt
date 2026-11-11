@@ -1,0 +1,29 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	1.2	"eff_dam_10.nif"
+	sound	21	8014
+	sound	22	30005
+	sound	23	30003
+	sound	24	30004
+	sound	25	25001
+}
+
+Activity
+{
+	animation	7
+	soundplay	0	22	0
+	soundplay	250	25	0
+	soundplay	300	24	0
+	soundplay	450	24	0
+	active	450
+}
+
+Apply
+{
+	action	0	0	0	0	1	body	0.0	0.0	0.0
+	damage	0	50
+	action	150	0	0	0	1	body	0.0	0.0	0.0
+	damage	150	50
+}
+

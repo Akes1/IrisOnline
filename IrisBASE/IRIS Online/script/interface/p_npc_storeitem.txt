@@ -1,0 +1,25 @@
+--=================--
+-- Npc 상점 윈도우 --
+--=================--
+window_prop "P_NpcStore_Window"
+{
+	skinname "NpcStore_Window"
+}
+
+button_prop "P_NpcStore_Close"
+{
+	skinname "NpcStore_Close"
+	parent "P_NpcStore_Window"
+}
+
+button_prop "P_NpcStore_Buy"
+{
+	skinname "NpcStore_Buy"
+	parent "P_NpcStore_Window"
+}
+
+listbox_prop "P_NpcStore_List"
+{
+	skinname "NpcStore_List"
+	parent "P_NpcStore_Window"
+}

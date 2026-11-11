@@ -1,0 +1,33 @@
+//조안 사우르스 오메가 모드 설정
+
+Header	
+{
+	effect	1	0	0	0	1	"eff_em_2009_01.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+
+	sound	3	10214
+}
+
+Mode	0
+{
+
+	applyres	1	1	1	foot	0	0	0
+//	applyaura	48023	0	10	1
+	applyaura	48024	1	500	1
+
+	modechange	1	2	45000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	1
+{
+
+	applyres	1	1	1	foot	0	0	0
+//	applyaura	48022	0	10	1
+	applyaura	48024	1	500	1
+
+	modechange	0	2	45000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}

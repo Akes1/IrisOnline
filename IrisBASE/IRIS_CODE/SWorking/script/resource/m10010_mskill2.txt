@@ -1,0 +1,59 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	2.0	"eff_em_02002_5.nif"
+	effect	1	0.0	0.0	0.0	3.0	"eff_1105_02_l.nif"
+	sound	21	30091
+	sound	22	30092
+	sound	23	25022
+	sound	24	25021
+	sound	25	25001
+	sound	26	25003
+	sound	27	25014
+	sound	28	25025
+	sound	29	25024
+	sound	30	20006
+	sound	31	35001
+	sound	32	35006
+}
+
+Casting
+{
+	animation	21
+		
+	action	0	0	1	1	1	body	0.0	0.0	0.0
+	soundplay	0	30	1
+}
+
+Activity
+{
+	animation	10
+	soundplay	0	23	0
+	soundplay	0	21	0
+	soundplay	0	27	0
+	soundplay	250	24	0
+	soundplay	400	22	0
+	action	450	0	0	1	1	lhand	0.0	0.0	0.0
+	action	450	0	0	1	1	rhand	0.0	0.0	0.0
+	soundplay	500	25	0
+	soundplay	500	28	0
+	active	500
+	soundplay	650	25	0
+	soundplay	700	24	0
+	soundplay	900	29	0
+}
+
+Apply
+{
+	soundplay	0	32	0
+	damage	0	10
+	soundplay	100	31	0
+	damage	100	15
+	soundplay	200	31	0
+	damage	200	20
+	soundplay	300	31	0
+	damage	300	25
+	soundplay	400	32	0
+	damage	400	30
+}
+

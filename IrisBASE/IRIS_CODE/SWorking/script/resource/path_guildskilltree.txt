@@ -1,0 +1,21 @@
+GuildskillTree				
+{				
+	-- skill	index	posX	posY
+1	skillpos	1	102	74
+2	skillpos	2	142	74
+4	skillpos	450001	313	74
+5	skillpos	450002	353	74
+6	skillpos	450003	393	74
+7	skillpos	450004	433	74
+9	skillpos	450101	102	114
+10	skillpos	3	142	114
+12	skillpos	450005	313	114
+13	skillpos	450006	353	114
+14	skillpos	450007	393	114
+15	skillpos	450008	433	114
+16	skillpos	450009	473	114
+17	skillpos	4	102	154
+18	skillpos	5	142	154
+20	skillpos	450010	313	154
+21	skillpos	450011	353	154
+}				

@@ -1,0 +1,1 @@
+IrisGameSrv.exe /install -def GameServer

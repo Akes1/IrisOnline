@@ -1,0 +1,169 @@
+--===============--
+-- 서버 배경 윈도우 --
+--===============--
+window "ServerWindowBack"
+{
+	pos 0 0
+	size 1024 768
+}
+
+--===============--
+-- 서버 윈도우 --
+--===============--
+window "ServerWindow"
+{
+	ii 5000
+	pos 362 247
+	size 300 251
+	texpos 417 602
+}
+
+-- /// 버튼 "접속"  
+button "Server_Connect"
+{
+	ii 5000
+	pos 77 222
+	size 72 24
+	texpos 467 442
+	
+	-- 버튼 그림 좌표 	
+	uppos 467 442
+	upoverpos 467 469
+	downpos 467 496
+
+	downsound 3001
+}
+
+-- /// 버튼 "취소"  
+button "Server_Cancel"
+{
+	ii 5000
+	pos 152 222
+	size 72 24
+	texpos 542 442
+	
+	-- 버튼 그림 좌표 	
+	uppos 542 442
+	upoverpos 542 469
+	downpos 542 496
+
+	downsound 3001
+}
+
+button "Server_Exit"
+{
+	ii 5000
+	pos 152 222
+	size 72 24
+	texpos 542 361
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 542 361
+	upoverpos 542 388
+	downpos 542 415
+	enablepos 542 415
+	downsound 3001
+}
+
+
+-- /// 서버 리스트   
+listbox "Server_ListBox"
+{
+	pos 20 57
+	size 261 138
+	row_height 23			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 20			-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5000			
+	child_size 261 23			
+	child_texpos 417 855
+
+	scrollskin "ListScroll"
+	selectwidth 261
+	
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x,  w,   align
+	
+	columnX 6 	201	 left
+	columnX 207	48	 center
+}
+
+
+-- 소스에서 사용하는 스킨
+-- 페이지버튼의 정렬을 위한 영역
+label "Server_ButtonRect"
+{
+	pos 51 200
+	size 200 21
+}
+
+-- 페이지 버튼
+radiobutton "Server_Page1"
+{
+	ii 5000
+	pos 44 201
+	size 21 21
+	texpos 71 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 71 585
+	downpos 71 585
+}
+
+radiobutton "Server_Page2"
+{
+	ii 5000
+	pos 67 201
+	size 21 21
+	texpos 94 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 94 585
+	downpos 94 585
+}
+
+radiobutton "Server_Page3"
+{
+	ii 5000
+	pos 90 201
+	size 21 21
+	texpos 117 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 117 585
+	downpos 117 585
+}
+
+radiobutton "Server_Page4"
+{
+	ii 5000
+	pos 113 201
+	size 21 21
+	texpos 140 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 140 585
+	downpos 140 585
+}
+
+radiobutton "Server_Page5"
+{
+	ii 5000
+	pos 136 201
+	size 21 21
+	texpos 163 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 163 585
+	downpos 163 585
+}
+
+

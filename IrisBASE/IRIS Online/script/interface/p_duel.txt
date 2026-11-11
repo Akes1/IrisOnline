@@ -1,0 +1,88 @@
+--===============--
+-- 결투 윈도우 --
+--===============--
+
+window_prop "P_DuelWindow"
+{
+	skinname "DuelWindow"
+}
+
+doublegauge_prop "P_Duel_Hero_HP"
+{
+	skinname "Duel_Hero_HP"
+	parent "P_DuelWindow"
+}
+
+doublegauge_prop "P_Duel_Hero_MP"
+{
+	skinname "Duel_Hero_MP"
+	parent "P_DuelWindow"
+}
+
+doublegauge_prop "P_Duel_Enemy_HP"
+{
+	skinname "Duel_Enemy_HP"
+	parent "P_DuelWindow"
+}
+
+doublegauge_prop "P_Duel_Enemy_MP"
+{
+	skinname "Duel_Enemy_MP"
+	parent "P_DuelWindow"
+}
+
+label_prop "P_Duel_Hero_Name"
+{
+	skinname "Duel_Hero_Name"
+	parent "P_DuelWindow"
+}
+
+label_prop "P_Duel_Enemy_Name"
+{
+	skinname "Duel_Enemy_Name"
+	parent "P_DuelWindow"
+}
+
+label_prop "P_Duel_Count"
+{
+	skinname "Duel_Count"
+	parent "P_DuelWindow"
+}
+
+label_prop "P_Duel_FightImage"
+{
+	skinname "Duel_FightImage"
+	parent "P_DuelWindow"
+}
+
+--====================--
+-- 결투 메시지 윈도우 --
+--====================--
+window_prop "P_DuelMsg_Window"
+{
+	skinname "DuelMsg_Window"
+}
+
+label_prop "P_DuelMsg_Caption"
+{
+	skinname "DuelMsg_Caption"
+	parent "P_DuelMsg_Window"
+}
+
+label_prop "P_DuelMsg_Text"
+{
+	skinname "DuelMsg_Text"
+	parent "P_DuelMsg_Window"
+}
+
+button_prop "P_DuelMsg_Yes"
+{
+	skinname "DuelMsg_Yes"
+	parent "P_DuelMsg_Window"
+}
+
+button_prop "P_DuelMsg_Cancel"
+{
+	skinname "DuelMsg_Cancel"
+	parent "P_DuelMsg_Window"
+}

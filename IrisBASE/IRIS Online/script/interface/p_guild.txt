@@ -1,0 +1,160 @@
+--=================--
+-- 길드 관리창 윈도우 --
+--=================--
+window_prop "P_GuildWindow"
+{
+	skinname "GuildWindow"
+}
+
+button_prop "P_Guild_Close"
+{
+	skinname "Guild_Close"
+	parent "P_GuildWindow"
+}
+
+editbox_prop "P_Guild_NoticeEdit"
+{
+	skinname "Guild_NoticeEdit"
+	parent "P_GuildWindow"
+}
+
+button_prop "P_Guild_Notice"
+{
+	skinname "Guild_Notice"
+	parent "P_GuildWindow"
+}
+
+
+button_prop "P_Guild_Add"
+{
+	skinname "Guild_Add"
+	parent "P_GuildWindow"
+}
+
+button_prop "P_Guild_GivePosition"
+{
+	skinname "Guild_GivePosition"
+	parent "P_GuildWindow"
+}
+
+button_prop "P_Guild_MemberDrop"
+{
+	skinname "Guild_MemberDrop"
+	parent "P_GuildWindow"
+}
+
+button_prop "P_Guild_Out"
+{
+	skinname "Guild_Out"
+	parent "P_GuildWindow"
+}
+
+button_prop "P_Guild_Break"
+{
+	skinname "Guild_Break"
+	parent "P_GuildWindow"
+}
+
+button_prop "P_Guild_MarkChagne"
+{
+	skinname "Guild_MarkChagne"
+	parent "P_GuildWindow"
+}
+
+label_prop "P_Guild_Name"
+{
+	skinname "Guild_Name"
+	parent "P_GuildWindow"
+}
+label_prop "P_Guild_MasterName"
+{
+	skinname "Guild_MasterName"
+	parent "P_GuildWindow"
+}
+label_prop "P_Guild_Position"
+{
+	skinname "Guild_Position"
+	parent "P_GuildWindow"
+}
+
+label_prop "P_Guild_Total"
+{
+	skinname "Guild_Total"
+	parent "P_GuildWindow"
+}
+
+label_prop "P_Guild_ConnectCount"
+{
+	skinname "Guild_ConnectCount"
+	parent "P_GuildWindow"
+}
+
+listbox_prop "P_Guild_MemberList"
+{
+	skinname "Guild_MemberList"
+	parent "P_GuildWindow"
+}
+
+--===========================--
+-- 길드 직위부여 버튼 윈도우 --
+--===========================--
+window_prop "P_GuildPosition_Window"
+{
+	skinname "GuildPosition_Window"
+}
+
+button_prop "P_GuildPosition_Master"
+{
+	skinname "GuildPosition_Master"
+	parent "P_GuildPosition_Window"
+}
+
+button_prop "P_GuildPosition_SubMaster"
+{
+	skinname "GuildPosition_SubMaster"
+	parent "P_GuildPosition_Window"
+}
+
+button_prop "P_GuildPosition_Elder"
+{
+	skinname "GuildPosition_Elder"
+	parent "P_GuildPosition_Window"
+}
+
+button_prop "P_GuildPosition_Upperhouse"
+{
+	skinname "GuildPosition_Upperhouse"
+	parent "P_GuildPosition_Window"
+}
+
+button_prop "P_GuildPosition_Lowerhouse"
+{
+	skinname "GuildPosition_Lowerhouse"
+	parent "P_GuildPosition_Window"
+}
+
+button_prop "P_GuildPosition_General"
+{
+	skinname "GuildPosition_General"
+	parent "P_GuildPosition_Window"
+}
+
+--===========================--
+-- 길드 마크 등록  --
+--===========================--
+window_prop "P_GuildMark_Window"
+{
+	skinname "GuildMark_Window"
+}
+
+button_prop "P_GuildMark_YES"
+{
+	skinname "GuildMark_YES"
+	parent "P_GuildMark_Window"
+}
+
+button_prop "P_GuildMark_NO"
+{
+	skinname "GuildMark_NO"
+	parent "P_GuildMark_Window"
+}

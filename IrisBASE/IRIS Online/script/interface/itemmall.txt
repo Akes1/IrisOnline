@@ -1,0 +1,29 @@
+--=========================--
+-- 아이템몰 --
+--=========================--
+window "Itemmall_Window"
+{
+	ii 5019
+	pos 0 0
+	size 1024 768
+	texpos 0 455
+	
+	opensound 3007
+	closesound 3010
+}
+
+-- 닫기 버튼
+button "Itemmall_Close"
+{
+	ii 5002
+	pos 1000 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}

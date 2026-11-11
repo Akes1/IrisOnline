@@ -1,0 +1,211 @@
+//빅토리 조안 옥토퍼스 모드 설정
+
+Header	
+{
+	effect	1	0	0	0	2	"eff_pc_pvp_1.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+
+	sound	3	10214
+
+	portal	120104
+	portal	120105
+}
+
+Mode	0
+{
+	modeimage	"mode_image201_1.tga"	0	480	0
+	immune	0
+
+	modechange	9	1	600000	0	0
+	modechange	1	3	90	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	1
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	180	0
+
+	modechange	9	1	600000	0	0
+	modechange	3	3	80	0	0
+	modechange	2	5	12	0	0
+	
+	modeskill
+
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	2
+{
+	immune	0
+
+	modechange	9	1	600000	0	0
+	modechange	3	3	80	0	0
+	modechange	1	2	30000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	3
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	240	0
+	
+	modestate	8	5000
+
+	applybuff	45616	1
+
+	gentotem	5604	1	0	1500	0	0	1001001	2
+	gentotem	5605	1	0	1500	0	0	1001002	2
+	gentotem	5606	1	0	1500	0	0	1001003	2
+	gentotem	5607	1	0	1500	0	0	1001004	2
+	modechange	9	1	600000	0	0
+	modechange	5	3	50	0	0
+	modechange	4	2	30000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	4
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	180	0
+
+	modechange	9	1	600000	0	0
+	modechange	5	3	50	0	0
+	modechange	3	2	30000	0	0
+	
+	modeskill
+
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	5
+{
+	immune	0
+
+	gengathering	10041	1	1000	1500	0	0	1001005
+
+	modechange	9	1	600000	0	0
+	modechange	6	2	10000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	6
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	300	0
+
+	applyaura	45617	0	10	1
+	applyaura	45618	0	10	1
+
+	modechange	9	1	600000	0	0
+	modechange	7	2	30000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	7
+{
+	immune	0
+
+	modestate	8	5000
+
+	modeimage	"mode_image201_1.tga"	0	240	0
+
+	applybuff	45616	1
+
+	applyaura	45617	0	10	1
+	applyaura	45618	0	10	1
+
+	gentotem	5604	1	0	1500	0	0	1001006	2
+	gentotem	5605	1	0	1500	0	0	1001007	2
+	gentotem	5606	1	0	1500	0	0	1001008	2
+	gentotem	5607	1	0	1500	0	0	1001009	2
+
+	modechange	9	1	600000	0	0
+	modechange	8	2	30000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	8
+{
+	immune	0
+
+	gengathering	10041	1	1000	1500	0	0	1001005
+
+	modeimage	"mode_image201_1.tga"	0	180	0
+
+	applyaura	45617	0	10	1
+	applyaura	45618	0	10	1
+
+	modechange	9	1	600000	0	0
+	modechange	7	2	40000	0	0
+	
+	modeskill
+
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	9
+{
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	immune	0
+
+	applyaura	45110	0	10	0
+	applyaura	45617	0	10	1
+	applyaura	45618	0	10	1
+
+	modechange	10	2	70000	0	0
+}
+
+Mode	10
+{
+	immune	0
+
+	modestate	8	5000
+
+	modeimage	"mode_image201_1.tga"	0	240	0
+
+	applybuff	45616	1
+
+	applyaura	45110	0	10	0
+	applyaura	45617	0	10	1
+	applyaura	45618	0	10	1
+
+	gentotem	5604	1	0	1500	0	0	1001006	2
+	gentotem	5605	1	0	1500	0	0	1001007	2
+	gentotem	5606	1	0	1500	0	0	1001008	2
+	gentotem	5607	1	0	1500	0	0	1001009	2
+
+	modechange	11	2	30000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	11
+{
+	immune	0
+
+	gengathering	10041	1	1000	1500	0	0	1001005
+
+	modeimage	"mode_image201_1.tga"	0	180	0
+
+	applyaura	45110	0	10	0
+	applyaura	45617	0	10	1
+	applyaura	45618	0	10	1
+
+	modechange	10	2	40000	0	0
+	
+	modeskill
+
+	useskill	12	0	100	0	0	0	0
+}

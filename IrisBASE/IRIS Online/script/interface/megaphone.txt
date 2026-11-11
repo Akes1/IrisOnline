@@ -1,0 +1,91 @@
+--===============--
+-- 메가폰 윈도우 --
+--===============--
+window "MegaPhoneWindow"
+{
+	ii 5019
+	texpos 418 305
+
+	size  383 147
+	pos 0 0
+
+	captionXY 0 0 
+	captionWH 383 147
+	
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 확인 버튼
+button "MegaPhone_OK"
+{
+	ii 5005
+	texpos 427 638
+	size 72 24
+	
+	-- 버튼 그림 좌표 	
+	uppos 427 638
+	upoverpos 427 664
+	downpos 427 690
+		
+	useenable true
+	enablepos 427 690
+
+	pos 100 106
+}
+
+
+-- 취소 버튼
+button "MegaPhone_Cancel"
+{
+	ii 5005
+
+
+	size 72 24
+	texpos 501 638
+
+	uppos 501 638
+	upoverpos 501 664
+	downpos 501 690
+
+	downsound 3001
+
+	pos 212 106
+}
+
+-- 닫기 버튼 "x"
+button "MegaPhone_Close"
+{
+	ii 5002
+	pos 350 14
+	size 19 19
+
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160 
+	downpos 297 160
+
+	downsound 3001
+}
+
+
+-- /// 채팅 에디트 
+editbox "MegaPhone_Edit"
+{
+	pos 64 79
+	size 284 15
+
+	editpos 1 1
+	editkind 0
+	editmaxlen 45
+	
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- 아이템 링크용 아이콘
+icon "MegaPhone_LinkIcon"	{ pos 36 76	size 20 20 }

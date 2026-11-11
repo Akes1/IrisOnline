@@ -1,0 +1,47 @@
+--===============--
+-- 버프 윈도우 --
+--===============--
+-- BuffWindow 는 소스에서 사용하는 스킨명
+window "BuffWindow"
+{
+	pos	600 20
+	holdview	true
+
+	icon_size	24
+	space	1 15
+	row	2
+	column	10
+	scale	100		-- 1/100
+}
+
+--===============--
+-- 디버프 윈도우 --
+--===============--
+-- DeBuffWindow 는 소스에서 사용하는 스킨명
+window "DeBuffWindow"
+{
+	pos	600 100
+	holdview	true
+
+	icon_size	24
+	space	1 15
+	row	1
+	column	10
+	scale	100		-- 1/100
+}
+
+--===============--
+-- 아이템몰 윈도우 --
+--===============--
+-- MallBuffWindow 는 소스에서 사용하는 스킨명
+window "MallBuffWindow"
+{
+	pos 	600 140
+	holdview	true
+
+	icon_size	24
+	space	1 15
+	row	2
+	column	10
+	scale	100		-- 1/100
+}

@@ -1,0 +1,32 @@
+--공격2: 단검
+Header
+{
+	type	0
+
+	sound	21	4006
+	sound	22	4504
+	sound	23	4505
+
+	trailtex	31	"trail_red_00.tga"
+}
+
+Activity
+{
+	animation	44
+
+	trail	600	167	31	rweapon	rhand	100.0	2.0
+	trail	167	167	31	lweapon	lhand	100.0	2.0
+
+	soundplay	160	21	0
+	soundplay	490	21	0
+	soundplay	266	22	0
+	soundplay	550	23	0
+
+	active	267
+}
+
+Apply
+{
+	damage	0	40
+	damage	466	60
+}

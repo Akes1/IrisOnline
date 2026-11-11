@@ -1,0 +1,5 @@
+0	1	"h_m_face_001.nif"	"h_w_face_001.nif"	"s_m_face_001.nif"	"s_w_face_001.nif"	"j_m_face_001.nif"	"j_w_face_001.nif"
+0	2	"h_m_body1_000.nif"	"h_w_body1_000.nif"	"s_m_body1_000.nif"	"s_w_body1_000.nif"	"j_m_body1_000.nif"	"j_w_body1_000.nif"
+0	3	"h_m_body2_000.nif"	"h_w_body2_000.nif"	"s_m_body2_000.nif"	"s_w_body2_000.nif"	"j_m_body2_000.nif"	"j_w_body2_000.nif"
+0	4	"h_m_hand_000.nif"	"h_w_hand_000.nif"	"s_m_hand_000.nif"	"s_w_hand_000.nif"	"j_m_hand_000.nif"	"j_w_hand_000.nif"
+0	5	"h_m_foot_000.nif"	"h_w_foot_000.nif"	"s_m_foot_000.nif"	"s_w_foot_000.nif"	"j_m_foot_000.nif"	"j_w_foot_000.nif"

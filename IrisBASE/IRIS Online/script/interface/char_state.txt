@@ -1,0 +1,225 @@
+--==============================================================
+-- HeroStateWindow : 캐릭터 상태 창 (왼쪽상단)
+--==============================================================
+window "HeroStateWindow"
+{
+	ii 5002
+	pos 0 0
+	size 269 83
+	texpos 655 167
+	holdview true	-- 창이 사라지지 않게 한다. 
+	
+	captionXY 0 0 
+	captionWH 239 82
+}
+
+-- /// 라벨 "hero 이름"
+label "HeroState_Name"
+{
+	pos 124 60
+	size 123 22							-- 기준이 되는 사이즈 : 정렬시 
+	text_align center						-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 소스에서 쓰는 스킨 ( 레벨 출력배경 )
+label "HeroState_LevelImg"
+{
+	ii 5002
+	pos 28 55
+	size 28 28						-- 기준이 되는 사이즈 : 정렬시 
+	texpos 684 255
+	text_align center
+}
+
+-- 파티장 표시 이미지- 자기자신
+-- 소스에서 사용하는 스킨
+label "HeroState_Leader"
+{
+	ii 5002
+	pos 100 57
+	size 24 24
+	texpos 684 285
+	
+}
+
+-- 새로운 메일 이미지
+-- 소스에서 사용하는 스킨
+label "HeroState_NewMail"
+{
+	ii 4001
+	pos 30 1
+	size 24 17
+	texpos 249 500
+	
+	hovertip	449
+}
+
+
+--==============================================================
+-- HeroStateWindow : HP 게이지
+--==============================================================
+doublegauge "HeroState_HP"
+{
+	ii 5002
+	pos 141 11
+	size 111 9
+	texpos 796 178
+	
+	gauge_speed 30		-- float 값
+	show_percent false		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 718 269
+	gauge_width 109
+	gauge_height 7
+
+	-- 뒤 게이지	
+	gaugedest_ii 5002
+	gaugedest_pos 1 1
+	gaugedest_size 4 7
+	gaugedest_texpos 718 269
+	gaugedest_width 109
+	gaugedest_height 7
+	
+}
+
+--==============================================================
+-- HeroStateWindow : MP 게이지
+--==============================================================
+doublegauge "HeroState_MP"
+{
+	ii 5002
+	pos 141 21
+	size 111 9
+	texpos 796 189
+		
+	gauge_speed 30		-- float 값
+	show_percent false		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+	
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 718 279
+	gauge_width 109
+	gauge_height 7
+
+	-- 뒤 게이지	
+	gaugedest_ii 5002
+	gaugedest_pos 1 1
+	gaugedest_size 2 5
+	gaugedest_texpos 718 279
+	gaugedest_width 109
+	gaugedest_height 7
+}
+
+
+--==============================================================
+-- HeroStateWindow : SXP 게이지
+--==============================================================
+gauge "HeroState_SXP"
+{
+	ii 5002
+	pos 141 31
+	size 111 9
+	texpos 797 200	
+		
+	gauge_speed 30		-- float 값
+	show_percent true		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+	
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 718 289
+	gauge_width 109
+	gauge_height 7
+}
+
+--==============================================================
+-- HeroStateWindow : EXP 게이지
+--==============================================================
+gauge "HeroState_EXP"
+{
+	ii 5002
+	pos 141 42
+	size 111 9
+	texpos 797 210
+		
+	gauge_speed 30		-- float 값
+	show_percent true		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+	
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 718 299
+	gauge_width 109
+	gauge_height 7
+}
+
+--==============================================================
+-- /// 얼굴 아이콘 스킨
+-- /// 소스에서 직접쓰는 스킨
+--==============================================================
+-- /// 인간남자
+label "Face_Human_M"
+{
+	ii 5002
+	pos 46 11
+	size 60 60
+	texpos 735 320
+}
+
+-- /// 인간여자
+label "Face_Human_W"
+{
+	ii 5002
+	pos 46 12
+	size 60 60
+	texpos 735 256
+}
+
+-- /// 수인 남자
+label "Face_Beast_M"
+{
+	ii 5002
+	pos 46 12
+	size 60 60
+	texpos 865 320
+}
+
+-- /// 수인 여자
+label "Face_Beast_W"
+{
+	ii 5002
+	pos 46 12
+	size 60 60
+	texpos 865 256
+}
+
+-- /// 정령 남자
+label "Face_Elf_M"
+{
+	ii 5002
+	pos 46 12
+	size 60 60
+	texpos 800 320
+}
+
+-- /// 정령 여자
+label "Face_Elf_W"
+{
+	ii 5002
+	pos 46 12
+	size 60 60
+	texpos 800 256
+}
+
+--===================================--
+-- /// 직업 아이콘 표시
+--===================================--
+label "HeroState_Job"
+{
+	pos 8 25
+	size 32 32
+}

@@ -1,0 +1,54 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--하이에나
+--스킬3
+
+Header
+{
+	type	0
+
+	sound	21	8165
+}
+
+Activity
+{
+	animation	5
+
+	soundplay	300	21	0
+	
+	active	330
+
+}
+
+Apply
+{
+	damage	0	40
+	damage	400	20
+	action	430	0	0	0	1	body	10.0	-10.0	0.0
+	damage	670	20	
+	action	700	0	0	0	1	body	10.0	-10.0	0.0
+	damage	770	20	
+	action	800	0	0	0	1	body	10.0	-10.0	0.0
+}

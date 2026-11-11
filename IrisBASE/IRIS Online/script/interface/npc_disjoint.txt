@@ -1,0 +1,100 @@
+--===============--
+-- 아이템 분해창 --
+--===============--
+window "NpcDisjointWindow"
+{
+	ii 5003
+	pos 199 226
+	size 200 305
+	texpos 559 491
+
+	opensound 3007
+	closesound 3010
+	
+	captionXY 0 0
+	captionWH 200 305
+}
+
+-- 닫기 버튼 "x"
+button "NpcDisjoint_Close"
+{
+	ii 5002
+	pos 167 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 분해 버튼
+button "NpcDisjoint_Disjoint"
+{
+	ii 5003
+	pos 29 273
+	size 72 24
+	texpos 371 525
+	useenable true
+
+	uppos 371 525
+	upoverpos 371 551
+	downpos 371 577
+	enablepos 371 551
+
+	downsound 3001
+}
+
+-- 취소 버튼
+button "NpcDisjoint_Cancel"
+{
+	ii 5003
+	pos 104 273
+	size 72 24
+	texpos 445 447
+
+	uppos 445 447
+	upoverpos 445 473
+	downpos 445 499
+
+	downsound 3001
+}
+
+-- 아이콘 슬롯 - 소스에서 사용
+-- 분해할 아이템 슬롯
+icon "Disjoint_Item"	{ pos 86 68	size 28 28 } 
+
+-- 분해 결과물 슬롯 - 소스에서 사용
+icon "Disjoint_Result00"	{ pos 78 166	size 28 28 } 
+icon "Disjoint_Result01"	{ pos 111 166	size 28 28 } 
+icon "Disjoint_Result02"	{ pos 144 166	size 28 28 } 
+icon "Disjoint_Result03"	{ pos 78 199	size 28 28 } 
+icon "Disjoint_Result04"	{ pos 111 199	size 28 28 } 
+icon "Disjoint_Result05"	{ pos 144 199	size 28 28 } 
+
+gauge "NpcDisjoint_Gaugebar"
+{
+	pos 31 248
+	size 139 7
+	
+	gauge_speed 30			-- float 값
+	show_text false
+	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7 
+	gauge_texpos 365 295
+	gauge_width 139
+	gauge_height 7
+}
+
+-- 비용 라벨
+label "NpcDisjoint_Price"
+{
+	pos 95 135
+	size 70 20
+	text_align right
+}

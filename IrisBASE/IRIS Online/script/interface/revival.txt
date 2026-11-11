@@ -1,0 +1,52 @@
+window "RevivalWindow"
+{
+	ii 5002
+	pos 390 150
+	size 257 147
+	texpos 765 758
+	holdview true
+}
+
+-- 버튼 "제자리부활"
+button "Revival_Stand"
+{
+	ii 5002
+	pos 38 107
+	size 82 24
+	texpos 302 491
+
+	useenable true
+		
+	-- 버튼 그림 좌표 	
+	uppos 302 491
+	upoverpos 302 516
+	downpos 302 541
+
+	enablepos 302 541
+
+	downsound 3001
+}
+
+-- 버튼 "안전지대부활"
+button "Revival_Town"
+{
+	ii 5002
+	pos 136 107
+	size 82 24
+	texpos 386 491
+		
+	-- 버튼 그림 좌표 	
+	uppos 386 491
+	upoverpos 386 516
+	downpos 386 541
+
+	downsound 3001
+}
+
+-- 남은시간 라벨
+label "Revival_Time"
+{
+	pos 108 63
+	size 30 12
+	text_align right
+}

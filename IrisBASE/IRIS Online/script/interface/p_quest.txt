@@ -1,0 +1,93 @@
+--===============--
+-- 퀘스트 윈도우 --
+--===============--
+window_prop "P_QuestWindow"
+{
+	skinname "QuestWindow"
+}
+
+-- /// 버튼 "Close"
+button_prop "P_Quest_Close"
+{
+	skinname "Quest_Close"
+	parent "P_QuestWindow"
+}
+
+folderbox_prop "P_Quest_Folder"
+{
+	skinname "Quest_Folder"
+	parent "P_QuestWindow"
+}
+
+-- 보상정보
+label_prop "P_Quest_Label0"
+{
+	skinname "Quest_Label0"
+	parent "P_QuestWindow"
+}
+
+label_prop "P_Quest_Label1"
+{
+	skinname "Quest_Label1"
+	parent "P_QuestWindow"
+}
+
+label_prop "P_Quest_Label2"
+{
+	skinname "Quest_Label2"
+	parent "P_QuestWindow"
+}
+
+label_prop "P_Quest_Label3"
+{
+	skinname "Quest_Label3"
+	parent "P_QuestWindow"
+}
+
+label_prop "P_Quest_Count"
+{
+	skinname "Quest_Count"
+	parent "P_QuestWindow"
+}
+
+-- 갯수 출력
+label_prop "P_Quest_Complete"
+{
+	skinname "Quest_Complete"
+	parent "P_QuestWindow"
+}
+
+label_prop "P_Quest_Progress"
+{
+	skinname "Quest_Progress"
+	parent "P_QuestWindow"
+}
+
+-- /// 버튼 "퀘스트 포기"
+button_prop "P_Quest_Delete"
+{
+	skinname "Quest_Delete"
+	parent "P_QuestWindow"
+}
+
+-- // 퀘스트 설명 텍스트박스
+textbox_prop "P_Quest_DescBox"
+{
+	skinname "Quest_DescBox"
+	parent "P_QuestWindow"
+}
+
+checkbox_prop "P_Quest_ViewInfo"
+{
+	skinname "Quest_ViewInfo"
+	parent "P_QuestWindow"
+}
+
+
+--===============--
+-- 퀘스트 간략정보 윈도우 --
+--===============--
+window_prop "P_QuestSimpleWindow"
+{
+	skinname "QuestSimpleWindow"
+}

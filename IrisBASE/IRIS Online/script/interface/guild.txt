@@ -1,0 +1,368 @@
+--=================--
+-- 길드 관리창 윈도우 --
+--=================--
+window "GuildWindow"
+{
+	ii 5010
+	pos 200 150
+	size 628 380
+	texpos 2 2
+
+	captionXY 0 0 
+	captionWH 628 380
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 닫기 버튼
+button "Guild_Close"
+{
+	ii 5002
+	pos 595 14	
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+--길드공지 표시
+editbox "Guild_NoticeEdit"
+{
+	pos 101 58
+	size 490 14
+
+	editmaxlen 40
+	editkind 0
+}
+
+-- 버튼 길드공지 설정 버튼
+button "Guild_Notice"
+{
+	ii 5010
+	pos 592 56
+	size 16 16
+	texpos 400 385
+
+	uppos 400 385
+	upoverpos 400 403
+	downpos 400 421
+}
+
+-- 버튼 길드초대
+button "Guild_Add"
+{
+	ii 5010
+	pos 53 341
+	size 82 24
+	texpos 453 450
+	useenable true
+
+	uppos 453 450
+	upoverpos 453 476
+	downpos 453 502
+	enablepos 453 502
+}
+
+-- 버튼 직위부여
+button "Guild_GivePosition"
+{
+	ii 5010
+	pos 141 341
+	size 82 24
+	texpos 453 528
+	useenable true
+
+	uppos 453 528
+	upoverpos 453 554
+	downpos 453 580
+	enablepos 453 580
+}
+
+
+
+-- 버튼 길드원제명
+button "Guild_MemberDrop"
+{
+	ii 5010
+	pos 229 341
+	size 82 24
+	texpos 537 450
+	useenable true
+
+	uppos 537 450
+	upoverpos 537 476
+	downpos 537 502
+	enablepos 537 502
+}
+
+-- 버튼 길드탈퇴
+button "Guild_Out"
+{
+	ii 5010
+	pos 317 341
+	size 82 24
+	texpos 537 528
+	useenable true
+
+	uppos 537 528
+	upoverpos 537 554
+	downpos 537 580
+	enablepos 537 580
+}
+
+-- 버튼 길드마크 변경
+button "Guild_MarkChagne"
+{
+	ii 5010
+	pos 405 341
+	size 82 24
+	texpos 453 606
+	useenable true
+
+	uppos 453 606
+	upoverpos 453 632
+	downpos 453 658
+	enablepos 453 658
+}
+
+-- 버튼 길드해체
+button "Guild_Break"
+{
+	ii 5010
+	pos 493 341
+	size 82 24
+	texpos 537 606
+	useenable true
+
+	uppos 537 606
+	upoverpos 537 632
+	downpos 537 658
+	enablepos 537 658
+}
+
+-- 길드이름
+label "Guild_Name"
+{
+	pos 72 144
+	size 137 14
+	text_align center
+}
+
+-- 길드장 이름
+label "Guild_MasterName"
+{
+	pos 72 174
+	size 137 14
+	text_align center	
+}
+
+-- 내 직위
+label "Guild_Position"
+{
+	pos 72 203
+	size 137 14
+	text_align center	
+}
+
+-- 길드총인원
+label "Guild_Total"
+{
+	pos 67 232
+	size 27 14
+	text_align right
+}
+
+-- 접속 길드원
+label "Guild_ConnectCount"
+{
+	pos 157 232
+	size 27 14
+	text_align right
+}
+
+-- 소스에서 사용하는 스킨
+-- 길드 아이콘 슬롯 
+label "Guild_Mark"	
+{ 
+	pos 76 257	
+	size 28 28
+} 
+
+-- 길드원 정보 리스트
+listbox "Guild_MemberList"
+{
+	pos 230 128
+	size 368 176
+	row_height 18			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 50			-- 리스트가 담을수 잇는 최대 갯수
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii	5010			
+	child_size	355 16
+	child_texpos	2 385
+		
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x,  w,   align
+	columnX 0 	101	 center
+	columnX 102	103	 center
+	columnX 206	45	 center
+	columnX 249	106	 center
+}
+
+
+--===========================--
+-- 길드 직위부여 버튼 윈도우 --
+--===========================--
+window "GuildPosition_Window"
+{
+	pos 0 0
+	size 84 144
+}
+
+-- /// 채팅 옵션 "길드장"
+button "GuildPosition_Master"
+{
+	ii 5010
+	pos 2 3
+	size 78 20
+	texpos 455 841
+	
+	-- 버튼 이미지 좌표 
+	uppos 455 841
+	upoverpos 455 863
+	downpos 455 885
+}
+
+-- /// 채팅 옵션 "부길드장"
+button "GuildPosition_SubMaster"
+{
+	ii 5010
+	pos 2 27
+	size 78 20
+	texpos 537 841
+	
+	-- 버튼 이미지 좌표 
+	uppos 537 841
+	upoverpos 537 863
+	downpos 537 885
+}
+
+-- /// 채팅 옵션 "장로"
+button "GuildPosition_Elder"
+{
+	ii 5010
+	pos 2 51
+	size 78 20
+	texpos 455 907
+	
+	-- 버튼 이미지 좌표 
+	uppos 455 907
+	upoverpos 455 929
+	downpos 455 951
+}
+
+-- /// 채팅 옵션 "상의원"
+button "GuildPosition_Upperhouse"
+{
+	ii 5010
+	pos 2 75
+	size 78 20
+	texpos 537 907
+	
+	-- 버튼 이미지 좌표 
+	uppos 537 907
+	upoverpos 537 929
+	downpos 537 951
+}
+
+-- /// 채팅 옵션 "하의원"
+button "GuildPosition_Lowerhouse"
+{
+	ii 5010
+	pos 2 99
+	size 78 20
+	texpos 455 973
+	
+	-- 버튼 이미지 좌표 
+	uppos 455 973
+	upoverpos 455 995
+	downpos 455 1017
+}
+
+-- /// 채팅 옵션 "일반"
+button "GuildPosition_General"
+{
+	ii 5010
+	pos 2 123
+	size 78 20
+	texpos 537 973
+	
+	-- 버튼 이미지 좌표 
+	uppos 537 973
+	upoverpos 537 995
+	downpos 537 1017
+}
+
+--===========================--
+-- 길드 마크 등록  --
+--===========================--
+window "GuildMark_Window"
+{
+	ii 5010
+	pos 383 200
+	size 257 147
+	texpos 631 2
+	
+	captionXY 0 0 
+	captionWH 257 147
+}
+
+-- /// 소스에서 쓰는 스킨
+-- /// 마크 이미지용
+label "GuildMark_Mark"
+{
+	pos 117 55
+	size 24 24
+}
+
+-- "예" 버튼 
+button "GuildMark_YES"
+{
+	ii 5010
+	pos 37 112
+	size 82 24
+	texpos 453 762
+	
+	-- 버튼 그림 좌표 	
+	uppos 453 762
+	upoverpos 453 788
+	downpos 453 814
+
+	downsound 3001
+}
+
+-- "아니오" 버튼 
+button "GuildMark_NO"
+{
+	ii 5010
+	pos 138 112
+	size 82 24
+	texpos 537 762
+	
+	-- 버튼 그림 좌표 	
+	uppos 537 762
+	upoverpos 537 788
+	downpos 537 814
+
+	downsound 3001
+}
+

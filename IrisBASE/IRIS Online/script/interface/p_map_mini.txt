@@ -1,0 +1,42 @@
+--===============--
+-- 작은 미니맵	--
+--===============--
+-- small 미니맵 창
+window_prop "P_SmallMiniMap_Window"
+{
+	skinname "SmallMiniMap_Window"
+}
+
+-- /// 버튼 "전체 미니맵" 열기
+button_prop "P_SmallMiniMap_LargeOpen"
+{
+	skinname "SmallMiniMap_LargeOpen"
+	parent "P_SmallMiniMap_Window"
+}
+
+-- /// 버튼 미니맵  "확대"
+button_prop "P_SmallMiniMap_Plus"
+{
+	skinname "SmallMiniMap_Plus"
+	parent "P_SmallMiniMap_Window"
+}
+
+-- /// 버튼 미니맵  "축소"
+button_prop "P_SmallMiniMap_Minus"
+{
+	skinname "SmallMiniMap_Minus"
+	parent "P_SmallMiniMap_Window"
+}
+
+label_prop "P_SmallMiniMap_MapName"
+{
+	skinname "SmallMiniMap_MapName"
+	parent "P_SmallMiniMap_Window"
+}
+
+label_prop "P_SmallMiniMap_Channel"
+{
+	skinname "SmallMiniMap_Channel"
+	parent "P_SmallMiniMap_Window"
+}
+

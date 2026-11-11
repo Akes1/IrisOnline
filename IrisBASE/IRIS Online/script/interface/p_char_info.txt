@@ -1,0 +1,341 @@
+-- /// 캐릭터 정보 창 
+window_prop "P_HeroInfoWindow"
+{
+	skinname "HeroInfoWindow"
+}
+-- /// 버튼 "Close"
+button_prop "P_HeroInfo_Close_Button"
+{
+	skinname "HeroInfo_Close_Button"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 게이지 "캐릭터 EXP" 
+gauge_prop "P_Hero_EXP_Gauge"
+{
+	skinname "Hero_EXP_Gauge"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 게이지 "SXP"
+gauge_prop "P_Hero_SXP_Gauge"
+{
+	skinname "Hero_SXP_Gauge"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 게이지 "캐릭터 HP"
+doublegauge_prop "P_Hero_HP_Gauge"
+{
+	skinname "Hero_HP_Gauge"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 게이지 "캐릭터 MP"
+doublegauge_prop "P_Hero_MP_Gauge"
+{
+	skinname "Hero_MP_Gauge"
+	parent "P_HeroInfoWindow"
+}
+
+--/// 라벨 "캐릭터 EXP"
+label_prop "P_Hero_EXP_Label"
+{
+	skinname "Hero_EXP_Label"
+	parent   "P_HeroInfoWindow"
+}
+
+--/// 라벨 "캐릭터 SXP"
+label_prop "P_Hero_SXP_Label"
+{
+	skinname "Hero_SXP_Label"
+	parent   "P_HeroInfoWindow"
+}
+
+--/// 라벨 "캐릭터 HP"
+label_prop "P_Hero_HP_Label"
+{
+	skinname "Hero_HP_Label"
+	parent   "P_HeroInfoWindow"
+}
+
+--/// 라벨 "캐릭터 MP"
+label_prop "P_Hero_MP_Label"
+{
+	skinname "Hero_MP_Label"
+	parent   "P_HeroInfoWindow"
+}
+
+----- 캐릭터 기본정보 
+-- /// 라벨 "이름"
+label_prop "P_HeroName"
+{
+	skinname "HeroName"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "종족"
+label_prop "P_HeroRace"
+{
+	skinname "HeroRace"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "성별"
+label_prop "P_HeroGender"
+{
+	skinname "HeroGender"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "클래스"
+label_prop "P_HeroClass"
+{
+	skinname "HeroClass"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "호칭"
+label_prop "P_HeroTitle"              
+{                                    
+	skinname "HeroTitle"        
+	parent "P_HeroInfoWindow"  
+}                                    
+
+-- /// 라벨 "길드"
+label_prop "P_HeroGuild"
+{
+	skinname "HeroGuild"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "직위"
+label_prop "P_HeroPosition"
+{
+	skinname "HeroPosition"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 세력 타입
+label_prop "P_HeroInfo_ForceType"
+{
+	skinname "HeroInfo_ForceType"
+	parent "P_HeroInfoWindow"
+}
+
+--/// 버튼 호칭관리
+button_prop "P_HeroInfo_Title"
+{
+	skinname "HeroInfo_Title"
+	parent "P_HeroInfoWindow"
+}
+
+--/// 버튼 사회
+button_prop "P_HeroInfo_Social"
+{
+	skinname "HeroInfo_Social"
+	parent "P_HeroInfoWindow"
+}
+
+---- 게이지 라벨
+-- /// 라벨 "SkillLevel"
+label_prop "P_Hero_SkillLevel"
+{
+	skinname "Hero_SkillLevel"
+	parent "P_HeroInfoWindow"
+}
+
+radiobutton_prop "P_HeroInfo_Physical_Button"
+{
+	skinname "HeroInfo_Physical_Button"
+	parent   "P_HeroInfoWindow"
+}
+
+radiobutton_prop "P_HeroInfo_Magic_Button"
+{
+	skinname "HeroInfo_Magic_Button"
+	parent   "P_HeroInfoWindow"
+}
+
+------ 스테이터스 
+-- /// 라벨 "힘"
+label_prop "P_HeroStr"
+{
+	skinname "HeroStr"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "민첩"
+label_prop "P_HeroDex"
+{
+	skinname "HeroDex"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "체력"
+label_prop "P_HeroCon"
+{
+	skinname "HeroCon"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "지능"
+label_prop "P_HeroInt"
+{
+	skinname "HeroInt"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "지혜"
+label_prop "P_HeroWis"
+{
+	skinname "HeroWis"
+	parent "P_HeroInfoWindow"
+}
+
+------ 스테이터스 추가량
+-- /// 라벨 "플러스 힘"
+label_prop "P_HeroPlusStr"
+{
+	skinname "HeroPlusStr"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "플러스 민첩"
+label_prop "P_HeroPlusDex"
+{
+	skinname "HeroPlusDex"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "플러스 체력"
+label_prop "P_HeroPlusCon"
+{
+	skinname "HeroPlusCon"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "플러스 지능"
+label_prop "P_HeroPlusInt"
+{
+	skinname "HeroPlusInt"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "플러스 지혜"
+label_prop "P_HeroPlusWis"
+{
+	skinname "HeroPlusWis"
+	parent "P_HeroInfoWindow"
+}
+
+-------- 물리수치 
+-- /// 라벨 "공격력"
+label_prop "P_HeroAtt"
+{
+	skinname "HeroAtt"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "방어력"
+label_prop "P_HeroDef"
+{
+	skinname "HeroDef"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "명중"
+label_prop "P_HeroHit"
+{
+	skinname "HeroHit"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "회피"
+label_prop "P_HeroAvoid"
+{
+	skinname "HeroAvoid"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "물리 방호"
+label_prop "P_HeroPhyProtect"
+{
+	skinname "HeroPhyProtect"
+	parent "P_HeroInfoWindow"
+}
+
+-------- 마법수치
+-- /// 라벨 "마법력"
+label_prop "P_HeroMag"
+{
+	skinname "HeroMag"
+	parent "P_HeroInfoWindow"
+}
+
+--/// 라벨 "마법방어"
+label_prop "P_HeroMagDef"
+{
+	skinname "HeroMagDef"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "저항력"
+label_prop "P_HeroRes"
+{
+	skinname "HeroRes"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "마법명중"
+label_prop "P_HeroMagHit"
+{
+	skinname "HeroMagHit"
+	parent "P_HeroInfoWindow"
+}
+
+label_prop "P_HeroAttCri"
+{
+	skinname "HeroAttCri"
+	parent "P_HeroInfoWindow"
+}
+
+label_prop "P_HeroMagCri"
+{
+	skinname "HeroMagCri"
+	parent "P_HeroInfoWindow"
+}
+
+label_prop "P_HeroHPrec"
+{
+	skinname "HeroHPrec"
+	parent "P_HeroInfoWindow"
+}
+
+-- /// 라벨 "마법 방호"
+label_prop "P_HeroMagProtect"
+{
+	skinname "HeroMagProtect"
+	parent "P_HeroInfoWindow"
+}
+
+
+label_prop "P_HeroMPrec"
+{
+	skinname "HeroMPrec"
+	parent "P_HeroInfoWindow"
+}
+
+-------- 이속/힐회복
+label_prop "P_HeroFast"
+{
+	skinname "HeroFast"
+	parent "P_HeroInfoWindow"
+}
+
+label_prop "P_HeroHeal"
+{
+	skinname "HeroHeal"
+	parent "P_HeroInfoWindow"
+}
+

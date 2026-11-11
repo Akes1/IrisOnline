@@ -1,0 +1,139 @@
+//¶óµ·
+Header	
+{
+	effect	1	0	0	0	2	"eff_pc_pvp_1.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+
+	sound	3	10214
+
+	shutdoor	20303
+	shutdoor	20304
+	shutdoor	20306
+
+	portal 120302
+
+}
+Mode	0
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	480	0
+
+	modechange	8	1	600000	0	0
+	modechange	1	3	80	0	0
+
+	callmonster	42	1	5000	60000
+	callmonster	43	1	20000	60000
+	callmonster	44	1	40000	60000
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	1
+{
+	immune	0
+
+	modechange	8	1	600000	0	0
+	modechange	2	3	60	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	2
+{
+	immune	0
+
+	modechange	8	1	600000	0	0
+	modechange	4	3	40	0	0
+	modechange	3	5	14	0	0
+	
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+}
+
+Mode	3
+{
+	immune	0
+
+	callmonster	42	1	5000	60000
+	callmonster	43	1	20000	60000
+	callmonster	44	1	40000	60000
+
+	modechange	8	1	600000	0	0
+	modechange	4	3	40	0	0
+	modechange	2	2	1000	0	0
+	
+	aggro	
+}
+
+Mode	4
+{
+	immune	0
+
+	modeimage	"mode_image203.tga"	0	180	0
+
+	genmonster	5018	1	0	1500	0	0	0
+	genmonster	5020	1	0	1500	0	0	0
+
+	modechange	8	1	600000	0	0
+	modechange	5	5	14	0	0
+	modechange	6	2	30000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+}
+
+Mode	5
+{
+	immune	0
+
+	modechange	8	1	600000	0	0
+	modechange	6	2	15000	0	0
+	
+	aggro	
+}
+Mode	6
+{
+	immune	0
+
+	modeimage	"mode_image203.tga"	0	180	0
+
+	genmonster	5019	1	0	1500	0	0	0
+	genmonster	5020	1	0	1500	0	0	0
+
+	modechange	8	1	600000	0	0
+	modechange	7	5	14	0	0
+	modechange	4	2	30000	0	0
+	
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+}
+Mode	7
+{
+	immune	0
+
+	modechange	8	1	600000	0	0
+	modechange	4	2	15000	0	0
+	
+	aggro	
+}
+
+Mode	8
+{
+	applyaura	45110	0	10	0
+
+	immune	0
+
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}

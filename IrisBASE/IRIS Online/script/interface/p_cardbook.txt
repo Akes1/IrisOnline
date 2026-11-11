@@ -1,0 +1,93 @@
+--===============--
+-- 컬렉션 북 --
+--===============--
+tabwindow_prop "P_CardBook_Window"
+{
+	skinname "CardBook_Window"
+}
+
+button_prop "P_CardBook_Close"
+{
+	skinname "CardBook_Close"
+	parent "P_CardBook_Window"
+}
+
+tabbutton_prop "P_CardBook_Data"
+{
+	skinname "CardBook_Data"
+	parent "P_CardBook_Window"
+}
+
+tabbutton_prop "P_CardBook_Tarot"
+{
+	skinname "CardBook_Tarot"
+	parent "P_CardBook_Window"
+}
+
+tabbutton_prop "P_CardBook_Monster"
+{
+	skinname "CardBook_Monster"
+	parent "P_CardBook_Window"
+}
+
+tabbutton_prop "P_CardBook_Story"
+{
+	skinname "CardBook_Story"
+	parent "P_CardBook_Window"
+}
+
+
+
+--===============--
+-- 정보 쉬트 --
+--===============--
+tabsheet_prop "P_DataSheet_Window"
+{
+	skinname "DataSheet_Window"
+	parent "P_CardBook_Window"
+}
+
+--===============--
+-- 타로 쉬트 --
+--===============--
+tabsheet_prop "P_TarotSheet_Window"
+{
+	skinname "TarotSheet_Window"
+	parent "P_CardBook_Window"
+}
+
+textbox_prop "P_TarotSheet_DescBox"
+{
+	skinname "TarotSheet_DescBox"
+	parent "P_TarotSheet_Window"
+}
+
+label_prop "P_TarotSheet_Name"
+{
+	skinname "TarotSheet_Name"
+	parent "P_TarotSheet_Window"
+}
+
+label_prop "P_TarotSheet_Value"
+{
+	skinname "TarotSheet_Value"
+	parent "P_TarotSheet_Window"
+}
+
+--===============--
+-- 몬스터 쉬트 --
+--===============--
+tabsheet_prop "P_MonsterSheet_Window"
+{
+	skinname "MonsterSheet_Window"
+	parent "P_CardBook_Window"
+}
+
+--===============--
+-- 시나리오 쉬트 --
+--===============--
+tabsheet_prop "P_StorySheet_Window"
+{
+	skinname "StorySheet_Window"
+	parent "P_CardBook_Window"
+}

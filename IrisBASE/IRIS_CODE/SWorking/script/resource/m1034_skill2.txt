@@ -1,0 +1,61 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--우트족 투사
+--스킬2
+
+Header
+{
+	type	0
+	
+	effect	0	0.0	0.0	0.0	1.0	"eff_m_1034_02.nif"
+	
+	sound	21	6505
+	sound	22	6502
+	sound	23	6506
+	sound	24	6507
+}
+
+Activity
+{
+	animation	6
+	
+	action	0	0	0	0	1	foot	0.0	0.0	0.0
+	
+	soundplay	300	21	0
+	soundplay	600	21	0
+	soundplay	300	22	0
+	soundplay	600	22	0
+	soundplay	900	23	0
+	soundplay	900	24	0
+	
+	active	300
+}
+
+Apply
+{	
+	damage	0	25
+	damage	300	25
+	damage	600	50
+}

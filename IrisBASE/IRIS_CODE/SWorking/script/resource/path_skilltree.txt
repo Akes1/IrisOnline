@@ -1,0 +1,841 @@
+skillTree	1000	-- 파이터		
+{				
+	imageFile	"interface_Skilltree_1000.tga"		
+				
+	-- skill	index	posX	posY
+	skillpos	1	6	22
+	skillpos	101	737	22
+	skillpos	102	780	22
+	skillpos	1001	6	69
+	skillpos	1002	6	163
+	skillpos	1003	6	257
+	skillpos	1004	49	116
+	skillpos	1005	49	210
+	skillpos	1006	49	304
+	skillpos	1007	92	69
+	skillpos	1008	92	163
+	skillpos	1009	92	257
+	skillpos	1010	135	163
+	skillpos	1011	135	210
+	skillpos	1012	135	257
+	skillpos	1013	178	69
+	skillpos	1014	178	116
+	skillpos	1015	178	210
+	skillpos	1016	178	304
+	skillpos	1101	221	69
+	skillpos	1102	221	163
+	skillpos	1103	221	257
+	skillpos	1104	264	116
+	skillpos	1105	264	210
+	skillpos	1106	264	304
+	skillpos	1107	307	69
+	skillpos	1108	307	163
+	skillpos	1109	307	257
+	skillpos	1110	350	163
+	skillpos	1111	350	210
+	skillpos	1112	393	69
+	skillpos	1113	393	210
+	skillpos	1114	393	304
+	skillpos	1201	436	69
+	skillpos	1202	436	163
+	skillpos	1203	436	257
+	skillpos	1204	479	116
+	skillpos	1205	479	163
+	skillpos	1206	479	210
+	skillpos	1207	479	304
+	skillpos	1208	522	69
+	skillpos	1209	522	163
+	skillpos	1210	522	257
+	skillpos	1211	565	69
+	skillpos	1212	565	210
+	skillpos	1213	565	304
+	skillpos	1214	608	69
+	skillpos	1215	608	116
+	skillpos	1216	608	210
+	skillpos	1217	608	304
+	skillpos	1218	651	163
+	skillpos	401	694	116
+	skillpos	402	694	210
+	skillpos	403	694	257
+	skillpos	404	737	116
+	skillpos	405	737	163
+	skillpos	406	780	116
+	skillpos	407	780	210
+	skillpos	408	780	257
+}				
+				
+skillTree	2000	-- 메이지		
+{				
+	imageFile	"interface_Skilltree_2000.tga"		
+				
+	-- skill	index	posX	posY
+	skillpos	1	92	22
+	skillpos	111	694	22
+	skillpos	112	737	22
+	skillpos	3001	92	116
+	skillpos	3002	92	163
+	skillpos	3003	92	257
+	skillpos	3004	135	210
+	skillpos	3005	178	69
+	skillpos	3006	178	210
+	skillpos	3007	221	163
+	skillpos	3008	264	69
+	skillpos	3009	264	163
+	skillpos	3010	264	304
+	skillpos	3011	307	163
+	skillpos	3012	307	210
+	skillpos	3013	307	257
+	skillpos	3014	307	304
+	skillpos	3015	350	116
+	skillpos	3016	350	210
+	skillpos	3017	350	304
+	skillpos	3101	436	69
+	skillpos	3102	436	116
+	skillpos	3103	436	210
+	skillpos	3104	479	210
+	skillpos	3105	522	69
+	skillpos	3106	522	116
+	skillpos	3107	522	163
+	skillpos	3108	522	210
+	skillpos	3109	522	304
+	skillpos	3110	565	116
+	skillpos	3111	565	163
+	skillpos	3112	565	210
+	skillpos	3113	565	257
+	skillpos	3114	565	304
+	skillpos	3115	608	116
+	skillpos	3116	608	163
+	skillpos	3117	608	210
+	skillpos	3118	608	304
+	skillpos	433	694	116
+	skillpos	434	694	163
+	skillpos	435	694	210
+	skillpos	436	694	257
+	skillpos	437	737	116
+	skillpos	438	737	163
+	skillpos	439	737	210
+	skillpos	440	737	257
+}				
+				
+skillTree	3000	-- 원더러		
+{				
+	imageFile	"interface_Skilltree_3000.tga"		
+				
+	-- skill	index	posX	posY
+	skillpos	1	92	22
+	skillpos	301	651	22
+	skillpos	302	694	22
+	skillpos	2001	92	69
+	skillpos	2002	92	116
+	skillpos	2003	92	210
+	skillpos	2004	92	304
+	skillpos	2005	135	163
+	skillpos	2006	135	304
+	skillpos	2007	178	69
+	skillpos	2008	178	163
+	skillpos	2009	178	257
+	skillpos	2010	221	163
+	skillpos	2011	221	210
+	skillpos	2012	221	257
+	skillpos	2013	221	304
+	skillpos	2014	264	116
+	skillpos	2015	264	163
+	skillpos	2016	264	210
+	skillpos	2101	350	69
+	skillpos	2102	350	116
+	skillpos	2103	350	210
+	skillpos	2104	350	304
+	skillpos	2105	393	304
+	skillpos	2106	436	69
+	skillpos	2107	436	163
+	skillpos	2108	436	257
+	skillpos	2109	479	116
+	skillpos	2110	479	257
+	skillpos	2111	479	304
+	skillpos	2112	522	116
+	skillpos	2113	522	163
+	skillpos	2114	522	210
+	skillpos	2115	608	210
+	skillpos	2116	608	257
+	skillpos	417	651	116
+	skillpos	418	651	163
+	skillpos	419	651	210
+	skillpos	420	651	257
+	skillpos	421	694	116
+	skillpos	422	694	163
+	skillpos	423	694	210
+	skillpos	424	694	257
+}				
+				
+skillTree	4000	-- 워록		
+{				
+	imageFile	"interface_Skilltree_4000.tga"		
+				
+	-- skill	index	posX	posY
+	skillpos	1	49	22
+	skillpos	311	694	22
+	skillpos	312	737	22
+	skillpos	3201	49	116
+	skillpos	3202	49	163
+	skillpos	3203	49	257
+	skillpos	3204	92	210
+	skillpos	3205	135	69
+	skillpos	3206	135	210
+	skillpos	3207	178	163
+	skillpos	3208	221	69
+	skillpos	3209	221	163
+	skillpos	3210	221	304
+	skillpos	3211	264	210
+	skillpos	3212	307	163
+	skillpos	3213	307	210
+	skillpos	3214	307	257
+	skillpos	3215	307	304
+	skillpos	3216	350	116
+	skillpos	3217	350	210
+	skillpos	3218	350	304
+	skillpos	3301	436	69
+	skillpos	3302	436	116
+	skillpos	3303	436	210
+	skillpos	3304	479	210
+	skillpos	3305	522	69
+	skillpos	3306	522	116
+	skillpos	3307	522	163
+	skillpos	3308	522	210
+	skillpos	3309	522	304
+	skillpos	3310	565	116
+	skillpos	3311	565	163
+	skillpos	3312	565	210
+	skillpos	3313	565	257
+	skillpos	3314	565	304
+	skillpos	3315	608	116
+	skillpos	3316	608	163
+	skillpos	3317	608	210
+	skillpos	3318	608	304
+	skillpos	441	694	116
+	skillpos	442	694	163
+	skillpos	443	694	210
+	skillpos	444	694	257
+	skillpos	445	737	116
+	skillpos	446	737	163
+	skillpos	447	737	210
+	skillpos	448	737	257
+}				
+				
+skillTree	5000	-- 암즈맨		
+{				
+	imageFile	"interface_Skilltree_5000.tga"		
+				
+	-- skill	index	posX	posY
+	skillpos	1	6	22
+	skillpos	201	737	22
+	skillpos	202	780	22
+	skillpos	1301	6	69
+	skillpos	1302	6	163
+	skillpos	1303	6	257
+	skillpos	1304	49	116
+	skillpos	1305	49	210
+	skillpos	1306	49	304
+	skillpos	1307	92	69
+	skillpos	1308	92	163
+	skillpos	1309	92	257
+	skillpos	1310	135	163
+	skillpos	1311	135	210
+	skillpos	1312	135	257
+	skillpos	1313	178	69
+	skillpos	1314	178	116
+	skillpos	1315	178	210
+	skillpos	1316	178	304
+	skillpos	1401	221	69
+	skillpos	1402	221	163
+	skillpos	1403	221	257
+	skillpos	1404	264	116
+	skillpos	1405	264	210
+	skillpos	1406	264	304
+	skillpos	1407	307	69
+	skillpos	1408	307	163
+	skillpos	1409	307	257
+	skillpos	1410	350	163
+	skillpos	1411	350	210
+	skillpos	1412	393	69
+	skillpos	1413	393	210
+	skillpos	1414	393	304
+	skillpos	1501	436	69
+	skillpos	1502	436	163
+	skillpos	1503	436	257
+	skillpos	1504	479	116
+	skillpos	1505	479	163
+	skillpos	1506	479	210
+	skillpos	1507	479	304
+	skillpos	1508	522	69
+	skillpos	1509	522	163
+	skillpos	1510	522	257
+	skillpos	1511	565	69
+	skillpos	1512	565	210
+	skillpos	1513	565	304
+	skillpos	1514	608	69
+	skillpos	1515	608	116
+	skillpos	1516	608	210
+	skillpos	1517	608	304
+	skillpos	1518	651	163
+	skillpos	409	694	116
+	skillpos	410	694	210
+	skillpos	411	694	257
+	skillpos	412	737	116
+	skillpos	413	737	163
+	skillpos	414	780	116
+	skillpos	415	780	210
+	skillpos	416	780	257
+}				
+				
+skillTree	6000	-- 레인져		
+{				
+	imageFile	"interface_Skilltree_6000.tga"		
+				
+	-- skill	index	posX	posY
+	skillpos	1	92	22
+	skillpos	211	651	22
+	skillpos	212	694	22
+	skillpos	2201	92	69
+	skillpos	2202	92	116
+	skillpos	2203	92	210
+	skillpos	2204	92	304
+	skillpos	2205	135	163
+	skillpos	2206	135	304
+	skillpos	2207	178	69
+	skillpos	2208	178	163
+	skillpos	2209	178	257
+	skillpos	2210	221	163
+	skillpos	2211	221	210
+	skillpos	2212	221	257
+	skillpos	2213	221	304
+	skillpos	2214	264	116
+	skillpos	2215	264	163
+	skillpos	2216	264	210
+	skillpos	2301	350	69
+	skillpos	2302	350	116
+	skillpos	2303	350	210
+	skillpos	2304	393	304
+	skillpos	2305	436	69
+	skillpos	2306	436	163
+	skillpos	2307	436	257
+	skillpos	2308	436	304
+	skillpos	2309	479	116
+	skillpos	2310	479	257
+	skillpos	2311	479	304
+	skillpos	2312	522	116
+	skillpos	2313	522	163
+	skillpos	2314	522	210
+	skillpos	2315	608	210
+	skillpos	2316	608	257
+	skillpos	425	651	116
+	skillpos	426	651	163
+	skillpos	427	651	210
+	skillpos	428	651	257
+	skillpos	429	694	116
+	skillpos	430	694	163
+	skillpos	431	694	210
+	skillpos	432	694	257
+}				
+				
+				
+skillTree	1101	--나이트		
+{				
+	imageFile	"interface_Skilltree_1101.tga"		
+	--skill	index	posX	posY
+	skillpos	103	565	22
+	skillpos	104	608	22
+	skillpos	10001	221	69
+	skillpos	10002	221	116
+	skillpos	10003	221	210
+	skillpos	10004	221	257
+	skillpos	10005	264	69
+	skillpos	10006	264	163
+	skillpos	10007	264	210
+	skillpos	10008	264	304
+	skillpos	10009	307	69
+	skillpos	10010	307	116
+	skillpos	10011	307	163
+	skillpos	10012	393	69
+	skillpos	10013	393	116
+	skillpos	10014	393	163
+	skillpos	10015	393	210
+	skillpos	10016	393	257
+	skillpos	10017	393	304
+	skillpos	10018	479	69
+	skillpos	10019	479	116
+	skillpos	10020	479	210
+	skillpos	10021	479	257
+	skillpos	10022	522	69
+	skillpos	10023	522	163
+	skillpos	10024	522	304
+	skillpos	501	608	69
+	skillpos	502	608	116
+	skillpos	503	608	163
+	skillpos	504	608	210
+	skillpos	505	608	257
+}				
+				
+skillTree	1102	--글라디에이터		
+{				
+	imageFile	"interface_Skilltree_1102.tga"		
+	--skill	index	posX	posY
+	skillpos	103	565	22
+	skillpos	104	608	22
+	skillpos	10201	221	69
+	skillpos	10202	221	163
+	skillpos	10203	221	210
+	skillpos	10204	221	257
+	skillpos	10205	264	69
+	skillpos	10206	264	116
+	skillpos	10207	264	163
+	skillpos	10208	264	304
+	skillpos	10209	307	69
+	skillpos	10210	307	116
+	skillpos	10211	307	210
+	skillpos	10212	393	69
+	skillpos	10213	393	163
+	skillpos	10214	393	304
+	skillpos	10215	479	69
+	skillpos	10216	479	116
+	skillpos	10217	479	210
+	skillpos	10218	479	304
+	skillpos	10219	522	116
+	skillpos	10220	522	163
+	skillpos	10221	522	257
+	skillpos	511	608	69
+	skillpos	512	608	116
+	skillpos	513	608	163
+	skillpos	514	608	210
+	skillpos	515	608	257
+}				
+				
+skillTree	1103	--머셔너리		
+{				
+	imageFile	"interface_Skilltree_1103.tga"		
+	--skill	index	posX	posY
+	skillpos	103	522	22
+	skillpos	104	565	22
+	skillpos	10401	221	69
+	skillpos	10402	221	116
+	skillpos	10403	221	210
+	skillpos	10404	221	257
+	skillpos	10405	264	69
+	skillpos	10406	264	163
+	skillpos	10407	264	210
+	skillpos	10408	264	304
+	skillpos	10409	307	69
+	skillpos	10410	307	163
+	skillpos	10411	307	257
+	skillpos	10412	393	69
+	skillpos	10413	393	116
+	skillpos	10414	393	163
+	skillpos	10415	393	257
+	skillpos	10416	436	69
+	skillpos	10417	436	210
+	skillpos	10418	436	304
+	skillpos	10419	479	69
+	skillpos	10420	479	116
+	skillpos	10421	479	163
+	skillpos	10422	479	257
+	skillpos	521	565	69
+	skillpos	522	565	116
+	skillpos	523	565	163
+	skillpos	524	565	210
+	skillpos	525	565	257
+}				
+				
+skillTree	2101	--매지션		
+{				
+	imageFile	"interface_Skilltree_2101.tga"		
+	--skill	index	posX	posY
+	skillpos	113	608	22
+	skillpos	114	651	22
+	skillpos	11001	178	69
+	skillpos	11002	178	163
+	skillpos	11003	221	69
+	skillpos	11004	221	116
+	skillpos	11005	221	210
+	skillpos	11006	221	257
+	skillpos	11007	221	304
+	skillpos	11008	264	69
+	skillpos	11009	264	116
+	skillpos	11010	264	163
+	skillpos	11011	350	69
+	skillpos	11012	350	163
+	skillpos	11013	350	257
+	skillpos	11014	393	116
+	skillpos	11015	479	69
+	skillpos	11016	479	116
+	skillpos	11017	479	210
+	skillpos	11018	479	304
+	skillpos	11019	522	69
+	skillpos	11020	522	116
+	skillpos	11021	522	163
+	skillpos	11022	565	69
+	skillpos	11023	565	163
+	skillpos	11024	565	257
+	skillpos	551	651	69
+	skillpos	552	651	116
+	skillpos	553	651	163
+	skillpos	554	651	210
+	skillpos	555	651	257
+}				
+				
+skillTree	2102	--프리스트		
+{				
+	imageFile	"interface_Skilltree_2102.tga"		
+	--skill	index	posX	posY
+	skillpos	113	565	22
+	skillpos	114	608	22
+	skillpos	11201	178	69
+	skillpos	11202	178	116
+	skillpos	11203	178	163
+	skillpos	11204	178	210
+	skillpos	11205	264	69
+	skillpos	11206	264	116
+	skillpos	11207	264	163
+	skillpos	11208	264	257
+	skillpos	11209	307	69
+	skillpos	11210	307	116
+	skillpos	11211	307	210
+	skillpos	11212	393	116
+	skillpos	11213	393	163
+	skillpos	11214	436	69
+	skillpos	11215	436	116
+	skillpos	11216	436	163
+	skillpos	11217	436	304
+	skillpos	11218	479	69
+	skillpos	11219	479	116
+	skillpos	11220	479	163
+	skillpos	11221	479	257
+	skillpos	11222	479	304
+	skillpos	11223	522	69
+	skillpos	11224	522	116
+	skillpos	561	608	69
+	skillpos	562	608	116
+	skillpos	563	608	163
+	skillpos	564	608	210
+	skillpos	565	608	257
+}				
+				
+skillTree	3101	--윈드워커		
+{				
+	imageFile	"interface_Skilltree_3101.tga"		
+	--skill	index	posX	posY
+	skillpos	303	522	22
+	skillpos	304	565	22
+	skillpos	10601	221	69
+	skillpos	10602	221	163
+	skillpos	10603	221	210
+	skillpos	10604	221	304
+	skillpos	10605	264	116
+	skillpos	10606	264	163
+	skillpos	10607	264	257
+	skillpos	10608	307	69
+	skillpos	10609	307	163
+	skillpos	10610	307	210
+	skillpos	10611	307	257
+	skillpos	10612	393	69
+	skillpos	10613	393	116
+	skillpos	10614	393	163
+	skillpos	10615	393	257
+	skillpos	10616	436	69
+	skillpos	10617	436	116
+	skillpos	10618	436	163
+	skillpos	10619	436	210
+	skillpos	10620	479	69
+	skillpos	10621	479	116
+	skillpos	10622	479	210
+	skillpos	10623	479	304
+	skillpos	531	565	69
+	skillpos	532	565	116
+	skillpos	533	565	163
+	skillpos	534	565	210
+	skillpos	535	565	257
+}				
+				
+skillTree	3102	--스카우터		
+{				
+	imageFile	"interface_Skilltree_3102.tga"		
+	--skill	index	posX	posY
+	skillpos	303	522	22
+	skillpos	304	565	22
+	skillpos	10801	221	69
+	skillpos	10802	221	163
+	skillpos	10803	221	210
+	skillpos	10804	221	257
+	skillpos	10805	264	116
+	skillpos	10806	264	163
+	skillpos	10807	264	304
+	skillpos	10808	307	69
+	skillpos	10809	307	163
+	skillpos	10810	307	210
+	skillpos	10811	307	257
+	skillpos	10812	393	69
+	skillpos	10813	393	116
+	skillpos	10814	393	210
+	skillpos	10815	436	69
+	skillpos	10816	436	116
+	skillpos	10817	436	163
+	skillpos	10818	436	257
+	skillpos	10819	479	69
+	skillpos	10820	479	210
+	skillpos	10821	479	304
+	skillpos	541	565	69
+	skillpos	542	565	116
+	skillpos	543	565	163
+	skillpos	544	565	210
+	skillpos	545	565	257
+}				
+				
+skillTree	4101	--샤먼		
+{				
+	imageFile	"interface_Skilltree_4101.tga"		
+	--skill	index	posX	posY
+	skillpos	313	608	22
+	skillpos	314	651	22
+	skillpos	11101	178	69
+	skillpos	11102	178	116
+	skillpos	11103	221	69
+	skillpos	11104	221	116
+	skillpos	11105	221	210
+	skillpos	11106	221	257
+	skillpos	11107	221	304
+	skillpos	11108	264	69
+	skillpos	11109	264	116
+	skillpos	11110	264	163
+	skillpos	11111	350	69
+	skillpos	11112	350	163
+	skillpos	11113	350	257
+	skillpos	11114	393	116
+	skillpos	11115	479	69
+	skillpos	11116	479	116
+	skillpos	11117	479	210
+	skillpos	11118	479	304
+	skillpos	11119	522	69
+	skillpos	11120	522	116
+	skillpos	11121	522	163
+	skillpos	11122	565	69
+	skillpos	11123	565	163
+	skillpos	11124	565	257
+	skillpos	556	651	69
+	skillpos	557	651	116
+	skillpos	558	651	163
+	skillpos	559	651	210
+	skillpos	560	651	257
+}				
+				
+skillTree	4102	--세이지		
+{				
+	imageFile	"interface_Skilltree_4102.tga"		
+	--skill	index	posX	posY
+	skillpos	313	565	22
+	skillpos	314	608	22
+	skillpos	11301	178	69
+	skillpos	11302	178	116
+	skillpos	11303	178	163
+	skillpos	11304	178	210
+	skillpos	11305	264	116
+	skillpos	11306	264	163
+	skillpos	11307	264	257
+	skillpos	11308	307	69
+	skillpos	11309	307	116
+	skillpos	11310	307	210
+	skillpos	11311	393	69
+	skillpos	11312	393	116
+	skillpos	11313	393	163
+	skillpos	11314	436	69
+	skillpos	11315	436	116
+	skillpos	11316	436	163
+	skillpos	11317	436	304
+	skillpos	11318	479	69
+	skillpos	11319	479	116
+	skillpos	11320	479	163
+	skillpos	11321	479	257
+	skillpos	11322	479	304
+	skillpos	11323	522	69
+	skillpos	11324	522	116
+	skillpos	566	608	69
+	skillpos	567	608	116
+	skillpos	568	608	163
+	skillpos	569	608	210
+	skillpos	570	608	257
+}				
+				
+skillTree	5101	--베테랑		
+{				
+	imageFile	"interface_Skilltree_5101.tga"		
+	--skill	index	posX	posY
+	skillpos	203	565	22
+	skillpos	204	608	22
+	skillpos	10101	221	69
+	skillpos	10102	221	116
+	skillpos	10103	221	210
+	skillpos	10104	221	257
+	skillpos	10105	264	69
+	skillpos	10106	264	163
+	skillpos	10107	264	210
+	skillpos	10108	264	304
+	skillpos	10109	307	69
+	skillpos	10110	307	116
+	skillpos	10111	307	163
+	skillpos	10112	393	69
+	skillpos	10113	393	116
+	skillpos	10114	393	163
+	skillpos	10115	393	210
+	skillpos	10116	393	257
+	skillpos	10117	393	304
+	skillpos	10118	479	69
+	skillpos	10119	479	116
+	skillpos	10120	479	210
+	skillpos	10121	479	257
+	skillpos	10122	522	69
+	skillpos	10123	522	163
+	skillpos	10124	522	304
+	skillpos	506	608	69
+	skillpos	507	608	116
+	skillpos	508	608	163
+	skillpos	509	608	210
+	skillpos	510	608	257
+}				
+				
+skillTree	5102	--버서커		
+{				
+	imageFile	"interface_Skilltree_5102.tga"		
+	--skill	index	posX	posY
+	skillpos	203	565	22
+	skillpos	204	608	22
+	skillpos	10301	178	69
+	skillpos	10302	178	163
+	skillpos	10303	178	210
+	skillpos	10304	178	257
+	skillpos	10305	221	69
+	skillpos	10306	221	116
+	skillpos	10307	221	163
+	skillpos	10308	221	304
+	skillpos	10309	264	69
+	skillpos	10310	264	116
+	skillpos	10311	264	210
+	skillpos	10312	350	69
+	skillpos	10313	350	163
+	skillpos	10314	350	304
+	skillpos	10315	393	163
+	skillpos	10316	479	69
+	skillpos	10317	479	116
+	skillpos	10318	479	210
+	skillpos	10319	479	304
+	skillpos	10320	522	116
+	skillpos	10321	522	163
+	skillpos	10322	522	257
+	skillpos	516	608	69
+	skillpos	517	608	116
+	skillpos	518	608	163
+	skillpos	519	608	210
+	skillpos	520	608	257
+}				
+				
+skillTree	5103	--워리어		
+{				
+	imageFile	"interface_Skilltree_5103.tga"		
+	--skill	index	posX	posY
+	skillpos	203	522	22
+	skillpos	204	565	22
+	skillpos	10501	221	69
+	skillpos	10502	221	116
+	skillpos	10503	221	210
+	skillpos	10504	221	257
+	skillpos	10505	264	69
+	skillpos	10506	264	163
+	skillpos	10507	264	210
+	skillpos	10508	264	304
+	skillpos	10509	307	69
+	skillpos	10510	307	163
+	skillpos	10511	307	257
+	skillpos	10512	393	69
+	skillpos	10513	393	116
+	skillpos	10514	393	163
+	skillpos	10515	393	257
+	skillpos	10516	436	69
+	skillpos	10517	436	210
+	skillpos	10518	436	304
+	skillpos	10519	479	69
+	skillpos	10520	479	116
+	skillpos	10521	479	163
+	skillpos	10522	479	257
+	skillpos	526	565	69
+	skillpos	527	565	116
+	skillpos	528	565	163
+	skillpos	529	565	210
+	skillpos	530	565	257
+}				
+				
+skillTree	6101	--섀도우워커		
+{				
+	imageFile	"interface_Skilltree_6101.tga"		
+	--skill	index	posX	posY
+	skillpos	213	522	22
+	skillpos	214	565	22
+	skillpos	10701	221	69
+	skillpos	10702	221	163
+	skillpos	10703	221	210
+	skillpos	10704	221	304
+	skillpos	10705	264	116
+	skillpos	10706	264	163
+	skillpos	10707	264	257
+	skillpos	10708	307	69
+	skillpos	10709	307	163
+	skillpos	10710	307	210
+	skillpos	10711	307	257
+	skillpos	10712	393	69
+	skillpos	10713	393	116
+	skillpos	10714	393	163
+	skillpos	10715	393	257
+	skillpos	10716	393	304
+	skillpos	10717	436	69
+	skillpos	10718	436	116
+	skillpos	10719	436	163
+	skillpos	10720	436	210
+	skillpos	10721	479	69
+	skillpos	10722	479	116
+	skillpos	10723	479	210
+	skillpos	536	565	69
+	skillpos	537	565	116
+	skillpos	538	565	163
+	skillpos	539	565	210
+	skillpos	540	565	257
+}				
+				
+skillTree	6102	--헌터		
+{				
+	imageFile	"interface_Skilltree_6102.tga"		
+	--skill	index	posX	posY
+	skillpos	213	522	22
+	skillpos	214	565	22
+	skillpos	10901	221	69
+	skillpos	10902	221	163
+	skillpos	10903	221	210
+	skillpos	10904	264	116
+	skillpos	10905	264	163
+	skillpos	10906	264	304
+	skillpos	10907	307	69
+	skillpos	10908	307	163
+	skillpos	10909	307	210
+	skillpos	10910	307	257
+	skillpos	10911	393	69
+	skillpos	10912	393	116
+	skillpos	10913	393	163
+	skillpos	10914	393	210
+	skillpos	10915	393	257
+	skillpos	10916	436	69
+	skillpos	10917	436	116
+	skillpos	10918	436	163
+	skillpos	10919	436	257
+	skillpos	10920	479	69
+	skillpos	10921	479	210
+	skillpos	10922	479	304
+	skillpos	546	565	69
+	skillpos	547	565	116
+	skillpos	548	565	163
+	skillpos	549	565	210
+	skillpos	550	565	257
+}				

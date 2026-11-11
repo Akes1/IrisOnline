@@ -1,0 +1,26 @@
+Header
+{
+	type	0
+	effect	0	0.0	40.0	0.0	1.0	"eff_em_2018_01.nif"
+	sound	21	30114
+	sound	22	25040
+	sound	23	25021
+	sound	24	35009
+}
+
+Activity
+{
+	animation	7
+	soundplay	0	22	0
+	soundplay	100	21	0
+	soundplay	680	23	0
+	action	730	0	0	0	1	foot	0.0	-200.0	260.0
+	active	730
+}
+
+Apply
+{
+	soundplay	0	24	0
+	damage	0	100
+}
+

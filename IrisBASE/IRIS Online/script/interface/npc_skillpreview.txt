@@ -1,0 +1,175 @@
+--===============--
+-- Npc 스킬미리찍어보기 --
+--===============--
+tabwindow "SkillPreviewWindow"
+{
+	ii 5015
+	pos 152 140
+	size 988 477 --865 477
+	texpos 0 0
+		
+	captionXY 0 0 
+	captionWH 988 477 --865 477
+
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 버튼 "닫기"
+button "SkillPreview_Close"
+{
+	ii 5002
+	pos 955 14 --832 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- /// 버튼 "초기화"
+button "SkillPreview_Clear"
+{
+	ii 5015
+	pos 761 446
+	size 72 24
+	texpos 991 65 --868 65
+	
+	-- 버튼 그림 좌표
+	uppos 991 65 --868 65
+	upoverpos 991 90 --868 90
+	downpos 991 115 --868 115
+	
+	downsound 3001
+}
+
+-- /// 버튼 "동기화"
+button "SkillPreview_Sync"
+{
+	ii 5015
+	pos 672 446
+	size 72 24
+	texpos 991 140 --868 140
+	
+	-- 버튼 그림 좌표
+	uppos 991 140 --868 140
+	upoverpos 991 165 --868 165
+	downpos 991 190 --868 190
+	
+	downsound 3001
+}
+
+-- /// 사용 스킬 포인트
+label "SkillPreview_UsePoint"
+{
+	pos 227 450
+	size 75 21
+	text_align center
+}
+
+-- /// 필요 레벨
+label "SkillPreview_Level"
+{
+	pos 381 450
+	size 75 21
+	text_align center
+}
+
+
+-- /// 기본 직업
+combobox "SkillPreview_DefaultJob"
+{
+	pos 26 122
+	size 108 21		-- 접혔을때 사이즈 : 에디트와 버튼만 포함한 사이즈
+	 
+	listskin "ComboList_SkillPreview"
+	buttonskin "ComboDown"
+	texteditskin "ComboEdit_SkillPreview"
+	scrollskin "ListScroll"
+}
+
+listbox "ComboList_SkillPreview"
+{
+	ii 5013
+	pos 0 17
+	size 108 120
+	texpos 832 707
+	
+	row_height 20		
+	maxitemnum 120
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5006	
+	child_size 1 1		
+	child_texpos 321 401
+	
+	columnX 3 	100	center
+}
+editbox "ComboEdit_SkillPreview"
+{
+	ii 5013
+	pos 0 0
+	size 102 17
+	texpos 865 477
+	
+	editkind 1
+	editpos 20 2	
+	editmaxlen 16
+}
+-- /// 1차 전직
+combobox "SkillPreview_ChangeJob1"
+{
+	pos 26 207
+	size 114 21		-- 접혔을때 사이즈 : 에디트와 버튼만 포함한 사이즈
+	 
+	listskin "ComboList_SkillPreview"
+	buttonskin "ComboDown"
+	texteditskin "ComboEdit_SkillPreview"
+	scrollskin "ListScroll"
+}
+
+
+-- 소스에서 직접 쓰는 스킨
+tabbutton "Preview_JobTabbutton"
+{
+	ii 5015
+	pos 178 47
+	size 89 30
+	texpos 1009 0 --886 0
+
+	uppos 1009 32 --886 32
+	upoverpos 1009 32 --886 32
+	downpos 1009 0 --886 0
+
+	downsound 3001
+}
+
+-- 소스에서 직접 쓰는 스킨(스킬 내부 바탕화면)
+tabsheet "Preview_SkillSheet"
+{
+	pos	155 74
+	size	822 367 --700 367
+}
+
+--소스에서 직접 쓰는 스킨
+button "SkillLevelDownButton"
+{
+	ii 5015
+	pos 1 1
+	size 14 14
+	texpos 1066 65 --943 65
+	
+	-- 버튼 그림 좌표 					
+	uppos 1066 65 --943 65
+	upoverpos 1066 81 --943 81
+	downpos 1066 97 --943 97
+
+	downsound 3001
+	
+}

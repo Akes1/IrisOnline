@@ -1,0 +1,116 @@
+//빅토리 조안 사우르스 모드 설정
+
+Header	
+{
+	deathmonster	10008	1	0	100
+	deathmonster	10009	1	800	1000
+	portal	120102
+	portal	120103
+}
+
+Mode	0
+{
+	modeimage	"mode_image201_1.tga"	0	480	0
+	immune	0
+
+	modechange	4	1	600000	0	0
+	modechange	1	3	80	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	1
+{
+	modeimage	"mode_image201_1.tga"	0	0	0
+
+	immune	0
+
+	modechange	4	1	600000	0	0
+	modechange	2	5	14	0	0
+
+	modeskill
+	useskill	14	0	100	0	0	0	0
+
+}
+
+Mode	2
+{	
+	modeimage	"mode_image201_1.tga"	0	60	0
+
+	immune	0
+
+	modestate	16	7000
+	
+	applybuff	45610	1
+
+	modechange	4	1	600000	0	0
+	modechange	3	2	7000	0	0
+}
+
+Mode	3
+{	
+	immune	0
+
+	modechange	4	1	600000	0	0
+	modechange	1	2	30000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0	
+}
+
+Mode	4
+{
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	immune	0
+
+	applyaura	45110	0	10	0
+
+	modechange	5	2	40000	0	0
+}
+
+Mode	5
+{
+	modeimage	"mode_image201_1.tga"	0	0	0
+
+	immune	0
+
+	applyaura	45110	0	10	0
+
+	modechange	6	5	14	0	0
+
+	modeskill
+	useskill	14	0	100	0	0	0	0
+
+}
+
+Mode	6
+{	
+	modeimage	"mode_image201_1.tga"	0	60	0
+
+	immune	0
+
+	applyaura	45110	0	10	0
+
+	modestate	16	7000
+	
+	applybuff	45610	1
+
+	modechange	7	2	7000	0	0
+}
+
+Mode	7
+{	
+	immune	0
+
+	applyaura	45110	0	10	0
+	
+	modechange	5	2	30000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0	
+}

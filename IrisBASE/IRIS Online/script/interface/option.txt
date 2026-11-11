@@ -1,0 +1,672 @@
+--===============--
+-- 옵션 윈도우 	 --
+--===============--
+tabwindow "Option_Window"
+{
+	ii 5006
+	pos 360 226
+	size 303 387
+	texpos 279 568
+	
+	captionXY 0 0 
+	captionWH 303 387
+
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 창이름
+label "Option_WindowName"
+{
+	pos 10 8
+	size 280 11
+	text_align left
+}
+
+button "Option_Close"
+{
+	ii 5002
+	pos 270 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+-- 초기화 버튼
+button "Option_Default"
+{
+	ii 5006
+	pos 41 352
+	size 72 24
+	texpos 574 442
+	
+	-- 버튼 그림 좌표 	
+	uppos 574 442
+	upoverpos 574 468
+	downpos 574 494
+
+	downsound 3001
+}
+-- 적용 버튼
+button "Option_Apply"
+{
+	ii 5006
+	pos 116 352
+	size 72 24
+	texpos 648 442
+	
+	-- 버튼 그림 좌표 	
+	uppos 648 442
+	upoverpos 648 468
+	downpos 648 494
+
+	downsound 3001
+}
+-- 취소 버튼
+button "Option_Cancel"
+{
+	ii 5006
+	pos 191 352
+	size 72 24
+	texpos 722 442
+	
+	-- 버튼 그림 좌표 	
+	uppos 722 442
+	upoverpos 722 468
+	downpos 722 494
+
+	downsound 3001
+}
+
+tabsheet "Option_Sheet1"
+{
+	ii 5006
+	pos 14 72
+	size 274 273
+	texpos 2 407
+}
+
+tabsheet "Option_Sheet2"
+{
+	ii 5006
+	pos 14 72
+	size 274 273
+	texpos 2 682
+}
+
+-- ///트위터 옵션
+tabsheet "Option_Sheet3"
+{
+	ii 5006	
+	pos 14 72
+	texpos 2 2
+	size 274 273
+}
+
+-- 탭버튼 "환경"
+tabbutton "Option_Environment"
+{
+	ii 5006
+	pos 34 45
+	size 70 30
+	texpos 328 431
+	
+	uppos 328 461
+	upoverpos 328 461
+	downpos 328 431
+
+	downsound 3001
+}
+
+-- 탭버튼 "그래픽/사운드"
+tabbutton "Option_Graphic"
+{
+	ii 5006
+	pos 173 45 -- 105 45 트위터 환경설정 전 좌표
+	size 88 30
+	texpos 399 431
+	
+	uppos 399 461
+	upoverpos 399 461 
+	downpos 399 431
+
+	downsound 3001
+}
+
+-- 탭버튼 "트위터"
+tabbutton "Option_Twitter"
+{
+	ii 5006
+	
+	texpos 346 370
+	size 70 30
+
+	pos 103 45
+
+	uppos 346 401
+	upoverpos 346 401
+	downpos 346 370
+
+	downsound 3001
+}
+
+--===============--
+-- 트위터 시트   --
+--===============--
+-- 자동 메시지 보내기
+checkbox "Option_MessageSendCheck"
+{
+	ii 5006
+	
+	texpos 330 370
+	size 12 12
+	pos 17 83
+
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 계정 등록/변경 버튼
+button "Option_AccountInsert"
+{
+	ii 5006
+	
+	texpos 564 364
+	size 94 24
+
+	pos 70 50
+
+	uppos 564 364
+	upoverpos 564 390
+	downpos 564 416 
+
+	downsound 3001
+}
+
+-- 계정 초기화 버튼
+button "Option_AccountRefresh"
+{
+	ii 5006
+
+	texpos 660 364 
+	size 84 24
+
+	pos 168 50
+
+	uppos 660 364
+	upoverpos 660 390
+	downpos 660 416
+ 
+	downsound 3001
+}
+ 
+
+
+--===============--
+-- 환경 시트	 -- 
+--===============--
+-- 내 이름 보기
+checkbox "Option_NameCheck"
+{
+	ii 5006
+	pos 17 41
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 자신 표시(전체)	
+radiobutton "Option_NameFullCheck"
+{
+	ii 5006
+	pos 27 58
+	size 12 12
+	texpos 330 370
+
+	group	0
+	
+	-- 체크박스 이미지 좌표 
+	uppos 330 370
+	downpos 330 384
+
+	downsound 3001
+}
+-- 자신 표시(이름만)	
+radiobutton "Option_NameOnlyCheck"
+{
+	ii 5006
+	pos 133 58
+	size 12 12
+	texpos 330 370
+
+	group	0
+	
+	-- 체크박스 이미지 좌표 
+	uppos 330 370
+	downpos 330 384
+
+	downsound 3001
+}
+
+-- 타 캐릭터 이름보기
+checkbox "Option_OtherNameCheck"
+{
+	ii 5006
+	pos 17 83
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+-- 타캐릭터 표시(전체) 
+radiobutton "Option_OtherNameFullCheck"
+{
+	ii 5006
+	pos 27 100
+	size 12 12
+	texpos 330 370
+
+	group	1
+	
+	-- 체크박스 이미지 좌표 
+	uppos 330 370
+	downpos 330 384
+
+	downsound 3001
+}
+-- 타캐릭터 표시(이름만) 
+radiobutton "Option_OtherNameOnlyCheck"
+{
+	ii 5006
+	pos 133 100
+	size 12 12
+	texpos 330 370
+
+	group	1
+	
+	-- 체크박스 이미지 좌표 
+	uppos 330 370
+	downpos 330 384
+
+	downsound 3001
+}
+
+-- Npc 이름보기
+checkbox "Option_NpcNameCheck"
+{
+	ii 5006
+	pos 17 122
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- Monster 이름 보기
+checkbox "Option_MonsterNameCheck"
+{
+	ii 5006
+	pos 143 122
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 게이지 보기
+checkbox "Option_GaugeCheck"
+{
+	ii 5006
+	pos 17 139
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 말풍선보기
+checkbox "Option_BalloonCheck"
+{
+	ii 5006
+	pos 143 139
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 투구보이기
+checkbox "Option_HelmetCheck"
+{
+	ii 5006
+	pos 17 156
+	size 12 12
+	texpos 330 370
+
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 게임팁표시
+checkbox "Option_TipCheck"
+{
+	ii 5006
+	pos 143 156
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 거래거부
+checkbox "Option_TradeCheck"
+{
+	ii 5006
+	pos 17 206
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 파티신청 거부
+checkbox "Option_PartyCheck"
+{
+	ii 5006
+	pos 143 206
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 결투거부
+checkbox "Option_DualCheck"
+{
+	ii 5006
+	pos 17 223
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 친구신청 거부
+checkbox "Option_FriendCheck"
+{
+	ii 5006
+	pos 143 223
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 귓말거부
+checkbox "Option_WhisperCheck"
+{
+	ii 5006
+	pos 17 240
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 전장 입장 거부
+checkbox "Option_PvpCheck"
+{
+	ii 5006
+	pos 143 240
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+--===============--
+-- 그래픽/사운드 시트 --
+--===============--
+-- 옵션게이지 자식 바 버튼
+barbutton "Option_Bar"
+{
+	ii 5006
+	pos 0 0
+	size 14 14
+	texpos 300 370
+	
+	-- 버튼 그림 좌표 	
+	uppos 300 370
+	upoverpos 300 386
+	downpos 300 402
+
+}
+--창모드	
+checkbox "Option_WindowCheck"
+{
+	ii 5006
+	pos 17 54
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- 밝기 조절
+optiongauge "Option_Light"
+{
+	ii 5006
+	pos 103 127
+	size 132 14
+	texpos 105 809
+	
+	barbuttonskin "Option_Bar"
+}
+
+-- 효과음 조절
+optiongauge "Option_EffectSound"
+{
+	ii 5006
+	pos 103 205
+	size 132 14
+	texpos 105 809
+	
+	barbuttonskin "Option_Bar"
+}
+
+-- 배경음 조절
+optiongauge "Option_BackSound"
+{
+	ii 5006
+	pos 103 228
+	size 132 14
+	texpos 105 809
+	
+	barbuttonskin "Option_Bar"
+}
+
+
+-- 해상도
+combobox "Option_WindowSize"
+{
+	pos 93 73
+	size 150 17
+	
+	listskin "ComboList"
+	buttonskin "ComboDown"
+	texteditskin "ComboEdit"
+	scrollskin "ListScroll"
+}
+listbox "ComboList"
+{
+	ii 5006
+	pos 0 17
+	size 150 120
+	texpos 298 646
+	
+	row_height 20		
+	maxitemnum 120
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5006	
+	child_size 1 1		
+	child_texpos 321 401
+	
+	columnX 3 	100	center
+}
+button "ComboDown"
+{
+	ii 5005
+	pos 114 4
+	size 11 10
+	texpos 396 544
+	
+	useenable true
+		
+	-- 버튼 그림 좌표 	
+	uppos 396 544
+	upoverpos 396 556
+	downpos 396 568
+	
+	enablepos 396 568
+}
+editbox "ComboEdit"
+{
+	ii 5006
+	pos 0 0
+	size 139 17
+	texpos 94 754
+	
+	editkind 1
+	editpos 20 2	
+	editmaxlen 16
+}
+
+
+-- 동영상 품질
+combobox "Option_Video"
+{
+	pos 93 99
+	size 150 17
+	
+	listskin "ComboList_Video"
+	buttonskin "ComboDown"
+	texteditskin "ComboEdit_Video"
+	scrollskin "ListScroll"
+}
+editbox "ComboEdit_Video"
+{
+	ii 5006
+	pos 0 0
+	size 139 17
+	texpos 94 754
+	
+	editkind 1	
+	editpos 5 2	
+	editmaxlen 20
+}
+listbox "ComboList_Video"
+{
+	ii 5006
+	pos 0 17
+	size 150 120
+	texpos 298 646
+	
+	row_height 20		
+	maxitemnum 120
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5006	
+	child_size 1 1		
+	child_texpos 321 401
+	
+	columnX 3 	100	left
+}

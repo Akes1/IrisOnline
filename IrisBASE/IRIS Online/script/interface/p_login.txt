@@ -1,0 +1,48 @@
+--===============--
+-- 로그인 윈도우 --
+--===============--
+window_prop "P_LoginWindow"
+{
+	skinname "LoginWindow"
+}
+
+-- /// 아이디 에디트  
+editbox_prop "P_Login_IDEdit"
+{
+	skinname "Login_IDEdit"
+	parent "P_LoginWindow"
+}
+
+-- /// 비밀번호 에디트  
+editbox_prop "P_Login_PassEdit"
+{
+	skinname "Login_PassEdit"
+	parent "P_LoginWindow"
+}
+
+button_prop "P_Login_Connect"
+{
+	skinname "Login_Connect"
+	parent "P_LoginWindow"
+}
+
+button_prop "P_Login_Cancel"
+{
+	skinname "Login_Cancel"
+	parent "P_LoginWindow"
+}
+
+--===============--
+-- 로그인 배경 윈도우 --
+--===============--
+window_prop "P_VersionWindow"
+{
+	skinname "VersionWindow"
+}
+
+label_prop "P_Login_Version"
+{
+	skinname "Login_Version"
+	parent "P_VersionWindow"
+}
+

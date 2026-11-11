@@ -1,0 +1,1 @@
+IrisAgentDemon.exe /uninstall -def AgentDemon

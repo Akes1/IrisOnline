@@ -1,0 +1,63 @@
+--===============--
+-- 던전 관리 윈도우 --
+--===============--
+window_prop "P_ThemeStateWindow"
+{
+	skinname "ThemeStateWindow"
+}
+
+-- /// 버튼 닫기
+button_prop "P_ThemeState_Close"
+{
+	skinname "ThemeState_Close"
+	parent	"P_ThemeStateWindow"
+}
+
+-- /// 던전 정보 리스트 박스
+folderbox_prop "P_ThemeState_ListFolderBox"
+{
+	skinname "ThemeState_ListFolderBox"
+	parent	"P_ThemeStateWindow"
+}
+
+-- /// 던전 설명박스
+textbox_prop "P_ThemeState_DescBox"
+{
+	skinname "ThemeState_DescBox"
+	parent	"P_ThemeStateWindow"
+}
+
+
+
+--===============--
+-- 던전 귀속초기화 윈도우 --
+--===============--
+window_prop "P_ThemeResetWindow"
+{
+	skinname "ThemeResetWindow"
+}
+
+button_prop "P_ThemeReset_Close"
+{
+	skinname "ThemeReset_Close"
+	parent   "P_ThemeResetWindow"
+}
+
+button_prop "P_ThemeReset_Reset"
+{
+	skinname "ThemeReset_Reset"
+	parent   "P_ThemeResetWindow"
+}
+
+folderbox_prop "P_ThemeReset_ListFolderBox"
+{
+	skinname "ThemeReset_ListFolderBox"
+	parent   "P_ThemeResetWindow"
+}
+
+-- /// 던전 설명박스
+textbox_prop "P_ThemeReset_DescBox"
+{
+	skinname "ThemeReset_DescBox"
+	parent   "P_ThemeResetWindow"
+}

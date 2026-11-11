@@ -1,0 +1,84 @@
+--===============--
+-- 카마엘 심판 창 --
+--===============--
+window "CamaelWindow"
+{
+	ii 5010
+	size 300 350 -- 262 302
+	texpos 385 1040 -- 이미지에서의 좌표
+
+
+	pos 381 233 --화면에서의 위치
+
+	captionXY 0 0
+	captionWH 262 302
+	
+	holdview true	-- 창이 사라지지 않게 한다. 
+}
+
+-- /// 입력란 에디트  
+editbox "Camael_Edit"
+{
+	pos 111 249
+	size 78 15
+	
+	editkind 2	-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 5:특문제외 )
+	editpos 3 3	
+	editmaxlen 4	-- 에디트가 받아들일수 있는 최대 길이 지정
+	text_align center
+	
+}
+
+-- /// 문제 라벨
+label "Camael_TestImage"     
+{ 
+	pos 76 170
+	size 150 56 
+}
+
+ -- /// 남은시간 라벨
+label "Camael_LimitTime"
+{
+	pos 160 58
+	size 24 13
+	text_align right
+}
+
+-- /// 확인 버튼
+button "Camael_OK"
+{
+	ii 5010
+	texpos	977 621
+	size 82 24
+	
+	-- 버튼 그림 좌표 	
+	uppos 977 621
+	upoverpos 977 648
+	downpos 977 675
+		
+	useenable true
+	enablepos 977 675
+
+	pos 58 312
+
+}
+
+-- /// 새로 고침
+button "Camael_Refresh"
+{
+	ii 5010
+	texpos	892 621
+	size 82 24
+	 
+	-- 버튼 그림 좌표 	
+	uppos 892 621
+	upoverpos 892 648
+	downpos 892 675
+		
+	useenable true
+	enablepos 892 675
+
+	pos 160 312
+
+
+}

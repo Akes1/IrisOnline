@@ -1,0 +1,33 @@
+//Map Index	Map폴더 Index	로딩Map 이미지 파일명	terrain사용여부	mapBGM	반복 간격	난이도	최소Lv	최대Lv	인원	필요아이템	Pvp설정	경험치 증가
+1	1	LoadingMap_Image01.dds	1	bgm_map01.mp3	7000	0	0	0	0	0	0	0
+2	2	LoadingMap_Image02.dds	1	bgm_map02.mp3	10000	0	0	0	0	0	0	0
+3	3	LoadingMap_Image03.dds	1	bgm_map03.mp3	10000	0	0	0	0	0	0	0
+4	4	LoadingMap_Image04.dds	1	bgm_map04.mp3	10000	0	0	0	0	0	0	0
+5	5	LoadingMap_Image05.dds	0	bgm_map05.mp3	10000	0	0	0	0	0	0	0
+6	6	LoadingMap_Image06.dds	0	bgm_map06.mp3	10000	0	0	0	0	0	0	0
+7	7	LoadingMap_Image07.dds	1	bgm_map07.mp3	10000	0	0	0	0	0	0	0
+8	8	LoadingMap_Image08.dds	1	bgm_map08.mp3	10000	0	0	0	0	0	0	0
+9	9	LoadingMap_Image09.dds	1	bgm_map09.mp3	10000	0	0	0	0	0	0	0
+10	10	LoadingMap_Image10.dds	1	bgm_map10.mp3	10000	0	0	0	0	0	0	0
+11	11	LoadingMap_Image11.dds	1	bgm_map11.mp3	10000	0	0	0	0	0	0	0
+12	12	LoadingMap_Image12.dds	1	bgm_map12.mp3	10000	0	50	100	0	0	1	30
+13	13	LoadingMap_Image13.dds	0	bgm_map13.mp3	10000	0	0	0	0	0	0	0
+14	14	LoadingMap_Image14.dds	1	bgm_map14.mp3	10000	0	0	0	0	0	0	0
+16	16	LoadingMap_Image16.dds	1	bgm_map16.mp3	10000	0	30	100	0	0	1	30
+17	17	LoadingMap_Image17.dds	1	bgm_map17.mp3	10000	0	40	100	0	0	1	30
+18	18	LoadingMap_Image18.dds	1	bgm_map08.mp3	10000	0	50	100	0	0	1	30
+19	19	LoadingMap_Image19.dds	1	bgm_map01.mp3	10000	0	50	100	0	0	1	30
+22	22	LoadingMap_Image22.dds	1	bgm_map16.mp3	10000	0	50	100	0	0	1	30
+
+101	101	LoadingMap_Image101.dds	0	bgm_map101.mp3	0	0	0	0	0	0	0	0
+102	102	loadingmap_image102.dds	0	bgm_map101.mp3	0	0	0	0	0	0	0	0
+
+200	200	loadingmap_image200.dds	0	bgm_map200.mp3	0	1	15	100	6	868003	0	0
+200	200	loadingmap_image200.dds	0	bgm_map200.mp3	0	2	30	100	6	868003	0	0
+201	201	loadingmap_image201.dds	0	bgm_map201.mp3	0	1	25	100	6	0	0	0
+201	201	loadingmap_image201.dds	0	bgm_map201.mp3	0	2	40	100	6	0	0	0
+202	202	loadingmap_image202.dds	1	bgm_map202.mp3	0	1	35	100	6	0	0	0
+202	202	loadingmap_image202.dds	1	bgm_map202.mp3	0	2	50	100	6	0	0	0
+203	203	loadingmap_image203.dds	1	bgm_map203.mp3	0	1	40	100	6	0	0	0
+
+501	200	loadingmap_image200.dds	0	bgm_map200.mp3	0	0	1	100	15	0	0	0

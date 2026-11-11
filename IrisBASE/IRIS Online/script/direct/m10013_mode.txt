@@ -1,0 +1,171 @@
+//빅토리 조안 스페셜 모드 설정
+
+Header	
+{
+	effect	1	0	0	0	2	"eff_em_2013_03.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+
+	sound	3	10214
+}
+
+Mode	0
+{
+	modeimage	"mode_image201_1.tga"	0	480	0
+	immune	0
+
+	modechange	8	1	600000	0	0
+	modechange	1	3	70	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+}
+
+Mode	1
+{
+	immune	0
+
+	modeimage	"mode_image201_2.tga"	0	120	0
+
+	applyaura	45634	0	10	0
+
+	modechange	8	1	600000	0	0
+	modechange	2	3	50	0	0
+	
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	2
+{
+	immune	0
+
+	modeimage	"mode_image201_2.tga"	0	180	0
+
+	applyaura	45635	0	10	0
+
+	modestate	32	1800
+
+	applyres	1	0	1	foot	0	0	0
+
+	gentotem	5611	1	150	200	0	0	1001301	2
+	gentotem	5611	1	800	1500	1	2500	0	2
+
+	modechange	8	1	600000	0	0
+	modechange	3	2	4000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	3
+{
+	immune	0
+
+	gentotem	5611	1	150	200	0	0	1001301	2
+	gentotem	5611	1	800	1500	1	2500	0	2
+
+	applyaura	45635	0	10	0
+
+	modechange	8	1	600000	0	0
+	modechange	4	3	30	0	0
+	modechange	3	2	4000	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	4
+{
+	immune	0
+
+	gentotem	5611	1	150	200	0	0	1001301	2
+	gentotem	5611	1	800	1500	1	2500	0	2
+
+	applyaura	45636	0	10	0
+
+	modechange	8	1	600000	0	0
+	modechange	5	3	15	0	0
+	modechange	4	2	2500	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	5
+{
+	immune	0
+
+	modeimage	"mode_image201_2.tga"	0	240	0
+
+	gentotem	5611	1	150	200	0	0	1001301	2
+	gentotem	5611	1	800	1500	1	2500	0	2
+
+	applyaura	45636	0	10	0
+	applyaura	45638	0	10	0
+
+	modechange	8	1	600000	0	0
+	modechange	6	2	2500	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	6
+{
+	immune	0
+
+	gentotem	5611	1	150	200	0	0	1001301	2
+	gentotem	5611	1	800	1500	1	2500	0	2
+
+	applyaura	45636	0	10	0
+	applyaura	45638	0	10	0
+
+	modechange	8	1	600000	0	0
+	modechange	7	3	10	0	0
+	modechange	6	2	2500	0	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	7
+{
+	immune	0
+
+	gentotem	5611	1	150	200	0	0	1001301	2
+	gentotem	5611	1	800	1500	1	2500	0	2
+
+	applyaura	45636	0	10	0
+	applyaura	45638	0	10	0
+
+	modechange	8	1	600000	0	0
+	modechange	7	2	2500	0	0
+
+	aggro
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}
+
+Mode	8
+{
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	immune	0
+
+	gentotem	5611	1	150	200	1	2500	1001301	2
+	gentotem	5611	1	800	1500	1	2500	0	2
+
+	applyaura	45110	0	10	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+}

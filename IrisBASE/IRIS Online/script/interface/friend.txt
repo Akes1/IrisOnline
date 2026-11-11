@@ -1,0 +1,263 @@
+-- /// 친구 윈도우 
+window "FriendWindow"
+{
+	ii 5007
+	pos 350 106
+	size 383 465
+	texpos 2 2
+		
+	captionXY 0 0 
+	captionWH 383 465
+
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 버튼  "닫기"
+button "Friend_Close_Button"
+{
+	ii 5002
+	pos 350 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+
+}
+
+-- /// 버튼 "파티초대"
+button "Friend_Party"
+{
+	ii 5007
+	pos 298 68
+	size 72 24
+	texpos 2 709
+		
+	-- 버튼 그림 좌표 	
+	uppos 2 709
+	upoverpos 2 735
+	downpos 2 761
+	enablepos 2 761
+		
+	useenable true
+	downsound 3001
+}
+
+-- /// 버튼 "친구추가"
+button "Friend_AddFriend"
+{
+	ii 5007
+	pos 298 93
+	size 72 24
+	texpos 224 709
+		
+	-- 버튼 그림 좌표 	
+	uppos 224 709
+	upoverpos 224 735
+	downpos 224 761
+	enablepos 224 761
+		
+	useenable true
+	downsound 3001
+}
+
+-- /// 버튼 "친구삭제"
+button "Friend_DelFriend"
+{
+	ii 5007
+	pos 298 118
+	size 72 24
+	texpos 298 709
+		
+	-- 버튼 그림 좌표 	
+	uppos 298 709
+	upoverpos 298 735
+	downpos 298 761
+	enablepos 298 761
+		
+	useenable true
+	downsound 3001
+
+	downsound 3001
+}
+
+-- /// 버튼 "귓속말"
+button "Friend_Whisper"
+{
+	ii 5007
+	pos 298 143
+	size 72 24
+	texpos 372 709
+		
+	-- 버튼 그림 좌표 	
+	uppos 372 709
+	upoverpos 372 735
+	downpos 372 761
+	enablepos 372 761
+		
+	useenable true
+	downsound 3001
+}
+
+-- /// 친구리스트  
+-- /// 소스에서 사용하는 스킨명
+-- /// 일반리스트박스와 출력하는 형태가 다릅니다.
+-- /// 각 컬럼을 새로운 열에 출력용
+listbox "Friend_ListBox"
+{
+	pos 22 58
+	size 259 370
+	row_height 37				-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 50				-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5007				-- 텍스쳐
+	child_size 259 37		-- 사이즈
+	child_texpos 387 414		-- 이미지 위치
+
+	selectwidth 259
+		
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x,  	w,   	align
+	imgcolX 4 	30			-- 친구 이미지
+	
+	columnX 40 	231	 left
+	columnX 40 	190	 left
+}
+
+-- 페이지 버튼
+radiobutton "Friend_Page1"
+{
+	ii 5007
+	pos 95 439
+	size 21 21
+	texpos 593 456
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 711 410
+	upoverpos 711 433
+	downpos 711 456
+}
+
+radiobutton "Friend_Page2"
+{
+	ii 5007
+	pos 118 439
+	size 21 21
+	texpos 616 456
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 734 410
+	upoverpos 734 433
+	downpos 734 456
+}
+
+radiobutton "Friend_Page3"
+{
+	ii 5007
+	pos 141 439
+	size 21 21
+	texpos 639 456
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 757 410
+	upoverpos 757 433
+	downpos 757 456
+}
+
+radiobutton "Friend_Page4"
+{
+	ii 5007
+	pos 164 439
+	size 21 21
+	texpos 662 456
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 780 410
+	upoverpos 780 433
+	downpos 780 456
+}
+
+radiobutton "Friend_Page5"
+{
+	ii 5007
+	pos 187 439
+	size 21 21
+	texpos 685 456
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 803 410
+	upoverpos 803 433
+	downpos 803 456
+}
+
+
+--==============================================================
+-- /// 친구 이미지 스킨
+-- /// 소스에서 직접쓰는 스킨
+--==============================================================
+-- /// 인간남자
+label "Human_M"
+{
+	ii 5007
+	pos 0 0
+	size 28 28
+	texpos 498 452
+}
+
+-- /// 인간여자
+label "Human_W"
+{
+	ii 5007
+	pos 0 0
+	size 28 28
+	texpos 469 452
+}
+
+-- /// 수인 남자
+label "Beast_M"
+{
+	ii 5007
+	pos 0 0
+	size 28 28
+	texpos 556 452
+}
+
+-- /// 수인 여자
+label "Beast_W"
+{
+	ii 5007
+	pos 0 0
+	size 28 28
+	texpos 527 452
+}
+
+-- /// 정령 남자
+label "Elf_M"
+{
+	ii 5007
+	pos 0 0
+	size 28 28
+	texpos 440 452
+}
+
+-- /// 정령 여자
+label "Elf_W"
+{
+	ii 5007
+	pos 0 0
+	size 28 28
+	texpos 411 452
+}
+

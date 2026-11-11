@@ -1,0 +1,140 @@
+--===============--
+-- 루팅 윈도우 --
+--===============--
+window "LootingWindow"
+{
+	ii 5002
+	pos 400 200
+	size 216 251
+	texpos 3 771
+	
+	captionXY 0 0 
+	captionWH 216 251
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 버튼 "Close"
+button "Looting_Close"
+{
+	ii 5002
+	pos 183 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	downsound 3001
+}
+
+-- 버튼 "아이템링크"
+button "Looting_Link"
+{
+	ii 5002
+	pos 11 216
+	size 82 24
+	texpos 237 1108
+		
+	-- 버튼 그림 좌표 	
+	uppos 237 1108
+	upoverpos 237 1133
+	downpos 237 1158
+	
+	useenable true 
+	enablepos 237 1158
+
+	downsound 3001
+}
+
+-- 버튼 "전부습득"
+button "Looting_All"
+{
+	ii 5002
+	pos 123 216
+	size 82 24
+	texpos 221 771
+	
+	-- 버튼 그림 좌표 	
+	uppos 221 771
+	upoverpos 221 796
+	downpos 221 821
+
+	downsound 3001
+}
+
+-- /// 아이템 리스트   
+listbox "Looting_List"
+{
+	pos 18 59
+	size 183 148
+	row_height 37		
+	maxitemnum 20	
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5002			
+	child_size 161 37			
+	child_texpos 221 847
+
+	scrollskin "ListScroll"
+	selectwidth 161
+	
+	-- 컬럼 여백 관련
+	--      x,  	w,   	align
+	imgcolX 4	35
+	columnX 37 	111	 left
+}
+
+
+-- 아이콘
+icon "LootingIcon"	{ pos 0 0	size 28 28 }
+
+--================================--
+--아이템분배 UI--
+--================================--
+window "ItemDivideWindow"
+{
+	ii 5002
+	pos 216 0
+	size 115 182
+	texpos 843 1056
+
+	holdview true
+}
+
+-- /// 아이템 리스트   
+listbox "ItemDivide_List"
+{
+	pos 7 41
+	size 102 110
+	row_height 18		
+	maxitemnum 6	
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5002			
+	child_size 102 16
+	child_texpos 726 1177
+
+	columnX 0  110  center
+
+	selectwidth 102
+
+}
+
+-- 버튼 "지급"
+button "ItemDivide_Give"
+{
+	ii 5002
+	pos 17 152
+	size 82 24
+	texpos 961 1068
+	
+	-- 버튼 그림 좌표 	
+	uppos 961 1068
+	upoverpos 961 1093
+	downpos 961 1118
+
+	downsound 3001
+}

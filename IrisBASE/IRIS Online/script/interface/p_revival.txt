@@ -1,0 +1,25 @@
+--===============--
+-- 부활 윈도우  --
+--===============--
+window_prop "P_RevivalWindow"
+{
+	skinname "RevivalWindow"
+}
+
+button_prop "P_Revival_Town"
+{
+	skinname "Revival_Town"
+	parent "P_RevivalWindow"
+}
+
+button_prop "P_Revival_Stand"
+{
+	skinname "Revival_Stand"
+	parent "P_RevivalWindow"
+}
+
+label_prop "P_Revival_Time"
+{
+	skinname "Revival_Time"
+	parent "P_RevivalWindow"
+}

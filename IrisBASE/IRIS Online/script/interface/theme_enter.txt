@@ -1,0 +1,190 @@
+--===============--
+-- 던전입장 윈도우 --
+--===============--
+window "ThemeEnterWindow"
+{
+	ii 5006
+	pos 270 230
+	size 490 324
+	texpos 490 2
+	
+	captionXY 0 0 
+	captionWH 490  324
+
+	opensound 3007
+	closesound 3010	
+}
+
+-- 던전 참여 인원 정보 리스트
+listbox "ThemeEnter_MemberList"
+{
+	pos 19 200
+	size 420 97
+	row_height 18			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 50			-- 리스트가 담을수 잇는 최대 갯수
+	
+	scrollskin "ListScroll"
+	
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x,  w,   align
+	columnX 0 	44	 center
+	columnX 44	121	 center
+	columnX 165	114	 center
+	columnX 279	57	 center
+	columnX 336	96	 center
+
+}
+
+-- 던전 이름
+label "ThemeEnter_ThemeName"
+{
+	pos 61 62
+	size 137 16
+	text_align center	
+}
+
+-- 상태
+label "ThemeEnter_State"
+{
+	pos 281 62
+	size 52 16
+	text_align center	
+}
+
+-- 고유번호
+label "ThemeEnter_ThemeNumber"
+{
+	ii 5006
+	pos 345 60
+	size 114 23
+	texpos 490 329
+	text_align center
+}
+
+-- 모드선택
+combobox "ThemeEnter_Mode"
+{
+	pos 61 86
+	size 106 23		-- 접혔을때 사이즈 : 에디트와 버튼만 포함한 사이즈
+	
+	listskin "ThemeComboList"
+	buttonskin "ThemeComboDown"
+	texteditskin "ThemeComboEdit"
+	scrollskin "ListScroll"
+}
+
+label "ThemeEnter_Level"
+{
+
+	pos 223 89
+	size 52 14
+	text_align center
+}
+
+label "ThemeEnter_People"
+{
+	pos 343 89
+	size 52 14
+	text_align center
+}
+
+--label "ThemeEnter_Refresh"
+--{
+--	pos 91 113
+--	size 106 14
+--	text_align center
+--}
+
+label "ThemeEnter_EnterItem"
+{
+	pos 91 113
+	size 106 14
+	text_align center	
+
+	--pos 281 113
+	--size 110 14
+	--text_align center
+}
+
+
+button "ThemeComboDown"
+{
+	ii 5005
+	pos 95 4
+	size 11 10
+	texpos 396 544
+	
+	useenable true
+		
+	-- 버튼 그림 좌표 	
+	uppos 396 544
+	upoverpos 396 556
+	downpos 396 568
+	
+	enablepos 396 568
+}
+
+editbox "ThemeComboEdit"
+{
+	ii 5006
+	pos 0 0
+	size 95 17
+	texpos 551 88
+	
+	editkind 1	
+	editpos 5 2	
+	editmaxlen 16		
+}
+
+listbox "ThemeComboList"
+{
+	ii 5006
+	pos 0 17
+	size 106 100
+	texpos 298 646
+	
+	row_height 20		
+	maxitemnum 100
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5006	
+	child_size 1 1		
+	child_texpos 321 401
+	
+	columnX 3 	100	left
+}
+
+-- 버튼 "던전 입장"  
+button "ThemeEnter_OK"
+{
+	ii 5006
+	pos 397 137
+	size 72 24
+	texpos 490 364
+	
+	-- 버튼 그림 좌표 	
+	uppos 490 364
+	upoverpos 490 390
+	downpos 490 416
+
+	downsound 3001
+}
+
+-- 버튼 닫기 "x"
+button "ThemeEnter_Close"
+{
+	ii 5002
+	pos 457 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}

@@ -1,0 +1,160 @@
+--===============--
+-- 캐시 아이템 수령함 --
+--===============--
+window "Receipt_Window"
+{
+	ii 5019
+	pos 420 81
+	size 415 455
+	texpos 0 0
+	
+	captionXY 0 0 
+	captionWH 415 455
+	
+	opensound 3007
+	closesound 3010
+}
+
+-- 닫기 버튼
+button "Receipt_Close"
+{
+	ii 5002
+	pos 382 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+
+-- 물품수령 버튼
+button "Receipt_Get"
+{
+	ii 5019
+	pos 170 415
+	size 82 24
+	texpos 415 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 415 0
+	upoverpos 415 26
+	downpos 415 52
+	
+	downsound 3001
+}
+
+-- 아이템 슬롯
+icon "ReceiptItem_Icon00"	{ pos 45 71	size 28 28 }
+icon "ReceiptItem_Icon01"	{ pos 78 71	size 28 28 }
+icon "ReceiptItem_Icon02"	{ pos 111 71	size 28 28 }
+icon "ReceiptItem_Icon03"	{ pos 144 71	size 28 28 }
+icon "ReceiptItem_Icon04"	{ pos 177 71	size 28 28 }
+icon "ReceiptItem_Icon05"	{ pos 210 71	size 28 28 }
+icon "ReceiptItem_Icon06"	{ pos 243 71	size 28 28 }
+icon "ReceiptItem_Icon07"	{ pos 276 71	size 28 28 }
+icon "ReceiptItem_Icon08"	{ pos 309 71	size 28 28 }
+icon "ReceiptItem_Icon09"	{ pos 342 71	size 28 28 }
+
+icon "ReceiptItem_Icon10"	{ pos 45 104	size 28 28 }
+icon "ReceiptItem_Icon11"	{ pos 78 104	size 28 28 }
+icon "ReceiptItem_Icon12"	{ pos 111 104	size 28 28 }
+icon "ReceiptItem_Icon13"	{ pos 144 104	size 28 28 }
+icon "ReceiptItem_Icon14"	{ pos 177 104	size 28 28 }
+icon "ReceiptItem_Icon15"	{ pos 210 104	size 28 28 }
+icon "ReceiptItem_Icon16"	{ pos 243 104	size 28 28 }
+icon "ReceiptItem_Icon17"	{ pos 276 104	size 28 28 }
+icon "ReceiptItem_Icon18"	{ pos 309 104	size 28 28 }
+icon "ReceiptItem_Icon19"	{ pos 342 104	size 28 28 }
+
+icon "ReceiptItem_Icon20"	{ pos 45 137	size 28 28 }
+icon "ReceiptItem_Icon21"	{ pos 78 137	size 28 28 }
+icon "ReceiptItem_Icon22"	{ pos 111 137	size 28 28 }
+icon "ReceiptItem_Icon23"	{ pos 144 137	size 28 28 }
+icon "ReceiptItem_Icon24"	{ pos 177 137	size 28 28 }
+icon "ReceiptItem_Icon25"	{ pos 210 137	size 28 28 }
+icon "ReceiptItem_Icon26"	{ pos 243 137	size 28 28 }
+icon "ReceiptItem_Icon27"	{ pos 276 137	size 28 28 }
+icon "ReceiptItem_Icon28"	{ pos 309 137	size 28 28 }
+icon "ReceiptItem_Icon29"	{ pos 342 137	size 28 28 }
+
+icon "ReceiptItem_Icon30"	{ pos 45 170	size 28 28 }
+icon "ReceiptItem_Icon31"	{ pos 78 170	size 28 28 }
+icon "ReceiptItem_Icon32"	{ pos 111 170	size 28 28 }
+icon "ReceiptItem_Icon33"	{ pos 144 170	size 28 28 }
+icon "ReceiptItem_Icon34"	{ pos 177 170	size 28 28 }
+icon "ReceiptItem_Icon35"	{ pos 210 170	size 28 28 }
+icon "ReceiptItem_Icon36"	{ pos 243 170	size 28 28 }
+icon "ReceiptItem_Icon37"	{ pos 276 170	size 28 28 }
+icon "ReceiptItem_Icon38"	{ pos 309 170	size 28 28 }
+icon "ReceiptItem_Icon39"	{ pos 342 170	size 28 28 }
+
+icon "ReceiptItem_Icon40"	{ pos 45 203	size 28 28 }
+icon "ReceiptItem_Icon41"	{ pos 78 203	size 28 28 }
+icon "ReceiptItem_Icon42"	{ pos 111 203	size 28 28 }
+icon "ReceiptItem_Icon43"	{ pos 144 203	size 28 28 }
+icon "ReceiptItem_Icon44"	{ pos 177 203	size 28 28 }
+icon "ReceiptItem_Icon45"	{ pos 210 203	size 28 28 }
+icon "ReceiptItem_Icon46"	{ pos 243 203	size 28 28 }
+icon "ReceiptItem_Icon47"	{ pos 276 203	size 28 28 }
+icon "ReceiptItem_Icon48"	{ pos 309 203	size 28 28 }
+icon "ReceiptItem_Icon49"	{ pos 342 203	size 28 28 }
+
+icon "ReceiptItem_Icon50"	{ pos 45 236	size 28 28 }
+icon "ReceiptItem_Icon51"	{ pos 78 236	size 28 28 }
+icon "ReceiptItem_Icon52"	{ pos 111 236	size 28 28 }
+icon "ReceiptItem_Icon53"	{ pos 144 236	size 28 28 }
+icon "ReceiptItem_Icon54"	{ pos 177 236	size 28 28 }
+icon "ReceiptItem_Icon55"	{ pos 210 236	size 28 28 }
+icon "ReceiptItem_Icon56"	{ pos 243 236	size 28 28 }
+icon "ReceiptItem_Icon57"	{ pos 276 236	size 28 28 }
+icon "ReceiptItem_Icon58"	{ pos 309 236	size 28 28 }
+icon "ReceiptItem_Icon59"	{ pos 342 236	size 28 28 }
+
+icon "ReceiptItem_Icon60"	{ pos 45 269	size 28 28 }
+icon "ReceiptItem_Icon61"	{ pos 78 269	size 28 28 }
+icon "ReceiptItem_Icon62"	{ pos 111 269	size 28 28 }
+icon "ReceiptItem_Icon63"	{ pos 144 269	size 28 28 }
+icon "ReceiptItem_Icon64"	{ pos 177 269	size 28 28 }
+icon "ReceiptItem_Icon65"	{ pos 210 269	size 28 28 }
+icon "ReceiptItem_Icon66"	{ pos 243 269	size 28 28 }
+icon "ReceiptItem_Icon67"	{ pos 276 269	size 28 28 }
+icon "ReceiptItem_Icon68"	{ pos 309 269	size 28 28 }
+icon "ReceiptItem_Icon69"	{ pos 342 269	size 28 28 }
+
+icon "ReceiptItem_Icon70"	{ pos 45 302	size 28 28 }
+icon "ReceiptItem_Icon71"	{ pos 78 302	size 28 28 }
+icon "ReceiptItem_Icon72"	{ pos 111 302	size 28 28 }
+icon "ReceiptItem_Icon73"	{ pos 144 302	size 28 28 }
+icon "ReceiptItem_Icon74"	{ pos 177 302	size 28 28 }
+icon "ReceiptItem_Icon75"	{ pos 210 302	size 28 28 }
+icon "ReceiptItem_Icon76"	{ pos 243 302	size 28 28 }
+icon "ReceiptItem_Icon77"	{ pos 276 302	size 28 28 }
+icon "ReceiptItem_Icon78"	{ pos 309 302	size 28 28 }
+icon "ReceiptItem_Icon79"	{ pos 342 302	size 28 28 }
+
+icon "ReceiptItem_Icon80"	{ pos 45 335	size 28 28 }
+icon "ReceiptItem_Icon81"	{ pos 78 335	size 28 28 }
+icon "ReceiptItem_Icon82"	{ pos 111 335	size 28 28 }
+icon "ReceiptItem_Icon83"	{ pos 144 335	size 28 28 }
+icon "ReceiptItem_Icon84"	{ pos 177 335	size 28 28 }
+icon "ReceiptItem_Icon85"	{ pos 210 335	size 28 28 }
+icon "ReceiptItem_Icon86"	{ pos 243 335	size 28 28 }
+icon "ReceiptItem_Icon87"	{ pos 276 335	size 28 28 }
+icon "ReceiptItem_Icon88"	{ pos 309 335	size 28 28 }
+icon "ReceiptItem_Icon89"	{ pos 342 335	size 28 28 }
+
+icon "ReceiptItem_Icon90"	{ pos 45 368	size 28 28 }
+icon "ReceiptItem_Icon91"	{ pos 78 368	size 28 28 }
+icon "ReceiptItem_Icon92"	{ pos 111 368	size 28 28 }
+icon "ReceiptItem_Icon93"	{ pos 144 368	size 28 28 }
+icon "ReceiptItem_Icon94"	{ pos 177 368	size 28 28 }
+icon "ReceiptItem_Icon95"	{ pos 210 368	size 28 28 }
+icon "ReceiptItem_Icon96"	{ pos 243 368	size 28 28 }
+icon "ReceiptItem_Icon97"	{ pos 276 368	size 28 28 }
+icon "ReceiptItem_Icon98"	{ pos 309 368	size 28 28 }
+icon "ReceiptItem_Icon99"	{ pos 342 368	size 28 28 }

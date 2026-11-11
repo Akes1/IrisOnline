@@ -1,0 +1,27 @@
+//Ã¶¹®
+Header	
+{
+	effect	1	0	0	0	2	"eff_pc_pvp_1.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+
+	sound	3	10214
+	antirotation
+
+	death 20205
+}
+Mode	0
+{
+	immune	405
+	immune	406
+	immune	414
+	immune	0
+	immune	601
+	immune	602
+	immune	605
+	immune	701
+	immune	702
+
+	applybuff	41060	1
+
+	modechange	0	2	30000	0	0	
+}

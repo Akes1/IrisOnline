@@ -1,0 +1,1018 @@
+//어둠의 포식자 스라클론 모드 설정
+
+Header	
+{
+	effect	1	0	0	0	2	"eff_pc_pvp_1.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+}
+//전투 시작 지면 긁기, 그물 투척
+Mode	0
+{
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	modeimage	"mode_image201_1.tga"	0	480	0
+	
+	modechange	99	1	600000	0	0
+	modechange	1	3	90	0	0
+}
+
+//벌레 투하
+Mode	1
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	modeskill							
+	useskill	11	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	2	5	0	0	0								
+}
+
+//벌레 투하
+Mode	2
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+						
+	useskill	11	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	3	3	80	0	0								
+}
+
+//벌레 투하, 대기의 왜곡
+Mode	3
+{	
+	modeimage	"mode_image10025.tga"	0	0	0
+
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+
+	useskill	11	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	4	3	70	0	0
+}
+
+//포식자의 일격1, 포식자의 돌진, 대기의 왜곡
+Mode	4
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	5	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	40	3	65	0	0
+}
+
+//포식자의 일격2, 포식자의 돌진, 대기의 왜곡
+Mode	5
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	6	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	40	3	65	0	0
+}
+
+//포식자의 일격3, 포식자의 돌진, 대기의 왜곡
+Mode	6
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	7	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	40	3	65	0	0
+}
+
+//포식자의 일격4, 포식자의 돌진, 대기의 왜곡
+Mode	7
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	8	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	40	3	65	0	0
+}
+
+//포식자의 일격5, 포식자의 돌진, 대기의 왜곡
+Mode	8
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	9	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	40	3	65	0	0
+}
+
+//벌레 투하, 대기의 왜곡
+Mode	9
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+
+	modeskill	
+	useskill	11	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	40	3	65	0	0
+}
+
+//어둠의 날개 가루, 외피 강화
+Mode	10
+{	
+	modeimage	"mode_image10025.tga"	0	120	0
+
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45712	0	1	1
+
+	modeskill							
+	useskill	13	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	11	3	55	0	0
+}
+
+//포식자의 날개짓, 외피 강화
+Mode	11
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45712	0	1	1
+	
+	modeskill				
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	12	5	14	0	0
+}
+
+//포식자의 날개짓, 외피 강화, 어둠의 날개 가루
+Mode	12
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45712	0	1	1
+
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	13	3	50	0	0
+}
+
+//포식자의 휴식1, 외피 강화
+Mode	13
+{	
+	modeimage	"mode_image10025.tga"	0	180	0
+
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applybuff	45713	0
+	applybuff	45714	0
+	applyaura	45712	0	1	1
+
+	modestate	16	10000
+
+	modechange	99	1	600000	0	0
+	modechange	14	2	10000	0	0
+}
+
+//포식자의 날개짓, 외피 강화, 어둠의 날개 가루
+Mode	14
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45712	0	1	1
+
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	15	3	45	0	0
+	modechange	19	3	40	0	0
+}
+
+//포식자의 휴식2, 외피 강화
+Mode	15
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applybuff	45713	0
+	applybuff	45714	0
+	applyaura	45712	0	1	1
+
+	modestate	16	10000
+
+	modechange	99	1	600000	0	0
+	modechange	16	2	10000	0	0
+	modechange	19	3	40	0	0
+}
+
+//포식자의 날개짓, 외피 강화, 어둠의 날개 가루
+Mode	16
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45712	0	1	1
+
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	19	3	40	0	0
+}
+
+//공간 가르기-캐스팅, 어둠의 보호
+Mode	19
+{	
+	modeimage	"mode_image10025.tga"	0	240	0
+
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	18	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	20	5	18	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시1, 어둠의 보호
+Mode	20
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	21	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시2, 어둠의 보호
+Mode	21
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	22	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시3, 어둠의 보호
+Mode	22
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	23	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시4, 어둠의 보호
+Mode	23
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	24	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시5, 어둠의 보호
+Mode	24
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	25	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시6, 어둠의 보호
+Mode	25
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	26	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시7, 어둠의 보호
+Mode	26
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	27	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시8, 어둠의 보호
+Mode	27
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	28	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시9, 어둠의 보호
+Mode	28
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	29	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//공간 가르기-즉시10, 어둠의 보호
+Mode	29
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	30	5	19	0	0
+	modechange	56	3	35	0	0
+}
+
+//어둠의 보호, 포식자의 날개짓, 어둠의 날개 가루
+Mode	30
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	56	3	35	0	0
+}
+
+//거센 날개짓
+Mode	31
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	aggro
+
+	modeskill
+	useskill	15	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	32	5	15	0	0
+}
+
+//포식자의 휴식3, 어둠의 보호
+Mode	32
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applybuff	45713	0
+	applybuff	45714	0
+
+	applyaura	45715	0	1	1
+
+	modestate	16	10000
+
+	modechange	99	1	600000	0	0
+	modechange	33	2	10000	0	0
+}
+
+//거센 날개짓, 포식자의 날개짓, 어둠의 보호
+Mode	33
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	useskill	14	0	100	0	0	0	0
+	useskill	15	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	34	3	20	0	0
+}
+
+//실 뿜어내기
+Mode	34
+{	
+	modeimage	"mode_image10025.tga"	0	300	0
+
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	modeskill
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	35	5	16	0	0
+	modechange	68	3	15	0	0
+}
+
+//거센 날개짓, 포식자의 날개짓, 실 뿜어내기
+Mode	35
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	useskill	14	0	100	0	0	0	0
+	useskill	15	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	68	3	15	0	0
+}
+
+//산성 체액
+Mode	37
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	modeskill
+	useskill	17	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	38	5	17	0	0
+}
+
+//포식자의 휴식5, 외피 강화
+Mode	38
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applybuff	45713	0
+	applybuff	45714	0
+
+	modestate	16	10000
+
+	modechange	99	1	600000	0	0
+	modechange	39	2	10000	0	0
+}
+
+//산성 체액
+Mode	39
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	genmonster	5022	3	0	2000	1	60000	0
+
+	useskill	14	0	100	0	0	0	0
+	useskill	15	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+	useskill	17	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+}
+
+//포식자의 일격1, 포식자의 돌진, 대기의 왜곡
+Mode	40
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	41	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	10	3	60	0	0
+}
+
+//포식자의 일격2, 포식자의 돌진, 대기의 왜곡
+Mode	41
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	42	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	10	3	60	0	0
+}
+
+//포식자의 일격3, 포식자의 돌진, 대기의 왜곡
+Mode	42
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	43	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	10	3	60	0	0
+}
+
+//포식자의 일격4, 포식자의 돌진, 대기의 왜곡
+Mode	43
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	44	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	10	3	60	0	0
+}
+
+//포식자의 일격5, 포식자의 돌진, 대기의 왜곡
+Mode	44
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+	applyaura	45711	0	1	1
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	45	5	12	0	0
+	modechange	99	1	600000	0	0
+	modechange	10	3	60	0	0
+}
+
+//벌레 투하, 대기의 왜곡
+Mode	45
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45710	0	1	1
+
+	modeskill
+	useskill	11	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	10	3	60	0	0
+}
+
+//어둠의 보호, 포식자의 날개짓, 외피 강화, 어둠의 날개 가루
+Mode	56
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	57	3	30	0	0
+}
+
+//공간 가르기-즉시1, 어둠의 보호
+Mode	57
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	58	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시2, 어둠의 보호
+Mode	58
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	59	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시3, 어둠의 보호
+Mode	59
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	60	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시4, 어둠의 보호
+Mode	60
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	61	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시5, 어둠의 보호
+Mode	61
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	62	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시6, 어둠의 보호
+Mode	62
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	63	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시7, 어둠의 보호
+Mode	63
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	64	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시8, 어둠의 보호
+Mode	64
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	65	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시9, 어둠의 보호
+Mode	65
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	66	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//공간 가르기-즉시10, 어둠의 보호
+Mode	66
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	modeskill
+	useskill	19	0	100	0	0	0	0
+
+	modechange	67	5	19	0	0
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//어둠의 보호, 포식자의 날개짓, 외피 강화, 어둠의 날개 가루
+Mode	67
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45715	0	1	1
+
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	31	3	28	0	0
+}
+
+//포식자의 알 1분 마다 3마리씩 소환
+Mode	68
+{	
+	modeimage	"mode_image10025.tga"	0	360	0
+
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	genmonster	5022	3	0	2000	1	60000	0
+
+	useskill	14	0	100	0	0	0	0
+	useskill	15	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+
+	modechange	37	3	10	0	0
+}
+
+//대폭주
+Mode	99
+{	
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	applyaura	45110	0	10	0
+}

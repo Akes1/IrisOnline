@@ -1,0 +1,24 @@
+Header
+{
+	type	0
+	sound	21	6505
+	sound	22	6506
+	sound	23	30020
+	sound	24	25001
+}
+
+Activity
+{
+	animation	6
+	soundplay	0	23	0
+	soundplay	450	24	0
+	soundplay	500	21	0
+	soundplay	500	22	0
+	active	660
+}
+
+Apply
+{
+	damage	0	100
+}
+

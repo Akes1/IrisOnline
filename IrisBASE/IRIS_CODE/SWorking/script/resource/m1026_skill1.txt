@@ -1,0 +1,55 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+--양산형 전차
+--스킬1
+
+Header
+{
+	type	0	
+	
+	effect	0	0.0	0.0	0.0	1.3	"eff_2104_01.nif"	
+	effect	1	0.0	0.0	0.0	1.2	"eff_10123_01.nif"	
+
+	sound	21	6507
+	sound	22	6510
+}
+
+Activity
+{
+	animation	5
+	
+	action	600	0	0	0	1	foot	0.0	-180.0	260.0
+
+	soundplay	600	21	0
+	soundplay	600	22	0
+	
+	active	630
+}
+
+Apply
+{
+	action	0	0	1	0	0	foot	0.0	0.0	0.0
+	
+	damage	0	100
+}

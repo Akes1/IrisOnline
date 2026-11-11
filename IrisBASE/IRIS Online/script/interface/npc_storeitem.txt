@@ -1,0 +1,100 @@
+--=================--
+-- Npc 상점 윈도우 --
+--=================--
+window "NpcStore_Window"
+{
+	ii 5021
+	pos 1 226
+	size 530 426
+	texpos 0 0
+
+	captionXY 0 0 
+	captionWH 530 426
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 닫기 버튼
+button "NpcStore_Close"
+{
+	ii 5002
+	pos 497 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 구입
+button "NpcStore_Buy"
+{
+	ii 5021
+	pos 428 394
+	size 82 24
+	texpos 531 0
+
+	uppos 531 0
+	upoverpos 531 26
+	downpos 531 52
+
+	downsound 3001
+}
+
+-- 아이템 분류버튼 
+-- 소스에서 사용하는 스킨
+radiobutton "NpcStore_Radio"
+{
+	ii 5021
+	pos 27 48
+	size 68 30
+	texpos 531 111
+	group 0
+	
+	uppos 531 111
+	downpos 531 79
+
+	downsound 3001
+}
+
+-- 아이템 판매목록
+-- 소스에서 이름사용
+listbox "NpcStore_List"
+{
+	pos 19 83
+	size 490 297
+	row_height 37				-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 100				-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5021				-- 텍스쳐
+	child_size 236 37				-- 사이즈
+	child_texpos 2 430				-- 이미지 위치
+
+	scrollskin "ChatScroll"
+	selectwidth	236
+}
+
+
+-- 판매 아이콘
+icon "NpcStore_Slot00"	{ pos 5 4		size 28 28 } 
+icon "NpcStore_Slot01"	{ pos 243 4	size 28 28 }
+icon "NpcStore_Slot02"	{ pos 5 41	size 28 28 } 
+icon "NpcStore_Slot03"	{ pos 243 41	size 28 28 } 
+icon "NpcStore_Slot04"	{ pos 5 78	size 28 28 } 
+icon "NpcStore_Slot05"	{ pos 243 78	size 28 28 } 
+icon "NpcStore_Slot06"	{ pos 5 115	size 28 28 } 
+icon "NpcStore_Slot07"	{ pos 243 115	size 28 28 } 
+icon "NpcStore_Slot08"	{ pos 5 152	size 28 28 } 
+icon "NpcStore_Slot09"	{ pos 243 152	size 28 28 } 
+icon "NpcStore_Slot10"	{ pos 5 189	size 28 28 }
+icon "NpcStore_Slot11"	{ pos 243 189	size 28 28 } 
+icon "NpcStore_Slot12"	{ pos 5 226	size 28 28 } 
+icon "NpcStore_Slot13"	{ pos 243 226	size 28 28 } 
+icon "NpcStore_Slot14"	{ pos 5 263	size 28 28 } 
+icon "NpcStore_Slot15"	{ pos 243 263	size 28 28 } 

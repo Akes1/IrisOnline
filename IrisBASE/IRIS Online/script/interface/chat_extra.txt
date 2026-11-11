@@ -1,0 +1,239 @@
+-- /// 분리 채팅창
+window "ChatExtraWindow"
+{
+	pos 0 400
+	size 367 138
+	holdview true
+
+	captionXY 0 0 
+	captionWH 367 138
+
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 분리 채팅박스 "닫기 버튼"
+button "ChatExtra_Close"
+{
+	ii 5002
+	pos 347 3
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- /// 분리 채팅박스
+textbox "ChatExtraBox"
+{
+	pos 0 29
+	size 367 32
+
+	row_height 16				-- 열 높이 세팅	
+	maxitemnum 39				-- 리스트가 담을수 잇는 최대 갯수 ( 최대 39 이상 지정하지 마세요)
+	scrollbar_rightpos 	true			-- 스크롤바의 위치 세팅( true : 오른쪽, false : 왼쪽 )
+		
+	scrollskin "ChatScroll"			-- 공통 스킨 
+}
+
+
+-- /// 분리 채팅박스 사이즈 "+" 버튼
+button "ChatExtra_Size_Plus"
+{
+	ii 5002					
+	pos 6 0
+	size 23 23
+	texpos 199 115
+	
+	-- 버튼 그림 좌표 					
+	uppos 199 115
+	upoverpos 199 140
+	downpos 199 165
+
+	downsound 3001
+	
+	hovertip	424
+}
+
+-- /// 분리 채팅박스 "-" 버튼
+button "ChatExtra_Size_Minus"
+{
+	ii 5002								
+	pos 30 0
+	size 23 23
+	texpos 224 115
+	
+	-- 버튼 그림 좌표 					
+	uppos 224 115
+	upoverpos 224 140
+	downpos 224 165
+
+	downsound 3001
+	
+	hovertip	425
+}
+
+-- /// 채팅 옵션 "일반"
+pushbutton "ChatExtra_Nomal"
+{
+	ii 5002
+	pos 166 3
+	size 20 20
+	texpos 253 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 253 115		-- 일반 이미지 좌표
+	upoverpos 253 115	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 253 137
+	downoverpos 253 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	426
+}
+
+-- /// 채팅 옵션 "파티"
+pushbutton "ChatExtra_Party"
+{
+	ii 5002
+	pos 187 3
+	size 20 20
+	texpos 275 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 275 115		-- 일반 이미지 좌표
+	upoverpos 275 115	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 275 137
+	downoverpos 275 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	427
+}
+
+-- /// 채팅 옵션 "길드"
+pushbutton "ChatExtra_Guild"
+{
+	ii 5002
+	pos 208 3
+	size 20 20
+	texpos 297 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 297 115		-- 일반 이미지 좌표
+	upoverpos 297 115	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 297 137
+	downoverpos 297 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	428
+}
+
+-- /// 채팅 옵션 "외치기"
+pushbutton "ChatExtra_Shout"
+{
+	ii 5002
+	pos 229 3
+	size 20 20
+	texpos 319 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 319 115		-- 일반 이미지 좌표
+	upoverpos 319 115	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 319 137
+	downoverpos 319 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	429
+}
+
+-- /// 채팅 옵션 "거래"
+pushbutton "ChatExtra_Trade"
+{
+	ii 5002
+	pos 250 3
+	size 20 20
+	texpos 341 159
+	
+	-- 버튼 이미지 좌표 
+	uppos 341 159		-- 일반 이미지 좌표
+	upoverpos 341 159	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 363 159
+	downoverpos 363 159
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	430
+}
+
+-- /// 채팅 옵션 "귓속말"
+pushbutton "ChatExtra_Whisper"
+{
+	ii 5002
+	pos 271 3
+	size 20 20
+	texpos 341 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 341 115
+	upoverpos 341 115
+	downpos 341 137
+	downoverpos 341 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	431
+}
+
+-- /// 채팅 옵션 "시스템"
+pushbutton "ChatExtra_System"
+{
+	ii 5002
+	pos 292 3
+	size 20 20
+	texpos 363 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 363 115
+	upoverpos 363 115
+	downpos 363 137
+	downoverpos 363 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	432
+}
+
+-- /// 채팅 옵션 "메가폰"
+pushbutton "ChatExtra_Megaphone"
+{
+	ii 5002
+	pos 313 3
+	size 20 20
+	texpos 386 160
+	
+	-- 버튼 이미지 좌표 
+	uppos 386 160
+	upoverpos 386 160
+	downpos 319 159
+	downoverpos 319 159
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	453
+}

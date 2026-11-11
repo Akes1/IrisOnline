@@ -1,0 +1,7 @@
+--===============--
+-- 로그인 배경 윈도우 --
+--===============--
+window_prop "P_IntroBack"
+{
+	skinname "IntroBack"
+}

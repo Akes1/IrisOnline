@@ -1,0 +1,26 @@
+--공격2: 맨손
+Header
+{
+	type	0
+
+	sound	21	4003
+	sound	22	4503
+}
+
+Activity
+{
+	animation	40
+
+	soundplay	100	21	0
+	soundplay	350	21	0
+	soundplay	250	22	0
+	soundplay	480	22	0
+
+	active	233
+}
+
+Apply
+{
+	damage	0	40
+	damage	267	60
+}

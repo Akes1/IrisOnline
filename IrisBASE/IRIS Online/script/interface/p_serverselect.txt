@@ -1,0 +1,73 @@
+--===============--
+-- 서버 배경 윈도우 --
+--===============--
+window_prop "P_ServerWindowBack"
+{
+	skinname "ServerWindowBack"
+}
+
+--===============--
+-- 서버 윈도우 --
+--===============--
+window_prop "P_ServerWindow"
+{
+	skinname "ServerWindow"
+}
+
+-- /// 버튼 "접속"  
+button_prop "P_Server_Connect"
+{
+	skinname "Server_Connect"
+	parent "P_ServerWindow"
+}
+
+-- /// 버튼 "취소"  
+button_prop "P_Server_Cancel"
+{
+	skinname "Server_Cancel"
+	parent "P_ServerWindow"
+}
+
+button_prop "P_Server_Exit"
+{
+	skinname "Server_Exit"
+	parent "P_ServerWindow"
+}
+
+
+-- /// 서버 리스트   
+listbox_prop "P_Server_ListBox"
+{
+	skinname "Server_ListBox"
+	parent "P_ServerWindow"
+}
+
+radiobutton_prop "P_Server_Page1"
+{
+	skinname "Server_Page1"
+	parent "P_ServerWindow"
+}
+
+radiobutton_prop "P_Server_Page2"
+{
+	skinname "Server_Page2"
+	parent "P_ServerWindow"
+}
+
+radiobutton_prop "P_Server_Page3"
+{
+	skinname "Server_Page3"
+	parent "P_ServerWindow"
+}
+
+radiobutton_prop "P_Server_Page4"
+{
+	skinname "Server_Page4"
+	parent "P_ServerWindow"
+}
+
+radiobutton_prop "P_Server_Page5"
+{
+	skinname "Server_Page5"
+	parent "P_ServerWindow"
+}

@@ -1,0 +1,135 @@
+--===============--
+-- Npc 대화 윈도우 --
+--===============--
+window_prop "P_NpcTelling_Window"
+{
+	skinname "NpcTelling_Window"
+}
+
+-- 닫기 버튼
+button_prop "P_NpcTelling_Close"
+{
+	skinname "NpcTelling_Close"
+	parent "P_NpcTelling_Window"
+}
+-- 이름 라벨
+label_prop "P_NpcTelling_Name"
+{
+	skinname "NpcTelling_Name"
+	parent "P_NpcTelling_Window"
+}
+-- 대사 상자
+textbox_prop "P_NpcTelling_TextBox"
+{
+	skinname "NpcTelling_Text"
+	parent "P_NpcTelling_Window"
+}
+-- 기능 버튼 : 상점 열기
+button_prop "P_NpcTelling_Store"
+{
+	skinname "NpcTelling_Store"
+	parent "P_NpcTelling_Window"
+}
+-- 기능 버튼 : 창고 열기
+button_prop "P_NpcTelling_WareHouse"
+{
+	skinname "NpcTelling_WareHouse"
+	parent "P_NpcTelling_Window"
+}
+
+-- 기능 버튼 : 아이템 분해
+button_prop "P_NpcTelling_Disjoint"
+{
+	skinname "NpcTelling_Disjoint"
+	parent "P_NpcTelling_Window"
+}
+
+-- 기능 버튼 : 길드
+button_prop "P_NpcTelling_Guild"
+{
+	skinname "NpcTelling_Guild"
+	parent "P_NpcTelling_Window"
+}
+
+-- 기능 버튼 : 타롯상점
+button_prop "P_NpcTelling_Tarot"
+{
+	skinname "NpcTelling_Tarot"
+	parent "P_NpcTelling_Window"
+}
+
+-- 기능 버튼 : 유저형태타롯상점
+button_prop "P_NpcTelling_TutorialTarot"
+{
+	skinname "NpcTelling_Tarot"
+	parent "P_NpcTelling_Window"
+}
+
+-- 기능 버튼 : 판매대행
+button_prop "P_NpcTelling_Deal"
+{
+	skinname "NpcTelling_Deal"
+	parent "P_NpcTelling_Window"
+}
+
+-- 기능 버튼 : 테마 던젼
+button_prop "P_NpcTelling_Theme"
+{
+	skinname "NpcTelling_Theme"
+	parent "P_NpcTelling_Window"
+}
+
+-- 기능 버튼 : 스킬 설명
+button_prop "P_NpcTelling_SkillPreview"
+{
+	skinname "NpcTelling_SkillPreview"
+	parent "P_NpcTelling_Window"
+}
+
+
+-- /// npc 퀘스트 리스트
+listbox_prop "P_NpcTelling_QuestList"
+{
+	skinname "NpcTelling_QuestList"
+	parent "P_NpcTelling_Window"
+}
+
+--===============--
+-- npc 보상 정보 윈도우--
+--===============--
+window_prop "P_NpcReward_Window"
+{
+	skinname "NpcReward_Window"
+	parent "P_NpcTelling_Window"
+}
+
+-- 보상정보
+label_prop "P_NpcReward_EXP"
+{
+	skinname "NpcReward_EXP"
+	parent "P_NpcReward_Window"
+}
+
+label_prop "P_NpcReward_SXP"
+{
+	skinname "NpcReward_SXP"
+	parent "P_NpcReward_Window"
+}
+
+label_prop "P_NpcReward_SkillPoint"
+{
+	skinname "NpcReward_SkillPoint"
+	parent "P_NpcReward_Window"
+}
+
+label_prop "P_NpcReward_Money"
+{
+	skinname "NpcReward_Money"
+	parent "P_NpcReward_Window"
+}
+
+label_prop "P_NpcReward_Count"
+{
+	skinname "NpcReward_Count"
+	parent "P_NpcReward_Window"
+}

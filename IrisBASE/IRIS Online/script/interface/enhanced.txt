@@ -1,0 +1,110 @@
+--===============--
+-- 아이템 강화창 --
+--===============--
+window "EnhancedWindow"
+{
+	ii 5003
+	pos 238 233
+	size 200 307
+	texpos 761 366
+
+	opensound 3007
+	closesound 3010
+	
+	captionXY 0 0
+	captionWH 200 283
+}
+
+-- 닫기 버튼 "x"
+button "Enhanced_Close"
+{
+	ii 5002
+	pos 167 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160 
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 강화 버튼
+button "Enhanced_Start"
+{
+	ii 5003
+	pos 29 275
+	size 72 24
+	texpos 371 447
+	useenable true
+
+	uppos 371 447
+	upoverpos 371 473
+	downpos 371 499
+	enablepos 371 499
+
+	downsound 3001
+}
+
+-- 취소 버튼
+button "Enhanced_Cancel"
+{
+	ii 5003
+	pos 104 275
+	size 72 24
+	texpos 445 525
+	useenable true
+
+	uppos 445 525
+	upoverpos 445 551
+	downpos 445 577
+	enablepos 445 577
+
+	downsound 3001
+}
+
+-- 강화 아이템 슬롯 - 소스에서 사용
+icon "Enhanced_ItemSlot"	{ pos 58 72	size 28 28 } 
+
+-- 강화 카드 슬롯 - 소스에서 사용
+icon "Enhanced_CardSlot"	{ pos 115 72	size 28 28 } 
+
+-- 강화 보조제 슬롯 - 소스에서 사용
+icon "Enhanced_AssistanceSlot"	{ pos 87 139	size 28 28 } 
+
+
+gauge "Enhanced_Gaugebar"
+{
+	pos 31 212
+	size 139 7
+	
+	gauge_speed 30			-- float 값
+	show_text false
+	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7 
+	gauge_texpos 365 295
+	gauge_width 139
+	gauge_height 7
+}
+
+-- 강화 성공 이미지
+label "Enhanced_Success"
+{
+	ii 5003
+	pos 60 234
+	size 82 17
+	texpos 375 399
+}
+
+-- 강화 실패 이미지
+label "Enhanced_Failure"
+{
+	ii 5003
+	pos 65 234
+	size 73 17
+	texpos 464 399
+}

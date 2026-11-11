@@ -1,0 +1,202 @@
+quest 20000
+{
+	type 3
+	title	20000
+
+	description	20000001 1
+
+	level	65
+
+	repeat	QUEST_REPEAT
+
+	givenpc	2000
+	takenpc	110
+	takemap	22
+
+	trigger	TE_LEVEL	( 64 65 )
+	trigger	TE_DAYEVENT	( SUN )
+
+	duty
+	{
+		talknpc	110
+	}
+
+	default
+	{
+		item	2000000	1
+	}
+}
+
+quest 20001
+{
+	type 3
+	title	20001
+
+	description	20001001 1
+
+	level	65
+
+	repeat	QUEST_REPEAT
+
+	givenpc	2000
+	takenpc	109
+	takemap	22
+
+	trigger	TE_LEVEL	( 64 65 )
+	trigger	TE_DAYEVENT	( MON )
+
+	duty
+	{
+		talknpc	109
+	}
+
+	default
+	{
+		item	2000001	1
+	}
+}
+
+quest 20002
+{
+	type 3
+	title	20002
+
+	description	20002001 1
+
+	level	65
+
+	repeat	QUEST_REPEAT
+
+	givenpc	2000
+	takenpc	119
+	takemap	22
+
+	trigger	TE_LEVEL	( 64 65 )
+	trigger	TE_DAYEVENT	( TUE )
+
+	duty
+	{
+		talknpc	119
+	}
+
+	default
+	{
+		item	2000002	1
+	}
+}
+
+quest 20003
+{
+	type 3
+	title	20003
+
+	description	20003001 1
+
+	level	65
+
+	repeat	QUEST_REPEAT
+
+	givenpc	2000
+	takenpc	100
+	takemap	19
+
+	trigger	TE_LEVEL	( 64 65 )
+	trigger	TE_DAYEVENT	( WED )
+
+	duty
+	{
+		talknpc	100
+	}
+
+	default
+	{
+		item	2000003	1
+	}
+}
+
+quest 20004
+{
+	type 3
+	title	20004
+
+	description	20004001 1
+
+	level	65
+
+	repeat	QUEST_REPEAT
+
+	givenpc	2000
+	takenpc	96
+	takemap	18
+
+	trigger	TE_LEVEL	( 64 65 )
+	trigger	TE_DAYEVENT	( THU )
+
+	duty
+	{
+		talknpc	96
+	}
+
+	default
+	{
+		item	2000004	1
+	}
+}
+
+quest 20005
+{
+	type 3
+	title	20005
+
+	description	20005001 1
+
+	level	65
+
+	repeat	QUEST_REPEAT
+
+	givenpc	2000
+	takenpc	98
+	takemap	18
+
+	trigger	TE_LEVEL	( 64 65 )
+	trigger	TE_DAYEVENT	( FRI )
+
+	duty
+	{
+		talknpc	98
+	}
+
+	default
+	{
+		item	2000005	1
+	}
+}
+
+quest 20006
+{
+	type 3
+	title	20006
+
+	description	20006001 1
+
+	level	65
+
+	repeat	QUEST_REPEAT
+
+	givenpc	2000
+	takenpc	97
+	takemap	18
+
+	trigger	TE_LEVEL	( 64 65 )
+	trigger	TE_DAYEVENT	( SAT )
+
+	duty
+	{
+		talknpc	97
+	}
+
+	default
+	{
+		item	2000006	1
+	}
+}

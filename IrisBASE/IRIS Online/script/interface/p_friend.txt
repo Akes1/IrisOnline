@@ -1,0 +1,77 @@
+-- /// 친구 윈도우 
+window_prop "P_FriendWindow"
+{
+	skinname "FriendWindow"
+}
+
+-- /// 버튼  "닫기"
+button_prop "P_Friend_Close_Button"
+{
+	skinname "Friend_Close_Button"
+	parent "P_FriendWindow"
+}
+
+-- /// 버튼 "파티초대"
+button_prop "P_Friend_Party"
+{
+	skinname "Friend_Party"
+	parent "P_FriendWindow"
+}
+
+-- /// 버튼 "친구추가"
+button_prop "P_Friend_AddFriend"
+{
+	skinname "Friend_AddFriend"
+	parent "P_FriendWindow"
+}
+
+-- /// 버튼 "친구삭제"
+button_prop "P_Friend_DelFriend"
+{
+	skinname "Friend_DelFriend"
+	parent "P_FriendWindow"
+}
+
+-- /// 버튼 "귓속말"
+button_prop "P_Friend_Whisper"
+{
+	skinname "Friend_Whisper"
+	parent "P_FriendWindow"
+}
+
+-- /// 친구리스트 
+listbox_prop "P_Friend_ListBox"
+{
+	skinname "Friend_ListBox"
+	parent "P_FriendWindow"
+}
+
+radiobutton_prop "P_Friend_Page1"
+{
+	skinname "Friend_Page1"
+	parent "P_FriendWindow"
+}
+
+radiobutton_prop "P_Friend_Page2"
+{
+	skinname "Friend_Page2"
+	parent "P_FriendWindow"
+}
+
+radiobutton_prop "P_Friend_Page3"
+{
+	skinname "Friend_Page3"
+	parent "P_FriendWindow"
+}
+
+radiobutton_prop "P_Friend_Page4"
+{
+	skinname "Friend_Page4"
+	parent "P_FriendWindow"
+}
+
+radiobutton_prop "P_Friend_Page5"
+{
+	skinname "Friend_Page5"
+	parent "P_FriendWindow"
+}

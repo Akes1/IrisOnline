@@ -1,0 +1,71 @@
+--======================--
+-- 살펴보기 윈도우 --
+--======================--
+window "Look_Window"
+{
+	ii	5003
+	pos	354 82
+	size	160 400
+	texpos	962 0
+	
+	captionXY 0 0 
+	captionWH 160 400
+}
+
+-- 닫기 버튼
+button "Look_Close"
+{
+	ii 5002
+	pos 131 7
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- /// 라벨 "이름"
+label "Look_Name"
+{
+	pos 20 47
+	size 120 16
+	text_align center
+}
+
+-- /// 라벨 "레벨+직업"
+label "Look_Info"
+{
+	pos 20 64
+	size 120 16
+	text_align center
+}
+
+-- 장비 장착
+icon "Look_Icon00"	{ pos 66 91 	size 28 28 } -- 모자
+icon "Look_Icon01"	{ pos 49 170 	size 28 28 } -- 상의
+icon "Look_Icon02"	{ pos 66 211 	size 28 28 } -- 하의
+icon "Look_Icon03"	{ pos 84 170 	size 28 28 } -- 장갑
+icon "Look_Icon04"	{ pos 66 247 	size 28 28 } -- 신발
+icon "Look_Icon05"	{ pos 32 110 	size 28 28 } -- 귀걸이
+icon "Look_Icon06"	{ pos 66 135 	size 28 28 } -- 목걸이
+icon "Look_Icon07"	{ pos 100 110 	size 28 28 } -- 브로치
+icon "Look_Icon08"	{ pos 113 233 	size 28 28 } -- 팔찌
+icon "Look_Icon09"	{ pos 20 233 	size 28 28 } -- 반지
+icon "Look_Icon10"	{ pos 31 284 	size 28 28 } -- 카드1
+icon "Look_Icon11"	{ pos 66 284 	size 28 28 } -- 카드2
+icon "Look_Icon12"	{ pos 101 284 	size 28 28 } -- 카드3
+icon "Look_Icon15"	{ pos 118 198 	size 28 28 } -- 왼손1
+icon "Look_Icon13"	{ pos 118 163 	size 28 28 } -- 왼손2
+icon "Look_Icon16"	{ pos 15 198 	size 28 28 } -- 오른손1
+icon "Look_Icon14"	{ pos 15 163 	size 28 28 } -- 오른손2
+icon "Look_Icon17"	{ pos 32 360 	size 28 28 } -- 상의
+icon "Look_Icon18"	{ pos 14 322 	size 28 28 } -- 하의
+icon "Look_Icon19"	{ pos 49 322 	size 28 28 } -- 장갑
+icon "Look_Icon20"	{ pos 84 322 	size 28 28 } -- 신발
+icon "Look_Icon21"	{ pos 119 322 	size 28 28 } -- 머리장식
+icon "Look_Icon22"	{ pos 67 360 	size 28 28 } -- 얼굴장식
+icon "Look_Icon23"	{ pos 102 360 	size 28 28 } -- 몸통장식

@@ -1,0 +1,178 @@
+--===============--
+-- 파티 관리 윈도우 --
+--===============--
+window_prop "P_PartyWindow"
+{
+	skinname "PartyWindow"
+}
+
+button_prop "P_Party_Display"
+{
+	skinname "Party_Display"
+	parent "P_PartyWindow"
+}
+
+button_prop "P_Party_Menu"
+{
+	skinname "Party_Menu"
+	parent "P_PartyWindow"
+}
+
+label_prop "P_Party_Divide"
+{
+	skinname "Party_Divide"
+	parent "P_PartyWindow"
+}
+
+pushbutton_prop "P_Party_MoveLock"
+{
+	skinname "Party_MoveLock"
+	parent "P_PartyWindow"
+}
+
+button_prop "P_Party_Dice"
+{
+	skinname "Party_Dice"
+	parent "P_PartyWindow"
+}
+
+
+--===============--
+-- 파티 메뉴	 --
+--===============--
+window_prop "P_PartyMenu"
+{
+	skinname "PartyMenu"
+}
+
+button_prop "P_PartyMenu_Invite"
+{
+	skinname "PartyMenu_Invite"
+	parent "P_PartyMenu"
+}
+
+button_prop "P_PartyMenu_ChangeLeader"
+{
+	skinname "PartyMenu_ChangeLeader"
+	parent "P_PartyMenu"
+}
+
+button_prop "P_PartyMenu_ChangeDivide"
+{
+	skinname "PartyMenu_ChangeDivide"
+	parent "P_PartyMenu"
+}
+
+button_prop "P_PartyMenu_ThrowUser"
+{
+	skinname "PartyMenu_ThrowUser"
+	parent "P_PartyMenu"
+}
+
+button_prop "P_PartyMenu_Out"
+{
+	skinname "PartyMenu_Out"
+	parent "P_PartyMenu"
+}
+
+--===============--
+-- 파티 분배 메뉴 --
+--===============--
+window_prop "P_PartyDivdeMenu"
+{
+	skinname "PartyDivdeMenu"
+}
+
+button_prop "P_PartyDivide_Sequece"
+{
+	skinname "PartyDivide_Sequece"
+	parent "P_PartyDivdeMenu"
+}
+
+button_prop "P_PartyDivide_Random"
+{
+	skinname "PartyDivide_Random"
+	parent "P_PartyDivdeMenu"
+}
+
+button_prop "P_PartyDivide_Damage"
+{
+	skinname "PartyDivide_Damage"
+	parent "P_PartyDivdeMenu"
+}
+
+button_prop "P_PartyDivide_Free"
+{
+	skinname "PartyDivide_Free"
+	parent "P_PartyDivdeMenu"
+}
+
+button_prop "P_PartyDivide_Reader"
+{
+	skinname "PartyDivide_Reader"
+	parent "P_PartyDivdeMenu"
+}
+
+--===============--
+-- 파티 상태 윈도우   --
+--===============--
+window_prop "P_PartyStateWindow"
+{
+	skinname "PartyStateWindow"
+}
+
+window_prop "P_PartyBuff"
+{
+	skinname "PartyBuff"
+	parent "P_PartyStateWindow"
+}
+
+label_prop "P_PartyState_UserLevel"
+{
+	skinname "PartyState_UserLevel"
+	parent "P_PartyStateWindow"
+}
+
+label_prop "P_PartyState_UserName"
+{
+	skinname "PartyState_UserName"
+	parent "P_PartyStateWindow"
+}
+
+gauge_prop "P_PartyState_HP"
+{
+	skinname "PartyState_HP"
+	parent "P_PartyStateWindow"
+}
+
+gauge_prop "P_PartyState_MP"
+{
+	skinname "PartyState_MP"
+	parent "P_PartyStateWindow"
+}
+
+--===============--
+-- 파티 상태 Mini 윈도우   --
+--===============--
+window_prop "P_PartyStateMiniWindow"
+{
+	skinname "PartyStateMiniWindow"
+}
+
+label_prop "P_PartyStateMini_UserName"
+{
+	skinname "PartyStateMini_UserName"
+	parent "P_PartyStateMiniWindow"
+}
+
+gauge_prop "P_PartyStateMini_HP"
+{
+	skinname "PartyStateMini_HP"
+	parent "P_PartyStateMiniWindow"
+}
+
+gauge_prop "P_PartyStateMini_MP"
+{
+	skinname "PartyStateMini_MP"
+	parent "P_PartyStateMiniWindow"
+}

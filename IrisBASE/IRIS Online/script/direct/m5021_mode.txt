@@ -1,0 +1,17 @@
+// 억압의 석상
+Header	
+{
+	effect	1	0	0	0	20	"eff_debuff_24.nif"
+
+	antirotation
+}
+//
+Mode	0
+{
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	applyres	1	1	1	foot	0	0	0
+	applyaura	45686	0	500	1
+}

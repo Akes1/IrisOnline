@@ -1,0 +1,45 @@
+--===============--
+-- 노점 개설 윈도우 --
+--===============--
+window_prop "P_UserSellWindow"
+{
+	skinname "UserSellWindow"
+}
+
+button_prop "P_UserSell_Close"
+{
+	skinname "UserSell_Close"
+	parent "P_UserSellWindow"
+}
+
+button_prop "P_UserSell_NameRegist"
+{
+	skinname "UserSell_NameRegist"
+	parent "P_UserSellWindow"
+}
+
+button_prop "P_UserSell_ItemUpdate"
+{
+	skinname "UserSell_ItemUpdate"
+	parent "P_UserSellWindow"
+}
+
+button_prop "P_UserSell_End"
+{
+	skinname "UserSell_End"
+	parent "P_UserSellWindow"
+}
+
+button_prop "P_UserSell_JoinEnd"
+{
+	skinname "UserSell_JoinEnd"
+	parent "P_UserSellWindow"
+}
+
+editbox_prop "P_UserSell_Name"
+{
+	skinname "UserSell_Name"
+	parent "P_UserSellWindow"
+}
+
+

@@ -1,0 +1,31 @@
+--===============--
+-- Æ©Åä¸®¾ó ºÏ --
+--===============--
+window_prop "P_TutorialBook_Window"
+{
+	skinname "TutorialBook_Window"
+}
+
+button_prop "P_TutorialBook_Close"
+{
+	skinname "TutorialBook_Close"
+	parent "P_TutorialBook_Window"
+}
+
+label_prop "P_TutorialBook_Name"
+{
+	skinname "TutorialBook_Name"
+	parent "P_TutorialBook_Window"
+}
+
+textbox_prop "P_TutorialBook_Text"
+{
+	skinname "TutorialBook_Text"
+	parent "P_TutorialBook_Window"
+}
+
+listbox_prop "P_TutorialBook_QuestList"
+{
+	skinname "TutorialBook_QuestList"
+	parent "P_TutorialBook_Window"
+}

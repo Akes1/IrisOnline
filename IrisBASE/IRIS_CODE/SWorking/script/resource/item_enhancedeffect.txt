@@ -1,0 +1,8 @@
+// 인덱스	무기	0단계	1단계	2단계	3단계	4단계	5단계	6단계	7단계	8단계	9단계	10단계
+1	0	None	None	None	eff_enhance_onehand1.nif	eff_enhance_onehand1.nif	eff_enhance_onehand1.nif	eff_enhance_onehand2.nif	eff_enhance_onehand2.nif	eff_enhance_onehand3.nif	eff_enhance_onehand3.nif	eff_enhance_onehand4.nif
+2	1	None	None	None	eff_enhance_twohand1.nif	eff_enhance_twohand1.nif	eff_enhance_twohand1.nif	eff_enhance_twohand2.nif	eff_enhance_twohand2.nif	eff_enhance_twohand3.nif	eff_enhance_twohand3.nif	eff_enhance_twohand4.nif
+3	2	None	None	None	eff_enhance_onehand1.nif	eff_enhance_onehand1.nif	eff_enhance_onehand1.nif	eff_enhance_onehand2.nif	eff_enhance_onehand2.nif	eff_enhance_onehand3.nif	eff_enhance_onehand3.nif	eff_enhance_onehand4.nif
+4	3	None	None	None	eff_enhance_dagger1.nif	eff_enhance_dagger1.nif	eff_enhance_dagger1.nif	eff_enhance_dagger2.nif	eff_enhance_dagger2.nif	eff_enhance_dagger3.nif	eff_enhance_dagger3.nif	eff_enhance_dagger4.nif
+5	4	None	None	None	eff_enhance_gun1.nif	eff_enhance_gun1.nif	eff_enhance_gun1.nif	eff_enhance_gun2.nif	eff_enhance_gun2.nif	eff_enhance_gun3.nif	eff_enhance_gun3.nif	eff_enhance_gun4.nif
+6	5	None	None	None	eff_enhance_staff1.nif	eff_enhance_staff1.nif	eff_enhance_staff1.nif	eff_enhance_staff2.nif	eff_enhance_staff2.nif	eff_enhance_staff3.nif	eff_enhance_staff3.nif	eff_enhance_staff4.nif
+7	6	None	None	None	eff_enhance_shield1.nif	eff_enhance_shield1.nif	eff_enhance_shield1.nif	eff_enhance_shield2.nif	eff_enhance_shield2.nif	eff_enhance_shield3.nif	eff_enhance_shield3.nif	eff_enhance_shield4.nif

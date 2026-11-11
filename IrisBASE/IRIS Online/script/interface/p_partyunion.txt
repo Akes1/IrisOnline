@@ -1,0 +1,36 @@
+--===============--
+-- 연합 드래그 윈도우 --
+--===============--
+window_prop "P_UnionDrag_Window"
+{
+	skinname "UnionDrag_Window"
+}
+
+
+--=================--
+-- 파티 연합 시스템 --
+--=================--
+window_prop "P_PartyUnion_Window"
+{
+	skinname "PartyUnion_Window"
+}
+
+button_prop "P_PartyUnion_Small"
+{
+	skinname "PartyUnion_Small"
+	parent "P_PartyUnion_Window"
+}
+
+--=================--
+-- 파티 연합 시스템- 접기 윈도우 --
+--=================--
+window_prop "P_PartyUnionSmall_Window"
+{
+	skinname "PartyUnionSmall_Window"
+}
+
+button_prop "P_PartyUnionSmall_Large"
+{
+	skinname "PartyUnionSmall_Large"
+	parent "P_PartyUnionSmall_Window"
+}

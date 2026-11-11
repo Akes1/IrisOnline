@@ -1,0 +1,657 @@
+--===============--
+-- 드래그 윈도우 --
+--===============--
+window "Drag_Window"
+{
+	ii 5003
+	pos 0 0
+	size 32 32
+	texpos 519 447
+
+	opensound 3024
+	--closesound 3024
+}
+
+-- 소스에서 직접 쓰는 스킨
+icon "Drag_Icon"
+{
+	pos 2 2
+	size 28 28
+}
+
+-- 소스에서 직접 쓰는 스킨
+-- 아이템 선택용 이미지
+label "Inventory_SelectImage"
+{
+	ii 5003
+	pos 0 0
+	size 32 32
+	texpos 519 447
+}
+
+--=================--
+-- 인벤토리 윈도우 --
+--=================--
+tabwindow "Inventory_Window"
+{
+	ii 5003
+	pos 384 226 
+	size 354 355
+	texpos 1 530
+
+	captionXY 0 0 
+	captionWH 354 330
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 일반 아이템 탭버튼
+tabbutton "Inventory_Generic"
+{
+	ii 5003
+	pos 162 46
+	size 57 30
+	texpos 374 365
+
+	uppos 374 365
+	upoverpos 374 365
+	downpos 374 333
+	
+	downsize 57 30
+	downsound 3001
+}
+
+-- 퀘스트 아이템 탭버튼
+tabbutton "Inventory_Quest"
+{
+	ii 5003
+	pos 220 46
+	size 57 30
+	texpos 432 365
+
+	uppos 432 365
+	upoverpos 432 365
+	downpos 432 333
+	
+	downsize 57 30
+	downsound 3001
+}
+
+-- 닫기 버튼
+button "Inventory_Close"
+{
+	ii 5002
+	pos 321 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- 휴지통 라벨
+label "Inventory_Garbage"
+{
+	ii 5003
+	pos 311 288
+	size 24 27
+	texpos 529 237
+	
+	hovertip	436
+}
+
+-- 가방1 버튼
+pushbutton "Inventory_Bag0"
+{
+	ii 5003
+	pos 154 259
+	size 26 26
+	texpos 446 237
+
+	uppos 446 237
+	upoverpos 446 237
+	downpos 446 264
+	downoverpos 446 264
+	
+	hovertip	437
+}
+
+-- 가방2 버튼
+pushbutton "Inventory_Bag1"
+{
+	ii 5003
+	pos 183 259
+	size 26 26
+	texpos 473 237
+
+	uppos 473 237
+	upoverpos 473 237
+	downpos 473 264
+	downoverpos 473 264
+	
+	hovertip	438
+}
+
+-- 가방3 버튼
+pushbutton "Inventory_Bag2"
+{
+	ii 5003
+	pos 212 259
+	size 26 26
+	texpos 500 237
+
+	uppos 500 237
+	upoverpos 500 237
+	downpos 500 264
+	downoverpos 500 264
+	
+	hovertip	439
+}
+
+-- 소지금
+editbox "Inventory_Money"
+{
+	pos 247 264
+	size 85 14
+	editpos 0 3
+	editmaxlen 13
+	text_align right
+	editkind 1
+}
+
+-- 무게 게이지
+gauge "Inventory_Weight"
+{
+	pos 159 299
+	size 139 7
+	show_percent true
+	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7
+	gauge_texpos 365 273
+	gauge_width 139
+	gauge_height 7
+}
+
+-- 불 세력 포인트 보기 버튼
+radiobutton "Inventory_Fire"
+{
+	ii 5003
+	pos 157 320
+	size 20 20
+	texpos 371 840
+
+	group	0
+
+	uppos 371 840
+	downpos 371 819
+	
+	hovertip	455
+}
+
+-- 물 세력 포인트 보기 버튼
+radiobutton "Inventory_Water"
+{
+	ii 5003
+	pos 178 320
+	size 20 20
+	texpos 392 840
+
+	group	0
+
+	uppos 392 840
+	downpos 392 819
+	
+	hovertip	456
+}
+
+-- 바람 세력 포인트 보기 버튼
+radiobutton "Inventory_Wind"
+{
+	ii 5003
+	pos 199 320
+	size 20 20
+	texpos 413 840
+
+	group	0
+
+	uppos 413 840
+	downpos 413 819
+	
+	hovertip	457
+}
+
+-- 땅 세력 포인트 보기 버튼
+radiobutton "Inventory_Earth"
+{
+	ii 5003
+	pos 220 320
+	size 20 20
+	texpos 434 840
+
+	group	0
+
+	uppos 434 840
+	downpos 434 819
+	
+	hovertip	458
+}
+
+-- 세력 포인트
+editbox "Inventory_Force"
+{
+	pos 247 321
+	size 85 14
+	editpos 0 3
+	editmaxlen 13
+	text_align right
+	editkind 1
+}
+
+--======================--
+-- 인벤토리 장착 윈도우 --
+--======================--
+window "InvenEquip_Window"
+{
+	pos 7 38
+	size 145 310
+}
+
+-- 장비 장착
+icon "InvenEquip_Icon00"	{ pos 58 8	size 28 28 } -- 모자
+icon "InvenEquip_Icon01"	{ pos 41 87	size 28 28 } -- 상의
+icon "InvenEquip_Icon02"	{ pos 58 128	size 28 28 } -- 하의
+icon "InvenEquip_Icon03"	{ pos 76 87	size 28 28 } -- 장갑
+icon "InvenEquip_Icon04"	{ pos 58 164	size 28 28 } -- 신발
+icon "InvenEquip_Icon05"	{ pos 24 27	size 28 28 } -- 귀걸이
+icon "InvenEquip_Icon06"	{ pos 58 52	size 28 28 } -- 목걸이
+icon "InvenEquip_Icon07"	{ pos 92 27	size 28 28 } -- 브로치
+icon "InvenEquip_Icon08"	{ pos 105 150	size 28 28 } -- 팔찌
+icon "InvenEquip_Icon09"	{ pos 12 150	size 28 28 } -- 반지
+icon "InvenEquip_Icon10"	{ pos 23 201	size 28 28 } -- 카드1
+icon "InvenEquip_Icon11"	{ pos 58 201	size 28 28 } -- 카드2
+icon "InvenEquip_Icon12"	{ pos 93 201	size 28 28 } -- 카드3
+icon "InvenEquip_Icon15"	{ pos 110 115	size 28 28 } -- 왼손1
+icon "InvenEquip_Icon13"	{ pos 110 80	size 28 28 } -- 왼손2
+icon "InvenEquip_Icon16"	{ pos 7 115	size 28 28 } -- 오른손1
+icon "InvenEquip_Icon14"	{ pos 7 80	size 28 28 } -- 오른손2
+
+-- 코스튬
+icon "InvenEquip_Icon17"	{ pos 24 277 	size 28 28 } -- 상의	
+icon "InvenEquip_Icon18"	{ pos 6 239	size 28 28 } -- 하의		
+icon "InvenEquip_Icon19"	{ pos 41 239	size 28 28 } -- 장갑		
+icon "InvenEquip_Icon20"	{ pos 76 239	size 28 28 } -- 신발	
+icon "InvenEquip_Icon21"	{ pos 111 239	size 28 28 } -- 머리장식		
+icon "InvenEquip_Icon22"	{ pos 59 277	size 28 28 } -- 얼굴장식	
+icon "InvenEquip_Icon23"	{ pos 94 277	size 28 28 } -- 몸통장식	
+
+
+--========================--
+-- 인벤토리 탭쉬트 윈도우 --
+--========================--
+tabsheet "InvenSheet_Window"
+{
+	pos 164 85
+	size 166 166
+
+}
+
+icon "InvenSheet_Icon00"	{ pos 0 0	size 28 28 }
+icon "InvenSheet_Icon01"	{ pos 33 0	size 28 28 }
+icon "InvenSheet_Icon02"	{ pos 66 0	size 28 28 }
+icon "InvenSheet_Icon03"	{ pos 99 0	size 28 28 }
+icon "InvenSheet_Icon04"	{ pos 132 0	size 28 28 }
+icon "InvenSheet_Icon05"	{ pos 0 33	size 28 28 }
+icon "InvenSheet_Icon06"	{ pos 33 33	size 28 28 }
+icon "InvenSheet_Icon07"	{ pos 66 33	size 28 28 }
+icon "InvenSheet_Icon08"	{ pos 99 33	size 28 28 }
+icon "InvenSheet_Icon09"	{ pos 132 33	size 28 28 }
+icon "InvenSheet_Icon10"	{ pos 0 66	size 28 28 }
+icon "InvenSheet_Icon11"	{ pos 33 66	size 28 28 }
+icon "InvenSheet_Icon12"	{ pos 66 66	size 28 28 }
+icon "InvenSheet_Icon13"	{ pos 99 66	size 28 28 }
+icon "InvenSheet_Icon14"	{ pos 132 66	size 28 28 }
+icon "InvenSheet_Icon15"	{ pos 0 99	size 28 28 }
+icon "InvenSheet_Icon16"	{ pos 33 99	size 28 28 }
+icon "InvenSheet_Icon17"	{ pos 66 99	size 28 28 }
+icon "InvenSheet_Icon18"	{ pos 99 99	size 28 28 }
+icon "InvenSheet_Icon19"	{ pos 132 99	size 28 28 }
+icon "InvenSheet_Icon20"	{ pos 0 132	size 28 28 }
+icon "InvenSheet_Icon21"	{ pos 33 132	size 28 28 }
+icon "InvenSheet_Icon22"	{ pos 66 132	size 28 28 }
+icon "InvenSheet_Icon23"	{ pos 99 132	size 28 28 }
+icon "InvenSheet_Icon24"	{ pos 132 132	size 28 28 }
+
+--==============--
+-- 가방1 윈도우 --
+--==============--
+window "Bag_Window"
+{
+	ii 5003
+	pos 0 52
+	size 200 229
+	texpos 357 1
+
+	captionXY 0 0 
+	captionWH 200 38
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 가방 캡션
+label "Bag_Caption"
+{
+	ii 5003
+	pos 24 11
+	size 68 30
+	texpos 374 237
+}
+
+--==============--
+-- 가방2 윈도우 --
+--==============--
+window "Bag1_Window"
+{
+	ii 5003
+	pos 0 281
+	size 200 229
+	texpos 357 1
+
+	captionXY 0 0 
+	captionWH 200 38
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 가방 캡션
+label "Bag1_Caption"
+{
+	ii 5003
+	pos 24 11
+	size 68 30
+	texpos 374 269 
+}
+
+
+--==============--
+-- 가방3 윈도우 --
+--==============--
+window "Bag2_Window"
+{
+	ii 5003
+	pos 0 510
+	size 200 229
+	texpos 357 1
+
+	captionXY 0 0 
+	captionWH 200 38
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 가방 캡션
+label "Bag2_Caption"
+{
+	ii 5003
+	pos 24 11
+	size 68 30
+	texpos 374 301
+}
+
+
+
+
+-- 닫기 버튼
+button "Bag_Close"
+{
+	ii 5002
+	pos 172 11
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 휴지통 라벨
+label "Bag_Trash"
+{
+	ii 5003
+	pos 144 6
+	size 24 27
+	texpos 529 237
+	
+	hovertip	436
+}
+
+-- 아이콘
+icon "Bag_Icon00"		{ pos 20 50	size 28 28 }
+icon "Bag_Icon01"		{ pos 53 50	size 28 28 }
+icon "Bag_Icon02"		{ pos 86 50	size 28 28 }
+icon "Bag_Icon03"		{ pos 119 50	size 28 28 }
+icon "Bag_Icon04"		{ pos 152 50	size 28 28 }
+icon "Bag_Icon05"		{ pos 20 83	size 28 28 }
+icon "Bag_Icon06"		{ pos 53 83	size 28 28 }
+icon "Bag_Icon07"		{ pos 86 83	size 28 28 }
+icon "Bag_Icon08"		{ pos 119 83	size 28 28 }
+icon "Bag_Icon09"		{ pos 152 83	size 28 28 }
+icon "Bag_Icon10"		{ pos 20 116	size 28 28 }
+icon "Bag_Icon11"		{ pos 53 116	size 28 28 }
+icon "Bag_Icon12"		{ pos 86 116	size 28 28 }
+icon "Bag_Icon13"		{ pos 119 116	size 28 28 }
+icon "Bag_Icon14"		{ pos 152 116	size 28 28 }
+icon "Bag_Icon15"		{ pos 20 149	size 28 28 }
+icon "Bag_Icon16"		{ pos 53 149	size 28 28 }
+icon "Bag_Icon17"		{ pos 86 149	size 28 28 }
+icon "Bag_Icon18"		{ pos 119 149	size 28 28 }
+icon "Bag_Icon19"		{ pos 152 149	size 28 28 }
+icon "Bag_Icon20"		{ pos 20 182	size 28 28 }
+icon "Bag_Icon21"		{ pos 53 182	size 28 28 }
+icon "Bag_Icon22"		{ pos 86 182	size 28 28 }
+icon "Bag_Icon23"		{ pos 119 182	size 28 28 }
+icon "Bag_Icon24"		{ pos 152 182	size 28 28 }
+
+--====================--
+-- 아이템 개수 분리 윈도우 --
+--====================--
+window "ItemCount_Window"
+{
+	ii 5005
+	pos 417 310
+	size 190 128
+	texpos 603 630
+	
+	captionXY 0 0
+	captionWH 190 128
+}
+
+button "ItemCount_Close"
+{
+	ii 5002
+	pos 162 8
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+label "ItemCount_Caption"
+{
+	pos 0 0
+	size 0 0		
+	text_align center	
+--	text 307
+}
+
+editbox "ItemCount_Number"
+{
+	pos 27 58
+	size 62 13
+
+	editpos 0 0
+	editmaxlen 5
+	text_align right
+	editkind 2
+
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+button "ItemCount_Up"
+{
+	ii 5002
+	pos 112 45
+	size 18 18
+	texpos 21 116
+
+	uppos 21 116
+	upoverpos 41 116
+	downpos 61 116
+}
+
+button "ItemCount_Down"
+{
+	ii 5002
+	pos 112 63
+	size 18 18
+	texpos 21 137
+
+	uppos 21 137
+	upoverpos 41 137
+	downpos 61 137	
+}
+
+button "ItemCount_Max"
+{
+	ii 5005
+	pos 135 52
+	size 40 22
+	texpos 474 507
+
+	uppos 474 507
+	upoverpos 516 507
+	downpos 558 507
+	
+}
+
+button "ItemCount_Ok"
+{
+	ii 5005
+	pos 22 96
+	size 72 24
+	texpos 427 638
+
+	uppos 427 638
+	upoverpos 427 664
+	downpos 427 690
+}
+
+button "ItemCount_Cancel"
+{
+	ii 5005
+	pos 97 96
+	size 72 24
+	texpos 501 638
+
+	uppos 501 638
+	upoverpos 501 664
+	downpos 501 690
+}
+
+
+
+--===========================--
+-- 아이템 메시지 윈도우 --
+-- 소스에서 직접 쓰는 스킨 
+--===========================--
+window "ItemMsg_Window"
+{
+	ii 5002
+	pos 390 200
+	size 257 147
+	texpos 765 608
+		
+	captionXY 0 0
+	captionWH 257 34
+}
+
+label "ItemMsg_Caption"
+{
+	pos 0 0
+	size 257 34		
+	text_align center	
+	text 350
+}
+
+label "ItemMsg_Text"
+{
+	pos 25 42
+	size 206 70	
+	text_align center
+	text 306
+}
+
+button "ItemMsg_Ok"
+{
+	ii 5002
+	pos 78 112
+	size 82 24
+	texpos 302 641
+	
+	-- 버튼 그림 좌표 	
+	uppos 302 641
+	upoverpos 302 666
+	downpos 302 691
+
+	downsound 3001
+}
+
+button "ItemMsg_Yes"
+{
+	ii 5002
+	pos 37 112
+	size 82 24
+	texpos 302 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 302 566
+	upoverpos 302 591
+	downpos 302 616
+
+	downsound 3001
+}
+
+button "ItemMsg_Cancel"
+{
+	ii 5002
+	pos 138 112
+	size 82 24
+	texpos 386 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 566
+	upoverpos 386 591
+	downpos 386 616
+
+	downsound 3001
+}

@@ -1,0 +1,15 @@
+--===============--
+-- 로딩 윈도우 배경 --
+--===============--
+window_prop "P_LoadingBack"
+{
+	skinname "LoadingBack"
+}
+
+--===============--
+-- 로딩 윈도우 --
+--===============--
+window_prop "P_LoadingWindow"
+{
+	skinname "LoadingWindow"
+}

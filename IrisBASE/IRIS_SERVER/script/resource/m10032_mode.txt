@@ -1,0 +1,836 @@
+//사막의 폭군 크라쿤 모드 설정
+
+Header	
+{
+	effect	1	0	0	0	2	"eff_pc_pvp_1.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+}
+//전투 시작 주먹 내려찍기, 걷어차기
+Mode	0
+{
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+
+	modeimage	"mode_image201_1.tga"	0	480	0
+	
+	modechange	99	1	600000	0	0
+	modechange	1	3	90	0	0
+}
+
+//지면 뒤집기
+Mode	1
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeskill							
+	useskill	11	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	2	3	80	0	0								
+}
+
+//모래 뿌리기
+Mode	2
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeskill							
+	useskill	12	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	3	5	12	0	0
+}
+
+//지면 뒤집기, 모래 뿌리기
+Mode	3
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+							
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	4	3	70	0	0								
+}
+
+//대지의 격노
+Mode	4
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeskill							
+	useskill	13	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	5	5	13	0	0
+}
+
+//지면 뒤집기, 모래 뿌리기, 대지의 격노
+Mode	5
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0							
+	useskill	13	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	6	3	60	0	0
+}
+
+//압사
+Mode	6
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeskill							
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	7	5	14	0	0
+}
+
+//지면 뒤집기, 모래 뿌리기, 대지의 격노, 압사
+Mode	7
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	8	3	50	0	0
+}
+
+//모래 파도
+Mode	8
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	0	0
+
+	modeskill							
+	useskill	15	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	9	5	15	0	0
+}
+
+//지면 뒤집기, 모래 뿌리기, 대지의 격노, 압사
+Mode	9
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	10	3	46	0	0
+}
+
+//모래 파도
+Mode	10
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	0	0
+
+	modeskill							
+	useskill	15	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	11	5	15	0	0
+}
+
+//지면 뒤집기, 모래 뿌리기, 대지의 격노, 압사
+Mode	11
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	12	3	45	0	0
+}
+
+//사막의 늪
+Mode	12
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	300	0
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	12	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+
+
+	modechange	99	1	600000	0	0
+	modechange	13	3	40	0	0
+}
+
+//패자의 포효
+Mode	13
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	14	5	16	0	0
+}
+
+//지면 뒤집기, 대지의 격노, 압사, 패자의 포효
+Mode	14
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	15	3	39	0	0
+}
+
+//모래 파도
+Mode	15
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	0	0
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	15	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	16	5	15	0	0
+}
+
+//지면 뒤집기, 대지의 격노, 압사, 패자의 포효
+Mode	16
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	17	3	35	0	0
+}
+
+//패자의 분노
+Mode	17
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	180	0
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	18	3	31	0	0
+}
+
+//모래 파도
+Mode	18
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	0	0
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	15	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	19	5	15	0	0
+}
+
+//지면 뒤집기, 대지의 격노, 압사, 패자의 포효, 패자의 분노
+Mode	19
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	20	3	30	0	0
+}
+
+//시선 옮기기
+Mode	20
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	60	0
+
+	aggro
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	17	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	21	5	17	0	0
+}
+
+//지면 뒤집기, 대지의 격노, 압사, 패자의 포효, 패자의 분노
+Mode	21
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	22	3	26	0	0
+}
+
+//시선 옮기기
+Mode	22
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	60	0
+
+	aggro
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	17	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	23	5	17	0	0
+}
+
+//지면 뒤집기, 대지의 격노, 압사, 패자의 포효, 패자의 분노
+Mode	23
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	24	3	25	0	0
+}
+
+//깔아 뭉개기
+Mode	24
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	18	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	25	5	18	0	0
+}
+
+//지면 뒤집기, 대지의 격노, 압사, 패자의 포효, 패자의 분노, 깔아 뭉개기
+Mode	25
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	13	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+	useskill	16	0	100	0	0	0	0
+	useskill	18	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	26	3	20	0	0
+}
+
+//지면 파괴
+Mode	26
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	27	5	19	0	0
+}
+
+//지면 뒤집기, 깔아 뭉개기, 지면 파괴
+Mode	27
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	18	0	100	0	0	0	0
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	28	3	17	0	0
+}
+
+//시선 옮기기
+Mode	28
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	60	0
+
+	aggro
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	17	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	29	5	17	0	0
+}
+
+//지면 뒤집기, 깔아 뭉개기, 지면 파괴
+Mode	29
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	18	0	100	0	0	0	0
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	30	3	15	0	0
+}
+
+//모래 분화
+Mode	30
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	120	0
+
+	applyaura	45701	0	1	1
+	applybuff	45736	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill
+	useskill	20	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	31	5	20	0	0
+}
+
+//지면 뒤집기, 깔아 뭉개기, 지면 파괴
+Mode	31
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	18	0	100	0	0	0	0
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	32	3	12	0	0
+}
+
+//시선 옮기기
+Mode	32
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	60	0
+
+	applyaura	45701	0	1	1
+
+	aggro
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	17	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	33	5	17	0	0
+}
+
+//지면 뒤집기, 깔아 뭉개기, 지면 파괴
+Mode	33
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	18	0	100	0	0	0	0
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	34	3	10	0	0
+}
+
+//최후의 발악
+Mode	34
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	240	0
+
+	applyaura	45701	0	1	1
+	applybuff	45696	0
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	18	0	100	0	0	0	0
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	35	3	9	0	0
+}
+
+//모래 분화
+Mode	35
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	120	0
+
+	applyaura	45701	0	1	1
+	applybuff	45736	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill
+	useskill	20	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	36	5	20	0	0
+}
+
+//시선 옮기기
+Mode	36
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	60	0
+
+	applyaura	45701	0	1	1
+
+	aggro
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill							
+	useskill	17	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	37	5	17	0	0
+}
+
+//지면 뒤집기, 깔아 뭉개기, 지면 파괴
+Mode	37
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	18	0	100	0	0	0	0
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	38	3	5	0	0
+}
+
+//모래 분화
+Mode	38
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	modeimage	"mode_image10032.tga"	0	120	0
+
+	applyaura	45701	0	1	1
+	applybuff	45736	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	modeskill
+	useskill	20	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+	modechange	39	5	20	0	0
+}
+
+//지면 뒤집기, 깔아 뭉개기, 지면 파괴
+Mode	39
+{	
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	immune	553
+
+	applyaura	45701	0	1	1
+
+	gentotem	5618	2	0	2000	1	10000	0	2
+
+	useskill	11	0	100	0	0	0	0
+	useskill	18	0	100	0	0	0	0
+	useskill	19	0	100	0	0	0	0
+
+	modechange	99	1	600000	0	0
+}
+
+//대폭주
+Mode	99
+{	
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	immune	0
+	immune	405
+	immune	406
+	immune	414
+	applyaura	45110	0	10	0
+
+	useskill	11	0	100	0	0	0	0
+	useskill	14	0	100	0	0	0	0
+}

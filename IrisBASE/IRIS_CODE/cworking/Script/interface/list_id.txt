@@ -1,0 +1,1384 @@
+-- **** 모든 윈도우의 아이디는 800 번 이상부터 시작한다 
+
+----------------------------------------------
+--P_ToolTip.txt 툴팁UI
+----------------------------------------------
+"P_ItemTip"		800
+"P_SkillTip"		801
+"P_BuffTip"		802
+"P_SimpleTip"		803
+"P_EquipTip"		804
+"P_QuestTip"		805
+"P_ChatItemTip"	806
+"P_ChatTip_Close"	807
+
+
+----------------------------------------------
+--P_Intro.txt 로그인 UI
+----------------------------------------------
+"P_IntroBack"		900
+
+----------------------------------------------
+--P_Login.txt 로그인 UI
+----------------------------------------------
+"P_VersionWindow"		1000	-- Login 배경 윈도우
+"P_Login_Version"		1001	-- Login 배경 윈도우
+
+"P_LoginWindow"		1010	-- Login 윈도우
+"P_Login_IDEdit"		1011	-- ID 입력용 에디트 박스
+"P_Login_PassEdit"		1012	-- Password 입력용 에디트 박스
+"P_Login_Connect"		1013	
+"P_Login_Cancel"		1014
+
+
+----------------------------------------------
+--P_NumPass.txt 
+----------------------------------------------
+--"P_NumPassWindow"		1100
+--"P_NumPass_PassEdit"	1101
+--"P_NumPass_Clear_Button"	1102
+--"P_NumPass_0_Button"	1103
+--"P_NumPass_1_Button"	1104
+--"P_NumPass_2_Button"	1105
+--"P_NumPass_3_Button"	1106
+--"P_NumPass_4_Button"	1107
+--"P_NumPass_5_Button"	1108
+--"P_NumPass_6_Button"	1109
+--"P_NumPass_7_Button"	1110
+--"P_NumPass_8_Button"	1111
+--"P_NumPass_9_Button"	1112
+
+--"P_NumPass_Connect"	1020
+--"P_NumPass_Cancel"	1021
+
+----------------------------------------------
+--P_ServerSelect.txt 서버선택UI
+----------------------------------------------
+"P_ServerWindowBack"		2000	-- Server 배경 윈도우
+"P_ServerWindow"		2001	-- Server 윈도우
+"P_Server_Connect"		2002	-- Server 접속 버튼
+"P_Server_Cancel"		2003	-- Server 취소 버튼
+"P_Server_ListBox"		2004	-- Server List 리스트박스
+"P_Server_Page1"		2005
+"P_Server_Page2"		2006
+"P_Server_Page3"		2007
+"P_Server_Page4"		2008
+"P_Server_Page5"		2009
+"P_Server_Exit"		2010
+
+----------------------------------------------
+--P_Char_Select.txt 캐릭터 선택UI
+----------------------------------------------
+"P_SelectWindow"		3001	-- Select 윈도우
+"P_Select_RightSelect"	3002
+"P_Select_LeftSelect"	3003
+"P_Select_Connect"		3004
+"P_Select_Create"		3005
+
+"P_SelectInfoWindow"	3010
+"P_SelectInfo_Back"		3011
+"P_SelectInfo_Level"	3012
+"P_SelectInfo_Name"		3013
+"P_SelectInfo_Job"		3014
+"P_SelectInfo_Map"		3015
+
+"P_SelectButtonWindow"	3020
+"P_SelectButton_Delete"	3021
+"P_SelectButton_Begin"	3022
+"P_SelectButton_Exit"	3023
+"P_SelectButton_DeleteCancel"	3024
+
+"P_ChannelWindow"		3030	-- Channel 윈도우
+"P_Channel_ListBox"		3031	-- Channel List 리스트 박스
+"P_Channel_Connect"		3032
+"P_Channel_Cancel"		3033
+"P_Channel_Page1"		3034
+"P_Channel_Page2"		3035
+"P_Channel_Page3"		3036
+"P_Channel_Page4"		3037
+"P_Channel_Page5"		3038
+
+"P_SelectGradeWindow"	3040	-- 등급표시 윈도우
+"P_Select_Grade"		3041
+
+----------------------------------------------
+--P_Char_Make.txt 캐릭터 생성UI
+----------------------------------------------
+"P_MakeWindow"		3500
+"P_Make_Back"		3501
+"P_Make_NameEdit"		3502
+"P_Make_Gender_Spin"		3503
+"P_Make_Hair_Spin"		3504
+"P_Make_Face_Spin"		3505
+"P_Make_Race_Spin"		3506
+"P_Make_Job_Spin"		3507
+"P_Make_Create"		3508
+"P_Make_HairColor_Spin"		3509
+
+"P_MakeRotateWindow"		3510
+"P_Make_LeftRotate"			3511
+"P_Make_RightRotate"		3512
+"P_Make_ZoomInOut"		3513
+
+"P_MakeInfoWindow"		3600
+"P_Make_Select"		3601
+
+"P_MakeGradeWindow"		3700
+"P_Make_Grade"		3701
+
+
+----------------------------------------------
+--P_LoadingMap1.txt 게임접속화면윈도우
+----------------------------------------------	
+"P_LoadingBack"		5000	-- Load 배경 윈도우
+"P_LoadingWindow"		5001	-- Load 윈도우
+
+
+----------------------------------------------
+--P_LoadingMap2.txt Map이동화면윈도우
+----------------------------------------------	
+"P_LoadingBack2"		5010	-- 맵 변경 배경 윈도우
+"P_LoadingWindow2"		5011	-- 맵 변경 윈도우
+
+----------------------------------------------
+--P_Char_Title.txt 호칭 관리 윈도우
+----------------------------------------------
+"P_HeroTitleWindow"		5100
+"P_HeroTitle_Close"		5101
+"P_HeroTitle_Select"		5102
+"P_HeroTitle_Cancel"		5103
+"P_HeroTitle_TitleList"		5104
+"P_HeroTitle_TitleDesc"		5105
+"P_HeroTitle_EffectDesc"		5106
+"P_HeroTitle_QuickList"		5107
+
+----------------------------------------------
+--P_Guild.txt 길드 관리 윈도우
+----------------------------------------------
+"P_GuildWindow"		5200
+"P_Guild_Close"		5201
+
+"P_Guild_NoticeEdit"		5208
+"P_Guild_Notice"		5209
+"P_Guild_Add"			5210
+"P_Guild_GivePosition"		5211
+"P_Guild_MarkChagne"		5212
+
+"P_Guild_MemberDrop"		5214
+"P_Guild_Out"			5215
+"P_Guild_Break"		5216
+"P_Guild_Name"			5217
+"P_Guild_MasterName"		5218
+"P_Guild_Position"		5219
+"P_Guild_Total"		5221
+"P_Guild_ConnectCount"		5222
+"P_Guild_MemberList"		5223
+
+"P_GuildPosition_Window"		5230
+"P_GuildPosition_Master"		5231
+"P_GuildPosition_SubMaster"		5232
+"P_GuildPosition_Elder"		5233
+"P_GuildPosition_Upperhouse"		5234
+"P_GuildPosition_Lowerhouse"		5235
+"P_GuildPosition_General"		5236
+
+"P_GuildMark_Window"		5240
+"P_GuildMark_YES"		5241
+"P_GuildMark_NO"		5242
+
+
+----------------------------------------------
+--P_Npc_Deal.txt npc 판매대행 윈도우
+----------------------------------------------
+"P_NpcDeal_Window"		5400
+"P_NpcDeal_Close"		5401
+"P_NpcDeal_Close2"		5402
+"P_NpcDeal_HaveMoney"		5403
+
+"P_NpcDeal_Search"		5410
+"P_NpcDeal_Regist"		5411
+"P_NpcDeal_SearchSheet"		5412
+"P_NpcDeal_RegistSheet"		5413
+
+"P_NpcDeal_RegistPrice"		5420
+"P_NpcDeal_RegistCharge"		5421
+"P_NpcDeal_RegistButton"		5422
+"P_NpcDeal_RegistPeriod"		5423
+"P_NpcDeal_RegistItemList"		5424
+"P_NpcDeal_RegistSpin"		5425
+
+"P_NpcDeal_SearchName"		5430
+"P_NpcDeal_SearchLowLv"		5431
+"P_NpcDeal_SearchHighLv"		5432
+"P_NpcDeal_SearchButton"		5433
+"P_NpcDeal_SearchGrade"		5434
+"P_NpcDeal_SearchEnhance"		5435
+"P_NpcDeal_SearchList"		5436
+"P_NpcDeal_SearchItemLevel"		5437
+"P_NpcDeal_SearchPrice"		5438
+"P_NpcDeal_SearchItemList"		5439
+"P_NpcDeal_Page_Left"		5440
+"P_NpcDeal_Page_Right"		5441
+
+----------------------------------------------
+--P_Mail.txt npc 우편 시스템 윈도우
+----------------------------------------------
+"P_Mail_Window"		5500
+"P_Mail_Close"		5501
+"P_Mail_List"		5502
+"P_Mail_Read"		5503
+"P_Mail_Send"		5504
+"P_Mail_ListSheet"		5505
+"P_Mail_ReadSheet"		5506
+"P_Mail_SendSheet"		5507
+
+"P_MailList_All"		5520
+"P_MailList_Delete"		5521
+"P_MailList_Send"		5522
+"P_MailList_ListBox"		5523
+"P_MailList_PageSpin"		5524
+
+"P_MailRead_List"		5530
+"P_MailRead_Delete"		5531
+"P_MailRead_Send"		5532
+"P_MailRead_Name"		5533
+"P_MailRead_Time"		5534
+"P_MailRead_Title"		5535
+"P_MailRead_Text"		5536
+"P_MailRead_Money"		5537
+"P_MailRead_GetMoney"		5538
+"P_MailRead_GetItemAll"		5539
+
+"P_MailSend_Send"		5545
+"P_MailSend_Name"		5546
+"P_MailSend_Title"		5547
+"P_MailSend_Text"		5548
+"P_MailSend_Money"		5549
+"P_MailSend_Charge"		5550
+"P_MailSend_AddMoney"		5551
+
+----------------------------------------------
+--P_Board.txt 게시판
+----------------------------------------------
+"P_Board_Window"		5600
+"P_Board_Close"		5601
+
+
+"P_BoardList_Window"		5610
+"P_BoardList_List"		5611
+"P_BoardList_Accept"		5612
+
+"P_BoardQuest_Window"		5620
+"P_BoardQuest_DescBox"		5621
+"P_BoardQuest_Prev"		5622
+"P_BoardQuest_Next"		5623
+"P_BoardQuest_Return"		5624
+"P_BoardQuest_Accept"		5625
+"P_BoardQuest_Page"		5626
+
+"P_BoardQuest_EXP"		5627
+"P_BoardQuest_SXP"		5628
+"P_BoardQuest_GOLD"		5629
+"P_BoardQuest_SP"		5630
+"P_BoardQuest_DefaultItem"		5631
+"P_BoardQuest_SelectItem"		5632
+
+
+
+----------------------------------------------
+--P_PartyUnion.txt 파티 연합 시스템
+----------------------------------------------
+"P_UnionDrag_Window"		5650
+
+"P_PartyUnion_Window"		5700
+"P_PartyUnion_Small"		5701
+
+"P_PartyUnionSmall_Window"		5730
+"P_PartyUnionSmall_Large"		5731
+
+
+----------------------------------------------
+--p_dice.txt 주사위 굴리기
+----------------------------------------------
+"P_DiceWindow"			5800
+"P_Dice_Roll"			5801
+"P_Dice_GiveUp"		5802
+"P_Dice_Time"			5803
+
+
+----------------------------------------------
+--P_Chat_Main.txt 채팅창
+----------------------------------------------	
+"P_ChatWindow"		6001	-- Chat 윈도우
+"P_ChatBox"		6002	-- Chat 텍스트 박스 
+"P_ChatEdit"		6003	-- Chat 에디트 박스
+"P_ChatEdit_Whisper"	6004
+"P_ChatBox_Extend_Button"	6005	-- Chat 확장 버튼
+"P_ChatBox_Size_Plus"	6006	-- Chat 박스 사이즈 확대 버튼 
+"P_ChatBox_Size_Minus"	6007	-- Chat 박스 사이즈 축소 버튼 
+"P_ChatBox_MoveLock"	6008
+
+"P_ChatBox_Nomal"		6012	-- 일반 채팅 옵션 체크박스
+"P_ChatBox_Party"			6013	-- 파티 채팅 옵션 체크박스
+"P_ChatBox_Guild"			6014	-- 길드 채팅 옵션 체크박스
+"P_ChatBox_Shout"			6015	-- 외치기 채팅 옵션 체크박스
+"P_ChatBox_Trade"			6016	-- 거래 채팅 옵션 체크박스
+"P_ChatBox_Whisper"		6017	-- 귓속말 채팅 옵션 체크박스
+"P_ChatBox_System"			6018	-- 시스템 채팅 옵션 체크박스
+"P_ChatBox_Megaphone"		6019	-- 메가폰 채팅 옵션 체크박스
+
+"P_ChatButtonWindow"		6020
+"P_ChatButton_Normal"		6021
+"P_ChatButton_Party"		6022
+"P_ChatButton_Guild"		6023
+"P_ChatButton_Shout"		6024
+"P_ChatButton_Trade"		6025
+"P_ChatButton_Whisper"		6026
+
+----------------------------------------------
+--P_Chat_Extra.txt 분리(확장) 채팅창
+----------------------------------------------	
+"P_ChatExtraWindow"		6051	-- Chat 확장 윈도우 ( 6051 ~ 6053 )
+
+"P_ChatExtra_Close"		6055	-- Chat 확장 윈도우 닫기 버튼
+"P_ChatExtraBox"		6056	-- Chat 확장 텍스트 박스
+"P_ChatExtra_Size_Plus"		6057
+"P_ChatExtra_Size_Minus"		6058
+"P_ChatExtra_Nomal"		6059
+"P_ChatExtra_Party"		6060
+"P_ChatExtra_Guild"		6061
+"P_ChatExtra_Shout"		6062
+"P_ChatExtra_Trade"		6063
+"P_ChatExtra_Whisper"		6064
+"P_ChatExtra_System"		6065
+"P_ChatExtra_Megaphone"	6066
+
+	
+----------------------------------------------
+--P_Target.txt 타겟창
+----------------------------------------------
+"P_TargetWindow"	6100	-- Target 윈도우
+"P_TargetName"		6101	-- Target name 라벨
+"P_TargetLevel"	6102	-- Target 레벨 라벨
+"P_Target_HP_GuageBar"	6103	-- Target HP 게이지
+"P_TargetJob"		6104	-- Target Job 이미지
+"P_TargetNpcJob"	6105	-- Target Npc Job 이미지
+"P_TargetNpcJobText"	6106	-- Target Npc Job 텍스트
+"P_TargetParty"	6107
+"P_TargetOtherParty"	6108
+
+"P_TargetBuff"		6110	-- 타겟 버프 윈도우	
+	
+----------------------------------------------
+--P_Char_Info.txt 캐릭터 정보창                    체크안해봄
+----------------------------------------------
+"P_HeroInfoWindow"		6200	-- HeroInfo 윈도우 
+"P_HeroInfo_Close_Button"	6201	-- HeroInfo 윈도우 닫기 버튼
+"P_Hero_EXP_Gauge"		6204	-- Hero EXP 게이지 
+"P_Hero_SXP_Gauge"		6205	-- Hero SXP 게이지 
+"P_Hero_HP_Gauge"		6206	-- Hero HP 게이지 
+"P_Hero_MP_Gauge"		6207	-- Hero MP 게이지 
+
+"P_Hero_EXP_Label"		6210	-- Hero EXP 라벨 
+"P_Hero_SXP_Label"		6211      -- Hero SXP 라벨
+"P_Hero_HP_Label"		6212      -- Hero HP  라벨
+"P_Hero_MP_Label"		6213      -- Hero MP  라벨
+
+-- 캐릭터 기본 정보 
+"P_HeroName"		6220	-- 이름 라벨 
+"P_HeroRace"		6221	-- 종족 라벨 
+"P_HeroGender"		6222	-- 성별 라벨 
+"P_HeroClass"		6223	-- 클래스 라벨 
+"P_HeroTitle"		6224	-- 호칭 라벨 
+"P_HeroGuild"		6225	-- 길드 라벨 
+"P_HeroPosition"		6226	-- 직위 라벨
+"P_HeroInfo_ForceType"	6227	-- 세력 타입
+
+-- 게이지 수치 라벨 ( 게이지바 위에 나타나는 내용 )
+"P_Hero_SkillLevel"		6230	-- Skill Lv 라벨
+
+-- 스테이터스 라벨 
+"P_HeroStr"		6261	-- 힘 라벨 
+"P_HeroDex"		6262	-- 민첩 라벨 
+"P_HeroCon"		6263	-- 체력 라벨 
+"P_HeroInt"		6264	-- 지능 라벨 
+"P_HeroWis"		6265	-- 지혜 라벨 
+
+-- 스테이터스 추가 수치 라벨 
+"P_HeroPlusStr"	6266	-- 힘 추가량 라벨 
+"P_HeroPlusDex"	6267	-- 민첩 추가량 라벨 
+"P_HeroPlusCon"	6268	-- 체력 추가량 라벨
+"P_HeroPlusInt"	6269	-- 지능 추가량 라벨
+"P_HeroPlusWis"	6270	-- 지혜 추가량 라벨
+
+-- 물리 수치 라벨 
+"P_HeroAtt"		6271	-- 공격력 라벨
+"P_HeroDef"		6272	-- 방어력 라벨
+"P_HeroHit"		6273	-- 명중력 라벨
+"P_HeroAvoid"		6274	-- 회피력 라벨
+"P_HeroAttCri"		6275	-- 물리크리티컬
+
+-- 마법 수치 라벨 
+"P_HeroMag"		6276	-- 마법력 라벨
+"P_HeroRes"		6277	-- 저항력 라벨
+"P_HeroMagHit"		6278	-- 마법명중 라벨
+"P_HeroMagDef"		6279	-- 마법저항 라벨
+"P_HeroMagCri"		6280	-- 마법크리 라벨
+"P_HeroHeal"		6281	-- 힐회복량 라벨
+
+"P_HeroHPrec"		6282
+"P_HeroMPrec"		6283
+"P_HeroFast"		6284
+
+"P_HeroInfo_Social"		6300	-- 사회 버튼
+"P_HeroInfo_Title"		6301	-- 호칭관리 버튼
+
+-- 물리 / 마법 스위칭 라디오 버튼
+"P_HeroInfo_Physical_Button"  6302	--물리 수치만 보여주는 버튼
+"P_HeroInfo_Magic_Button"	6303      --마법 수치만 보여주는 버튼
+
+"P_HeroPhyProtect"	6310	-- 물리 방호 라벨
+"P_HeroMagProtect"	6311	-- 마법 방호 라벨
+
+	
+----------------------------------------------
+--P_Map_Mini.txt 미니맵		
+----------------------------------------------
+"P_MiniMap_Window"		6500
+"P_MiniMap_ExplainButton"		6501
+"P_MiniMap_ExplainImage"		6502
+"P_MiniMap_ExplainText"		6503
+"P_MiniMap_QuestView"		6504
+"P_MiniMap_QuestViewText"		6505
+
+"P_SmallMiniMap_Window"	6800	-- small MiniMap 윈도우 
+"P_SmallMiniMap_Close"	6801	-- small MiniMap 윈도우 닫기 버튼 
+"P_SmallMiniMap_LargeOpen"	6802	-- 전체 미니맵 윈도우 열기 버튼 
+"P_SmallMiniMap_Plus"	6803	-- 미니맵 뷰 확대 버튼 
+"P_SmallMiniMap_Minus"	6804	-- 미니맵 뷰 축소 버튼
+"P_SmallMiniMap_MapName"	6805
+"P_SmallMiniMap_Channel"	6806
+	
+----------------------------------------------
+--P_TutorialBook.txt 튜토리얼 북 창
+----------------------------------------------	
+"P_TutorialBook_Window"		6840
+"P_TutorialBook_Close"		6841
+"P_TutorialBook_Name"		6842
+"P_TutorialBook_Text"		6843
+"P_TutorialBook_QuestList"		6844
+
+----------------------------------------------
+--P_Quest.txt 퀘스트창
+----------------------------------------------
+"P_QuestWindow"		6900	-- 퀘스트 윈도우
+"P_Quest_Close"		6901	
+"P_Quest_Folder"		6902	-- 폴더박스
+
+"P_Quest_Label0"		6910	
+"P_Quest_Label1"		6911	
+"P_Quest_Label2"		6912	
+"P_Quest_Label3"		6913
+"P_Quest_Count"		6914
+
+"P_Quest_Complete"		6915	
+"P_Quest_Progress"		6916
+"P_Quest_Delete"		6917
+"P_Quest_DescBox"		6918
+"P_Quest_ViewInfo"		6919
+
+"P_QuestSimpleWindow"	6950	-- 퀘스트 간략정보 윈도우
+
+----------------------------------------------
+--P_QuickSlot.txt 퀵슬롯		
+----------------------------------------------
+"P_RowQuickSlot"		7000	-- 퀵슬롯 세로
+"P_RowQuick_Rotate"		7001
+"P_RowQuick_Extra"		7002                             
+
+"P_RowExtraSlot1"		7005	-- 퀵슬롯 추가1 세로
+"P_RowExtraSlot1_Rotate"	7006
+"P_RowExtraSlot1_Close"	7007                             
+
+"P_RowExtraSlot2"		7010	-- 퀵슬롯 추가2 세로
+"P_RowExtraSlot2_Rotate"	7011
+"P_RowExtraSlot2_Close"	7012                             
+
+"P_ColumnQuickSlot"		7015	-- 퀵슬롯 가로
+"P_ColumnQuick_Rotate"	7016
+"P_ColumnQuick_Extra"	7017
+
+"P_ColumnExtraSlot1"	7020	-- 퀵슬롯 추가1 가로
+"P_ColumnExtraSlot1_Rotate"	7021
+"P_ColumnExtraSlot1_Close"	7022
+
+"P_ColumnExtraSlot2"	7025	-- 퀵슬롯 추가2 가로
+"P_ColumnExtraSlot2_Rotate"	7026
+"P_ColumnExtraSlot2_Close"	7027
+
+"P_FSRowQuickSlot"		7030	-- FS 슬롯 세로
+"P_FSRowQuick_Rotate"	7031
+
+"P_FSColumnQuickSlot"	7035	-- FS 슬롯 가로
+"P_FSColumnQuick_Rotate"	7036
+
+----------------------------------------------
+--P_npc_skillpreview.txt 인벤토리
+----------------------------------------------
+"P_SkillPreviewWindow"	7050
+"P_SkillPreview_Close"	7051
+"P_SkillPreview_Clear"	7052
+"P_SkillPreview_Sync"	7053
+"P_SkillPreview_UsePoint"	7054
+"P_SkillPreview_Level"	7055
+"P_SkillPreview_DefaultJob"	7056
+"P_SkillPreview_ChangeJob1"	7057
+
+----------------------------------------------
+--P_itemmall.txt 아이템 몰
+----------------------------------------------
+"P_Itemmall_Window"	7150
+"P_Itemmall_Close"	7151
+
+----------------------------------------------
+--P_receipt.txt 아이템 수령함
+----------------------------------------------
+"P_Receipt_Window"	7300
+"P_Receipt_Close"	7301
+"P_Receipt_Get"		7302
+"P_Receipt_CashLink"	7303
+
+----------------------------------------------
+--P_megaphone.txt 아이템 수령함
+----------------------------------------------
+"P_MegaPhoneWindow"	7400
+"P_MegaPhone_OK"	7401
+"P_MegaPhone_Cancel"	7402
+"P_MegaPhone_Edit"	7403
+"P_MegaPhone_Close"	7404
+
+
+----------------------------------------------
+--P_Inventory.txt 인벤토리
+----------------------------------------------
+"P_Drag_Window"		8000	-- 드래그 윈도우
+
+"P_Inventory_Window"	8001	-- 인벤토리 윈도우
+"P_Inventory_Close"		8002	-- 닫기
+"P_Inventory_Garbage"	8003	-- 휴지통
+"P_Inventory_Bag0"		8004	-- 가방0
+"P_Inventory_Bag1"		8005	-- 가방1
+"P_Inventory_Bag2"		8006	-- 가방2
+"P_Inventory_Money"		8007	-- 소지금액
+"P_Inventory_Weight"	8008	-- 무게 게이지
+"P_Inventory_Generic"	8009	-- 일반 아이템 탭
+"P_Inventory_Quest"		8010	-- 퀘스트 아이템 탭
+
+"P_Inventory_Equip"		8013	-- 장비 윈도우 
+
+"P_Inventory_Fire"			8014       -- 불 세력 포인트 보기 버튼
+"P_Inventory_Water"		8015       -- 물 세력 포인트 보기 버튼
+"P_Inventory_Wind"		8016       -- 바람 세력 포인트 보기 버튼
+"P_Inventory_Earth"		8017       -- 땅 세력 포인트 보기 버튼
+"P_Inventory_Force"		8018       -- 세력 포인트
+
+"P_Inventory_Sheet1"	8020
+"P_Inventory_Sheet2"	8021
+
+"P_Bag0_Window"		8100	-- 가방0 윈도우
+"P_Bag0_Close"		8101	-- 닫기 
+"P_Bag0_Trash"		8102	-- 휴지통
+"P_Bag0_Caption"		8103
+
+"P_Bag1_Window"		8200	-- 가방1 윈도우
+"P_Bag1_Close"		8201
+"P_Bag1_Trash"		8202
+"P_Bag1_Caption"		8203
+
+"P_Bag2_Window"		8300	-- 가방2 윈도우
+"P_Bag2_Close"		8301
+"P_Bag2_Trash"		8302
+"P_Bag2_Caption"		8303
+
+"P_ItemCount_Window"	8310	-- 아이템 개수 분리 윈도우
+"P_ItemCount_Close"		8311
+"P_ItemCount_Caption"	8312
+"P_ItemCount_Number"	8313
+"P_ItemCount_Up"		8314
+"P_ItemCount_Down"		8315
+"P_ItemCount_Max"		8316
+"P_ItemCount_Ok"		8317
+"P_ItemCount_Cancel"	8318
+
+"P_ItemMsg_Window"		8400
+"P_ItemMsg_Caption"		8401
+"P_ItemMsg_Text"		8402
+"P_ItemMsg_Ok"		8403
+"P_ItemMsg_Yes"		8404
+"P_ItemMsg_Cancel"		8405
+
+----------------------------------------------
+--NPC_StoreItem.txt NPC상점
+----------------------------------------------
+"P_NpcStore_Window"		8500	-- 상점 윈도우
+"P_NpcStore_Close"		8501	-- 닫기 버튼
+"P_NpcStore_Buy"		8502	-- 구입 버튼
+"P_NpcStore_List"		8503
+
+----------------------------------------------
+--Npc_Talk.txt NPC대화창
+----------------------------------------------
+"P_NpcTelling_Window"	8700	-- npc 대화윈도우
+"P_NpcTelling_Close"	8701
+"P_NpcTelling_Name"	8702
+"P_NpcTelling_TextBox"	8703
+
+"P_NpcTelling_Store"	8704
+"P_NpcTelling_WareHouse"	8705
+"P_NpcTelling_Disjoint"	8706
+"P_NpcTelling_Guild"	8707
+"P_NpcTelling_Tarot"	8708
+"P_NpcTelling_Deal"	8709
+"P_NpcTelling_Theme"	8710
+"P_NpcTelling_SkillPreview"	8711
+"P_NpcTelling_TutorialTarot"	8712
+
+"P_NpcTelling_Exchange"		8714
+"P_NpcTelling_QuestList"	8715
+"P_NpcTelling_EventReward"	8716
+
+"P_NpcReward_Window"	8720	
+"P_NpcReward_EXP"	8721
+"P_NpcReward_SXP"	8722
+"P_NpcReward_SkillPoint"	8723
+"P_NpcReward_Money"	8724
+"P_NpcReward_Count"	8725
+	
+----------------------------------------------
+--P_Trade.txt 거래창
+----------------------------------------------
+"P_Trade_Window"		8800	-- 거래 윈도우
+"P_Trade_Close"		8801	-- 닫기 버튼
+"P_Trade_Trade"		8802	-- 거래 버튼
+"P_Trade_Ok"		8803	-- 거래 확인 버튼
+"P_Trade_Money"		8804	
+"P_Trade_Name"		8805
+"P_Trade_MoneyButton"	8806
+
+"P_Trade_ThatOK"		8810	-- 내 금액 에디트박스
+"P_Trade_ThatMoney"		8811	-- 상대방 금액 에디트 박스
+"P_Trade_ThatName"		8812
+	
+	
+----------------------------------------------
+--P_WareHouse.txt 창고UI
+----------------------------------------------
+"P_WareHouse_Window"	8900	-- 창고 윈도우
+"P_WareHouse_Private"	8901
+"P_WareHouse_Sheet1"	8902
+"P_WareHouse_Close"		8903
+"P_WareHouse_Trash"		8904
+"P_WareHouse_Bag1"		8905	-- 추가창고1 열기 버튼
+"P_WareHouse_Bag2"		8906	-- 추가창고2 열기 버튼
+"P_WareHouse_Bag3"		8907	-- 추가창고3 열기 버튼
+"P_WareHouse_Inmoney"	8908
+"P_WareHouse_Outmoney"	8909
+"P_WareHouse_Money"		8910
+
+"P_WareHouseBag1_Window"	8920
+"P_WareHouseBag1_Private"	8921
+"P_WareHouseBag1_Close"	8922
+"P_WareHouseBag1_Trash"	8923
+
+"P_WareHouseBag2_Window"	8930
+"P_WareHouseBag2_Private"	8931
+"P_WareHouseBag2_Close"	8932
+"P_WareHouseBag2_Trash"	8933
+
+"P_WareHouseBag3_Window"	8940
+"P_WareHouseBag3_Private"	8941
+"P_WareHouseBag3_Close"	8942
+"P_WareHouseBag3_Trash"	8943
+
+
+----------------------------------------------
+--P_Money.txt 
+----------------------------------------------
+"P_Money_Window"		8950	-- 금액 윈도우
+"P_Money_Close"		8951
+"P_Money_Caption"		8952
+"P_Money_Number"		8953
+"P_Money_Up"		8954
+"P_Money_Down"		8955
+"P_Money_Max"		8956
+"P_Money_Ok"		8957
+"P_Money_Cancel"		8958
+"P_Money_Modify"		8959
+"P_Money_Delete"		8960
+	
+
+----------------------------------------------
+--P_CastingBar.txt 캐스팅바UI
+----------------------------------------------
+"P_CastingBar"		9000	-- 캐스팅 바 윈도우
+"P_Casting_GuageBar"	9001	-- 캐스팅 바 게이지
+"P_Casting_SkillName"	9002
+"P_Casting_SkillTime"	9003
+	
+----------------------------------------------
+--P_Exit.txt 종료창
+----------------------------------------------
+"P_ExitWindow"		9100	-- 게임 종료창
+"P_Exit_Change"	9101	-- 버튼 "캐릭터 변경"
+"P_Exit_Exit"		9102	-- 버튼 "게임 종료"
+"P_Exit_WindowName"	9103
+"P_Exit_LogoutText"	9104
+
+"P_TutorialExitWindow"	9110	-- 튜토리얼 종료윈도우
+"P_TutorialExit_Tutorial"	9111
+"P_TutorialExit_GameOut"	9112
+"P_TutorialExit_WindowName"	9113
+"P_TutorialExit_LogoutText"	9114
+
+"P_ExitMsg_Window"	9150
+"P_ExitMsg_Caption"	9151
+"P_ExitMsg_Text"	9152
+"P_ExitMsg_Cancel"	9153
+	
+----------------------------------------------
+--P_Option.txt 옵션창
+----------------------------------------------
+"P_Option_Window"			9200
+"P_Option_WindowName"		9201
+"P_Option_Close"			9202
+"P_Option_Default"			9203
+"P_Option_Apply"			9204
+"P_Option_Cancel"			9205
+"P_Option_Sheet1"			9206
+"P_Option_Sheet2"			9207
+"P_Option_Sheet3"			9208
+"P_Option_Environment"		9209
+"P_Option_Graphic"			9210
+
+"P_Option_NameCheck"		9230
+"P_Option_NameFullCheck"		9231
+"P_Option_NameOnlyCheck"		9232
+"P_Option_OtherNameCheck"		9233
+"P_Option_OtherNameFullCheck"		9234
+"P_Option_OtherNameOnlyCheck"		9235
+"P_Option_NpcNameCheck"		9236
+"P_Option_MonsterNameCheck"		9237
+"P_Option_GaugeCheck"		9240
+"P_Option_BalloonCheck"		9241
+"P_Option_HelmetCheck"		9242
+"P_Option_TipCheck"			9243
+
+"P_Option_TradeCheck"		9270
+"P_Option_PartyCheck"		9271
+"P_Option_DualCheck"		9272
+"P_Option_FriendCheck"		9273
+"P_Option_WhisperCheck"		9274
+"P_Option_PvpCheck"			9275
+
+"P_Option_Bar"			9300
+"P_Option_WindowCheck"		9301
+"P_Option_WindowSize"		9302
+"P_Option_Light"			9303
+"P_Option_EffectSound"		9304
+"P_Option_BackSound"		9305
+"P_Option_Video"			9306
+
+"P_Option_MessageSendCheck"	9350
+"P_Option_AccountInsert"		9351
+"P_Option_AccountRefresh"		9352
+	
+----------------------------------------------
+--P_Char_State.txt 캐릭터 상태창
+----------------------------------------------
+"P_HeroStateWindow"		10000	-- 캐릭터 상태 창 
+"P_HeroState_Face"		10001	-- hero 얼굴 이미지 
+"P_HeroState_HP"		10002	-- 캐릭터 HP 게이지
+"P_HeroState_MP"		10003	-- 캐릭터 MP 게이지
+"P_HeroState_SXP"		10004
+"P_HeroState_EXP"		10005
+"P_HeroState_NewMail"	10006	-- 새 메일 알림
+
+"P_HeroState_Name"		10010	-- 캐릭터 이름 라벨 
+"P_HeroState_HP_CurValue"	10011	-- HP - 현재 값
+"P_HeroState_HP_MaxValue"	10012	-- HP - 최대 값
+"P_HeroState_MP_CurValue"	10013	-- MP - 현재 값
+"P_HeroState_MP_MaxValue"	10014	-- MP - 최대 값
+	
+----------------------------------------------
+--P_Skill.txt 스킬창
+----------------------------------------------
+"P_SkillWindow"	11000	-- 스킬 창
+"P_Skill_Close_Button"	11001	-- 스킬 창 닫기 버튼
+"P_Skill_Point"	11002	-- 스킬포인트
+"P_Skill_PointImage" 11003 --
+"P_Skill_UsePoint"	11004	-- 직업별 스킬 사용 포인트
+"P_Skill_UsePointImage"	11005
+"P_Skill_GradeList"	11006	-- 스킬 단계별 리스트 윈도우
+"P_Skill_SkillGradeList"	11007 -- 스킬 단계별 리스트박스
+"P_Skill_GradeListView"	11008 -- 스킬 단계별 리스트 체크박스
+ 
+
+
+
+----------------------------------------------
+--P_Looting.txt 아이템줍기창
+----------------------------------------------
+"P_LootingWindow"		11200	-- 아이템 습득 상자 윈도우
+"P_Looting_Close"		11201
+"P_Looting_All"			11202	-- 버튼 "전부습득"
+"P_Looting_List"		11203	-- 리스트박스 "아이템 리스트"
+"P_Looting_Link"		11204	-- 아이템링크
+
+"P_ItemDivideWindow"		11210      -- 아이템 분배 윈도우
+"P_ItemDivide_List"		11211     -- 리스트박스 "파티원 리스트"
+"P_ItemDivide_Give"		11212      -- 버튼 "지급"
+
+----------------------------------------------
+--P_Revival.txt 부활창
+----------------------------------------------
+"P_RevivalWindow"		11300
+"P_Revival_Town"		11301	-- 버튼 "마을부활"
+"P_Revival_Stand"		11302	-- 버튼 "제자리부활"
+"P_Revival_Time"		11303	-- 남은시간 "라벨"
+	
+----------------------------------------------
+--P_MenuBar.txt 하단메뉴창
+----------------------------------------------
+"P_MenuButtonWindow"		12000	-- 하단메뉴 버튼 윈도우
+"P_Button_Receipt"		12001
+"P_Button_Hero"		12002
+"P_Button_Commu"		12003
+"P_Button_Option"		12004
+"P_Button_Life"			12005
+"P_Button_Twitter"		12006
+
+-- 캐릭
+"P_MenuHeroWindow"		12010
+"P_MenuHero_Close"		12011
+"P_MenuHero_Info"		12012
+"P_MenuHero_Inventory"		12013
+"P_MenuHero_Book"		12014
+"P_MenuHero_Skill"		12015
+"P_MenuHero_Quest"		12016
+"P_MenuHero_Receipt"		12017
+"P_MenuHero_CommunitySkill"	12018
+"P_MenuHero_ThemeState"	12019
+
+-- 커뮤니티
+"P_MenuCommunityWindow"		12020
+"P_MenuCommu_Close"		12021
+"P_MenuCommu_Friend"		12022
+"P_MenuCommu_Guild"		12023
+"P_MenuCommu_Social"		12024
+
+-- 시스템 설정
+"P_MenuOptionWindow"		12030
+"P_MenuOption_Close"		12031
+"P_MenuOption_Help"		12032
+"P_MenuOption_Setting"		12033
+"P_MenuOption_VideoCapture"	12034
+"P_MenuOption_Change"		12035
+"P_MenuOption_ShortCut"		12036
+"P_MenuOption_Exit"		12037
+
+-- 생활 관련 
+"P_MenuLifeWindow"	12040
+"P_MenuLife_Close"		12041
+"P_MenuLife_Enhance"	12042
+"P_MenuLife_Putcard"	12043
+"P_MenuLife_Tarot"		12044
+"P_MenuLife_UserSell"	12045
+"P_MenuLife_ItemMix"	12046
+"P_MenuLife_Title"			12047
+"P_MenuLife_BigMap"			12048
+"P_MenuLife_CardBook"			12049
+
+
+
+
+
+----------------------------------------------
+--P_Friend.txt 친구목록창
+----------------------------------------------
+"P_FriendWindow"		12650	-- 친구 윈도우 
+"P_Friend_Close_Button"	12651	-- 닫기 버튼
+"P_Friend_Party"		12652	-- 버튼 "파티초대"
+"P_Friend_AddFriend"	12655	-- 버튼 "친구추가"
+"P_Friend_DelFriend"	12656	-- 버튼 "친구삭제"
+"P_Friend_Whisper"		12657	-- 버튼 "귓속말"
+"P_Friend_ListBox"		12658	-- 친구 리스트 
+
+"P_Friend_Page1"		12660
+"P_Friend_Page2"		12661
+"P_Friend_Page3"		12662
+"P_Friend_Page4"		12663
+"P_Friend_Page5"		12664
+
+
+----------------------------------------------
+--P_Buff.txt 버프창
+----------------------------------------------
+"P_BuffWindow"		13000	-- 버프 윈도우
+"P_DeBuffWindow"		13100	-- 디버프 윈도우
+"P_MallWindow"		13200	-- 아이템몰 버프 윈도우
+
+
+
+
+----------------------------------------------
+--Tarot.txt 타롯 윈도우
+----------------------------------------------
+"P_TarotWindow"		14000
+"P_Tarot_Close"		14001
+
+-- 자식 ShopOpen 개설 윈도우 ( 개설자 )	
+----------------------------------------------
+"P_TarotOpenWindow"		14100
+"P_TarotOpen_Open"		14101	-- 버튼 "점집개설"
+"P_TarotOpen_Cancel"	14102	-- 버튼 "취소"
+"P_TarotOpen_Total"		14103	-- 라벨 "카드총합"
+"P_TarotOpen_TarotCount"	14104	-- 라벨 "점횟수"
+"P_TarotOpen_StuffNum"	14105	-- 라벨 "재료갯수"
+"P_TarotOpen_Price"		14106	-- 넘버에디트 "가격"
+"P_TarotOpen_Name"		14107	-- 멀티에디트 "점집이름"
+"P_TarotOpen_PriceBack"	14108 -- 타로 이용요금 배경라벨
+
+
+"P_TarotOpen_NameTxt"	14121
+"P_TarotOpen_PriceTxt"	14122
+"P_TarotOpen_SpreadImage"	14124
+"P_TarotOpen_TarotCountTxt"	14125
+"P_TarotOpen_StuffNumTxt"	14126
+"P_TarotOpen_TotalTxt"	14127
+
+
+-- 자식 ShopCheck타롯 확인 윈도우 ( 이용자 )	
+----------------------------------------------
+"P_TarotCheckWindow"	14200	
+"P_TarotCheck_Start"	14201	-- 버튼 "점괘보기"
+"P_TarotCheck_Cancel"	14202	-- 버튼 "취소"
+"P_TarotCheck_Total"	14203	-- 라벨 "수치총합"
+"P_TarotCheck_ShopName"	14204	-- 라벨 "점집이름"
+"P_TarotCheck_Pay"		14205	-- 넘버에디트 "이용요금"
+"P_TarotCheck_ShopNameBackImage"	14206
+"P_TarotCheck_PayImage"		14207
+
+"P_TarotCheck_TotalTxt"	14220
+"P_TarotCheck_NameTxt"	14221
+"P_TarotCheck_PriceTxt"	14222
+"P_TarotCheck_SpreadImage"	14223
+
+
+-- 자식 Select 타롯 카드선택 윈도우 ( 이용자 )
+----------------------------------------------
+"P_TarotSelectWindow"	14300
+"P_TarotSelect_Complete"	14301	-- 버튼 "선택완료"
+"P_TarotSelect_Cancel"	14302	-- 버튼 "취소"
+"P_TarotSelect_Random"	14303	-- 버튼 "임의선택"
+"P_TarotSelect_Count"	14304	-- 라벨 "선택 카드장수"
+"P_TarotSelect_ShopName"	14305	-- 라벨 "점집이름"
+"P_TarotSelect_ShopNameBackImage"	14306
+"P_TarotSelect_NameTxt"	14307
+"P_TarotSelect_SpreadImage"	14308
+
+
+
+-- 자식 Result 타롯 점괘 윈도우 ( 이용자 )
+----------------------------------------------
+"P_TarotResultWindow"	14400
+"P_TarotResult_Random"	14401	-- 버튼 "임의방향"
+"P_TarotResult_AllStraight"	14402	-- 버튼 "전부정방향"
+"P_TarotResult_AllInverse"	14403	-- 버튼 "전부역방향"
+"P_TarotResult_OneStraight"	14404	-- 버튼 "정방향"
+"P_TarotResult_OneInverse"	14405	-- 버튼 "역방향"
+"P_TarotResult_Result"	14406	-- 버튼 "운세효과받기"
+"P_TarotResult_Right"	14407	-- 버튼 "카드오픈 right"
+"P_TarotResult_Up"		14408	-- 버튼 "카드오픈 up"
+"P_TarotResult_Description"	14409	-- 라벨 "카드해석"
+"P_TarotResult_OpenTotal"	14410	-- 라벨 "카드총수치"
+
+"P_TarotResult_DescImg"	14411	
+"P_TarotResult_LabelAllOpen"	14412
+"P_TarotResult_LabelOneOpen"	14413
+"P_TarotResult_LabelOpenTotal"	14414
+
+"P_TarotResult_Opentxt1"	14415
+"P_TarotResult_Opentxt2"	14416
+"P_TarotResult_Opentxt3"	14417
+"P_TarotResult_Opentxt4"	14418
+"P_TarotResult_Opentxt5"	14419
+"P_TarotResult_Opentxt6"	14420
+"P_TarotResult_Opentxt7"	14421
+"P_TarotResult_Opentxt8"	14422
+"P_TarotResult_Opentxt9"	14423
+"P_TarotResult_Opentxt10"	14424
+"P_TarotResult_Gauge"		14425
+"P_TarotResult_DescriptionImage"	14426
+
+----------------------------------------------
+-- 타롯 관리 윈도우 ( 개설자 )
+----------------------------------------------
+"P_TarotControlWindow"	14500
+"P_TarotControl_Close"	14501	-- 버튼 "점집닫기"
+"P_TarotControl_Close2"	14502	-- 버튼 "점집닫기"
+
+"P_TarotControl_ShopName"	14503	-- 라벨 "점집이름"
+"P_TarotControl_Pay"	14504	-- 넘버에디트 "이용요금"
+"P_TarotControl_TarotCount"	14505	-- 라벨 "점 횟수"
+"P_TarotControl_StuffNum"	14506	-- 라벨 "재료갯수"
+"P_TarotControl_Status"	14507	-- 라벨 "현재상태"
+"P_TarotControl_UserNum"	14508	-- 라벨 "이용자수"
+"P_TarotControl_Money"	14509	-- 넘버에디트 "돈"
+"P_TarotControl_Point"	14510	-- 라벨 "포인트"
+
+
+----------------------------------------------
+--P_Store_UserSell.txt 노점상 윈도우
+----------------------------------------------
+"P_UserSellWindow"	15000	-- 노점상 윈도우
+"P_UserSell_Close"	15001
+"P_UserSell_NameRegist"	15002
+"P_UserSell_ItemUpdate"	15003
+"P_UserSell_End"	15004
+"P_UserSell_JoinEnd"	15005
+"P_UserSell_Name"	15006
+
+----------------------------------------------
+--P_Party.txt 파티 윈도우
+----------------------------------------------
+"P_PartyWindow"	15100	-- 파티 관리 윈도우
+"P_Party_Menu"		15101	-- 파티 메뉴 버튼
+"P_Party_Divide"	15102	-- 파티 분배 타입 라벨
+"P_Party_Display"	15103	-- 파티원 보기 방식 변경 버튼
+"P_Party_MoveLock"	15104
+"P_Party_Dice"		15105
+
+"P_PartyMenu"		15105	-- 파티메뉴
+"P_PartyMenu_Invite"	15106	-- 파티원초대
+"P_PartyMenu_ChangeLeader"	15107	-- 파티장위임
+"P_PartyMenu_ChangeDivide"	15108	-- 파티분배타입 변경
+"P_PartyMenu_ThrowUser"	15109	-- 파티원추방
+"P_PartyMenu_Out"		15110	-- 파티탈퇴
+
+"P_PartyDivdeMenu"		15111	-- 파티분배메뉴
+"P_PartyDivide_Sequece"	15112	-- 순차분배
+"P_PartyDivide_Random"	15113	-- 랜덤분배
+"P_PartyDivide_Damage"	15114	-- 데미지분배
+"P_PartyDivide_Free"	15115	-- 자유분배
+"P_PartyDivide_Reader"	15116	-- 파티장분배
+
+"P_PartyStateWindow"	15201	-- 파티원 상태 윈도우 ( 15201~15205 는 파티원상태윈도우)
+"P_PartyState_UserLevel"	15211	-- 파티원 레벨
+"P_PartyState_UserName"	15212	-- 파티원 아이디
+"P_PartyState_HP"		15213	-- 파티원 hp
+"P_PartyState_MP"		15214	-- 파티원 mp
+
+
+"P_PartyStateMiniWindow"	15251	-- 파티원 Mini 상태  윈도우 ( 15251~15255 는 파티원상태Mini 윈도우)
+"P_PartyStateMini_UserName"	15260	-- 파티원 Mini 아이디 
+"P_PartyStateMini_HP"	15261	-- 파티원 Mini hp 
+"P_PartyStateMini_MP"	15262	-- 파티원 Mini mp 
+
+
+"P_PartyBuff"		15300	-- 파티원 버프윈도우
+
+----------------------------------------------
+--P_NpcDisjointWindow.txt 아이템 분해창
+----------------------------------------------
+"P_NpcDisjointWindow"	15400	-- 아이템 분해창
+"P_NpcDisjoint_Close"	15401
+"P_NpcDisjoint_Disjoint"	15402
+"P_NpcDisjoint_Cancel"	15403
+"P_NpcDisjoint_Gaugebar"	15404
+"P_NpcDisjoint_Price"	15405
+
+----------------------------------------------
+--P_Enhanced.txt 아이템 강화창
+----------------------------------------------
+"P_EnhancedWindow"		15500	
+"P_Enhanced_Close"		15501
+"P_Enhanced_Start"		15502
+"P_Enhanced_Cancel"		15503
+"P_Enhanced_Gaugebar"		15504
+"P_Enhanced_Success"		15505
+"P_Enhanced_Failure"		15506
+
+
+----------------------------------------------
+--P_PutCard.txt 카드 장착 윈도우
+----------------------------------------------
+"P_PutCardWindow"		15600
+"P_PutCard_Close"		15601
+"P_PutCard_SlotCount"	15602
+
+
+----------------------------------------------
+--P_Duel.txt 인벤토리
+----------------------------------------------
+"P_DuelMsg_Window"		15700
+"P_DuelMsg_Caption"		15701
+"P_DuelMsg_Text"		15702
+"P_DuelMsg_Yes"		15703
+"P_DuelMsg_Cancel"		15704
+
+"P_DuelWindow"		15800
+"P_Duel_Hero_HP"		15801
+"P_Duel_Hero_MP"		15802
+"P_Duel_Enemy_HP"		15803
+"P_Duel_Enemy_MP"		15804
+"P_Duel_Hero_Name"		15805
+"P_Duel_Enemy_Name"		15806
+"P_Duel_Count"		15807
+"P_Duel_FightImage"		15808
+"P_DuelBuffWindow1"		15809
+"P_DuelDeBuffWindow1"	15810
+"P_DuelBuffWindow2"		15811
+"P_DuelDeBuffWindow2"	15812
+"P_Duel_Hero_Face"		15813
+"P_Duel_Enemy_Face"		15814
+
+
+----------------------------------------------
+--P_CardBook.txt 카드 컬렉션북
+----------------------------------------------
+"P_CardBook_Window"		16000
+"P_CardBook_Close"		16001
+"P_CardBook_Data"		16002
+"P_CardBook_Tarot"		16003
+"P_CardBook_Monster"		16004
+"P_CardBook_Story"		16005
+
+"P_DataSheet_Window"		16100
+
+"P_TarotSheet_Window"		16200
+"P_TarotSheet_DescBox"		16201
+"P_TarotSheet_Name"		16202
+"P_TarotSheet_Value"		16203
+
+"P_MonsterSheet_Window"		16300
+
+"P_StorySheet_Window"		16400
+
+----------------------------------------------
+--P_Social.txt 사회 UI
+----------------------------------------------
+"P_SocialWindow"	17001
+"P_Social_Close_Button"	17002
+"P_Social_Force_Fire"	17003
+"P_Social_Force_Water"	17004
+"P_Social_Force_Wind"	17005
+"P_Social_Force_Earth"	17006
+"P_Social_Force_Fire_Point"	17007
+"P_Social_Force_Water_Point"	17008
+"P_Social_Force_Wind_Point"	17009
+"P_Social_Force_Earth_Point"	17010
+
+----------------------------------------------
+--P_PVP_DMScore.txt 데스매치점수 UI
+----------------------------------------------
+"P_PVP_DMMsgWindow"	17020
+"P_PVP_DMMsg_Caption"	17021
+"P_PVP_DMMsg_Text"	17022
+"P_PVP_DMMsg_Join"	17023
+"P_PVP_DMMsg_Cancel"	17024
+"P_PVP_DMMsg_CountCancel"	17025
+
+"P_PVP_DMScoreWindow"	17030
+"P_PVP_DMScoreTeamAMark0"	17032
+"P_PVP_DMScoreTeamAMark1"	17033
+"P_PVP_DMScoreTeamAMark2"	17034
+"P_PVP_DMScoreTeamBMark0"	17035
+"P_PVP_DMScoreTeamBMark1"	17036
+"P_PVP_DMScoreTeamBMark2"	17037
+"P_PVP_DMScoreStoneGauge"	17038
+
+"P_PVP_DMResultWindow"	17040
+"P_PVP_DMResult_Close"	17041
+"P_PVP_DMResult_List"	17042
+"P_PVP_DMPoint_List"	17043
+"P_PVP_DMResult_Money"	17044
+"P_PVP_DMResult_EXP"	17045
+"P_PVP_DMResult_Sp"		17046
+"P_PVP_DMResult_Win"	17047
+"P_PVP_DMResult_Lose"	17048
+
+"P_PVP_DMMiddleResultWindow" 	17080
+"P_PVP_DMMiddleResult_List" 	17081
+
+----------------------------------------------
+--P_Npc_Tarot.txt npc 타로
+----------------------------------------------
+"P_NpcTarotWindow"	17200
+"P_NpcTarot_Close"	17201
+
+"P_NpcTarotCheckWindow"	17300
+"P_NpcTarotCheck_Start"	17301
+"P_NpcTarotCheck_Cancel"	17302
+"P_NpcTarotCheck_PriceImage"	17303
+"P_NpcTarotCheck_Pay"	17304
+"P_NpcTarotCheck_PayImage"	17305
+"P_NpcTarotCheck_SpreadImage"	17306
+
+"P_NpcTarotSelectWindow"		17310
+"P_NpcTarotSelect_Complete"		17311
+"P_NpcTarotSelect_Cancel"		17312
+"P_NpcTarotSelect_Random"		17313
+"P_NpcTarotSelect_SpreadImage"	17314
+"P_NpcTarotSelect_Count"		17315
+
+"P_NpcTarotResultWindow"		17320
+"P_NpcTarotResult_Result"		17321
+"P_NpcTarotResult_DescImg"		17322
+"P_NpcTarotResult_Right"		17323
+"P_NpcTarotResult_Up"		17324
+"P_NpcTarotResult_Straight"		17325
+"P_NpcTarotResult_Inverse"		17326
+"P_NpcTarotResult_Desc"		17327
+"P_NpcTarotResult_Question"		17328
+"P_NpcTarotResult_OpenCardInfo"	17329
+"P_NpcTarotResult_Comment"		17330
+
+"P_NpcTarotResult_CommentBack"	17331
+"P_NpcTarotResult_QuestionImg"	17332
+"P_NpcTarotResult_OpenCardImg"	17333
+"P_NpcTarotResult_CommentImg"		17334
+"P_NpcTarotResult_FortuneImg"		17335
+"P_NpcTarotResult_FortuneImgReview"	17336
+"P_NpcTarotResult_ReviewLeft"		17337
+"P_NpcTarotResult_ReviewRight"	17338
+"P_NpcTarotResult_DescriptionImage"	17339
+
+----------------------------------------------
+--P_TodayWord.txt npc 오늘의 한마디
+----------------------------------------------
+"P_TodayWordWindow"		17400
+"P_TodayWord_Close"		17401
+"P_TodayWord_Text"		17402
+"P_TodayWord_Preview"		17403
+"P_TodayWord_OK"		17404
+"P_TodayWord_Cancel"		17405
+
+----------------------------------------------
+--P_ItemMix.txt 아이템 조합윈도우
+----------------------------------------------
+"P_ItemMixWindow"		17500
+"P_ItemMix_Close"		17501
+"P_ItemMix_Giveup"		17502
+"P_ItemMix_Start"		17503
+"P_ItemMix_Cancel"		17504
+"P_ItemMix_Cooltime"		17505
+"P_ItemMix_NumberEdit"		17506
+"P_ItemMix_Max"		17507
+"P_ItemMix_CompleteCount"		17508
+"P_ItemMix_Grade"		17509
+"P_ItemMix_SkillNow"		17510
+"P_ItemMix_SkillGoal"		17511
+"P_ItemMix_Gaugebar"		17512
+"P_ItemMix_SkillCombo"		17513
+"P_ItemMix_SkillFolder"		17514
+"P_ItemMix_List"		17515
+"P_ItemMix_Result1"		17516
+"P_ItemMix_Result2"		17517
+"P_ItemMix_Result3"		17518
+"P_ItemMix_Mixenable"		17519
+
+----------------------------------------------
+--P_RButtonMenu.txt (RButton 메뉴)
+----------------------------------------------
+"P_RButtonMenu"		18000
+"P_RButtonMenu_ListBox"		18001
+"P_RButtonMenu_Name"		18002
+
+----------------------------------------------
+--P_theme_state.txt (테마던젼 상태 메뉴)
+----------------------------------------------
+"P_ThemeStateWindow"		18100
+"P_ThemeState_Close"		18101
+"P_ThemeState_ListFolderBox"		18102
+"P_ThemeState_DescBox"		18103
+
+"P_ThemeResetWindow"		18150
+"P_ThemeReset_Close"		18151
+"P_ThemeReset_Reset"		18152
+"P_ThemeReset_ListFolderBox"		18153
+"P_ThemeReset_DescBox"		18154
+
+----------------------------------------------
+--P_theme_enter.txt (테마입장 메뉴)
+----------------------------------------------
+"P_ThemeEnterWindow"		18200
+"P_ThemeEnter_MemberList"		18201
+"P_ThemeEnter_ThemeName"		18202
+"P_ThemeEnter_State"		18203
+"P_ThemeEnter_ThemeNumber"		18204
+"P_ThemeEnter_Mode"			18205
+"P_ThemeEnter_OK"			18206
+"P_ThemeEnter_Close"		18207
+"P_ThemeEnter_Level"		18208
+"P_ThemeEnter_People"		18209
+--"P_ThemeEnter_Refresh"		18210
+"P_ThemeEnter_EnterItem"		18211
+
+----------------------------------------------
+--P_Shortcut.txt (단축키 설정)
+----------------------------------------------
+"P_Shortcut_Window"			18300
+"P_Shortcut_Original"			18301
+"P_Shortcut_Clear"			18302
+"P_Shortcut_OK"				18303
+"P_Shortcut_Cancel"			18304
+
+----------------------------------------------
+--P_movemsg.txt (이동메시지 표시)
+----------------------------------------------
+"P_MoveMsgWindow"			18400
+
+----------------------------------------------
+--P_twitter.txt (단축키 설정)
+----------------------------------------------
+"P_TwitterWindow"		18450
+"P_Twitter_Insert_Button"		18451
+"P_Twitter_Update_Button"		18452
+"P_Twitter_Close"		18454
+"P_Twitter_SearchItemList"		18455
+"P_Twitter_InsertWord"		18456
+"P_Twitter_State_Label"		18457
+
+"P_TwitterLoginWindow"	18458
+"P_TwitterLogin_IDEdit"		18459
+"P_TwitterLogin_PassEdit"		18460
+"P_Twitter_Connect_Button"		18461
+"P_Twitter_LoginCancel_Button"		18462
+"P_Twitter_AccountRefresh_Button"		18463
+"P_TwitterLogin_IDSaveCheck"		18464
+
+----------------------------------------------
+--P_camael.txt (오토 유저 신고 시스템)
+----------------------------------------------
+"P_Camael_Window"			18500
+"P_Camael_Edit"			18501
+"P_Camael_LimitTime"		18502
+"P_Camael_OK"			18503
+"P_Camael_Refresh"			18504
+
+----------------------------------------------
+--P_cashfreemove.txt (자유이동 주문서) 
+----------------------------------------------
+"P_CashFreeMoveWindow"		18600
+"P_CashFreeMove_Close"		18601
+"P_CashFreeMove_Combo"		18602
+
+----------------------------------------------
+--P_look.txt 살펴보기 윈도우 
+----------------------------------------------
+"P_Look_Window"		18650
+"P_Look_Close"		18651
+"P_Look_Name"		18652
+"P_Look_Info"		18653
+
+-- 파일끝 에러 방지!!!!!!!

@@ -1,0 +1,31 @@
+--===============--
+-- 메가폰 윈도우 --
+--===============--
+window_prop "P_MegaPhoneWindow"
+{
+	skinname "MegaPhoneWindow"
+}
+
+button_prop "P_MegaPhone_OK"
+{
+	skinname "MegaPhone_OK"
+	parent "P_MegaPhoneWindow"
+}
+
+button_prop "P_MegaPhone_Cancel"
+{
+	skinname "MegaPhone_Cancel"
+	parent "P_MegaPhoneWindow"
+}
+
+editbox_prop "P_MegaPhone_Edit"
+{
+	skinname "MegaPhone_Edit"
+	parent "P_MegaPhoneWindow"
+}
+
+button_prop "P_MegaPhone_Close"
+{
+	skinname "MegaPhone_Close"
+	parent "P_MegaPhoneWindow"
+}

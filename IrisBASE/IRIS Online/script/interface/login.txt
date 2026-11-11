@@ -1,0 +1,108 @@
+--===============--
+-- 로그인 윈도우 --
+--===============--
+window "LoginWindow"
+{
+	ii 5000
+	pos 412 247
+	size 200 180
+	texpos 2 960
+}
+
+-- /// 아이디 에디트  
+editbox "Login_IDEdit"
+{
+	pos 70 91
+	size 108 13
+	
+	editkind 3	-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 5:특문제외 )
+	editpos 0 0	
+	editmaxlen 16	-- 에디트가 받아들일수 있는 최대 길이 지정
+	
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 비밀번호 에디트  
+editbox "Login_PassEdit"
+{
+	pos 70 114
+	size 108 13
+	
+	editkind 4
+	editpos 0 0	
+	editmaxlen 16
+	
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 버튼 "접속"
+button "Login_Connect"
+{
+	ii 5000
+	pos 27 146
+	size 72 24
+	texpos 467 361
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 467 361
+	upoverpos 467 388
+	downpos 467 415
+	enablepos 467 415
+
+	downsound 3001
+}
+
+-- /// 버튼 "종료"
+button "Login_Cancel"
+{
+	ii 5000
+	pos 102 146
+	size 72 24
+	texpos 542 361
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 542 361
+	upoverpos 542 388
+	downpos 542 415
+	enablepos 542 415
+	downsound 3001
+}
+
+
+--===============--
+-- 아이리스 로고 --
+--===============--
+-- 소스에서 사용하는 스킨
+-- 0, 0 을 기준으로 위치를 잡아야 한다
+label "Login_Logo"
+{
+	ii 5000
+	pos 312 83
+	size 404 136
+	texpos 2 2
+}
+
+
+--==============--
+-- 버젼 윈도우 
+--===============--
+window "VersionWindow"
+{
+	pos 0 0
+	size 200 22
+}
+
+-- 버전 정보
+label "Login_Version"
+{
+	pos 0 0
+	size 200 22
+}
+

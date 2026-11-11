@@ -1,0 +1,108 @@
+--===============--
+-- 캐릭터 생성 왼쪽창 --
+--===============--
+window_prop "P_MakeWindow"
+{
+	skinname "MakeWindow"
+}
+
+-- 뒤배경 이미지
+label_prop "P_Make_Back"
+{
+	skinname "Make_Back"
+	parent "P_MakeWindow"
+}
+
+-- /// 이름 에디트
+editbox_prop "P_Make_NameEdit"
+{
+	skinname "Make_NameEdit"
+	parent "P_MakeWindow"
+}
+
+-- 스핀박스 "성별"
+spinbox_prop "P_Make_Gender_Spin"
+{
+	skinname "Make_Gender_Spin"
+	parent "P_MakeWindow"
+}
+
+-- 스핀박스 "헤어"
+spinbox_prop "P_Make_Hair_Spin"
+{
+	skinname "Make_Hair_Spin"
+	parent "P_MakeWindow"
+}
+
+-- 헤어컬러
+spinbox_prop "P_Make_HairColor_Spin"
+{
+	skinname "Make_HairColor_Spin"
+	parent "P_MakeWindow"
+}
+
+-- 스핀박스 "얼굴"
+spinbox_prop "P_Make_Face_Spin"
+{
+	skinname "Make_Face_Spin"
+	parent "P_MakeWindow"
+}
+
+spinbox_prop "P_Make_Race_Spin"
+{
+	skinname "Make_Race_Spin"
+	parent "P_MakeWindow"
+}
+
+spinbox_prop "P_Make_Job_Spin"
+{
+	skinname "Make_Job_Spin"
+	parent "P_MakeWindow"
+}
+
+-- /// 버튼 "생성"
+button_prop "P_Make_Create"
+{
+	skinname "Make_Create"
+	parent "P_MakeWindow"
+}
+
+--===============--
+-- 회전 버튼 윈도우 --
+--===============--
+window_prop "P_MakeRotateWindow"
+{
+	skinname "MakeRotateWindow"
+}
+
+button_prop "P_Make_LeftRotate"
+{
+	skinname "Make_LeftRotate"
+	parent "P_MakeRotateWindow"
+}
+
+pushbutton_prop "P_Make_ZoomInOut"
+{
+	skinname "Make_ZoomInOut"
+	parent "P_MakeRotateWindow"
+}
+
+button_prop "P_Make_RightRotate"
+{
+	skinname "Make_RightRotate"
+	parent "P_MakeRotateWindow"
+}
+
+--===============--
+-- 캐릭터 생성 오른쪽 정보 창 --
+--===============--
+window_prop "P_MakeInfoWindow"
+{
+	skinname "MakeInfoWindow"
+}
+
+button_prop "P_Make_Select"
+{
+	skinname "Make_Select"
+	parent "P_MakeInfoWindow"
+}

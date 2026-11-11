@@ -1,0 +1,247 @@
+--===============--
+-- 게시판 윈도우--
+--===============--
+window "Board_Window"
+{
+	ii 5017
+	pos 0 0
+	size 640 530
+	texpos 2 2
+
+	opensound 3007
+	closesound 3010	
+}
+
+-- /// 버튼 "Close"
+button "Board_Close"
+{
+	ii 5002
+	pos 607 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+--===============--
+-- 게시판 리스트 윈도우--
+--===============--
+window "BoardList_Window"
+{
+	ii 5017
+	pos 23 64
+	size 595 443
+	texpos 645 2
+}
+
+listbox "BoardList_List"
+{
+	pos 23 89
+	size 549 273
+	row_height 21		-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 100	
+			
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5017		-- 텍스쳐
+	child_size 549 21	-- 사이즈
+	child_texpos 645 582	-- 이미지 위치
+	
+	selectwidth 549		-- 선택 바 width 조절
+
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--       x,  w,   align
+	columnX 23	45	 center  -- 레벨
+	columnX 81 	201	 center  -- 의뢰 제목
+	columnX 284	243	 center  -- 목표
+}
+
+
+-- /// 퀘스트 수락 버튼
+button "BoardList_Accept"
+{
+	ii 5017
+	pos 257 403
+	size 82 24
+	texpos 645 458
+	
+	-- 버튼 그림 좌표 	
+	uppos 645 458
+	upoverpos 645 483
+	downpos 645 508
+	
+	downsound 3001
+}
+
+--===============--
+-- 퀘스트 내용 윈도우--
+--===============--
+window "BoardQuest_Window"
+{
+	ii 5017
+	pos 23 64
+	size 595 443
+	texpos 2 535
+}
+
+-- /// 의뢰 설명박스
+textbox "BoardQuest_DescBox"
+{
+	pos 60 65
+	size 470 210
+
+	row_height 16		-- 열 높이 세팅	
+	maxitemnum 40		-- 리스트가 담을수 잇는 최대 갯수 ( 최대 60 이상 지정하지 마세요)
+	scrollskin "ListScroll"	-- 공통 스킨 
+}
+
+
+-- /// 이전 버튼
+button "BoardQuest_Prev"
+{
+	ii 5017
+	pos 6 202
+	size 38 38
+	texpos 654 539
+	
+	-- 버튼 그림 좌표 	
+	uppos 654 539
+	upoverpos 694 539
+	downpos 734 539
+	
+	downsound 3001
+}
+
+-- /// 다음 버튼
+button "BoardQuest_Next"
+{
+	ii 5017
+	pos 551 202
+	size 38 38
+	texpos 774 539
+	
+	-- 버튼 그림 좌표 	
+	uppos 774 539
+	upoverpos 814 539
+	downpos 854 539
+	
+	downsound 3001
+}
+
+
+-- /// 의뢰목록 보기 버튼
+button "BoardQuest_Return"
+{
+	ii 5017
+	pos 209 403
+	size 82 24
+	texpos 728 458
+	
+	-- 버튼 그림 좌표 	
+	uppos 728 458
+	upoverpos 728 483
+	downpos 728 508
+	
+	downsound 3001
+}
+
+-- /// 퀘스트 수락 버튼
+button "BoardQuest_Accept"
+{
+	ii 5017
+	pos 303 403
+	size 82 24
+	texpos 645 458
+	
+	-- 버튼 그림 좌표 	
+	uppos 645 458
+	upoverpos 645 483
+	downpos 645 508
+	
+	downsound 3001
+}
+
+-- 페이지 라벨
+label "BoardQuest_Page"
+{
+	pos 500 31
+	size 50 16
+	text_align right
+}
+
+-- 보상이미지
+label "BoardQuest_EXP"
+{
+	ii 5017
+	pos 0 0
+	size 120 24
+	texpos 900 457
+}
+
+label "BoardQuest_SXP"
+{
+	ii 5017
+	pos 0 0
+	size 120 24
+	texpos 1022 457
+}
+
+label "BoardQuest_GOLD"
+{
+	ii 5017
+	pos 0 0
+	size 120 24
+	texpos 900 483
+}
+
+label "BoardQuest_SP"
+{
+	ii 5017
+	pos 0 0
+	size 120 24
+	texpos 1022 483
+}
+
+label "BoardQuest_DefaultItem"
+{
+	ii 5017
+	pos 0 0
+	size 232 32
+	texpos 900 510
+}
+
+label "BoardQuest_SelectItem"
+{
+	ii 5017
+	pos 0 0
+	size 232 32
+	texpos 900 546
+}
+
+-- 보상 위치 
+-- 소스에서 사용하는 좌표
+label "BoardQuest_Reward0"	{ pos 74 300	size 1 1 }
+label "BoardQuest_Reward1"	{ pos 196 300	size 1 1 }
+label "BoardQuest_Reward2"	{ pos 318 300	size 1 1 }
+label "BoardQuest_Reward3"	{ pos 74 326	size 1 1 }
+label "BoardQuest_Reward4"	{ pos 74 326	size 1 1 }
+label "BoardQuest_Reward5"	{ pos 196 300	size 1 1 }
+
+
+-- 보상용 아이콘 - 소스에서 쓰는 스킨
+icon "BoardQuest1_Icon0" 	{ pos 70 3	size 28 28 } 
+icon "BoardQuest1_Icon1" 	{ pos 103 3	size 28 28 } 
+icon "BoardQuest1_Icon2" 	{ pos 136 3	size 28 28 } 
+icon "BoardQuest1_Icon3" 	{ pos 169 3	size 28 28 }  
+icon "BoardQuest1_Icon4" 	{ pos 202 3	size 28 28 } 
+
+icon "BoardQuest2_Icon0"  	{ pos 70 3	size 28 28 }
+icon "BoardQuest2_Icon1"  	{ pos 103 3	size 28 28 }
+icon "BoardQuest2_Icon2"  	{ pos 136 3	size 28 28 }
+icon "BoardQuest2_Icon3"  	{ pos 169 3	size 28 28 }
+icon "BoardQuest2_Icon4"  	{ pos 202 3	size 28 28 }

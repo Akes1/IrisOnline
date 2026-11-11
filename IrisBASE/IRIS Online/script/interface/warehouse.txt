@@ -1,0 +1,298 @@
+--=============--
+-- 창고 윈도우 --
+--=============--
+tabwindow "WareHouse_Window"
+{
+	ii 5004
+	pos 62 226
+	size 254 297
+	texpos 620 2
+		
+	captionXY 0 0
+	captionWH 254 297
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 개인창고 탭버튼
+tabbutton "WareHouse_Private"
+{
+	ii 5004
+	pos 30 46
+	size 57 30
+	texpos 455 447
+	
+	uppos 455 478
+	upoverpos 455 478
+	downpos 455 447
+	
+	downsize 57 30
+
+	downsound 3001
+}
+
+-- 닫기
+button "WareHouse_Close"
+{
+	ii 5002
+	pos 221 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 휴지통 라벨
+label "WareHouse_Trash"
+{
+	ii 5003
+	pos 205 229
+	size 24 27
+	texpos 529 237
+}
+
+-- 가방1 열기 버튼
+pushbutton "WareHouse_Bag1"
+{
+	ii 5003
+	pos 201 73
+	size 26 26
+	texpos 446 237
+	
+	uppos 446 237
+	upoverpos 446 237
+	downpos 446 264
+	downoverpos 446 264
+	
+	downsound 3001
+}
+
+-- 가방2 열기 버튼
+pushbutton "WareHouse_Bag2"
+{
+	ii 5003
+	pos 201 104
+	size 26 26
+	texpos 473 237
+
+	uppos 473 237
+	upoverpos 473 237
+	downpos 473 264
+	downoverpos 473 264
+	
+	downsound 3001
+}
+
+-- 가방3 열기 버튼
+pushbutton "WareHouse_Bag3"
+{
+	ii 5003
+	pos 201 135
+	size 26 26
+	texpos 500 237
+
+	uppos 500 237
+	upoverpos 500 237
+	downpos 500 264
+	downoverpos 500 264
+	
+	downsound 3001
+}
+
+-- 입금 버튼
+button "WareHouse_Inmoney"
+{
+	ii 5004
+	pos 116 261
+	size 56 24
+	texpos 455 507
+
+	uppos 455 507
+	upoverpos 455 533
+	downpos 455 558
+
+	downsound 3001
+}
+-- 출금 버튼
+button "WareHouse_Outmoney"
+{
+	ii 5004
+	pos 175 261
+	size 56 24
+	texpos 513 507
+
+	uppos 513 507
+	upoverpos 513 533
+	downpos 513 558
+
+	downsound 3001
+}
+
+-- 돈 표시칸
+editbox "WareHouse_Money"
+{
+	pos 10 269
+	size 90 19
+	
+	editpos 0 0
+	editmaxlen 13
+	text_align right
+	editkind 1
+}
+
+--====================--
+-- 창고 탭쉬트 윈도우 --
+--====================--
+tabsheet "WareSheet_Window"
+{
+	pos 24 85
+	size 180 159
+}
+
+icon "WareSheet_Icon00"	{ pos 0 0		size 28 28 }
+icon "WareSheet_Icon01"	{ pos 33 0	size 28 28 }
+icon "WareSheet_Icon02"	{ pos 66 0	size 28 28 }
+icon "WareSheet_Icon03"	{ pos 99 0	size 28 28 }
+icon "WareSheet_Icon04"	{ pos 132 0	size 28 28 }
+icon "WareSheet_Icon05"	{ pos 0 33	size 28 28 }
+icon "WareSheet_Icon06"	{ pos 33 33	size 28 28 }
+icon "WareSheet_Icon07"	{ pos 66 33	size 28 28 }
+icon "WareSheet_Icon08"	{ pos 99 33	size 28 28 }
+icon "WareSheet_Icon09"	{ pos 132 33	size 28 28 }
+icon "WareSheet_Icon10"	{ pos 0 66	size 28 28 }
+icon "WareSheet_Icon11"	{ pos 33 66	size 28 28 }
+icon "WareSheet_Icon12"	{ pos 66 66	size 28 28 }
+icon "WareSheet_Icon13"	{ pos 99 66	size 28 28 }
+icon "WareSheet_Icon14"	{ pos 132 66	size 28 28 }
+icon "WareSheet_Icon15"	{ pos 0 99	size 28 28 }
+icon "WareSheet_Icon16"	{ pos 33 99	size 28 28 }
+icon "WareSheet_Icon17"	{ pos 66 99	size 28 28 }
+icon "WareSheet_Icon18"	{ pos 99 99	size 28 28 }
+icon "WareSheet_Icon19"	{ pos 132 99	size 28 28 }
+icon "WareSheet_Icon20"	{ pos 0 132 	size 28 28 }
+icon "WareSheet_Icon21"	{ pos 33 132 	size 28 28 }
+icon "WareSheet_Icon22"	{ pos 66 132 	size 28 28 }
+icon "WareSheet_Icon23"	{ pos 99 132 	size 28 28 }
+icon "WareSheet_Icon24"	{ pos 132 132 	size 28 28 }
+
+--==============--
+-- 창고 가방1 윈도우 --
+--==============--
+window "WareHouseBag1_Window"
+{
+	ii 5004
+	pos 0 52
+	size 209 231
+	texpos 620 301	
+
+	captionXY 0 0
+	captionWH 209 231
+}
+
+
+-- 개인창고 가방1 탭 이미지
+label "WareHouseBag1_Private"
+{
+	ii 5004
+	pos 31 11
+	size 84 30
+	texpos 831 301
+}
+
+window "WareHouseBag2_Window"
+{
+	ii 5004
+	pos 0 281
+	size 209 231
+	texpos 620 301	
+
+	captionXY 0 0
+	captionWH 209 231
+}
+
+-- 개인창고 가방2 탭 이미지
+label "WareHouseBag2_Private"
+{
+	ii 5004
+	pos 31 11
+	size 84 30
+	texpos 831 335
+}
+
+window "WareHouseBag3_Window"
+{
+	ii 5004
+	pos 0 510
+	size 209 231
+	texpos 620 301	
+
+	captionXY 0 0
+	captionWH 209 231
+}
+
+-- 개인창고 가방3 탭 이미지
+label "WareHouseBag3_Private"
+{
+	ii 5004
+	pos 31 11
+	size 84 30
+	texpos 831 369
+}
+
+-- /// 창고 닫기 버튼
+button "WareHouseBag_Close"
+{
+	ii 5002
+	pos 177 14
+	size 19 19
+	texpos 253 160
+
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- /// 휴지통 라벨
+label "WareHouseBag_Trash"
+{
+	ii 5003
+	pos 148 9
+	size 24 27
+	texpos 529 237
+}
+
+
+icon "WareBagSheet_Icon00"	{ pos 24 50	size 28 28 }
+icon "WareBagSheet_Icon01"	{ pos 57 50	size 28 28 }
+icon "WareBagSheet_Icon02"	{ pos 90 50	size 28 28 }
+icon "WareBagSheet_Icon03"	{ pos 123 50	size 28 28 }
+icon "WareBagSheet_Icon04"	{ pos 156 50	size 28 28 }
+icon "WareBagSheet_Icon05"	{ pos 24 83	size 28 28 }
+icon "WareBagSheet_Icon06"	{ pos 57 83	size 28 28 }
+icon "WareBagSheet_Icon07"	{ pos 90 83	size 28 28 }
+icon "WareBagSheet_Icon08"	{ pos 123 83	size 28 28 }
+icon "WareBagSheet_Icon09"	{ pos 156 83	size 28 28 }
+icon "WareBagSheet_Icon10"	{ pos 24 116	size 28 28 }
+icon "WareBagSheet_Icon11"	{ pos 57 116	size 28 28 }
+icon "WareBagSheet_Icon12"	{ pos 90 116	size 28 28 }
+icon "WareBagSheet_Icon13"	{ pos 123 116	size 28 28 }
+icon "WareBagSheet_Icon14"	{ pos 156 116	size 28 28 }
+icon "WareBagSheet_Icon15"	{ pos 24 149	size 28 28 }
+icon "WareBagSheet_Icon16"	{ pos 57 149	size 28 28 }
+icon "WareBagSheet_Icon17"	{ pos 90 149	size 28 28 }
+icon "WareBagSheet_Icon18"	{ pos 123 149	size 28 28 }
+icon "WareBagSheet_Icon19"	{ pos 156 149	size 28 28 }
+icon "WareBagSheet_Icon20"	{ pos 24 182 	size 28 28 }
+icon "WareBagSheet_Icon21"	{ pos 57 182 	size 28 28 }
+icon "WareBagSheet_Icon22"	{ pos 90 182 	size 28 28 }
+icon "WareBagSheet_Icon23"	{ pos 123 182 	size 28 28 }
+icon "WareBagSheet_Icon24"	{ pos 156 182 	size 28 28 }

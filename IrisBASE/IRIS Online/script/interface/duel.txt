@@ -1,0 +1,340 @@
+--==============================================================
+-- DuelWindow : 결투 상태창
+--==============================================================
+window "DuelWindow"
+{
+	ii 5007
+	pos 0 0
+	size 793 142
+	texpos 3 787
+	holdview true	-- 창이 사라지지 않게 한다. 
+}
+--==============================================================
+-- /// 자신 얼굴 아이콘 스킨
+--==============================================================
+-- 소스에서 사용하는 스킨
+-- /// 인간남자
+label "Duel_Face_Hero"
+{
+	ii 5007
+	pos 16 30
+	size 80 80
+	texpos 0 941
+}
+
+-- 소스에서 사용하는 스킨
+label "Duel_Face_Enemy"
+{
+	ii 5007
+	pos 695 30
+	size 80 80
+	texpos 0 941
+}
+
+-- 소스에서 사용하는 스킨
+label "Duel_Face_HW"
+{
+	ii 5007
+	pos 16 30
+	size 80 80
+	texpos 85 941
+}
+
+-- 소스에서 사용하는 스킨
+label "Duel_Face_SM"
+{
+	ii 5007
+	pos 16 30
+	size 80 80
+	texpos 254 941
+}
+
+-- 소스에서 사용하는 스킨
+label "Duel_Face_SW"
+{
+	ii 5007
+	pos 16 30
+	size 80 80
+	texpos 172 941
+}
+
+-- 소스에서 사용하는 스킨
+label "Duel_Face_JM"
+{
+	ii 5007
+	pos 16 30
+	size 80 80
+	texpos 333 941
+}
+
+-- 소스에서 사용하는 스킨
+label "Duel_Face_JW"
+{
+	ii 5007
+	pos 16 30
+	size 80 80
+	texpos 412 941
+}
+--==============================================================
+-- DuelWindow : 자신 HP 게이지
+--==============================================================
+doublegauge "Duel_Hero_HP"
+{
+	pos 85 39
+	size 272 8
+	
+	gauge_speed 10000		-- float 값
+	show_percent false		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+	show_text false
+		
+	gauge_ii 5007
+	gauge_pos 0 0
+	gauge_size 2 8
+	gauge_texpos 519 995
+	gauge_width 272		-- 100 % 사이즈
+	gauge_height 8
+
+	-- 뒤 게이지	
+	gaugedest_ii 5007
+	gaugedest_pos 0 0
+	gaugedest_size 2 8
+	gaugedest_texpos 519 995
+	gaugedest_width 272
+	gaugedest_height 8
+}
+--==============================================================
+-- DuelWindow : 자신 MP 게이지
+--==============================================================
+doublegauge "Duel_Hero_MP"
+{
+	pos 84 62
+	size 178 5
+
+	gauge_speed 10000		-- float 값
+	show_percent false		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+	show_text false
+		
+	gauge_ii 5007
+	gauge_pos 0 0
+	gauge_size 2 5
+	gauge_texpos 519 1005
+	gauge_width 178		-- 100 % 사이즈
+	gauge_height 5
+
+	-- 뒤 게이지	
+	gaugedest_ii 5007
+	gaugedest_pos 0 0
+	gaugedest_size 2 5
+	gaugedest_texpos 519 1005
+	gaugedest_width 178
+	gaugedest_height 5
+}
+--==============================================================
+-- DuelWindow : 대상 HP 게이지
+--==============================================================
+doublegauge "Duel_Enemy_HP"
+{
+	pos 436 39
+	size 272 8
+	
+	gauge_speed 10000		-- float 값
+	show_percent false		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+	show_text false	
+
+	gauge_ii 5007
+	gauge_pos 0 0
+	gauge_size 2 8
+	gauge_texpos 519 995
+	gauge_width 272		-- 100 % 사이즈
+	gauge_height 8
+
+	-- 뒤 게이지	
+	gaugedest_ii 5007
+	gaugedest_pos 0 0
+	gaugedest_size 2 8
+	gaugedest_texpos 519 995
+	gaugedest_width 272
+	gaugedest_height 8
+}
+--==============================================================
+-- DuelWindow : 대상 MP 게이지
+--==============================================================
+doublegauge "Duel_Enemy_MP"
+{
+	pos 531 62
+	size 178 5
+
+	gauge_speed 10000		-- float 값
+	show_percent false		-- 마우스가 올라갔을시 출력 값을 퍼센트로 지정 ( 게이지위의 라벨해당 )
+	show_text false	
+
+	gauge_ii 5007
+	gauge_pos 0 0
+	gauge_size 2 5
+	gauge_texpos 519 1005
+	gauge_width 178		-- 100 % 사이즈
+	gauge_height 5
+
+	-- 뒤 게이지	
+	gaugedest_ii 5007
+	gaugedest_pos 0 0
+	gaugedest_size 2 5
+	gaugedest_texpos 519 1005
+	gaugedest_width 178
+	gaugedest_height 5
+}
+-- /// 자신 이름
+label "Duel_Hero_Name"
+{
+	pos 44 112
+	size 93 17
+	text_align center
+}
+-- /// 대상 이름
+label "Duel_Enemy_Name"
+{
+	pos 657 112
+	size 93 17
+	text_align center
+}
+
+
+-- /// 카운트 표시
+label "Duel_Count"
+{
+	ii 5007
+	pos 382 102
+	size 29 38
+	texpos 633 946
+}
+
+-- /// fight 표시
+label "Duel_FightImage"
+{
+	ii 5007
+	pos 329 102
+	size 134 38
+	texpos 663 946
+}
+
+--===============--
+-- 자신 버프 윈도우 --
+--===============--
+-- BuffWindow 는 소스에서 사용하는 스킨명
+window "DuelBuffWindow1"
+{
+	pos	190 101
+	holdview	true
+
+	icon_size	20
+	space	1 1
+	row	1
+	column	10
+	scale	100		-- 1/100
+}
+--===============--
+-- 자신 디버프 윈도우 --
+--===============--
+-- DeBuffWindow 는 소스에서 사용하는 스킨명
+window "DuelDeBuffWindow1"
+{
+	pos	190 122
+	holdview	true
+
+	icon_size	20
+	space	1 1
+	row	1
+	column	10
+	scale	100		-- 1/100
+}
+--===============--
+-- 대상 버프 윈도우 --
+--===============--
+-- BuffWindow 는 소스에서 사용하는 스킨명
+window "DuelBuffWindow2"
+{
+	pos	403 101
+	holdview	true
+
+	icon_size	20
+	space	1 1
+	row	1
+	column	10
+	scale	100		-- 1/100
+}
+
+--===============--
+-- 대상 디버프 윈도우 --
+--===============--
+-- DeBuffWindow 는 소스에서 사용하는 스킨명
+window "DuelDeBuffWindow2"
+{
+	pos	403 122
+	holdview	true
+
+	icon_size	20
+	space	1 1
+	row	1
+	column	10
+	scale	100		-- 1/100
+}
+
+--===========================--
+-- 결투 메시지 윈도우 --
+-- 소스에서 직접 쓰는 스킨 
+--===========================--
+window "DuelMsg_Window"
+{
+	ii 5002
+	pos 390 200
+	size 257 147
+	texpos 765 608
+		
+	captionXY 0 0
+	captionWH 257 34
+}
+
+label "DuelMsg_Caption"
+{
+	pos 0 0
+	size 257 34		
+	text_align center	
+}
+
+label "DuelMsg_Text"
+{
+	pos 25 42
+	size 206 70	
+	text_align center
+}
+
+
+button "DuelMsg_Yes"
+{
+	ii 5002
+	pos 37 112
+	size 82 24
+	texpos 302 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 302 566
+	upoverpos 302 591
+	downpos 302 616
+
+	downsound 3001
+}
+
+button "DuelMsg_Cancel"
+{
+	ii 5002
+	pos 138 112
+	size 82 24
+	texpos 386 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 566
+	upoverpos 386 591
+	downpos 386 616
+
+	downsound 3001
+}

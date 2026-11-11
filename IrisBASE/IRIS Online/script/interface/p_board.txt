@@ -1,0 +1,117 @@
+--===============--
+-- 게시판 윈도우--
+--===============--
+window_prop "P_Board_Window"
+{
+	skinname "Board_Window"
+}
+
+button_prop "P_Board_Close"
+{
+	skinname "Board_Close"
+	parent "P_Board_Window"
+}
+
+
+--===============--
+-- 게시판 리스트 윈도우--
+--===============--
+window_prop "P_BoardList_Window"
+{
+	skinname "BoardList_Window"
+	parent "P_Board_Window"
+}
+
+listbox_prop "P_BoardList_List"
+{
+	skinname "BoardList_List"
+	parent "P_BoardList_Window"
+}
+
+button_prop "P_BoardList_Accept"
+{
+	skinname "BoardList_Accept"
+	parent "P_BoardList_Window"
+}
+
+--===============--
+-- 퀘스트 내용 윈도우--
+--===============--
+window_prop "P_BoardQuest_Window"
+{
+	skinname "BoardQuest_Window"
+	parent "P_Board_Window"
+}
+
+textbox_prop "P_BoardQuest_DescBox"
+{
+	skinname "BoardQuest_DescBox"
+	parent "P_BoardQuest_Window"
+}
+
+button_prop "P_BoardQuest_Prev"
+{
+	skinname "BoardQuest_Prev"
+	parent "P_BoardQuest_Window"
+}
+
+button_prop "P_BoardQuest_Next"
+{
+	skinname "BoardQuest_Next"
+	parent "P_BoardQuest_Window"
+}
+
+button_prop "P_BoardQuest_Return"
+{
+	skinname "BoardQuest_Return"
+	parent "P_BoardQuest_Window"
+}
+
+button_prop "P_BoardQuest_Accept"
+{
+	skinname "BoardQuest_Accept"
+	parent "P_BoardQuest_Window"
+}
+
+label_prop "P_BoardQuest_Page"
+{
+	skinname "BoardQuest_Page"
+	parent "P_BoardQuest_Window"
+}
+
+
+label_prop "P_BoardQuest_EXP"
+{
+	skinname "BoardQuest_EXP"
+	parent "P_BoardQuest_Window"
+}
+
+label_prop "P_BoardQuest_SXP"
+{
+	skinname "BoardQuest_SXP"
+	parent "P_BoardQuest_Window"
+}
+
+label_prop "P_BoardQuest_GOLD"
+{
+	skinname "BoardQuest_GOLD"
+	parent "P_BoardQuest_Window"
+}
+
+label_prop "P_BoardQuest_SP"
+{
+	skinname "BoardQuest_SP"
+	parent "P_BoardQuest_Window"
+}
+
+label_prop "P_BoardQuest_DefaultItem"
+{
+	skinname "BoardQuest_DefaultItem"
+	parent "P_BoardQuest_Window"
+}
+
+label_prop "P_BoardQuest_SelectItem"
+{
+	skinname "BoardQuest_SelectItem"
+	parent "P_BoardQuest_Window"
+}

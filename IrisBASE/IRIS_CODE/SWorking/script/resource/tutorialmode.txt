@@ -1,0 +1,406 @@
+--키 정보
+--KEY_W
+--KEY_A
+--KEY_S
+--KEY_D
+--KEY_SPACE
+--KEY_1
+--KEY_2
+--KEY_3
+
+-- mode index 가 0 이면 기본으로 0 부터 연출시작한다
+
+images
+{
+	1	"u_tutorial.tga"
+}
+
+mode 0
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501001 	// 최초 리젠 위치	
+	dietextIndex	11010
+	
+	// 객체 연출 관리
+	object
+	{
+		// 구분 	전체(1)/한개(0)객체 이미지인덱스 	고유인덱스
+		npc     	0      	1		508	//신규 퀘스트 이미지
+	}
+	
+	// 이동 관련 이미지 출력 w
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	160 474	// 화면상 위치
+		size	60 60	// 크기
+		texpos	3 3	// 텍스쳐상 위치
+		downpos	66 3	// down시 텍스쳐 좌표
+		
+		// 연출
+		keyinput	KEY_W	// 반응 키
+		drama	1	// 연출 : none(0), down(1), show(2), hide(3)
+		
+		lefttop	0	// 1: 기본셋팅 0: right bottom 기준 
+	}
+	
+	// 이동 관련 이미지 출력 a
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	228 408	// 화면상 위치
+		size	60 60	// 크기
+		texpos	129 3	// 텍스쳐상 위치
+		downpos	192 3	// down시 텍스쳐 좌표
+		
+		// 연출
+		keyinput	KEY_A	// 반응 키
+		drama	1	// 연출 : none(0), down(1), show(2), hide(3)
+
+		lefttop	0	// 1: 기본셋팅 0: right bottom 기준 
+	}
+		
+	// 이동 관련 이미지 출력 s
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	160 408	// 화면상 위치
+		size	60 60	// 크기
+		texpos	255 3	// 텍스쳐상 위치
+		downpos	318 3	// down시 텍스쳐 좌표
+		
+		// 연출
+		keyinput	KEY_S	// 반응 키
+		--defaultshow	1	// 기본 세팅 : hide(0), show(1)
+		drama	1	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	0	// 1: 기본셋팅 0: right bottom 기준 
+	}
+			
+	// 이동 관련 이미지 출력 d
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	92  408	// 화면상 위치
+		size	60 60	// 크기
+		texpos	381 3	// 텍스쳐상 위치
+		downpos	444 3	// down시 텍스쳐 좌표
+		
+		// 연출
+		keyinput	KEY_D	// 반응 키
+		drama	1	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	0	// 1: 기본셋팅 0: right bottom 기준 
+	}
+				
+	// 이동 관련 이미지 출력 space bar
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	229 340	// 화면상 위치
+		size	200 60	// 크기
+		texpos	3 67	// 텍스쳐상 위치
+		downpos	206 67	// down시 텍스쳐 좌표
+		
+		// 연출
+		keyinput	KEY_SPACE	// 반응 키
+		drama	1	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	0	// 1: 기본셋팅 0: right bottom 기준 
+	}
+	
+	// 신규 퀘스트 이미지 출력
+	objectimage 1
+	{
+		ii 	1	// 이미지인덱스
+		pos	90 -70	// 오브젝트 head 기준 위치
+		size	172 127	// 크기
+		texpos	4 199	// 텍스쳐상 위치
+	}
+						
+	// 도움말 이미지-1
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	300 130	// 화면상 위치
+		size	567 48	// 크기
+		texpos	0 837	// 텍스쳐상 위치
+		
+		// 연출
+		keyinput	KEY_SPACE	// 반응 키
+		drama	0	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	1	// 1: 기본셋팅 0: right bottom 기준 
+		align	1
+	}	
+}
+
+mode 1
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501002 	// 미하엘 앞
+	dietextIndex	11010
+	
+	// 객체 연출 관리
+	object
+	{
+		// 구분 	전체(1)/한개(0)객체 이미지인덱스 	고유인덱스
+		npc     	0      	1		509	//완료 퀘스트 이미지
+	}
+			
+	// 완료 퀘스트 이미지 출력
+	objectimage 1
+	{
+		ii 	1	// 이미지인덱스
+		pos	90 -70	// 오브젝트 head 기준 위치
+		size	172 127	// 크기
+		texpos	356 199	// 텍스쳐상 위치
+	}
+			
+	// 도움말 이미지 출력-2
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	300 130	// 화면상 위치
+		size	567 48	// 크기
+		texpos	0 885	// 텍스쳐상 위치
+		
+		// 연출
+		keyinput	KEY_M// 반응 키
+		drama	0	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	1	// 1: 기본셋팅 0: right bottom 기준 
+		align	1
+	}
+			
+	// 큰 지도 단축키 m
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	111 474	// 화면상 위치
+		size	60 60	// 크기
+		texpos	409 67	// 텍스쳐상 위치
+				
+		// 애니메이션		
+		frame	2	// 프레임수 
+		repeat	1	// 반복설정 ( 0 : 반복없음, 1 : 반복 )
+		time	300	// 한 프레임 시간 ( ms )
+		
+		// 연출
+		keyinput	KEY_M	// 반응 키
+		drama	3	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	0	// 1: 기본셋팅 0: right bottom 기준 
+	}
+			
+	// 도움말 이미지 출력-3
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	300 80	// 화면상 위치
+		size	567 48	// 크기
+		texpos	0 933	// 텍스쳐상 위치
+		
+		// 연출
+		keyinput	KEY_M// 반응 키
+		defaultshow	0
+		drama	2	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	1	// 1: 기본셋팅 0: right bottom 기준 
+		align	1
+	}
+}
+
+mode 8
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501003 	// 크라니스 앞
+	dietextIndex	11010
+}
+
+mode 2
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501003 	// 크라니스 앞
+	dietextIndex	11010
+	
+	// 객체 연출 관리
+	object
+	{
+		// 구분 	전체(1)/한개(0)객체 이미지인덱스	고유인덱스
+		monster	0	2		1040	// Tab 이미지
+		monster	2	3		1040	// Ctrl 이미지
+		monster	0	4		1041	// Tab 이미지
+		monster	2	5		1041	// Ctrl 이미지
+		item	1	6			// E 이미지
+	}
+
+	// Tab 이미지 - 허수아비
+	objectimage 2
+	{
+		ii 	1	// 이미지인덱스
+		pos	0 -70	// 오브젝트 head 기준 위치
+		size	83 60	// 크기
+		texpos	535 67	// 텍스쳐상 위치
+	}	
+	
+	// Ctrl 이미지 - 허수아비
+	objectimage 3
+	{
+		ii 	1	// 이미지인덱스
+		pos	0 -70	// 오브젝트 head 기준 위치
+		size	83 60	// 크기
+		texpos	620 67	// 텍스쳐상 위치
+	}	
+	
+	// E 이미지
+	objectimage 6
+	{
+		ii 	1	// 이미지인덱스
+		pos	0 -70	// 오브젝트 head 기준 위치
+		size	60 60	// 크기
+		texpos	3 131	// 텍스쳐상 위치
+	}		
+			
+	// 도움말 이미지 출력-4
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	300 130	// 화면상 위치
+		size	567 48	// 크기
+		texpos	0 980	// 텍스쳐상 위치
+		
+		// 연출
+		drama	0	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	1	// 1: 기본셋팅 0: right bottom 기준 
+		align	1
+	}
+}
+
+mode 9
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501003 	// 로안 앞
+	dietextIndex	11010
+}
+
+mode 3
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501004 	// NPC 로안 앞
+	dietextIndex	11010
+	
+	// 객체 연출 관리
+	object
+	{
+		// 구분 	전체(1)/한개(0)객체 이미지인덱스	고유인덱스
+		monster	0	1		1040	// Tab 이미지
+		monster	2	2		1040	// Ctrl 이미지
+		monster	0	3		1041	// Tab 이미지
+		monster	2	4		1041	// Ctrl 이미지
+		item	1	5			// E 이미지
+	}
+
+	// Tab 이미지 - 붉은 허수아비
+	objectimage 3
+	{
+		ii 	1	// 이미지인덱스
+		pos	0 -70	// 오브젝트 head 기준 위치
+		size	83 60	// 크기
+		texpos	535 67	// 텍스쳐상 위치
+	}	
+	
+	// Ctrl 이미지 - 붉은 허수아비
+	objectimage 4
+	{
+		ii 	1	// 이미지인덱스
+		pos	0 -70	// 오브젝트 head 기준 위치
+		size	83 60	// 크기
+		texpos	620 67	// 텍스쳐상 위치
+	}
+	// E 이미지
+	objectimage 5
+	{
+		ii 	1	// 이미지인덱스
+		pos	0 -70	// 오브젝트 head 기준 위치
+		size	60 60	// 크기
+		texpos	3 131	// 텍스쳐상 위치
+	}
+				
+	// 도움말 이미지 출력-5
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	300 130	// 화면상 위치
+		size	567 48	// 크기
+		texpos	0 1029	// 텍스쳐상 위치
+		
+		// 연출
+		drama	0	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	1	// 1: 기본셋팅 0: right bottom 기준 
+		align	1
+	}
+}
+
+mode 10
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501005 	// 필리아 앞
+	dietextIndex	11010
+}
+
+mode 4
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501005 	// 필리아 앞
+	dietextIndex	11010
+				
+	// 도움말 이미지 출력-6
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	300 130	// 화면상 위치
+		size	567 48	// 크기
+		texpos	0 1077	// 텍스쳐상 위치
+		
+		// 연출
+		drama	0	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	1	// 1: 기본셋팅 0: right bottom 기준 
+		align	1
+	}
+}
+
+mode 5
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501005 	// 필리아 앞
+	dietextIndex	11010
+					
+	// 도움말 이미지 출력-7
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	300 130	// 화면상 위치
+		size	567 47	// 크기
+		texpos	0 1125	// 텍스쳐상 위치
+		
+		// 연출
+		drama	0	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	1	// 1: 기본셋팅 0: right bottom 기준 
+		align	1
+	}
+}
+
+mode 11
+{
+	// 부활 및 재 시작 관련 정보
+	startposIndex	501005 	// 필리아 앞
+	dietextIndex	11010
+					
+	// 도움말 이미지 출력-8
+	image
+	{
+		ii 	1	// 이미지인덱스
+		pos	300 130	// 화면상 위치
+		size	567 47	// 크기
+		texpos	0 1173	// 텍스쳐상 위치
+		
+		// 연출
+		drama	0	// 연출 : none(0), down(1), show(2), hide(3)
+		lefttop	1	// 1: 기본셋팅 0: right bottom 기준 
+		align	1
+	}
+}

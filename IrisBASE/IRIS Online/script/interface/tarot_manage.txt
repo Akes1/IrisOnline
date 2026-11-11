@@ -1,0 +1,120 @@
+-- /// 점집 관리 윈도우 
+window "TarotControlWindow"
+{
+	ii 5008
+	pos 600 200
+	size 303 361
+	texpos 2 603
+		
+	captionXY 0 0
+	captionWH 303 361
+
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 버튼 "점집닫기" 
+button "TarotControl_Close"
+{
+	ii 5002
+	pos 270 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- /// 버튼 "점집닫기" 
+pushbutton "TarotControl_Close2"
+{
+ 	ii 5008
+	pos 204 327
+	size 82 24
+	texpos 764 610
+	
+	-- 버튼 그림 좌표 	
+	uppos 764 610
+	upoverpos 764 636
+	downpos 764 662
+	downoverpos 764 662
+
+	downsound 3001
+}
+
+-- /// 라벨 "점집이름"
+label "TarotControl_ShopName"
+{
+	pos 108 72
+	size 160 32		-- 기준이 되는 사이즈 : 정렬시 
+	text_align left		-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 라벨 "이용요금"
+editbox "TarotControl_Pay"
+{
+	pos 90 117
+	size 88 17
+	
+	editkind 1		-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editpos 0 0
+	editmaxlen 13		-- 숫자 따옴표 포함
+	text_align right
+}
+
+-- /// 라벨 "점 횟수"
+label "TarotControl_TarotCount"
+{
+	pos 134 180
+	size 92 19		-- 기준이 되는 사이즈 : 정렬시 
+	text_align right	-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 라벨 "재료수"
+label "TarotControl_StuffNum"
+{
+	pos 12 179
+	size 97 16		-- 기준이 되는 사이즈 : 정렬시 
+	text_align right	-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 라벨 "현재 상태"
+label "TarotControl_Status"
+{
+	pos 30 227
+	size 240 19
+	text_align center	-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 라벨 "이용자수"
+label "TarotControl_UserNum"
+{
+	pos 22 284
+	size 42 19		-- 기준이 되는 사이즈 : 정렬시 
+	text_align right	-- 텍스트 정렬( 높이, 넓이 )
+}
+
+-- /// 넘버에디트 "돈"
+editbox "TarotControl_Money"
+{
+	pos 87 287
+	size 66 19
+	
+	editkind 1		-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editpos 0 0	
+	editmaxlen 14		
+	text_align right
+}
+
+
+-- /// 라벨 "포인트"
+label "TarotControl_Point"
+{
+	pos 190 284
+	size 62 19		-- 기준이 되는 사이즈 : 정렬시 
+	text_align right	-- 텍스트 정렬( 높이, 넓이 )
+}

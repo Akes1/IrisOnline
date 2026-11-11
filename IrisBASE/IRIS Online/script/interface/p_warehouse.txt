@@ -1,0 +1,154 @@
+--=============--
+-- 창고 윈도우 --
+--=============--
+tabwindow_prop "P_WareHouse_Window"
+{
+	skinname "WareHouse_Window"
+}
+
+-- 개인창고 탭버튼
+tabbutton_prop "P_WareHouse_Private"
+{
+	skinname "WareHouse_Private"
+	parent "P_WareHouse_Window"
+}
+
+-- 개인창고 탭쉬트
+tabsheet_prop "P_WareHouse_Sheet1"
+{
+	skinname "WareSheet_Window"
+	parent "P_WareHouse_Window"
+}
+
+-- 닫기
+button_prop "P_WareHouse_Close"
+{
+	skinname "WareHouse_Close"
+	parent "P_WareHouse_Window"
+}
+
+-- 휴지통 라벨
+label_prop "P_WareHouse_Trash"
+{
+	skinname "WareHouse_Trash"
+	parent "P_WareHouse_Window"
+}
+
+-- 가방1 열기 버튼
+pushbutton_prop "P_WareHouse_Bag1"
+{
+	skinname "WareHouse_Bag1"
+	parent "P_WareHouse_Window"
+}
+
+-- 가방2 열기 버튼
+pushbutton_prop "P_WareHouse_Bag2"
+{
+	skinname "WareHouse_Bag2"
+	parent "P_WareHouse_Window"
+}
+
+-- 가방3 열기 버튼
+pushbutton_prop "P_WareHouse_Bag3"
+{
+	skinname "WareHouse_Bag3"
+	parent "P_WareHouse_Window"
+}
+
+-- 입금 버튼
+button_prop "P_WareHouse_Inmoney"
+{
+	skinname "WareHouse_Inmoney"
+	parent "P_WareHouse_Window"
+}
+-- 출금 버튼
+button_prop "P_WareHouse_Outmoney"
+{
+	skinname "WareHouse_Outmoney"
+	parent "P_WareHouse_Window"
+}
+-- 돈표시창
+numberedit_prop "P_WareHouse_Money"
+{
+	skinname "WareHouse_Money"
+	parent "P_WareHouse_Window"
+}
+
+
+
+--==============--
+-- 창고 가방1,2,3 윈도우 --
+--==============--
+window_prop "P_WareHouseBag1_Window"
+{
+	skinname "WareHouseBag1_Window"
+}
+
+-- 개인창고 
+label_prop "P_WareHouseBag1_Private"
+{
+	skinname "WareHouseBag1_Private"
+	parent "P_WareHouseBag1_Window"
+}
+
+-- 닫기
+button_prop "P_WareHouseBag1_Close"
+{
+	skinname "WareHouseBag_Close"
+	parent "P_WareHouseBag1_Window"
+}
+
+-- 휴지통 라벨
+label_prop "P_WareHouseBag1_Trash"
+{
+	skinname "WareHouseBag_Trash"
+	parent "P_WareHouseBag1_Window"
+}
+
+--가방2
+window_prop "P_WareHouseBag2_Window"
+{
+	skinname "WareHouseBag2_Window"
+}
+
+label_prop "P_WareHouseBag2_Private"
+{
+	skinname "WareHouseBag2_Private"
+	parent "P_WareHouseBag2_Window"
+}
+
+button_prop "P_WareHouseBag2_Close"
+{
+	skinname "WareHouseBag_Close"
+	parent "P_WareHouseBag2_Window"
+}
+
+label_prop "P_WareHouseBag2_Trash"
+{
+	skinname "WareHouseBag_Trash"
+	parent "P_WareHouseBag2_Window"
+}
+
+--가방3
+window_prop "P_WareHouseBag3_Window"
+{
+	skinname "WareHouseBag3_Window"
+}
+
+label_prop "P_WareHouseBag3_Private"
+{
+	skinname "WareHouseBag3_Private"
+	parent "P_WareHouseBag3_Window"
+}
+
+button_prop "P_WareHouseBag3_Close"
+{
+	skinname "WareHouseBag_Close"
+	parent "P_WareHouseBag3_Window"
+}
+
+label_prop "P_WareHouseBag3_Trash"
+{
+	skinname "WareHouseBag_Trash"
+	parent "P_WareHouseBag3_Window"
+}

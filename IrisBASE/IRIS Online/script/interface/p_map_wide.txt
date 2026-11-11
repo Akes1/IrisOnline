@@ -1,0 +1,38 @@
+--===============--
+-- Å« ¹Ì´Ï¸Ê	 --
+--===============--
+-- ¹Ì´Ï¸Ê Ã¢
+window_prop "P_MiniMap_Window"
+{
+	skinname "MiniMap_Window"
+}
+
+pushbutton_prop "P_MiniMap_ExplainButton"
+{
+	skinname "MiniMap_ExplainButton"
+	parent "P_MiniMap_Window"
+}
+
+label_prop "P_MiniMap_ExplainImage"
+{
+	skinname "MiniMap_ExplainImage"
+	parent "P_MiniMap_Window"
+}
+
+label_prop "P_MiniMap_ExplainText"
+{
+	skinname "MiniMap_ExplainText"
+	parent "P_MiniMap_Window"
+}
+
+checkbox_prop "P_MiniMap_QuestView"
+{
+	skinname "MiniMap_QuestView"
+	parent "P_MiniMap_Window"
+}
+
+label_prop "P_MiniMap_QuestViewText"
+{
+	skinname "MiniMap_QuestViewText"
+	parent "P_MiniMap_Window"
+}

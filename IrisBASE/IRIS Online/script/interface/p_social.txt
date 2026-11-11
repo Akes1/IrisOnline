@@ -1,0 +1,68 @@
+-- /// 사회 창 
+window_prop "P_SocialWindow"
+{
+	skinname "SocialWindow"
+}
+
+-- /// 버튼 "Close"
+button_prop "P_Social_Close_Button"
+{
+	skinname "Social_Close_Button"
+	parent "P_SocialWindow"
+}
+
+-- /// 세력 이름 불
+label_prop "P_Social_Force_Fire"
+{
+	skinname "Social_Force_Fire"
+	parent "P_SocialWindow"
+}
+
+-- /// 세력 이름 물
+label_prop "P_Social_Force_Water"
+{
+	skinname "Social_Force_Water"
+	parent "P_SocialWindow"
+}
+
+-- /// 세력 이름 바람
+label_prop "P_Social_Force_Wind"
+{
+	skinname "Social_Force_Wind"
+	parent "P_SocialWindow"
+}
+
+-- /// 세력 이름 땅
+label_prop "P_Social_Force_Earth"
+{
+	skinname "Social_Force_Earth"
+	parent "P_SocialWindow"
+}
+
+-- /// 세력 포인트 불
+label_prop "P_Social_Force_Fire_Point"
+{
+	skinname "Social_Force_Fire_Point"
+	parent "P_SocialWindow"
+}
+
+-- /// 세력 포인트 물
+label_prop "P_Social_Force_Water_Point"
+{
+	skinname "Social_Force_Water_Point"
+	parent "P_SocialWindow"
+}
+
+-- /// 세력 포인트 바람
+label_prop "P_Social_Force_Wind_Point"
+{
+	skinname "Social_Force_Wind_Point"
+	parent "P_SocialWindow"
+}
+
+-- /// 세력 포인트 땅
+label_prop "P_Social_Force_Earth_Point"
+{
+	skinname "Social_Force_Earth_Point"
+	parent "P_SocialWindow"
+}

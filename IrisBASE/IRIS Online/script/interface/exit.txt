@@ -1,0 +1,149 @@
+--===============--
+-- 게임 종료창  --
+--===============--
+window "ExitWindow"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 창이름
+label "Exit_WindowName"
+{
+	pos 0 7
+	size 257 20
+	text_align center
+}
+
+label "Exit_LogoutText"
+{
+	pos 25 42
+	size 206 70
+	text_align center
+}
+
+-- 캐릭터 변경
+button "Exit_Change"
+{
+	ii 5002
+	pos 37 112
+	size 82 24
+	texpos 302 416
+	
+	-- 버튼 그림 좌표 	
+	uppos 302 416
+	upoverpos 302 441
+	downpos 302 466
+
+	downsound 3001
+}
+
+button "Exit_Exit"
+{
+	ii 5002
+	pos 138 112
+	size 82 24
+	texpos 386 416
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 416
+	upoverpos 386 441
+	downpos 386 466
+
+	downsound 3001
+}
+
+
+--================--
+-- 종료 메세지 창 --
+--================--
+window "ExitMsg_Window"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	
+	opensound 3007
+	closesound 3010
+}
+
+label "ExitMsg_Caption"
+{
+	pos 0 0
+	size 257 34
+	text_align center	
+}
+
+label "ExitMsg_Text"
+{
+	pos 25 42
+	size 206 70
+	text_align center
+}
+
+button "ExitMsg_Cancel"
+{
+	ii 5002
+	pos 88 112
+	size 82 24
+	texpos 386 641
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 641
+	upoverpos 386 666
+	downpos 386 691
+
+	downsound 3001
+}
+
+--==========================--
+-- 튜토리얼 종료창  --
+--==========================--
+window "TutorialExitWindow"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	
+	opensound 3007
+	closesound 3010
+}
+
+-- 튜토리얼 종료
+button "TutorialExit_Tutorial"
+{
+	ii 5002
+	pos 37 112
+	size 82 24
+	texpos 304 771
+	
+	-- 버튼 그림 좌표 	
+	uppos 304 771
+	upoverpos 304 796
+	downpos 304 821
+
+	downsound 3001
+}
+
+-- 게임 종료
+button "TutorialExit_GameOut"
+{
+	ii 5002
+	pos 138 112
+	size 82 24
+	texpos 386 416
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 416
+	upoverpos 386 441
+	downpos 386 466
+
+	downsound 3001
+}

@@ -1,0 +1,31 @@
+--=================--
+-- 오늘의 한마디 윈도우 --
+--=================--
+window_prop "P_TodayWordWindow"
+{
+	skinname "TodayWordWindow"
+}
+
+editbox_prop "P_TodayWord_Text"
+{
+	skinname "TodayWord_Text"
+	parent "P_TodayWordWindow"
+}
+
+button_prop "P_TodayWord_Preview"
+{
+	skinname "TodayWord_Preview"
+	parent "P_TodayWordWindow"
+}
+
+button_prop "P_TodayWord_OK"
+{
+	skinname "TodayWord_OK"
+	parent "P_TodayWordWindow"
+}
+
+button_prop "P_TodayWord_Cancel"
+{
+	skinname "TodayWord_Cancel"
+	parent "P_TodayWordWindow"
+}

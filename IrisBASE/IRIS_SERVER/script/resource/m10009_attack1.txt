@@ -1,0 +1,21 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	1.5	"Eff_1022_03.nif"
+	sound	21	25001
+	sound	22	35001
+}
+
+Activity
+{
+	animation	5
+	soundplay	500	21	0
+	active	550
+}
+
+Apply
+{
+	soundplay	0	22	0
+	damage	0	100
+}
+

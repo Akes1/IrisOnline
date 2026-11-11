@@ -1,0 +1,89 @@
+//인형사 포움 모드 설정
+
+Header	
+{
+	effect	1	0	0	0	2	"eff_pc_pvp_1.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+
+	sound	3	10214
+
+	death 20001
+}
+Mode	0
+{
+	modeimage	"mode_image201_1.tga"	0	480	0
+	immune	0
+
+	modechange	5	1	600000	0	0
+	modechange	1	3	80	0	0
+}
+
+Mode	1
+{	
+	modeimage	"mode_image200.tga"	0	0	0
+
+	gentotem	8001	1	0	900	1	10000	0	2
+
+	immune	0
+
+	modechange	5	1	600000	0	0
+	modechange	2	3	40	0	0	
+							
+	modeskill							
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	2
+{	
+	modeimage	"mode_image200.tga"	0	60	0
+
+	gentotem	8001	1	0	900	1	10000	0	2
+	genmonster	6009	1	0	1000	0	0	0
+
+	immune	0
+
+	modechange	5	1	600000	0	0
+	modechange	3	2	40000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	3
+{	
+	gentotem	8001	1	0	900	1	10000	0	2		
+	genmonster	6008	1	0	1000	0	0	0
+
+	immune	0
+
+	modechange	5	1	600000	0	0
+	modechange	4	2	60000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	4
+{	
+	gentotem	8001	1	0	900	1	10000	0	2
+	genmonster	6009	1	0	1000	0	0	0
+
+	immune	0
+
+	modechange	5	1	600000	0	0
+	modechange	3	2	60000	0	0
+
+	useskill	11	0	100	0	0	0	0
+}
+
+Mode	5
+{
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	gentotem	8001	1	0	900	1	10000	0	2
+	genmonster	6009	1	0	1000	0	0	0
+
+	immune	0
+
+	applyaura	45110	0	10	0
+
+	useskill	11	0	100	0	0	0	0
+}

@@ -1,0 +1,17 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	0.7	"eff_em_2020_03.nif"
+	effect	1	0.0	0.0	0.0	1.0	"eff_m_1035_02.nif"
+	effect	2	0.0	0.0	0.0	1.0	"eff_1107_02.nif"
+	sound	21	25014
+}
+
+Activity
+{
+	animation	6
+	action	0	0	0	0	1	foot	0.0	0.0	0.0
+	soundplay	0	21	0
+	active	600
+}
+

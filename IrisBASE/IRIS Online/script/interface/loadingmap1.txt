@@ -1,0 +1,53 @@
+--===============--
+-- 로딩 윈도우 배경 --
+--===============--
+window "LoadingBack"
+{
+	pos 0	0
+	size 1024	768
+}
+
+--===============--
+-- 로딩 윈도우 --
+--===============--
+window "LoadingWindow"
+{
+	pos 0 530
+	size 1024 140
+}
+
+--======================--
+-- 아이리스 로고 이미지 --
+--======================--
+-- 소스에서 사용
+label "Loding_Logo"
+{
+	ii 5009
+	pos 0 0
+	size 301 68
+	texpos 1 877
+}
+
+--=======================--
+-- 주소 라벨 --
+-- 아래는 "LoadingBack" 윈도우의 자식들임!!! --
+--=======================--
+-- 소스에서 사용
+-- COPYRIGHT 텍스트
+label "Loding_COPYRIGHT"
+{
+	pos 0 30
+	size 0 0
+	text_align center
+	text 40000
+}
+
+-- 소스에서 사용
+-- 주소 텍스트
+label "Loding_Address"
+{
+	pos 0 15
+	size 0 0
+	text_align center
+	text 40001
+}

@@ -1,0 +1,365 @@
+--===============--
+-- 등급 표시 윈도우 --
+--===============--
+--window "SelectGradeWindow"
+--{	
+--	pos	9 10
+--	size	307 117
+--}
+
+-- /// 라벨 "등급 표시"
+--label "Select_Grade"
+--{
+--	ii	4999
+--	pos	0 0
+--	size	307 117
+--	texpos	0 0
+--}
+
+--===============--
+-- 캐릭터 선택 윈도우 --
+--===============--
+window "SelectWindow"
+{	
+	pos	68 646
+	size	858 50
+}
+
+-- /// 버튼 "좌측 캐릭터 선택"
+button "Select_LeftSelect"
+{
+	ii 5000
+	pos 0 4
+	size 42 42
+	texpos 619 387
+	
+	-- 버튼 그림 좌표 	
+	uppos 619 387
+	upoverpos 619 433
+	downpos 619 478 
+
+	downsound 3001
+}
+
+-- /// 버튼 "접속"
+button "Select_Connect"
+{
+	ii 5000
+	pos 45 9
+	size 119 35
+	texpos 590 123
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 590 123
+	upoverpos 590 163
+	downpos 590 203
+	enablepos 590 203
+
+	downsound 3001
+}
+
+-- /// 버튼 "캐릭터 생성"
+button "Select_Create"
+{
+	ii 5000
+	pos 45 9
+	size 119 35
+	texpos 466 123
+	
+	-- 버튼 그림 좌표 	
+	uppos 466 123
+	upoverpos 466 163
+	downpos 466 203
+
+	downsound 3001
+}
+
+-- /// 버튼 "우측 캐릭터 선택"
+button "Select_RightSelect"
+{
+	ii 5000
+	pos 167 4
+	size 42 42
+	texpos 664 387
+	
+	-- 버튼 그림 좌표 	
+	uppos 664 387
+	upoverpos 664 433
+	downpos 664 478
+
+	downsound 3001
+}
+
+--===============--
+-- 캐릭터 정보 윈도우 --
+--===============--
+window "SelectInfoWindow"
+{	
+	pos	713 55
+	size	275 730
+}
+
+label "SelectInfo_Back"
+{
+	ii	5000
+	pos	0 0
+	size	257 177
+	texpos	204 422
+}
+
+-- /// 캐릭터 이름
+label "SelectInfo_Name"
+{
+	pos 100 71
+	size 121 15
+	text_align center
+}
+
+-- /// 캐릭터 레벨
+label "SelectInfo_Level"
+{
+	pos 100 94
+	size 121 15
+	text_align center
+}
+
+-- /// 캐릭터 직업 정보
+label "SelectInfo_Job"
+{
+	pos 100 117
+	size 121 15
+	text_align center
+}
+
+-- /// 캐릭터 접속 위치
+label "SelectInfo_Map"
+{
+	pos 100 140
+	size 121 15
+	text_align center
+}
+
+
+--===============--
+-- 캐릭터 선택버튼 윈도우 --
+--===============--
+window "SelectButtonWindow"
+{	
+	pos	565 707
+	size	500 35
+}
+
+-- /// 버튼 "로그아웃"
+button "SelectButton_Begin"
+{
+	ii 5000
+	pos 142 0
+	size 119 35
+	texpos 591 243
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 591 243
+	upoverpos 591 283
+	downpos 591 323
+	enablepos 591 323
+
+	downsound 3001
+}
+
+-- /// 버튼 "캐릭터 삭제"
+button "SelectButton_Delete"
+{
+	ii 5000
+	pos 0 0
+	size 119 35
+	texpos 467 243
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 467 243
+	upoverpos 467 283
+	downpos 467 323
+	enablepos 467 323
+
+	downsound 3001
+	
+}
+
+-- /// 버튼 "캐릭터 삭제 취소"
+button "SelectButton_DeleteCancel"
+{
+	ii 5000
+	pos 0 0
+	size 119 35
+	texpos 2 922
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 922
+	upoverpos 123 922
+	downpos 243 922
+	enablepos 243 922
+
+	downsound 3001
+	
+}
+
+-- /// 버튼 "게임종료"
+button "SelectButton_Exit"
+{
+	ii 5000
+	pos 284 0
+	size 119 35
+	texpos 2 880
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 880
+	upoverpos 123 880
+	downpos 244 880
+	enablepos 244 880
+
+	downsound 3001
+}
+
+--===============--
+-- 채널선택 윈도우 --
+--===============--
+window "ChannelWindow"
+{	
+	ii 5000
+	pos 412 247
+	size 200 251
+	texpos 2 306
+}
+
+-- /// 버튼 "접속"  
+button "Channel_Connect"
+{
+	ii 5000
+	pos 28 222
+	size 72 24
+	texpos 467 442
+	
+	-- 버튼 그림 좌표 	
+	uppos 467 442
+	upoverpos 467 469
+	downpos 467 496
+
+	downsound 3001
+}
+
+-- /// 버튼 "취소"  
+button "Channel_Cancel"
+{
+	ii 5000
+	pos 103 222
+	size 72 24
+	texpos 542 442
+	
+	-- 버튼 그림 좌표 	
+	uppos 542 442
+	upoverpos 542 469
+	downpos 542 496
+
+	downsound 3001
+}
+-- /// 채널 리스트  
+listbox "Channel_ListBox"
+{
+	pos 20 57
+	size 168 138
+	row_height 23			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 20			-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5000			
+	child_size 161 23			
+	child_texpos 3 560
+
+	scrollskin "ListScroll"
+	selectwidth 161
+	
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--      x,  w,   align
+	
+	columnX 6 	101	 left
+	columnX 107	48	 center
+}
+
+-- 소스에서 사용하는 스킨
+-- 페이지버튼의 정렬을 위한 영역
+label "Channel_ButtonRect"
+{
+	pos 0 200
+	size 200 21
+}
+
+-- 페이지 버튼
+radiobutton "Channel_Page1"
+{
+	ii 5000
+	pos 44 201
+	size 21 21
+	texpos 71 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 71 585
+	downpos 71 585
+}
+
+radiobutton "Channel_Page2"
+{
+	ii 5000
+	pos 67 201
+	size 21 21
+	texpos 94 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 94 585
+	downpos 94 585
+}
+
+radiobutton "Channel_Page3"
+{
+	ii 5000
+	pos 90 201
+	size 21 21
+	texpos 117 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 117 585
+	downpos 117 585
+}
+
+radiobutton "Channel_Page4"
+{
+	ii 5000
+	pos 113 201
+	size 21 21
+	texpos 140 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 140 585
+	downpos 140 585
+}
+
+radiobutton "Channel_Page5"
+{
+	ii 5000
+	pos 136 201
+	size 21 21
+	texpos 163 585
+	group 0
+	
+	-- 버튼 그림 좌표 	
+	uppos 163 585
+	downpos 163 585
+}

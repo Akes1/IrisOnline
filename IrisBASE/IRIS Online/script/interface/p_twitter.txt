@@ -1,0 +1,95 @@
+--=================--
+--트위터 윈도우 --
+--=================--
+
+window_prop "P_TwitterWindow"
+{
+	skinname "TwitterWindow"
+}
+
+button_prop "P_Twitter_Insert_Button"
+{
+	skinname "Twitter_Insert_Button"
+	parent	"P_TwitterWindow"
+}
+
+button_prop "P_Twitter_Update_Button"
+{
+	skinname "Twitter_Update_Button"
+	parent	"P_TwitterWindow"
+}
+
+button_prop "P_Twitter_Close"
+{
+	skinname "Twitter_Close"
+	parent	"P_TwitterWindow"
+}
+
+label_prop "P_Twitter_State_Label"
+{
+	skinname "Twitter_State_Label"
+	parent "P_TwitterWindow"
+}
+
+listbox_prop "P_Twitter_SearchItemList"
+{
+	skinname "Twitter_SearchItemList"
+	parent	"P_TwitterWindow"
+}
+
+multieditbox_prop	"P_Twitter_InsertWord"
+{
+	skinname "Twitter_InsertWord"
+	parent	"P_TwitterWindow"
+}
+
+--=================--
+-- 트위터 로그인 윈도우 --
+--=================--
+window_prop "P_TwitterLoginWindow"
+{
+	skinname "TwitterLoginWindow"
+	parent	"P_TwitterWindow"
+}
+
+-- /// 계정 저장 여부 체크 박스(추가)
+checkbox_prop "P_TwitterLogin_IDSaveCheck"
+{
+	skinname "TwitterLogin_IDSaveCheck"
+	parent "P_TwitterLoginWindow"
+}
+
+-- /// 아이디 에디트  
+editbox_prop "P_TwitterLogin_IDEdit"
+{
+	skinname "TwitterLogin_IDEdit"
+	parent "P_TwitterLoginWindow"
+}
+
+-- /// 비밀번호 에디트  
+editbox_prop "P_TwitterLogin_PassEdit"
+{
+	skinname "TwitterLogin_PassEdit"
+	parent "P_TwitterLoginWindow"
+}
+
+-- /// 트위터 로그인 접속/저장 버튼
+button_prop "P_Twitter_Connect_Button"
+{
+	skinname "Twitter_Connect_Button"
+	parent "P_TwitterLoginWindow"
+}
+
+-- /// 트위터 로그인 취소 버튼
+button_prop "P_Twitter_LoginCancel_Button"
+{
+	skinname "Twitter_LoginCancel_Button"
+	parent "P_TwitterLoginWindow"
+}
+
+-- /// 트위터 계정 초기화 버튼
+button_prop "P_Twitter_AccountRefresh_Button"
+{
+	skinname "Twitter_AccountRefresh_Button"
+	parent "P_TwitterLoginWindow"
+}

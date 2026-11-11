@@ -1,0 +1,141 @@
+
+
+--====================--
+-- 금액 윈도우 	--
+--====================--
+window "Money_Window"
+{
+	ii 5005
+	pos 417 310
+	size 190 128
+	texpos 603 500
+	
+	captionXY 0 0
+	captionWH 190 128
+}
+
+button "Money_Close"
+{
+	ii 5002
+	pos 162 8
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+label "Money_Caption"
+{
+	pos 0 0
+	size 0 0		
+	text_align center	
+}
+
+editbox "Money_Number"
+{
+	pos 19 56
+	size  85 13
+
+	editpos 0 0
+	editmaxlen 13
+	text_align right
+	editkind 2
+
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+button "Money_Up"
+{
+	ii 5002
+	pos 112 45
+	size 18 18
+	texpos 21 116
+
+	uppos 21 116
+	upoverpos 41 116
+	downpos 61 116
+}
+
+button "Money_Down"
+{
+	ii 5002
+	pos 112 63
+	size 18 18
+	texpos 21 137
+
+	uppos 21 137
+	upoverpos 41 137
+	downpos 61 137	
+}
+
+button "Money_Max"
+{
+	ii 5005
+	pos 135 52
+	size 40 22
+	texpos 474 507
+
+	uppos 474 507
+	upoverpos 516 507
+	downpos 558 507
+}
+
+-- 확인
+button "Money_Ok"
+{
+	ii 5005
+	pos 22 96
+	size 70 22
+	texpos 427 638
+
+	uppos 427 638
+	upoverpos 427 664
+	downpos 427 690
+}
+
+-- 취소
+button "Money_Cancel"
+{
+	ii 5005
+	pos 97 96
+	size 70 22
+	texpos 501 638
+
+	uppos 501 638
+	upoverpos 501 664
+	downpos 501 690
+}
+
+-- 변경
+button "Money_Modify"
+{
+	ii 5005
+	pos 22 96
+	size 70 22
+	texpos 427 716
+
+	uppos 427 716
+	upoverpos 427 742
+	downpos 427 768
+}
+
+-- 삭제
+button "Money_Delete"
+{
+	ii 5005
+	pos 97 96
+	size 70 22
+	texpos 501 716
+
+	uppos 501 716
+	upoverpos 501 742
+	downpos 501 768
+}

@@ -1,0 +1,84 @@
+--===============--
+-- 던전입장 윈도우 --
+--===============--
+window_prop "P_ThemeEnterWindow"
+{
+	skinname "ThemeEnterWindow"
+}
+
+-- 던전 참여 인원 정보 리스트
+listbox_prop "P_ThemeEnter_MemberList"
+{
+	skinname "ThemeEnter_MemberList"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- 던전 이름
+label_prop "P_ThemeEnter_ThemeName"
+{
+	skinname "ThemeEnter_ThemeName"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- 상태
+label_prop "P_ThemeEnter_State"
+{
+	skinname "ThemeEnter_State"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- 고유번호
+label_prop "P_ThemeEnter_ThemeNumber"
+{
+	skinname "ThemeEnter_ThemeNumber"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- 모드선택
+combobox_prop "P_ThemeEnter_Mode"
+{
+	skinname "ThemeEnter_Mode"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- /// 버튼 "던전 입장"  
+button_prop "P_ThemeEnter_OK"
+{
+	skinname "ThemeEnter_OK"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- /// 버튼 닫기 "X"  
+button_prop "P_ThemeEnter_Close"
+{
+	skinname "ThemeEnter_Close"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- /// 레벨
+label_prop "P_ThemeEnter_Level"
+{
+	skinname "ThemeEnter_Level"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- /// 최대 인원수
+label_prop "P_ThemeEnter_People"
+{
+	skinname "ThemeEnter_People"
+	parent   "P_ThemeEnterWindow"
+}
+
+-- /// 초기화 시간
+--label_prop "P_ThemeEnter_Refresh"
+--{
+--	skinname "ThemeEnter_Refresh"
+--	parent   "P_ThemeEnterWindow"
+--}
+
+-- /// 입장 아이템
+label_prop "P_ThemeEnter_EnterItem"
+{
+	skinname "ThemeEnter_EnterItem"
+	parent   "P_ThemeEnterWindow"
+}

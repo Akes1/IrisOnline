@@ -1,0 +1,51 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(È¿°ú)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+--½ºÅæ°ñ·½
+--¸ðµå½ºÅ³1
+
+Header
+{
+	type	0
+	
+	effect	0	0.0	0.0	0.0	1.7	"eff_10402_01.nif"
+	
+	sound	21	8513
+}
+
+Activity
+{
+	animation	9
+	
+	action	270	0	0	0	1	foot	0.0	-150.0	150.0
+	
+	soundplay	0	21	0
+	
+	active	300
+
+}
+
+Apply
+{	
+	damage	0	100
+}

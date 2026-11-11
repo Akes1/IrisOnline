@@ -1,0 +1,2912 @@
+--[붉은 다리 거미]현상수배지Ⅰ
+quest 8000
+{
+	type 3
+	title	8000
+ 
+	description	8000001 1
+ 
+	level	11
+ 
+	repeat	QUEST_REPEAT
+ 
+
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 9 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	3	360	398	3  	1
+
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	9	25
+	}
+ 
+	default
+	{
+		exp	784
+		sxp	1176
+		item	809002	1
+	}
+}
+ 
+--[털 거미]현상수배지Ⅰ
+quest 8001
+{
+	type 3
+	title	8001
+ 
+	description	8001001 1
+ 
+	level	12
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 10 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	3	445	445	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	10	25
+	}
+ 
+	default
+	{
+		exp	865
+		sxp	1298
+		item	809002	1
+	}
+}
+ 
+--[설인]현상수배지Ⅰ
+quest 8002
+{
+	type 3
+	title	8002
+ 
+	description	8002001 1
+ 
+	level	14
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 12 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	3	310	200	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	11	25
+	}
+ 
+	default
+	{
+		exp	1209
+		sxp	1814
+		item	809002	1
+	}
+}
+ 
+--[큰 눈 올빼미]현상수배지Ⅰ
+quest 8003
+{
+	type 3
+	title	8003
+ 
+	description	8003001 1
+ 
+	level	15
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 13 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	3	200	180	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	12	25
+	}
+ 
+	default
+	{
+		exp	1415
+		sxp	2122
+		item	809002	1
+	}
+}
+ 
+--[갈색털 설인]현상수배지Ⅰ
+quest 8004
+{
+	type 3
+	title	8004
+ 
+	description	8004001 1
+ 
+	level	16
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 14 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	3	137	76	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	13	25
+	}
+ 
+	default
+	{
+		exp	1750
+		sxp	2625
+		item	809002	1
+	}
+}
+ 
+--[성난 올빼미]현상수배지Ⅰ
+quest 8005
+{
+	type 3
+	title	8005
+ 
+	description	8005001 1
+ 
+	level	17
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 15 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	3	398	75	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	14	25
+	}
+ 
+	default
+	{
+		exp	2134
+		sxp	3201
+		item	809002	1
+	}
+}
+ 
+--[얼음 병사]현상수배지Ⅰ
+quest 8006
+{
+	type 3
+	title	8006
+ 
+	description	8006001 1
+ 
+	level	19
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 17 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	9	233	380	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	51	25
+	}
+ 
+	default
+	{
+		exp	3019
+		sxp	4529
+		item	809002	1
+	}
+}
+ 
+--[스톤 크랩]현상수배지Ⅰ
+quest 8007
+{
+	type 3
+	title	8007
+ 
+	description	8007001 1
+ 
+	level	20
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 18 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	9	173	151	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	52	30
+	}
+ 
+	default
+	{
+		exp	3925
+		sxp	5887
+		item	809003	1
+	}
+}
+ 
+--[트리셀로]현상수배지Ⅰ
+quest 8008
+{
+	type 3
+	title	8008
+ 
+	description	8008001 1
+ 
+	level	22
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	9	359	214	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	54	30
+	}
+ 
+	default
+	{
+		exp	5627
+		sxp	8440
+		item	809003	1
+	}
+}
+ 
+--[리틀 빅풋]현상수배지Ⅰ
+quest 8009
+{
+	type 3
+	title	8009
+ 
+	description	8009001 1
+ 
+	level	23
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 21 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	9	438	123	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	55	30
+	}
+ 
+	default
+	{
+		exp	6105
+		sxp	9158
+		item	809003	1
+	}
+}
+ 
+--[플레이그 토우툴]현상수배지Ⅰ
+quest 8010
+{
+	type 3
+	title	8010
+ 
+	description	8010001 1
+ 
+	level	24
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 22 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	9	296	85	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	56	30
+	}
+ 
+	default
+	{
+		exp	7540
+		sxp	11310
+		item	809003	1
+	}
+}
+ 
+--[푸파푸파]현상수배지Ⅰ
+quest 8011
+{
+	type 3
+	title	8011
+ 
+	description	8011001 1
+ 
+	level	26
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 24 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	4	112	233	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	18	30
+	}
+ 
+	default
+	{
+		exp	11361
+		sxp	17042
+		item	809003	1
+	}
+}
+ 
+--[쿨모스]현상수배지Ⅰ
+quest 8012
+{
+	type 3
+	title	8012
+ 
+	description	8012001 1
+ 
+	level	27
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 25 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	4	140	162	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	20	30
+	}
+ 
+	default
+	{
+		exp	11686
+		sxp	17529
+		item	809003	1
+	}
+}
+ 
+--[빅풋]현상수배지Ⅰ
+quest 8013
+{
+	type 3
+	title	8013
+ 
+	description	8013001 1
+ 
+	level	29
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 27 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	4	161	78	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	21	30
+	}
+ 
+	default
+	{
+		exp	15858
+		sxp	23787
+		item	809003	1
+	}
+}
+ 
+--[동굴 도마뱀]현상수배지Ⅰ
+quest 8014
+{
+	type 3
+	title	8014
+ 
+	description	8014001 1
+ 
+	level	30
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 28 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	5	135	336	4  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	23	35
+	}
+ 
+	default
+	{
+		exp	19161
+		sxp	28742
+		item	809004	1
+	}
+}
+ 
+--[호어족 사냥개]현상수배지Ⅰ
+quest 8015
+{
+	type 3
+	title	8015
+ 
+	description	8015001 1
+ 
+	level	31
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 29 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	5	367	174	5  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	24	35
+	}
+ 
+	default
+	{
+		exp	27401
+		sxp	41102
+		item	809004	1
+	}
+}
+ 
+--[호어족 일꾼]현상수배지Ⅰ
+quest 8016
+{
+	type 3
+	title	8016
+ 
+	description	8016001 1
+ 
+	level	32
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	5	367	174	5  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	25	35
+	}
+ 
+	default
+	{
+		exp	38636
+		sxp	57954
+		item	809004	1
+	}
+}
+ 
+--[블러드 좀비]현상수배지Ⅰ
+quest 8017
+{
+	type 3
+	title	8017
+ 
+	description	8017001 1
+ 
+	level	33
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 31 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	5	298	134	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	27	35
+	}
+ 
+	default
+	{
+		exp	53704
+		sxp	80556
+		item	809004	1
+	}
+}
+ 
+--[매드 머툴]현상수배지Ⅰ
+quest 8018
+{
+	type 3
+	title	8018
+ 
+	description	8018001 1
+ 
+	level	34
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 32 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	13	314	337	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	79	35
+	}
+ 
+	default
+	{
+		exp	73574
+		sxp	110362
+		item	809004	1
+	}
+}
+ 
+--[글루미 토우툴]현상수배지Ⅰ
+quest 8019
+{
+	type 3
+	title	8019
+ 
+	description	8019001 1
+ 
+	level	35
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 33 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	13	402	198	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	80	35
+	}
+ 
+	default
+	{
+		exp	89393
+		sxp	134089
+		item	809004	1
+	}
+}
+ 
+--[듀로 트리칸]현상수배지Ⅰ
+quest 8020
+{
+	type 3
+	title	8020
+ 
+	description	8020001 1
+ 
+	level	36
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 34 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	13	312	131	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	81	35
+	}
+ 
+	default
+	{
+		exp	116211
+		sxp	174316
+		item	809004	1
+	}
+}
+ 
+--[동굴 빅풋]현상수배지Ⅰ
+quest 8021
+{
+	type 3
+	title	8021
+ 
+	description	8021001 1
+ 
+	level	37
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 35 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	13	123	168	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	82	35
+	}
+ 
+	default
+	{
+		exp	145264
+		sxp	217896
+		item	809004	1
+	}
+}
+ 
+--[니레니아]현상수배지Ⅰ
+quest 8022
+{
+	type 3
+	title	8022
+ 
+	description	8022001 1
+ 
+	level	38
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 36 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	6	368	141	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	31	35
+	}
+ 
+	default
+	{
+		exp	174316
+		sxp	261475
+		item	809004	1
+	}
+}
+ 
+--[구울]현상수배지Ⅰ
+quest 8023
+{
+	type 3
+	title	8023
+ 
+	description	8023001 1
+ 
+	level	39
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 37 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	6	64	139	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	29	35
+	}
+ 
+	default
+	{
+		exp	200464
+		sxp	300696
+		item	809004	1
+	}
+}
+ 
+--[굶주린 호어족 사냥개]현상수배지Ⅰ
+quest 8024
+{
+	type 3
+	title	8024
+ 
+	description	8024001 1
+ 
+	level	40
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 38 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	6	418	309	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	41	40
+	}
+ 
+	default
+	{
+		exp	199573
+		sxp	299360
+		item	809005	1
+	}
+}
+ 
+--[모래 거미]현상수배지Ⅰ
+quest 8025
+{
+	type 3
+	title	8025
+ 
+	description	8025001 1
+ 
+	level	41
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 39 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	11	224	401	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	64	40
+	}
+ 
+	default
+	{
+		exp	222524
+		sxp	333786
+		item	809005	1
+	}
+}
+ 
+--[배런 트리키]현상수배지Ⅰ
+quest 8026
+{
+	type 3
+	title	8026
+ 
+	description	8026001 1
+ 
+	level	42
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	11	102	248	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	65	40
+	}
+ 
+	default
+	{
+		exp	247669
+		sxp	371504
+		item	809005	1
+	}
+}
+ 
+--[사막 도마뱀]현상수배지Ⅰ
+quest 8027
+{
+	type 3
+	title	8027
+ 
+	description	8027001 1
+ 
+	level	44
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 42 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	7	118	382	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	57	40
+	}
+ 
+	default
+	{
+		exp	305153
+		sxp	457730
+		item	809005	1
+	}
+}
+ 
+--[실바람 피니]현상수배지Ⅰ
+quest 8028
+{
+	type 3
+	title	8028
+ 
+	description	8028001 1
+ 
+	level	45
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 43 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	11	324	288	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	68	40
+	}
+ 
+	default
+	{
+		exp	253353
+		sxp	380030
+		item	809005	1
+	}
+}
+ 
+--[로슈]현상수배지Ⅰ
+quest 8029
+{
+	type 3
+	title	8029
+ 
+	description	8029001 1
+ 
+	level	46
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 44 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	7	378	378	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	59	40
+	}
+ 
+	default
+	{
+		exp	280209
+		sxp	420313
+		item	809005	1
+	}
+}
+ 
+--[녹슨 고철 병사]현상수배지Ⅰ
+quest 8030
+{
+	type 3
+	title	8030
+ 
+	description	8030001 1
+ 
+	level	48
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 46 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	7	75	100	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	63	40
+	}
+ 
+	default
+	{
+		exp	341832
+		sxp	512749
+		item	809005	1
+	}
+}
+ 
+--[호어족 주술사]현상수배지Ⅰ
+quest 8031
+{
+	type 3
+	title	8031
+ 
+	description	8031001 1
+ 
+	level	50
+ 
+	repeat	QUEST_REPEAT
+ 
+ 
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 48 100 )
+	trigger TE_DAYEVENT (SUN MON TUE WED THU FRI SAT)
+	info
+	{
+		map	7	368	119	3  	1
+ 
+	}
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		hunt 	61	40
+	}
+ 
+	default
+	{
+		exp	346249
+		sxp	519374
+		item	809005	1
+	}
+}
+ 
+
+ 
+--[일일]활기찬 월요일
+quest 8800
+{
+	type 3
+	title	8800
+ 
+	description	8800001 1
+ 
+	level	1
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	7
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 1 9 )
+	trigger TE_DAYEVENT ( MON )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 7
+	}
+ 
+	default
+	{
+		exp	10
+		sxp	14
+		buff	90008
+	}
+}
+ 
+--[일일]유쾌한 화요일
+quest 8801
+{
+	type 3
+	title	8801
+ 
+	description	8801001 1
+ 
+	level	1
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	6
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 1 9 )
+	trigger TE_DAYEVENT ( TUE )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 6
+	}
+ 
+	default
+	{
+		exp	10
+		sxp	14
+		buff	90009
+	}
+}
+ 
+--[일일]신비한 수요일
+quest 8802
+{
+	type 3
+	title	8802
+ 
+	description	8802001 1
+ 
+	level	1
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	75
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 1 9 )
+	trigger TE_DAYEVENT ( WED )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 75
+	}
+ 
+	default
+	{
+		exp	10
+		sxp	14
+		buff	90010
+	}
+}
+ 
+--[일일]평온한 목요일
+quest 8803
+{
+	type 3
+	title	8803
+ 
+	description	8803001 1
+ 
+	level	1
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	64
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 1 9 )
+	trigger TE_DAYEVENT ( THU )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 64
+	}
+ 
+	default
+	{
+		exp	10
+		sxp	14
+		buff	90011
+	}
+}
+ 
+--[일일]불타는 금요일
+quest 8804
+{
+	type 3
+	title	8804
+ 
+	description	8804001 1
+ 
+	level	1
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	5
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 1 9 )
+	trigger TE_DAYEVENT ( FRI )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 5
+	}
+ 
+	default
+	{
+		exp	10
+		sxp	14
+		buff	90012
+	}
+}
+ 
+--[일일]즐거운 토요일
+quest 8805
+{
+	type 3
+	title	8805
+ 
+	description	8805001 1
+ 
+	level	1
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	48
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 1 9 )
+	trigger TE_DAYEVENT ( SAT )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 48
+	}
+ 
+	default
+	{
+		exp	10
+		sxp	14
+		buff	90013
+	}
+}
+ 
+--[일일]행복한 일요일
+quest 8806
+{
+	type 3
+	title	8806
+ 
+	description	8806001 1
+ 
+	level	1
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 1 9 )
+	trigger TE_DAYEVENT ( SUN )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 88
+	}
+ 
+	default
+	{
+		exp	10
+		sxp	14
+		buff	90014
+	}
+}
+ 
+--[일일]활기찬 월요일
+quest 8807
+{
+	type 3
+	title	8807
+ 
+	description	8807001 1
+ 
+	level	10
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	7
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 10 19 )
+	trigger TE_DAYEVENT ( MON )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 7
+	}
+ 
+	default
+	{
+		exp	627
+		sxp	941
+		buff	90015
+	}
+}
+ 
+--[일일]유쾌한 화요일
+quest 8808
+{
+	type 3
+	title	8808
+ 
+	description	8808001 1
+ 
+	level	10
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	6
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 10 19 )
+	trigger TE_DAYEVENT ( TUE )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 6
+	}
+ 
+	default
+	{
+		exp	627
+		sxp	941
+		buff	90016
+	}
+}
+ 
+--[일일]신비한 수요일
+quest 8809
+{
+	type 3
+	title	8809
+ 
+	description	8809001 1
+ 
+	level	10
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	75
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 10 19 )
+	trigger TE_DAYEVENT ( WED )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 75
+	}
+ 
+	default
+	{
+		exp	627
+		sxp	941
+		buff	90017
+	}
+}
+ 
+--[일일]평온한 목요일
+quest 8810
+{
+	type 3
+	title	8810
+ 
+	description	8810001 1
+ 
+	level	10
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	64
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 10 19 )
+	trigger TE_DAYEVENT ( THU )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 64
+	}
+ 
+	default
+	{
+		exp	627
+		sxp	941
+		buff	90018
+	}
+}
+ 
+--[일일]불타는 금요일
+quest 8811
+{
+	type 3
+	title	8811
+ 
+	description	8811001 1
+ 
+	level	10
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	5
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 10 19 )
+	trigger TE_DAYEVENT ( FRI )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 5
+	}
+ 
+	default
+	{
+		exp	627
+		sxp	941
+		buff	90019
+	}
+}
+ 
+--[일일]즐거운 토요일
+quest 8812
+{
+	type 3
+	title	8812
+ 
+	description	8812001 1
+ 
+	level	10
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	48
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 10 19 )
+	trigger TE_DAYEVENT ( SAT )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 48
+	}
+ 
+	default
+	{
+		exp	627
+		sxp	941
+		buff	90020
+	}
+}
+ 
+--[일일]행복한 일요일
+quest 8813
+{
+	type 3
+	title	8813
+ 
+	description	8813001 1
+ 
+	level	10
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 10 19 )
+	trigger TE_DAYEVENT ( SUN )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 88
+	}
+ 
+	default
+	{
+		exp	627
+		sxp	941
+		buff	90021
+	}
+}
+ 
+--[일일]활기찬 월요일
+quest 8814
+{
+	type 3
+	title	8814
+ 
+	description	8814001 1
+ 
+	level	20
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	7
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 29 )
+	trigger TE_DAYEVENT ( MON )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 7
+	}
+ 
+	default
+	{
+		exp	3573
+		sxp	5359
+		buff	90022
+		item	873081	1
+	}
+}
+ 
+--[일일]유쾌한 화요일
+quest 8815
+{
+	type 3
+	title	8815
+ 
+	description	8815001 1
+ 
+	level	20
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	6
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 29 )
+	trigger TE_DAYEVENT ( TUE )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 6
+	}
+ 
+	default
+	{
+		exp	3573
+		sxp	5359
+		buff	90023
+		item	873081	1
+	}
+}
+ 
+--[일일]신비한 수요일
+quest 8816
+{
+	type 3
+	title	8816
+ 
+	description	8816001 1
+ 
+	level	20
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	75
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 29 )
+	trigger TE_DAYEVENT ( WED )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 75
+	}
+ 
+	default
+	{
+		exp	3573
+		sxp	5359
+		buff	90024
+		item	873081	1
+	}
+}
+ 
+--[일일]평온한 목요일
+quest 8817
+{
+	type 3
+	title	8817
+ 
+	description	8817001 1
+ 
+	level	20
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	64
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 29 )
+	trigger TE_DAYEVENT ( THU )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 64
+	}
+ 
+	default
+	{
+		exp	3573
+		sxp	5359
+		buff	90025
+		item	873081	1
+	}
+}
+ 
+--[일일]불타는 금요일
+quest 8818
+{
+	type 3
+	title	8818
+ 
+	description	8818001 1
+ 
+	level	20
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	5
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 29 )
+	trigger TE_DAYEVENT ( FRI )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 5
+	}
+ 
+	default
+	{
+		exp	3573
+		sxp	5359
+		buff	90026
+		item	873081	1
+	}
+}
+ 
+--[일일]즐거운 토요일
+quest 8819
+{
+	type 3
+	title	8819
+ 
+	description	8819001 1
+ 
+	level	20
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	48
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 29 )
+	trigger TE_DAYEVENT ( SAT )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 48
+	}
+ 
+	default
+	{
+		exp	3573
+		sxp	5359
+		buff	90027
+		item	873081	1
+	}
+}
+ 
+--[일일]행복한 일요일
+quest 8820
+{
+	type 3
+	title	8820
+ 
+	description	8820001 1
+ 
+	level	20
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 29 )
+	trigger TE_DAYEVENT ( SUN )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 88
+	}
+ 
+	default
+	{
+		exp	3573
+		sxp	5359
+		buff	90028
+		item	873081	1
+	}
+}
+ 
+--[일일]활기찬 월요일
+quest 8821
+{
+	type 3
+	title	8821
+ 
+	description	8821001 1
+ 
+	level	30
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	7
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 39 )
+	trigger TE_DAYEVENT ( MON )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 7
+	}
+ 
+	default
+	{
+		exp	21921
+		sxp	32882
+		buff	90029
+		item	873082	1
+	}
+}
+ 
+--[일일]유쾌한 화요일
+quest 8822
+{
+	type 3
+	title	8822
+ 
+	description	8822001 1
+ 
+	level	30
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	6
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 39 )
+	trigger TE_DAYEVENT ( TUE )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 6
+	}
+ 
+	default
+	{
+		exp	21921
+		sxp	32882
+		buff	90030
+		item	873082	1
+	}
+}
+ 
+--[일일]신비한 수요일
+quest 8823
+{
+	type 3
+	title	8823
+ 
+	description	8823001 1
+ 
+	level	30
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	75
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 39 )
+	trigger TE_DAYEVENT ( WED )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 75
+	}
+ 
+	default
+	{
+		exp	21921
+		sxp	32882
+		buff	90031
+		item	873082	1
+	}
+}
+ 
+--[일일]평온한 목요일
+quest 8824
+{
+	type 3
+	title	8824
+ 
+	description	8824001 1
+ 
+	level	30
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	64
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 39 )
+	trigger TE_DAYEVENT ( THU )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 64
+	}
+ 
+	default
+	{
+		exp	21921
+		sxp	32882
+		buff	90032
+		item	873082	1
+	}
+}
+ 
+--[일일]불타는 금요일
+quest 8825
+{
+	type 3
+	title	8825
+ 
+	description	8825001 1
+ 
+	level	30
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	5
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 39 )
+	trigger TE_DAYEVENT ( FRI )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 5
+	}
+ 
+	default
+	{
+		exp	21921
+		sxp	32882
+		buff	90033
+		item	873082	1
+	}
+}
+ 
+--[일일]즐거운 토요일
+quest 8826
+{
+	type 3
+	title	8826
+ 
+	description	8826001 1
+ 
+	level	30
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	48
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 39 )
+	trigger TE_DAYEVENT ( SAT )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 48
+	}
+ 
+	default
+	{
+		exp	21921
+		sxp	32882
+		buff	90034
+		item	873082	1
+	}
+}
+ 
+--[일일]행복한 일요일
+quest 8827
+{
+	type 3
+	title	8827
+ 
+	description	8827001 1
+ 
+	level	30
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 39 )
+	trigger TE_DAYEVENT ( SUN )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 88
+	}
+ 
+	default
+	{
+		exp	21921
+		sxp	32882
+		buff	90035
+		item	873082	1
+	}
+}
+ 
+--[일일]활기찬 월요일
+quest 8828
+{
+	type 3
+	title	8828
+ 
+	description	8828001 1
+ 
+	level	40
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	7
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 55 )
+	trigger TE_DAYEVENT ( MON )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 7
+	}
+ 
+	default
+	{
+		exp	178019
+		sxp	267029
+		buff	90036
+		item	873083	1
+	}
+}
+ 
+--[일일]유쾌한 화요일
+quest 8829
+{
+	type 3
+	title	8829
+ 
+	description	8829001 1
+ 
+	level	40
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	6
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 55 )
+	trigger TE_DAYEVENT ( TUE )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 6
+	}
+ 
+	default
+	{
+		exp	178019
+		sxp	267029
+		buff	90037
+		item	873083	1
+	}
+}
+ 
+--[일일]신비한 수요일
+quest 8830
+{
+	type 3
+	title	8830
+ 
+	description	8830001 1
+ 
+	level	40
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	75
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 55 )
+	trigger TE_DAYEVENT ( WED )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 75
+	}
+ 
+	default
+	{
+		exp	178019
+		sxp	267029
+		buff	90038
+		item	873083	1
+	}
+}
+ 
+--[일일]평온한 목요일
+quest 8831
+{
+	type 3
+	title	8831
+ 
+	description	8831001 1
+ 
+	level	40
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	64
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 55 )
+	trigger TE_DAYEVENT ( THU )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 64
+	}
+ 
+	default
+	{
+		exp	178019
+		sxp	267029
+		buff	90039
+		item	873083	1
+	}
+}
+ 
+--[일일]불타는 금요일
+quest 8832
+{
+	type 3
+	title	8832
+ 
+	description	8832001 1
+ 
+	level	40
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	5
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 55 )
+	trigger TE_DAYEVENT ( FRI )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 5
+	}
+ 
+	default
+	{
+		exp	178019
+		sxp	267029
+		buff	90040
+		item	873083	1
+	}
+}
+ 
+--[일일]즐거운 토요일
+quest 8833
+{
+	type 3
+	title	8833
+ 
+	description	8833001 1
+ 
+	level	40
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	48
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 55 )
+	trigger TE_DAYEVENT ( SAT )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 48
+	}
+ 
+	default
+	{
+		exp	178019
+		sxp	267029
+		buff	90041
+		item	873083	1
+	}
+}
+ 
+--[일일]행복한 일요일
+quest 8834
+{
+	type 3
+	title	8834
+ 
+	description	8834001 1
+ 
+	level	40
+ 
+	repeat	QUEST_REPEAT
+ 
+	givenpc	1
+	takenpc	88
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 55 )
+	trigger TE_DAYEVENT ( SUN )
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		talknpc 88
+	}
+ 
+	default
+	{
+		exp	178019
+		sxp	267029
+		buff	90042
+		item	873083	1
+	}
+}
+ 
+
+
+--녹슨 훈장의 의미
+quest 8900
+{
+	type 0
+	title	8900
+ 
+	description	8900001 1
+ 
+	level	11
+ 
+	repeat	QUEST_CHALLENGE
+ 
+	givenpc	1
+	takenpc	1
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 11 100 )
+
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		collect	809002	100
+	}
+ 
+	default
+	{
+		exp	3136
+		sxp	4704
+		money	1550
+		skillpoint	1
+	}
+}
+ 
+--일반 훈장의 의미
+quest 8901
+{
+	type 0
+	title	8901
+ 
+	description	8901001 1
+ 
+	level	20
+ 
+	repeat	QUEST_CHALLENGE
+ 
+	givenpc	1
+	takenpc	1
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 20 100 )
+ 
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		collect	809003	100
+	}
+ 
+	default
+	{
+		exp	17864
+		sxp	26796
+		money	3650
+		skillpoint	1
+	}
+}
+ 
+--은빛 훈장의 의미
+quest 8902
+{
+	type 0
+	title	8902
+ 
+	description	8902001 1
+ 
+	level	30
+ 
+	repeat	QUEST_CHALLENGE
+ 
+	givenpc	1
+	takenpc	1
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 30 100 )
+
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		collect	809004	150
+	}
+ 
+	default
+	{
+		exp	109605
+		sxp	164408
+		money	6250
+		skillpoint	1
+	}
+}
+ 
+--금빛 훈장의 의미
+quest 8903
+{
+	type 0
+	title	8903
+ 
+	description	8903001 1
+ 
+	level	40
+ 
+	repeat	QUEST_CHALLENGE
+ 
+	givenpc	1
+	takenpc	1
+	takemap	1
+ 
+	--퀘스트 발생조건 ( 트리거 )
+	trigger TE_LEVEL	( 40 100 )
+
+	-- 임무 ( 목록:최대8가지, 수량:최대 256 이하 )
+	duty
+	{
+	 
+		collect	809005	150
+	}
+ 
+	default
+	{
+		exp	890097
+		sxp	1335145
+		money	9350
+		skillpoint	1
+	}
+}
+

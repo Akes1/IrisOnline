@@ -1,0 +1,7 @@
+--===============--
+-- 이동 메시지 윈도우 --
+--===============--
+window_prop "P_MoveMsgWindow"
+{
+	skinname "MoveMsgWindow"
+}

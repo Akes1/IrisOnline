@@ -1,0 +1,103 @@
+--===============--
+-- 보안번호 윈도우 --
+--===============--
+window_prop "P_NumPassWindow"
+{
+	skinname "NumPassWindow"
+}
+
+-- /// 비밀번호 에디트  
+editbox_prop "P_NumPass_PassEdit"
+{
+	skinname "NumPass_PassEdit"
+	parent "P_NumPassWindow"
+}
+
+button_prop "P_NumPass_Connect"
+{
+	skinname "NumPass_Connect"
+	parent "P_NumPassWindow"
+}
+
+button_prop "P_NumPass_Cancel"
+{
+	skinname "NumPass_Cancel"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "0"  
+button_prop "P_NumPass_0_Button"
+{
+	skinname "NumPass_0_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "1"  
+button_prop "P_NumPass_1_Button"
+{
+	skinname "NumPass_1_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "2"  
+button_prop "P_NumPass_2_Button"
+{
+	skinname "NumPass_2_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "3"  
+button_prop "P_NumPass_3_Button"
+{
+	skinname "NumPass_3_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "4"  
+button_prop "P_NumPass_4_Button"
+{
+	skinname "NumPass_4_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "5"  
+button_prop "P_NumPass_5_Button"
+{
+	skinname "NumPass_5_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "6"  
+button_prop "P_NumPass_6_Button"
+{
+	skinname "NumPass_6_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "7"  
+button_prop "P_NumPass_7_Button"
+{
+	skinname "NumPass_7_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "8"  
+button_prop "P_NumPass_8_Button"
+{
+	skinname "NumPass_8_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "9"  
+button_prop "P_NumPass_9_Button"
+{
+	skinname "NumPass_9_Button"
+	parent "P_NumPassWindow"
+}
+
+-- /// 버튼 "7"  
+button_prop "P_NumPass_Clear_Button"
+{
+	skinname "NumPass_Clear_Button"
+	parent "P_NumPassWindow"
+}

@@ -1,0 +1,42 @@
+--===========
+-- 팁 윈도우
+--===========
+window "Tip"
+{
+	ii 5006
+	pos 0 0
+	size 1 1
+	texpos 331 401
+}
+
+window "ChatTip"
+{
+	ii 5006
+	pos 400 500
+	size 1 1
+	texpos 331 401
+}
+
+-- /// 버튼  "닫기 버튼"
+button "ChatTip_Close"
+{
+	ii 5002
+	pos 0 0
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+label "Tip_Edge"
+{
+	ii	5006
+	pos	0 0
+	size	1 1
+	texpos	335 401
+}

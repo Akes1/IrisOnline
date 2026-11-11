@@ -1,0 +1,68 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--마도병기 기가스
+--스킬2
+
+Header
+{
+	type	0
+	
+	effect	0	0.0	0.0	0.0	0.8	"eff_em_2018_02.nif"
+
+	sound	21	5511
+	sound	22	5004
+	sound	23	6502
+	sound	24	6503
+	sound	25	6526
+	sound	26	5502
+
+}
+
+Activity
+{
+	animation	9
+	
+	action	0	0	0	0	1	foot	0.0	0.0	0.0
+	
+	soundplay	0	25	0
+	soundplay	500	21	0	
+	soundplay	600	22	0	
+	soundplay	560	23	0	
+	soundplay	700	23	0	
+	soundplay	800	23	0	
+	soundplay	560	24	0	
+	soundplay	700	24	0	
+	soundplay	800	24	0
+	soundplay	1000	26	0
+	
+	active	560
+}
+
+Apply
+{	
+	damage	0	25
+	damage	150	25
+	damage	300	50
+}

@@ -1,0 +1,173 @@
+--===============--
+-- 노점 개설 윈도우 --
+--===============--
+window "UserSellWindow"
+{
+	ii 5005
+	pos 130 226
+	size 383 346
+	texpos 2 318
+
+	opensound 3007
+	closesound 3010
+	
+	captionXY 0 0
+	captionWH 383 346
+}
+
+-- 닫기 버튼 "x"
+button "UserSell_Close"
+{
+	ii 5002
+	pos 350 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 노점명 등록
+button "UserSell_NameRegist"
+{
+	ii 5005
+	pos 338 88
+	size 16 16
+	texpos 373 666
+	
+	uppos 373 666
+	upoverpos 373 684
+	downpos 373 702
+
+	downsound 3001
+}
+
+-- 아이템 수정
+button "UserSell_ItemUpdate"
+{
+	ii 5005
+	pos 190 314
+	size 82 25
+	texpos 841 80
+	useenable true
+		
+	uppos 841 80
+	upoverpos 841 106
+	downpos 841 132
+	enablepos 841 132
+
+	downsound 3001
+}
+
+-- 노점 종료
+button "UserSell_End"
+{
+	ii 5005
+	pos 279 314
+	size 82 25
+	texpos 925 80
+	
+	uppos 925 80
+	upoverpos 925 106
+	downpos 925 132
+
+	downsound 3001
+}
+
+-- 이용 종료
+button "UserSell_JoinEnd"
+{
+	ii 5005
+	pos 279 314
+	size 82 25
+	texpos 925 80
+	
+	uppos 925 80
+	upoverpos 925 106
+	downpos 925 132
+
+	downsound 3001
+}
+
+editbox "UserSell_Name"
+{
+	pos 34 91
+	size 299 18
+
+	editmaxlen 28
+	editkind 0
+	
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+
+}
+
+-- 소스에서 사용하는 스킨
+-- 아이템 이름용, 아이콘 기준 오른쪽 위에 점을 기준으로 상대좌표
+label "UserSell_ItemName"
+{
+	pos 5 0
+	size 120 33
+}
+
+-- 소스에서 사용하는 스킨
+-- 아이템 가격용
+label "UserSell_ItemPrice"
+{
+	pos 9 16
+	size 118 15
+	text_align right
+}
+
+-- 소스에서 사용하는 스킨
+-- 아이템 선택용
+label "UserSell_Select"
+{
+	ii 5005
+	pos 0 0
+	size 161 36
+	texpos 2 666
+}
+
+
+-- 판매상태 아이콘
+icon "UserSell_SellSlot00"	{ pos 33 118	size 28 28 } 
+icon "UserSell_SellSlot01"	{ pos 33 155	size 28 28 } 
+icon "UserSell_SellSlot02"	{ pos 33 192	size 28 28 } 
+icon "UserSell_SellSlot03"	{ pos 33 229	size 28 28 } 
+icon "UserSell_SellSlot04"	{ pos 33 266	size 28 28 } 
+icon "UserSell_SellSlot05"	{ pos 197 118	size 28 28 } 
+icon "UserSell_SellSlot06"	{ pos 197 155	size 28 28 } 
+icon "UserSell_SellSlot07"	{ pos 197 192	size 28 28 } 
+icon "UserSell_SellSlot08"	{ pos 197 229	size 28 28 } 
+icon "UserSell_SellSlot09"	{ pos 197 266	size 28 28 } 
+
+-- 구매상태 아이콘
+icon "UserSell_JoinSlot00"	{ pos 33 118	size 28 28 } 
+icon "UserSell_JoinSlot01"	{ pos 33 155	size 28 28 } 
+icon "UserSell_JoinSlot02"	{ pos 33 192	size 28 28 } 
+icon "UserSell_JoinSlot03"	{ pos 33 229	size 28 28 } 
+icon "UserSell_JoinSlot04"	{ pos 33 266	size 28 28 } 
+icon "UserSell_JoinSlot05"	{ pos 197 118	size 28 28 } 
+icon "UserSell_JoinSlot06"	{ pos 197 155	size 28 28 } 
+icon "UserSell_JoinSlot07"	{ pos 197 192	size 28 28 } 
+icon "UserSell_JoinSlot08"	{ pos 197 229	size 28 28 } 
+icon "UserSell_JoinSlot09"	{ pos 197 266	size 28 28 }
+
+-- 판매 아이템 영역
+label "UserSellRect00"	{ pos 29 114	size 161 36 } 
+label "UserSellRect01"	{ pos 29 151	size 161 36 } 
+label "UserSellRect02"	{ pos 29 188	size 161 36 } 
+label "UserSellRect03"	{ pos 29 225	size 161 36 }  
+label "UserSellRect04"	{ pos 29 262	size 161 36 }  
+label "UserSellRect05"	{ pos 193 115	size 161 36 }  
+label "UserSellRect06"	{ pos 193 151	size 161 36 }  
+label "UserSellRect07"	{ pos 193 188	size 161 36 }  
+label "UserSellRect08"	{ pos 193 225	size 161 36 }  
+label "UserSellRect09"	{ pos 193 262	size 161 36 } 
+

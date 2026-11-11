@@ -1,0 +1,26 @@
+--===============--
+-- 캐스팅 바 윈도우 --
+--===============--
+window_prop "P_CastingBar"
+{
+	skinname "CastingBar"
+}
+
+-- /// 캐스팅 바 틀 
+gauge_prop "P_Casting_GuageBar"
+{
+	skinname "Casting_GuageBar"
+	parent "P_CastingBar"
+}
+
+label_prop "P_Casting_SkillName"
+{
+	skinname "Casting_SkillName"
+	parent "P_CastingBar"
+}
+
+label_prop "P_Casting_SkillTime"
+{
+	skinname "Casting_SkillTime"
+	parent "P_CastingBar"
+}

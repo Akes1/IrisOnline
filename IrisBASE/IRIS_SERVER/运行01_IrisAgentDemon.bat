@@ -1,0 +1,1 @@
+IrisAgentDemon.exe /TEST -VERBOSE -PACKET -DEF AgentDemon

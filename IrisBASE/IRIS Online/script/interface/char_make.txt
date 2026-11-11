@@ -1,0 +1,326 @@
+--===============--
+-- 등급 표시 윈도우 --
+--===============--
+--window "MakeGradeWindow"
+--{	
+--	pos	700 10
+--	size	307 117
+--}
+
+-- /// 라벨 "등급 표시"
+--label "Make_Grade"
+--{
+--	ii	4999
+--	pos	0 0
+--	size	307 117
+--	texpos	0 0
+--}
+
+--===============--
+-- 캐릭터 생성 오른창 --
+--===============--
+window "MakeWindow"
+{
+	pos	700 150
+	size	324 400
+}
+
+label "Make_Back"
+{
+	ii	5000
+	pos	14 0
+	size	257 278
+	texpos	204 142
+}
+
+-- 이름 에디트
+editbox "Make_NameEdit"
+{
+	pos 126 71
+	size 104 17
+	editpos 0 0
+	editmaxlen 8				-- 에디트가 받아들일수 있는 최대 길이 지정 ( 미지정시 110 바이트 )
+	editkind 5
+	
+		
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- 스핀박스 "종족"
+spinbox "Make_Race_Spin"
+{
+	pos 103 91
+	size 142 18
+
+	leftbuttonskin "spinbox_left"
+	rightbuttonskin "spinbox_right"
+	labelskin "spinbox_label"
+}
+
+
+-- 스핀박스 "직업"
+spinbox "Make_Job_Spin"
+{
+	pos 103 114
+	size 142 18
+	
+	leftbuttonskin "spinbox_left"
+	rightbuttonskin "spinbox_right"
+	labelskin "spinbox_label"
+}
+
+-- 스핀박스 "성별"
+spinbox "Make_Gender_Spin"
+{
+	pos 103 137
+	size 142 18
+	
+	leftbuttonskin "spinbox_left"
+	rightbuttonskin "spinbox_right"
+	labelskin "spinbox_label"
+}
+
+
+-- 스핀박스 "얼굴"
+spinbox "Make_Face_Spin"
+{
+	pos 103 160
+	size 142 18
+	
+	leftbuttonskin "spinbox_left"
+	rightbuttonskin "spinbox_right"
+	labelskin "spinbox_label"
+}
+
+-- 스핀박스 "헤어"
+spinbox "Make_Hair_Spin"
+{
+	pos 103 183
+	size 142 18
+	
+	leftbuttonskin "spinbox_left"	
+	rightbuttonskin "spinbox_right"
+	labelskin "spinbox_label"
+
+}
+
+-- 스핀박스 "색상"
+spinbox "Make_HairColor_Spin"
+{
+	pos 103 206
+	size 142 18
+	
+	leftbuttonskin "spinbox_left"	
+	rightbuttonskin "spinbox_right"
+	labelskin "spinbox_label"
+
+}
+
+-- /// 버튼 "생성"
+button "Make_Create"
+{
+	ii 5000
+	pos 101 244
+	size 82 24
+	texpos 467 523
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 467 523
+	upoverpos 467 550
+	downpos 467 577
+	enablepos 467 577
+
+	downsound 3001
+}
+
+--===============--
+-- 회전 버튼 윈도우 --
+--===============--
+-- /// 윈도우 "캐릭터 회전 배경 윈도우"
+window "MakeRotateWindow"
+{
+	pos	440 640
+	size	571 168
+}
+
+-- 소스에서 사용하는 스킨
+-- /// 라벨 "캐릭터 회전 버튼 배경"
+label "Make_Rotate_BackImage"
+{
+	ii 5000
+	pos 1 6
+	size 142 52
+	texpos 555 523
+}
+
+
+
+-- /// 버튼 "캐릭터 회전 좌측"
+button "Make_LeftRotate"
+{
+	ii 5000
+	pos 7 11
+	size 42 42 
+	texpos 619 388
+	
+	-- 버튼 그림 좌표 	
+	uppos 619 388
+	upoverpos 619 433
+	downpos 619 478
+
+	downsound 3001
+}
+
+-- /// 버튼 "캐릭터 Zoom InOut"
+pushbutton "Make_ZoomInOut"
+{
+	ii 5000
+	pos 53 11
+	size 42 42
+	texpos 456 880
+	
+	-- 버튼 그림 좌표 	
+	uppos 456 880
+	upoverpos 500 880
+	downpos 588 880
+	downoverpos 632 880
+
+	downsound 3001
+}
+
+-- /// 버튼 "캐릭터 회전 우측"
+button "Make_RightRotate"
+{
+	ii 5000
+	pos 96 11
+	size 42 42
+	texpos 664 388
+	
+	-- 버튼 그림 좌표 	
+	uppos 664 388
+	upoverpos 664 433
+	downpos 664 478
+
+	downsound 3001
+}
+
+
+--===============--
+-- 캐릭터 생성 왼쪽창 --
+--===============--
+window "MakeInfoWindow"
+{
+	pos	0 0
+	size	424 768
+}
+
+-- /// 버튼 "캐릭터 선택 화면"
+button "Make_Select"
+{
+	ii 5000
+	pos 117 651
+	size 159 35
+	texpos 466 3
+	
+	-- 버튼 그림 좌표 	
+	uppos 466 3
+	upoverpos 466 43
+	downpos 466 83
+
+	downsound 3001
+}
+
+-- 소스에서 사용하는 스킨
+-- /// 인간족 배경 설명
+label "MakeInfo_Race00"
+{
+	ii	5001
+	pos	0 53
+	size	394 212
+	texpos	2 2
+}
+
+-- 소스에서 사용하는 스킨
+-- /// 수인족 배경 설명
+label "MakeInfo_Race01"
+{
+	ii	5001
+	pos	0 53
+	size	394 212
+	texpos	2 434
+}
+
+-- 소스에서 사용하는 스킨
+-- /// 정령족 배경 설명
+label "MakeInfo_Race02"
+{
+	ii	5001
+	pos	0 53
+	size	394 212
+	texpos	2 218
+}
+
+-- 소스에서 사용하는 스킨
+-- /// 파이터 배경 설명
+label "MakeInfo_Job00"
+{
+	ii	5001
+	pos	0 276
+	size	394 212
+	texpos	795 2
+}
+
+-- 소스에서 사용하는 스킨
+-- /// 메이지 배경 설명
+label "MakeInfo_Job01"
+{
+	ii	5001
+	pos	0 276
+	size	394 212
+	texpos	398 2
+}
+
+-- 소스에서 사용하는 스킨
+-- ///  워리어 배경 설명
+label "MakeInfo_Job02"
+{
+	ii	5001
+	pos	0 276
+	size	394 212
+	texpos	795 434
+}
+
+-- 소스에서 사용하는 스킨
+-- ///  로그 배경 설명
+label "MakeInfo_Job03"
+{
+	ii	5001
+	pos	0 276
+	size	394 212
+	texpos	398 434
+}
+
+-- 소스에서 사용하는 스킨
+-- ///  레인저 배경 설명
+label "MakeInfo_Job04"
+{
+	ii	5001
+	pos	0 276
+	size	394 212
+	texpos	795 218
+}
+
+-- 소스에서 사용하는 스킨
+-- ///  샤먼 배경 설명
+label "MakeInfo_Job05"
+{
+	ii	5001
+	pos	0 276
+	size	394 212
+	texpos	398 218
+}
+

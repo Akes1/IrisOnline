@@ -1,0 +1,63 @@
+--==============================================================
+-- HeroStateWindow : 캐릭터 상태 창 (왼쪽상단)
+--==============================================================
+window_prop "P_HeroStateWindow"
+{
+	skinname "HeroStateWindow"
+}
+
+-- /// 라벨 "hero 이름"
+label_prop "P_HeroState_Name"
+{
+	skinname "HeroState_Name"
+	parent "P_HeroStateWindow"
+}
+
+label_prop "P_HeroState_Face"
+{
+	skinname "Face_Human_M"
+	parent "P_HeroStateWindow"
+}
+
+--==============================================================
+-- HeroStateWindow : HP 게이지
+--==============================================================
+doublegauge_prop "P_HeroState_HP"
+{
+	skinname "HeroState_HP"
+	parent "P_HeroStateWindow"
+}
+
+--==============================================================
+-- HeroStateWindow : MP 게이지
+--==============================================================
+doublegauge_prop "P_HeroState_MP"
+{
+	skinname "HeroState_MP"
+	parent "P_HeroStateWindow"
+}
+
+--==============================================================
+-- HeroStateWindow : SXP 게이지
+--==============================================================
+gauge_prop "P_HeroState_SXP"
+{
+	skinname "HeroState_SXP"
+	parent "P_HeroStateWindow"
+}
+
+--==============================================================
+-- HeroStateWindow : EXP 게이지
+--==============================================================
+gauge_prop "P_HeroState_EXP"
+{
+	skinname "HeroState_EXP"
+	parent "P_HeroStateWindow"
+}
+
+--새로운 메일 알림 라벨
+label_prop "P_HeroState_NewMail"
+{
+	skinname "HeroState_NewMail"
+	parent "P_HeroStateWindow"
+}

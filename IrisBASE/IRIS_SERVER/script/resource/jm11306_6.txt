@@ -1,0 +1,55 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--메이지: 광역 치유I
+
+Header
+{
+	type	0
+
+	effect	0	0.0	0.0	0.0	1.0	"eff_3019_01.nif"
+	effect	1	0.0	0.0	0.0	1.0	"eff_3019_02.nif"
+	effect	2	0.0	0.0	0.0	1.0	"eff_3024_01.nif"
+
+	sound	21	5007
+	sound	22	5525
+	sound	23	6517
+}
+
+Activity
+{
+	animation	703
+
+	action	100	0	2	0	1	foot	0.0	0.0	250.0
+	
+	soundplay	0	22	0
+	soundplay	600	23	0
+		
+	active	600
+}
+
+Apply
+{
+	damage	0	100
+}

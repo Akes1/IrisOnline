@@ -1,0 +1,53 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--프리스트: 마법의 가시 밧줄I
+
+
+Header
+{
+	type	0
+
+	effect	0	0.0	0.0	0.0	1.0	"eff_3017_01_HM.nif"
+	effect	1	0.0	0.0	0.0	1.0	"eff_3017_02_HM.nif"
+	effect	2	0.0	0.0	0.0	1.0	"eff_3017_03_HM.nif"
+
+	sound	21	5518
+	sound	22	6525
+}
+
+Activity
+{
+	animation	702
+
+	action	0	0	2	0	1	foot	0.0	0.0	0.0
+
+	soundplay	0	22	0
+
+	active	433
+}
+
+Apply
+{
+}

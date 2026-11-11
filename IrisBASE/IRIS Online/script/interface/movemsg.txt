@@ -1,0 +1,14 @@
+--===============--
+-- 이동 메시지 윈도우 --
+--===============--
+window "MoveMsgWindow"
+{
+	ii 5002
+	captionXY 0 0 
+	captionWH 302 42
+	
+	pos 361 363
+	size 302 42
+	texpos 400 310
+	holdview true
+}

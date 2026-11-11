@@ -1,0 +1,238 @@
+#pragma once
+
+#include "Protocol_Category.h"
+
+/// 치트 프로토콜
+enum NM_CHEAT_PROTOCOL
+{
+	NM_CHEAT_GM_NAME_REQ,
+	NM_CHEAT_GM_NAME_RES,
+
+	/// 속도 증가
+	NM_CHEAT_SPEEDUP_REQ,
+
+	/// 귓말
+	NM_CHEAT_EAR_REQ,
+	NM_CHEAT_EAR_RES,
+
+	/// 투명: 다른 플레이어에게 보이지 않음, 공격불가, 아이템 습득 불가
+	NM_CHEAT_HIDE_REQ,
+	NM_CHEAT_HIDE_RES,
+
+	/// 무적: 죽지 않음
+	NM_CHEAT_UNDEAD_REQ,
+	NM_CHEAT_UNDEAD_RES,
+
+	/// 정보: 대상 캐릭터의 정보를 채팅창에 출력
+	NM_CHEAT_INFO_REQ,
+	NM_CHEAT_INFO_RES,
+
+	/// 감시: 대상 캐릭터를 자동으로 따라감
+	NM_CHEAT_WATCH_REQ,
+	NM_CHEAT_WATCH_RES,
+    
+	/// 접속 종료: 대상 캐릭터를 로그아웃 시킴
+	NM_CHEAT_KICK_REQ,
+	NM_CHEAT_KICK_RES,
+	NM_CHEAT_KICK_RES_GM,
+
+	/// 회복: HP, MP를 모두 회복
+	NM_CHEAT_RECOVER_REQ,
+	NM_CHEAT_RECOVER_RES,
+	NM_CHEAT_RECOVER_SYN,
+
+	/// 부활: HP, MP를 모두 회복
+	NM_CHEAT_REBIRTH_REQ,
+	NM_CHEAT_REBIRTH_RES,
+	NM_CHEAT_REBIRTH_SYN,
+
+	/// 순간이동: 특정위치로 순간이동
+	NM_CHEAT_TELEPORT_REQ,
+	NM_CHEAT_TELEPORT_RES,
+	NM_CHEAT_TELEPORT_SYN,
+
+	/// 가기: 해당 맵으로 이동
+	NM_CHEAT_GO_REQ,
+
+	/// 추적: 대상 캐릭터의 위치(맵, 좌표)로 이동
+	NM_CHEAT_CHASE_REQ,
+	NM_CHEAT_CHASE_RES_GM,
+
+	/// 이동: 대상 캐릭터를 지정한 맵으로 이동시킴
+	NM_CHEAT_MOVE_REQ,
+	NM_CHEAT_MOVE_RES_GM,
+
+	/// 소환: 대상 캐릭터를 소환
+	NM_CHEAT_CALL_REQ,
+	NM_CHEAT_CALL_RES_GM,
+
+	/// 검색: 대상 케릭터 위치 추적
+	NM_CHEAT_SEARCH_REQ,
+	NM_CHEAT_SEARCH_RES_GM,
+	NM_CHEAT_SEARCH_CHANNEL_RES_GM,
+
+	/// 채팅 금지: 지정 시간동안 대상 캐릭터의 파티 채팅을 제외한 모든 채팅을 금지
+	NM_CHEAT_NO_CHAT_REQ,
+	NM_CHEAT_NO_CHAT_RES_GM, 
+	NM_CHEAT_NO_CHAT_SYN,
+
+	/// 채팅 허용: 대상 캐릭터의 채팅을 허용
+	NM_CHEAT_ALLOW_CHAT_REQ,
+	NM_CHEAT_ALLOW_CHAT_RES,
+	NM_CHEAT_ALLOW_CHAT_RES_GM,
+	NM_CHEAT_ALLOW_CHAT_SYN,
+
+	/// 채팅 리스트 얻기
+	NM_CHEAT_NO_CHAT_LIST_REQ,
+	NM_CHEAT_NO_CHAT_LIST_RES,
+	NM_CHEAT_NO_CHAT_LIST_RES_GM,
+
+	/// 
+	NM_CHEAT_GOTO_INSTANT_DUNGEON_REQ,
+	NM_CHEAT_GOTO_INSTANT_DUNGEON_RES,
+
+	NM_CHEAT_USED_ROOM_ID_REQ,
+	NM_CHEAT_USED_ROOM_ID_RES,
+
+	NM_CHEAT_ROOMCHANGE_INSTANT_DUNGEON_REQ,
+	NM_CHEAT_ROOMCHANGE_INSTANT_DUNGEON_RES,
+
+	NM_CHEAT_GOTO_GAMESERVER_REQ,
+	NM_CHEAT_GOTO_GAMESERVER_RES,
+
+	/// 정지: 지정 시간동안 대상 캐릭터의 이동, 스킬 사용, 공격, 거래, 아이템 습득 및 드랍, 창고 이용을 불허
+	NM_CHEAT_STOP_REQ,
+	NM_CHEAT_STOP_RES,
+	NM_CHEAT_STOP_RES_GM,
+	NM_CHEAT_STOP_SYN,
+
+	/// 정지 해제: 대상 캐릭터의 정지를 해제
+	NM_CHEAT_CANCEL_STOP_REQ,
+	NM_CHEAT_CANCEL_STOP_RES,
+	NM_CHEAT_CANCEL_STOP_RES_GM,
+	NM_CHEAT_CANCEL_STOP_SYN,
+
+	/// 아이템 제거: 일정 반경 내의 모든 아이템을 제거
+	NM_CHEAT_REMOVE_ITEM_REQ,
+
+	/// 몬스터 제거: 일정 반경 내의 모든 몬스터를 제거(아이템 획득 안함)
+	NM_CHEAT_REMOVE_MONSTER_REQ,
+
+	/// 몬스터 제거: 일정 반경 내의 모든 몬스터를 제거(아이템 획득 안함)
+	NM_CHEAT_KILL_MONSTER_REQ,
+
+
+	/// 레벨업: 수치만큼 레벨을 올림
+	NM_CHEAT_LEVELUP_REQ,
+
+	/// 스킬업: 수치만큼 스킬을 올림
+	NM_CHEAT_SKILLUP_REQ,
+
+	/// 아이템 생성: 지정한 아이템을 개수만큼 생성
+	NM_CHEAT_MAKE_REQ,
+	NM_CHEAT_MAKE_RES,
+
+	/// 아이템 생성: ItemSetting에서 설정한 여러 종류의 아이템을 지정한 개수만큼 생성
+	NM_CHEAT_MAKE_ITEMS_REQ,
+	/// NM_CHEAT_MAKE_ITEMS_RES => NM_CHEAT_MAKE_RES 대체
+
+	/// 돈 생성: 지정한 액수만큼 돈을 생성
+	NM_CHEAT_GOLD_REQ,
+
+	/// 몬스터를 소환
+	NM_CHEAT_SUMMON_REQ,
+
+	/// 아이템 드랍 및 경험치 습득없이 몬스터를 제거
+	NM_CHEAT_REMOVE_REQ,
+
+	/// 아이템 드랍 및 경험치 습득하고 몬스터를 제거
+	NM_CHEAT_KILL_REQ,
+
+// 	/// 아이템 드랍율 증가
+// 	NM_CHEAT_DROP_REQ,
+// 	NM_CHEAT_DROP_RES_GM,
+// 
+// 	/// 경험치 획득율 증가
+// 	NM_CHEAT_EXP_REQ,
+// 	NM_CHEAT_EXP_RES_GM,
+// 
+// 	/// 경험치 획득율 증가
+// 	NM_CHEAT_SXP_REQ,
+// 	NM_CHEAT_SXP_RES_GM,
+
+	/// 스킬 습득 메시지 전송
+	NM_CHEAT_SKILL_GET_REQ,
+	NM_CHEAT_SKILL_GET_RES_GM,
+	NM_CHEAT_SKILL_GET_ERR_RES,
+
+	/// 운영자 스킬 사용
+	NM_CHEAT_GM_SKILL_USE_PLAYER_REQ,
+	NM_CHEAT_GM_SKILL_USE_PLAYER_RES_GM,
+	NM_CHEAT_GM_SKILL_USE_PLAYER_SYN,
+
+	NM_CHEAT_GM_SKILL_USE_AREA_REQ,
+	NM_CHEAT_GM_SKILL_USE_AREA_RES_GM,
+	NM_CHEAT_GM_SKILL_USE_AREA_SYN,
+
+	/// 전직
+	NM_CHEAT_GM_JOB_CHANGE_REQ,
+	NM_CHEAT_GM_JOB_CHANGE_RES,
+
+	/// 세력 
+	NM_CHEAT_GM_FORCE_CHANGE_REQ,
+	NM_CHEAT_GM_FORCE_CHANGE_RES,
+
+	NM_CHEAT_GM_FORCE_ADDPOINT_REQ,
+	NM_CHEAT_GM_FORCE_ADDPOINT_RES,
+
+	NM_CHEAT_SYSTEM_PLAYERINFO_REQ,
+	NM_CHEAT_SYSTEM_PLAYERINFO_RES,
+
+	/// 테마 초기화
+	NM_CHEAT_GM_THEME_INFO_REQ,
+	NM_CHEAT_GM_THEME_INFO_RES,
+
+	NM_CHEAT_GM_THEME_RESET_REQ,
+	NM_CHEAT_GM_THEME_RESET_RES, 
+	NM_CHEAT_GM_THEME_RESET_SYN, /// 초기화한 유저에게 가는 메시지
+
+	/// 적용중인 GM 이벤트 검사하기.
+	NM_CHEAT_GM_EVENT_SEARCH_REQ,
+	NM_CHEAT_GM_EVENT_SEARCH_RES,
+
+	/// GM 이벤트 효과 적용하기
+	NM_CHEAT_GM_EVENT_APPLY_REQ,
+	NM_CHEAT_GM_EVENT_APPLY_RES,
+
+	/// GM 이벤트 효과 삭제하기
+	NM_CHEAT_GM_EVENT_RELEASE_REQ,
+	NM_CHEAT_GM_EVENT_RELEASE_RES,
+
+	///
+	NM_CHEAT_MAX,
+};
+
+enum NM_NOTICE_PROTOCOL
+{
+	/// 서버 공지: 접속한 서버의 모든 채널에 공지
+	NM_NOTICE_NOTICE_SERVER_REQ,
+	NM_NOTICE_NOTICE_SERVER_SYN,
+
+	/// 채널 공지: 접속한 해당 채널에만 공지
+	NM_NOTICE_NOTICE_CHANNEL_REQ,
+	NM_NOTICE_NOTICE_CHANNEL_SYN,
+
+	/// 지역 공지: 접속한 해당 맵에만 공지
+	NM_NOTICE_NOTICE_AREA_REQ,
+	NM_NOTICE_NOTICE_AREA_SYN,
+
+	/// 서버 공지: 서버 다운 자동 카운트
+	NM_NOTICE_DOWN_COUNT_NOTICE_SERVER_REQ,
+	NM_NOTICE_DOWN_COUNT_NOTICE_SERVER_SYN,
+
+	/// 채널 공지: 서버 다운 자동 카운트
+	NM_NOTICE_DOWN_COUNT_NOTICE_CHANNEL_REQ,
+	NM_NOTICE_DOWN_COUNT_NOTICE_CHANNEL_SYN,
+
+	NM_NOTICE_MAX,
+};

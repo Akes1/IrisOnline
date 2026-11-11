@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZipArchive", "ZipArchive.vcproj", "{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087} = {D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Zlib", "Zlib.vcproj", "{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_MultiByte|Win32 = Debug_MultiByte|Win32
+		Debug_Unicode|Win32 = Debug_Unicode|Win32
+		Release_MultiByte|Win32 = Release_MultiByte|Win32
+		Release_Unicode|Win32 = Release_Unicode|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}.Debug_MultiByte|Win32.ActiveCfg = Debug_MultiByte|Win32
+		{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}.Debug_MultiByte|Win32.Build.0 = Debug_MultiByte|Win32
+		{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}.Debug_Unicode|Win32.ActiveCfg = Debug_Unicode|Win32
+		{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}.Debug_Unicode|Win32.Build.0 = Debug_Unicode|Win32
+		{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}.Release_MultiByte|Win32.ActiveCfg = Release_MultiByte|Win32
+		{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}.Release_MultiByte|Win32.Build.0 = Release_MultiByte|Win32
+		{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}.Release_Unicode|Win32.ActiveCfg = Release_Unicode|Win32
+		{0AB3F4C6-92C1-4A63-9A3F-C3F8727F2642}.Release_Unicode|Win32.Build.0 = Release_Unicode|Win32
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}.Debug_MultiByte|Win32.ActiveCfg = Debug_MultiByte|Win32
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}.Debug_MultiByte|Win32.Build.0 = Debug_MultiByte|Win32
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}.Debug_Unicode|Win32.ActiveCfg = Debug_Unicode|Win32
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}.Debug_Unicode|Win32.Build.0 = Debug_Unicode|Win32
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}.Release_MultiByte|Win32.ActiveCfg = Release_MultiByte|Win32
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}.Release_MultiByte|Win32.Build.0 = Release_MultiByte|Win32
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}.Release_Unicode|Win32.ActiveCfg = Release_Unicode|Win32
+		{D557D1E2-F3A7-42E3-A4B2-2A2A1BB36087}.Release_Unicode|Win32.Build.0 = Release_Unicode|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

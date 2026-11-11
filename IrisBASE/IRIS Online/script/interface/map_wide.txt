@@ -1,0 +1,97 @@
+--===============--
+-- 큰 미니맵	 --
+--===============--
+-- 미니맵 창
+window "MiniMap_Window"
+{
+	pos 0 0
+	size 512 512
+ 
+	opensound 3013
+	closesound 3014
+}
+
+-- /// 라벨 "아이콘 설명"
+label "MiniMap_ExplainText"
+{
+	ii 5002
+	pos 413 477
+	size 60 13
+	texpos 563 736
+}
+
+-- /// 퀘스트 정보보기 체크박스
+checkbox "MiniMap_QuestView"
+{
+	ii 5006
+	pos 15 480
+	size 12 12
+	texpos 330 370
+	
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+	onsound 3001
+	offsound 3001
+}
+
+-- /// 라벨 "퀘스트 정보 보기"
+label "MiniMap_QuestViewText"
+{
+	pos 30 480 
+	size 150 12
+	text 295
+}
+
+--/// 버튼 "아이콘 설명 버튼"
+pushbutton "MiniMap_ExplainButton"
+{
+	ii 5002
+	pos 476 471
+	size 23 23
+	texpos 174 115
+
+	uppos 174 115
+	upoverpos 174 140
+	downpos 174 165
+	downoverpos 174 165
+}
+
+--/// 라벨 "아이콘 설명 이미지"
+label "MiniMap_ExplainImage"
+{
+	ii 5002
+	pos 512 108
+	size 123 398
+	texpos 639 653
+}
+
+-- 소스에서 직접 쓰는 스킨
+label "MiniMap_PartyIn"
+{
+	ii 5002
+	pos 0 0
+	size 15 15
+	texpos 861 926
+}
+
+-- /// 이미지 "party" 미니맵보다 외부에 있을시 출력용 화살표 
+-- 소스에서 직접 쓰는 스킨
+label "MiniMap_PartyOut"
+{
+	ii 5002
+	pos 0 0
+	size 15 15
+	texpos 861 942
+}
+
+-- /// 퀘스트 추적이미지
+-- 소스에서 직접 쓰는 스킨
+label "MiniMap_QuestChase"
+{
+	ii 5006
+	pos 0 0
+	size 30 30
+	texpos 540 977
+}

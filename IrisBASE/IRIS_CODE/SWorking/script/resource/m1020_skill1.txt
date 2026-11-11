@@ -1,0 +1,58 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+--정예 궁병
+--스킬1
+
+Header
+{
+	type	0
+	
+	effect	0	0.0	0.0	0.0	1.5	"eff_m_1020_01.nif"
+	effect	1	180.0	0.0	0.0	1.2	"eff_m_1020_02.nif"	
+	effect	2	180.0	0.0	0.0	1.2	"eff_m_1020_03.nif"	
+	
+	sound	21	8511
+	sound	22	6526
+	sound	23	6505
+}
+
+Activity
+{
+	animation	5
+	
+	soundplay	100	22	0
+	soundplay	300	21	0	
+
+	bullet	700	1	2000	0	rhand	0.0	0.0	0.0	body
+	
+	action	700	0	1	0	1	foot	-20.0	90.0	130.0
+}
+
+Apply
+{
+	crash	1	2	body	10.0	-10.0	0.0
+	damage	0	100
+	
+	soundplay	0	23	0
+}

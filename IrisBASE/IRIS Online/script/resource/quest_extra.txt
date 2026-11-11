@@ -1,0 +1,2251 @@
+quest 9000
+{
+	type 0
+	title 9000
+	description 9000001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 1
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 1000 5000 )
+}
+
+quest 9001
+{
+	type 0
+	title 9001
+	description 9001001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 1
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 2000 4000 )
+}
+
+quest 9002
+{
+	type 0
+	title 9002
+	description 9002001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 1
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 3000 6000 )
+}
+
+quest 9003
+{
+	type 0
+	title 9003
+	description 9003001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 8
+	takenpc 1
+	takemap 1
+	info
+	{
+		map 4 338 382 1.000000 1
+		map 4 268 282 1.000000 1
+		map 4 368 114 1.000000 1
+	}
+	duty
+	{
+		hunt 804 1
+		hunt 805 1
+		hunt 807 1
+	}
+	default
+	{
+		exp 357573
+		sxp 536359
+		money 7450
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 1000 5000 )
+	trigger TE_LINKQUEST ( 9000 )
+}
+
+quest 9004
+{
+	type 0
+	title 9004
+	description 9004001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 9
+	takenpc 1
+	takemap 1
+	info
+	{
+		map 4 268 282 1.000000 1
+		map 4 310 270 1.000000 1
+		map 4 368 114 1.000000 1
+	}
+	duty
+	{
+		hunt 805 1
+		hunt 806 1
+		hunt 807 1
+	}
+	default
+	{
+		exp 357573
+		sxp 536359
+		money 7450
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 2000 4000 )
+	trigger TE_LINKQUEST ( 9001 )
+}
+
+quest 9005
+{
+	type 0
+	title 9005
+	description 9005001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 13
+	takenpc 1
+	takemap 1
+	info
+	{
+		map 4 338 382 1.000000 1
+		map 4 310 270 1.000000 1
+		map 4 368 114 1.000000 1
+	}
+	duty
+	{
+		hunt 804 1
+		hunt 806 1
+		hunt 807 1
+	}
+	default
+	{
+		exp 357573
+		sxp 536359
+		money 7450
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 3000 6000 )
+	trigger TE_LINKQUEST ( 9002 )
+}
+
+quest 9006
+{
+	type 0
+	title 9006
+	description 9006001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9006
+	givenpc 1
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 1101
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 1000 )
+	trigger TE_LINKQUEST ( 9003 )
+}
+
+quest 9007
+{
+	type 0
+	title 9007
+	description 9007001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9006
+	givenpc 1
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 1102
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 1000 )
+	trigger TE_LINKQUEST ( 9003 )
+}
+
+quest 9008
+{
+	type 0
+	title 9008
+	description 9008001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9008
+	givenpc 1
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 5101
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 5000 )
+	trigger TE_LINKQUEST ( 9003 )
+}
+
+quest 9009
+{
+	type 0
+	title 9009
+	description 9009001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9008
+	givenpc 1
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 5102
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 5000 )
+	trigger TE_LINKQUEST ( 9003 )
+}
+
+quest 9010
+{
+	type 0
+	title 9010
+	description 9010001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9010
+	givenpc 1
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 2101
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 2000 )
+	trigger TE_LINKQUEST ( 9004 )
+}
+
+quest 9011
+{
+	type 0
+	title 9011
+	description 9011001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9010
+	givenpc 1
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 2102
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 2000 )
+	trigger TE_LINKQUEST ( 9004 )
+}
+
+quest 9012
+{
+	type 0
+	title 9012
+	description 9012001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9012
+	givenpc 1
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 4101
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 4000 )
+	trigger TE_LINKQUEST ( 9004 )
+}
+
+quest 9013
+{
+	type 0
+	title 9013
+	description 9013001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9012
+	givenpc 1
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 4102
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 4000 )
+	trigger TE_LINKQUEST ( 9004 )
+}
+
+quest 9014
+{
+	type 0
+	title 9014
+	description 9014001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9014
+	givenpc 1
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 3101
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 3000 )
+	trigger TE_LINKQUEST ( 9005 )
+}
+
+quest 9015
+{
+	type 0
+	title 9015
+	description 9015001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9014
+	givenpc 1
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 3102
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 3000 )
+	trigger TE_LINKQUEST ( 9005 )
+}
+
+quest 9016
+{
+	type 0
+	title 9016
+	description 9016001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9016
+	givenpc 1
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 6101
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 6000 )
+	trigger TE_LINKQUEST ( 9005 )
+}
+
+quest 9017
+{
+	type 0
+	title 9017
+	description 9017001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9016
+	givenpc 1
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 6102
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 6000 )
+	trigger TE_LINKQUEST ( 9005 )
+}
+
+quest 9018
+{
+	type 0
+	title 9018
+	description 9018001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9006
+	givenpc 1
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 1103
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 1000 )
+	trigger TE_LINKQUEST ( 9003 )
+}
+
+quest 9019
+{
+	type 0
+	title 9019
+	description 9019001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	group 9008
+	givenpc 1
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		skillpoint 1
+		changejob 5103
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_JOB ( 5000 )
+	trigger TE_LINKQUEST ( 9003 )
+}
+
+quest 9500
+{
+	type 0
+	title 9500
+	description 9500001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 2
+	takenpc 12
+	takemap 1
+	duty
+	{
+		talknpc 12
+	}
+	default
+	{
+		exp 10
+		sxp 14
+	}
+	trigger TE_LEVEL ( 1 100 )
+}
+
+quest 9501
+{
+	type 0
+	title 9501
+	description 9501001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 12
+	takenpc 12
+	takemap 1
+	duty
+	{
+		talknpc 12
+	}
+	default
+	{
+		exp 10
+		sxp 14
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_LINKQUEST ( 9500 )
+}
+
+quest 9502
+{
+	type 0
+	title 9502
+	description 9502001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	group 9502
+	givenpc 49
+	takenpc 2
+	takemap 1
+	duty
+	{
+		talknpc 2
+	}
+	limit
+	{
+		giveitem 870201 1
+	}
+	end
+	{
+		takeitem 870201 1
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		force 1
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_LINKQUEST ( 9501 )
+}
+
+quest 9503
+{
+	type 0
+	title 9503
+	description 9503001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	group 9502
+	givenpc 50
+	takenpc 2
+	takemap 1
+	duty
+	{
+		talknpc 2
+	}
+	limit
+	{
+		giveitem 870201 1
+	}
+	end
+	{
+		takeitem 870201 1
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		force 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_LINKQUEST ( 9501 )
+}
+
+quest 9504
+{
+	type 0
+	title 9504
+	description 9504001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	group 9502
+	givenpc 51
+	takenpc 2
+	takemap 1
+	duty
+	{
+		talknpc 2
+	}
+	limit
+	{
+		giveitem 870201 1
+	}
+	end
+	{
+		takeitem 870201 1
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		force 3
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_LINKQUEST ( 9501 )
+}
+
+quest 9505
+{
+	type 0
+	title 9505
+	description 9505001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	group 9502
+	givenpc 52
+	takenpc 2
+	takemap 1
+	duty
+	{
+		talknpc 2
+	}
+	limit
+	{
+		giveitem 870201 1
+	}
+	end
+	{
+		takeitem 870201 1
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		force 4
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_LINKQUEST ( 9501 )
+}
+
+quest 9550
+{
+	type 0
+	title 9550
+	description 9550001 1
+	level 10
+	repeat QUEST_CHALLENGE
+	givenpc 10
+	takenpc 10
+	takemap 1
+	duty
+	{
+		talknpc 10
+	}
+	default
+	{
+		exp 542
+		sxp 812
+		item 890101 1
+		item 807003 1
+		item 890501 1
+	}
+	trigger TE_LEVEL ( 10 100 )
+}
+
+quest 9551
+{
+	type 0
+	title 9551
+	description 9551001 1
+	level 10
+	repeat QUEST_CHALLENGE
+	givenpc 11
+	takenpc 11
+	takemap 1
+	duty
+	{
+		talknpc 11
+	}
+	default
+	{
+		exp 542
+		sxp 812
+		item 890102 1
+		item 890502 1
+	}
+	trigger TE_LEVEL ( 10 100 )
+}
+
+quest 9552
+{
+	type 0
+	title 9552
+	description 9552001 1
+	level 10
+	repeat QUEST_CHALLENGE
+	givenpc 63
+	takenpc 63
+	takemap 1
+	duty
+	{
+		talknpc 63
+	}
+	default
+	{
+		exp 542
+		sxp 812
+		item 890103 1
+		item 890503 1
+	}
+	trigger TE_LEVEL ( 10 100 )
+}
+
+quest 9553
+{
+	type 0
+	title 9553
+	description 9553001 1
+	level 25
+	repeat QUEST_CHALLENGE
+	givenpc 10
+	takenpc 10
+	takemap 1
+	duty
+	{
+		talknpc 10
+	}
+	default
+	{
+		exp 7420
+		sxp 11130
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_SJOBSKILL ( 1 70 70 )
+}
+
+quest 9554
+{
+	type 0
+	title 9554
+	description 9554001 1
+	level 25
+	repeat QUEST_CHALLENGE
+	givenpc 10
+	takenpc 10
+	takemap 1
+	duty
+	{
+		collect 880009 30
+		collect 880056 30
+	}
+	default
+	{
+		exp 7420
+		sxp 11130
+		item 890201 1
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_LINKQUEST ( 9553 )
+	trigger TE_SJOBSKILL ( 1 70 70 )
+}
+
+quest 9555
+{
+	type 0
+	title 9555
+	description 9555001 1
+	level 25
+	repeat QUEST_CHALLENGE
+	givenpc 11
+	takenpc 11
+	takemap 1
+	duty
+	{
+		talknpc 11
+	}
+	default
+	{
+		exp 7420
+		sxp 11130
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_SJOBSKILL ( 2 70 70 )
+}
+
+quest 9556
+{
+	type 0
+	title 9556
+	description 9556001 1
+	level 25
+	repeat QUEST_CHALLENGE
+	givenpc 11
+	takenpc 11
+	takemap 1
+	duty
+	{
+		collect 1040007 1
+	}
+	default
+	{
+		exp 7420
+		sxp 11130
+		item 890202 1
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_LINKQUEST ( 9555 )
+	trigger TE_SJOBSKILL ( 2 70 70 )
+}
+
+quest 9557
+{
+	type 0
+	title 9557
+	description 9557001 1
+	level 25
+	repeat QUEST_CHALLENGE
+	givenpc 63
+	takenpc 63
+	takemap 1
+	duty
+	{
+		talknpc 63
+	}
+	default
+	{
+		exp 7420
+		sxp 11130
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_SJOBSKILL ( 3 70 70 )
+}
+
+quest 9558
+{
+	type 0
+	title 9558
+	description 9558001 1
+	level 25
+	repeat QUEST_CHALLENGE
+	givenpc 63
+	takenpc 63
+	takemap 1
+	duty
+	{
+		collect 801021 20
+	}
+	default
+	{
+		exp 7420
+		sxp 11130
+		item 890203 1
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_LINKQUEST ( 9557 )
+	trigger TE_SJOBSKILL ( 3 70 70 )
+}
+
+quest 9559
+{
+	type 3
+	title 9559
+	description 9559001 1
+	level 25
+	repeat QUEST_REPEAT
+	givenpc 0
+	takenpc 10
+	takemap 1
+	duty
+	{
+		collect 880009 30
+		collect 880056 30
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 890201 1
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_SJOBSKILL ( 1 70 70 )
+}
+
+quest 9561
+{
+	type 3
+	title 9561
+	description 9561001 1
+	level 25
+	repeat QUEST_REPEAT
+	givenpc 0
+	takenpc 11
+	takemap 1
+	duty
+	{
+		collect 1040007 1
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 890202 1
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_SJOBSKILL ( 2 70 70 )
+}
+
+quest 9563
+{
+	type 3
+	title 9563
+	description 9563001 1
+	level 25
+	repeat QUEST_REPEAT
+	givenpc 0
+	takenpc 63
+	takemap 1
+	duty
+	{
+		collect 801021 20
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 890203 1
+	}
+	trigger TE_LEVEL ( 25 100 )
+	trigger TE_SJOBSKILL ( 3 70 70 )
+}
+
+quest 9800
+{
+	type 0
+	title 9800
+	description 9800001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 8
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9006 )
+}
+
+quest 9801
+{
+	type 0
+	title 9801
+	description 9801001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 8
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9007 )
+}
+
+quest 9802
+{
+	type 0
+	title 9802
+	description 9802001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 8
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9008 )
+}
+
+quest 9803
+{
+	type 0
+	title 9803
+	description 9803001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 8
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9009 )
+}
+
+quest 9804
+{
+	type 0
+	title 9804
+	description 9804001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 9
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9010 )
+}
+
+quest 9805
+{
+	type 0
+	title 9805
+	description 9805001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 9
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9011 )
+}
+
+quest 9806
+{
+	type 0
+	title 9806
+	description 9806001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 9
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9012 )
+}
+
+quest 9807
+{
+	type 0
+	title 9807
+	description 9807001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 9
+	takenpc 9
+	takemap 1
+	duty
+	{
+		talknpc 9
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9013 )
+}
+
+quest 9808
+{
+	type 0
+	title 9808
+	description 9808001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 13
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9014 )
+}
+
+quest 9809
+{
+	type 0
+	title 9809
+	description 9809001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 13
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9015 )
+}
+
+quest 9810
+{
+	type 0
+	title 9810
+	description 9810001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 13
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9016 )
+}
+
+quest 9811
+{
+	type 0
+	title 9811
+	description 9811001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 13
+	takenpc 13
+	takemap 1
+	duty
+	{
+		talknpc 13
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9017 )
+}
+
+quest 9812
+{
+	type 0
+	title 9812
+	description 9812001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 8
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9018 )
+}
+
+quest 9813
+{
+	type 0
+	title 9813
+	description 9813001 1
+	level 30
+	repeat QUEST_CHALLENGE
+	givenpc 8
+	takenpc 8
+	takemap 1
+	duty
+	{
+		talknpc 8
+	}
+	default
+	{
+		exp 15329
+		sxp 22994
+		item 1070021 1
+	}
+	trigger TE_LEVEL ( 30 100 )
+	trigger TE_LINKQUEST ( 9019 )
+}
+
+quest 9850
+{
+	type 0
+	title 9850
+	description 9850001 1
+	level 10
+	repeat QUEST_CHALLENGE
+	givenpc 1
+	takenpc 1
+	takemap 1
+	duty
+	{
+		talknpc 1
+	}
+	default
+	{
+		exp 542
+		sxp 812
+		item 1070020 1
+	}
+	trigger TE_LEVEL ( 10 100 )
+}
+
+quest 9900
+{
+	type 1
+	title 9900
+	description 9900001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 508
+	takenpc 509
+	takemap 501
+	duty
+	{
+		talknpc 509
+	}
+	limit
+	{
+		tutorialmode 1
+	}
+	end
+	{
+		tutorialmode 8
+	}
+	default
+	{
+		exp 10
+		sxp 14
+	}
+	trigger TE_LEVEL ( 1 100 )
+}
+
+quest 9901
+{
+	type 1
+	title 9901
+	description 9901001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 509
+	takenpc 511
+	takemap 501
+	duty
+	{
+		hunt 1040 3
+	}
+	limit
+	{
+		tutorialmode 2
+	}
+	end
+	{
+		tutorialmode 8
+	}
+	default
+	{
+		exp 15
+		sxp 23
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_LINKQUEST ( 9900 )
+}
+
+quest 9902
+{
+	type 1
+	title 9902
+	description 9902001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 511
+	takenpc 510
+	takemap 501
+	duty
+	{
+		collect 870194 3
+	}
+	limit
+	{
+		tutorialmode 3
+	}
+	end
+	{
+		tutorialmode 9
+	}
+	default
+	{
+		exp 15
+		sxp 23
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_LINKQUEST ( 9901 )
+}
+
+quest 9903
+{
+	type 1
+	title 9903
+	description 9903001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 1
+	duty
+	{
+		collect 870195 1
+		collect 870196 1
+		collect 870197 1
+	}
+	limit
+	{
+		tutorialmode 4
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070001 1
+		item 1070002 1
+		item 1070003 1
+		item 1070007 1
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 1000 5000 )
+	trigger TE_LINKQUEST ( 9902 )
+}
+
+quest 9904
+{
+	type 1
+	title 9904
+	description 9904001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		collect 870198 1
+		collect 870199 1
+	}
+	limit
+	{
+		tutorialmode 4
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070004 1
+		item 1070005 1
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 3000 6000 )
+	trigger TE_LINKQUEST ( 9902 )
+}
+
+quest 9905
+{
+	type 1
+	title 9905
+	description 9905001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		collect 870200 1
+	}
+	limit
+	{
+		tutorialmode 4
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070006 1
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 2000 4000 )
+	trigger TE_LINKQUEST ( 9902 )
+}
+
+quest 9906
+{
+	type 1
+	title 9906
+	description 9906001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 1001 10023
+		activeskill 1003 10023
+		activeskill 1007 10023
+	}
+	limit
+	{
+		tutorialmode 5
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 1000 )
+	trigger TE_LINKQUEST ( 9903 )
+}
+
+quest 9907
+{
+	type 1
+	title 9907
+	description 9907001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 1101 10023
+		activeskill 1103 10023
+		activeskill 1107 10023
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 5
+		sxp 7
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 1000 )
+	trigger TE_LINKQUEST ( 9906 )
+}
+
+quest 9908
+{
+	type 1
+	title 9908
+	description 9908001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 1201 10023
+		activeskill 1203 10023
+		activeskill 1208 10023
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 5
+		sxp 7
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 1000 )
+	trigger TE_LINKQUEST ( 9906 )
+}
+
+quest 9909
+{
+	type 1
+	title 9909
+	description 9909001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 1301 10023
+		activeskill 1303 10023
+		activeskill 1307 10023
+	}
+	limit
+	{
+		tutorialmode 5
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 5000 )
+	trigger TE_LINKQUEST ( 9903 )
+}
+
+quest 9910
+{
+	type 1
+	title 9910
+	description 9910001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 1401 10023
+		activeskill 1403 10023
+		activeskill 1407 10023
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 5
+		sxp 7
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 5000 )
+	trigger TE_LINKQUEST ( 9909 )
+}
+
+quest 9911
+{
+	type 1
+	title 9911
+	description 9911001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 1501 10023
+		activeskill 1503 10023
+		activeskill 1508 10023
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 5
+		sxp 7
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 5000 )
+	trigger TE_LINKQUEST ( 9909 )
+}
+
+quest 9912
+{
+	type 1
+	title 9912
+	description 9912001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 2201 10023
+		activeskill 2204 10023
+		activeskill 2207 10023
+	}
+	limit
+	{
+		tutorialmode 5
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 6000 )
+	trigger TE_LINKQUEST ( 9904 )
+}
+
+quest 9913
+{
+	type 1
+	title 9913
+	description 9913001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 2301 10023
+		activeskill 2303 10023
+		activeskill 2305 10023
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 6000 )
+	trigger TE_LINKQUEST ( 9912 )
+}
+
+quest 9914
+{
+	type 1
+	title 9914
+	description 9914001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 2001 10023
+		activeskill 2004 10023
+		activeskill 2007 10023
+	}
+	limit
+	{
+		tutorialmode 5
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 3000 )
+	trigger TE_LINKQUEST ( 9904 )
+}
+
+quest 9915
+{
+	type 1
+	title 9915
+	description 9915001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 2101 10023
+		activeskill 2104 10023
+		activeskill 2106 10023
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 10
+		sxp 14
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 3000 )
+	trigger TE_LINKQUEST ( 9914 )
+}
+
+quest 9916
+{
+	type 1
+	title 9916
+	description 9916001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 3001 10023
+		activeskill 3005 10023
+		activeskill 3008 10023
+		activeskill 3103 10023
+	}
+	limit
+	{
+		tutorialmode 5
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 20
+		sxp 28
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 2000 )
+	trigger TE_LINKQUEST ( 9905 )
+}
+
+quest 9917
+{
+	type 1
+	title 9917
+	description 9917001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 510
+	takemap 501
+	duty
+	{
+		activeskill 3201 10023
+		activeskill 3205 10023
+		activeskill 3208 10023
+		activeskill 3303 10023
+	}
+	limit
+	{
+		tutorialmode 5
+	}
+	end
+	{
+		tutorialmode 10
+	}
+	default
+	{
+		exp 20
+		sxp 28
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 4000 )
+	trigger TE_LINKQUEST ( 9905 )
+}
+
+quest 9918
+{
+	type 1
+	title 9918
+	description 9918001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 512
+	takemap 501
+	duty
+	{
+		talknpc 512
+	}
+	limit
+	{
+		tutorialmode 11
+	}
+	default
+	{
+		exp 15
+		sxp 23
+		money 500
+		mapchangepos 200101
+		item 1070011 10
+		item 1070012 10
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 1000 )
+	trigger TE_LINKQUEST ( 9906 )
+}
+
+quest 9919
+{
+	type 1
+	title 9919
+	description 9919001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 512
+	takemap 501
+	duty
+	{
+		talknpc 512
+	}
+	limit
+	{
+		tutorialmode 11
+	}
+	default
+	{
+		exp 15
+		sxp 23
+		money 500
+		mapchangepos 200101
+		item 1070011 10
+		item 1070012 10
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 5000 )
+	trigger TE_LINKQUEST ( 9909 )
+}
+
+quest 9920
+{
+	type 1
+	title 9920
+	description 9920001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 512
+	takemap 501
+	duty
+	{
+		talknpc 512
+	}
+	limit
+	{
+		tutorialmode 11
+	}
+	default
+	{
+		exp 15
+		sxp 23
+		money 500
+		mapchangepos 200101
+		item 1070011 10
+		item 1070012 10
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 6000 )
+	trigger TE_LINKQUEST ( 9912 )
+}
+
+quest 9921
+{
+	type 1
+	title 9921
+	description 9921001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 512
+	takemap 501
+	duty
+	{
+		talknpc 512
+	}
+	limit
+	{
+		tutorialmode 11
+	}
+	default
+	{
+		exp 15
+		sxp 23
+		money 500
+		mapchangepos 200101
+		item 1070011 10
+		item 1070012 10
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 3000 )
+	trigger TE_LINKQUEST ( 9914 )
+}
+
+quest 9922
+{
+	type 1
+	title 9922
+	description 9922001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 512
+	takemap 501
+	duty
+	{
+		talknpc 512
+	}
+	limit
+	{
+		tutorialmode 11
+	}
+	default
+	{
+		exp 15
+		sxp 23
+		money 500
+		mapchangepos 200101
+		item 1070011 10
+		item 1070012 10
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 2000 )
+	trigger TE_LINKQUEST ( 9916 )
+}
+
+quest 9923
+{
+	type 1
+	title 9923
+	description 9923001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 510
+	takenpc 512
+	takemap 501
+	duty
+	{
+		talknpc 512
+	}
+	limit
+	{
+		tutorialmode 11
+	}
+	default
+	{
+		exp 15
+		sxp 23
+		money 500
+		mapchangepos 200101
+		item 1070011 10
+		item 1070012 10
+	}
+	trigger TE_LEVEL ( 1 100 )
+	trigger TE_JOB ( 4000 )
+	trigger TE_LINKQUEST ( 9917 )
+}
+
+quest 9924
+{
+	type 1
+	title 9924
+	description 9924001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 513
+	takenpc 513
+	takemap 501
+	duty
+	{
+		talknpc 513
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070011 5
+		item 1070012 5
+	}
+	trigger TE_LEVEL ( 1 100 )
+}
+
+quest 9925
+{
+	type 1
+	title 9925
+	description 9925001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 514
+	takenpc 514
+	takemap 501
+	duty
+	{
+		talknpc 514
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		money 1000
+	}
+	trigger TE_LEVEL ( 1 100 )
+}
+
+quest 9926
+{
+	type 1
+	title 9926
+	description 9926001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 515
+	takenpc 515
+	takemap 501
+	duty
+	{
+		talknpc 515
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070011 5
+		item 1070012 5
+	}
+	trigger TE_LEVEL ( 1 100 )
+}
+
+quest 9927
+{
+	type 1
+	title 9927
+	description 9927001 1
+	level 1
+	repeat QUEST_CHALLENGE
+	givenpc 516
+	takenpc 516
+	takemap 501
+	duty
+	{
+		talknpc 516
+	}
+	default
+	{
+		exp 10
+		sxp 14
+		item 1070013 2
+	}
+	trigger TE_LEVEL ( 1 100 )
+}
+

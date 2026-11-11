@@ -1,0 +1,14 @@
+--=========================--
+-- æ∆¿Ã≈€∏Ù --
+--=========================--
+window_prop "P_Itemmall_Window"
+{
+	skinname "Itemmall_Window"
+}
+
+button_prop "P_Itemmall_Close"
+{
+	skinname "Itemmall_Close"
+	parent "P_Itemmall_Window"
+}
+

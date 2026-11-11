@@ -1,0 +1,19 @@
+--===============--
+-- 카드 장착 윈도우 --
+--===============--
+window_prop "P_PutCardWindow"
+{
+	skinname "PutCardWindow"
+}
+
+button_prop "P_PutCard_Close"
+{
+	skinname "PutCard_Close"
+	parent "P_PutCardWindow"
+}
+
+label_prop "P_PutCard_SlotCount"
+{
+	skinname "PutCard_SlotCount"
+	parent "P_PutCardWindow"
+}

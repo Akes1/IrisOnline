@@ -1,0 +1,286 @@
+-- 공용 사용 스킨 리스트
+--====================--
+-- 스크롤바 관련 스킨 --
+--====================--
+scrollbar "ListScroll"
+{
+	ii 5002
+	pos 0 0
+	size 18 18
+	texpos 1 116
+	
+	barbuttonskin "ScrollBarButton"
+	upbuttonskin "ScrollUpButton"
+	downbuttonskin "ScrollDownButton"
+}
+-- 버튼 "스크롤업" 
+button "ScrollUpButton"
+{
+	ii 5002
+	pos 0 0
+	size 18 18
+	texpos 21 116
+	
+	-- 버튼 그림 좌표 	
+	uppos 21 116
+	upoverpos 41 116
+	downpos 61 116
+	
+}
+-- 버튼 "스크롤다운"  
+button "ScrollDownButton"
+{
+	ii 5002
+	pos 0 0
+	size 18 18
+	texpos 21 137
+	
+	-- 버튼 그림 좌표 	
+	uppos 21 137
+	upoverpos 41 137
+	downpos 61 137
+}
+
+-- 바 버튼
+barbutton "ScrollBarButton"
+{
+	ii 5002
+	pos 0 0
+	size 18 16
+	texpos 1 139
+	
+	-- 버튼 그림 좌표 	
+	uppos 1 139
+	downpos 1 139
+}
+--====================--
+-- 스핀박스 관련 스킨 --
+--====================--
+button "spinbox_left"
+{
+	ii 5000
+	pos 0 0
+	size 18 18
+	texpos 3 585
+	
+	-- 버튼 그림 좌표 	
+	uppos 3 585
+	upoverpos 23 585
+	downpos 43 585
+}
+
+-- /// 스핀의 자식 "오른쪽 버튼"
+button "spinbox_right"
+{
+	ii 5000
+	pos 0 0
+	size 18 18
+	texpos 3 605
+	
+	-- 버튼 그림 좌표 	
+	uppos 3 605
+	upoverpos 23 605
+	downpos 43 605
+	
+}
+
+-- /// 스핀의 자식 "라벨"
+label "spinbox_label"
+{
+	pos 0 0
+}
+
+-- /// 스핀의 자식 "라벨 배경 이미지 "
+label "spinbox_back"
+{
+	pos 0 0
+}
+
+--====================--
+-- 메세지박스 관련 스킨 --
+--====================--
+label "eMB_LABEL"
+{
+	pos 25 30
+	size 206 70
+	text_align center
+}
+
+-- 메시지박스 "아무것도 없음"
+messagebox "eMB_NONE"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	
+	captionXY 0 0
+	captionWH 257 34
+
+}
+
+-- 메시지박스 "예스 / 노"
+messagebox "eMB_YESNO"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	
+	captionXY 0 0
+	captionWH 257 34
+	
+	yesbuttonskin "eMB_BTN_yes"
+	nobuttonskin "eMB_BTN_no"
+}
+
+-- 메시지박스 "확인"
+messagebox "eMB_OK"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	
+	captionXY 0 0
+	captionWH 257 34
+		
+	okbuttonskin "eMB_BTN_Center"
+}
+
+-- 메시지박스 "취소"
+messagebox "eMB_Cancel"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	
+	captionXY 0 0
+	captionWH 257 34
+	
+	nobuttonskin "eMB_BTN_Cancel"
+}
+
+-- 메시지박스 "에디트"
+messagebox "eMB_EDIT"
+{
+	ii 5002
+	pos 383 200
+	size 257 147
+	texpos 765 608
+	
+	captionXY 0 0
+	captionWH 257 34
+	
+	texteditskin "eMB_Edit_edit"
+	yesbuttonskin "eMB_BTN_yes"
+	nobuttonskin "eMB_BTN_no"
+}
+
+-- "예" 버튼 
+button "eMB_BTN_yes"
+{
+	ii 5002
+	pos 37 112
+	size 82 24
+	texpos 302 566
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 302 566
+	upoverpos 302 591
+	downpos 302 616
+	enablepos 302 616
+
+	downsound 3001
+}
+
+-- "아니오" 버튼 
+button "eMB_BTN_no"
+{
+	ii 5002
+	pos 138 112
+	size 82 24
+	texpos 386 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 566
+	upoverpos 386 591
+	downpos 386 616
+
+	downsound 3001
+}
+
+-- 확인 등 중앙 출력 버튼
+button "eMB_BTN_Center"
+{
+	ii 5002
+	pos 88 112
+	size 82 24
+	texpos 302 641
+	
+	-- 버튼 그림 좌표 	
+	uppos 302 641
+	upoverpos 302 666
+	downpos 302 691
+
+	downsound 3001
+}
+
+-- "취소" 버튼 
+button "eMB_BTN_Cancel"
+{
+	ii 5002
+	pos 88 112
+	size 82 24
+	texpos 385 655
+	
+	-- 버튼 그림 좌표 	
+	uppos 385 655
+	upoverpos 385 666
+	downpos 385 691
+
+	downsound 3001
+}
+
+
+-- /// 에디트  
+editbox "eMB_Edit_edit"
+{
+	ii 5002
+	pos 78 82
+	size 101 25
+	texpos 897 907
+	
+	editkind 5		
+	editpos 2 8	
+	editmaxlen 8		
+	
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 로딩 게이지 
+-- 소스에서 사용
+gauge "Loading_GaugeBar"
+{
+	ii 5009
+	pos 1 135
+	size 919 66
+	texpos 1 957
+	
+	gauge_speed 20.0		-- float 값
+	show_text false		-- 값 안보기
+	
+	gauge_ii 5009
+	gauge_pos 38 33
+	gauge_size 1 9
+	gauge_texpos 3 947
+	
+	-- 100 % 사이즈
+	gauge_width 850
+	gauge_height 9
+	gauge_start left -- left right
+}

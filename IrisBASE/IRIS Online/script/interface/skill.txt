@@ -1,0 +1,192 @@
+--==============================================================
+-- /// 스킬 창 
+--==============================================================
+tabwindow "SkillWindow"
+{
+	ii 5014
+	pos 0 140 --152 140
+	size 842 477 -- 720 477
+	texpos 2 2
+		
+	captionXY 0 0 
+	captionWH 842 33 --720 33
+
+	opensound 3007
+	closesound 3010
+}
+
+
+-- /// 버튼 "Close"
+button "Skill_Close_Button"
+{
+	ii 5002
+	pos 809 14 --687 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+
+--===============================--
+--스킬 포인트--
+--===============================--
+
+-- /// 사용 포인트 이미지
+label "Skill_UsePointImage"
+{
+	ii 5014
+	pos 22 445
+	size 142 25
+	texpos 864 518 --722 518
+}
+
+-- /// 사용 포인트 텍스트 
+label "Skill_UsePoint"
+{
+	pos 87 448
+	size 75 21
+	text_align center 	
+	hovertip	444
+}
+
+
+-- /// 남은 포인트 이미지
+label "Skill_PointImage"
+{
+	ii 5014
+	pos 172 445
+	size 142 25 --302 28
+	texpos 864 551 --722 551
+}
+
+-- /// 남은 포인트 텍스트
+label "Skill_Point"
+{
+	pos 237 448
+	size 75 21
+	text_align center
+}
+
+
+
+
+-- 소스에서 직접 쓰는 스킨
+icon "SkillIcon"
+{
+	pos	2 2
+	size	28 28
+}
+
+-- 소스에서 직접 쓰는 스킨(스킬내부 바탕화면 이라고 추정)
+tabsheet "skillSheet"
+{
+	pos	10 74
+	size	822 367 -- 700 367
+}
+
+tabsheet "communitySheet"
+{
+	ii 5014
+	pos 10 74
+	texpos 2 482
+	size 842 367
+}
+
+-- 소스에서 직접 쓰는 스킨
+tabbutton "JobTabbutton"
+{
+	ii 5014
+	pos 32 47
+	size 89 30
+	texpos 862 2
+
+	uppos 862 35
+	upoverpos 862 35
+	downpos 862 2
+
+	downsound 3001
+}
+
+--소스에서 직접 쓰는 스킨
+button "SkillLevelUpButton"
+{
+	ii 5014
+	pos 1 1
+	size 14 14
+	texpos 844 4
+	
+	-- 버튼 그림 좌표 					
+	uppos 844 4
+	upoverpos 844 20
+	downpos 844 36
+
+	downsound 3001
+	
+}
+
+-- /// 체크박스 "단계목록 보기"
+checkbox "Skill_GradeListView"
+{
+	ii 5006
+	pos 702 451
+	size 12 12
+	texpos 330 370
+	
+	checked	true
+
+	-- 체크박스 이미지 좌표 
+	checkpos 330 384
+	nocheckpos 330 370
+
+
+
+	onsound 3001
+	offsound 3001
+}
+
+--================================--
+--스킬 단계 리스트--
+--================================--
+window "Skill_GradeList"
+{
+	ii 5014
+	pos 842 0 --720 0
+	size 180 406 -- 242 405
+	texpos 844 73 --722 73
+
+	captionXY 0 0 
+	captionWH 0 0
+
+	opensound 3007
+	closesound 3010
+}
+
+--단계 리스트
+listbox "Skill_SkillGradeList"
+{
+	pos 19 18
+	size 145 370 --207 370 
+	row_height 37		-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 200		-- 리스트가 담을수 잇는 최대 갯수
+
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5014				-- 텍스쳐
+	child_size 129 36 --188 36		-- 사이즈
+	child_texpos 864 480 --722 480		-- 이미지 위치
+
+	selectwidth 129
+
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--       x,  w,   align
+	imgcolX 4	28
+	columnX 40 	94	 left
+}

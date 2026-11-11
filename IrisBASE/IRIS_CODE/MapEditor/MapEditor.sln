@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MapEditor", "MapEditor.vcproj", "{A56F3FF4-C239-4FC4-9A28-51493BD82739}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		FastDebug|Win32 = FastDebug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A56F3FF4-C239-4FC4-9A28-51493BD82739}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A56F3FF4-C239-4FC4-9A28-51493BD82739}.Debug|Win32.Build.0 = Debug|Win32
+		{A56F3FF4-C239-4FC4-9A28-51493BD82739}.FastDebug|Win32.ActiveCfg = FastDebug|Win32
+		{A56F3FF4-C239-4FC4-9A28-51493BD82739}.FastDebug|Win32.Build.0 = FastDebug|Win32
+		{A56F3FF4-C239-4FC4-9A28-51493BD82739}.Release|Win32.ActiveCfg = Release|Win32
+		{A56F3FF4-C239-4FC4-9A28-51493BD82739}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

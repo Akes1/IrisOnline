@@ -1,0 +1,12 @@
+--===============--
+-- 로딩2 윈도우 -- (맵 체인지시)
+--===============--
+window_prop "P_LoadingBack2"
+{
+	skinname "LoadingBack2"
+}
+
+window_prop "P_LoadingWindow2"
+{
+	skinname "LoadingWindow2"
+}

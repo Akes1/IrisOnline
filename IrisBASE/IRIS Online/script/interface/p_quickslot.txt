@@ -1,0 +1,219 @@
+-- 퀵 슬롯 윈도우 ( 열 - 가로형 )
+window_prop "P_RowQuickSlot"
+{
+	skinname "RowQuickSlot"
+}
+-- 탭체인지 버튼 3개
+--radiobutton_prop "P_RowQuick_Tab1"
+--{
+--	skinname "RowQuick_Tab1"
+--	parent "P_RowQuickSlot"
+--}
+--radiobutton_prop "P_RowQuick_Tab2"
+--{
+--	skinname "RowQuick_Tab2"
+--	parent "P_RowQuickSlot"
+--}
+--radiobutton_prop "P_RowQuick_Tab3"
+--{
+--	skinname "RowQuick_Tab3"
+--	parent "P_RowQuickSlot"
+--}
+
+-- 퀵슬롯 회전
+button_prop "P_RowQuick_Rotate"
+{
+	skinname "RowQuick_Rotate"
+	parent "P_RowQuickSlot"
+}
+
+-- 퀵슬롯 추가
+button_prop "P_RowQuick_Extra"
+{
+	skinname "RowQuick_Extra"
+	parent   "P_RowQuickSlot"
+}
+
+--==============================================================
+-- 퀵 슬롯 윈도우 ( 행 - 가로형 )
+--==============================================================
+
+-- 퀵 슬롯 윈도우 ( 행 - 세로형 )
+window_prop "P_ColumnQuickSlot"
+{
+	skinname "ColumnQuickSlot"
+}
+
+-- 탭체인지 버튼 3개
+--radiobutton_prop "P_ColumnQuick_Tab1"
+--{
+--	skinname "ColumnQuick_Tab1"
+--	parent "P_ColumnQuickSlot"
+--}
+--radiobutton_prop "P_ColumnQuick_Tab2"
+--{
+--	skinname "ColumnQuick_Tab2"
+--	parent "P_ColumnQuickSlot"
+--}
+--radiobutton_prop "P_ColumnQuick_Tab3"
+--{
+--	skinname "ColumnQuick_Tab3"
+--	parent "P_ColumnQuickSlot"
+--}
+
+-- 퀵슬롯 회전
+button_prop "P_ColumnQuick_Rotate"
+{
+	skinname "ColumnQuick_Rotate"
+	parent "P_ColumnQuickSlot"
+}
+
+-- 퀵슬롯 추가
+button_prop "P_ColumnQuick_Extra"
+{
+	skinname "ColumnQuick_Extra"
+	parent   "P_ColumnQuickSlot"
+}
+
+--==============================================================
+-- FS 퀵슬롯(가로)
+--==============================================================
+
+-- FS 퀵슬롯 ( 열 - 가로형 )
+window_prop "P_FSColumnQuickSlot"
+{
+	skinname "FSColumnQuickSlot"
+}
+
+-- 퀵슬롯 회전
+button_prop "P_FSColumnQuick_Rotate"
+{
+	skinname "ColumnQuick_Rotate"
+	parent "P_FSColumnQuickSlot"
+}
+
+-- FS 퀵슬롯 ( 행 - 세로형 )
+window_prop "P_FSRowQuickSlot"
+{
+	skinname "FSRowQuickSlot"
+}
+
+-- 퀵슬롯 회전
+button_prop "P_FSRowQuick_Rotate"
+{
+	skinname "RowQuick_Rotate"
+	parent "P_FSRowQuickSlot"
+}
+
+--==============================================================
+-- 몬스터 퀵슬롯
+--==============================================================
+
+-- 몬스터 퀵 슬롯 윈도우 ( 열 - 가로형 )
+window_prop "P_ColumnQuickSlot_Monster"
+{
+	skinname "ColumnQuickSlot_Monster"
+}
+
+-- 몬스터 퀵 슬롯 윈도우 ( 행 - 세로형 )
+window_prop "P_RowQuickSlot_Monster"
+{
+	skinname "RowQuickSlot_Monster"
+}
+
+
+--==============================================================
+-- 퀵 슬롯 추가1 윈도우 ( 행 - 세로형 )
+--==============================================================
+
+-- 확장 퀵슬롯1 (세로형)
+window_prop "P_RowExtraSlot1"
+{
+	skinname "RowExtraSlot1"
+}
+
+-- 확장 퀵슬롯1 (세로형) 회전
+button_prop "P_RowExtraSlot1_Rotate"
+{
+	skinname "RowExtraSlot1_Rotate"
+	parent   "P_RowExtraSlot1"
+}
+
+-- 확장 퀵슬롯1 (세로형) 닫기 버튼
+button_prop "P_RowExtraSlot1_Close"
+{
+	skinname "RowExtraSlot1_Close"
+	parent   "P_RowExtraSlot1"
+}
+
+--==============================================================
+-- 퀵 슬롯 추가1 윈도우 ( 행 - 가로형 )
+--==============================================================
+
+--확장 퀵슬롯1 (가로형)
+window_prop "P_ColumnExtraSlot1"
+{
+	skinname "ColumnExtraSlot1"
+}
+
+-- 확장 퀵슬롯1  (가로형)회전
+button_prop "P_ColumnExtraSlot1_Rotate"
+{
+	skinname "ColumnExtraSlot1_Rotate"
+	parent   "P_ColumnExtraSlot1"
+}
+
+-- 확장 퀵슬롯1 (가로형) 닫기 버튼
+button_prop "P_ColumnExtraSlot1_Close"
+{
+	skinname "ColumnExtraSlot1_Close"
+	parent   "P_ColumnExtraSlot1"
+}
+
+--==============================================================
+-- 퀵 슬롯 추가2 윈도우 ( 행 - 세로형 )
+--==============================================================
+
+-- 확장 퀵슬롯2 (세로형)
+window_prop "P_RowExtraSlot2"
+{
+	skinname "RowExtraSlot2"
+}
+
+-- 확장 퀵슬롯2 (세로형) 회전
+button_prop "P_RowExtraSlot2_Rotate"
+{
+	skinname "RowExtraSlot2_Rotate"
+	parent   "P_RowExtraSlot2"
+}
+
+-- 확장 퀵슬롯2 (세로형) 닫기 버튼
+button_prop "P_RowExtraSlot2_Close"
+{
+	skinname "RowExtraSlot2_Close"
+	parent   "P_RowExtraSlot2"
+}
+
+--==============================================================
+-- 퀵 슬롯 추가2 윈도우 ( 행 - 가로형 )
+--==============================================================
+
+--확장 퀵슬롯2 (가로형)
+window_prop "P_ColumnExtraSlot2"
+{
+	skinname "ColumnExtraSlot2"
+}
+
+-- 확장 퀵슬롯2  (가로형)회전
+button_prop "P_ColumnExtraSlot2_Rotate"
+{
+	skinname "ColumnExtraSlot2_Rotate"
+	parent   "P_ColumnExtraSlot2"
+}
+
+-- 확장 퀵슬롯2 (가로형) 닫기 버튼
+button_prop "P_ColumnExtraSlot2_Close"
+{
+	skinname "ColumnExtraSlot2_Close"
+	parent   "P_ColumnExtraSlot2"
+}

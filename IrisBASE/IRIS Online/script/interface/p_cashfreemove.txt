@@ -1,0 +1,19 @@
+window_prop "P_CashFreeMoveWindow"
+{
+	skinname "CashFreeMoveWindow"
+}
+
+-- ´Ý±â ¹öÆ° "x"
+button_prop "P_CashFreeMove_Close"
+{
+	parent "P_CashFreeMoveWindow"
+	skinname "CashFreeMove_Close"
+}
+
+
+-- ¸Ê ¼±ÅÃ
+combobox_prop "P_CashFreeMove_Combo"
+{
+	parent "P_CashFreeMoveWindow"
+	skinname "CashFreeMove_Combo"
+}

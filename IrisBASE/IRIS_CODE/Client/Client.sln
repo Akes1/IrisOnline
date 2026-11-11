@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client.vcproj", "{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Shipping|Win32 = Shipping|Win32
+		ShippingDebug|Win32 = ShippingDebug|Win32
+		ShippingDebugGMTool|Win32 = ShippingDebugGMTool|Win32
+		ShippingDev|Win32 = ShippingDev|Win32
+		ShippingGMTool|Win32 = ShippingGMTool|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.Debug|Win32.Build.0 = Debug|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.Release|Win32.ActiveCfg = Release|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.Release|Win32.Build.0 = Release|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.Shipping|Win32.ActiveCfg = Shipping|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.Shipping|Win32.Build.0 = Shipping|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.ShippingDebug|Win32.ActiveCfg = ShippingDebug|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.ShippingDebug|Win32.Build.0 = ShippingDebug|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.ShippingDebugGMTool|Win32.ActiveCfg = ShippingDebugGMTool|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.ShippingDebugGMTool|Win32.Build.0 = ShippingDebugGMTool|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.ShippingDev|Win32.ActiveCfg = ShippingDev|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.ShippingDev|Win32.Build.0 = ShippingDev|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.ShippingGMTool|Win32.ActiveCfg = ShippingGMTool|Win32
+		{A9124CB7-A049-4D70-9DFD-BD8CDDE40545}.ShippingGMTool|Win32.Build.0 = ShippingGMTool|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

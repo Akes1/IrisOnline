@@ -1,0 +1,22 @@
+Header
+{
+	type	0
+	sound	21	30065
+	sound	22	30066
+	sound	23	25002
+	sound	24	25003
+	sound	25	25021
+	sound	26	25054
+}
+
+Apply
+{
+	soundplay	0	23	0
+	soundplay	0	21	0
+	soundplay	500	22	0
+	soundplay	500	24	0
+	soundplay	600	24	0
+	soundplay	850	25	0
+	soundplay	1050	26	0
+}
+

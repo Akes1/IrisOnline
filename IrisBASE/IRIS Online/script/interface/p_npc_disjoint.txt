@@ -1,0 +1,37 @@
+--===============--
+-- 아이템 분해창 --
+--===============--
+window_prop "P_NpcDisjointWindow"
+{
+	skinname "NpcDisjointWindow"
+}
+
+button_prop "P_NpcDisjoint_Close"
+{
+	skinname "NpcDisjoint_Close"
+	parent "P_NpcDisjointWindow"
+}
+
+button_prop "P_NpcDisjoint_Disjoint"
+{
+	skinname "NpcDisjoint_Disjoint"
+	parent "P_NpcDisjointWindow"
+}
+
+button_prop "P_NpcDisjoint_Cancel"
+{
+	skinname "NpcDisjoint_Cancel"
+	parent "P_NpcDisjointWindow"
+}
+
+gauge_prop "P_NpcDisjoint_Gaugebar"
+{
+	skinname "NpcDisjoint_Gaugebar"
+	parent "P_NpcDisjointWindow"
+}
+
+label_prop "P_NpcDisjoint_Price"
+{
+	skinname "NpcDisjoint_Price"
+	parent "P_NpcDisjointWindow"
+}

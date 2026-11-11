@@ -1,0 +1,23 @@
+--===============--
+-- 버프 윈도우 --
+--===============--
+window_prop "P_BuffWindow"
+{
+	skinname "BuffWindow"
+}
+
+--===============--
+-- 디버프 윈도우 --
+--===============--
+window_prop "P_DeBuffWindow"
+{
+	skinname "DeBuffWindow"
+}
+
+--===============--
+-- 아이템몰 윈도우 --
+--===============--
+window_prop "P_MallBuffWindow"
+{
+	skinname "MallBuffWindow"
+}

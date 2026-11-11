@@ -1,0 +1,102 @@
+--=================--
+-- 오늘의 한마디 윈도우 --
+--=================--
+window "TodayWordWindow"
+{
+	ii 5012
+	pos 400 150 
+	size 200 242
+	texpos 289 1
+	holdview true
+
+	captionXY 0 0 
+	captionWH 200 242
+
+	opensound 3007
+	closesound 3010
+}
+
+editbox "TodayWord_Text"
+{
+	pos 17 82
+	size 148 17
+	
+	editkind 0	-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 5:특문제외 )
+	editpos 0 0	
+	editmaxlen 12	-- 에디트가 받아들일수 있는 최대 길이 지정
+	
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+button "TodayWord_Preview"
+{
+	ii 5012
+	pos 170 79	
+	size 18 18
+	texpos 68 1
+	
+	-- 버튼 그림 좌표 	
+	uppos 68 1
+	upoverpos 88 1
+	downpos 108 1
+	
+	downsound 3001
+}
+
+button "TodayWord_OK"
+{
+	ii 5002 
+	pos 10 203
+	size 82 24
+	texpos 302 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 302 566
+	upoverpos 302 591
+	downpos 302 616
+
+	downsound 3001
+}
+
+-- "아니오" 버튼 
+button "TodayWord_Cancel"
+{
+	ii 5002
+	pos 108 203
+	size 82 24
+	texpos 386 566
+	
+	-- 버튼 그림 좌표 	
+	uppos 386 566
+	upoverpos 386 591
+	downpos 386 616
+
+	downsound 3001
+}
+
+-- 소스에서 사용하는 스킨 ( 컬러 선택용 )
+label "TodayColor_Select" 
+{ 
+	ii 5012
+	pos 0 0
+	size 20 20
+	texpos 128 1
+}
+
+-- 소스에서 사용하는 스킨 ( 컬러 선택용 )
+label "TodayColor_Rect00" { pos 30 148 size 16 16 }
+label "TodayColor_Rect01" { pos 55 148 size 16 16 }
+label "TodayColor_Rect02" { pos 80 148 size 16 16 }
+label "TodayColor_Rect03" { pos 105 148 size 16 16 }
+label "TodayColor_Rect04" { pos 130 148 size 16 16 }
+label "TodayColor_Rect05" { pos 155 148 size 16 16 }
+
+label "TodayColor_Rect06" { pos 30 173 size 16 16 }
+label "TodayColor_Rect07" { pos 55 173 size 16 16 }
+label "TodayColor_Rect08" { pos 80 173 size 16 16 }
+label "TodayColor_Rect09" { pos 105 173 size 16 16 }
+label "TodayColor_Rect10" { pos 130 173 size 16 16 }
+label "TodayColor_Rect11" { pos 155 173 size 16 16 }

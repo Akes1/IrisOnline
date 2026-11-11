@@ -1,0 +1,248 @@
+--===============--
+-- 옵션 윈도우 	 --
+--===============--
+tabwindow_prop "P_Option_Window"
+{
+	skinname "Option_Window"
+}
+
+label_prop "P_Option_WindowName"
+{
+	skinname "Option_WindowName"
+	parent "P_Option_Window"
+}
+
+button_prop "P_Option_Close"
+{
+	skinname "Option_Close"
+	parent "P_Option_Window"
+}
+
+button_prop "P_Option_Default"
+{
+	skinname "Option_Default"
+	parent "P_Option_Window"
+}
+
+button_prop "P_Option_Apply"
+{
+	skinname "Option_Apply"
+	parent "P_Option_Window"
+}
+
+button_prop "P_Option_Cancel"
+{
+	skinname "Option_Cancel"
+	parent "P_Option_Window"
+}
+
+tabbutton_prop "P_Option_Environment"
+{
+	skinname "Option_Environment"
+	parent "P_Option_Window"
+}
+
+tabbutton_prop "P_Option_Graphic"
+{
+	skinname "Option_Graphic"
+	parent "P_Option_Window"
+}
+
+tabbutton_prop "P_Option_Twitter"
+{
+	skinname "Option_Twitter"
+	parent "P_Option_Window"
+}
+
+tabsheet_prop "P_Option_Sheet1"
+{
+	skinname "Option_Sheet1"
+	parent "P_Option_Window"
+}
+
+tabsheet_prop "P_Option_Sheet2"
+{
+	skinname "Option_Sheet2"
+	parent "P_Option_Window"
+}
+
+tabsheet_prop "P_Option_Sheet3"
+{
+	skinname "Option_Sheet3"
+	parent "P_Option_Window"
+}
+
+
+--===============--
+-- 환경 시트	 --
+--===============--
+checkbox_prop "P_Option_NameCheck"
+{
+	skinname "Option_NameCheck"
+	parent "P_Option_Sheet1"
+}
+
+radiobutton_prop "P_Option_NameFullCheck"
+{
+	skinname "Option_NameFullCheck"
+	parent "P_Option_Sheet1"
+}
+
+radiobutton_prop "P_Option_NameOnlyCheck"
+{
+	skinname "Option_NameOnlyCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_OtherNameCheck"
+{
+	skinname "Option_OtherNameCheck"
+	parent "P_Option_Sheet1"
+}
+
+radiobutton_prop "P_Option_OtherNameFullCheck"
+{
+	skinname "Option_OtherNameFullCheck"
+	parent "P_Option_Sheet1"
+}
+
+radiobutton_prop "P_Option_OtherNameOnlyCheck"
+{
+	skinname "Option_OtherNameOnlyCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_NpcNameCheck"
+{
+	skinname "Option_NpcNameCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_MonsterNameCheck"
+{
+	skinname "Option_MonsterNameCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_GaugeCheck"
+{
+	skinname "Option_GaugeCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_BalloonCheck"
+{
+	skinname "Option_BalloonCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_HelmetCheck"
+{
+	skinname "Option_HelmetCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_TipCheck"
+{
+	skinname "Option_TipCheck"
+	parent "P_Option_Sheet1"
+}
+
+
+-- 커뮤니티
+checkbox_prop "P_Option_TradeCheck"
+{
+	skinname "Option_TradeCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_PartyCheck"
+{
+	skinname "Option_PartyCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_DualCheck"
+{
+	skinname "Option_DualCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_FriendCheck"
+{
+	skinname "Option_FriendCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_WhisperCheck"
+{
+	skinname "Option_WhisperCheck"
+	parent "P_Option_Sheet1"
+}
+
+checkbox_prop "P_Option_PvpCheck"
+{
+	skinname "Option_PvpCheck"
+	parent "P_Option_Sheet1"
+}
+
+--===============--
+-- 그래픽/사운드 시트 --
+--===============--
+checkbox_prop "P_Option_WindowCheck"
+{
+	skinname "Option_WindowCheck"
+	parent "P_Option_Sheet2"
+}
+
+combobox_prop "P_Option_WindowSize"
+{
+	skinname "Option_WindowSize"
+	parent "P_Option_Sheet2"
+}
+
+optiongauge_prop "P_Option_Light"
+{
+	skinname "Option_Light"
+	parent "P_Option_Sheet2"
+}
+
+optiongauge_prop "P_Option_EffectSound"
+{
+	skinname "Option_EffectSound"
+	parent "P_Option_Sheet2"
+}
+
+optiongauge_prop "P_Option_BackSound"
+{
+	skinname "Option_BackSound"
+	parent "P_Option_Sheet2"
+}
+
+combobox_prop "P_Option_Video"
+{
+	skinname "Option_Video"
+	parent   "P_Option_Sheet2"
+}
+
+--===============--
+-- 트위터 시트 --
+--===============--
+
+checkbox_prop "P_Option_MessageSendCheck"
+{
+	skinname "Option_MessageSendCheck"
+	parent "P_Option_Sheet3"
+}	
+
+button_prop "P_Option_AccountInsert"
+{
+	skinname "Option_AccountInsert"
+	parent "P_Option_Sheet3"
+}
+
+button_prop "P_Option_AccountRefresh"
+{
+	skinname "Option_AccountRefresh"
+	parent "P_Option_Sheet3"
+}

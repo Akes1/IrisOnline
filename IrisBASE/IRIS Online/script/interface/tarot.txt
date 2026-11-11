@@ -1,0 +1,942 @@
+--===============--
+-- 타롯 전체 윈도우 --
+--===============--
+window "TarotWindow"
+{
+	ii 5008
+	pos 120 100
+	size 780 599
+	texpos 2 2
+
+	opensound 3017
+	closesound 3010
+}
+
+-- /// 버튼  "닫기 버튼"
+button "Tarot_Close"
+{
+	ii 5002
+	pos 747 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- /// 라벨 "스프레드 배경"(스프레드 아이콘 전체 배경으로 용도 수정)
+-- 소스에서 사용하는 스킨
+label "SpreadBackImage"
+{
+	ii 5008
+	pos 460 192
+	size 178 201
+	texpos 786 93
+}
+
+-- 소스에서 사용하는 스킨
+-- 스프레드 선택을 위한 영역 설정
+label "SelectRect00"	{ pos 468 201	size 161 36 }
+label "SelectRect01"	{ pos 468 238	size 161 36 }
+label "SelectRect02"	{ pos 468 275	size 161 36 }
+label "SelectRect03"	{ pos 468 312	size 161 36 }
+label "SelectRect04"	{ pos 468 349	size 161 36 }
+
+-- /// 타로카드 이미지라벨 
+-- 소스에서 직접 쓰는 스킨
+label "TarotCard"
+{
+	pos 60 60
+	size 60 100
+}
+
+-- /// 스프레드 아이콘용
+-- 소스에서 직접 쓰는 스킨
+icon "SpreadIcon"
+{ 
+	pos 473 206	
+	size 28 28 
+}
+
+-- 소스에서 직접 쓰는 스킨
+label "Selection"
+{
+	ii 5008
+	pos 110 110
+	size 161 36
+ 	texpos 794 296
+}
+
+-- /// 라벨 "[스프레드] 이미지"
+label "Tarot_SpreadImage"
+{
+	ii 5008
+	pos 459 169
+	size 65 22
+	texpos 784 69
+}
+
+--===============--
+-- 점집 개설 윈도우  --
+--===============--
+-- /// 점집 개설 윈도우 
+window "TarotOpenWindow"
+{
+	pos 0 0
+	size 780 599
+}
+
+
+-- /// 버튼 "점집개설"
+button "TarotOpen_Open"
+{
+	ii 5008
+	pos 517 539
+	size 82 24
+	texpos 596 610
+	
+	-- 버튼 그림 좌표 	
+	uppos 596 610
+	upoverpos 596 636
+	downpos 596 662
+
+	downsound 3001
+}
+
+-- /// 버튼 "취소"
+button "TarotOpen_Cancel"
+{
+	ii 5008
+	pos 605 539 
+	size 82 24
+	texpos 680 610
+	
+	-- 버튼 그림 좌표 	
+	uppos 680 610
+	upoverpos 680 636
+	downpos 680 662
+
+	downsound 3001
+}
+
+-- /// 라벨 "카드수치총합"
+label "TarotOpen_Total"
+{
+	pos  300 546
+	size 93 12		
+	text_align center
+}
+
+-- /// 라벨 "카드활용포인트"
+label "TarotOpen_TarotCount"
+{
+	pos 620 293
+	size 87 24
+	text_align center
+}
+
+-- /// 라벨 "점괘 재료개수"
+label "TarotOpen_StuffNum"
+{
+	pos 645 218
+	size 77 19
+	text_align right	
+}
+
+-- /// 라벨 "이용요금 배경"
+label "TarotOpen_PriceBack"
+{
+	ii 5008
+	pos 530 125
+	size 105 23
+	texpos 855 44
+}
+
+-- /// 에디트 "가격" 
+editbox "TarotOpen_Price"
+{
+	pos 532 124
+	size 78 23
+	
+	editkind 2		-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editpos 8 7
+	editmaxlen 13		-- 숫자 따옴표 포함	
+	text_align left
+	
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 멀티 에디트 박스 "점집이름"
+multieditbox "TarotOpen_Name"
+{
+	ii 5008
+	pos 530 79
+	size 162 40
+	texpos 855 2
+
+	editmaxlen 26
+	editkind 0
+	editpos 3 7
+	editwidth 160
+}
+
+-- /// 라벨 "점집이름"
+label "TarotOpen_NameTxt"
+{
+	ii 5008
+	pos 459 79
+	size 65 22
+	texpos 784 2
+}
+
+-- /// 라벨 "이용요금"
+label "TarotOpen_PriceTxt"
+{
+	ii 5008
+	pos 459 125
+	size 65 22
+	texpos 784 44	
+}
+
+-- /// 라벨 "카드 활용포인트"
+label "TarotOpen_TarotCountTxt"
+{
+	ii 5008
+	pos 648 255
+	size 95 45
+	texpos 882 334
+}
+
+-- /// 라벨 "점괘 재료개수"
+label "TarotOpen_StuffNumTxt"
+{
+	ii 5008
+	pos 648 192
+	size 95 45
+	texpos 785 334	
+}
+
+-- /// 라벨 "카드 수치 총합"
+label "TarotOpen_TotalTxt"
+{
+	ii 5008
+	pos 299 517
+	size 95 45
+	texpos 785 381
+}
+
+
+--===============--
+-- 타롯 점집 확인 윈도우   --
+--===============--
+-- 소스에서 사용하는 스킨명
+-- /// 타롯 점집 확인 윈도우 
+window "TarotCheckWindow"
+{
+	pos 0 0
+	size 780 599
+}
+
+-- /// 버튼 "점괘보기"
+button "TarotCheck_Start"
+{
+	ii 5008
+	pos 517 539
+	size 82 24
+	texpos 764 688
+	
+	-- 버튼 그림 좌표 	
+	uppos 764 688
+	upoverpos 764 714
+	downpos 764 740
+
+	downsound 3001
+}
+
+-- /// 버튼 "취소"
+button "TarotCheck_Cancel"
+{
+	ii 5008
+	pos 605 539 
+	size 82 24
+	texpos 680 610
+	
+	-- 버튼 그림 좌표 	
+	uppos 680 610
+	upoverpos 680 636
+	downpos 680 662
+
+	downsound 3001
+}
+
+-- /// 라벨 "카드수치총합"
+label "TarotCheck_Total"
+{
+	pos  300 546
+	size 93 12		
+	text_align center
+}
+
+-- /// 라벨 "점집이름배경이미지"
+label "TarotCheck_ShopNameBackImage"
+{
+	ii 5008
+	pos 459 79
+	size 233 40
+	texpos 784 2
+}
+
+-- /// 라벨 "점집이름"
+label "TarotCheck_ShopName"
+{
+	pos 533 86
+	size 162 40
+}
+
+-- /// "이용요금 배경 이미지" 
+label "TarotCheck_PayImage"
+{
+	ii 5008
+	pos 530 125
+	size 105 23
+	texpos 855 44
+}
+
+-- /// "이용요금" 
+label "TarotCheck_Pay"
+{
+--	ii 5008
+	pos 535 131
+	size 105 23
+--	texpos 855 44
+}
+
+-- /// 라벨 "카드 수치 총합"
+label "TarotCheck_TotalTxt"
+{
+	ii 5008
+	pos 299 517
+	size 95 45
+	texpos 785 381
+}
+-- /// 라벨 "점집이름"
+label "TarotCheck_NameTxt"
+{
+	ii 5008
+	pos 459 79
+	size 65 22
+	texpos 784 2
+}
+-- /// 라벨 "이용요금"
+label "TarotCheck_PriceTxt"
+{
+	ii 5008
+	pos 460 125
+	size 65 22
+	texpos 784 44	
+}
+
+
+--===============--
+-- 타롯 카드 선택 윈도우    --
+--===============--
+-- 소스에서 사용하는 스킨명
+-- /// 타롯 카드 선택 윈도우 
+window "TarotSelectWindow"
+{
+	pos 0 0
+	size 780 599
+}
+
+-- /// 버튼 "선택완료"
+button "TarotSelect_Complete"
+{
+	ii 5008
+	pos 517 539
+	size 82 24
+	texpos 680 688
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 680 688
+	upoverpos 680 714
+	downpos 680 740
+	enablepos 680 714
+
+	downsound 3001
+}
+
+-- /// 버튼 "취소"
+button "TarotSelect_Cancel"
+{
+	ii 5008
+	pos 605 539 
+	size 82 24
+	texpos 680 610
+	
+	-- 버튼 그림 좌표 	
+	uppos 680 610
+	upoverpos 680 636
+	downpos 680 662
+
+	downsound 3001
+}
+
+-- /// 버튼 "임의선택"
+button "TarotSelect_Random"
+{
+	ii 5008
+	pos 312 540 
+	size 82 24
+	texpos 596 688
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 596 688
+	upoverpos 596 714
+	downpos 596 740
+	enablepos 596 714
+
+	downsound 3020
+}
+
+-- /// 라벨 "선택 수"
+label "TarotSelect_Count"
+{
+	ii 5008
+	pos 305 515
+	size 95 23
+	texpos 785 403
+	
+	text_align center
+}
+
+-- /// 라벨 "점집이름배경이미지"
+label "TarotSelect_ShopNameBackImage"
+{
+	ii 5008
+	pos 459 79
+	size 233 40
+	texpos 784 2
+}
+
+-- /// 라벨 "점집이름"
+label "TarotSelect_ShopName"
+{
+	pos 533 86
+	size 162 40
+}
+
+-- /// 라벨 "점집이름"
+label "TarotSelect_NameTxt"
+{
+	ii 5008
+	pos 459 79
+	size 65 22
+	texpos 784 2
+}
+
+
+--===============--
+-- 타롯 점괘 결과 윈도우    --
+--===============--
+-- 소스에서 사용하는 스킨명
+-- /// 점괘 윈도우
+window "TarotResultWindow"
+{
+	pos 0 0
+	size 780 599
+}
+
+gaugetb "TarotResult_Gauge"
+{
+	ii 5008
+	pos 469 374
+	size 126 179
+	texpos 307 764	
+	gauge_speed 30		-- float 값
+			
+	gauge_ii 5008
+	gauge_pos 15 12
+	gauge_size 98 20
+	gauge_texpos 320 946
+	gauge_width 94
+	gauge_height 158	-- 100 % 사이즈
+}
+
+-- /// 라벨 "카드설명"
+label "TarotResult_DescImg"
+{
+	ii 5008
+	pos 459 79
+	size 65 22
+	texpos 307 603
+}
+
+-- /// 라벨 "한번에오픈하기"
+label "TarotResult_LabelAllOpen"
+{
+	ii 5008
+	pos 459 246
+	size 101 22
+	texpos 785 428
+}
+
+-- /// 라벨 "낱장오픈하기"
+label "TarotResult_LabelOneOpen"
+{
+	ii 5008
+	pos 459 307
+	size 91 22
+	texpos 888 428
+}
+
+-- /// 라벨 "카드수치합"
+label "TarotResult_LabelOpenTotal"
+{
+	ii 5008
+	pos 612 374
+	size 114 133		
+	texpos 438 764
+}
+
+-- /// 버튼 "임의방향"
+button "TarotResult_Random"
+{
+	ii 5008
+	pos 459 272 
+	size 82 24
+	texpos 596 766
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 596 766
+	upoverpos 596 792
+	downpos 596 818
+	enablepos 596 792
+
+	downsound 3021
+}
+
+-- /// 버튼 "전부 정방향"
+button "TarotResult_AllStraight"
+{
+	ii 5008
+	pos 547 272
+	size 82 24
+	texpos 680 766
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 680 766
+	upoverpos 680 792
+	downpos 680 818
+	enablepos 680 792
+
+	downsound 3021
+}
+
+-- /// 버튼 "전부 역방향"
+button "TarotResult_AllInverse"
+{
+	ii 5008
+	pos 635 272
+	size 82 24
+	texpos 764 766
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 764 766
+	upoverpos 764 792
+	downpos 764 818
+	enablepos 764 792
+
+	downsound 3021
+}
+
+-- /// 버튼 "정방향"
+button "TarotResult_OneStraight"
+{
+	ii 5008
+	pos 459 333
+	size 82 24
+	texpos 680 766
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 680 766
+	upoverpos 680 792
+	downpos 680 818
+	enablepos 680 792
+	
+	downsound 3021
+}
+
+-- /// 버튼 "역방향"
+button "TarotResult_OneInverse"
+{
+	ii 5008
+	pos 547 333
+	size 82 24
+	texpos 764 766
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 764 766
+	upoverpos 764 792
+	downpos 764 818
+	enablepos 764 792
+
+	downsound 3021
+}
+
+-- /// 버튼 "운세효과받기"
+button "TarotResult_Result"
+{
+	ii 5008
+	pos 614 523
+	size 86 24
+	texpos 438 900
+	useenable true
+
+	-- 버튼 그림 좌표 	
+	uppos 438 900
+	upoverpos 438 926
+	downpos 438 952
+	enablepos 438 952
+
+	downsound 3001
+}
+
+-- /// 버튼 "카드오픈 버튼 - right"
+button "TarotResult_Right"
+{
+	ii 5008
+	pos 0 0
+	size 16 19
+	texpos 887 850
+	
+	-- 버튼 그림 좌표 	
+	uppos 887 850
+	upoverpos 887 870
+	downpos 887 890
+
+	downsound 3021
+}
+
+-- /// 버튼 "카드오픈 버튼 - up"
+button "TarotResult_Up"
+{
+	ii 5008
+	pos 0 0
+	size 19 16
+	texpos 863 850
+	
+	-- 버튼 그림 좌표 	
+	uppos 863 850
+	upoverpos 863 867
+	downpos 863 884
+	
+	downsound 3021
+}
+
+-- /// 라벨 "카드해석"
+label "TarotResult_Description"
+{
+	pos 468 113
+	size 277 134
+	text_align left
+}
+
+-- /// 라벨 "카드해석 이미지"
+label "TarotResult_DescriptionImage"
+{
+	ii 5008
+	pos 459 104
+	size 286 134
+	texpos 307 628
+	text_align left
+}
+
+label "TarotResult_Opentxt1"
+{
+	pos 637 380
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt2"
+{
+	pos 637 401
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt3"
+{
+	pos 637 422
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt4"
+{
+	pos 637 443
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt5"
+{
+	pos 637 464
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt6"
+{
+	pos 695 380
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt7"
+{
+	pos 695 401
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt8"
+{
+	pos 695 422
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt9"
+{
+	pos 695 443
+	size 29 11
+	text_align center
+}
+label "TarotResult_Opentxt10"
+{
+	pos 695 464
+	size 29 11
+	text_align center
+}
+
+-- /// 라벨 "오픈카드 총 수치"
+label "TarotResult_OpenTotal"
+{
+	pos 664 493
+	size 60 11
+	text_align center
+}
+
+-- /// 소스에서 직접 쓰는 스킨
+label "SpreadImage"
+{
+	pos 0 0
+	size 60 100
+}
+
+
+--===============--
+-- NPC 점집 체크 윈도우 --
+--===============--
+-- 소스에서 사용하는 스킨명
+window "NpcTarotCheckWindow"
+{
+	pos 0 0
+	size 780 599
+}
+
+--===============--
+-- NPC 점집 선택 윈도우 --
+--===============--
+-- 소스에서 사용하는 스킨명
+window "NpcTarotSelectWindow"
+{
+	pos 0 0
+	size 780 599
+}
+
+--===============--
+-- NPC 점집 결과 윈도우 --
+--===============--
+window "NpcTarotResultWindow"
+{
+	pos 0 0
+	size 780 599
+}
+
+-- /// 버튼 "운세효과받기"
+button "NpcTarotResult_Result"
+{
+	ii 5008
+	pos 659 544
+	size 86 24
+	texpos 438 900
+	useenable true
+
+	-- 버튼 그림 좌표 	
+	uppos 438 900
+	upoverpos 438 926
+	downpos 438 952
+	enablepos 438 952
+
+	downsound 3001
+}
+
+-- /// 버튼 "정방향"
+button "NpcTarotResult_OneStraight"
+{
+	ii 5008
+	pos 459 520
+	size 82 24
+	texpos 680 766
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 680 766
+	upoverpos 680 792
+	downpos 680 818
+	enablepos 680 792
+
+	downsound 3021
+}
+
+-- /// 버튼 "역방향"
+button "NpcTarotResult_OneInverse"
+{
+	ii 5008
+	pos 547 520
+	size 82 24
+	texpos 764 766
+	useenable true
+	
+	-- 버튼 그림 좌표 	
+	uppos 764 766
+	upoverpos 764 792
+	downpos 764 818
+	enablepos 764 792
+
+	downsound 3021
+}
+
+-- /// 라벨 "카드해석"
+label "NpcTarotResult_Desc"
+{
+--	ii 5008
+	pos 465 110
+	size 278 134
+--	texpos 307 628
+	text_align left
+}
+
+-- /// 라벨 "질문"
+label "NpcTarotResult_Question"
+{
+	pos 503 275
+	size 236 36
+	text_align left
+}
+
+-- /// 라벨 "열린카드 정보"
+label "NpcTarotResult_OpenCardInfo"
+{
+	pos 503 337
+	size 236 36
+	text_align left
+}
+
+-- /// 라벨 "해석"
+label "NpcTarotResult_Comment"
+{
+	pos 503 383
+	size 236 54
+	text_align left
+}
+
+-- 해석 배경
+label "NpcTarotResult_CommentBack"
+{
+	ii 5008
+	pos 459 104
+	size 286 134
+	texpos 307 628
+	text_align left
+}
+
+label "NpcTarotResult_QuestionImg"
+{
+	ii 5012
+	pos 459 266
+	size 286 172
+	texpos 1 24
+}
+
+label "NpcTarotResult_OpenCardImg"
+{
+	ii 5012
+	pos 459 266
+	size 286 172
+	texpos 1 24
+}
+
+label "NpcTarotResult_CommentImg"
+{
+	ii 5012
+	pos 459 266
+	size 286 172
+	texpos 1 24
+}
+
+-- [점괘해석] 이미지
+label "NpcTarotResult_FortuneImg"
+{
+	ii 5012
+	pos 459 241
+	size 65 22
+	texpos 1 1
+}
+
+-- [해석재확인] 이미지
+label "NpcTarotResult_FortuneImgReview"
+{
+	ii 5012
+	pos 566 451
+	size 73 17
+	texpos 55 198
+}
+
+button "NpcTarotResult_ReviewLeft"
+{
+	ii 5012
+	pos 534 447
+	size 25 25
+	texpos 1 197
+	
+	-- 버튼 그림 좌표 	
+	uppos 1 197
+	upoverpos 1 224
+	downpos 1 251
+
+	downsound 3001
+}
+
+button "NpcTarotResult_ReviewRight"
+{
+	ii 5012
+	pos 645 447
+	size 25 25
+	texpos 28 197
+	
+	-- 버튼 그림 좌표 	
+	uppos 28 197
+	upoverpos 28 224
+	downpos 28 251
+
+	downsound 3001
+}

@@ -1,0 +1,52 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--기계 정비사
+--스킬3
+
+Header
+{
+	type	0
+	
+	effect	0	0.0	0.0	0.0	1.0	"eff_m_1025_01.nif"
+	
+	sound	21	5523
+	sound	22	5026
+}
+
+Activity
+{
+	animation	7
+	
+	action	0	0	0	0	1	foot	0.0	0.0	0.0
+
+	soundplay	400	21	0
+	soundplay	500	22	0
+
+	active	650
+}	
+Apply
+{
+	damage	0	100
+}

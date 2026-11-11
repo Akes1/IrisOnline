@@ -1,0 +1,27 @@
+--공격1: 한손검
+Header
+{
+	type	0
+
+	sound	21	4004
+	sound	22	4504
+
+	trailtex	31	"trail_green_00.tga"
+}
+
+Activity
+{
+	animation	31
+
+	trail	0	500	31	rweapon	rhand	1000.0	10.0
+
+	soundplay	300	21	0
+	soundplay	450	22	0
+
+	active	433
+}
+
+Apply
+{
+	damage	0	100
+}

@@ -1,0 +1,21 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	1.0	"Eff_Mon_Die_01.nif"
+	sound	21	30112
+	sound	22	25002
+	sound	23	25054
+	sound	24	25034
+	sound	25	25021
+}
+
+Apply
+{
+	action	0	0	0	0	1	foot	0.0	0.0	0.0
+	soundplay	0	22	0
+	soundplay	0	21	0
+	soundplay	900	23	0
+	soundplay	1300	25	0
+	soundplay	1500	24	0
+}
+

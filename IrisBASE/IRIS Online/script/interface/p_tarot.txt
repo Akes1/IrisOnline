@@ -1,0 +1,664 @@
+window_prop "P_TarotWindow"
+{
+	skinname "TarotWindow"
+}
+
+-- /// 버튼  "닫기 버튼"
+button_prop "P_Tarot_Close"
+{
+	skinname "Tarot_Close"
+	parent "P_TarotWindow"
+}
+
+--------------------------------------------
+--------------------------------------------
+-- /// 점집 개설 윈도우 
+window_prop "P_TarotOpenWindow"
+{
+	skinname "TarotOpenWindow"
+	parent "P_TarotWindow"
+}
+
+-- /// 버튼 "점집개설"
+button_prop "P_TarotOpen_Open"
+{
+	skinname "TarotOpen_Open"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 버튼 "취소"
+button_prop "P_TarotOpen_Cancel"
+{
+	skinname "TarotOpen_Cancel"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "카드수치총합"
+label_prop "P_TarotOpen_Total"
+{
+	skinname "TarotOpen_Total"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "점봐주기 횟수"
+label_prop "P_TarotOpen_TarotCount"
+{
+	skinname "TarotOpen_TarotCount"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "점괘 재료갯수"
+label_prop "P_TarotOpen_StuffNum"
+{
+	skinname "TarotOpen_StuffNum"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "점집이름"
+label_prop "P_TarotOpen_NameTxt"
+{
+	skinname "TarotOpen_NameTxt"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "이용요금"
+label_prop "P_TarotOpen_PriceTxt"
+{
+	skinname "TarotOpen_PriceTxt"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "등록 스프레드"
+label_prop "P_TarotOpen_SpreadImage"
+{
+	skinname "Tarot_SpreadImage"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "점 봐주기 잔여횟수"
+label_prop "P_TarotOpen_TarotCountTxt"
+{
+	skinname "TarotOpen_TarotCountTxt"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "점괘 재료갯수"
+label_prop "P_TarotOpen_StuffNumTxt"
+{
+	skinname "TarotOpen_StuffNumTxt"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 라벨 "카드 수치 총 합"
+label_prop "P_TarotOpen_TotalTxt"
+{
+	skinname "TarotOpen_TotalTxt"
+	parent "P_TarotOpenWindow"
+}
+
+label_prop "P_TarotOpen_PriceBack"
+{
+	skinname "TarotOpen_PriceBack"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 에디트 "가격" 
+numberedit_prop "P_TarotOpen_Price"
+{
+	skinname "TarotOpen_Price"
+	parent "P_TarotOpenWindow"
+}
+
+-- /// 멀티 에디트 박스 "점집이름"
+multieditbox_prop "P_TarotOpen_Name"
+{
+	skinname "TarotOpen_Name"
+	parent "P_TarotOpenWindow"
+}
+--------------------------------------------
+--------------------------------------------
+
+
+
+
+--------------------------------------------
+--------------------------------------------
+-- /// 타롯 점집 확인 윈도우 
+window_prop "P_TarotCheckWindow"
+{
+	skinname "TarotCheckWindow"
+	parent "P_TarotWindow"
+}
+
+-- /// 버튼 "점괘보기"
+button_prop "P_TarotCheck_Start"
+{
+	skinname "TarotCheck_Start"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 버튼 "취소"
+button_prop "P_TarotCheck_Cancel"
+{
+	skinname "TarotCheck_Cancel"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 라벨 "카드수치총합"
+label_prop "P_TarotCheck_Total"
+{
+	skinname "TarotCheck_Total"
+	parent "P_TarotCheckWindow"
+}
+
+label_prop "P_TarotCheck_ShopNameBackImage"
+{
+	skinname "TarotCheck_ShopNameBackImage"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 라벨 "점집이름"
+label_prop "P_TarotCheck_ShopName"
+{
+	skinname "TarotCheck_ShopName"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 라벨  "이용요금"
+label_prop "P_TarotCheck_Pay"
+{
+	skinname "TarotCheck_Pay"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 라벨  "이용요금"
+label_prop "P_TarotCheck_PayImage"
+{
+	skinname "TarotCheck_PayImage"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 라벨 "카드 수치 총 합"
+label_prop "P_TarotCheck_TotalTxt"
+{
+	skinname "TarotCheck_TotalTxt"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 라벨 "점집이름"
+label_prop "P_TarotCheck_NameTxt"
+{
+	skinname "TarotCheck_NameTxt"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 라벨 "이용요금"
+label_prop "P_TarotCheck_PriceTxt"
+{
+	skinname "TarotCheck_PriceTxt"
+	parent "P_TarotCheckWindow"
+}
+
+-- /// 라벨 "등록 스프레드"
+label_prop "P_TarotCheck_SpreadImage"
+{
+	skinname "Tarot_SpreadImage"
+	parent "P_TarotCheckWindow"
+}
+
+
+
+
+
+--------------------------------------------
+--------------------------------------------
+-- /// 타롯 카드 선택 윈도우 
+window_prop "P_TarotSelectWindow"
+{
+	skinname "TarotSelectWindow"
+	parent "P_TarotWindow"
+}
+
+-- /// 버튼 "선택완료"
+button_prop "P_TarotSelect_Complete"
+{
+	skinname "TarotSelect_Complete"
+	parent "P_TarotSelectWindow"
+}
+
+-- /// 버튼 "취소"
+button_prop "P_TarotSelect_Cancel"
+{
+	skinname "TarotSelect_Cancel"
+	parent "P_TarotSelectWindow"
+}
+
+-- /// 버튼 "임의선택"
+button_prop "P_TarotSelect_Random"
+{
+	skinname "TarotSelect_Random"
+	parent "P_TarotSelectWindow"
+}
+
+-- /// 라벨 "선택 수"
+label_prop "P_TarotSelect_Count"
+{
+	skinname "TarotSelect_Count"
+	parent "P_TarotSelectWindow"
+}
+
+label_prop "P_TarotSelect_ShopNameBackImage"
+{
+	skinname "TarotSelect_ShopNameBackImage"
+	parent "P_TarotSelectWindow"
+}
+
+-- /// 라벨 "점집이름"
+label_prop "P_TarotSelect_ShopName"
+{
+	skinname "TarotSelect_ShopName"
+	parent "P_TarotSelectWindow"
+}
+
+-- /// 라벨 "점집이름"
+label_prop "P_TarotSelect_NameTxt"
+{
+	skinname "TarotSelect_NameTxt"
+	parent "P_TarotSelectWindow"
+}
+
+-- /// 라벨 "등록 스프레드"
+label_prop "P_TarotSelect_SpreadImage"
+{
+	skinname "Tarot_SpreadImage"
+	parent "P_TarotSelectWindow"
+}
+
+--------------------------------------------
+--------------------------------------------
+
+
+
+
+
+--------------------------------------------
+--------------------------------------------
+-- /// 점괘 윈도우
+window_prop "P_TarotResultWindow"
+{
+	skinname "TarotResultWindow"
+	parent "P_TarotWindow"
+}
+
+gaugetb_prop "P_TarotResult_Gauge"
+{
+	skinname "TarotResult_Gauge"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 라벨 "카드설명"
+label_prop "P_TarotResult_DescImg"
+{
+	skinname "TarotResult_DescImg"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 라벨 "한번에오픈하기"
+label_prop "P_TarotResult_LabelAllOpen"
+{
+	skinname "TarotResult_LabelAllOpen"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 라벨 "낱장오픈하기"
+label_prop "P_TarotResult_LabelOneOpen"
+{
+	skinname "TarotResult_LabelOneOpen"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 라벨 "카드수치합"
+label_prop "P_TarotResult_LabelOpenTotal"
+{
+	skinname "TarotResult_LabelOpenTotal"
+	parent "P_TarotResultWindow"
+}
+	
+-- /// 버튼 "임의방향"
+button_prop "P_TarotResult_Random"
+{
+	skinname "TarotResult_Random"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 버튼 "전부 정방향"
+button_prop "P_TarotResult_AllStraight"
+{
+	skinname "TarotResult_AllStraight"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 버튼 "전부 역방향"
+button_prop "P_TarotResult_AllInverse"
+{
+	skinname "TarotResult_AllInverse"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 버튼 "정방향"
+button_prop "P_TarotResult_OneStraight"
+{
+	skinname "TarotResult_OneStraight"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 버튼 "역방향"
+button_prop "P_TarotResult_OneInverse"
+{
+	skinname "TarotResult_OneInverse"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 버튼 "운세효과받기"
+button_prop "P_TarotResult_Result"
+{
+	skinname "TarotResult_Result"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 버튼 "카드오픈 버튼 - right"
+button_prop "P_TarotResult_Right"
+{
+	skinname "TarotResult_Right"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 버튼 "카드오픈 버튼 - up"
+button_prop "P_TarotResult_Up"
+{
+	skinname "TarotResult_Up"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 라벨 "카드해석"
+label_prop "P_TarotResult_Description"
+{
+	skinname "TarotResult_Description"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 라벨 "카드해석 이미지"
+label_prop "P_TarotResult_DescriptionImage"
+{
+	skinname "TarotResult_DescriptionImage"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt1"
+{
+	skinname "TarotResult_Opentxt1"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt2"
+{
+	skinname "TarotResult_Opentxt2"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt3"
+{
+	skinname "TarotResult_Opentxt3"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt4"
+{
+	skinname "TarotResult_Opentxt4"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt5"
+{
+	skinname "TarotResult_Opentxt5"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt6"
+{
+	skinname "TarotResult_Opentxt6"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt7"
+{
+	skinname "TarotResult_Opentxt7"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt8"
+{
+	skinname "TarotResult_Opentxt8"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt9"
+{
+	skinname "TarotResult_Opentxt9"
+	parent "P_TarotResultWindow"
+}
+
+label_prop "P_TarotResult_Opentxt10"
+{
+	skinname "TarotResult_Opentxt10"
+	parent "P_TarotResultWindow"
+}
+
+-- /// 라벨 "오픈카드 총 수치"
+label_prop "P_TarotResult_OpenTotal"
+{
+	skinname "TarotResult_OpenTotal"
+	parent "P_TarotResultWindow"
+}
+
+--===============--
+-- NPC 점집 체크 윈도우 --
+--===============--
+window_prop "P_NpcTarotCheckWindow"
+{
+	skinname "NpcTarotCheckWindow"
+	parent "P_TarotWindow"
+}
+
+button_prop "P_NpcTarotCheck_Start"
+{
+	skinname "TarotCheck_Start"
+	parent "P_NpcTarotCheckWindow"
+}
+
+button_prop "P_NpcTarotCheck_Cancel"
+{
+	skinname "TarotCheck_Cancel"
+	parent "P_NpcTarotCheckWindow"
+}
+
+-- /// 라벨  "이용요금-배경이미지"
+label_prop "P_NpcTarotCheck_PayImage"
+{
+	skinname "TarotCheck_PayImage"
+	parent "P_NpcTarotCheckWindow"
+}
+
+label_prop "P_NpcTarotCheck_Pay"
+{
+	skinname "TarotCheck_Pay"
+	parent "P_NpcTarotCheckWindow"
+}
+
+label_prop "P_NpcTarotCheck_PriceImage"
+{
+	skinname "TarotCheck_PriceTxt"
+	parent "P_NpcTarotCheckWindow"
+}
+
+label_prop "P_NpcTarotCheck_SpreadImage"
+{
+	skinname "Tarot_SpreadImage"
+	parent "P_NpcTarotCheckWindow"
+}
+
+--===============--
+-- NPC 점집 선택 윈도우 --
+--===============--
+window_prop "P_NpcTarotSelectWindow"
+{
+	skinname "NpcTarotSelectWindow"
+	parent "P_TarotWindow"
+}
+
+button_prop "P_NpcTarotSelect_Complete"
+{
+	skinname "TarotSelect_Complete"
+	parent "P_NpcTarotSelectWindow"
+}
+
+button_prop "P_NpcTarotSelect_Cancel"
+{
+	skinname "TarotSelect_Cancel"
+	parent "P_NpcTarotSelectWindow"
+}
+
+button_prop "P_NpcTarotSelect_Random"
+{
+	skinname "TarotSelect_Random"
+	parent "P_NpcTarotSelectWindow"
+}
+
+label_prop "P_NpcTarotSelect_SpreadImage"
+{
+	skinname "Tarot_SpreadImage"
+	parent "P_NpcTarotSelectWindow"
+}
+
+label_prop "P_NpcTarotSelect_Count"
+{
+	skinname "TarotSelect_Count"
+	parent "P_NpcTarotSelectWindow"
+}
+
+--===============--
+-- NPC 점집 결과 윈도우 --
+--===============--
+window_prop "P_NpcTarotResultWindow"
+{
+	skinname "NpcTarotResultWindow"
+	parent "P_TarotWindow"
+}
+
+button_prop "P_NpcTarotResult_Result"
+{
+	skinname "NpcTarotResult_Result"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_DescImg"
+{
+	skinname "TarotResult_DescImg"
+	parent "P_NpcTarotResultWindow"
+}
+
+button_prop "P_NpcTarotResult_Right"
+{
+	skinname "TarotResult_Right"
+	parent "P_NpcTarotResultWindow"
+}
+
+button_prop "P_NpcTarotResult_Up"
+{
+	skinname "TarotResult_Up"
+	parent "P_NpcTarotResultWindow"
+}
+
+button_prop "P_NpcTarotResult_Straight"
+{
+	skinname "NpcTarotResult_OneStraight"
+	parent "P_NpcTarotResultWindow"
+}
+
+button_prop "P_NpcTarotResult_Inverse"
+{
+	skinname "NpcTarotResult_OneInverse"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_Desc"
+{
+	skinname "NpcTarotResult_Desc"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_Question"
+{
+	skinname "NpcTarotResult_Question"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_OpenCardInfo"
+{
+	skinname "NpcTarotResult_OpenCardInfo"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_Comment"
+{
+	skinname "NpcTarotResult_Comment"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_CommentBack"
+{
+	skinname "NpcTarotResult_CommentBack"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_QuestionImg"
+{
+	skinname "NpcTarotResult_QuestionImg"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_OpenCardImg"
+{
+	skinname "NpcTarotResult_OpenCardImg"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_CommentImg"
+{
+	skinname "NpcTarotResult_CommentImg"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_FortuneImg"
+{
+	skinname "NpcTarotResult_FortuneImg"
+	parent "P_NpcTarotResultWindow"
+}
+
+label_prop "P_NpcTarotResult_FortuneImgReview"
+{
+	skinname "NpcTarotResult_FortuneImgReview"
+	parent "P_NpcTarotResultWindow"
+}
+
+button_prop "P_NpcTarotResult_ReviewLeft"
+{
+	skinname "NpcTarotResult_ReviewLeft"
+	parent "P_NpcTarotResultWindow"
+}
+
+button_prop "P_NpcTarotResult_ReviewRight"
+{
+	skinname "NpcTarotResult_ReviewRight"
+	parent "P_NpcTarotResultWindow"
+}

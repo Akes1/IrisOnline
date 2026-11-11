@@ -1,0 +1,42 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	2.0	"eff_act_10.nif"
+	sound	21	25002
+	sound	22	25021
+	sound	23	30063
+	sound	24	35004
+	sound	25	35001
+}
+
+Activity
+{
+	animation	9
+	soundplay	0	23	0
+	action	300	0	0	0	1	foot	0.0	0.0	100.0
+	soundplay	300	21	0
+	active	350
+	soundplay	450	21	0
+	soundplay	600	21	0
+	action	700	0	0	0	1	foot	0.0	0.0	100.0
+	soundplay	750	21	0
+	soundplay	900	21	0
+	soundplay	1050	21	0
+	action	1100	0	0	0	1	foot	0.0	0.0	100.0
+	soundplay	1200	21	0
+	soundplay	1350	21	0
+	soundplay	1400	22	0
+}
+
+Apply
+{
+	soundplay	0	24	0
+	damage	0	20
+	soundplay	300	25	0
+	damage	300	30
+	soundplay	600	25	0
+	damage	600	20
+	soundplay	900	24	0
+	damage	900	30
+}
+

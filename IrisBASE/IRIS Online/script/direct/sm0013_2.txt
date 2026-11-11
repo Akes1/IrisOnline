@@ -1,0 +1,27 @@
+--공격2: 양손검
+Header
+{
+	type	0
+
+	sound	21	4008
+	sound	22	4508
+
+	trailtex	31	"trail_yellow_00.tga"
+}
+
+Activity
+{
+	animation	42
+
+	trail	400	200	31	rweapon	rhand	100.0	2.0
+
+	soundplay	250	21	0
+	soundplay	450	22	0
+
+	active	500
+}
+
+Apply
+{
+	damage	0	100
+}

@@ -1,0 +1,314 @@
+--===============--
+-- 드래그 윈도우 --
+--===============--
+window_prop "P_Drag_Window"
+{
+	skinname "Drag_Window"
+}
+
+--=================--
+-- 인벤토리 윈도우 --
+--=================--
+tabwindow_prop "P_Inventory_Window"
+{
+	skinname "Inventory_Window"
+}
+
+-- 일반 아이템 탭버튼
+tabbutton_prop "P_Inventory_Generic"
+{
+	skinname "Inventory_Generic"
+	parent "P_Inventory_Window"
+}
+
+-- 퀘스트 아이템 탭버튼
+tabbutton_prop "P_Inventory_Quest"
+{
+	skinname "Inventory_Quest"
+	parent "P_Inventory_Window"
+}
+
+-- 탭시트
+tabsheet_prop "P_Inventory_Sheet1"
+{
+	skinname "InvenSheet_Window"
+	parent "P_Inventory_Window"
+}
+tabsheet_prop "P_Inventory_Sheet2"
+{
+	skinname "InvenSheet_Window"
+	parent "P_Inventory_Window"
+}
+
+-- 휴지통 라벨
+label_prop "P_Inventory_Garbage"
+{
+	skinname "Inventory_Garbage"
+	parent "P_Inventory_Window"
+}
+-- 장비 윈도우 
+window_prop "P_Inventory_Equip"
+{
+	skinname "InvenEquip_Window"
+	parent "P_Inventory_Window"
+}
+
+-- 닫기 버튼
+button_prop "P_Inventory_Close"
+{
+	skinname "Inventory_Close"
+	parent "P_Inventory_Window"
+}
+
+
+-- 가방0 버튼
+pushbutton_prop "P_Inventory_Bag0"
+{
+	skinname "Inventory_Bag0"
+	parent "P_Inventory_Window"
+}
+
+-- 가방1 버튼
+pushbutton_prop "P_Inventory_Bag1"
+{
+	skinname "Inventory_Bag1"
+	parent "P_Inventory_Window"
+}
+
+-- 가방2 버튼
+pushbutton_prop "P_Inventory_Bag2"
+{
+	skinname "Inventory_Bag2"
+	parent "P_Inventory_Window"
+}
+
+-- 소지금
+numberedit_prop "P_Inventory_Money"
+{
+	skinname "Inventory_Money"
+	parent "P_Inventory_Window"
+}
+
+-- 무게 게이지
+gauge_prop "P_Inventory_Weight"
+{
+	skinname "Inventory_Weight"
+	parent "P_Inventory_Window"
+}
+
+-- 불 세력 포인트 보기 버튼
+radiobutton_prop "P_Inventory_Fire"
+{
+	skinname "Inventory_Fire"
+	parent "P_Inventory_Window"
+}
+
+-- 물 세력 포인트 보기 버튼
+radiobutton_prop "P_Inventory_Water"
+{
+	skinname "Inventory_Water"
+	parent "P_Inventory_Window"
+}
+
+-- 바람 세력 포인트 보기 버튼
+radiobutton_prop "P_Inventory_Wind"
+{
+	skinname "Inventory_Wind"
+	parent "P_Inventory_Window"
+}
+
+-- 땅 세력 포인트 보기 버튼
+radiobutton_prop "P_Inventory_Earth"
+{
+	skinname "Inventory_Earth"
+	parent "P_Inventory_Window"
+}
+
+-- 세력포인트
+numberedit_prop "P_Inventory_Force"
+{
+	skinname "Inventory_Force"
+	parent "P_Inventory_Window"
+}
+
+--==============--
+-- 가방0 윈도우 --
+--==============--
+window_prop "P_Bag0_Window"
+{
+	skinname "Bag_Window"
+}
+
+-- 닫기 버튼
+button_prop "P_Bag0_Close"
+{
+	skinname "Bag_Close"
+	parent "P_Bag0_Window"
+}
+
+-- 휴지통 라벨
+label_prop "P_Bag0_Trash"
+{
+	skinname "Bag_Trash"
+	parent "P_Bag0_Window"
+}
+
+label_prop "P_Bag0_Caption"
+{
+	skinname "Bag_Caption"
+	parent "P_Bag0_Window"
+}
+
+
+--==============--
+-- 가방1 윈도우 --
+--==============--
+window_prop "P_Bag1_Window"
+{
+	skinname "Bag1_Window"
+}
+
+-- 닫기 버튼
+button_prop "P_Bag1_Close"
+{
+	skinname "Bag_Close"
+	parent "P_Bag1_Window"
+}
+
+-- 휴지통 라벨
+label_prop "P_Bag1_Trash"
+{
+	skinname "Bag_Trash"
+	parent "P_Bag1_Window"
+}
+
+label_prop "P_Bag1_Caption"
+{
+	skinname "Bag1_Caption"
+	parent "P_Bag1_Window"
+}
+
+
+--==============--
+-- 가방2 윈도우 --
+--==============--
+window_prop "P_Bag2_Window"
+{
+	skinname "Bag2_Window"
+}
+
+-- 닫기 버튼
+button_prop "P_Bag2_Close"
+{
+	skinname "Bag_Close"
+	parent "P_Bag2_Window"
+}
+
+-- 휴지통 라벨
+label_prop "P_Bag2_Trash"
+{
+	skinname "Bag_Trash"
+	parent "P_Bag2_Window"
+}
+
+label_prop "P_Bag2_Caption"
+{
+	skinname "Bag2_Caption"
+	parent "P_Bag2_Window"
+}
+
+--====================--
+-- 아이템 개수 분리 윈도우 --
+--====================--
+window_prop "P_ItemCount_Window"
+{
+	skinname "ItemCount_Window"
+}
+
+button_prop "P_ItemCount_Close"
+{
+	skinname "ItemCount_Close"
+	parent "P_ItemCount_Window"
+}
+
+label_prop "P_ItemCount_Caption"
+{
+	skinname "ItemCount_Caption"
+	parent "P_ItemCount_Window"
+}
+
+numberedit_prop "P_ItemCount_Number"
+{
+	skinname "ItemCount_Number"
+	parent "P_ItemCount_Window"
+}
+
+button_prop "P_ItemCount_Up"
+{
+	skinname "ItemCount_Up"
+	parent "P_ItemCount_Window"
+}
+
+button_prop "P_ItemCount_Down"
+{
+	skinname "ItemCount_Down"
+	parent "P_ItemCount_Window"
+}
+
+button_prop "P_ItemCount_Max"
+{
+	skinname "ItemCount_Max"
+	parent "P_ItemCount_Window"
+}
+
+button_prop "P_ItemCount_Ok"
+{
+	skinname "ItemCount_Ok"
+	parent "P_ItemCount_Window"
+}
+
+button_prop "P_ItemCount_Cancel"
+{
+	skinname "ItemCount_Cancel"
+	parent "P_ItemCount_Window"
+}
+
+
+
+--====================--
+-- 아이템 메시지 윈도우 --
+--====================--
+window_prop "P_ItemMsg_Window"
+{
+	skinname "ItemMsg_Window"
+}
+
+label_prop "P_ItemMsg_Caption"
+{
+	skinname "ItemMsg_Caption"
+	parent "P_ItemMsg_Window"
+}
+
+label_prop "P_ItemMsg_Text"
+{
+	skinname "ItemMsg_Text"
+	parent "P_ItemMsg_Window"
+}
+
+button_prop "P_ItemMsg_Ok"
+{
+	skinname "ItemMsg_Ok"
+	parent "P_ItemMsg_Window"
+}
+
+button_prop "P_ItemMsg_Yes"
+{
+	skinname "ItemMsg_Yes"
+	parent "P_ItemMsg_Window"
+}
+
+button_prop "P_ItemMsg_Cancel"
+{
+	skinname "ItemMsg_Cancel"
+	parent "P_ItemMsg_Window"
+}

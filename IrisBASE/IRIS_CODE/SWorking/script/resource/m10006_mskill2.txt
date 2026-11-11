@@ -1,0 +1,23 @@
+Header
+{
+	type	0
+	effect	0	0.0	0.0	0.0	1.0	"eff_em_2006_02.nif"
+	sound	21	30068
+	sound	22	30070
+	sound	23	25063
+	sound	24	25014
+	sound	25	25009
+}
+
+Activity
+{
+	animation	9
+	soundplay	0	22	0
+	soundplay	0	24	0
+	active	500
+	action	700	0	0	0	0	foot	0.0	0.0	0.0
+	soundplay	800	21	0
+	soundplay	850	25	0
+	soundplay	900	23	0
+}
+

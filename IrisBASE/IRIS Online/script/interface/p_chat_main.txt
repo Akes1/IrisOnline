@@ -1,0 +1,162 @@
+--===============--
+-- 채팅 윈도우 --
+--===============--
+window_prop "P_ChatWindow"
+{
+	skinname "ChatWindow"
+}
+
+-- /// 채팅 박스
+textbox_prop "P_ChatBox"
+{
+	skinname "ChatBox"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅 에디트  
+editbox_prop "P_ChatEdit"
+{
+	skinname "ChatEdit"
+	parent "P_ChatWindow"
+}
+
+-- /// 귓속말 에디트  
+editbox_prop "P_ChatEdit_Whisper"
+{
+	skinname "ChatEdit_Whisper"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅박스 확장 "채팅 확장"
+button_prop "P_ChatBox_Extend_Button"
+{
+	skinname "ChatBox_Extend_Button"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅박스 사이즈 "+" 버튼
+button_prop "P_ChatBox_Size_Plus"
+{
+	skinname "ChatBox_Size_Plus"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅박스 사이즈 "-" 버튼
+button_prop "P_ChatBox_Size_Minus"
+{
+	skinname "ChatBox_Size_Minus"
+	parent "P_ChatWindow"
+}
+
+pushbutton_prop "P_ChatBox_MoveLock"
+{
+	skinname "ChatBox_MoveLock"
+	parent "P_ChatWindow"
+}
+
+
+-- /// 채팅 옵션 "일반" 
+pushbutton_prop "P_ChatBox_Nomal"
+{
+	skinname "ChatBox_Nomal"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅 옵션 "파티" 
+pushbutton_prop "P_ChatBox_Party"
+{
+	skinname "ChatBox_Party"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅 옵션 "길드" 
+pushbutton_prop "P_ChatBox_Guild"
+{
+	skinname "ChatBox_Guild"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅 옵션 "외치기"
+pushbutton_prop "P_ChatBox_Shout"
+{
+	skinname "ChatBox_Shout"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅 옵션 "거래"
+pushbutton_prop "P_ChatBox_Trade"
+{
+	skinname "ChatBox_Trade"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅 옵션 "귓속말" 
+pushbutton_prop "P_ChatBox_Whisper"
+{
+	skinname "ChatBox_Whisper"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅 옵션 "시스템" 
+pushbutton_prop "P_ChatBox_System"
+{
+	skinname "ChatBox_System"
+	parent "P_ChatWindow"
+}
+
+-- /// 채팅 옵션 "메가폰" 
+pushbutton_prop "P_ChatBox_Megaphone"
+{
+	skinname "ChatBox_Megaphone"
+	parent "P_ChatWindow"
+}
+
+--===============--
+-- 채팅 버튼 윈도우 --
+--===============--
+window_prop "P_ChatButtonWindow"
+{
+	skinname "ChatButtonWindow"
+}
+
+-- /// 채팅 옵션 "일반" 
+button_prop "P_ChatButton_Normal"
+{
+	skinname "ChatButton_Normal"
+	parent "P_ChatButtonWindow"
+}
+
+-- /// 채팅 옵션 "파티" 
+button_prop "P_ChatButton_Party"
+{
+	skinname "ChatButton_Party"
+	parent "P_ChatButtonWindow"
+}
+
+-- /// 채팅 옵션 "길드" 
+button_prop "P_ChatButton_Guild"
+{
+	skinname "ChatButton_Guild"
+	parent "P_ChatButtonWindow"
+}
+
+-- /// 채팅 옵션 "외치기"
+button_prop "P_ChatButton_Shout"
+{
+	skinname "ChatButton_Shout"
+	parent "P_ChatButtonWindow"
+}
+
+-- /// 채팅 옵션 "거래"
+button_prop "P_ChatButton_Trade"
+{
+	skinname "ChatButton_Trade"
+	parent "P_ChatButtonWindow"
+}
+
+-- /// 채팅 옵션 "귓속말" 
+button_prop "P_ChatButton_Whisper"
+{
+	skinname "ChatButton_Whisper"
+	parent "P_ChatButtonWindow"
+}

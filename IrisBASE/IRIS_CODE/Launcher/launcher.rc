@@ -1,0 +1,208 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LAUNCHER DIALOGEX 0, 0, 258, 36
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LAUNCHER"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "IRIS ON LINE. Developed by IRIS Studio.",IDC_STATIC,2,2,133,8
+    LTEXT           "Copyright ⓒ EYASOFT CO., LTD. && IRIS STUDIO.",IDC_STATIC,2,13,161,8
+    RTEXT           "Version 1.1.0",IDC_STATIC,213,2,44,8
+    LTEXT           "All rights reserved",IDC_STATIC,199,13,59,8
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",0x1,58,27,200,10,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATUS,0,27,58,10,SS_WORDELLIPSIS,WS_EX_STATICEDGE
+END
+
+IDD_SET_RUN_MODE DIALOGEX 0, 0, 141, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Run Mode"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Submmit",IDOK,14,61,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,77,61,50,14
+    COMBOBOX        IDC_COMBO_RUN_MODE,7,44,128,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NOTICE,7,9,127,27,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "launcher.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATE_HOST_TEST    "203.216.218.31"
+    IDS_UPDATE_URL_TEST     "Japan-Patcher"
+    IDS_UPDATE_LIST         "patchlist.txt.z"
+    IDS_UPDATE_EXE          "irispatcher.exe"
+    IDS_UPDATE_EXECUTE_IDC  "-dkdlfltmeoqkr"
+    IDS_UPDATE_EXECUTE_DEV  "-dkdlfltmeoqkr-DEV"
+    IDS_UPDATE_GM_EXECUTE_IDC "-dkdlfltmeoqkrGM-IDC"
+    IDS_UPDATE_EXECUTE_TEST "-dkdlfltmeoqkr-TEST"
+    IDS_UPDATE_GM_EXECUTE_TEST "-dkdlfltmeoqkrGM-TEST"
+    IDS_UPDATE_GM_EXECUTE_DEV "-dkdlfltmeoqkrGM-DEV"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATE_EXE_DEV      "irispatcher_DEV.exe"
+    IDS_UPDATE_URL_IDC      "iris/patch_ir/Japan-Patcher"
+    IDS_UPDATE_HOST_IDC     "cdn.gpotato.jp"
+    IDS_UPDATE_EXE_TEST     "irispatcherTEST.exe"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LAUNCHER DIALOGEX 0, 0, 258, 36
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "LAUNCHER"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "IRIS ON LINE. Developed by IRIS Studio.",IDC_STATIC,2,2,133,8
+    LTEXT           "Copyright ?EYASOFT CO., LTD. && IRIS STUDIO.",IDC_STATIC,2,13,189,8
+    RTEXT           "English Version 1.1.0",IDC_STATIC,187,2,68,8
+    LTEXT           "All rights reserved",IDC_STATIC,199,13,59,8
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",0x1,58,27,200,10,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATUS,0,27,58,10,SS_WORDELLIPSIS,WS_EX_STATICEDGE
+END
+
+IDD_SET_RUN_MODE DIALOGEX 0, 0, 141, 81
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Run Mode"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Comfirm",IDOK,14,61,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,77,61,50,14
+    COMBOBOX        IDC_COMBO_RUN_MODE,7,44,128,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NOTICE,7,9,127,27,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "launcher.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATE_HOST_TEST    "203.216.218.31"
+    IDS_UPDATE_URL_TEST     "Japan-Patcher"
+    IDS_UPDATE_LIST         "patchlist.txt.z"
+    IDS_UPDATE_EXE          "irispatcher.exe"
+    IDS_UPDATE_EXECUTE_IDC  "-dkdlfltmeoqkr"
+    IDS_UPDATE_EXECUTE_DEV  "-dkdlfltmeoqkr-DEV"
+    IDS_UPDATE_GM_EXECUTE_IDC "-dkdlfltmeoqkrGM-IDC"
+    IDS_UPDATE_EXECUTE_TEST "-dkdlfltmeoqkr-TEST"
+    IDS_UPDATE_GM_EXECUTE_TEST "-dkdlfltmeoqkrGM-TEST"
+    IDS_UPDATE_GM_EXECUTE_DEV "-dkdlfltmeoqkrGM-DEV"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_UPDATE_URL_IDC      "iris/patch_ir/Japan-Patcher"
+    IDS_UPDATE_HOST_IDC     "cdn.gpotato.jp"
+    IDS_UPDATE_EXE_TEST     "irispatcherTEST.exe"
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

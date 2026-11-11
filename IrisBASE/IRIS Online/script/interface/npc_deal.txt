@@ -1,0 +1,496 @@
+--=================--
+-- Npc 판매대행 윈도우 --
+--=================--
+tabwindow "NpcDeal_Window"
+{
+	ii 5013
+	pos 112 84
+	size 800 600
+	texpos 2 2
+
+	captionXY 0 0 
+	captionWH 800 33
+
+	opensound 3007
+	closesound 3010
+}
+
+-- 닫기 버튼
+button "NpcDeal_Close"
+{
+	ii 5002
+	pos 767 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 닫기 버튼
+button "NpcDeal_Close2"
+{
+	ii 5013
+	pos 693 550
+	size 72 24
+	texpos 271 646
+	
+	-- 버튼 그림 좌표 	
+	uppos 271 646
+	upoverpos 271 671
+	downpos 271 696
+	
+	downsound 3001
+}
+
+-- 소지금
+label "NpcDeal_HaveMoney"
+{
+	pos 98 559
+	size 80 14
+	text_align right
+}
+
+-- 탭버튼 "판매검색"
+tabbutton "NpcDeal_Search"
+{
+	ii 5013
+	pos 34 45
+	size 70 30
+	texpos 526 651
+	
+	uppos 526 683
+	upoverpos 526 683
+	downpos 526 651
+
+	downsound 3001
+}
+
+-- 탭버튼 "판매등록"
+tabbutton "NpcDeal_Regist"
+{
+	ii 5013
+	pos 105 45
+	size 71 30
+	texpos 455 651
+	
+	uppos 455 683
+	upoverpos 455 683
+	downpos 455 651
+
+	downsound 3001
+}
+
+tabsheet "NpcDeal_SearchSheet"
+{
+	ii 5013
+	pos 13 72
+	size 754 468
+	texpos 806 472
+}
+
+tabsheet "NpcDeal_RegistSheet"
+{
+	ii 5013
+	pos 13 72
+	size 754 468
+	texpos 806 2
+	
+}
+
+
+--=================--
+-- Npc 물품등록 시트 --
+--=================--
+
+-- 소스에서 사용하는 스킨
+icon "NpcDeal_RegistSlot"	{ pos 73 42 size 28 28 } 
+
+-- 아이템 가격용
+editbox "NpcDeal_RegistPrice"
+{
+	pos 24 114
+	size 105 23
+	
+	editkind 2					-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editmaxlen 13				-- 에디트가 받아들일수 있는 최대 길이 지정 ( 미지정시 110 바이트 )
+	text_align right
+		
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+-- 등록 수수료
+label "NpcDeal_RegistCharge"
+{
+	pos 19 162
+	size 105 23
+	text_align right
+}
+
+-- 등록 버튼
+button "NpcDeal_RegistButton"
+{
+	ii 5013
+	pos 90 433
+	size 72 24
+	texpos 197 646
+	
+	-- 버튼 그림 좌표 	
+	uppos 197 646
+	upoverpos 197 671
+	downpos 197 696
+	
+	downsound 3001
+}
+
+-- 기한
+combobox "NpcDeal_RegistPeriod"
+{
+	pos 25 220
+	size 120 23		-- 접혔을때 사이즈 : 에디트와 버튼만 포함한 사이즈
+	
+	listskin "ComboList_NpcDeal"
+	buttonskin "ComboDown"
+	texteditskin "ComboEdit_NpcDeal"
+	scrollskin "ListScroll"
+}
+
+
+-- 아이템 리스트
+-- 소스에서 사용하는 스킨명
+listbox "NpcDeal_RegistItemList"
+{
+	pos 190	39
+	size 518 370
+	row_height 37		-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 200		-- 리스트가 담을수 잇는 최대 갯수
+		
+	-- 선택된 텍스트배경이미지 관련
+
+	child_ii 5013		-- 텍스쳐
+	child_size 518 36	-- 사이즈
+	child_texpos 2 604	-- 이미지 위치
+	
+	selectwidth 518		-- 선택 바 width 조절
+
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--       x,  w,   align
+	imgcolX 4	28
+	columnX 40 	115	 left
+	columnX 169	33	 center
+	columnX 209	50	 center
+	columnX 266	110	 center
+	columnX 379	40	 center
+	columnX 425 	90	 right
+}
+
+-- 취소버튼
+-- 소스에서 사용하는 스킨
+button "NpcDeal_RegistCancel"
+{
+	ii 5013
+	pos 713 46
+	size 53 24
+	texpos 400 646
+	
+	-- 버튼 그림 좌표 	
+	uppos 400 646
+	upoverpos 400 671
+	downpos 400 696
+	
+	downsound 3001
+}
+
+
+-- 스핀박스 "페이지"
+spinbox "NpcDeal_RegistSpin"
+{
+	pos 400 410
+	size 142 18
+	
+	leftbuttonskin "spinbox_left"	
+	rightbuttonskin "spinbox_right"
+	labelskin "spinbox_label"
+
+}
+
+
+--=================--
+-- Npc 물품검색 시트 --
+--=================--
+-- /// 에디트 "검색어" 
+editbox "NpcDeal_SearchName"
+{
+	pos 18 39
+	size 146 20
+	
+	editpos 5 4	
+	editmaxlen 15				-- 에디트가 받아들일수 있는 최대 길이 지정 ( 미지정시 110 바이트 )
+		
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 에디트 "낮은레벨" 
+editbox "NpcDeal_SearchLowLv"
+{
+	pos 38 91
+	size 59 20
+	
+	editkind 2					-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editmaxlen 3				-- 에디트가 받아들일수 있는 최대 길이 지정 ( 미지정시 110 바이트 )
+		
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+
+-- /// 에디트 "높은레벨" 
+editbox "NpcDeal_SearchHighLv"
+{
+	pos 121 91
+	size 59 20
+	
+	editkind 2					-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 )
+	editmaxlen 3				-- 에디트가 받아들일수 있는 최대 길이 지정 ( 미지정시 110 바이트 )
+		
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 검색 버튼
+button "NpcDeal_SearchButton"
+{
+	ii 5013
+	pos 90 433
+	size 72 24
+	texpos 123 646
+	
+	-- 버튼 그림 좌표 	
+	uppos 123 646
+	upoverpos 123 671
+	downpos 123 696
+	
+	downsound 3001
+}
+
+-- /// 등급
+combobox "NpcDeal_SearchGrade"
+{
+	pos 26 135
+	size 127 21		-- 접혔을때 사이즈 : 에디트와 버튼만 포함한 사이즈
+	 
+	listskin "ComboList_NpcDeal"
+	buttonskin "ComboDown"
+	texteditskin "ComboEdit_NpcDeal"
+	scrollskin "ListScroll"
+}
+
+listbox "ComboList_NpcDeal"
+{
+	ii 5013
+	pos 0 17
+	size 127 120
+	texpos 832 707
+	
+	row_height 20		
+	maxitemnum 120
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5006	
+	child_size 1 1		
+	child_texpos 321 401
+	
+	columnX 3 	100	center
+}
+editbox "ComboEdit_NpcDeal"
+{
+	ii 5013
+	pos 0 0
+	size 116 17
+	texpos 832 606
+	
+	editkind 0
+	editpos 20 2	
+	editmaxlen 16
+}
+
+-- /// 강화
+combobox "NpcDeal_SearchEnhance"
+{
+	pos 26 181
+	size 58 21		-- 접혔을때 사이즈 : 에디트와 버튼만 포함한 사이즈
+	
+	listskin "ComboList_NpcDeal"
+	buttonskin "ComboDown"
+	texteditskin "ComboEdit_NpcDeal"
+	scrollskin "ListScroll"
+}
+
+
+-- 종류 정보 리스트
+folderbox "NpcDeal_SearchList"
+{
+	pos 22 229
+	size 133 195
+	row_height 15			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 150			-- 리스트가 담을수 잇는 최대 갯수
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii	5013
+	child_size	116 17
+	child_texpos	523 604
+}
+
+-- 소스에서 쓰는 스킨
+-- 상위 열 체크용
+label "NpcDeal_FolderCheck"
+{
+	ii 5006
+	pos 0 0
+	size 12 12
+	texpos 316 370
+}
+
+-- 상위열 노 체크용
+label "NpcDeal_FolderNoCheck"
+{
+	ii 5006
+	pos 0 0
+	size 12 12
+	texpos 316 384
+}
+
+
+-- 아이템 레벨 정렬
+button "NpcDeal_SearchItemLevel"
+{
+	ii 5013
+	pos 355 12
+	size 39 20
+	texpos 2 646
+	
+	-- 버튼 그림 좌표 
+	uppos 2 646
+	upoverpos 2 668
+	downpos 2 690
+	
+	downsound 3001
+}
+
+-- 판매가 정렬
+button "NpcDeal_SearchPrice"
+{
+	ii 5013
+	pos 619 12
+	size 76 20
+	texpos 44 646
+	
+	-- 버튼 그림 좌표 	
+	uppos 44 646
+	upoverpos 44 668
+	downpos 44 690
+	
+	downsound 3001
+}
+
+-- 아이템 리스트
+-- 소스에서 사용하는 스킨명
+listbox "NpcDeal_SearchItemList"
+{
+	pos 190	39
+	size 518 370
+	row_height 37		-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 200		-- 리스트가 담을수 잇는 최대 갯수
+		
+	-- 선택된 텍스트배경이미지 관련
+
+	child_ii 5013		-- 텍스쳐
+	child_size 518 36	-- 사이즈
+	child_texpos 2 604	-- 이미지 위치
+	
+	selectwidth 518		-- 선택 바 width 조절
+
+	-- 컬럼 여백 관련
+	-- 각 컬럼 시작 위치 ( 최소 : 0, 최대 : 리스트박스 사이즈 ), 정렬방법 
+	--       x,  w,   align
+	imgcolX 4	28
+	columnX 40 	115	 left
+	columnX 169	33	 center
+	columnX 209	50	 center
+	columnX 266	110	 center
+	columnX 379	40	 center
+	columnX 425 	90	 right
+}
+
+-- 구매버튼
+-- 소스에서 사용하는 스킨
+button "NpcDeal_SearchBuy"
+{
+	ii 5013
+	pos 713 46
+	size 53 24
+	texpos 345 646
+	
+	-- 버튼 그림 좌표 	
+	uppos 345 646
+	upoverpos 345 671
+	downpos 345 696
+	
+	downsound 3001
+}
+
+-- 왼쪽 페이지 버튼( < )
+button "NpcDeal_Page_Left"
+{
+	ii 5000
+	pos 400 410
+	size 18 18
+	texpos 3 585
+	
+	-- 버튼 그림 좌표 	
+	uppos 3 585
+	upoverpos 23 585
+	downpos 43 585
+	
+	downsound 3001
+}
+
+-- 오른쪽 페이지 버튼( > )
+button "NpcDeal_Page_Right"
+{
+	ii 5000
+	pos 430 410
+	size 18 18
+	texpos 3 605
+	
+	-- 버튼 그림 좌표 	
+	uppos 3 605
+	upoverpos 23 605
+	downpos 43 605
+	
+	downsound 3001
+}
+
+-- 페이지가 표시될 기준 축 좌표
+label "NpcDeal_Page_Text_Pos"
+{
+	pos 447 413
+}

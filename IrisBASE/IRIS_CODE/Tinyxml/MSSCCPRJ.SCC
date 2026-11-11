@@ -1,0 +1,21 @@
+SCC = This is a source code control file
+
+[tinyXmlTest.vcproj]
+SCC_Aux_Path = "P4SCC#192.168.3.22:1235##DaeHo_Client##DaeHo_Client"
+SCC_Project_Name = Perforce Project
+
+[tinyxml.sln]
+SCC_Aux_Path = "P4SCC#192.168.3.22:1235##DaeHo_Client##DaeHo_Client"
+SCC_Project_Name = Perforce Project
+
+[tinyXmlTestSTL.vcproj]
+SCC_Aux_Path = "P4SCC#192.168.3.22:1235##DaeHo_Client##DaeHo_Client"
+SCC_Project_Name = Perforce Project
+
+[tinyxmlSTL.vcproj]
+SCC_Aux_Path = "P4SCC#192.168.3.22:1235##DaeHo_Client##DaeHo_Client"
+SCC_Project_Name = Perforce Project
+
+[tinyxml_lib.vcproj]
+SCC_Aux_Path = "P4SCC#192.168.3.22:1235##DaeHo_Client##DaeHo_Client"
+SCC_Project_Name = Perforce Project

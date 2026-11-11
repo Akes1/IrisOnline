@@ -1,0 +1,323 @@
+--===============--
+-- 작은 미니맵	--
+--===============--
+-- small 미니맵 창
+window "SmallMiniMap_Window"
+{
+	ii 5002
+	pos 854 0
+	size 170 221
+	texpos 755 385
+	holdview true
+	
+	captionXY 0 0 
+	captionWH 170 30
+
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 이미지 "hero"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_Hero"
+{
+	ii 5002
+	pos 0 0
+	size 13 17
+	texpos 838 991
+}
+
+
+-- /// 이미지 "camera"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_Camera"
+{
+	ii 5002
+	pos 0 0
+	size 31 50
+	texpos 854 959
+}
+
+-- /// 이미지 "portal"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_Portal"
+{
+	ii 5002
+	pos 0 0
+	size 10 10
+	texpos 839 978
+}
+
+-- /// 이미지 "party"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_PartyIn"
+{
+	ii 5002
+	pos 0 0
+	size 8 8
+	texpos 811 944
+}
+
+-- /// 이미지 "party" 미니맵보다 외부에 있을시 출력용 화살표 
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_PartyOut"
+{
+	ii 5002
+	pos 0 0
+	size 11 14
+	texpos 863 943
+}
+
+-- /// 이미지 - 파티연합1
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_Union1"
+{
+	ii 5007
+	pos 0 0
+	size 15 15
+	texpos 483 343
+}
+
+-- /// 이미지 - 파티연합2
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_Union2"
+{
+	ii 5007
+	pos 0 0
+	size 15 15
+	texpos 500 343
+}
+
+-- /// 이미지 - 파티연합3
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_Union3"
+{
+	ii 5007
+	pos 0 0
+	size 15 15
+	texpos 517 343
+}
+
+-- /// 이미지 - 깃발
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_Flag"
+{
+	ii 5011
+	pos 0 0
+	size 15 16
+	texpos 190 427
+}
+
+-- /// 이미지 - 깃발 게양 포인트
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_FlagPoint"
+{
+	ii 5011
+	pos 0 0
+	size 16 16
+	texpos 209 427
+}
+
+-- /// 이미지 - 찾아가기 이미지
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_Position"
+{
+	ii 5002
+	pos 0 0
+	size 32 32
+	texpos 303 719
+}
+
+-- /// 이미지 - TeamA석상 이미지 이미지
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_TeamAStone"
+{
+	ii 5011
+	pos 0 0
+	size 16 16
+	texpos 261 427
+}
+
+-- /// 이미지 - TeamA석상 이미지 이미지
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_TeamBStone"
+{
+	ii 5011
+	pos 0 0
+	size 16 16
+	texpos 243 427
+}
+
+--====================--
+--퀘스트 아이콘--
+--====================--
+
+-- /// 이미지 "Quest-New"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_QuestNew"
+{
+	ii 5002
+	pos 0 0
+	size 12 16
+	texpos 766 961
+}
+
+-- /// 이미지 "Quest-Play"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_QuestPlay"
+{
+	ii 5002
+	pos 0 0
+	size 12 16
+	texpos 766 977 
+}
+
+-- /// 이미지 "Quest-Complete"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_QuestComplete"
+{
+	ii 5002
+	pos 0 0
+	size 12 16
+	texpos 766 993
+}
+
+-- /// 이미지 "TQuest-New"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_TQuestNew"
+{
+	ii 5002
+	pos 0 0
+	size 12 16
+	texpos 895 953
+}
+
+-- /// 이미지 "TQuest-Complete"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_TQuestComplete"
+{
+	ii 5002
+	pos 0 0
+	size 12 16
+	texpos 895 971
+}
+
+-- /// 이미지 "RQuest-New"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_RQuestNew"
+{
+	ii 5002
+	pos 0 0
+	size 12 16
+	texpos 957 953
+}
+
+-- /// 이미지 "RQuest-Complete"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_RQuestComplete"
+{
+	ii 5002
+	pos 0 0
+	size 12 16
+	texpos 957 971
+}
+
+-- /// 이미지 "HQuest-Complete"
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_HQuestComplete"
+{
+	ii 5002
+	pos 0 0
+	size 12 16
+	texpos 895 987
+}
+
+
+
+-- /// 이미지 - 전장에서 수장 표시
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_PvpLeader"
+{
+	ii 5007
+	pos 0 0
+	size 15 15
+	texpos 508 359
+}
+
+-- /// 버튼 미니맵  "확대"
+button "SmallMiniMap_Plus"
+{
+	ii 5002								
+	pos 68 190
+	size 23 23
+	texpos 199 115
+	
+	-- 버튼 그림 좌표 					
+	uppos 199 115
+	upoverpos 199 140
+	downpos 199 165
+
+	downsound 3001
+	
+	hovertip	420
+}
+
+-- /// 버튼 미니맵  "축소"
+button "SmallMiniMap_Minus"
+{
+	ii 5002							
+	pos 96 190
+	size 23 23
+	texpos 224 115
+	
+	-- 버튼 그림 좌표 					
+	uppos 224 115
+	upoverpos 224 140
+	downpos 224 165
+
+	downsound 3001
+
+	hovertip	421	
+}
+
+-- /// 버튼 "전체 미니맵" 열기
+button "SmallMiniMap_LargeOpen"
+{
+	ii 5002								
+	pos 138 187
+	size 27 27
+	texpos 83 144
+	
+	-- 버튼 그림 좌표 					
+	uppos 83 144
+	upoverpos 112 144
+	downpos 141 144
+
+	downsound 3001
+	
+	hovertip	422
+}
+
+-- 좌표 부분 이미지
+-- 소스에서 직접 쓰는 스킨
+label "SmallMiniMap_PosImage"
+{
+	pos 22 166
+	size 50 12
+}
+
+-- 미니맵 표시 맵이름 라벨
+label "SmallMiniMap_MapName"
+{
+	pos 17 12
+	size 113 11
+	text_align center
+}
+
+-- 미니맵 표시 채널 라벨
+label "SmallMiniMap_Channel"
+{
+	pos 34 198
+	size 22 12
+	text_align center
+}

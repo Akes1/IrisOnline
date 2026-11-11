@@ -1,0 +1,59 @@
+--===============--
+-- 주사위 굴리기 --
+--===============--
+window "DiceWindow"
+{
+	ii 5007
+	pos 400 320
+	size 257 127
+	texpos 749 482
+	
+	captionXY 0 0 
+	captionWH 257 127
+	
+	opensound 3007
+	closesound 3010	
+}
+
+-- /// 버튼 "굴리기"
+button "Dice_Roll"
+{
+	ii 5007
+	pos 52 91
+	size 72 24
+	texpos 520 709
+	
+	-- 버튼 그림 좌표 	
+	uppos 520 709
+	upoverpos 520 735
+	downpos 520 761
+	
+	downsound 3001
+}
+
+
+-- /// 버튼 "포기"
+button "Dice_GiveUp"
+{
+	ii 5007
+	pos 134 91
+	size 72 24
+	texpos 593 709
+	
+	-- 버튼 그림 좌표 	
+	uppos 593 709
+	upoverpos 593 735
+	downpos 593 761
+	
+	downsound 3001
+}
+
+
+
+-- /// 버튼 "시간"
+label "Dice_Time"
+{
+	pos 126 56
+	size 55 19
+	text_align center
+}

@@ -1,0 +1,74 @@
+-- /// 점집 관리 윈도우  
+window_prop "P_TarotControlWindow"
+{
+	skinname "TarotControlWindow"
+}
+
+-- /// 버튼 "점집닫기"
+button_prop "P_TarotControl_Close"
+{
+	skinname "TarotControl_Close"
+	parent "P_TarotControlWindow"
+}
+-- ///버튼 "점집 닫기/예약"
+pushbutton_prop "P_TarotControl_Close2"
+{
+	skinname "TarotControl_Close2"
+	parent "P_TarotControlWindow"
+}
+
+-- /// 라벨 "점집이름"
+label_prop "P_TarotControl_ShopName"
+{
+	skinname "TarotControl_ShopName"
+	parent "P_TarotControlWindow"
+}
+
+-- /// 에디트 "이용요금"
+numberedit_prop "P_TarotControl_Pay"
+{
+	skinname "TarotControl_Pay"
+	parent "P_TarotControlWindow"
+}
+
+-- /// 라벨 "점 횟수"
+label_prop "P_TarotControl_TarotCount"
+{
+	skinname "TarotControl_TarotCount"
+	parent "P_TarotControlWindow"
+}
+
+-- /// 라벨 "재료수"
+label_prop "P_TarotControl_StuffNum"
+{
+	skinname "TarotControl_StuffNum"
+	parent "P_TarotControlWindow"
+}
+
+-- /// 라벨 "현재 상태"
+label_prop "P_TarotControl_Status"
+{
+	skinname "TarotControl_Status"
+	parent "P_TarotControlWindow"
+}
+
+-- /// 라벨 "이용자수"
+label_prop "P_TarotControl_UserNum"
+{
+	skinname "TarotControl_UserNum"
+	parent "P_TarotControlWindow"
+}
+
+-- /// 라벨 "돈"
+numberedit_prop "P_TarotControl_Money"
+{
+	skinname "TarotControl_Money"
+	parent "P_TarotControlWindow"
+}
+
+-- /// 라벨 "포인트"
+label_prop "P_TarotControl_Point"
+{
+	skinname "TarotControl_Point"
+	parent "P_TarotControlWindow"
+}

@@ -1,0 +1,515 @@
+--===============--
+-- 파티 관리 윈도우 --
+--===============--
+window "PartyWindow"
+{
+	ii 5002
+	pos 10 89
+	size 198 33
+	texpos 385 126
+	holdview true	-- 창이 사라지지 않게 한다. 
+	
+	captionXY 0 0 
+	captionWH 168 33	
+}
+
+--버튼 "파티원 보기 방식 변경 버튼"
+button "Party_Display"
+{
+	ii 5002
+	pos 124 7
+	size 19 19
+	texpos 649 126
+	
+	-- 버튼 그림 좌표 					
+	uppos 649 126
+	upoverpos 671 126
+	downpos 693 126
+
+	downsound 3001
+}
+
+-- 버튼 "메뉴"  
+button "Party_Menu"
+{
+	ii 5002
+	pos 147 5
+	size 23 23
+	texpos 174 115
+	
+	-- 버튼 그림 좌표 	
+	uppos 174 115
+	upoverpos 174 140
+	downpos 174 165
+
+	downsound 3001
+}
+
+
+-- 라벨 "아이템 분배타입"
+label "Party_Divide"
+{
+	pos 27 7
+	size 101 22
+	text_align center
+}
+
+-- 이동 고정
+pushbutton "Party_MoveLock"
+{
+	ii 5002
+	pos 8 5
+	size 22 22
+	texpos 515 1024
+	
+	-- 버튼 이미지 좌표 
+	uppos 515 1024	
+	upoverpos 515 1024	
+	downpos 490 1024
+	downoverpos 490 1024
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	450
+}
+
+-- 버튼 "주사위"
+button "Party_Dice"
+{
+	ii 5002
+	pos 177 1
+	size 31 31
+	texpos 537 978
+	
+	-- 버튼 그림 좌표 	
+	uppos 537 978
+	upoverpos 570 978
+	downpos 603 978
+
+	downsound 3001
+}
+
+--===============--
+-- 파티 메뉴	 --
+--===============--
+window "PartyMenu"
+{
+	ii 5002
+	pos 180 89
+	size 100 126
+	texpos 249 181
+}
+
+-- 파티원 초대
+button "PartyMenu_Invite"
+{
+	ii 5002
+	pos 11 9
+	size 78 20
+	texpos 2 213
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 213
+	upoverpos 82 213
+	downpos 162 213
+	enablepos 162 213
+
+	useenable true
+
+	downsound 3001
+}
+
+-- 파티장 위임
+button "PartyMenu_ChangeLeader"
+{
+	ii 5002
+	pos 11 31
+	size 78 20
+	texpos 2 235
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 235
+	upoverpos 82 235
+	downpos 162 235
+	enablepos 162 235
+
+	useenable true
+
+	downsound 3001
+}
+
+-- 분배방식 변경
+button "PartyMenu_ChangeDivide"
+{
+	ii 5002
+	pos 11 53
+	size 78 20
+	texpos 2 257
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 257
+	upoverpos 82 257
+	downpos 162 257
+	enablepos 162 257
+
+	useenable true
+
+	downsound 3001
+}
+
+-- 파티원 추방
+button "PartyMenu_ThrowUser"
+{
+	ii 5002
+	pos 11 75
+	size 78 20
+	texpos 2 279
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 279
+	upoverpos 82 279
+	downpos 162 279
+	enablepos 162 279
+
+	useenable true
+
+	downsound 3001
+}
+
+-- 파티 탈퇴
+button "PartyMenu_Out"
+{
+	ii 5002
+	pos 11 97
+	size 78 20
+	texpos 2 301
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 301
+	upoverpos 82 301
+	downpos 162 301
+	enablepos 162 301
+
+	useenable true
+
+	downsound 3001
+}
+
+
+
+--===============--
+-- 파티 분배 메뉴 --
+--===============--
+window "PartyDivdeMenu"
+{
+	ii 5002
+	pos 280 132
+	size 100 126
+	texpos 249 181
+}
+
+-- 순차 분배
+button "PartyDivide_Sequece"
+{
+	ii 5002
+	pos 11 9
+	size 78 20
+	texpos 2 323
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 323
+	upoverpos 82 323
+	downpos 162 323
+	enablepos 162 323
+
+	useenable true
+}
+
+-- 랜덤 분배
+button "PartyDivide_Random"
+{
+	ii 5002
+	pos 11 31
+	size 78 20
+	texpos 2 345
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 345
+	upoverpos 82 345
+	downpos 162 345
+	enablepos 162 345
+
+	useenable true
+}
+
+-- 데미지 우선 분배
+button "PartyDivide_Damage"
+{
+	ii 5002
+	pos 11 53
+	size 78 20
+	texpos 2 367
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 367
+	upoverpos 82 367
+	downpos 162 367
+	enablepos 162 367 
+
+	useenable true
+}
+
+-- 자유 분배
+button "PartyDivide_Free"
+{
+	ii 5002
+	pos 11 75
+	size 78 20
+	texpos 2 389
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 389
+	upoverpos 82 389
+	downpos 162 389
+	enablepos 162 389
+
+	useenable true
+}
+
+-- 파티장 분배
+button "PartyDivide_Reader"
+{
+	ii 5002
+	pos 11 97
+	size 78 20
+	texpos 2 191
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 191
+	upoverpos 82 191
+	downpos 162 191
+	enablepos 162 191
+
+	useenable true
+}
+
+--===============--
+-- 파티원 상태 윈도우 --
+--===============--
+-- 파티원 상태 윈도우 
+window "PartyStateWindow"
+{
+	ii 5002
+	pos 0 170
+	size 193 51
+	texpos 442 755
+	holdview true	-- 창이 사라지지 않게 한다. 
+
+	captionXY 0 0 
+	captionWH 193 51
+}
+
+-- 파티버프용 윈도우
+-- 소스에서 스킨이름사용
+window "PartyBuff"
+{
+	pos 194 3
+	size 172 65
+	holdview true	-- 창이 사라지지 않게 한다. 
+	
+	-- 버프 관련 내용
+	icon_size 20	-- 아이콘사이즈
+	space 1 1	-- 간격 ( 행, 열 )
+	row 2	-- 열수
+	column 10	-- 행수
+}
+
+-- 파티원 선택 표시 이미지
+label "PartyState_Selected"
+{
+	ii 5002
+	pos 0 0
+	size 193 51
+	texpos 442 808
+}
+
+-- 파티장 표시 이미지
+-- 소스에서 사용하는 스킨
+label "PartyState_Leader"
+{
+	ii 5002
+	pos 167 0
+	size 24 24
+	texpos 684 285
+}
+
+-- 전장에서 수장 표시 이미지
+-- 소스에서 직접 쓰는 스킨
+label "PartyState_PvpLeader"
+{
+	ii 5007
+	pos 167 0
+	size 24 24
+	texpos 388 366
+}
+
+-- 플래그매치에서 깃발든 파티원 표시 이미지
+-- 소스에서 직접 쓰는 스킨
+label "PartyState_FlagPlayer"
+{
+	ii 5007
+	pos 167 0
+	size 24 24
+	texpos 483 359
+}
+
+-- 파티원 레벨
+label "PartyState_UserLevel"
+{
+--	ii 5002
+	pos 2 26
+	size 22 11
+--	texpos 380 182
+	text_align center
+}
+
+-- 파티원 이름
+label "PartyState_UserName"
+{
+	pos 73 5
+	size 96 17							-- 기준이 되는 사이즈 : 정렬시 
+	text_align center
+}
+
+-- HP 게이지
+gauge "PartyState_HP"
+{
+	pos 64 27 
+	size 122 9
+	gauge_speed 30		-- float 값
+			
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 628 734
+	gauge_width 119		-- 100 % 사이즈
+	gauge_height 7
+}
+
+-- MP 게이지
+gauge "PartyState_MP"
+{
+	pos 64 37 
+	size 122 9
+	gauge_speed 30		-- float 값
+			
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 628 743
+	gauge_width 119		-- 100 % 사이즈
+	gauge_height 7
+}
+
+-- 파티원 직업
+-- 소스에서 사용하는 스킨
+label "PartyState_JobPos"
+{
+	pos 24 9
+	size 32 32
+}
+
+--===============--
+-- 파티원 상태 윈도우 mini--
+--===============--
+window "PartyStateMiniWindow"
+{
+	ii 5002
+	pos 0 140
+	size 135 49
+	texpos 500 867
+	holdview true	-- 창이 사라지지 않게 한다. 
+
+	captionXY 0 0 
+	captionWH 135 49
+}
+
+-- 파티원 선택 표시 이미지
+label "PartyStateMini_Selected"
+{
+	ii 5002
+	pos 0 0
+	size 135 49
+	texpos 500 920
+}
+
+-- 파티장 표시 이미지
+-- 소스에서 사용하는 스킨
+label "PartyStateMini_Leader"
+{
+	ii 5002
+	pos 0 0
+	size 24 24
+	texpos 684 285
+}
+
+-- 전장에서 수장 표시 이미지
+-- 소스에서 직접 쓰는 스킨
+label "PartyStateMini_PvpLeader"
+{
+	ii 5007
+	pos 0 0
+	size 24 24
+	texpos 388 366
+}
+
+-- 플래그매치에서 깃발든 파티원 표시 이미지
+-- 소스에서 직접 쓰는 스킨
+label "PartyStateMini_FlagPlayer"
+{
+	ii 5007
+	pos 0 0
+	size 24 24
+	texpos 483 359
+}
+
+-- 파티원 이름
+label "PartyStateMini_UserName"
+{
+	pos 23 4
+	size 96 17							-- 기준이 되는 사이즈 : 정렬시 
+	text_align center
+}
+
+-- HP 게이지
+gauge "PartyStateMini_HP"
+{
+	pos 7 25 
+	size 122 9
+	gauge_speed 30		-- float 값
+--	show_text false
+			
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 628 734
+	gauge_width 119		-- 100 % 사이즈
+	gauge_height 7
+}
+
+-- MP 게이지
+gauge "PartyStateMini_MP"
+{
+	pos 7 35 
+	size 122 9 
+	gauge_speed 30		-- float 값
+--	show_text false		
+			
+	gauge_ii 5002
+	gauge_pos 1 1
+	gauge_size 4 7
+	gauge_texpos 628 743
+	gauge_width 119		-- 100 % 사이즈
+	gauge_height 7
+}

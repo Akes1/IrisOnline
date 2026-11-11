@@ -1,0 +1,13 @@
+// 망가진 인형 모드
+Header	
+{
+	effect	1	0	0	0	2	"eff_m_1002_01.nif"
+}
+//전투 시작(스턴 면역 설정)
+Mode	0
+{
+
+	applyaura	43001	0	500	0
+
+	applyres	1	1	1	foot	0	0	0
+}

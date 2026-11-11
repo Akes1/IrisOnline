@@ -1,0 +1,624 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\RegenTool.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RegenTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "끝내기(&X)",                     ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소\tCtrl+Z(&U)",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기\tCtrl+X(&T)",            ID_EDIT_CUT
+        MENUITEM "복사\tCtrl+C(&C)",              ID_EDIT_COPY
+        MENUITEM "붙여넣기\tCtrl+V(&P)",            ID_EDIT_PASTE
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "RegenTool 정보(&A)...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RegenTool 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "RegenTool Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_FORMVIEW_EDIT DIALOGEX 0, 0, 100, 100
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_CAMERA DIALOGEX 0, 0, 140, 44
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Zoom Persp",IDC_BUTTON_ZOOM_PERSP,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,60,12
+    CONTROL         "Zoom Ortho",IDC_BUTTON_ZOOM_ORTHO,"Button",BS_OWNERDRAW | WS_TABSTOP,73,7,60,12
+    LTEXT           "Far Distance (meter):",IDC_STATIC,7,23,48,17
+    CTEXT           "",IDC_EDIT_CAMERA_FARDIST,53,23,80,14,WS_BORDER
+END
+
+IDD_DIALOG_MAP DIALOGEX 0, 0, 140, 84
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "Map :",IDC_STATIC,11,28,27,11
+    CONTROL         "Load",IDC_BUTTON_MAP_LOAD,"Button",BS_OWNERDRAW | WS_TABSTOP,73,67,60,12
+    CONTROL         "NaviField",IDC_CHECK_MAP_NAVIFIELD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,13,45,10
+    RTEXT           "Degree:",IDC_STATIC,11,49,27,10
+    GROUPBOX        "",IDC_STATIC,7,4,126,61,BS_FLAT
+    COMBOBOX        IDC_COMBO_MAP_INDEX,39,27,91,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MAP_DEGREE,39,48,91,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_NPC DIALOGEX 0, 0, 140, 248
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "<< Create",IDC_BUTTON_NPC_CREATE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,50,60,12
+    LTEXT           "Index:",IDC_STATIC,7,112,22,8
+    LTEXT           "Name:",IDC_STATIC,7,128,22,8
+    LTEXT           "Model:",IDC_STATIC,7,144,28,8
+    LTEXT           "Translate (meter) [Key: X Y(C)]",IDC_STATIC,7,174,101,8
+    LTEXT           "--<( Npc Transform )>--",IDC_STATIC,7,163,78,8
+    LTEXT           "--<( Npc Info )>--",IDC_STATIC,7,101,59,8
+    CTEXT           "",IDC_NUM_NPC_TX,33,184,100,14,WS_BORDER
+    LTEXT           "X:",IDC_STATIC,25,183,8,8
+    CTEXT           "",IDC_NUM_NPC_TY,33,200,100,14,WS_BORDER
+    LTEXT           "Y:",IDC_STATIC,25,199,8,8
+    LTEXT           "Rotate (degree) [Key: Z]",IDC_STATIC,7,218,81,8
+    CTEXT           "",IDC_NUM_NPC_RZ,33,229,100,14,WS_BORDER
+    EDITTEXT        IDC_EDIT_NPC_INDEX,33,112,100,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NPC_NAME,33,128,100,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_NPC_MODEL,33,144,100,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "<> Change",IDC_BUTTON_NPC_CHANGE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,66,60,12
+    LISTBOX         IDC_LIST_NPC,7,34,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save",IDC_BUTTON_NPC_SAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,60,12
+    COMBOBOX        IDC_COMBO_NPC_INDEX,73,34,60,195,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "--<( Npc List )>--",IDC_STATIC,7,23,62,8
+    CONTROL         ">> Delete",IDC_BUTTON_NPC_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,82,60,12
+END
+
+IDD_DIALOG_PORTAL DIALOGEX 0, 0, 139, 308
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "<< Create",IDC_BUTTON_PORTAL_CREATE,"Button",BS_OWNERDRAW | WS_TABSTOP,72,51,60,12
+    CONTROL         "Created",IDC_CHECK_PORTAL_CREATED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,114,38,10
+    CTEXT           "",IDC_NUM_PORTAL_INDEX,72,34,60,14,WS_BORDER
+    CONTROL         ">> Delete",IDC_BUTTON_PORTAL_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,72,67,60,12
+    LTEXT           "--<( Portal List )>--",IDC_STATIC,7,23,62,8
+    CONTROL         "Save",IDC_BUTTON_PORTAL_SAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,60,12
+    LISTBOX         IDC_LIST_PORTAL,7,34,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "--<( Portal Info )>--",IDC_STATIC,7,101,66,8
+    LTEXT           "Index:",IDC_STATIC,7,114,22,8
+    LTEXT           "Range:",IDC_STATIC,7,148,24,8
+    LTEXT           "Target Index:",IDC_STATIC,7,167,45,8
+    LTEXT           "--<( Portal Transform )>--",IDC_STATIC,7,188,85,8
+    LTEXT           "Translate (meter) [Key: X Y(C)]",IDC_STATIC,7,200,101,8
+    LTEXT           "X:",IDC_STATIC,25,209,8,8
+    CTEXT           "",IDC_NUM_PORTAL_TX,32,209,100,14,WS_BORDER
+    LTEXT           "Y:",IDC_STATIC,25,225,8,8
+    EDITTEXT        IDC_EDIT_PORTAL_INDEX,31,114,52,12,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_PORTAL_TARGET_INDEX,52,167,80,195,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "",IDC_NUM_PORTAL_RANGE,32,148,100,14,WS_BORDER
+    LTEXT           "Map Index:",IDC_STATIC,7,130,38,8
+    EDITTEXT        IDC_EDIT_PORTAL_MAP_INDEX,47,130,85,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Rotate (degree) [Key: Z]",IDC_STATIC,7,243,81,8
+    CTEXT           "",IDC_NUM_PORTAL_TY,32,225,100,14,WS_BORDER
+    CTEXT           "",IDC_NUM_PORTAL_RZ,32,254,100,14,WS_BORDER
+    LTEXT           "Name Height",IDC_STATIC,7,274,42,8
+    CTEXT           "",IDC_NUM_PORTAL_NAMEHEIGHT,32,286,100,14,WS_BORDER
+END
+
+IDD_DIALOG_MONSTER DIALOGEX 0, 0, 140, 653
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "<< Create",IDC_BUTTON_MONGROUP_CREATE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,53,60,12
+    CONTROL         ">> Delete",IDC_BUTTON_MONGROUP_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,69,60,12
+    LISTBOX         IDC_LIST_MONGROUP,7,35,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save",IDC_BUTTON_MONSTER_SAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,60,12
+    LTEXT           "--<( Group List )>--",IDC_STATIC,7,24,64,8
+    CONTROL         "<< Create",IDC_BUTTON_MONSTER_CREATE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,299,60,12
+    CONTROL         "<> Change",IDC_BUTTON_MONSTER_CHANGE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,315,60,12
+    LTEXT           "--<( Group Regen )>--",IDC_STATIC,7,100,74,8
+    CONTROL         "First Regen",IDC_CHECK_MONGROUP_FIRST_REGEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,111,53,10
+    LTEXT           "Monster (%):",IDC_STATIC,7,217,44,8
+    CTEXT           "",IDC_NUM_MONGROUP_REGEN_PERCENT,53,214,80,14,WS_BORDER
+    LTEXT           "Range (cm):",IDC_STATIC,7,233,40,8
+    CTEXT           "",IDC_NUM_MONGROUP_REGEN_RANGE,53,232,80,14,WS_BORDER
+    CTEXT           "",IDC_NUM_MONGROUP_REGEN_WAIT_TIME,53,250,80,14,WS_BORDER
+    LTEXT           "Regen Wait Time (milisec):",IDC_STATIC,7,250,45,18
+    LTEXT           "--<( Monster List )>--",IDC_STATIC,7,271,70,8
+    LISTBOX         IDC_LIST_MONSTER,7,283,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         ">> Delete",IDC_BUTTON_MONSTER_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,331,60,12
+    COMBOBOX        IDC_COMBO_MONSTER_INDEX,73,283,60,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Index:",IDC_STATIC,7,362,22,8
+    LTEXT           "Name:",IDC_STATIC,7,378,22,8
+    LTEXT           "Model:",IDC_STATIC,7,394,28,8
+    LTEXT           "Translate (meter) [Key: X Y(C)]",IDC_STATIC,7,424,101,8
+    LTEXT           "--<( Monster Transform )>--",IDC_STATIC,7,413,92,8
+    LTEXT           "--<( Monster Info )>--",IDC_STATIC,7,350,73,8
+    CTEXT           "",IDC_NUM_MONSTER_TX,33,434,100,14,WS_BORDER
+    LTEXT           "X:",IDC_STATIC,25,434,8,8
+    CTEXT           "",IDC_NUM_MONSTER_TY,33,450,100,14,WS_BORDER
+    LTEXT           "Y:",IDC_STATIC,25,450,8,8
+    LTEXT           "Rotate (degree) [Key: Z]",IDC_STATIC,7,467,81,8
+    CTEXT           "",IDC_NUM_MONSTER_RZ,33,477,100,14,WS_BORDER
+    EDITTEXT        IDC_EDIT_MONSTER_INDEX,33,362,100,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_MONSTER_NAME,33,378,100,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_MONSTER_MODEL,33,394,100,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "",IDC_NUM_MONSTER_REGEN_WAIT_TIME,53,496,80,14,WS_BORDER
+    LTEXT           "Regen Wait Time (milisec):",IDC_STATIC,7,496,45,18
+    CTEXT           "",IDC_NUM_MONGROUP_INDEX,73,35,60,14,WS_BORDER
+    CONTROL         "Channel Check",IDC_CHECK_MONGROUP_CHANNEL_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,111,63,10
+    LTEXT           "Map Group Index:",IDC_STATIC,7,194,45,18
+    CONTROL         "<< Create",IDC_BUTTON_MONGROUP_CREATE2,"Button",BS_OWNERDRAW | WS_TABSTOP,73,7,60,12
+    CTEXT           "",IDC_NUM_MONSTER_REGEN_LIFE_TIME,53,515,80,14,WS_BORDER
+    LTEXT           "Regen Life Time (milisec):",IDC_STATIC,7,515,45,18
+    CTEXT           "",IDC_NUM_MONGROUP_MAPGROUP_INDEX,53,195,80,14,WS_BORDER
+    LTEXT           "--<( Monster Family )>--",IDC_STATIC,7,539,80,8
+    LTEXT           "Pattern Index:",IDC_STATIC,7,633,53,11
+    COMBOBOX        IDC_COMBO_MONSTER_PATTERN_IDX,67,632,66,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_MONSTER_FAMILY,7,566,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "New",IDC_BUTTON_MONSTER_FAMILY_NUM_NEW,"Button",BS_OWNERDRAW | WS_TABSTOP,73,583,60,12
+    CONTROL         "<> Change",IDC_BUTTON_MONSTER_FAMILY_NUM_CHANGE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,614,60,12
+    CTEXT           "",IDC_NUM_MONSTER_FAMILY_NUM,73,566,60,14,WS_BORDER
+    LTEXT           "Family Num:",IDC_STATIC,7,551,41,10
+    EDITTEXT        IDC_EDIT_MONSTER_FAMILY_NUM,51,550,82,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_LIST_MONGROUP_REGEN_INDEX,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,7,136,125,55
+    LTEXT           "Next Regen Group",IDC_STATIC,10,125,60,8
+END
+
+IDD_DIALOG_GATHERING DIALOGEX 0, 0, 140, 447
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "<< Create",IDC_BUTTON_GATHERINGGROUP_CREATE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,53,60,12
+    CONTROL         ">> Delete",IDC_BUTTON_GATHERINGGROUP_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,69,60,12
+    LISTBOX         IDC_LIST_GATHERINGGROUP,7,35,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save",IDC_BUTTON_GATHERING_SAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,60,12
+    LTEXT           "--<( Group List )>--",IDC_STATIC,7,24,64,8
+    CONTROL         "<< Create",IDC_BUTTON_GATHERING_CREATE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,211,60,12
+    CONTROL         "<> Change",IDC_BUTTON_GATHERING_CHANGE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,227,60,12
+    LTEXT           "--<( Group Regen )>--",IDC_STATIC,7,103,74,8
+    LTEXT           "--<( Gathering List )>--",IDC_STATIC,7,183,76,8
+    LISTBOX         IDC_LIST_GATHERING,7,195,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         ">> Delete",IDC_BUTTON_GATHERING_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,243,60,12
+    COMBOBOX        IDC_COMBO_GATHERING_INDEX,73,195,60,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Index:",IDC_STATIC,7,274,22,8
+    LTEXT           "Name:",IDC_STATIC,7,290,22,8
+    LTEXT           "Model:",IDC_STATIC,7,306,28,8
+    LTEXT           "Translate (meter) [Key: X Y(C)]",IDC_STATIC,7,336,101,8
+    LTEXT           "--<( Gathering Transform )>--",IDC_STATIC,7,325,98,8
+    LTEXT           "--<( Gathering Info )>--",IDC_STATIC,7,262,78,8
+    CTEXT           "",IDC_NUM_GATHERING_TX,33,348,100,14,WS_BORDER
+    LTEXT           "X:",IDC_STATIC,25,348,8,8
+    CTEXT           "",IDC_NUM_GATHERING_TY,33,364,100,14,WS_BORDER
+    LTEXT           "Y:",IDC_STATIC,25,364,8,8
+    LTEXT           "Rotate (degree) [Key: Z]",IDC_STATIC,7,416,81,8
+    CTEXT           "",IDC_NUM_GATHERING_RZ,33,426,100,14,WS_BORDER
+    EDITTEXT        IDC_EDIT_GATHERING_INDEX,33,274,100,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_GATHERING_NAME,33,290,100,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_GATHERING_MODEL,33,306,100,12,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "",IDC_NUM_GATHERINGGROUP_INDEX,73,35,60,14,WS_BORDER
+    LTEXT           "Regen Group Index:",IDC_STATIC,7,115,66,8
+    CTEXT           "",IDC_NUM_GATHERINGGROUP_REGEN_WAIT_TIME,53,134,80,14,WS_BORDER
+    LTEXT           "Regen Wait Time (milisec):",IDC_STATIC,7,134,45,18
+    COMBOBOX        IDC_COMBO_GATHERINGGROUP_REGEN_INDEX,73,115,60,200,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Append Z (meter) [Key: V]",IDC_STATIC,7,383,86,8
+    CTEXT           "",IDC_NUM_GATHERING_AZ,33,396,100,14,WS_BORDER
+    LTEXT           "Z:",IDC_STATIC,25,396,8,8
+    CTEXT           "",IDC_NUM_GATHERINGGROUP_REGEN_RAND_TIME,53,156,80,14,WS_BORDER
+    LTEXT           "Regen Rand Time (milisec):",IDC_STATIC,7,156,45,18
+END
+
+IDD_DIALOG_PATTERN DIALOGEX 0, 0, 140, 266
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Save",IDC_BUTTON_PATTERN_SAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,60,12
+    CONTROL         "<< Create",IDC_BUTTON_PATTERN_CREATE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,54,60,12
+    LTEXT           "--<( Pattern List )>--",IDC_STATIC,7,25,68,8
+    LISTBOX         IDC_LIST_PATTERN,7,37,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         ">> Delete",IDC_BUTTON_PATTERN_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,70,60,12
+    LTEXT           "--<( Position Info )>--",IDC_STATIC,7,119,72,8
+    CTEXT           "",IDC_NUM_PATTERN_POSITION_WAITTIME,53,236,80,14,WS_BORDER
+    LTEXT           "Wait Time (milisec):",IDC_STATIC,7,234,45,18
+    CTEXT           "",IDC_NUM_PATTERN_POSITION_RANGE,53,201,80,14,WS_BORDER
+    LTEXT           "Range (cm):",IDC_STATIC,7,202,45,10
+    LISTBOX         IDC_LIST_PATTERN_POSITION,7,132,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "",IDC_NUM_PATTERN_INDEX,73,37,60,14,WS_BORDER
+    CONTROL         "Upper",IDC_CHECK_PATTERN_POSITION_UPPER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,132,35,10
+    CONTROL         ">> Delete",IDC_BUTTON_PATTERN_POSITION_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,181,60,12
+    CONTROL         "New [Key:N]",IDC_CHECK_PATTERN_POSITION_NEW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,148,57,10
+    CONTROL         "Resting place ",IDC_CHECK_PATTERN_POSITION_RESTINGPLACE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,220,61,10
+    CONTROL         "Modify [Key:M]",IDC_CHECK_PATTERN_POSITION_MODIFY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,73,164,65,10
+    CONTROL         "Circulate",IDC_CHECK_PATTERN_CIRCULATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,104,44,10
+END
+
+IDD_DIALOG_DOOR DIALOGEX 0, 0, 140, 376
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "<< Create",IDC_BUTTON_DOOR_CREATE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,51,60,12
+    LTEXT           "Index:",IDC_STATIC,7,108,22,8
+    LTEXT           "Translate (meter) [Key: X Y(C)]",IDC_STATIC,7,266,101,8
+    LTEXT           "--<(Transform )>--",IDC_STATIC,7,254,62,8
+    LTEXT           "--<( Door Info )>--",IDC_STATIC,7,97,62,8
+    CTEXT           "",IDC_NUM_DOOR_TX,33,276,100,14,WS_BORDER
+    LTEXT           "X:",IDC_STATIC,25,276,8,8
+    CTEXT           "",IDC_NUM_DOOR_TY,33,292,100,14,WS_BORDER
+    LTEXT           "Y:",IDC_STATIC,25,292,8,8
+    EDITTEXT        IDC_EDIT_DOOR_INDEX,32,108,100,12,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         IDC_LIST_DOOR,7,33,60,60,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save",IDC_BUTTON_DOOR_SAVE,"Button",BS_OWNERDRAW | WS_TABSTOP,7,6,60,12
+    LTEXT           "--<( Door List )>--",IDC_STATIC,7,22,62,8
+    CONTROL         ">> Delete",IDC_BUTTON_DOOR_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,73,67,60,12
+    CTEXT           "",IDC_NUM_DOOR_INDEX,73,33,60,14,WS_BORDER
+    LTEXT           "Map Index:",IDC_STATIC,7,124,38,8
+    EDITTEXT        IDC_EDIT_DOOR_MAPINDEX,47,124,85,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Rotate (degree) [Key: Z]",IDC_STATIC,7,343,81,8
+    CTEXT           "",IDC_NUM_DOOR_RZ,33,354,100,14,WS_BORDER
+    LTEXT           "Append Z (meter) [Key: V]",IDC_STATIC,7,311,86,8
+    CTEXT           "",IDC_NUM_DOOR_AZ,33,322,100,14,WS_BORDER
+    LTEXT           "Z:",IDC_STATIC,25,325,8,8
+    RTEXT           "B_Width:",IDC_STATIC,11,175,33,8
+    LTEXT           "--<( Rect Info )>--",IDC_STATIC,7,142,62,8
+    CTEXT           "",IDC_NUM_DOOR_RECT_TWIDTH,46,154,87,14,WS_BORDER
+    RTEXT           "T_Width:",IDC_STATIC,11,157,33,8
+    CTEXT           "",IDC_NUM_DOOR_RECT_BWIDTH,46,172,87,14,WS_BORDER
+    RTEXT           "R_Height:",IDC_STATIC,11,210,33,8
+    CTEXT           "",IDC_NUM_DOOR_RECT_LHEIGHT,46,190,87,14,WS_BORDER
+    RTEXT           "L_Height:",IDC_STATIC,11,192,33,8
+    CTEXT           "",IDC_NUM_DOOR_RECT_RHEIGHT,46,209,87,14,WS_BORDER
+    RTEXT           "AppendY:",IDC_STATIC,11,235,33,8
+    CTEXT           "",IDC_NUM_DOOR_RECT_APPENDY,46,233,87,14,WS_BORDER
+END
+
+IDD_LANGUAGE DIALOGEX 0, 0, 118, 20
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDCANCEL,79,4,29,12
+    COMBOBOX        IDC_COMBO_LANGUAGE,7,4,69,78,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "RegenTool.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "RegenTool.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_CAMERA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_NPC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+    END
+
+    IDD_DIALOG_PORTAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 132
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 307
+    END
+
+    IDD_DIALOG_MONSTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 646
+    END
+
+    IDD_DIALOG_GATHERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 440
+    END
+
+    IDD_DIALOG_PATTERN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_DIALOG_DOOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 369
+    END
+
+    IDD_LANGUAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CHECKBOXES          BITMAP                  "res\\checkboxes.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "RegenTool"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RegenTool"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호, 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모든 것을 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록 활성화"
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\RegenTool.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

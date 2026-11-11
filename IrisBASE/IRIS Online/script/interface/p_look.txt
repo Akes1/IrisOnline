@@ -1,0 +1,36 @@
+--=================--
+-- 살펴보기 윈도우 --
+--=================--
+
+-- 살펴보기 윈도우 
+window_prop "P_Look_Window"
+{
+	skinname "Look_Window"
+}
+
+-- 닫기 버튼
+button_prop "P_Look_Close"
+{
+	skinname "Look_Close"
+	parent "P_Look_Window"
+}
+
+label_prop "P_Look_Name"
+{
+	skinname "Look_Name"
+	parent "P_Look_Window"
+}
+
+label_prop "P_Look_Info"
+{
+	skinname "Look_Info"
+	parent "P_Look_Window"
+}
+
+
+
+
+
+
+
+

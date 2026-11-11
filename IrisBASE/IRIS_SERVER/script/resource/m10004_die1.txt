@@ -1,0 +1,20 @@
+Header
+{
+	type	0
+	sound	21	30062
+	sound	22	25001
+	sound	23	25054
+}
+
+Activity
+{
+	soundplay	1300	22	0
+}
+
+Apply
+{
+	soundplay	0	21	0
+	soundplay	1300	22	0
+	soundplay	1400	23	0
+}
+

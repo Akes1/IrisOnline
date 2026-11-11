@@ -1,0 +1,539 @@
+--===============--
+-- 채팅 윈도우 --
+--===============--
+window "ChatWindow"
+{
+	pos 0 645
+	size 1 1
+	holdview true	-- 창이 사라지지 않게 한다. 
+
+	captionXY 0 0 
+	captionWH 343 123
+	
+	opensound 3007
+	closesound 3010
+}
+
+-- 소스에서 직접 쓰는 스킨
+-- /// text 박스 뒷배경이미지 ( 자동으로 늘어나는 이미지 전용 )
+label "ChatBoxImage"
+{
+	ii 5002
+	pos 0 0
+	size 367 3
+	texpos 2 98
+}
+
+-- 소스에서 직접 쓰는 스킨
+-- // 배경 윗 틀
+label "ChatBoxImage_Up"
+{
+	ii 5002
+	pos 0 0
+	size 367 6
+	texpos 2 88
+}
+
+-- 소스에서 직접 쓰는 스킨
+-- /// 텍스트박스 밑을 기준으로 y 값을 잡는다
+-- // 배경 아래 틀
+label "ChatBoxImage_Down"
+{
+	ii 5002
+	pos 0 0
+	size 367 6
+	texpos 2 107
+}
+
+-- 소스에서 직접 쓰는 스킨
+-- /// 옵션 뒷배경이미지 
+label "OptionImage"
+{
+	ii 5002
+	pos 0 0
+	size 385 74
+	texpos 0 11
+}
+
+-- /// 소스에서 사용하는 스킨
+-- /// 현재 채팅상태를 보여주는 이미지
+-- /// 텍스트박스 밑을 기준으로 y 값을 잡는다
+label "Chat_SelectImage"
+{
+	ii 5002
+	pos 66 32
+	size 20 20
+	texpos 253 137
+}
+
+-- /// 채팅 박스
+textbox "ChatBox"
+{
+	pos 0 0
+	size 367 80
+
+	row_height 16		-- 열 높이 세팅	
+	maxitemnum 39		-- 리스트가 담을수 잇는 최대 갯수 ( 최대 39 이상 지정하지 마세요)
+	scrollbar_rightpos true	-- 스크롤바의 위치 세팅( true : 오른쪽, false : 왼쪽 )
+		
+	scrollskin "ChatScroll"	-- 공통 스킨 
+}
+
+-- 스크롤바
+scrollbar "ChatScroll"
+{
+	ii 5002
+	pos 0 0
+	size 18 18
+	texpos 1 116
+	
+	barbuttonskin "ScrollBar_Chat"
+	upbuttonskin "ScrollUp_Chat"
+	downbuttonskin "ScrollDown_Chat"
+}
+
+-- 버튼 "스크롤업" 
+button "ScrollUp_Chat"
+{
+	ii 5002
+	pos 0 0
+	size 18 18
+	texpos 21 116
+	
+	-- 버튼 그림 좌표 	
+	uppos 21 116
+	upoverpos 41 116
+	downpos 61 116
+	
+}
+-- 버튼 "스크롤다운"  
+button "ScrollDown_Chat"
+{
+	ii 5002
+	pos 0 0
+	size 18 18
+	texpos 21 137
+	
+	-- 버튼 그림 좌표 	
+	uppos 21 137
+	upoverpos 41 137
+	downpos 61 137
+}
+
+-- 바 버튼
+barbutton "ScrollBar_Chat"
+{
+	ii 5002
+	pos 0 0
+	size 18 16
+	texpos 1 139
+	
+	-- 버튼 그림 좌표 	
+	uppos 1 139
+	downpos 1 139	
+}
+
+
+
+-- /// 채팅 에디트 
+editbox "ChatEdit"
+{
+	pos 67 138 --186
+	size 280 15
+	editpos 3 3
+	editkind 0
+	editmaxlen 45
+	
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 귓속말 에디트
+editbox "ChatEdit_Whisper"
+{
+	ii 5002
+	pos 88 112 --160
+	size 85 20
+	texpos 408 7
+	editpos 3 5
+	editkind 5		-- ( 0:일반, 1:노인풋, 2:숫자용, 3:계정아이디, 4:계정패스 5:특문제외 )
+	editmaxlen 8
+	
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002			-- 텍스쳐
+	child_size 1 1			-- 사이즈
+	child_texpos 1003 908		-- 이미지 위치
+}
+
+
+-- /// 채팅박스 확장 "채팅 확장"
+button "ChatBox_Extend_Button"
+{
+	ii 5002							
+	pos 35 91 --139
+	size 27 27
+	texpos 83 115
+	
+	-- 버튼 그림 좌표 					
+	uppos 83 115
+	upoverpos 112 115
+	downpos 141 115
+
+	downsound 3001
+	
+	hovertip	423
+}
+
+-- /// 채팅박스 사이즈 "+" 버튼
+button "ChatBox_Size_Plus"
+{
+	ii 5002							
+	pos 7 105 --153
+	size 23 23
+	texpos 199 115
+	
+	-- 버튼 그림 좌표 					
+	uppos 199 115
+	upoverpos 199 140
+	downpos 199 165
+
+	downsound 3001
+	
+	hovertip	424
+}
+
+-- /// 채팅박스 사이즈 "-" 버튼
+button "ChatBox_Size_Minus"
+{
+	ii 5002							
+	pos 7 130 --78
+	size 23 23
+	texpos 224 115
+	
+	-- 버튼 그림 좌표 					
+	uppos 224 115
+	upoverpos 224 140
+	downpos 224 165
+	
+	downsound 3001
+	
+	hovertip	425
+}
+
+-- 이동 고정
+pushbutton "ChatBox_MoveLock"
+{
+	ii 5002
+	pos 352 109 --157
+	size 22 22
+	texpos 515 1024
+	
+	-- 버튼 이미지 좌표 
+	uppos 515 1024	
+	upoverpos 515 1024	
+	downpos 490 1024
+	downoverpos 490 1024
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	450
+}
+
+-- /// 채팅 옵션 "일반"
+pushbutton "ChatBox_Nomal"
+{
+	ii 5002
+	pos 178 112 --160
+	size 20 20
+	texpos 253 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 253 115		-- 일반 이미지 좌표
+	upoverpos 253 115	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 253 137
+	downoverpos 253 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	426
+}
+
+-- /// 채팅 옵션 "파티"
+pushbutton "ChatBox_Party"
+{
+	ii 5002
+	pos 199 112 --160
+	size 20 20
+	texpos 275 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 275 115		-- 일반 이미지 좌표
+	upoverpos 275 115	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 275 137
+	downoverpos 275 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	427
+}
+
+-- /// 채팅 옵션 "길드"
+pushbutton "ChatBox_Guild"
+{
+	ii 5002
+	pos 220 112 --160
+	size 20 20
+	texpos 297 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 297 115		-- 일반 이미지 좌표
+	upoverpos 297 115	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 297 137
+	downoverpos 297 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	428
+}
+
+-- /// 채팅 옵션 "외치기"
+pushbutton "ChatBox_Shout"
+{
+	ii 5002
+	pos 241 112 --160
+	size 20 20
+	texpos 319 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 319 115		-- 일반 이미지 좌표
+	upoverpos 319 115	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 319 137
+	downoverpos 319 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	429
+}
+
+-- /// 채팅 옵션 "거래"
+pushbutton "ChatBox_Trade"
+{
+	ii 5002
+	pos 262 112 --160
+	size 20 20
+	texpos 341 159
+	
+	-- 버튼 이미지 좌표 
+	uppos 341 159		-- 일반 이미지 좌표
+	upoverpos 341 159	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 363 159
+	downoverpos 363 159
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	430
+}
+
+-- /// 채팅 옵션 "귓속말"
+pushbutton "ChatBox_Whisper"
+{
+	ii 5002
+	pos 283 112 --160
+	size 20 20
+	texpos 341 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 341 115
+	upoverpos 341 115
+	downpos 341 137
+	downoverpos 341 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	431
+}
+
+-- /// 채팅 옵션 "시스템"
+pushbutton "ChatBox_System"
+{
+	ii 5002
+	pos 304 112 --160
+	size 20 20
+	texpos 363 115
+	
+	-- 버튼 이미지 좌표 
+	uppos 363 115
+	upoverpos 363 115
+	downpos 363 137
+	downoverpos 363 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	432
+}
+
+-- /// 채팅 옵션 "메가폰"
+pushbutton "ChatBox_Megaphone"
+{
+	ii 5002
+	pos 325 112 --160
+	size 20 20
+	texpos 386 160
+	
+	-- 버튼 이미지 좌표 
+	uppos 386 160
+	upoverpos 386 160
+	downpos 319 159
+	downoverpos 319 159
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	453
+}
+
+-- 아이템 링크용 아이콘
+-- 소스에서 사용하는 스킨
+icon "Inven_LinkIcon"	{ pos 39 136	size 20 20 }
+
+--===============--
+-- 채팅 버튼 윈도우 --
+--===============--
+window "ChatButtonWindow"
+{
+	pos 0 0
+	size 20 120
+
+	captionXY 0 0 
+	captionWH 343 123
+}
+
+-- /// 소스에서 사용하는 스킨명
+-- /// 채팅 옵션 "일반"
+button "ChatButton_Normal"
+{
+	ii 5002
+	pos 0 0
+	size 20 20
+	texpos 253 137
+	
+	-- 버튼 이미지 좌표 
+	uppos 253 137		-- 일반 이미지 좌표
+	upoverpos 253 137	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 253 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	426
+}
+
+-- /// 소스에서 사용하는 스킨명
+-- /// 채팅 옵션 "파티"
+button "ChatButton_Party"
+{
+	ii 5002
+	pos 0 20
+	size 20 20
+	texpos 275 137
+	
+	-- 버튼 이미지 좌표 
+	uppos 275 137		-- 일반 이미지 좌표
+	upoverpos 275 137	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 275 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	427
+}
+
+-- /// 소스에서 사용하는 스킨명
+-- /// 채팅 옵션 "길드"
+button "ChatButton_Guild"
+{
+	ii 5002
+	pos 0 40
+	size 20 20
+	texpos 297 137
+	
+	-- 버튼 이미지 좌표 
+	uppos 297 137		-- 일반 이미지 좌표
+	upoverpos 297 137	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 297 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	428
+}
+
+-- /// 소스에서 사용하는 스킨명
+-- /// 채팅 옵션 "외치기"
+button "ChatButton_Shout"
+{
+	ii 5002
+	pos 0 60
+	size 20 20
+	texpos 319 137
+	
+	-- 버튼 이미지 좌표 
+	uppos 319 137		-- 일반 이미지 좌표
+	upoverpos 319 137	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 319 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	429
+}
+
+-- /// 소스에서 사용하는 스킨명
+-- /// 채팅 옵션 "거래"
+button "ChatButton_Trade"
+{
+	ii 5002
+	pos 0 80
+	size 20 20
+	texpos 363 159
+	
+	-- 버튼 이미지 좌표 
+	uppos 363 159		-- 일반 이미지 좌표
+	upoverpos 363 159	-- 커서가 올라갔을 때 이미지 좌표
+	downpos 363 159
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	430
+}
+
+-- /// 소스에서 사용하는 스킨명
+-- /// 채팅 옵션 "귓속말"
+button "ChatButton_Whisper"
+{
+	ii 5002
+	pos 0 100
+	size 20 20
+	texpos 341 137
+	
+	-- 버튼 이미지 좌표 
+	uppos 341 137
+	upoverpos 341 137
+	downpos 341 137
+
+	upsound 3001
+	downsound 3001
+	
+	hovertip	431
+}

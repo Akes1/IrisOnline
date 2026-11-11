@@ -1,0 +1,591 @@
+--===============--
+-- 버튼메뉴 윈도우 --
+--===============--
+window "MenuButtonWindow"
+{
+	ii 5002
+	pos 794 663
+	size 230 107
+	texpos 6 1108
+	holdview true
+}
+
+-- 캐릭터 메뉴버튼
+button "Button_Hero"
+{
+	ii 5002
+	pos 23 58
+	size 36 36
+	texpos 910 87
+	 
+	-- 버튼 그림 좌표 	
+	uppos 910 87
+	upoverpos 910 125
+	downpos 910 87
+
+	downsound 3001
+	
+	hovertip	441	
+}
+
+-- 생활 메뉴버튼
+button "Button_Life"
+{
+	ii 5002
+	pos 64 58
+	size 36 36
+	texpos 872 87
+	
+	-- 버튼 그림 좌표 	
+	uppos 872 87
+	upoverpos 872 125
+	downpos 872 87
+
+	downsound 3001
+	
+	hovertip	451
+}
+
+-- 커뮤니티 메뉴버튼
+button "Button_Commu"
+{
+	ii 5002
+	pos 105 58
+	size 36 36
+	texpos 948 87
+	
+	-- 버튼 그림 좌표 	
+	uppos 948 87
+	upoverpos 948 125
+	downpos 948 87
+
+	downsound 3001
+	
+	hovertip	442
+}
+
+-- 옵션 메뉴버튼
+button "Button_Option"
+{
+	ii 5002
+	pos 145 58
+	size 36 36
+	texpos 986 87
+	
+	-- 버튼 그림 좌표 	
+	uppos 986 87
+	upoverpos 986 125
+	downpos 986 87
+
+	downsound 3001
+	
+	hovertip	443
+}
+
+-- /// 수령함 메뉴버튼
+button "Button_Receipt"
+{
+	ii 5002
+	pos 187 11
+	size 38 38
+	texpos 377 884
+	
+	-- 버튼 그림 좌표 	
+	uppos 377 884
+	upoverpos 418 884
+	downpos  459 884
+
+	downsound 3001
+	
+	hovertip	440
+}
+
+-- 트위터 메뉴버튼
+button "Button_Twitter"
+{
+	ii 5002
+	pos 187 48
+	size 38 38
+	texpos 377 924
+	
+	-- 버튼 그림 좌표 	
+	uppos  377 924
+	upoverpos 418 924
+	downpos 459 924
+
+	downsound 3001
+	
+	hovertip	452
+}
+
+
+
+--===============--
+-- 캐릭터 메뉴 	 --
+--===============--
+
+-- /// 캐릭터메뉴 윈도우 
+window "MenuHeroWindow"
+{
+	ii 5002
+	pos 224 237 --pos 시작점이 우측하단임
+	size 115 182
+	texpos 492 352
+}
+
+-- /// 버튼 "Close"
+button "MenuHero_Close"
+{
+	ii 5002
+	pos 84 8
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 캐릭터 정보창
+button "MenuHero_Info"
+{
+	ii 5002
+	pos 11 44
+	size 98 20
+	texpos 2 416
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 416
+	upoverpos 102 416
+	downpos 202 416
+
+	downsound 3001
+}
+
+-- 스킬창
+button "MenuHero_Skill"
+{
+	ii 5002
+	pos 11 66
+	size 98 20
+	texpos 2 482
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 482
+	upoverpos 102 482
+	downpos 202 482
+
+	downsound 3001
+}
+
+-- 생활 스킬창
+button "MenuHero_CommunitySkill"
+{
+
+	ii 5002
+	pos 11 88
+	size 98 20
+	texpos 423 1123
+	
+	uppos 423 1123
+	upoverpos 523 1123
+	downpos 623 1123
+
+	downsound 3001
+}
+
+-- 퀘스트창
+button "MenuHero_Quest"
+{
+	ii 5002
+	pos 11 110
+	size 98 20
+	texpos 2 504
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 504
+	upoverpos 102 504
+	downpos 202 504
+
+	downsound 3001
+}
+
+-- 인벤토리
+button "MenuHero_Inventory"
+{
+	ii 5002
+	pos 11 132
+	size 98 20
+	texpos 2 438
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 438
+	upoverpos 102 438
+	downpos 202 438
+
+	downsound 3001
+}
+
+-- 테마던전 관리
+button "MenuHero_ThemeState"
+{
+	ii 5002
+	pos 11 154
+	size 98 20
+
+	texpos 423 1145
+	
+	uppos 423 1145
+	upoverpos 523 1145
+	downpos 623 1145
+
+	downsound 3001
+
+}
+
+
+
+--===============--
+-- 생활 메뉴 	 --
+--===============--
+
+-- /// 생활메뉴 윈도우
+window "MenuLifeWindow"
+{
+	ii 5002
+	pos 189 280 --pos 시작점이 우측하단임
+	size 115 225
+	texpos 609 352
+}
+
+-- /// 버튼 "Close"
+button "MenuLife_Close"
+{
+	ii 5002
+	pos 84 8
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 아이템 강화
+button "MenuLife_Enhance"
+{
+	ii 5002
+	pos 11 43
+	size 98 20
+	texpos 2 460
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 460
+	upoverpos 102 460
+	downpos 202 460
+
+	downsound 3001
+}
+
+-- 카드 장착
+button "MenuLife_Putcard"
+{
+	ii 5002
+	pos 11 65
+	size 98 20
+	texpos 2 725
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 725
+	upoverpos 102 725
+	downpos 202 725
+
+	downsound 3001
+}
+
+-- 타로 점집
+button "MenuLife_Tarot"
+{
+	ii 5002
+	pos 11 87
+	size 98 20
+	texpos 2 747
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 747
+	upoverpos 102 747
+	downpos 202 747
+
+	downsound 3001
+}
+
+-- 개인 상점
+button "MenuLife_UserSell"
+{
+	ii 5002
+	pos 11 109
+	size 98 20
+	texpos 423 1057
+	
+	-- 버튼 그림 좌표 	
+	uppos 423 1057
+	upoverpos 523 1057
+	downpos 623 1057
+
+	downsound 3001
+}
+
+-- 보조 기술
+button "MenuLife_ItemMix"
+{
+	ii 5002
+	pos 11 131
+	size 98 20
+	texpos 423 1101
+	
+	-- 버튼 그림 좌표 	
+	uppos 423 1101
+	upoverpos 523 1101
+	downpos 623 1101
+
+	downsound 3001
+}
+
+-- 호칭 관리
+button "MenuLife_Title"
+{
+	ii 5002 
+	pos 11 153
+	size 98 20
+	texpos 423 1079
+	
+	-- 버튼 그림 좌표 	
+	uppos 423 1079
+	upoverpos 523 1079
+	downpos 623 1079
+
+	downsound 3001
+}
+
+button "MenuLife_BigMap"
+{
+	ii 5002
+	pos 11 175
+	size 98 20
+	texpos 423 1167
+
+	uppos 423 1167
+	upoverpos 523 1167
+	downpos 623 1167
+
+	downsound 3001
+
+}
+
+button "MenuLife_CardBook"
+{
+	ii 5002
+	pos 11 197
+	size 98 20
+	texpos 423 1189
+
+	uppos 423 1189
+	upoverpos 523 1189
+	downpos 623 1189
+	
+	downsound 3001
+
+}
+
+
+
+--===============--
+-- 커뮤니티 메뉴 --
+--===============--
+-- /// 커뮤니티메뉴 윈도우
+window "MenuCommunityWindow"
+{
+	ii 5002
+	pos 164 170 --pos 시작점이 우측하단임
+	size 115 115
+	texpos 726 1056
+}
+
+-- /// 버튼 "Close"
+button "MenuCommu_Close"
+{
+	ii 5002
+	pos 84 8
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 친구목록
+button "MenuCommu_Friend"
+{
+	ii 5002
+	pos 11 66
+	size 98 20
+	texpos 2 549
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 549
+	upoverpos 102 549
+	downpos 202 549
+
+	downsound 3001
+}
+
+-- 길드창
+button "MenuCommu_Guild"
+{
+	ii 5002
+	pos 11 88
+	size 98 20
+	texpos 2 571
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 571
+	upoverpos 102 571
+	downpos 202 571
+	
+	downsound 3001
+}
+
+-- 사회창
+button "MenuCommu_Social"
+{
+	ii 5002
+	pos 11 44
+	size 98 20
+	texpos 2 681
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 681
+	upoverpos 102 681
+	downpos 202 681
+	
+	downsound 3001
+}
+
+--===============--
+-- 옵션 메뉴 --
+--===============--
+-- /// 옵션메뉴 윈도우
+window "MenuOptionWindow"
+{
+	ii 5002 
+	pos 164 214 --pos 시작점이 우측하단임
+	size 115 159
+	texpos 491 536
+}
+
+-- /// 버튼 "Close"
+button "MenuOption_Close"
+{
+	ii 5002
+	pos 84 8
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+
+-- 게임설정
+button "MenuOption_Setting"
+{
+	ii 5002
+	pos 11 44
+	size 98 20
+	texpos 2 615
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 615
+	upoverpos 102 615
+	downpos 202 615
+
+	downsound 3001
+}
+
+-- 동영상 촬영
+button "MenuOption_VideoCapture"
+{
+	ii 5002
+	pos 11 66
+	size 98 20
+	texpos 2 703
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 703
+	upoverpos 102 703
+	downpos 202 703
+
+	downsound 3001
+}
+
+-- 단축키 설정
+button "MenuOption_ShortCut"
+{
+	ii 5002
+	pos 11 88
+	size 98 20
+	texpos 2 593
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 593
+	upoverpos 102 593
+	downpos 202 593
+
+	downsound 3001
+}
+
+-- 캐릭터 변경
+button "MenuOption_Change"
+{
+	ii 5002
+	pos 11 110
+	size 98 20
+	texpos 2 637
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 637
+	upoverpos 102 637
+	downpos 202 637
+
+	downsound 3001
+}
+
+-- 게임 종료
+button "MenuOption_Exit"
+{
+	ii 5002
+	pos 11 132
+	size 98 20
+	texpos 2 659
+	
+	-- 버튼 그림 좌표 	
+	uppos 2 659
+	upoverpos 102 659
+	downpos 202 659
+
+	downsound 3001
+}

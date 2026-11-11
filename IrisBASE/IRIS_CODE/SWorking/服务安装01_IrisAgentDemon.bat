@@ -1,0 +1,1 @@
+IrisAgentDemon.exe /install -def AgentDemon

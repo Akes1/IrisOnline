@@ -1,0 +1,43 @@
+--===============--
+-- 아이템 강화창 --
+--===============--
+window_prop "P_EnhancedWindow"
+{
+	skinname "EnhancedWindow"
+}
+
+button_prop "P_Enhanced_Close"
+{
+	skinname "Enhanced_Close"
+	parent "P_EnhancedWindow"
+}
+
+button_prop "P_Enhanced_Start"
+{
+	skinname "Enhanced_Start"
+	parent "P_EnhancedWindow"
+}
+
+button_prop "P_Enhanced_Cancel"
+{
+	skinname "Enhanced_Cancel"
+	parent "P_EnhancedWindow"
+}
+
+gauge_prop "P_Enhanced_Gaugebar"
+{
+	skinname "Enhanced_Gaugebar"
+	parent "P_EnhancedWindow"
+}
+
+label_prop "P_Enhanced_Success"
+{
+	skinname "Enhanced_Success"
+	parent "P_EnhancedWindow"
+}
+
+label_prop "P_Enhanced_Failure"
+{
+	skinname "Enhanced_Failure"
+	parent "P_EnhancedWindow"
+}

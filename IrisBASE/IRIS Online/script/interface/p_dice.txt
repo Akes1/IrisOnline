@@ -1,0 +1,25 @@
+--===============--
+-- 주사위 굴리기 --
+--===============--
+window_prop "P_DiceWindow"
+{
+	skinname "DiceWindow"
+}
+
+button_prop "P_Dice_Roll"
+{
+	skinname "Dice_Roll"
+	parent "P_DiceWindow"
+}
+
+button_prop "P_Dice_GiveUp"
+{
+	skinname "Dice_GiveUp"
+	parent "P_DiceWindow"
+}
+
+label_prop "P_Dice_Time"
+{
+	skinname "Dice_Time"
+	parent "P_DiceWindow"
+}

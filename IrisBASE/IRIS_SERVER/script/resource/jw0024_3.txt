@@ -1,0 +1,35 @@
+--공격3: 이도류
+
+Header
+{
+	type	0
+
+	sound	21	4004
+	sound	22	4006
+	sound	23	4504
+	sound	24	4505
+
+	trailtex	31	"trail_blue_00.tga"
+}
+
+Activity
+{
+	animation	53
+
+	trail	400	200	31	rweapon	rhand	100.0	2.0
+	trail	633	233	31	lweapon	lhand	100.0	2.0
+
+	soundplay	250	21	0
+	soundplay	520	22	0
+	soundplay	433	23	0
+	soundplay	600	24	0
+
+	active	400
+
+}
+
+Apply
+{
+	damage	0	40
+	damage	267	60
+}

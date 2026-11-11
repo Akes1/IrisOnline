@@ -1,0 +1,57 @@
+--==============================================================
+-- /// 스킬 창 
+--==============================================================
+tabwindow_prop "P_SkillWindow"
+{
+	skinname "SkillWindow"
+}
+
+-- /// 버튼 "Close"
+button_prop "P_Skill_Close_Button"
+{
+	skinname "Skill_Close_Button"
+	parent "P_SkillWindow"
+}
+
+label_prop "P_Skill_Point"
+{
+	skinname "Skill_Point"
+	parent "P_SkillWindow"
+}
+
+label_prop "P_Skill_PointImage"
+{
+	skinname "Skill_PointImage"
+	parent "P_SkillWindow"
+}
+
+label_prop "P_Skill_UsePoint"
+{
+	skinname "Skill_UsePoint"
+	parent "P_SkillWindow"
+}
+
+label_prop "P_Skill_UsePointImage"
+{
+	skinname "Skill_UsePointImage"
+	parent "P_SkillWindow"
+}
+
+window_prop "P_Skill_GradeList"
+{
+	skinname "Skill_GradeList"
+	parent "P_SkillWindow"
+}
+
+listbox_prop "P_Skill_SkillGradeList"
+{
+	skinname "Skill_SkillGradeList"
+	parent "P_Skill_GradeList"
+}
+
+checkbox_prop "P_Skill_GradeListView"
+{
+	skinname "Skill_GradeListView"
+	parent "P_SkillWindow"
+}
+	

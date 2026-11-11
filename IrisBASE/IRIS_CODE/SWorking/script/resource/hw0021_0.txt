@@ -1,0 +1,24 @@
+--공격3: 맨손
+Header
+{
+	type	0
+
+	sound	21	4002
+	sound	22	4503
+}
+
+Activity
+{
+	animation	50
+
+	soundplay	250	21	0
+	soundplay	320	22	0
+
+	active	400
+}
+
+Apply
+{
+
+	damage	0	100
+}

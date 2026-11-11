@@ -1,0 +1,99 @@
+-- ¸ŞÀÎ ´ÙÀÌ¾ó·Î±×
+dialog "main"
+{
+	image "main.tga"
+	fontface "±¼¸²"
+	fontsize 12
+
+	dlgtext
+	{
+		txt 0 "ÕıÔÚËÑŒ¤™n°¸¡­"
+		txt 1 "¸üĞÂÖĞ [%.2f%%]"
+		txt 2 "¸üĞÂÍê³É"
+	}
+	
+	-- °ÔÀÓ ½ÇÇà ¹öÆ°
+	button "start"
+	{
+		image "start.tga"
+		pos 490 404
+		size 129 62
+	}
+	
+	-- Á¾·á ¹öÆ°
+	button "close"
+	{
+		image "close.tga"
+		pos 640 7
+		size 21 20
+	}
+
+	-- ÃÖ¼ÒÈ­ ¹öÆ°
+	button "Minimize"
+	{
+		image "Minimize.tga"
+		pos 612 7
+		size 21 20
+	}
+
+	-- update ¹öÆ°
+	button "update"
+	{
+		image "update.tga"
+		pos 285 415
+		size 115 17
+	}
+
+	-- ÁøÇà¹Ù
+	progressbar "probar"
+	{
+		image "bar.tga"
+		pos 144 395
+		size 498 5
+		color 198 0 0
+		backcolor 92 92 92
+	}
+
+	-- °øÁö »çÇ× ºä
+	htmlview "board"
+	{
+		url "http://iris.funmily.com/launcher/index.shtml"
+		pos 16 33
+		size 650 351
+	}
+
+	combobox "language"
+	{
+		image "combo.tga"
+		left	0 0 5 22
+		center	5 0 1 22
+		right	6 0 24 22
+
+		imageScroll "scrollbar.tga"
+
+		pos 8 431
+		size 80 100
+	}
+
+	combobox "resolution"
+	{
+		image "combo.tga"
+		left	0 0 5 22
+		center	5 0 1 22
+		right	6 0 24 22
+
+		imageScroll "scrollbar.tga"
+
+		pos 183 417
+		size 95 100
+	}
+
+	button "full"
+	{
+		image "checkbox.tga"
+		style 1
+		pos 98 420
+		size 13 11
+	}
+
+}

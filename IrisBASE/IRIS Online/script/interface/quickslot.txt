@@ -1,0 +1,542 @@
+-- 퀵 슬롯 윈도우 ( 열 - 세로형 )
+window "RowQuickSlot"
+{
+	ii 5002
+	pos 929 236
+	size 49 405
+	texpos 968 168
+
+	captionXY 0 0
+	captionWH 49 405
+	
+	holdview true	-- 창이 사라지지 않게 한다. 
+}
+
+icon "QuickRow_Icon00"	{ pos 12 24	size 28 28 }
+icon "QuickRow_Icon01"	{ pos 12 59	size 28 28 } 
+icon "QuickRow_Icon02"	{ pos 12 94	size 28 28 } 
+icon "QuickRow_Icon03"	{ pos 12 129	size 28 28 } 
+icon "QuickRow_Icon04"	{ pos 12 163	size 28 28 } 
+icon "QuickRow_Icon05"	{ pos 12 199	size 28 28 } 
+icon "QuickRow_Icon06"	{ pos 12 234	size 28 28 } 
+icon "QuickRow_Icon07"	{ pos 12 269	size 28 28 } 
+icon "QuickRow_Icon08"	{ pos 12 304	size 28 28 } 
+icon "QuickRow_Icon09"	{ pos 12 339	size 28 28 } 
+
+
+-- 퀵슬롯 회전
+button "RowQuick_Rotate"
+{
+	ii 5002						
+	pos 0 375
+	size 26 26
+	texpos 791 119
+	
+	-- 버튼 그림 좌표 					
+	uppos 791 119
+	upoverpos 818 119
+	downpos 845 119
+
+	downsound 3001
+	
+	hovertip	433
+}
+
+-- 퀵슬롯 추가 버튼
+button "RowQuick_Extra"
+{
+	ii 5002						
+	pos 27 370
+	size 20 20
+	texpos 413 83
+	
+	-- 버튼 그림 좌표 					
+	uppos 413 83
+	upoverpos 434 83
+	downpos 455 83
+
+	downsound 3001
+	
+	hovertip	454
+}
+
+--==============================================================
+-- 퀵 슬롯 윈도우 ( 행 - 가로형 )
+--==============================================================
+window "ColumnQuickSlot"
+{
+	ii 5002
+	pos 385 665
+	size 409 49
+	texpos 387 30
+
+	captionXY 0 0
+	captionWH 409 49
+
+	holdview true	-- 창이 사라지지 않게 한다.  
+}
+
+icon "QuickColumn_Icon00"	{ pos 28 12	size 28 28 }
+icon "QuickColumn_Icon01"	{ pos 63 12	size 28 28 }
+icon "QuickColumn_Icon02"	{ pos 98 12	size 28 28 }
+icon "QuickColumn_Icon03"	{ pos 133 12	size 28 28 }
+icon "QuickColumn_Icon04"	{ pos 168 12	size 28 28 }
+icon "QuickColumn_Icon05"	{ pos 203 12	size 28 28 }
+icon "QuickColumn_Icon06"	{ pos 238 12	size 28 28 }
+icon "QuickColumn_Icon07"	{ pos 273 12	size 28 28 }
+icon "QuickColumn_Icon08"	{ pos 308 12	size 28 28 }
+icon "QuickColumn_Icon09"	{ pos 343 12	size 28 28 }
+
+
+
+-- 퀵슬롯 회전
+button "ColumnQuick_Rotate"
+{
+	ii 5002							
+	pos 379 0
+	size 26 26
+	texpos 791 90
+	
+	-- 버튼 그림 좌표 					
+	uppos 791 90
+	upoverpos 818 90
+	downpos 845 90
+
+	downsound 3001
+	
+	hovertip	434
+}
+
+-- 퀵슬롯 추가 버튼
+button "ColumnQuick_Extra"
+{
+	ii 5002						
+	pos 375 27
+	size 20 20
+	texpos 413 83
+	
+	-- 버튼 그림 좌표 					
+	uppos 413 83
+	upoverpos 434 83
+	downpos 455 83
+
+	downsound 3001
+	
+	hovertip	454
+}
+
+--==============================================================
+-- FS 퀵슬롯(가로)
+--==============================================================
+window "FSColumnQuickSlot"
+{
+	ii 5002
+	pos 385 729
+	size 409 49
+	texpos 387 30
+
+	captionXY 0 0
+	captionWH 409 49
+
+	holdview true	-- 창이 사라지지 않게 한다. 
+}
+
+icon "QuickFSColumn_Icon00"	{ pos 28 12	size 28 28 }
+icon "QuickFSColumn_Icon01"	{ pos 63 12	size 28 28 }
+icon "QuickFSColumn_Icon02"	{ pos 98 12	size 28 28 }
+icon "QuickFSColumn_Icon03"	{ pos 133 12	size 28 28 }
+icon "QuickFSColumn_Icon04"	{ pos 168 12	size 28 28 }
+icon "QuickFSColumn_Icon05"	{ pos 203 12	size 28 28 }
+icon "QuickFSColumn_Icon06"	{ pos 238 12	size 28 28 }
+icon "QuickFSColumn_Icon07"	{ pos 273 12	size 28 28 }
+icon "QuickFSColumn_Icon08"	{ pos 308 12	size 28 28 }
+icon "QuickFSColumn_Icon09"	{ pos 343 12	size 28 28 }
+
+--==============================================================
+-- FS 퀵슬롯(세로)                                              
+--==============================================================
+window "FSRowQuickSlot"
+{
+	ii 5002
+	pos 983 236
+	size 49 405
+	texpos 968 168
+
+	captionXY 0 0
+	captionWH 49 405
+	
+	holdview true	-- 창이 사라지지 않게 한다. 
+}
+
+icon "QuickFSRow_Icon00"	{ pos 12 24	size 28 28 }
+icon "QuickFSRow_Icon01"	{ pos 12 59	size 28 28 } 
+icon "QuickFSRow_Icon02"	{ pos 12 94	size 28 28 } 
+icon "QuickFSRow_Icon03"	{ pos 12 129	size 28 28 } 
+icon "QuickFSRow_Icon04"	{ pos 12 163	size 28 28 } 
+icon "QuickFSRow_Icon05"	{ pos 12 199	size 28 28 } 
+icon "QuickFSRow_Icon06"	{ pos 12 234	size 28 28 } 
+icon "QuickFSRow_Icon07"	{ pos 12 269	size 28 28 } 
+icon "QuickFSRow_Icon08"	{ pos 12 304	size 28 28 } 
+icon "QuickFSRow_Icon09"	{ pos 12 339	size 28 28 } 
+
+--==============================================================
+-- 확장 퀵슬롯1 (세로형)
+--==============================================================
+window "RowExtraSlot1"
+{
+	ii 5002
+	pos 880 236
+	size 49 405
+	texpos 968 168
+
+	captionXY 0 0
+	captionWH 49 405
+	
+	holdview true	-- 창이 사라지지 않게 한다. 
+}
+
+-- 확장 퀵슬롯1 (세로형) 회전
+button "RowExtraSlot1_Rotate"
+{
+	ii 5002						
+	pos 0 375
+	size 26 26
+	texpos 791 119
+	
+	-- 버튼 그림 좌표 					
+	uppos 791 119
+	upoverpos 818 119
+	downpos 845 119
+
+	downsound 3001
+	
+	hovertip	433
+}
+
+-- 확장 퀵슬롯1 (세로형) 닫기 버튼
+button "RowExtraSlot1_Close"
+{
+	ii 5002						
+	pos 27 370
+	size 20 20
+	texpos 413 104
+	
+	-- 버튼 그림 좌표 					
+	uppos 413 104
+	upoverpos 434 104
+	downpos 455 104
+
+	downsound 3001
+	
+	hovertip	112
+}
+
+icon "ExtraRow1_Icon00"	{ pos 12 24	size 28 28 } 
+icon "ExtraRow1_Icon01"	{ pos 12 59	size 28 28 } 
+icon "ExtraRow1_Icon02"	{ pos 12 94	size 28 28 } 
+icon "ExtraRow1_Icon03"	{ pos 12 129	size 28 28 } 
+icon "ExtraRow1_Icon04"	{ pos 12 164	size 28 28 } 
+icon "ExtraRow1_Icon05"	{ pos 12 199	size 28 28 } 
+icon "ExtraRow1_Icon06"	{ pos 12 234	size 28 28 } 
+icon "ExtraRow1_Icon07"	{ pos 12 269	size 28 28 } 
+icon "ExtraRow1_Icon08"	{ pos 12 304	size 28 28 } 
+icon "ExtraRow1_Icon09"	{ pos 12 339	size 28 28 } 
+
+--==============================================================
+--확장 퀵슬롯1 (가로형)
+--==============================================================
+window "ColumnExtraSlot1"
+{
+	ii 5002       
+	pos 385 616
+	size 409 49
+	texpos 387 30
+
+	captionXY 0 0
+	captionWH 409 49
+
+	holdview true	-- 창이 사라지지 않게 한다.  
+}
+
+-- 확장 퀵슬롯1 (가로형) 회전
+button "ColumnExtraSlot1_Rotate"
+{
+	ii 5002							
+	pos 379 0
+	size 26 26
+	texpos 791 90
+	
+	-- 버튼 그림 좌표 					
+	uppos 791 90
+	upoverpos 818 90
+	downpos 845 90
+
+	downsound 3001
+	
+	hovertip	434
+}
+
+-- 확장 퀵슬롯1 (가로형) 닫기 버튼
+button "ColumnExtraSlot1_Close"
+{
+	ii 5002						
+	pos 375 27
+	size 20 20
+	texpos 413 104
+	
+	-- 버튼 그림 좌표 					
+	uppos 413 104
+	upoverpos 434 104
+	downpos 455 104
+
+	downsound 3001
+	
+	hovertip	112
+}
+
+icon "ExtraColumn1_Icon00"	{ pos 28 12	size 28 28 }
+icon "ExtraColumn1_Icon01"	{ pos 63 12	size 28 28 }
+icon "ExtraColumn1_Icon02"	{ pos 98 12	size 28 28 }
+icon "ExtraColumn1_Icon03"	{ pos 133 12	size 28 28 }
+icon "ExtraColumn1_Icon04"	{ pos 168 12	size 28 28 }
+icon "ExtraColumn1_Icon05"	{ pos 203 12	size 28 28 }
+icon "ExtraColumn1_Icon06"	{ pos 238 12	size 28 28 }
+icon "ExtraColumn1_Icon07"	{ pos 273 12	size 28 28 }
+icon "ExtraColumn1_Icon08"	{ pos 308 12	size 28 28 }
+icon "ExtraColumn1_Icon09"	{ pos 343 12	size 28 28 }
+
+--==============================================================
+-- 확장 퀵슬롯2 (세로형)
+--==============================================================
+window "RowExtraSlot2"
+{
+	ii 5002
+	pos 831 236
+	size 49 405
+	texpos 968 168
+
+	captionXY 0 0
+	captionWH 49 405
+	
+	holdview true	-- 창이 사라지지 않게 한다. 
+}
+
+-- 확장 퀵슬롯2 (세로형) 회전
+button "RowExtraSlot2_Rotate"
+{
+	ii 5002						
+	pos 0 375
+	size 26 26
+	texpos 791 119
+	
+	-- 버튼 그림 좌표 					
+	uppos 791 119
+	upoverpos 818 119
+	downpos 845 119
+
+	downsound 3001
+	
+	hovertip	433
+}
+
+-- 확장 퀵슬롯2 (세로형) 닫기 버튼
+button "RowExtraSlot2_Close"
+{
+	ii 5002						
+	pos 27 370
+	size 20 20
+	texpos 413 104
+	
+	-- 버튼 그림 좌표 					
+	uppos 413 104
+	upoverpos 434 104
+	downpos 455 104
+
+	downsound 3001
+	
+	hovertip	112
+}
+
+icon "ExtraRow2_Icon00"	{ pos 12 24	size 28 28 }
+icon "ExtraRow2_Icon01"	{ pos 12 59	size 28 28 } 
+icon "ExtraRow2_Icon02"	{ pos 12 94	size 28 28 } 
+icon "ExtraRow2_Icon03"	{ pos 12 129	size 28 28 } 
+icon "ExtraRow2_Icon04"	{ pos 12 163	size 28 28 } 
+icon "ExtraRow2_Icon05"	{ pos 12 199	size 28 28 } 
+icon "ExtraRow2_Icon06"	{ pos 12 234	size 28 28 } 
+icon "ExtraRow2_Icon07"	{ pos 12 269	size 28 28 } 
+icon "ExtraRow2_Icon08"	{ pos 12 304	size 28 28 } 
+icon "ExtraRow2_Icon09"	{ pos 12 339	size 28 28 } 
+
+
+--==============================================================
+--확장 퀵슬롯2 (가로형)
+--==============================================================
+window "ColumnExtraSlot2"
+{
+	ii 5002
+	pos 385 567
+	size 409 49
+	texpos 387 30
+
+	captionXY 0 0
+	captionWH 409 49
+
+	holdview true	-- 창이 사라지지 않게 한다.  
+}
+
+-- 확장 퀵슬롯2 (가로형) 회전
+button "ColumnExtraSlot2_Rotate"
+{
+	ii 5002							
+	pos 379 0
+	size 26 26
+	texpos 791 90
+	
+	-- 버튼 그림 좌표 					
+	uppos 791 90
+	upoverpos 818 90
+	downpos 845 90
+
+	downsound 3001
+	
+	hovertip	434
+}
+
+-- 확장 퀵슬롯2 (가로형) 닫기 버튼
+button "ColumnExtraSlot2_Close"
+{
+	ii 5002						
+	pos 375 27
+	size 20 20
+	texpos 413 104
+	
+	-- 버튼 그림 좌표 					
+	uppos 413 104
+	upoverpos 434 104
+	downpos 455 104
+
+	downsound 3001
+	
+	hovertip	112
+}
+
+icon "ExtraColumn2_Icon00"	{ pos 28 12	size 28 28 }
+icon "ExtraColumn2_Icon01"	{ pos 63 12	size 28 28 }
+icon "ExtraColumn2_Icon02"	{ pos 98 12	size 28 28 }
+icon "ExtraColumn2_Icon03"	{ pos 133 12	size 28 28 }
+icon "ExtraColumn2_Icon04"	{ pos 168 12	size 28 28 }
+icon "ExtraColumn2_Icon05"	{ pos 203 12	size 28 28 }
+icon "ExtraColumn2_Icon06"	{ pos 238 12	size 28 28 }
+icon "ExtraColumn2_Icon07"	{ pos 273 12	size 28 28 }
+icon "ExtraColumn2_Icon08"	{ pos 308 12	size 28 28 }
+icon "ExtraColumn2_Icon09"	{ pos 343 12	size 28 28 }
+
+
+--key_skin_키보드인덱스. ※주의사항: path_shortcut.txt 파일안의 키보드 인덱스와 매칭을 시켜야합니다.
+label "Key_Skin_1000"	{ ii 5002	pos 0 0	size 12  9 texpos 540 18 }	-- F1
+label "Key_Skin_1001"	{ ii 5002	pos 0 0	size 12  9 texpos 552 18 }	-- F2
+label "Key_Skin_1002"	{ ii 5002	pos 0 0	size 12  9 texpos 565 18 }	-- F3
+label "Key_Skin_1003"	{ ii 5002	pos 0 0	size 12  9 texpos 578 18 }	-- F4
+label "Key_Skin_1004"	{ ii 5002	pos 0 0	size 12  9 texpos 591 18 }	-- F5
+label "Key_Skin_1005"	{ ii 5002	pos 0 0	size 12  9 texpos 604 18 }	-- F6
+label "Key_Skin_1006"	{ ii 5002	pos 0 0	size 12  9 texpos 617 18 }	-- F7
+label "Key_Skin_1007"	{ ii 5002	pos 0 0	size 12  9 texpos 630 18 }	-- F8
+label "Key_Skin_1008"	{ ii 5002	pos 0 0	size 12  9 texpos 643 18 }	-- F9
+label "Key_Skin_1009"	{ ii 5002	pos 0 0	size 16  9 texpos 656 18 }	-- F10
+label "Key_Skin_1010"	{ ii 5002	pos 0 0	size 16  9 texpos 673 18 }	-- F12
+label "Key_Skin_1011"	{ ii 5002	pos 0 0	size  8  4 texpos 565 273 } -- ~
+label "Key_Skin_1012"	{ ii 5002	pos 0 0	size  7  9 texpos 541 7 }	-- 1
+label "Key_Skin_1013"	{ ii 5002	pos 0 0	size  7  9 texpos 552 7 }	-- 2
+label "Key_Skin_1014"	{ ii 5002	pos 0 0	size  7  9 texpos 565 7 }	-- 3
+label "Key_Skin_1015"	{ ii 5002	pos 0 0	size  7  9 texpos 578 7 }	-- 4
+label "Key_Skin_1016"	{ ii 5002	pos 0 0	size  7  9 texpos 591 7 }	-- 5
+label "Key_Skin_1017"	{ ii 5002	pos 0 0	size  7  9 texpos 604 7 }	-- 6
+label "Key_Skin_1018"	{ ii 5002	pos 0 0	size  7  9 texpos 617 7 }	-- 7
+label "Key_Skin_1019"	{ ii 5002	pos 0 0	size  7  9 texpos 630 7 }	-- 8
+label "Key_Skin_1020"	{ ii 5002	pos 0 0	size  7  9 texpos 643 7 }	-- 9
+label "Key_Skin_1021"	{ ii 5002	pos 0 0	size  7  9 texpos 656 7 }	-- 0
+label "Key_Skin_1022"	{ ii 5002	pos 0 0	size  6  3 texpos 690 21 }	-- -
+label "Key_Skin_1023"	{ ii 5002	pos 0 0	size  6  5 texpos 697 19 }	--  ^ (일본어 키보드)
+label "Key_Skin_1024"	{ ii 5002	pos 0 0 	size  9  10 texpos 705 19 }	-- ￥(일본어 키보드)
+label "Key_Skin_1025"	{ ii 5002	pos 0 0	size 19  9 texpos 493 270 }	-- Tab
+label "Key_Skin_1026"	{ ii 5002	pos 0 0	size 25  9 texpos 540 290 }	-- Ctrl 좌
+--label "Key_Skin_1027"	{ ii 5002	pos 0 0	size 19  9 texpos 566 290 }	-- Alt 좌(기능 삭제)
+label "Key_Skin_1028"	{ ii 5002	pos 0 0	size 13  9 texpos 526 290 }	-- Space Bar 
+label "Key_Skin_1029"	{ ii 5002	pos 0 0	size 25  9 texpos 421 300 }	-- Home
+label "Key_Skin_1030"	{ ii 5002	pos 0 0	size 13  9 texpos 447 300 }	-- PageUp
+label "Key_Skin_1031"	{ ii 5002	pos 0 0	size 26  9 texpos 475 300 }	-- Delete
+label "Key_Skin_1032"	{ ii 5002	pos 0 0	size 19  9 texpos 502 300 }	-- End
+label "Key_Skin_1033"	{ ii 5002	pos 0 0	size 13  9 texpos 461 300 }	-- PageDown
+label "Key_Skin_1034"	{ ii 5002	pos 0 0	size  7 10 texpos 557 270 }	-- 방향키 상
+label "Key_Skin_1035"	{ ii 5002	pos 0 0	size 10  7 texpos 527 270 }	-- 방향키 좌
+label "Key_Skin_1036"	{ ii 5002	pos 0 0	size  7 10 texpos 538 270 }	-- 방향키 하
+label "Key_Skin_1037"	{ ii 5002	pos 0 0	size 10  7 texpos 546 270 }	-- 방향키 우
+label "Key_Skin_1038"	{ ii 5002	pos 0 0	size  8  9 texpos 405 270 }	-- Q
+label "Key_Skin_1039"	{ ii 5002	pos 0 0	size  7  9 texpos 414 270 }	-- W
+label "Key_Skin_1040"	{ ii 5002	pos 0 0	size  7  9 texpos 422 270 }	-- E
+label "Key_Skin_1041"	{ ii 5002	pos 0 0	size  7  9 texpos 431 270 }	-- R
+label "Key_Skin_1042"	{ ii 5002	pos 0 0	size  7  9 texpos 439 270 }	-- T
+label "Key_Skin_1043"	{ ii 5002	pos 0 0	size  7  9 texpos 447 270 }	-- Y
+label "Key_Skin_1044"	{ ii 5002	pos 0 0	size  7  9 texpos 455 270 }	-- U
+label "Key_Skin_1045"	{ ii 5002	pos 0 0	size  3  9 texpos 463 270 }	-- I
+label "Key_Skin_1046"	{ ii 5002	pos 0 0	size  7  9 texpos 467 270 }	-- O
+label "Key_Skin_1047"	{ ii 5002	pos 0 0	size  7  9 texpos 475 270 }	-- P
+label "Key_Skin_1048"	{ ii 5002	pos 0 0	size  8  9 texpos 493 280 }	-- @ (일본어 키보드)
+label "Key_Skin_1049"	{ ii 5002	pos 0 0	size  4  9 texpos 483 270 }	-- [ (일본키보드)
+label "Key_Skin_1050"	{ ii 5002	pos 0 0	size  7  9 texpos 405 280 }	-- A
+label "Key_Skin_1051"	{ ii 5002	pos 0 0	size  7  9 texpos 413 280 }	-- S
+label "Key_Skin_1052"	{ ii 5002	pos 0 0	size  7  9 texpos 422 280 }	-- D
+label "Key_Skin_1053"	{ ii 5002	pos 0 0	size  7  9 texpos 431 280 }	-- F
+label "Key_Skin_1054"	{ ii 5002	pos 0 0	size  7  9 texpos 439 280 }	-- G
+label "Key_Skin_1055"	{ ii 5002	pos 0 0	size  7  9 texpos 448 280 }	-- H
+label "Key_Skin_1056"	{ ii 5002	pos 0 0	size  7  9 texpos 456 280 }	-- J
+label "Key_Skin_1057"	{ ii 5002	pos 0 0	size  7  9 texpos 464 280 }	-- K
+label "Key_Skin_1058"	{ ii 5002	pos 0 0	size  7  9 texpos 473 280 }	-- L
+label "Key_Skin_1059"	{ ii 5002	pos 0 0	size  4  9 texpos 481 280 }	-- ;
+label "Key_Skin_1060"      { ii 5002	pos 0 0	size  3  7 texpos 504 281 }	-- : (일본키보드)
+label "Key_Skin_1061"	{ ii 5002	pos 0 0	size  7  9 texpos 405 290 }	-- Z
+label "Key_Skin_1062"	{ ii 5002	pos 0 0	size  7  9 texpos 413 290 }	-- X
+label "Key_Skin_1063"	{ ii 5002	pos 0 0	size  7  9 texpos 421 290 }	-- C
+label "Key_Skin_1064"	{ ii 5002	pos 0 0	size  7  9 texpos 429 290 }	-- V
+label "Key_Skin_1065"	{ ii 5002	pos 0 0	size  7  9 texpos 437 290 }	-- B
+label "Key_Skin_1066"	{ ii 5002	pos 0 0	size  7  9 texpos 445 290 }	-- N
+label "Key_Skin_1067"	{ ii 5002	pos 0 0	size  7  9 texpos 453 290 }	-- M
+label "Key_Skin_1068"	{ ii 5002	pos 0 0	size  5  7 texpos 461 292 }	-- <
+label "Key_Skin_1069"	{ ii 5002	pos 0 0	size  5  7 texpos 467 292 }	-- >
+label "Key_Skin_1070"	{ ii 5002	pos 0 0	size 20  9 texpos 505 290 }	-- Alt 우
+label "Key_Skin_1071"	{ ii 5002	pos 0 0	size 25  9 texpos 479 290 }	-- Ctrl 우
+--label "Key_Skin_1072"	{ ii 5002	pos 0 0	size 25  9 texpos 479 290 }	-- Scroll Lock
+label "Key_Skin_1073"	{ ii 5002	pos 0 0	size 15  9 texpos 405 300 }	-- Insert
+label "Key_Skin_1074"	{ ii 5002	pos 0 0	size 12  9 texpos 991 7 }	-- 숫자키0
+label "Key_Skin_1075"	{ ii 5002	pos 0 0	size 10  9 texpos 876 7 }	-- 숫자키1
+label "Key_Skin_1076"	{ ii 5002	pos 0 0	size 12  9 texpos 887 7 }	-- 숫자키2
+label "Key_Skin_1077"	{ ii 5002	pos 0 0	size 12  9 texpos 900 7 }	-- 숫자키3
+label "Key_Skin_1078"	{ ii 5002	pos 0 0	size 12  9 texpos 913 7 }	-- 숫자키4
+label "Key_Skin_1079"	{ ii 5002	pos 0 0	size 12  9 texpos 926 7 }	-- 숫자키5
+label "Key_Skin_1080"	{ ii 5002	pos 0 0	size 12  9 texpos 939 7 }	-- 숫자키6
+label "Key_Skin_1081"	{ ii 5002	pos 0 0	size 12  9 texpos 952 7 }	-- 숫자키7
+label "Key_Skin_1082"	{ ii 5002	pos 0 0	size 12  9 texpos 965 7 }	-- 숫자키8
+label "Key_Skin_1083"	{ ii 5002	pos 0 0	size 12  9 texpos 978 7 }	-- 숫자키9
+label "Key_Skin_1084"	{ ii 5002	pos 0 0	size 10  9 texpos 744 7 }	-- Alt-1
+label "Key_Skin_1085"	{ ii 5002	pos 0 0	size 12  9 texpos 755 7 }	-- Alt-2
+label "Key_Skin_1086"	{ ii 5002	pos 0 0	size 12  9 texpos 768 7 }	-- Alt-3
+label "Key_Skin_1087"	{ ii 5002	pos 0 0	size 12  9 texpos 781 7 }	-- Alt-4
+label "Key_Skin_1088"	{ ii 5002	pos 0 0	size 12  9 texpos 794 7 }	-- Alt-5
+label "Key_Skin_1089"	{ ii 5002	pos 0 0	size 12  9 texpos 807 7 }	-- Alt-6
+label "Key_Skin_1090"	{ ii 5002	pos 0 0	size 12  9 texpos 820 7 }	-- Alt-7
+label "Key_Skin_1091"	{ ii 5002	pos 0 0	size 12  9 texpos 833 7 }	-- Alt-8
+label "Key_Skin_1092"	{ ii 5002	pos 0 0	size 12  9 texpos 846 7 }	-- Alt-9
+label "Key_Skin_1093"	{ ii 5002	pos 0 0	size 12  9 texpos 859 7 }	-- Alt-0
+label "Key_Skin_1094"	{ ii 5002	pos 0 0	size 15  9 texpos 739 18 }	-- Alt-F1
+label "Key_Skin_1095"	{ ii 5002	pos 0 0	size 17  9 texpos 755 18 }	-- Alt-F2
+label "Key_Skin_1096"	{ ii 5002	pos 0 0	size 17  9 texpos 773 18 }	-- Alt-F3
+label "Key_Skin_1097"	{ ii 5002	pos 0 0	size 17  9 texpos 791 18 }	-- Alt-F4
+label "Key_Skin_1098"	{ ii 5002	pos 0 0	size 17  9 texpos 809 18 }	-- Alt-F5
+label "Key_Skin_1099"	{ ii 5002	pos 0 0	size 17  9 texpos 827 18 }	-- Alt-F6
+label "Key_Skin_1100"	{ ii 5002	pos 0 0	size 17  9 texpos 845 18 }	-- Alt-F7
+label "Key_Skin_1101"	{ ii 5002	pos 0 0	size 17  9 texpos 863 18 }	-- Alt-F8
+label "Key_Skin_1102"	{ ii 5002	pos 0 0	size 17  9 texpos 881 18 }	-- Alt-F9
+label "Key_Skin_1103"	{ ii 5002	pos 0 0	size 21  9 texpos 899 18 }	-- Alt-F10
+label "Key_Skin_1104"	{ ii 5002	pos 0 0 	size 4  9 texpos 488 270 }            -- ] (일본 추가키)
+label "Key_Skin_1105"	{ ii 5002	pos 0 0	size 9  9 texpos 510 280 }            -- ＼ (일본 추가키)

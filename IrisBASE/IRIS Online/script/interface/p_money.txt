@@ -1,0 +1,69 @@
+
+
+--====================--
+-- 금액 윈도우	 --
+--====================--
+window_prop "P_Money_Window"
+{
+	skinname "Money_Window"
+}
+
+button_prop "P_Money_Close"
+{
+	skinname "Money_Close"
+	parent "P_Money_Window"
+}
+
+label_prop "P_Money_Caption"
+{
+	skinname "Money_Caption"
+	parent "P_Money_Window"
+}
+
+numberedit_prop "P_Money_Number"
+{
+	skinname "Money_Number"
+	parent "P_Money_Window"
+}
+
+button_prop "P_Money_Up"
+{
+	skinname "Money_Up"
+	parent "P_Money_Window"
+}
+
+button_prop "P_Money_Down"
+{
+	skinname "Money_Down"
+	parent "P_Money_Window"
+}
+
+button_prop "P_Money_Max"
+{
+	skinname "Money_Max"
+	parent "P_Money_Window"
+}
+
+button_prop "P_Money_Ok"
+{
+	skinname "Money_Ok"
+	parent "P_Money_Window"
+}
+
+button_prop "P_Money_Cancel"
+{
+	skinname "Money_Cancel"
+	parent "P_Money_Window"
+}
+
+button_prop "P_Money_Modify"
+{
+	skinname "Money_Modify"
+	parent "P_Money_Window"
+}
+
+button_prop "P_Money_Delete"
+{
+	skinname "Money_Delete"
+	parent "P_Money_Window"
+}

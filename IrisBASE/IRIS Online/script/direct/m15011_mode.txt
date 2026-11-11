@@ -1,0 +1,101 @@
+//빅토리 조안 캐논 모드 설정
+
+Header	
+{
+	effect	1	0	0	0	2	"eff_pc_pvp_1.nif"
+	effect	2	0	0	0	0.5	"eff_em_02002_9.nif"
+
+	sound	3	10214
+	portal	120106
+	portal	120107
+}
+
+Mode	0
+{
+	modeimage	"mode_image201_1.tga"	0	480	0
+	immune	0
+
+	modechange	4	1	600000	0	0
+	modechange	1	3	80	0	0
+
+	useskill	11	0	100	0	0	0	0	
+	useskill	12	0	100	0	0	0	0	
+}
+
+Mode	1
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	360	0
+
+	applyaura	48033	0	10	1
+
+	modestate	21	3000
+
+	gentotem	8010	1	0	1100	0	0	1001101	2
+	gentotem	8010	1	0	1100	0	0	1001102	2
+	gentotem	8010	1	0	1100	0	0	1001103	2
+	gentotem	8010	1	0	1100	0	0	1001104	2
+	gentotem	8010	1	0	1100	0	0	1001105	2
+
+	modechange	4	1	600000	0	0
+	modechange	3	3	40	0	0
+	modechange	2	2	7000	0	0
+}
+
+Mode	2
+{
+	immune	0
+
+	modechange	4	1	600000	0	0
+	modechange	3	3	40	0	0
+	modechange	1	2	36000	0	0
+
+	useskill	11	0	100	0	0	0	0	
+	useskill	12	0	100	0	0	0	0	
+}
+
+Mode	3
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	420	0
+
+	applyaura	48034	0	10	1
+
+	genmonster	6015	1	500	1500	0	0	1001106
+
+	modechange	4	1	600000	0	0
+	modechange	3	2	40000	0	0
+
+	useskill	11	0	100	0	0	0	0	
+	useskill	12	0	100	0	0	0	0	
+}
+
+Mode	4
+{
+	modeimage	"mode_image10002.tga"	0	180	0
+
+	immune	0
+
+	applyaura	45110	0	10	0
+
+	modechange	5	2	40000	0	0
+}
+
+Mode	5
+{
+	immune	0
+
+	modeimage	"mode_image201_1.tga"	0	420	0
+
+	applyaura	45110	0	10	0
+	applyaura	48034	0	10	1
+
+	genmonster	6015	1	500	1500	0	0	1001106
+
+	modechange	5	2	40000	0	0
+
+	useskill	11	0	100	0	0	0	0	
+	useskill	12	0	100	0	0	0	0	
+}

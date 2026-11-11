@@ -1,0 +1,98 @@
+-- /// 사회 윈도우 
+window "SocialWindow"
+{
+	ii 5010
+	pos 350 106
+	size 381 466
+	texpos 2 760
+		
+	captionXY 0 0 
+	captionWH 381 466
+
+	opensound 3007
+	closesound 3010
+}
+
+-- /// 버튼  "닫기"
+button "Social_Close_Button"
+{
+	ii 5002
+	pos 347 13
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- /// 세력 이름 불 "황혼의 헬렌"
+label "Social_Force_Fire"
+{
+	pos 202 101
+	size 80 11
+	text_align left
+	text 120
+}
+
+-- /// 세력 이름 물 "심연의 네로"
+label "Social_Force_Water"
+{
+	pos 202 128
+	size 80 11
+	text_align left
+	text 121
+}
+
+-- /// 세력 이름 바람 "침묵의 아네스"
+label "Social_Force_Wind"
+{
+	pos 202 155
+	size 80 11
+	text_align left
+	text 122
+}
+
+-- /// 세력 이름 땅 "불굴의 데라"
+label "Social_Force_Earth"
+{
+	pos 202 182
+	size 80 11
+	text_align left
+	text 123
+}
+
+-- /// 세력 포인트 불 "황혼의 헬렌"
+label "Social_Force_Fire_Point"
+{
+	pos 288 101
+	size 61 11
+	text_align right
+}
+
+-- /// 세력 포인트 물 "심연의 네로"
+label "Social_Force_Water_Point"
+{
+	pos 288 128
+	size 61 11
+	text_align right
+}
+
+-- /// 세력 포인트 바람 "침묵의 아네스"
+label "Social_Force_Wind_Point"
+{
+	pos 288 155
+	size 61 11
+	text_align right
+}
+
+-- /// 세력 포인트 땅 "불굴의 데라"
+label "Social_Force_Earth_Point"
+{
+	pos 288 182
+	size 61 11
+	text_align right
+}

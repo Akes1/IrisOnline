@@ -1,0 +1,302 @@
+window "ItemMixWindow"
+{
+	ii 5010
+	pos 236 233
+	size 413 596
+	texpos 889 2
+
+	opensound 3007
+	closesound 3010
+	
+	captionXY 0 0
+	captionWH 413 596
+}
+
+-- 닫기 버튼 "x"
+button "ItemMix_Close"
+{
+	ii 5002
+	pos 380 14
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+
+	downsound 3001
+}
+
+-- 기술포기 버튼
+button "ItemMix_Giveup"
+{
+	ii 5010
+	pos 306 56
+	size 82 24                
+	texpos 631 212
+	useenable true
+
+	uppos 631 212
+	upoverpos 631 238
+	downpos 631 264
+	enablepos 631 264
+
+	downsound 3001
+}
+
+-- 조합하기 버튼
+button "ItemMix_Start"
+{
+	ii 5010
+	pos 228 533
+	size 82 24
+	texpos 715 212
+	useenable true
+
+	uppos 715 212
+	upoverpos 715 238
+	downpos 715 264
+	enablepos 715 264
+
+	downsound 3001
+}
+
+-- 조합중단 버튼
+button "ItemMix_Cancel"
+{
+	ii 5010
+	pos 318 533
+	size 82 24
+	texpos 799 212
+	useenable true
+
+	uppos 799 212
+	upoverpos 799 238
+	downpos 799 264
+	enablepos 799 264
+
+	downsound 3001
+}
+
+-- /// 재조합 대기 시간
+label "ItemMix_Cooltime"
+{
+	pos 300 389
+	size 85 16
+	text_align right
+}
+
+-- /// 조합 수량
+editbox "ItemMix_NumberEdit"
+{
+	pos 105 538
+	size  40 16
+
+	editpos 0 2
+	editmaxlen 6
+	text_align right
+	editkind 2
+
+	-- 에디트 박스의 드래그 선택 영역 이미지 
+	child_ii 5002
+	child_size 1 1
+	child_texpos 1003 908
+}
+
+-- /// 조합 수량 Max 버튼
+button "ItemMix_Max"
+{
+	ii 5005
+	pos 180 534
+	size 40 22
+	texpos 474 507
+	useenable true
+	
+	uppos 474 507
+	upoverpos 516 507
+	downpos 558 507
+	enablepos 558 507
+}
+
+-- 조합 결과물 목록 - 소스에서 사용
+icon "ItemMixResult_Slot00"	{ pos 26 313	size 28 28 }
+icon "ItemMixResult_Slot01"	{ pos 67 313	size 28 28 } 
+icon "ItemMixResult_Slot02"	{ pos 109 313	size 28 28 }
+ 
+-- /// 결과물1 확률
+label "ItemMix_Result1"
+{
+	pos 23 351
+	size 35 13
+	text_align center
+}
+
+-- /// 결과물2 확률
+label "ItemMix_Result2"
+{
+	pos 64 351
+	size 35 13
+	text_align center
+}
+
+-- /// 결과물3 확률
+label "ItemMix_Result3"
+{
+	pos 106 351
+	size 35 13
+	text_align center
+}
+
+-- /// 조합 완료 개수
+label "ItemMix_CompleteCount"
+{
+	pos 340 564
+	size 42 21
+	text_align center
+}
+
+-- /// 등급
+label "ItemMix_Grade"
+{
+	pos 84 104
+	size 72 12
+	text_align center
+}
+-- /// 현재 숙련도
+label "ItemMix_SkillNow"
+{
+	pos 239 104
+	size 60 12  
+	text_align right 
+}
+
+-- /// 목표 숙련도
+label "ItemMix_SkillGoal"
+{
+	pos 312 104
+	size 60 12 
+	text_align left
+}
+
+-- /// 조합 게이지
+gauge "ItemMix_Gaugebar"
+{
+	pos 26 570
+	size 195 7
+	
+	gauge_speed 30			-- float 값
+	show_text false
+	
+	gauge_ii 5003
+	gauge_pos 0 0
+	gauge_size 2 7 
+	gauge_texpos 365 295
+	gauge_width 194
+	gauge_height 7
+}
+
+-- 전문 기술 선택
+combobox "ItemMix_SkillCombo"
+{
+	pos 133 60
+	size 110 21		-- 접혔을때 사이즈 : 에디트와 버튼만 포함한 사이즈
+	
+	listskin "ComboList_SkillCombo"
+	buttonskin "ComboDown"
+	texteditskin "ComboEdit_SkillCombo"
+	scrollskin "ListScroll"
+}
+
+listbox "ComboList_SkillCombo"
+{
+	ii 5006
+	pos 0 21
+	size 123 40
+	texpos 298 646
+	
+	row_height 20		
+	maxitemnum 2
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5006	
+	child_size 1 1		
+	child_texpos 321 401
+	
+	columnX 11 	100	left
+}
+editbox "ComboEdit_SkillCombo"
+{
+	ii 5010
+	pos 0 0
+	size 110 17
+	texpos 1022 62
+	
+	editkind 1	
+	editpos 10 2	
+	editmaxlen 16		
+}
+
+-- 전문기술 정보 리스트
+folderbox "ItemMix_SkillList"
+{
+	pos 23 140
+	size 368 135
+	row_height 15			-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 150			-- 리스트가 담을수 잇는 최대 갯수
+	
+	scrollskin "ListScroll"
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii	5010			
+	child_size	355 15
+	child_texpos	889 600
+}
+
+-- 소스에서 쓰는 스킨
+-- 상위 열 체크용
+label "ItemMix_FolderCheck"
+{
+	ii 5006
+	pos 0 0
+	size 12 12
+	texpos 316 370
+}
+
+-- 상위열 노 체크용
+label "ItemMix_FolderNoCheck"
+{
+	ii 5006
+	pos 0 0
+	size 12 12
+	texpos 316 384
+}
+
+
+-- 조합 재료 목록
+-- 소스에서 이름사용
+listbox "ItemMix_List"
+{
+	pos 23 407
+	size 370 110
+	row_height 37				-- 한줄 높이 ( 없으면 글자 높이로 대신 계산 )
+	maxitemnum 6				-- 리스트가 담을수 잇는 최대 갯수
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5010				-- 텍스쳐
+	child_size 174 37				-- 사이즈
+	child_texpos 661 174				-- 이미지 위치
+
+	scrollskin "ChatScroll"
+	selectwidth 174
+}
+
+-- 조합 재료 슬롯 - 소스에서 사용
+icon "ItemMix_Slot00"	{ pos 3 4	size 28 28 }
+icon "ItemMix_Slot01"	{ pos 181 4	size 28 28 } 
+icon "ItemMix_Slot02"	{ pos 3 41	size 28 28 } 
+icon "ItemMix_Slot03"	{ pos 181 41	size 28 28 } 
+icon "ItemMix_Slot04"	{ pos 3 78	size 28 28 } 
+icon "ItemMix_Slot05"	{ pos 181 78	size 28 28 } 

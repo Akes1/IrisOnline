@@ -1,0 +1,42 @@
+--===============--
+-- 카마엘 심판 창 --
+--===============--
+window_prop "P_Camael_Window"
+{
+	skinname "CamaelWindow"
+}
+
+-- /// 입력란 에디트  
+editbox_prop "P_Camael_Edit"
+{
+	skinname "Camael_Edit"
+	parent "P_Camael_Window"
+}
+
+-- /// 문제 라벨
+--label "P_Camael_TestImage"
+--{ 
+--	skinname "Camael_TestImage"
+--	parent "P_Camael_Window"
+--}
+
+-- /// 남은시간 라벨
+label_prop "P_Camael_LimitTime"
+{
+	skinname "Camael_LimitTime"
+	parent "P_Camael_Window"
+}
+
+-- /// 확인 버튼
+button_prop "P_Camael_OK"
+{
+	skinname "Camael_OK"
+	parent "P_Camael_Window"
+}
+
+-- /// 확인 버튼
+button_prop "P_Camael_Refresh"
+{
+	skinname "Camael_Refresh"
+	parent "P_Camael_Window"
+}

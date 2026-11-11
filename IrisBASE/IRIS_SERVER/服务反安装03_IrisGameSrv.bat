@@ -1,0 +1,1 @@
+IrisGameSrv.exe /uninstall -def GameServer

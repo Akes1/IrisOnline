@@ -1,0 +1,55 @@
+----------------------------------------------------------------------------------------------
+-- type - 0:skill, 1:influence(효과)
+
+-- effect - index | rotX | rotY | rotZ | scale | filename
+
+-- sound - index | filename
+
+-- animation - aniIndex
+
+-- active - time
+
+-- action - actTime | lifeTime | objectid | bLoop | bFollow | linkpos | varX | varY | varZ
+-- 		bLoop - 1:true, 0:false
+-- 		bFollow - 1:true, 0:false
+-- 		linkpos - 0:head, 1:body, 2:rhand, 3:lhand, 4:foot, 5:larm, 10:rweapon, 11:lweapon
+
+-- damage - time | percent
+
+-- bullet - createTime | bulletid | speed | objectid | linkpos | varX | varY | varZ | crashLinkPos
+
+-- crash - bulletid | objectid | linkpos | varX | varY | varZ
+
+-----------------------------------------------------------------------------------------------
+
+--탈 것 소환 연출
+
+Header
+{
+	type	0
+	
+	effect	0	0.0	0.0	0.0	1.0	"Eff_1103_01_l.nif"
+	effect	1	0.0	0.0	0.0	1.0	"Eff_1126_01.nif"
+	effect	2	0.0	0.0	0.0	0.7	"eff_buff_26.nif"
+	
+	sound	21	5522
+}
+
+Casting
+{
+	animation	60
+	
+	action	0	0	0	1	1	foot	0.0	0.0	0.0
+	action	0	0	2	1	1	foot	0.0	0.0	0.0
+
+	soundplay	10	21	0
+	
+}
+
+Activity
+{
+	animation	130
+
+	action	0	0	1	0	1	foot	0.0	0.0	0.0
+	active	0
+}

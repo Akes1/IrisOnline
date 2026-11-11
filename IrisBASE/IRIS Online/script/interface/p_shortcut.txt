@@ -1,0 +1,36 @@
+
+--=================--
+-- 단축키설정 윈도우 --
+--=================--
+window_prop "P_ShortcutWindow"
+{
+	skinname "ShortcutWindow"
+}
+
+-- 원래대로 버튼
+button_prop "P_Shortcut_Original"
+{
+	skinname "Shortcut_Original"
+	parent "P_ShortcutWindow"
+}
+
+-- 모두지우기 버튼
+button_prop "P_Shortcut_Clear"
+{
+	skinname "Shortcut_Clear"
+	parent "P_ShortcutWindow"
+}
+
+-- 확인 버튼
+button_prop "P_Shortcut_OK"
+{
+	skinname "Shortcut_OK"
+	parent "P_ShortcutWindow"
+}
+
+-- 취소 버튼
+button_prop "P_Shortcut_Cancel"
+{
+	skinname "Shortcut_Cancel"
+	parent "P_ShortcutWindow"
+}

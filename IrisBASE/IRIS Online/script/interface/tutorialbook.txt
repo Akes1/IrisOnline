@@ -1,0 +1,77 @@
+--===============--
+-- 튜토리얼 북 --
+--===============--
+window "TutorialBook_Window"
+{
+	ii 5018
+	pos 0 0
+	size 782 508
+	texpos 5 329
+	
+	opensound 3007
+	closesound 3010
+}
+
+button "TutorialBook_Close"
+{
+	ii 5002
+	pos 727 17
+	size 19 19
+	texpos 253 160
+	
+	-- 버튼 그림 좌표 	
+	uppos 253 160
+	upoverpos 275 160
+	downpos 297 160
+	
+	downsound 3001
+}
+
+-- 이름 라벨
+label "TutorialBook_Name"
+{
+	pos 34 14
+	size 331 12
+	text_align center
+}
+
+textbox "TutorialBook_Text"
+{
+	pos 410 50
+	size 328 264
+
+	row_height 18	-- 열 높이 세팅
+	maxitemnum 50	-- 리스트가 담을수 잇는 최대 갯수
+}
+
+
+-- 퀘스트 리스트
+listbox "TutorialBook_QuestList"
+{
+	ii 5004
+	pos 420 360
+	size 307 89
+	texpos 68 243
+	
+	row_height 20
+	maxitemnum 40
+	
+	scrollskin "ListScroll"
+
+	-- 리스트박스 내의 text 출력 공간을 지정한다 ( 없으면 기본위치로 부터 시작 )
+	printpos 5 2
+	printsize 306 87
+	
+	-- 선택된 텍스트배경이미지 관련
+	child_ii 5004
+	child_size 307 17 
+	child_texpos 68 334
+	
+	--       x,  w,   align
+	columnX  10 400 left   -- 내용
+}
+
+
+-- /// 소스에서 사용하는 스킨
+-- 일러스트 (좌측 페이지)
+label "TutorialBook_Scene"	{ pos 32 45 } 
